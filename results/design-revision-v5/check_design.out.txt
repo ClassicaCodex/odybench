@@ -1,0 +1,12 @@
+Appendix T items: [1, 2, 3, 4, 5, 6, 7, 8]
+4705 lines; 83 numbered headings
+l. 787: section (5.20.3) not found
+l. 1814: section (17.24) not found
+l. 1920: section (1.5) not found
+l. 1928: section (1.5) not found
+l. 2472: section (5.20.3) not found
+l. 4627: section (16.1) not found
+l. 4640: section (0.25) not found
+undefined prediction/expectation P33: ...   of number, so revision 3's P33 is droppe...
+l. 239: bare [lca] tag
+l. 4421: bare [lca] tag

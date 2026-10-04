@@ -1,0 +1,107 @@
+{
+ "schema": "odybench deltat_models v1 (DESIGN 0, 2.3, 6.3.3, 10.2)",
+ "written": "2026-10-04 by A0 (lead), from DESIGN.md revision 8",
+ "argument": "the Julian epoch of the TT instant, calendar.julian_epoch(JD_TT) = 2000 + (JD_TT - 2451545)/365.25 (DESIGN 0; identical to ephem.julian_epoch)",
+ "models": [
+  {
+   "key": "smh2020",
+   "ephem_model": "smh2020",
+   "definition": "Addendum 2020 spline (Table S15 v2020) for -720..2019; before -720 the HMNAO lod integral lod = +1.72 t - 3.5 sin(2 pi (t + 0.75)/14) ms, t = (y - 1825)/100, continuous at -720",
+   "sigma": "HMNAO's error estimate epsilon, interpolated (ephem.sigma_smh2020); before -2000 an extrapolation, 0.74e-4 (y - 1825)^2, not a published value",
+   "ndot_frame": -25.82,
+   "pairs_with": "DE431 (the DE430 lunar model)",
+   "value_at_-1176.68": [
+    28543,
+    720
+   ],
+   "source": "DESIGN 0, 2.3; eph 2.1-2.3 [ADD20; HMNAO]"
+  },
+  {
+   "key": "smh2020_parabola",
+   "ephem_model": "smh2020_parabola",
+   "definition": "Addendum 2020 eq. 5.1: -10 + 31.4 tau^2, tau = (y - 1825)/100",
+   "sigma": "0.6 tau^2 (ephem.sigma_parabola)",
+   "ndot_frame": -25.82,
+   "pairs_with": "DE431",
+   "value_at_-1176.68": [
+    28282,
+    541
+   ],
+   "source": "DESIGN 0, 2.3; eph 2.1 [ADD20]"
+  },
+  {
+   "key": "smh2016_parabola",
+   "ephem_model": "smh2016_parabola",
+   "definition": "SMH2016 eq. 4.1: -320.0 + 32.5 tau^2, tau = (y - 1825)/100",
+   "sigma": "0.6 tau^2 (ephem.sigma_parabola)",
+   "ndot_frame": -25.82,
+   "pairs_with": "DE431",
+   "value_at_-1176.68": [
+    28963,
+    541
+   ],
+   "source": "DESIGN 0, 2.3; eph 2.1 [SMH16]"
+  },
+  {
+   "key": "em_canon",
+   "ephem_model": "em2006_canon",
+   "definition": "Espenak-Meeus polynomials (Morrison-Stephenson 2004 parabola -20 + 32 u^2, u = (y - 1820)/100, before -500) plus c = -0.000012932 (y - 1955)^2 for the canon's n-dot -25.858",
+   "sigma": "Huber 2000 before -500 (ephem.sigma_huber, calibration year -500, M = 2500, Q = 0.058); Morrison-Stephenson 2004's 0.8 u^2 from -500 on (ephem.sigma_ms2004), as on NASA's page; the envelope is discontinuous at -500. ephem.delta_t_sigma('em2006_canon') returns Huber only (0 from -500 to 2005), so deltat_mix must apply this rule itself",
+   "ndot_frame": -25.858,
+   "pairs_with": "NASA's Besselian elements (the canon frame)",
+   "value_at_-1176.68": [
+    28589,
+    1008
+   ],
+   "source": "DESIGN 0, 2.3; eph 2.1 [EM06]; acq 2.2; tools/jsex_sites.js"
+  }
+ ],
+ "mixture": {
+  "weights": [
+   0.25,
+   0.25,
+   0.25,
+   0.25
+  ],
+  "form": "each model a Gaussian with its stated sigma (an assumption, stated every time it is used, DESIGN 0)",
+  "p_exact": {
+   "span_sigma": 6.0,
+   "scan_s": 10.0,
+   "tol_s": 0.1,
+   "rule": "over [min(mu - 6 sigma), max(mu + 6 sigma)], the mean over the four models of the sum over passing intervals of Phi((b - mu)/(s sigma)) - Phi((a - mu)/(s sigma)); intervals by a 10-s scan and bisection to 0.1 s (10.2, 6.3.3)"
+  },
+  "pass_threshold": 0.5,
+  "reported_thresholds": [
+   0.05,
+   0.95
+  ],
+  "noncirc_sigma_scale": 3.0,
+  "grid_diagnostic": {
+   "n": 41,
+   "note": "never a rule input (10.2)"
+  },
+  "source": "DESIGN 0, 6.3.3, 10.2 deltat_mix"
+ },
+ "frames": {
+  "canon": {
+   "ndot": -25.858,
+   "used_by": "solar rows, h_tot, h_09, h_06 (NASA's elements)"
+  },
+  "de431": {
+   "ndot": -25.82,
+   "used_by": "lunar rows and lunar-timed quantities (DE431)"
+  },
+  "conversion": "dT(to) = dT(from) + ephem.ndot_correction(y, ndot_to, ndot_from), ndot_correction = -0.91072 (ndot_to - ndot_from) T^2, T = (y - 1955)/100; SMH -> canon is +34 s at -1177 (DESIGN 0, 2.3; eph 2.3)",
+  "source": "DESIGN 0 ('Delta-T travels with its lunar ephemeris'); eph 2.3, 5.3"
+ },
+ "fixed_values": {
+  "bm_clock_s": {
+   "value": 27602.7,
+   "use": "T0b's clock only (DESIGN 0, 3.2); uninterpretable, never converted into another frame (2.3, 5.6)"
+  },
+  "sky_tables": {
+   "value": "smh2020",
+   "use": "the default dt_model of sky.build (10.2)"
+  }
+ }
+}

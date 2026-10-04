@@ -1,0 +1,187 @@
+{
+ "schema": "odybench windows v1 (DESIGN 4.6, 4.1)",
+ "written": "2026-10-04 by A0 (lead), from DESIGN.md revision 8",
+ "rule": "A window of width W years is the half-open JD interval [a, a + 365.25 W) (4.6). A named window below runs from 0 h UT+2 of 1 Jan of its first year to 0 h UT+2 of 1 Jan after its last year, half-open; a candidate is inside if its UT+2 Day 0 (day0_jdn_ut2) is.",
+ "named": {
+  "reproduction": {
+   "years": [
+    -1249,
+    -1114
+   ],
+   "n_years": 136,
+   "jd_ut": [
+    1264860.4166666667,
+    1314534.4166666667
+   ],
+   "n_days": 49674.0,
+   "clock": "UT+2",
+   "source": "1250-1115 BC, 136 years: B&M's search window [B&M; win 9] (4.6)"
+  },
+  "primary": {
+   "years": [
+    -1349,
+    -1099
+   ],
+   "n_years": 251,
+   "jd_ut": [
+    1228335.4166666667,
+    1320013.4166666667
+   ],
+   "n_days": 91678.0,
+   "clock": "UT+2",
+   "source": "1350-1100 BC, 251 years [win 9] (4.6)"
+  },
+  "troy_viia": {
+   "years": [
+    -1239,
+    -1149
+   ],
+   "n_years": 91,
+   "jd_ut": [
+    1268513.4166666667,
+    1301750.4166666667
+   ],
+   "n_days": 33237.0,
+   "clock": "UT+2",
+   "source": "1240-1150 BC, 91 years: Troy VIIa [win 4, 9] (4.6)"
+  },
+  "eratosthenes_strict": {
+   "years": [
+    -1175,
+    -1171
+   ],
+   "n_years": 5,
+   "jd_ut": [
+    1291889.4166666667,
+    1293715.4166666667
+   ],
+   "n_days": 1826.0,
+   "clock": "UT+2",
+   "source": "1176-1172 BC: the strict Eratosthenes return [win 5-6] (4.6, 5.5)"
+  }
+ },
+ "spans": {
+  "background": {
+   "years": [
+    -1999,
+    200
+   ],
+   "jd_ut": [
+    990923.4166666666,
+    1794473.4166666667
+   ],
+   "clock": "UT+2",
+   "source": "4.1: -1999-01-01 to +200-12-31 (2,200 Julian years), from the first year of NASA's elements"
+  },
+  "core": {
+   "years": [
+    -1748,
+    -51
+   ],
+   "jd_ut": [
+    1082600.4166666667,
+    1702795.4166666667
+   ],
+   "clock": "UT+2",
+   "source": "4.1: targets lie at least 251 years inside B, so every window of every width lies inside it"
+  },
+  "data_margins": {
+   "years": [
+    -2060,
+    241
+   ],
+   "source": "4.1: the 40-day clue offsets and the +/-60-day Mercury searches"
+  },
+  "control_envelope": {
+   "years": [
+    -1999,
+    300
+   ],
+   "source": "4.1: every control window lies inside -1999..+300"
+  },
+  "null_window_range": {
+   "years": [
+    -1000,
+    300
+   ],
+   "source": "6.3.2 [r3v7 R3-7]: I16(a)'s 21 null windows per counted set lie within -1000..+300, each so that every event the set's rows can link to, at the set's longest link or day offset in either direction, lies inside -1999..+300"
+  },
+  "epoch_band": {
+   "years": [
+    -1877,
+    -477
+   ],
+   "source": "4.2, 7.2: P_BM,E and P_MWRA,E, Day 0 (UT+2) within +/-700 years of the target's year"
+  },
+  "epoch_band_halves": {
+   "early": [
+    -1877,
+    -1178
+   ],
+   "late": [
+    -1177,
+    -477
+   ],
+   "source": "7.2: Q_exch's drift tests inside the band"
+  },
+  "background_halves": {
+   "early": [
+    -1999,
+    -900
+   ],
+   "late": [
+    -899,
+    200
+   ],
+   "source": "7.3, R21"
+  },
+  "p8_ends": {
+   "first": [
+    -1999,
+    -1300
+   ],
+   "last": [
+    -499,
+    200
+   ],
+   "source": "8.2 P8: the first and last 700 years of the background (7.2 notes the difference from the epoch band)"
+  }
+ },
+ "widths": {
+  "rule": 136,
+  "doc": [
+   91,
+   136,
+   251
+  ],
+  "n1_sliding": [
+   50,
+   91,
+   100,
+   136,
+   200,
+   251,
+   500,
+   900
+  ],
+  "controls": 136,
+  "negatives": [
+   136,
+   251
+  ],
+  "source": "5.3 F7 (136 BM; 91, 251 DOC); 5.1 item 5; 6.3.1 and 6.4 (136); 6.5 (the Odyssey's two windows)"
+ },
+ "negatives": {
+  "windows": [
+   "reproduction",
+   "primary"
+  ],
+  "sensitivity_positions_per_width": 20,
+  "source": "6.5: each clean negative is searched in the Odyssey's own two windows at its own site; twenty further random positions per width are a sensitivity (seeds.json)"
+ },
+ "controls": {
+  "width_years": 136,
+  "positions": "the harness places the anchor's accepted date at a uniformly random position (seeds.json, per set), plus twenty further positions as a sensitivity; I16(a)'s 21 null windows per counted set lie in null_window_range",
+  "source": "6.3.1, 6.3.2, 6.4, 4.6"
+ }
+}

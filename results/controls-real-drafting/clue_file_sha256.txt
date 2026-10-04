@@ -1,0 +1,4 @@
+controls_real.json frozen before any truth lookup
+UTC 2026-10-04T05:19:15Z
+eb1f0401c3984c1b007f74c9bae68d9156a35662258f6d332e70c1abdbbe9256  data/prereg/controls_real.json
+69ebbadf4efb600e00c7bf6d913537f898b8d7c1c5e95b1b683a826ba3d353b3  results/controls-real-drafting/build_controls_real.py

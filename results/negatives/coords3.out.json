@@ -1,0 +1,67 @@
+{
+ "Ida (Crete)": "missing",
+ "Akrokeraunia": "missing",
+ "Aci Trezza": [
+  [
+   37.56361111,
+   15.16138889
+  ]
+ ],
+ "Benghazi": [
+  [
+   32.11666667,
+   20.06666667
+  ]
+ ],
+ "Carthage": [
+  [
+   36.8528,
+   10.3233
+  ]
+ ],
+ "Itanos": [
+  [
+   35.2,
+   26.25
+  ]
+ ],
+ "Kafireas": [
+  [
+   38.11666667,
+   24.56666667
+  ]
+ ],
+ "Karaburun Peninsula": null,
+ "Lake Tritonis": null,
+ "Llogara Pass": [
+  [
+   40.19861111,
+   19.59166667
+  ]
+ ],
+ "Sideros": [
+  [
+   35.31282,
+   26.30759
+  ],
+  [
+   35.3189,
+   26.2497
+  ],
+  [
+   35.31862,
+   26.300745
+  ]
+ ],
+ "Cape Sideros": [
+  [
+   35.31282,
+   26.30759
+  ]
+ ],
+ "Mount Ida": null,
+ "_redirects": {
+  "Gargarus": "Mount Ida",
+  "Cape Sidero": "Cape Sideros"
+ }
+}

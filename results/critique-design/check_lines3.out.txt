@@ -1,0 +1,41 @@
+===== thucydides-grc ^2\.28\.
+2.28.1.1 	 τοῦ δ’ αὐτοῦ θέρους νουμηνίᾳ κατὰ σελήνην, ὥσπερ καὶ μόνον δοκεῖ εἶναι γίγνεσθαι δυνατόν, ὁ ἥλιος ἐξέλιπε μετὰ μεσημβρίαν καὶ πάλιν ἀνεπληρώθη, γενόμενος μηνοειδὴς καὶ ἀστέρων τινῶν ἐκφανέντων.
+===== thucydides-grc ^4\.52\.1
+4.52.1.1 	 τοῦ δ’ ἐπιγιγνομένου θέρους εὐθὺς τοῦ τε ἡλίου ἐκλιπές τι ἐγένετο περὶ νουμηνίαν καὶ τοῦ αὐτοῦ μηνὸς ἱσταμένου ἔσεισεν.
+===== thucydides-grc ^7\.50\.4
+7.50.4.1 	 καὶ μελλόντων αὐτῶν, ἐπειδὴ ἑτοῖμα ἦν, ἀποπλεῖν ἡ σελήνη ἐκλείπει· ἐτύγχανε γὰρ πασσέληνος οὖσα. καὶ οἱ Ἀθηναῖοι οἵ τε πλείους ἐπισχεῖν ἐκέλευον τοὺς στρατηγοὺς ἐνθύμιον ποιούμενοι, καὶ ὁ Νικίας (ἦν γάρ τι καὶ ἄγαν θειασμῷ τε καὶ τῷ τοιούτῳ προσκείμενος) οὐδ’ ἂν διαβουλεύσασθαι ἔτι ἔφη πρίν, ὡς οἱ μάντεις ἐξηγοῦντο, τρὶς ἐννέα ἡμέρας μεῖναι, ὅπως ἂν πρότερον κινηθείη. καὶ τοῖς μὲν Ἀθηναίοις μελλήσασι διὰ τοῦτο ἡ μονὴ ἐγεγένητο.
+===== xenophon-hellenica-grc ^1\.6\.1\.
+1.6.1.1 	 τῷ δʼ ἐπιόντι ἔτει, ᾧ ἥ τε σελήνη ἐξέλιπεν ἑσπέρας καὶ ὁ παλαιὸς τῆς Ἀθηνᾶς νεὼς ἐν Ἀθήναις ἐνεπρήσθη, Πιτύα μὲν ἐφορεύοντος, ἄρχοντος δὲ Καλλίου Ἀθήνησιν, οἱ Λακεδαιμόνιοι τῷ Λυσάνδρῳ παρεληλυθότος ἤδη τοῦ χρόνου καὶ τῷ πολέμῳ τεττάρων καὶ εἴκοσιν ἐτῶν ἔπεμψαν ἐπὶ τὰς ναῦς Καλλικρατίδαν.
+===== xenophon-hellenica-grc ^2\.3\.4\.
+2.3.4.1 	 κατὰ δὲ τοῦτον τὸν καιρὸν περὶ ἡλίου ἔκλειψιν Λυκόφρων ὁ Φεραῖος, βουλόμενος ἄρξαι ὅλης τῆς Θετταλίας, τοὺς ἐναντιουμένους αὐτῷ τῶν Θετταλῶν, Λαρισαίους τε καὶ ἄλλους, μάχῃ ἐνίκησε καὶ πολλοὺς ἀπέκτεινεν.
+===== xenophon-hellenica-grc ^4\.3\.10\.
+4.3.10.1 	 ὄντος δʼ αὐτοῦ ἐπὶ τῇ ἐμβολῇ ὁ ἥλιος μηνοειδὴς ἔδοξε φανῆναι, καὶ ἠγγέλθη ὅτι ἡττημένοι εἶεν Λακεδαιμόνιοι τῇ ναυμαχίᾳ καὶ ὁ ναύαρχος Πείσανδρος τεθναίη. ἐλέγετο δὲ καὶ ᾧ τρόπῳ ἡ ναυμαχία ἐγένετο.
+===== diodorus-bk18-20-grc ^20\.5\.[56]\.
+20.5.5.1 	 τῇ δʼ ὑστεραίᾳ τηλικαύτην ἔκλειψιν ἡλίου συνέβη γενέσθαι ὥστε ὁλοσχερῶς φανῆναι νύκτα, θεωρουμένων τῶν ἀστέρων πανταχοῦ· διόπερ οἱ περὶ τὸν Ἀγαθοκλέα, νομίσαντες καὶ τὸ θεῖον αὐτοῖς προσημαίνειν τὸ δυσχερές, ἔτι μᾶλλον ὑπὲρ τοῦ μέλλοντος ἐν ἀγωνίᾳ καθειστήκεισαν.
+===== livy-lat ^4\.44\.37\.[5-9]\.
+4.44.37.5.1 	 castris permunitis C. Sulpicius Gallus, tribunus militum secundae legionis, qui praetor superiore anno fuerat, consulis permissu ad contionem militibus vocatis pronuntiavit, nocte proxima, ne quis id pro portento acciperet, ab hora secunda usque ad quartam horam noctis lunam defecturam esse.
+4.44.37.6.1 	 id quia naturali ordine statis temporibus fiat, et sciri ante et praedici posse.
+4.44.37.7.1 	 itaque quem ad modum, quia certi solis lunaeque et ortus et occasus sint, nunc pleno orbe, nunc senescentem exiguo cornu fulgere lunam non mirarentur, ita ne obscurari quidem, cum condatur umbra terrae, trahere in prodigium debere.
+4.44.37.8.1 	 nocte, quam pridie nonas Septembres insecuta est dies, edita hora luna cum defecisset, Romanis militibus Galli sapientia prope divina videri;
+4.44.37.9.1 	 Macedonas ut triste prodigium, occasum regni perniciemque gentis portendens, movit nec aliter vates. clamor ululatusque in castris Macedonum fuit, donec luna in suam lucem emersit.
+===== livy-lat ^2\.22\.1\.(8|9|10)\.
+2.22.1.8.1 	 augebant metum prodigia ex pluribus simul locis nuntiata: in Sicilia militibus aliquot spicula, in Sardinia autem in muro circumeunti vigilias equiti scipionem, quem mann tenuerit, arsisse, et litora crebris ignibus fulsisse, et scuta duo sanguine sudasse,
+2.22.1.9.1 	 et milites quosdam ictos fulminibus, et solis orbem minui visum, et Praeneste ardentes lapides caelo cecidisse, et Arpis parmas in caelo visas pugnantemque cum luna solem,
+2.22.1.10.1 	 et Capenae duas interdiu lunas ortas, et aquas Caeretes sanguine mixtas fluxisse fontemque ipsum Herculis cruentis manasse respersum maculis, et Antii metentibus cruentas in corbem spicas cecidisse,
+===== livy-lat ^2\.30\.38\.8\.
+2.30.38.8.1 	 prodigia quoque nuntiata sub ipsam famam rebellionis terrorem adtulerant: Cumis solis orbis minui visus et pluit lapideo imbri, et in Veliterno agro terra ingentibus cavernis consedit, arboresque in profundum haustae; Ariciae forum et circa tabernae,
+===== livy-lat ^3\.37\.4\.4\.
+3.37.4.4.1 	 per eos dies, quibus est profectus ad bellum consul, ludis Apollinaribus, a. d. quintum idus Quinctiles caelo sereno interdiu obscurata lux est, cum luna sub orbem solis subisset.
+===== livy-lat ^3\.38\.36\.4\.
+3.38.36.4.1 	 priusquam in provincias novi magistratus proficiscerentur, supplicatio triduum pro collegio decemvirorum imperata fuit in omnibus compitis, quod luce inter horam tertiam ferme et quartam tenebrae obortae fuerant. et novemdiale sacrificium indictum est, quod in Aventino lapidibus pluvisset.
+===== plutarch-alexander-grc ^31\.4\.
+31.4.1 	 ἡ μὲν οὖν σελήνη τοῦ Βοηδρομιῶνος ἐξέλιπε περὶ τὴν τῶν μυστηρίων τῶν Ἀθήνησιν ἀρχήν, ἑνδεκάτῃ δὲ ἀπὸ τῆς ἐκλείψεως νυκτὶ τῶν στρατοπέδων ἐν ὄψει γεγονότων, Δαρεῖος μὲν ἐν ὅπλοις συνεῖχε τὴν δύναμιν, ὑπὸ λαμπάδων ἐπιπορευόμενος τὰς τάξεις, Ἀλέξανδρος δὲ τῶν Μακεδόνων ἀναπαυομένων αὐτὸς πρὸ τῆς σκηνῆς μετὰ τοῦ μάντεως Ἀριστάνδρου διέτριβεν, ἱερουργίας τινὰς ἀπορρήτους ἱερουργούμενος καὶ τῷ Φόβῳ σφαγιαζόμενος.
+===== arrian-anabasis-grc ^3\.7\.6\.
+3.7.6.1 	 καὶ Ἀλέξανδρος ἔθυε τῇ τε σελήνῃ καὶ τῷ ἡλίῳ καὶ τῇ γῇ, ὅτων τὸ ἔργον τοῦτο λόγος εἶναι κατέχει. καὶ ἐδόκει Ἀριστάνδρῳ πρὸς Μακεδόνων καὶ Ἀλεξάνδρου εἶναι τῆς σελήνης τὸ πάθημα καὶ ἐκείνου τοῦ μηνὸς ἔσεσθαι ἡ μάχη, καὶ ἐκ τῶν ἱερῶν νίκην σημαίνεσθαι Ἀλεξάνδρῳ.
+===== arrian-anabasis-grc ^3\.15\.7\.
+3.15.7.1 	 τοῦτο τὸ τέλος τῇ μάχῃ ταύτῃ ἐγένετο ἐπὶ ἄρχοντος Ἀθηναίοις Ἀριστοφάνους μηνὸς Πυανεψιῶνος· καὶ Ἀριστάνδρῳ ξυνέβη ἡ μαντεία ἐν τῷ αὐτῷ μηνί, ἐν ὅτῳ ἡ σελήνη ἐκλιπὴς ἐφάνη, τήν τε μάχην Ἀλεξάνδρῳ καὶ τὴν νίκην γενέσθαι.
+===== curtius-lat ^4\.10\.[1-2]\.
+4.10.1.1 	 Biduo ibi stafiva rex habuit: in proximum deinde pronuntiari iter iussit.
+4.10.2.1 	 Sed prima fere vigilia luna deficiens primum nitorem sideris sui condidit, deinde sanguinis colore suffuso lumen omne foedavit, sollicitisque sub ipsum tanti discriminis casum ingens religio et ex ea formido quaedam incussa est.
+===== pliny-nh-lat ^2\.70\.3
+2.70.3 	 Ideo defectus solis ac lunae vespertinos orientis incolae non sentiunt nec matutinos ad occasum habitantes, meridianos vero serius nobis illi. apud Arbilam Magni Alexandri victoria luna defecisse noctis secunda hora est prodita eademque in Sicilia exoriens. solis defectum Vipstano et Fonteio cos., qui fuere ante paucos annos, factum pridie kalendas Maias Campania hora diei inter septimam et octavam sensit, Corbulo dux in Armenia inter horam diei decimam et undecimam prodidit visum, circuitu globi alia aliis detegente et occultante. quod si plana esset terra, simul omnia apparerent cunctis noctesque non fierent inaequales; nam aeque aliis quam in medio sitis paria duodecim horarum intervalla cernerentur, quae nunc non in omni parte simili modo congruunt.

@@ -1,0 +1,10 @@
+-1246-Dec-20   mag 0.8754  Sun alt  23.75  type 1  (1 partial, 3 total)
+-1231-Mar-14   mag 0.6995  Sun alt  43.16  type 1  (1 partial, 3 total)
+-1222-Mar-05   mag 0.8642  Sun alt  41.23  type 1  (1 partial, 3 total)
+-1206-Oct-30   mag 0.8179  Sun alt  19.86  type 1  (1 partial, 3 total)
+-1196-Oct-09   mag 0.7986  Sun alt  13.97  type 1  (1 partial, 3 total)
+-1191-Jan-21   mag 0.8074  Sun alt  29.53  type 1  (1 partial, 3 total)
+-1137-Feb-23   mag 0.8376  Sun alt  37.90  type 1  (1 partial, 3 total)
+-1130-Sep-30   mag 1.0486  Sun alt  51.63  type 3  (1 partial, 3 total)
+-1128-Feb-14   mag 0.8457  Sun alt  17.07  type 1  (1 partial, 3 total)
+R_anc-with-eclipse survivors in -1249..-1114 at canon Delta-T: 9

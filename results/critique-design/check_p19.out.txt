@@ -1,0 +1,8 @@
+epochs -1176.676 -1129.218
+smh2020            dT78    28543+   34 s78   720 | dT31    27682+   33 s31   720 | P78 0.294 P31 0.494 | joint(common offset) 0.047 overlap [228,320]
+smh2020_parabola   dT78    28282+   34 s78   541 | dT31    27394+   33 s31   524 | P78 0.173 P31 0.641 | joint(common offset) 0.052 overlap [489,608]
+smh2016_parabola   dT78    28963+   34 s78   541 | dT31    28044+   33 s31   524 | P78 0.498 P31 0.443 | joint(common offset) 0.108 overlap [-192,-42]
+em2006             dT78    28716+ -127 s78  1008 | dT31    27813+ -123 s31   897 | P78 0.252 P31 0.412 | joint(common offset) 0.049 overlap [216,345]
+em2006_canon       dT78    28589+    0 s78  1008 | dT31    27690+    0 s31   897 | P78 0.252 P31 0.412 | joint(common offset) 0.049 overlap [216,345]
+canon(Huber) 1008 897 P78 0.253 P31 0.412 joint 0.049
+1131 at Ithaki: (L1-m)/(L1+L2) = 1.0169 ; diameter ratio (L1-L2)/(L1+L2) = 1.0486

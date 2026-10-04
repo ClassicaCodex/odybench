@@ -1,0 +1,29 @@
+Slot family (design-stage estimates, r2):
+  v0 documented (Venus AV 7; Mercury event <= 6 d and visible)       n_A   82  G_BM 0.224 [0.139, 0.344]  label-2 G-leg no  Q_tol yes  (n_A/n_T) G = 0.00172
+  v1 revision 3 (Venus AV 7; Mercury event <= 6 d or visible)        n_A  131  G_BM 0.140 [0.087, 0.215]  label-2 G-leg no  Q_tol yes  (n_A/n_T) G = 0.00172
+  v2 (Venus AV 7; Mercury event <= 6 d)                              n_A   87  G_BM 0.211 [0.131, 0.324]  label-2 G-leg no  Q_tol yes  (n_A/n_T) G = 0.00172
+  v3 (Venus AV 7; Mercury event <= 4 d)                              n_A   66  G_BM 0.278 [0.172, 0.427]  label-2 G-leg no  Q_tol yes  (n_A/n_T) G = 0.00172
+  v4 (Venus lead >= 60 min; Mercury as v1)                           n_A  101  G_BM 0.182 [0.112, 0.279]  label-2 G-leg no  Q_tol yes  (n_A/n_T) G = 0.00172
+  v5 (Venus lead >= 60 min; Mercury event <= 4 d)                    n_A   56  G_BM 0.327 [0.203, 0.504]  label-2 G-leg fires  Q_tol yes  (n_A/n_T) G = 0.00171
+  min over variants of G_BM,lo = 0.087: label-2 G-leg fires only if >= 0.20 -> does not fire; Q_tol (> 0.05) -> holds
+  variants where the G-leg alone would fire: ['v5'] -> Q_slot holds
+  G_BM,u across variants (identity): [0.00171, 0.00172]  (r2 printed 0.00172)
+
+Held-out lattice on P_BM (score order: both > H4 only > H3 only > none, since q4 < q3):
+  p_H,min (passes both) = (1+1)/(1+76) = 0.0260
+  passes H4 only: (1+2)/(1+76) = 0.0390
+  passes H3 only: (1+16)/(1+76) = 0.2208
+  passes neither: 1.0000
+  S5 (Q_attain branch test): x_both 4 -> p_H,min = 0.0649
+
+pct_N4 (mid-p; lo from strict count, hi from weak count), n = 200:
+  x_gt  30, x_eq 10: pct 0.1750  lo 0.1035  hi 0.2622  label-2 pct-leg no
+  x_gt 118, x_eq 12: pct 0.6200  lo 0.5184  hi 0.7159  label-2 pct-leg fires
+  x_gt   2, x_eq  0: pct 0.0100  lo 0.0012  hi 0.0357  label-2 pct-leg no
+
+Negatives (G_j over n_j = 10,690):
+  no-hit sets: 8 x 0.8     G_j 0.00060  lo 0.00026  hi 0.00121   G_j,hi <= G_BM,u 0.00172: True
+  S4 AEN-TROY: 6 x 0.9     G_j 0.00051  lo 0.00019  hi 0.00112   G_j,hi <= G_BM,u 0.00172: True
+  S6b AEN-TROY: 25 x 0.8   G_j 0.00187  lo 0.00121  hi 0.00279   G_j,hi <= G_BM,u 0.00172: False
+
+U0(n) = 3.689/n: n_T 0.00035; n_H floor 1/(1+n_H) = 0.0130

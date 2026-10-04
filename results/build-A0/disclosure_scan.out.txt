@@ -1,0 +1,1403 @@
+disclosure scan: civil dates -1177-03-07 .. -1177-04-18 (target -1177-04-16; Day -40 .. Day +2 (Dawn +2 ends Night +1))
+scanned: docs, results, data; self-excluded: data/prereg/heldout_disclosure.json, data/prereg/access.json, results/build-A0/
+docs/critique-design-r1.md  [text]  2 hit(s)
+    286: -1177-04-10  strict  mercury  -> H3-other
+    701: -1177-04-10  strict  mercury  -> H3-other
+docs/critique-design.md  [text]  11 hit(s)
+    19: -1177-04-16  strict    -> OTHER
+    78: -1177-04-01,-1177-04-04,-1177-04-05  loose  az conj lead mercury mwra riseset sun venus vis  -> D2
+    80: -1177-04-16  strict  dt elong  -> OTHER
+    84: -1177-03-13,-1177-03-18,-1177-04-04,-1177-04-05,-1177-04-11,-1177-04-16  jd  conj  -> OTHER
+    87: -1177-04-11  strict  dt lead riseset venus  -> D2
+    234: -1177-04-04  loose  conj  -> OTHER
+    285: -1177-03-28,-1177-04-01,-1177-04-04  loose    -> OTHER
+    346: -1177-03-12,-1177-03-13  loose    -> OTHER
+    350: -1177-03-14  strict  riseset  -> OTHER
+    545: -1177-04-04  strict  conj equinox  -> OTHER
+    600: -1177-04-11  strict  lead venus  -> D2
+docs/data-acquisition.md  [text]  5 hit(s)
+    66: -1177-04-16  strict    -> OTHER
+    235: -1177-04-16  strict    -> OTHER
+    255: -1177-04-16  strict  mag  -> OTHER
+    371: -1177-04-16  strict    -> OTHER
+    463: -1177-04-16  strict    -> OTHER
+docs/DESIGN-v1.md  [text]  17 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+    22: -1177-04-16  strict    -> OTHER
+    69: -1177-04-16  strict    -> OTHER
+    251: -1177-04-16  strict    -> OTHER
+    276: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj equinox lead sun venus  -> D2
+    282: -1177-04-16  strict    -> OTHER
+    306: -1177-03-13  strict    -> OTHER
+    425:   planet-list  jupiter lead mag mars star twl venus vis  -> D3
+    466: -1177-04-16  strict    -> OTHER
+    723: -1177-04-16  strict    -> OTHER
+    763: -1177-04-16  strict    -> OTHER
+    768: -1177-04-05  loose  riseset  -> OTHER
+    815: -1177-04-16  strict  mag  -> OTHER
+    818: -1177-04-16  strict  ecl sep  -> ECL
+    841: -1177-04-16  strict    -> OTHER
+    908: -1177-04-16  strict    -> OTHER
+    990: -1177-04-04,-1177-04-05  loose  star vis  -> OTHER
+docs/DESIGN-v2.md  [text]  34 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+    33: -1177-04-16  strict    -> OTHER
+    50: -1177-04-16  strict    -> OTHER
+    149: -1177-04-16  strict    -> OTHER
+    324: -1177-03-13  strict    -> OTHER
+    326: -1177-03-12  strict    -> OTHER
+    331: -1177-04-11  strict  conj lead venus  -> D2
+    333: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj dt  -> OTHER
+    338: -1177-04-04  loose  equinox  -> OTHER
+    351: -1177-04-16  strict  dt ecl ge mag  -> ECL
+    429: -1177-04-16  loose  ecl equinox  -> ECL
+    431: -1177-03-16  strict  elong  -> OTHER
+    440: -1177-04-16  strict  dt  -> OTHER
+    621: -1177-04-16  strict    -> OTHER
+    649: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj equinox lead sun venus  -> D2
+    657: -1177-04-16  strict    -> OTHER
+    732: -1177-04-16  strict  ecl  -> ECL
+    757: -1177-04-04  loose    -> OTHER
+    761: -1177-04-03  loose  star  -> OTHER
+    765: -1177-04-06  loose  equinox  -> OTHER
+    872:   planet-list  jupiter mag mars star twl venus  -> D3
+    932: -1177-04-16  strict  ecl  -> ECL
+    938: -1177-04-16  strict    -> OTHER
+    1028: -1177-04-16  strict    -> OTHER
+    1515: -1177-04-16  strict    -> OTHER
+    1563: -1177-04-16  strict    -> OTHER
+    1567: -1177-04-16  strict    -> OTHER
+    1595: -1177-04-16  strict    -> OTHER
+    1601: -1177-04-16  strict    -> OTHER
+    1614: -1177-04-16  strict    -> OTHER
+    1627: -1177-04-16  strict    -> OTHER
+    1664: -1177-04-16  strict    -> OTHER
+    2017: -1177-04-16  strict    -> OTHER
+    2200: -1177-04-04,-1177-04-05  loose  star  -> OTHER
+docs/DESIGN-v3.md  [text]  37 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+    58: -1177-04-16  strict    -> OTHER
+    75: -1177-04-16  strict    -> OTHER
+    184: -1177-04-16  strict    -> OTHER
+    411: -1177-03-13  strict    -> OTHER
+    413: -1177-03-12  strict    -> OTHER
+    418: -1177-04-11  strict  conj lead venus  -> D2
+    420: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj dt  -> OTHER
+    425: -1177-04-04  loose  equinox  -> OTHER
+    438: -1177-04-16  strict  dt ecl ge mag  -> ECL
+    516: -1177-04-16  loose  ecl equinox  -> ECL
+    518: -1177-03-16  strict  elong  -> OTHER
+    527: -1177-04-16  strict  dt  -> OTHER
+    743: -1177-04-16  strict    -> OTHER
+    864: -1177-04-16  strict    -> OTHER
+    892: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj equinox lead sun venus  -> D2
+    900: -1177-04-16  strict    -> OTHER
+    1031: -1177-04-16  strict  ecl  -> ECL
+    1056: -1177-04-04  loose    -> OTHER
+    1060: -1177-04-03  loose  star  -> OTHER
+    1064: -1177-04-06  loose  equinox  -> OTHER
+    1176:   planet-list  jupiter mag mars star twl venus  -> D3
+    1258: -1177-04-16  strict    -> OTHER
+    1294: -1177-04-16  strict  ecl  -> ECL
+    1300: -1177-04-16  strict    -> OTHER
+    1365: -1177-04-16  strict    -> OTHER
+    1424: -1177-04-16  strict    -> OTHER
+    1553: -1177-04-16  strict    -> OTHER
+    2103: -1177-04-16  strict    -> OTHER
+    2163: -1177-04-16  strict    -> OTHER
+    2165: -1177-04-16  strict  riseset  -> OTHER
+    2172: -1177-04-16  strict  ecl sep  -> ECL
+    2210: -1177-04-16  strict    -> OTHER
+    2216: -1177-04-16  strict    -> OTHER
+    2266: -1177-04-16  strict    -> OTHER
+    2749: -1177-04-16  strict    -> OTHER
+    3004: -1177-04-04,-1177-04-05  loose  star  -> OTHER
+docs/DESIGN-v4.md  [text]  53 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+    81: -1177-04-16  strict    -> OTHER
+    98: -1177-04-16  strict    -> OTHER
+    229: -1177-04-16  strict    -> OTHER
+    371: -1177-04-16  strict    -> OTHER
+    389: -1177-04-16  strict    -> OTHER
+    512: -1177-03-13  strict    -> OTHER
+    514: -1177-03-12  strict    -> OTHER
+    519: -1177-04-11  strict  conj lead venus  -> D2
+    521: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj dt  -> OTHER
+    526: -1177-04-04  loose  equinox  -> OTHER
+    539: -1177-04-16  strict  dt ecl ge mag  -> ECL
+    617: -1177-04-16  loose  ecl equinox  -> ECL
+    619: -1177-03-16  strict  elong  -> OTHER
+    628: -1177-04-16  strict  dt  -> OTHER
+    802: -1177-03-26  loose    -> OTHER
+    865: -1177-04-16  strict    -> OTHER
+    905: -1177-03-31,-1177-04-04  loose    -> OTHER
+    958: -1177-04-16  strict    -> OTHER
+    963: -1177-04-16  strict    -> OTHER
+    1017: -1177-04-16  strict    -> OTHER
+    1058: -1177-04-11  strict  sun venus  -> H4-other
+    1065: -1177-04-16  strict    -> OTHER
+    1066: -1177-03-18  loose    -> OTHER
+    1178: -1177-04-16  strict    -> OTHER
+    1206: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj equinox lead sun venus  -> D2
+    1214: -1177-04-16  strict    -> OTHER
+    1225: -1177-04-16  strict    -> OTHER
+    1294: -1177-04-16  strict    -> OTHER
+    1331: -1177-04-11  strict  sun venus  -> H4-other
+    1399: -1177-04-16  strict  ecl  -> ECL
+    1424: -1177-04-04  loose    -> OTHER
+    1428: -1177-04-03  loose  star  -> OTHER
+    1432: -1177-04-06  loose  equinox  -> OTHER
+    1547:   planet-list  jupiter mag mars star twl venus  -> D3
+    1633: -1177-04-16  strict    -> OTHER
+    1691: -1177-04-16  strict  ecl  -> ECL
+    1697: -1177-04-16  strict    -> OTHER
+    1771: -1177-04-16  strict    -> OTHER
+    1852: -1177-04-16  strict    -> OTHER
+    2004: -1177-04-16  strict    -> OTHER
+    2100: -1177-04-16  strict    -> OTHER
+    2821: -1177-04-16  strict    -> OTHER
+    2823: -1177-04-16  strict  riseset  -> OTHER
+    2830: -1177-04-16  strict  ecl sep  -> ECL
+    2875: -1177-04-16  strict    -> OTHER
+    2954: -1177-04-16  strict    -> OTHER
+    2960: -1177-04-16  strict    -> OTHER
+    3355: -1177-04-16  strict    -> OTHER
+    3515: -1177-04-16  strict    -> OTHER
+    3762: -1177-04-16  strict    -> OTHER
+    3859: -1177-04-04,-1177-04-05  loose  star  -> OTHER
+    3898: -1177-04-16  strict    -> OTHER
+docs/DESIGN-v5.md  [text]  53 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+    121: -1177-04-16  strict    -> OTHER
+    138: -1177-04-16  strict    -> OTHER
+    274: -1177-04-16  strict    -> OTHER
+    416: -1177-04-16  strict    -> OTHER
+    434: -1177-04-16  strict    -> OTHER
+    561: -1177-03-13  strict    -> OTHER
+    563: -1177-03-12  strict    -> OTHER
+    568: -1177-04-11  strict  conj lead venus  -> D2
+    570: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj dt  -> OTHER
+    575: -1177-04-04  loose  equinox  -> OTHER
+    588: -1177-04-16  strict  dt ecl ge mag  -> ECL
+    675: -1177-04-16  loose  ecl equinox  -> ECL
+    677: -1177-03-16  strict  elong  -> OTHER
+    686: -1177-04-16  strict  dt  -> OTHER
+    849: -1177-03-26  loose    -> OTHER
+    912: -1177-04-16  strict    -> OTHER
+    952: -1177-03-31,-1177-04-04  loose    -> OTHER
+    1005: -1177-04-16  strict    -> OTHER
+    1010: -1177-04-16  strict    -> OTHER
+    1066: -1177-04-16  strict    -> OTHER
+    1140: -1177-04-11  strict  sun venus  -> H4-other
+    1147: -1177-04-16  strict    -> OTHER
+    1148: -1177-03-18  loose    -> OTHER
+    1262: -1177-04-16  strict    -> OTHER
+    1290: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj equinox lead sun venus  -> D2
+    1298: -1177-04-16  strict    -> OTHER
+    1309: -1177-04-16  strict    -> OTHER
+    1383: -1177-04-16  strict    -> OTHER
+    1420: -1177-04-11  strict  sun venus  -> H4-other
+    1488: -1177-04-16  strict  ecl  -> ECL
+    1513: -1177-04-04  loose    -> OTHER
+    1517: -1177-04-03  loose  star  -> OTHER
+    1521: -1177-04-06  loose  equinox  -> OTHER
+    1636:   planet-list  jupiter mag mars star twl venus  -> D3
+    1722: -1177-04-16  strict    -> OTHER
+    1780: -1177-04-16  strict  ecl  -> ECL
+    1786: -1177-04-16  strict    -> OTHER
+    1860: -1177-04-16  strict    -> OTHER
+    1941: -1177-04-16  strict    -> OTHER
+    2093: -1177-04-16  strict    -> OTHER
+    2212: -1177-04-16  strict    -> OTHER
+    3089: -1177-04-16  strict    -> OTHER
+    3091: -1177-04-16  strict  riseset  -> OTHER
+    3098: -1177-04-16  strict  ecl sep  -> ECL
+    3148: -1177-04-16  strict    -> OTHER
+    3230: -1177-04-16  strict    -> OTHER
+    3236: -1177-04-16  strict    -> OTHER
+    3706: -1177-04-16  strict    -> OTHER
+    3886: -1177-04-16  strict    -> OTHER
+    4156: -1177-04-16  strict    -> OTHER
+    4259: -1177-04-04,-1177-04-05  loose  star  -> OTHER
+    4298: -1177-04-16  strict    -> OTHER
+docs/DESIGN-v6.md  [text]  60 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+    134: -1177-04-16  strict    -> OTHER
+    151: -1177-04-16  strict    -> OTHER
+    290: -1177-04-16  strict    -> OTHER
+    368: -1177-04-16  strict    -> OTHER
+    444: -1177-04-16  strict    -> OTHER
+    464: -1177-04-16  strict    -> OTHER
+    627: -1177-03-13  strict    -> OTHER
+    629: -1177-03-12  strict    -> OTHER
+    634: -1177-04-11  strict  conj lead venus  -> D2
+    636: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj dt  -> OTHER
+    641: -1177-04-04  loose  equinox  -> OTHER
+    654: -1177-04-16  strict  dt ecl ge mag  -> ECL
+    741: -1177-04-16  loose  ecl equinox  -> ECL
+    743: -1177-03-16  strict  elong  -> OTHER
+    752: -1177-04-16  strict  dt  -> OTHER
+    952: -1177-03-26  loose    -> OTHER
+    1021: -1177-04-16  strict    -> OTHER
+    1061: -1177-03-31,-1177-04-04  loose    -> OTHER
+    1114: -1177-04-16  strict    -> OTHER
+    1119: -1177-04-16  strict    -> OTHER
+    1176: -1177-04-16  strict    -> OTHER
+    1305: -1177-04-16  strict    -> OTHER
+    1306: -1177-03-18  loose    -> OTHER
+    1442: -1177-04-16  strict    -> OTHER
+    1470: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj equinox lead sun venus  -> D2
+    1478: -1177-04-16  strict    -> OTHER
+    1489: -1177-04-16  strict    -> OTHER
+    1572: -1177-04-16  strict    -> OTHER
+    1609: -1177-04-11  strict  sun venus  -> H4-other
+    1677: -1177-04-16  strict  ecl  -> ECL
+    1704: -1177-04-04  loose    -> OTHER
+    1708: -1177-04-03  loose  star  -> OTHER
+    1712: -1177-04-06  loose  equinox  -> OTHER
+    1827:   planet-list  jupiter mag mars star twl venus  -> D3
+    1913: -1177-04-16  strict    -> OTHER
+    1971: -1177-04-16  strict  ecl  -> ECL
+    1977: -1177-04-16  strict    -> OTHER
+    2051: -1177-04-16  strict    -> OTHER
+    2132: -1177-04-16  strict    -> OTHER
+    2284: -1177-04-16  strict    -> OTHER
+    2426:   planet-list  az conj elong ge jupiter mars mercury mwra phase riseset saturn star station venus vis  -> D3
+    2431: -1177-04-16  strict  ecl moon riseset  -> ECL
+    2433:   planet-list  alt conj dt mars mercury pos riseset sep sun venus vis  -> D3
+    3275: -1177-04-16  strict  riseset  -> OTHER
+    3382: -1177-03-19  loose  az conj elong ge mercury mwra riseset station  -> D4
+    3383: -1177-03-14,-1177-04-10  strict  elong mercury twl venus  -> H3-other
+    3384: -1177-04-16  strict  ecl moon sun  -> ECL
+    3638: -1177-04-16  strict    -> OTHER
+    3640: -1177-04-16  strict  riseset  -> OTHER
+    3647: -1177-04-16  strict  ecl sep  -> ECL
+    3699: -1177-04-16  strict    -> OTHER
+    3784: -1177-04-16  strict    -> OTHER
+    3791: -1177-04-16  strict    -> OTHER
+    3800: -1177-04-16  strict    -> OTHER
+    4416: -1177-04-16  strict    -> OTHER
+    4655: -1177-04-16  strict    -> OTHER
+    4959: -1177-04-16  strict    -> OTHER
+    5068: -1177-04-04,-1177-04-05  loose  star  -> OTHER
+    5107: -1177-04-16  strict    -> OTHER
+docs/DESIGN-v7.md  [text]  60 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+    139: -1177-04-16  strict    -> OTHER
+    156: -1177-04-16  strict    -> OTHER
+    298: -1177-04-16  strict    -> OTHER
+    376: -1177-04-16  strict    -> OTHER
+    452: -1177-04-16  strict    -> OTHER
+    472: -1177-04-16  strict    -> OTHER
+    655: -1177-03-13  strict    -> OTHER
+    657: -1177-03-12  strict    -> OTHER
+    662: -1177-04-11  strict  conj lead venus  -> D2
+    664: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj dt  -> OTHER
+    669: -1177-04-04  loose  equinox  -> OTHER
+    682: -1177-04-16  strict  dt ecl ge mag  -> ECL
+    769: -1177-04-16  loose  ecl equinox  -> ECL
+    771: -1177-03-16  strict  elong  -> OTHER
+    780: -1177-04-16  strict  dt  -> OTHER
+    1007: -1177-03-26  loose    -> OTHER
+    1081: -1177-04-16  strict    -> OTHER
+    1121: -1177-03-31,-1177-04-04  loose    -> OTHER
+    1176: -1177-04-16  strict    -> OTHER
+    1181: -1177-04-16  strict    -> OTHER
+    1238: -1177-04-16  strict    -> OTHER
+    1401: -1177-04-16  strict    -> OTHER
+    1402: -1177-03-18  loose    -> OTHER
+    1559: -1177-04-16  strict    -> OTHER
+    1587: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj equinox lead sun venus  -> D2
+    1595: -1177-04-16  strict    -> OTHER
+    1606: -1177-04-16  strict    -> OTHER
+    1689: -1177-04-16  strict    -> OTHER
+    1726: -1177-04-11  strict  sun venus  -> H4-other
+    1794: -1177-04-16  strict  ecl  -> ECL
+    1825: -1177-04-04  loose    -> OTHER
+    1829: -1177-04-03  loose  star  -> OTHER
+    1833: -1177-04-06  loose  equinox  -> OTHER
+    1953:   planet-list  jupiter mag mars star twl venus  -> D3
+    2039: -1177-04-16  strict    -> OTHER
+    2100: -1177-04-16  strict  ecl  -> ECL
+    2106: -1177-04-16  strict    -> OTHER
+    2180: -1177-04-16  strict    -> OTHER
+    2261: -1177-04-16  strict    -> OTHER
+    2413: -1177-04-16  strict    -> OTHER
+    2561:   planet-list  az conj elong ge jupiter mars mercury mwra phase riseset saturn star station venus vis  -> D3
+    2566: -1177-04-16  strict  ecl moon riseset  -> ECL
+    2568:   planet-list  alt conj dt mars mercury pos riseset sep sun venus vis  -> D3
+    3573: -1177-04-16  strict  riseset  -> OTHER
+    3693: -1177-03-19  loose  az conj elong ge mercury mwra riseset station  -> D4
+    3694: -1177-03-14,-1177-04-10  strict  elong mercury twl venus  -> H3-other
+    3695: -1177-04-16  strict  ecl moon sun  -> ECL
+    4009: -1177-04-16  strict    -> OTHER
+    4011: -1177-04-16  strict  riseset  -> OTHER
+    4018: -1177-04-16  strict  ecl sep  -> ECL
+    4072: -1177-04-16  strict    -> OTHER
+    4165: -1177-04-16  strict    -> OTHER
+    4172: -1177-04-16  strict    -> OTHER
+    4183: -1177-04-16  strict    -> OTHER
+    4884: -1177-04-16  strict    -> OTHER
+    5160: -1177-04-16  strict    -> OTHER
+    5474: -1177-04-16  strict    -> OTHER
+    5591: -1177-04-04,-1177-04-05  loose  star  -> OTHER
+    5630: -1177-04-16  strict    -> OTHER
+docs/research-bm2008-a.md  [text]  12 hit(s)
+    29: -1177-04-16  strict  conj ecl mercury moon star sun venus  -> H3-other
+    180: -1177-04-01,-1177-04-04,-1177-04-05  loose  conj equinox riseset star vis  -> OTHER
+    182: -1177-04-01,-1177-04-05  loose  equinox  -> OTHER
+    217: -1177-04-16  strict    -> OTHER
+    286: -1177-04-16  strict  conj ecl moon sun  -> ECL
+    305: -1177-04-16  strict  ecl  -> ECL
+    313: -1177-04-16  strict  ecl  -> ECL
+    315:   planet-list  jupiter mag mars mercury saturn venus  -> D3
+    337: -1177-04-16  strict  ecl  -> ECL
+    345: -1177-04-12  strict    -> OTHER
+    346: -1177-04-16  strict    -> OTHER
+    363: -1177-04-04,-1177-04-05  loose  conj  -> OTHER
+docs/research-bm2008-b.md  [text]  13 hit(s)
+    42: -1177-04-16  strict  ecl sun  -> ECL
+    50: -1177-04-16  strict    -> OTHER
+    143: -1177-04-04,-1177-04-16  loose  vis  -> OTHER
+    158: -1177-04-11  loose  lead mag riseset venus  -> D2
+    192: -1177-04-01,-1177-04-05,-1177-04-15  loose  equinox  -> OTHER
+    309: -1177-04-12,-1177-04-16  loose  conj  -> OTHER
+    323: -1177-04-16  strict    -> OTHER
+    381: -1177-04-16  strict  equinox lead mwra venus  -> OTHER
+    396: -1177-04-16  strict    -> OTHER
+    410:   planet-list  jupiter mag mars mercury pos saturn venus vis  -> D3
+    439: -1177-04-16  strict  ecl  -> ECL
+    461: -1177-04-03,-1177-04-04,-1177-04-05  loose  star vis  -> OTHER
+    471: -1177-03-18  strict  conj moon  -> OTHER
+docs/research-bm2008.md  [text]  15 hit(s)
+    49: -1177-04-16  strict    -> OTHER
+    59: -1177-04-16  strict  conj mercury moon star venus  -> H3-other
+    106: -1177-04-01  strict  equinox pos sun  -> OTHER
+    296: -1177-03-13,-1177-03-19  strict  elong ge station  -> OTHER
+    314: -1177-03-12,-1177-03-13  loose  az conj mercury mwra riseset vis  -> D4
+    331: -1177-04-01,-1177-04-04,-1177-04-05  loose  conj  -> OTHER
+    337: -1177-04-01,-1177-04-05  loose  equinox  -> OTHER
+    423: -1177-04-16  strict    -> OTHER
+    469: -1177-03-13  strict  mercury riseset sun  -> OTHER
+    494: -1177-04-16  jd  conj dt ecl  -> ECL
+    548: -1177-04-16  strict  ecl  -> ECL
+    575: -1177-04-16  strict  ecl ge phase  -> ECL
+    588: -1177-04-12,-1177-04-16  strict    -> OTHER
+    596:   planet-list  jupiter mag mars mercury saturn venus  -> D3
+    621: -1177-03-19  strict  az ge mwra riseset station  -> OTHER
+docs/research-chronology.md  [text]  3 hit(s)
+    62: -1177-04-16  strict    -> OTHER
+    65: -1177-04-16  strict    -> OTHER
+    115: -1177-03-13,-1177-03-18,-1177-04-05,-1177-04-11  loose    -> OTHER
+docs/research-controls.md  [text]  1 hit(s)
+    65: -1177-04-16  strict  dt ecl mag  -> ECL
+docs/research-critiques.md  [text]  13 hit(s)
+    7: -1177-04-16  strict  ecl sun  -> ECL
+    29: -1177-04-16  strict  ecl mag sun  -> ECL
+    70: -1177-04-16  strict  ecl sun  -> ECL
+    74: -1177-04-12,-1177-04-16  strict    -> OTHER
+    110: -1177-04-16  strict  equinox riseset twl venus  -> OTHER
+    133: -1177-04-16  strict    -> OTHER
+    135: -1177-04-16  strict  ecl  -> ECL
+    140: -1177-04-05,-1177-04-16  strict    -> OTHER
+    141: -1177-04-16  jd  ecl ge  -> ECL
+    174: -1177-04-16  strict  ecl  -> ECL
+    213: -1177-04-16  strict    -> OTHER
+    414: -1177-04-16  strict  ecl  -> ECL
+    448: -1177-04-16  strict    -> OTHER
+docs/research-ephemeris.md  [text]  37 hit(s)
+    7: -1177-04-16  strict  ecl  -> ECL
+    85: -1177-04-16  strict  ecl  -> ECL
+    245: -1177-04-16  strict    -> OTHER
+    369: -1177-04-16  strict  ecl ge  -> ECL
+    419: -1177-04-16  strict  ecl  -> ECL
+    519: -1177-04-16  strict  ecl ge  -> ECL
+    552: -1177-04-10  strict  mercury twl venus  -> H3-other
+    553: -1177-03-14  strict  mercury twl venus  -> OTHER
+    555: -1177-04-16  strict  moon sun  -> OTHER
+    570: -1177-04-10  strict  mercury venus  -> H3-other
+    641:   planet-list  dt elong jupiter mars mercury moon pos saturn star sun venus  -> D3
+    663: -1177-04-16  strict    -> OTHER
+    702: -1177-04-16  strict    -> OTHER
+    754: -1177-04-16  strict  dt  -> OTHER
+    762: -1177-03-18  strict  dt  -> OTHER
+    778: -1177-04-16  strict  dt  -> OTHER
+    834: -1177-04-16  strict    -> OTHER
+    941: -1177-04-16  strict  conj ecl  -> ECL
+    950: -1177-04-10  strict  venus  -> H4-other
+    951: -1177-04-10  strict  venus  -> H4-other
+    952: -1177-04-10  strict  venus  -> H4-other
+    953: -1177-04-10  strict  mercury  -> H3-other
+    954: -1177-04-10  strict  mercury  -> H3-other
+    955: -1177-04-10  strict  mercury  -> H3-other
+    956: -1177-03-14  strict  venus  -> OTHER
+    957: -1177-03-14  strict  venus  -> OTHER
+    958: -1177-03-14  strict  venus  -> OTHER
+    959: -1177-03-14  strict  mercury  -> OTHER
+    960: -1177-03-14  strict  mercury  -> OTHER
+    961: -1177-03-14  strict  mercury  -> OTHER
+    968: -1177-04-16  strict  sun  -> OTHER
+    969: -1177-04-16  strict  sun  -> OTHER
+    970: -1177-04-16  strict  sun  -> OTHER
+    971: -1177-04-16  strict  moon  -> OTHER
+    972: -1177-04-16  strict  moon  -> OTHER
+    973: -1177-04-16  strict  moon  -> OTHER
+    1044: -1177-04-16  strict  ecl moon phase  -> ECL
+docs/research-textclues.md  [text]  8 hit(s)
+    11: -1177-04-16  strict    -> OTHER
+    99: -1177-04-12  strict  moon phase riseset  -> H2
+    140: -1177-04-01  strict  conj ecl equinox moon  -> OTHER
+    215: -1177-04-16  strict  conj  -> OTHER
+    248: -1177-04-09  strict    -> OTHER
+    261: -1177-04-12  strict  conj moon phase riseset sun  -> H2
+    365: -1177-04-16  strict  dt moon  -> OTHER
+    523: -1177-04-11  strict    -> OTHER
+docs/research-unread-primaries.md  [text]  18 hit(s)
+    25: -1177-04-16  loose    -> OTHER
+    35: -1177-03-16  strict  elong ge venus  -> OTHER
+    40: -1177-04-16  strict    -> OTHER
+    56: -1177-04-16  strict    -> OTHER
+    113: -1177-04-16  strict  ecl  -> ECL
+    141: -1177-04-16  strict  ecl  -> ECL
+    154: -1177-04-12,-1177-04-16  loose    -> OTHER
+    173: -1177-03-16  strict  elong ge  -> OTHER
+    175: -1177-04-11  strict  conj sun venus  -> H4-other
+    176: -1177-04-03  loose  riseset star twl vis  -> OTHER
+    187: -1177-04-16  strict  ecl sun  -> ECL
+    192: -1177-04-12,-1177-04-16  strict    -> OTHER
+    247: -1177-04-16  strict    -> OTHER
+    271: -1177-04-14  strict  equinox  -> OTHER
+    281: -1177-04-16  strict    -> OTHER
+    286: -1177-04-16  strict    -> OTHER
+    335: -1177-03-14  strict  mercury vis  -> OTHER
+    349: -1177-04-16  strict    -> OTHER
+docs/research-visibility.md  [text]  9 hit(s)
+    16: -1177-04-16  strict    -> OTHER
+    82: -1177-03-13  strict  az mercury mwra riseset  -> D4
+    84: -1177-03-25,-1177-04-02  loose  ge station  -> OTHER
+    111: -1177-03-18  loose  conj ecl mercury moon venus  -> OTHER
+    184: -1177-04-11  strict  lead mag sun venus  -> D2
+    295: -1177-03-13  strict    -> OTHER
+    305: -1177-04-16  strict  az mwra riseset star  -> OTHER
+    306: -1177-04-02  loose  ge station  -> OTHER
+    505: -1177-04-03,-1177-04-04,-1177-04-06  loose  conj star vis  -> OTHER
+docs/research-window.md  [text]  6 hit(s)
+    10: -1177-04-16  strict    -> OTHER
+    40: -1177-04-16  strict  dt ecl pos  -> ECL
+    76: -1177-04-16  strict  ecl  -> ECL
+    91: -1177-04-16  strict  equinox  -> OTHER
+    93: -1177-04-16  strict  ecl ge mag  -> ECL
+    213: -1177-04-16  strict  alt dt ecl mag pos sun  -> ECL
+docs/research_visibility_calc.py  [text]  3 hit(s)
+    376: -1177-03-13  strict  mercury vis  -> OTHER
+    404: -1177-03-13  strict    -> OTHER
+    955: -1177-03-13  strict  az mercury vis  -> D4
+docs/textclues-scripts/moon.py  [text]  2 hit(s)
+    60: -1177-04-16  strict  conj  -> OTHER
+    70: -1177-03-13,-1177-03-19,-1177-04-12,-1177-04-13,-1177-04-16  loose    -> OTHER
+results/bm2008-reconcile/check_extras.out.txt  [text]  4 hit(s)
+    1: -1177-03-18  strict  conj dt  -> OTHER
+    2: -1177-04-16  strict  conj dt  -> OTHER
+    3: -1177-04-01  strict  dt equinox  -> OTHER
+    4: -1177-03-18  strict  sun  -> OTHER
+results/bm2008-reconcile/check_extras.py  [text]  1 hit(s)
+    29: -1177-03-18  strict  sun  -> OTHER
+results/controls/hzcache/0a3544099a35090dcd07ff06d0ab93ee.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/0b55dcebced6bdd7dd53bb53f4cbbaa8.txt  [horizons]  1 hit(s)
+    42-241: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/0d771dc1bd4c84e30b9e9bf8cbabffcd.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/13f9e12d26b84660307fa918c91ed0d1.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/14ea6ec31e818eda4762c725bdc5bf6f.txt  [horizons]  1 hit(s)
+    42-241: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/16b5da9fe6cdc842d0ec1f8ab5b31371.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/19a459b7f10a4add62c4445e73946272.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/1cd79a50309175a508754f905be2fa56.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/228b852851efaf8325c3fafb050a628e.txt  [horizons]  1 hit(s)
+    42-281: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/2d2ecbc7c6ebd36fd75dbb5e9c031923.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/2dce4b7d9d2c6de1b95df7ae42d98acd.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/2e9b979d979103bd2a30175d848b5f4f.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/2f44a069633777131bfb0e6e00ccc56f.txt  [horizons]  1 hit(s)
+    42-282: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/323ea4ba1e1af70c714bf5d71d1bd802.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/338f3407dee7242921e9aaada2bd3ff1.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/36e60c3a1fde4adcd9615a7a9482eddf.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/3807630a9311987a76d80694d9e6bbb8.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/3a60444b862e93284752a6ca06515b51.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/40148e610a0e26446a969780112056c3.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/450198cbdd9155b1aa7cf64c864399f9.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/4542405441675c99f1301123edb850e6.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/4f3a59f308b7216bc5330cefc4927bca.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/5393730f60818131ae7264d56618014a.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/556b2e59aedb3434b60f5acfd2e9ae79.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/5b485523de4e4dd76ab4279fd5d23e0b.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/60dda44b6279f3420ffeaa7079ecc964.txt  [horizons]  1 hit(s)
+    42-241: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/6438760b225f61c54e26c06668143584.txt  [horizons]  1 hit(s)
+    42-282: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/64445ee6676eb65d564b531cc01a208c.txt  [horizons]  1 hit(s)
+    42-281: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/6beaed4c5996942a28b83360de7a3e8d.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/6bff338edf6d697f2f54fea0469043cb.txt  [horizons]  1 hit(s)
+    42-281: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/71149055d35b7674e6e4414d3b51770f.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/7698c0b974c3f146dcaedb3178dd121d.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/79da3eda76255417e7f33ae1c6b92f90.txt  [horizons]  1 hit(s)
+    42-282: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/83c08ab4c0a63d0be77bb8e9264e9782.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/875d2306986cc7bf6ed4a72e9162b0c5.txt  [horizons]  1 hit(s)
+    42-241: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/969040eebf20a52ecb97ad0d265e8af1.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/9c0a60b78e6123707430012c313bf73b.txt  [horizons]  1 hit(s)
+    42-241: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/9e5bd021393169a617ce54ebc8947030.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/a61af287e0c31e325562598618c1f0c2.txt  [horizons]  1 hit(s)
+    42-43: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/a8c5c318dd36e4dc9ccca601d85f3dd4.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/b15cb09238f8b2f9b22a1c40c3f51d3a.txt  [horizons]  1 hit(s)
+    42-241: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/b41683bb13728e7ed6a09fc8910971a9.txt  [horizons]  1 hit(s)
+    42-43: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/b4b502034553347688da308be1b7e552.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/b56a5c01fcb267a9e06dce86a126e2c3.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/b8291c813d60edebada2fad422b89b13.txt  [horizons]  1 hit(s)
+    42-241: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/b8d24a009e308ad538479c6a1bb54e90.txt  [horizons]  1 hit(s)
+    42-282: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/c08a9ca5027d5c1c475a6e98f8b50529.txt  [horizons]  1 hit(s)
+    42-402: -1177-04-16  horizons  horizons Q=? sun  -> OTHER
+results/controls/hzcache/c8a0c304df95654352d90c53bfc63fa7.txt  [horizons]  1 hit(s)
+    42-281: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/e4931e12c0bb390c3a75993930e0854d.txt  [horizons]  1 hit(s)
+    42-242: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/hzcache/e60fdf6bf296c473f6c0619b596c82ed.txt  [horizons]  1 hit(s)
+    42-241: -1177-04-16  horizons  horizons Q=? moon  -> OTHER
+results/controls/nasa/LEcat5_LE-1199--1100.txt  [text]  1 hit(s)
+    296: -1177-04-01  strict    -> OTHER
+results/controls/nasa/SEcat5_SE-1199--1100.txt  [text]  1 hit(s)
+    351: -1177-04-16  strict    -> OTHER
+results/controls/run_extra.out.txt  [text]  1 hit(s)
+    1: -1177-04-16  strict  dt mag pos  -> OTHER
+results/controls/run_extra.py  [text]  1 hit(s)
+    8: -1177-04-16  strict  dt mag pos  -> OTHER
+results/controls/run_solar.out.txt  [text]  2 hit(s)
+    1: -1177-04-16  strict    -> OTHER
+    2: -1177-04-16  strict  dt  -> OTHER
+results/controls/run_solar.py  [text]  1 hit(s)
+    7: -1177-04-16  strict    -> OTHER
+results/critique-design/check_mag09.py  [text]  1 hit(s)
+    1: -1177-04-16  strict  dt mag  -> OTHER
+results/critique-design/check_mwra.out.txt  [text]  13 hit(s)
+    3: -1177-03-07  strict  az riseset  -> OTHER
+    4: -1177-03-08  strict  az riseset  -> OTHER
+    5: -1177-03-09  strict  az riseset  -> OTHER
+    6: -1177-03-10  strict  az riseset  -> OTHER
+    7: -1177-03-11  strict  az riseset  -> OTHER
+    8: -1177-03-12  strict  az riseset  -> OTHER
+    9: -1177-03-13  strict  az riseset  -> OTHER
+    10: -1177-03-14  strict  az riseset  -> OTHER
+    11: -1177-03-15  strict  az riseset  -> OTHER
+    12: -1177-03-16  strict  az riseset  -> OTHER
+    13: -1177-03-17  strict  az riseset  -> OTHER
+    14: -1177-03-18  strict  az riseset  -> OTHER
+    15: -1177-03-19  strict  az riseset  -> OTHER
+results/critique-design/check_venus.out.txt  [text]  1 hit(s)
+    1: -1177-04-11  strict  lead riseset venus  -> D2
+results/critique-design-r1/check_ranc_season.out.txt  [text]  1 hit(s)
+    2: -1177-04-16  strict  conj pos sun  -> OTHER
+results/critique-design-r1/check_ranc_season.py  [text]  1 hit(s)
+    5: -1177-04-16  strict  equinox  -> OTHER
+results/critique-design-r1/v5/scan_public_leaks.out.txt  [text]  1 hit(s)
+    35: -1177-04-16  strict    -> OTHER
+results/critique-design-r2/check_gbm.out.txt  [text]  41 hit(s)
+    1: -1177-04-16  strict    -> OTHER
+    6: -1177-04-16  strict  mwra  -> OTHER
+    7: -1177-04-16  strict  mwra  -> OTHER
+    8: -1177-04-16  strict    -> OTHER
+    9: -1177-04-16  strict    -> OTHER
+    17: -1177-04-16  strict  mwra  -> OTHER
+    18: -1177-04-16  strict  mwra  -> OTHER
+    19: -1177-04-16  strict  mwra  -> OTHER
+    20: -1177-04-16  strict  mwra  -> OTHER
+    21: -1177-04-16  strict  mwra  -> OTHER
+    22: -1177-04-16  strict  mwra  -> OTHER
+    23: -1177-04-16  strict  ge  -> OTHER
+    24: -1177-04-16  strict  ge  -> OTHER
+    25: -1177-04-16  strict  ge  -> OTHER
+    26: -1177-04-16  strict  ge  -> OTHER
+    27: -1177-04-16  strict  ge  -> OTHER
+    28: -1177-04-16  strict  ge  -> OTHER
+    29: -1177-04-16  strict  station  -> OTHER
+    30: -1177-04-16  strict  station  -> OTHER
+    31: -1177-04-16  strict  station  -> OTHER
+    32: -1177-04-16  strict  station  -> OTHER
+    33: -1177-04-16  strict  station  -> OTHER
+    34: -1177-04-16  strict  station  -> OTHER
+    35: -1177-04-16  strict  mwra  -> OTHER
+    36: -1177-04-16  strict  mwra  -> OTHER
+    37: -1177-04-16  strict  mwra  -> OTHER
+    38: -1177-04-16  strict  mwra  -> OTHER
+    39: -1177-04-16  strict  mwra  -> OTHER
+    40: -1177-04-16  strict  mwra  -> OTHER
+    41: -1177-04-16  strict  ge  -> OTHER
+    42: -1177-04-16  strict  ge  -> OTHER
+    43: -1177-04-16  strict  ge  -> OTHER
+    44: -1177-04-16  strict  ge  -> OTHER
+    45: -1177-04-16  strict  ge  -> OTHER
+    46: -1177-04-16  strict  ge  -> OTHER
+    47: -1177-04-16  strict  station  -> OTHER
+    48: -1177-04-16  strict  station  -> OTHER
+    49: -1177-04-16  strict  station  -> OTHER
+    50: -1177-04-16  strict  station  -> OTHER
+    51: -1177-04-16  strict  station  -> OTHER
+    52: -1177-04-16  strict  station  -> OTHER
+results/critique-design-r2/check_gbm.py  [text]  5 hit(s)
+    6: -1177-04-16  strict    -> OTHER
+    16: -1177-04-04  loose    -> OTHER
+    267: -1177-04-16  strict    -> OTHER
+    337: -1177-04-16  strict    -> OTHER
+    370: -1177-04-16  strict    -> OTHER
+results/critique-design-r2/check_gbm.rows.json  [json]  4 hit(s)
+    $[636].jt: -1177-03-18  jd  lead mwra station  -> OTHER
+    $[636].jdn: -1177-03-18  jd  lead mwra station  -> OTHER
+    $[637].jt: -1177-04-16  jd  lead mwra station  -> OTHER
+    $[637].jdn: -1177-04-16  jd  lead mwra station  -> OTHER
+results/critique-design-r2/check_gbm_full.out.txt  [text]  41 hit(s)
+    7: -1177-04-16  strict    -> OTHER
+    12: -1177-04-16  strict  mwra  -> OTHER
+    13: -1177-04-16  strict  mwra  -> OTHER
+    14: -1177-04-16  strict    -> OTHER
+    15: -1177-04-16  strict    -> OTHER
+    23: -1177-04-16  strict  mwra  -> OTHER
+    24: -1177-04-16  strict  mwra  -> OTHER
+    25: -1177-04-16  strict  mwra  -> OTHER
+    26: -1177-04-16  strict  mwra  -> OTHER
+    27: -1177-04-16  strict  mwra  -> OTHER
+    28: -1177-04-16  strict  mwra  -> OTHER
+    29: -1177-04-16  strict  ge  -> OTHER
+    30: -1177-04-16  strict  ge  -> OTHER
+    31: -1177-04-16  strict  ge  -> OTHER
+    32: -1177-04-16  strict  ge  -> OTHER
+    33: -1177-04-16  strict  ge  -> OTHER
+    34: -1177-04-16  strict  ge  -> OTHER
+    35: -1177-04-16  strict  station  -> OTHER
+    36: -1177-04-16  strict  station  -> OTHER
+    37: -1177-04-16  strict  station  -> OTHER
+    38: -1177-04-16  strict  station  -> OTHER
+    39: -1177-04-16  strict  station  -> OTHER
+    40: -1177-04-16  strict  station  -> OTHER
+    41: -1177-04-16  strict  mwra  -> OTHER
+    42: -1177-04-16  strict  mwra  -> OTHER
+    43: -1177-04-16  strict  mwra  -> OTHER
+    44: -1177-04-16  strict  mwra  -> OTHER
+    45: -1177-04-16  strict  mwra  -> OTHER
+    46: -1177-04-16  strict  mwra  -> OTHER
+    47: -1177-04-16  strict  ge  -> OTHER
+    48: -1177-04-16  strict  ge  -> OTHER
+    49: -1177-04-16  strict  ge  -> OTHER
+    50: -1177-04-16  strict  ge  -> OTHER
+    51: -1177-04-16  strict  ge  -> OTHER
+    52: -1177-04-16  strict  ge  -> OTHER
+    53: -1177-04-16  strict  station  -> OTHER
+    54: -1177-04-16  strict  station  -> OTHER
+    55: -1177-04-16  strict  station  -> OTHER
+    56: -1177-04-16  strict  station  -> OTHER
+    57: -1177-04-16  strict  station  -> OTHER
+    58: -1177-04-16  strict  station  -> OTHER
+results/critique-design-r2/check_gbm_full.rows.json  [json]  4 hit(s)
+    $[917].jt: -1177-03-18  jd  lead mwra station  -> OTHER
+    $[917].jdn: -1177-03-18  jd  lead mwra station  -> OTHER
+    $[918].jt: -1177-04-16  jd  lead mwra station  -> OTHER
+    $[918].jdn: -1177-04-16  jd  lead mwra station  -> OTHER
+results/critique-design-r2/check_ranc_p19.py  [text]  1 hit(s)
+    7: -1177-04-01  loose    -> OTHER
+results/critique-design-r2/check_slot_scaling.py  [text]  1 hit(s)
+    15: -1177-04-16  strict    -> OTHER
+results/critique-design-r2/v6/scan_public_leaks_v6.out.txt  [text]  1 hit(s)
+    35: -1177-04-16  strict    -> OTHER
+results/critique-design-r3/i2c_table_gap.py  [text]  1 hit(s)
+    6: -1177-04-16  strict  ecl  -> ECL
+results/data-acquisition/check_jsex.out.txt  [text]  1 hit(s)
+    70: -1177-04-16  strict  alt mag pos  -> OTHER
+results/data-acquisition/check_jsex.py  [text]  1 hit(s)
+    154: -1177-04-16  strict    -> OTHER
+results/data-acquisition/debug_jsex.py  [text]  1 hit(s)
+    13: -1177-04-16  jd    -> OTHER
+results/data-acquisition/ephem_orig.py  [text]  3 hit(s)
+    85: -1177-04-16  jd    -> OTHER
+    113: -1177-04-16  strict    -> OTHER
+    211: -1177-04-16  strict  ecl  -> ECL
+results/data-acquisition/validate_coverage.out.txt  [text]  2 hit(s)
+    61: -1177-04-10,-1177-04-16  strict  dt venus  -> H4-other
+    146: -1177-04-10  strict  alt star  -> OTHER
+results/data-acquisition/validate_ephem.after.txt  [text]  25 hit(s)
+    17: -1177-04-16  strict    -> D5-output
+    56: -1177-04-16  strict    -> D5-output
+    108: -1177-04-16  strict  dt  -> D5-output
+    116: -1177-03-18  strict  dt  -> D5-output
+    132: -1177-04-16  strict  dt  -> D5-output
+    188: -1177-04-16  strict    -> D5-output
+    295: -1177-04-16  strict  conj ecl  -> D5-output
+    304: -1177-04-10  strict  venus  -> D5-output
+    305: -1177-04-10  strict  venus  -> D5-output
+    306: -1177-04-10  strict  venus  -> D5-output
+    307: -1177-04-10  strict  mercury  -> D5-output
+    308: -1177-04-10  strict  mercury  -> D5-output
+    309: -1177-04-10  strict  mercury  -> D5-output
+    310: -1177-03-14  strict  venus  -> D5-output
+    311: -1177-03-14  strict  venus  -> D5-output
+    312: -1177-03-14  strict  venus  -> D5-output
+    313: -1177-03-14  strict  mercury  -> D5-output
+    314: -1177-03-14  strict  mercury  -> D5-output
+    315: -1177-03-14  strict  mercury  -> D5-output
+    322: -1177-04-16  strict  sun  -> D5-output
+    323: -1177-04-16  strict  sun  -> D5-output
+    324: -1177-04-16  strict  sun  -> D5-output
+    325: -1177-04-16  strict  moon  -> D5-output
+    326: -1177-04-16  strict  moon  -> D5-output
+    327: -1177-04-16  strict  moon  -> D5-output
+results/data-acquisition/validate_ephem.after1.txt  [text]  25 hit(s)
+    17: -1177-04-16  strict    -> D5-output
+    56: -1177-04-16  strict    -> D5-output
+    108: -1177-04-16  strict  dt  -> D5-output
+    116: -1177-03-18  strict  dt  -> D5-output
+    132: -1177-04-16  strict  dt  -> D5-output
+    188: -1177-04-16  strict    -> D5-output
+    295: -1177-04-16  strict  conj ecl  -> D5-output
+    304: -1177-04-10  strict  venus  -> D5-output
+    305: -1177-04-10  strict  venus  -> D5-output
+    306: -1177-04-10  strict  venus  -> D5-output
+    307: -1177-04-10  strict  mercury  -> D5-output
+    308: -1177-04-10  strict  mercury  -> D5-output
+    309: -1177-04-10  strict  mercury  -> D5-output
+    310: -1177-03-14  strict  venus  -> D5-output
+    311: -1177-03-14  strict  venus  -> D5-output
+    312: -1177-03-14  strict  venus  -> D5-output
+    313: -1177-03-14  strict  mercury  -> D5-output
+    314: -1177-03-14  strict  mercury  -> D5-output
+    315: -1177-03-14  strict  mercury  -> D5-output
+    322: -1177-04-16  strict  sun  -> D5-output
+    323: -1177-04-16  strict  sun  -> D5-output
+    324: -1177-04-16  strict  sun  -> D5-output
+    325: -1177-04-16  strict  moon  -> D5-output
+    326: -1177-04-16  strict  moon  -> D5-output
+    327: -1177-04-16  strict  moon  -> D5-output
+results/data-acquisition/validate_ephem.before.txt  [text]  25 hit(s)
+    17: -1177-04-16  strict    -> D5-output
+    56: -1177-04-16  strict    -> D5-output
+    108: -1177-04-16  strict  dt  -> D5-output
+    116: -1177-03-18  strict  dt  -> D5-output
+    132: -1177-04-16  strict  dt  -> D5-output
+    188: -1177-04-16  strict    -> D5-output
+    295: -1177-04-16  strict  conj ecl  -> D5-output
+    304: -1177-04-10  strict  venus  -> D5-output
+    305: -1177-04-10  strict  venus  -> D5-output
+    306: -1177-04-10  strict  venus  -> D5-output
+    307: -1177-04-10  strict  mercury  -> D5-output
+    308: -1177-04-10  strict  mercury  -> D5-output
+    309: -1177-04-10  strict  mercury  -> D5-output
+    310: -1177-03-14  strict  venus  -> D5-output
+    311: -1177-03-14  strict  venus  -> D5-output
+    312: -1177-03-14  strict  venus  -> D5-output
+    313: -1177-03-14  strict  mercury  -> D5-output
+    314: -1177-03-14  strict  mercury  -> D5-output
+    315: -1177-03-14  strict  mercury  -> D5-output
+    322: -1177-04-16  strict  sun  -> D5-output
+    323: -1177-04-16  strict  sun  -> D5-output
+    324: -1177-04-16  strict  sun  -> D5-output
+    325: -1177-04-16  strict  moon  -> D5-output
+    326: -1177-04-16  strict  moon  -> D5-output
+    327: -1177-04-16  strict  moon  -> D5-output
+results/design-check-v8/check_v8.py  [text]  1 hit(s)
+    7: -1177-04-16  strict  sep  -> OTHER
+results/design-revision-r2/parts/p00_head.md  [text]  1 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+results/design-revision-r2/parts/p10_software.md  [text]  1 hit(s)
+    289: -1177-04-16  strict    -> OTHER
+results/design-revision-r2/parts/p13_open.md  [text]  1 hit(s)
+    9: -1177-04-04,-1177-04-05  loose  star  -> OTHER
+results/design-revision-r2/parts/p26_known_controls.md  [text]  1 hit(s)
+    183: -1177-04-16  strict    -> OTHER
+results/design-revision-r2/parts/p53_garden.md  [text]  6 hit(s)
+    33:   planet-list  jupiter mag mars star twl venus  -> D3
+    115: -1177-04-16  strict    -> OTHER
+    151: -1177-04-16  strict  conj ecl moon  -> ECL
+    157: -1177-04-16  strict    -> OTHER
+    219: -1177-04-16  strict    -> OTHER
+    278: -1177-04-16  strict    -> OTHER
+results/design-revision-r2/parts/p57_evidence.md  [text]  1 hit(s)
+    56: -1177-04-16  strict    -> OTHER
+results/design-revision-r2/parts/p7_heldout.md  [text]  1 hit(s)
+    6: -1177-04-16  strict    -> OTHER
+results/design-revision-r2/parts/p8_predictions.md  [text]  6 hit(s)
+    18: -1177-04-16  strict    -> OTHER
+    20: -1177-04-16  strict  riseset  -> OTHER
+    27: -1177-04-16  strict  ecl sep  -> ECL
+    65: -1177-04-16  strict    -> OTHER
+    71: -1177-04-16  strict    -> OTHER
+    121: -1177-04-16  strict    -> OTHER
+results/design-revision-r3/heldout_attain.py  [text]  1 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+results/design-revision-r3/parts/00_header.md  [text]  1 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+results/design-revision-r3/parts/12_freeze.md  [text]  1 hit(s)
+    131: -1177-04-16  strict    -> OTHER
+results/design-revision-r3/parts/13_outcomes.md  [text]  2 hit(s)
+    6: -1177-04-16  strict    -> OTHER
+    24: -1177-04-16  strict    -> OTHER
+results/design-revision-r3/parts/210_imply.md  [text]  3 hit(s)
+    15: -1177-04-11  strict  sun venus  -> H4-other
+    22: -1177-04-16  strict    -> OTHER
+    23: -1177-03-18  loose    -> OTHER
+results/design-revision-r3/parts/27_settled.md  [text]  1 hit(s)
+    20: -1177-03-26  loose    -> OTHER
+results/design-revision-r3/parts/29_known.md  [text]  4 hit(s)
+    19: -1177-03-31,-1177-04-04  loose    -> OTHER
+    72: -1177-04-16  strict    -> OTHER
+    77: -1177-04-16  strict    -> OTHER
+    131: -1177-04-16  strict    -> OTHER
+results/design-revision-r3/parts/35_t0.md  [text]  2 hit(s)
+    6: -1177-04-16  strict    -> OTHER
+    17: -1177-04-16  strict    -> OTHER
+results/design-revision-r3/parts/42_pools.md  [text]  2 hit(s)
+    21: -1177-04-16  strict    -> OTHER
+    58: -1177-04-11  strict  sun venus  -> H4-other
+results/design-revision-r3/parts/54_n4.md  [text]  1 hit(s)
+    71: -1177-04-16  strict    -> OTHER
+results/design-revision-r3/parts/61_instr.md  [text]  1 hit(s)
+    46: -1177-04-16  strict    -> OTHER
+results/design-revision-r3/parts/8_predictions.md  [text]  4 hit(s)
+    22: -1177-04-16  strict    -> OTHER
+    24: -1177-04-16  strict  riseset  -> OTHER
+    31: -1177-04-16  strict  ecl sep  -> ECL
+    76: -1177-04-16  strict    -> OTHER
+results/design-revision-r3/parts/9_rule.md  [text]  2 hit(s)
+    16: -1177-04-16  strict    -> OTHER
+    22: -1177-04-16  strict    -> OTHER
+results/design-revision-v5/critique-design-r1.recheck-of-rev2.md  [text]  3 hit(s)
+    82: -1177-04-06  loose    -> OTHER
+    427: -1177-04-01,-1177-04-06,-1177-04-15  loose  equinox  -> OTHER
+    428: -1177-04-16  strict  conj pos sun  -> OTHER
+results/design-revision-v5/critique-design-r2.recheck-of-rev3.md  [text]  8 hit(s)
+    105: -1177-04-04  loose  mag star vis  -> OTHER
+    161: -1177-04-16  strict    -> OTHER
+    168: -1177-04-04  loose    -> OTHER
+    205: -1177-04-16  strict    -> OTHER
+    275: -1177-04-16  strict    -> OTHER
+    285: -1177-03-26,-1177-04-02  loose  lead mwra  -> OTHER
+    456: -1177-03-31,-1177-04-04,-1177-04-06  loose    -> OTHER
+    467: -1177-03-13,-1177-03-19  loose  ge mwra station  -> OTHER
+results/design-revision-v5/heldout_strata.py  [text]  1 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+results/design-revision-v6/critique-design-r1.recheck-of-rev5.md  [text]  2 hit(s)
+    286: -1177-04-10  strict  mercury  -> H3-other
+    701: -1177-04-10  strict  mercury  -> H3-other
+results/design-revision-v6/heldout_epochs.py  [text]  1 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+results/design-revision-v6/parts/00_header.md  [text]  1 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+results/design-revision-v6/parts/13_outcomes.md  [text]  2 hit(s)
+    8: -1177-04-16  strict    -> OTHER
+    28: -1177-04-16  strict    -> OTHER
+results/design-revision-v6/parts/210_implied.md  [text]  2 hit(s)
+    32: -1177-04-16  strict    -> OTHER
+    33: -1177-03-18  loose    -> OTHER
+results/design-revision-v6/parts/61_instr.md  [text]  3 hit(s)
+    61:   planet-list  az conj elong ge jupiter mars mercury mwra phase riseset saturn star station venus vis  -> D3
+    66: -1177-04-16  strict  ecl moon riseset  -> ECL
+    68:   planet-list  alt conj dt mars mercury pos riseset sep sun venus vis  -> D3
+results/design-revision-v6/parts/7_heldout.md  [text]  3 hit(s)
+    55: -1177-03-19  loose  az conj elong ge mercury mwra riseset station  -> D4
+    56: -1177-03-14,-1177-04-10  strict  elong mercury twl venus  -> H3-other
+    57: -1177-04-16  strict  ecl moon sun  -> ECL
+results/design-revision-v6/parts/8_predictions.md  [text]  4 hit(s)
+    41: -1177-04-16  strict    -> OTHER
+    43: -1177-04-16  strict  riseset  -> OTHER
+    50: -1177-04-16  strict  ecl sep  -> ECL
+    102: -1177-04-16  strict    -> OTHER
+results/design-revision-v6/parts/9_rule.md  [text]  3 hit(s)
+    10: -1177-04-16  strict    -> OTHER
+    17: -1177-04-16  strict    -> OTHER
+    26: -1177-04-16  strict    -> OTHER
+results/design-revision-v6/preserved_sha256.txt  [text]  4 hit(s)
+    24: -1177-04-10  strict  mercury  -> H3-other
+    25: -1177-04-10  strict  mercury  -> H3-other
+    26: -1177-03-14  strict  mercury  -> OTHER
+    27: -1177-03-14  strict  mercury  -> OTHER
+results/design-revision-v7/heldout_exch.py  [text]  1 hit(s)
+    16: -1177-04-16  strict    -> OTHER
+results/design-revision-v7/parts/00-header.md  [text]  1 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+results/design-revision-v8/design-v7-to-v8.diff  [text]  10 hit(s)
+    8: -1177-04-16  strict    -> OTHER
+    274: -1177-04-16  strict  dt ecl ge mag  -> ECL
+    547: -1177-04-16  strict  ecl  -> ECL
+    609: -1177-04-16  strict  ecl moon riseset  -> ECL
+    612:   planet-list  alt conj dt mars mercury pos riseset sep sun venus vis  -> D3
+    958: -1177-04-16  strict    -> OTHER
+    1026: -1177-04-16  strict  ecl sep  -> ECL
+    1117: -1177-04-16  strict    -> OTHER
+    1539: -1177-04-16  strict    -> OTHER
+    1747: -1177-04-16  strict  ecl  -> ECL
+results/design-revision-v8/DESIGN-v8-before-c8.md  [text]  62 hit(s)
+    4: -1177-04-16  strict    -> OTHER
+    132: -1177-04-16  strict    -> OTHER
+    149: -1177-04-16  strict    -> OTHER
+    294: -1177-04-16  strict    -> OTHER
+    372: -1177-04-16  strict    -> OTHER
+    448: -1177-04-16  strict    -> OTHER
+    468: -1177-04-16  strict    -> OTHER
+    653: -1177-03-13  strict    -> OTHER
+    655: -1177-03-12  strict    -> OTHER
+    660: -1177-04-11  strict  conj lead venus  -> D2
+    662: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj dt  -> OTHER
+    667: -1177-04-04  loose  equinox  -> OTHER
+    680: -1177-04-16  strict  dt ecl ge mag  -> ECL
+    777: -1177-04-16  loose  ecl equinox  -> ECL
+    779: -1177-03-16  strict  elong  -> OTHER
+    788: -1177-04-16  strict  dt  -> OTHER
+    1046: -1177-03-26  loose    -> OTHER
+    1122: -1177-04-16  strict    -> OTHER
+    1162: -1177-03-31,-1177-04-04  loose    -> OTHER
+    1217: -1177-04-16  strict    -> OTHER
+    1222: -1177-04-16  strict    -> OTHER
+    1279: -1177-04-16  strict    -> OTHER
+    1442: -1177-04-16  strict    -> OTHER
+    1443: -1177-03-18  loose    -> OTHER
+    1621: -1177-04-16  strict    -> OTHER
+    1649: -1177-03-18,-1177-04-12,-1177-04-16  loose  conj equinox lead sun venus  -> D2
+    1657: -1177-04-16  strict    -> OTHER
+    1668: -1177-04-16  strict    -> OTHER
+    1751: -1177-04-16  strict    -> OTHER
+    1788: -1177-04-11  strict  sun venus  -> H4-other
+    1856: -1177-04-16  strict  ecl  -> ECL
+    1901: -1177-04-04  loose    -> OTHER
+    1905: -1177-04-03  loose  star  -> OTHER
+    1909: -1177-04-06  loose  equinox  -> OTHER
+    2029:   planet-list  jupiter mag mars star twl venus  -> D3
+    2115: -1177-04-16  strict    -> OTHER
+    2176: -1177-04-16  strict  ecl  -> ECL
+    2182: -1177-04-16  strict    -> OTHER
+    2256: -1177-04-16  strict    -> OTHER
+    2337: -1177-04-16  strict    -> OTHER
+    2489: -1177-04-16  strict    -> OTHER
+    2644:   planet-list  az conj elong ge jupiter mars mercury mwra phase riseset saturn star station venus vis  -> D3
+    2649: -1177-04-16  strict  ecl moon riseset  -> ECL
+    2651:   planet-list  alt conj dt mars mercury pos riseset sep sun venus vis  -> D3
+    3722: -1177-04-16  strict  riseset  -> OTHER
+    3779: -1177-04-16  strict    -> OTHER
+    3867: -1177-03-19  loose  az conj elong ge mercury mwra riseset station  -> D4
+    3868: -1177-03-14,-1177-04-10  strict  elong mercury twl venus  -> H3-other
+    3869: -1177-04-16  strict  ecl moon sun  -> ECL
+    4205: -1177-04-16  strict    -> OTHER
+    4207: -1177-04-16  strict  riseset  -> OTHER
+    4214: -1177-04-16  strict  ecl sep  -> ECL
+    4268: -1177-04-16  strict    -> OTHER
+    4370: -1177-04-16  strict    -> OTHER
+    4377: -1177-04-16  strict    -> OTHER
+    4389: -1177-04-16  strict    -> OTHER
+    5128: -1177-04-16  strict    -> OTHER
+    5407: -1177-04-16  strict    -> OTHER
+    5724: -1177-04-16  strict    -> OTHER
+    5845: -1177-04-04,-1177-04-05  loose  star  -> OTHER
+    5884: -1177-04-16  strict    -> OTHER
+    6125: -1177-04-16  strict  ecl  -> ECL
+results/design-revision-v8/design-v8-c8.diff  [text]  1 hit(s)
+    106: -1177-04-16  strict  ecl  -> ECL
+results/design-revision-v8/i2c_table.py  [text]  1 hit(s)
+    7: -1177-04-16  strict  sep  -> OTHER
+results/design-revision-v8/parts/06-outcome4.md  [text]  1 hit(s)
+    40: -1177-04-16  strict    -> OTHER
+results/design-revision-v8/parts/14-review-r3v7.md  [text]  1 hit(s)
+    23: -1177-04-16  strict  ecl  -> ECL
+results/design-revision-v8/verdict_trace.py  [text]  1 hit(s)
+    237: -1177-04-16  strict    -> OTHER
+results/research-critiques/ionian_eclipses.py  [text]  1 hit(s)
+    145: -1177-04-16  strict  dt ecl  -> ECL
+results/research-critiques/jsex_ithaki_-1399_-1000.txt  [text]  1 hit(s)
+    83: -1177-04-16  strict    -> OTHER
+results/research-critiques/sites_check.md  [text]  1 hit(s)
+    15: -1177-04-16  strict    -> OTHER
+results/research-critiques/table_ithaki.md  [text]  1 hit(s)
+    17: -1177-04-16  strict    -> OTHER
+results/research-visibility-mornings.npz  [npz]  8 hit(s)
+    npz:V_jdn shape=(49674,): -1177-03-07,-1177-03-08,-1177-03-09,-1177-03-10,-1177-03-11,-1177-03-12,-1177-03-13,-1177-03-14,-1177-03-15,-1177-03-16,-1177-03-17,-1177-03-18,-1177-03-19,-1177-03-20,-1177-03-21,-1177-03-22,-1177-03-23,-1177-03-24,-1177-03-25,-1177-03-26,-1177-03-27,-1177-03-28,-1177-03-29,-1177-03-30,-1177-03-31,-1177-04-01,-1177-04-02,-1177-04-03,-1177-04-04,-1177-04-05,-1177-04-06,-1177-04-07,-1177-04-08,-1177-04-09,-1177-04-10,-1177-04-11,-1177-04-12,-1177-04-13,-1177-04-14,-1177-04-15,-1177-04-16,-1177-04-17,-1177-04-18  jd  elong riseset  -> OTHER
+    npz:V_sunrise_ut shape=(49674,): -1177-03-07,-1177-03-08,-1177-03-09,-1177-03-10,-1177-03-11,-1177-03-12,-1177-03-13,-1177-03-14,-1177-03-15,-1177-03-16,-1177-03-17,-1177-03-18,-1177-03-19,-1177-03-20,-1177-03-21,-1177-03-22,-1177-03-23,-1177-03-24,-1177-03-25,-1177-03-26,-1177-03-27,-1177-03-28,-1177-03-29,-1177-03-30,-1177-03-31,-1177-04-01,-1177-04-02,-1177-04-03,-1177-04-04,-1177-04-05,-1177-04-06,-1177-04-07,-1177-04-08,-1177-04-09,-1177-04-10,-1177-04-11,-1177-04-12,-1177-04-13,-1177-04-14,-1177-04-15,-1177-04-16,-1177-04-17,-1177-04-18  jd  elong riseset  -> OTHER
+    npz:M_jdn shape=(49674,): -1177-03-07,-1177-03-08,-1177-03-09,-1177-03-10,-1177-03-11,-1177-03-12,-1177-03-13,-1177-03-14,-1177-03-15,-1177-03-16,-1177-03-17,-1177-03-18,-1177-03-19,-1177-03-20,-1177-03-21,-1177-03-22,-1177-03-23,-1177-03-24,-1177-03-25,-1177-03-26,-1177-03-27,-1177-03-28,-1177-03-29,-1177-03-30,-1177-03-31,-1177-04-01,-1177-04-02,-1177-04-03,-1177-04-04,-1177-04-05,-1177-04-06,-1177-04-07,-1177-04-08,-1177-04-09,-1177-04-10,-1177-04-11,-1177-04-12,-1177-04-13,-1177-04-14,-1177-04-15,-1177-04-16,-1177-04-17,-1177-04-18  jd  elong riseset  -> OTHER
+    npz:M_sunrise_ut shape=(49674,): -1177-03-07,-1177-03-08,-1177-03-09,-1177-03-10,-1177-03-11,-1177-03-12,-1177-03-13,-1177-03-14,-1177-03-15,-1177-03-16,-1177-03-17,-1177-03-18,-1177-03-19,-1177-03-20,-1177-03-21,-1177-03-22,-1177-03-23,-1177-03-24,-1177-03-25,-1177-03-26,-1177-03-27,-1177-03-28,-1177-03-29,-1177-03-30,-1177-03-31,-1177-04-01,-1177-04-02,-1177-04-03,-1177-04-04,-1177-04-05,-1177-04-06,-1177-04-07,-1177-04-08,-1177-04-09,-1177-04-10,-1177-04-11,-1177-04-12,-1177-04-13,-1177-04-14,-1177-04-15,-1177-04-16,-1177-04-17,-1177-04-18  jd  elong riseset  -> OTHER
+    npz:J_jdn shape=(49674,): -1177-03-07,-1177-03-08,-1177-03-09,-1177-03-10,-1177-03-11,-1177-03-12,-1177-03-13,-1177-03-14,-1177-03-15,-1177-03-16,-1177-03-17,-1177-03-18,-1177-03-19,-1177-03-20,-1177-03-21,-1177-03-22,-1177-03-23,-1177-03-24,-1177-03-25,-1177-03-26,-1177-03-27,-1177-03-28,-1177-03-29,-1177-03-30,-1177-03-31,-1177-04-01,-1177-04-02,-1177-04-03,-1177-04-04,-1177-04-05,-1177-04-06,-1177-04-07,-1177-04-08,-1177-04-09,-1177-04-10,-1177-04-11,-1177-04-12,-1177-04-13,-1177-04-14,-1177-04-15,-1177-04-16,-1177-04-17,-1177-04-18  jd  elong riseset  -> OTHER
+    npz:J_sunrise_ut shape=(49674,): -1177-03-07,-1177-03-08,-1177-03-09,-1177-03-10,-1177-03-11,-1177-03-12,-1177-03-13,-1177-03-14,-1177-03-15,-1177-03-16,-1177-03-17,-1177-03-18,-1177-03-19,-1177-03-20,-1177-03-21,-1177-03-22,-1177-03-23,-1177-03-24,-1177-03-25,-1177-03-26,-1177-03-27,-1177-03-28,-1177-03-29,-1177-03-30,-1177-03-31,-1177-04-01,-1177-04-02,-1177-04-03,-1177-04-04,-1177-04-05,-1177-04-06,-1177-04-07,-1177-04-08,-1177-04-09,-1177-04-10,-1177-04-11,-1177-04-12,-1177-04-13,-1177-04-14,-1177-04-15,-1177-04-16,-1177-04-17,-1177-04-18  jd  elong riseset  -> OTHER
+    npz:A_jdn shape=(49674,): -1177-03-07,-1177-03-08,-1177-03-09,-1177-03-10,-1177-03-11,-1177-03-12,-1177-03-13,-1177-03-14,-1177-03-15,-1177-03-16,-1177-03-17,-1177-03-18,-1177-03-19,-1177-03-20,-1177-03-21,-1177-03-22,-1177-03-23,-1177-03-24,-1177-03-25,-1177-03-26,-1177-03-27,-1177-03-28,-1177-03-29,-1177-03-30,-1177-03-31,-1177-04-01,-1177-04-02,-1177-04-03,-1177-04-04,-1177-04-05,-1177-04-06,-1177-04-07,-1177-04-08,-1177-04-09,-1177-04-10,-1177-04-11,-1177-04-12,-1177-04-13,-1177-04-14,-1177-04-15,-1177-04-16,-1177-04-17,-1177-04-18  jd  elong riseset  -> OTHER
+    npz:A_sunrise_ut shape=(49674,): -1177-03-07,-1177-03-08,-1177-03-09,-1177-03-10,-1177-03-11,-1177-03-12,-1177-03-13,-1177-03-14,-1177-03-15,-1177-03-16,-1177-03-17,-1177-03-18,-1177-03-19,-1177-03-20,-1177-03-21,-1177-03-22,-1177-03-23,-1177-03-24,-1177-03-25,-1177-03-26,-1177-03-27,-1177-03-28,-1177-03-29,-1177-03-30,-1177-03-31,-1177-04-01,-1177-04-02,-1177-04-03,-1177-04-04,-1177-04-05,-1177-04-06,-1177-04-07,-1177-04-08,-1177-04-09,-1177-04-10,-1177-04-11,-1177-04-12,-1177-04-13,-1177-04-14,-1177-04-15,-1177-04-16,-1177-04-17,-1177-04-18  jd  elong riseset  -> OTHER
+results/research-visibility.json  [json]  104 hit(s)
+    $.mercury_events.window_#BC.GWE[0]: -1177-03-19  strict  ge mercury riseset station vis  -> D4
+    $.mercury_events.window_#BC.rise_az_local_max[0]: -1177-03-12  strict  ge mercury riseset station vis  -> D4
+    $.mercury_events.window_#BC.rise_az_minus_sun_local_max[0]: -1177-03-25  strict  ge mercury riseset station vis  -> OTHER
+    $.mercury_events.window_#BC.morning_visible_runs_AV#[0][1]: -1177-04-05  strict  ge mercury riseset station vis  -> OTHER
+    $.mercury_events.window_#BC.morning_visible_runs_AV#[0][1]: -1177-03-29  strict  ge mercury riseset station vis  -> OTHER
+    $.mercury_events.window_#BC.morning_visible_runs_AV#[0][1]: -1177-03-21  strict  ge mercury riseset station vis  -> D4
+    $.mercury_events.window_#BC.daily_mar_apr[6].date: -1177-03-07  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[7].date: -1177-03-08  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[8].date: -1177-03-09  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[9].date: -1177-03-10  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[10].date: -1177-03-11  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[11].date: -1177-03-12  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[12].date: -1177-03-13  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[13].date: -1177-03-14  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[14].date: -1177-03-15  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[15].date: -1177-03-16  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[16].date: -1177-03-17  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[17].date: -1177-03-18  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[18].date: -1177-03-19  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[19].date: -1177-03-20  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[20].date: -1177-03-21  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[21].date: -1177-03-22  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[22].date: -1177-03-23  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[23].date: -1177-03-24  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[24].date: -1177-03-25  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[25].date: -1177-03-26  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[26].date: -1177-03-27  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[27].date: -1177-03-28  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[28].date: -1177-03-29  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[29].date: -1177-03-30  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[30].date: -1177-03-31  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[31].date: -1177-04-01  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[32].date: -1177-04-02  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[33].date: -1177-04-03  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[34].date: -1177-04-04  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[35].date: -1177-04-05  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[36].date: -1177-04-06  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[37].date: -1177-04-07  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[38].date: -1177-04-08  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[39].date: -1177-04-09  strict  elong lead mag mercury riseset  -> OTHER
+    $.mercury_events.window_#BC.daily_mar_apr[40].date: -1177-04-10  strict  elong lead mag mercury riseset  -> H3-other
+    $.mercury_events.window_#BC.daily_mar_apr[41].date: -1177-04-11  strict  elong lead mag mercury riseset  -> H3-other
+    $.mercury_events.window_#BC.daily_mar_apr[42].date: -1177-04-12  strict  elong lead mag mercury riseset  -> H3-other
+    $.mercury_events.window_#BC.daily_mar_apr[43].date: -1177-04-13  strict  elong lead mag mercury riseset  -> H3-other
+    $.mercury_events.window_#BC.daily_mar_apr[44].date: -1177-04-14  strict  elong lead mag mercury riseset  -> H3-other
+    $.mercury_events.window_#BC.daily_mar_apr[45].date: -1177-04-15  strict  elong lead mag mercury riseset  -> H3-other
+    $.mercury_events.window_#BC.daily_mar_apr[46].date: -1177-04-16  strict  elong lead mag mercury riseset  -> H3-other
+    $.mercury_events.window_#BC.daily_mar_apr[47].date: -1177-04-17  strict  elong lead mag mercury riseset  -> H3-other
+    $.mercury_events.window_#BC.daily_mar_apr[48].date: -1177-04-18  strict  elong lead mag mercury riseset  -> H3-other
+    $.stars.-#.vernal_equinox[0]: -1177-04-02  strict  equinox phase star venus  -> OTHER
+    $.stars.-#.phases.Alcyone_AV#.evening_last_heliacal_setting[0]: -1177-04-06  strict  phase star vis  -> OTHER
+    $.stars.-#.phases.Alcyone_AV#.invisible_runs[0][0]: -1177-04-07  strict  phase star vis  -> OTHER
+    $.stars.-#.phases.Alcyone_AV#.evening_last_heliacal_setting[0]: -1177-04-04  strict  phase star vis  -> OTHER
+    $.stars.-#.phases.Alcyone_AV#.invisible_runs[0][0]: -1177-04-05  strict  phase star vis  -> OTHER
+    $.stars.-#.phases.Alcyone_AV#.evening_last_heliacal_setting[0]: -1177-04-02  strict  phase star vis  -> OTHER
+    $.stars.-#.phases.Alcyone_AV#.invisible_runs[0][0]: -1177-04-02  strict  phase star vis  -> OTHER
+    $.stars.-#.phases.Alcyone_AV#.evening_last_heliacal_setting[0]: -1177-03-31  strict  phase star vis  -> OTHER
+    $.stars.-#.phases.Alcyone_AV#.invisible_runs[0][0]: -1177-03-31  strict  phase star vis  -> OTHER
+    $.stars.-#.pleiades_bootes.evening_sun_m#_alt_ge_#.runs[0][1]: -1177-04-06  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.evening_sun_m#_alt_ge_#.runs[0][1]: -1177-04-03  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.evening_sun_m#_alt_ge_#.runs[0][1]: -1177-03-28  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.BM_limits_sun_m#_alt_ge_#.Pleiades_up_at_dusk_runs[0][1]: -1177-04-09  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.BM_limits_sun_m#_alt_ge_#.Pleiades_up_at_dusk_runs[0][1]: -1177-04-06  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.BM_limits_sun_m#_alt_ge_#.Pleiades_up_at_dusk_runs[0][1]: -1177-04-03  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.evening_sun_m#_alt_ge_#.runs[0][1]: -1177-04-03  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.evening_sun_m#_alt_ge_#.runs[0][1]: -1177-03-30  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.evening_sun_m#_alt_ge_#.runs[0][1]: -1177-03-25  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.BM_limits_sun_m#_alt_ge_#.Pleiades_up_at_dusk_runs[0][1]: -1177-04-06  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.BM_limits_sun_m#_alt_ge_#.Pleiades_up_at_dusk_runs[0][1]: -1177-04-03  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.BM_limits_sun_m#_alt_ge_#.Pleiades_up_at_dusk_runs[0][1]: -1177-03-30  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.evening_sun_m#_alt_ge_#.runs[0][1]: -1177-03-31  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.evening_sun_m#_alt_ge_#.runs[0][1]: -1177-03-27  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.evening_sun_m#_alt_ge_#.runs[0][1]: -1177-03-22  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.BM_limits_sun_m#_alt_ge_#.Pleiades_up_at_dusk_runs[0][1]: -1177-04-02  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.BM_limits_sun_m#_alt_ge_#.Pleiades_up_at_dusk_runs[0][1]: -1177-03-31  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.BM_limits_sun_m#_alt_ge_#.Pleiades_up_at_dusk_runs[0][1]: -1177-03-27  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.evening_sun_m#_alt_ge_#.runs[0][1]: -1177-03-27  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.evening_sun_m#_alt_ge_#.runs[0][1]: -1177-03-24  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.evening_sun_m#_alt_ge_#.runs[0][1]: -1177-03-19  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.BM_limits_sun_m#_alt_ge_#.Pleiades_up_at_dusk_runs[0][1]: -1177-03-30  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.BM_limits_sun_m#_alt_ge_#.Pleiades_up_at_dusk_runs[0][1]: -1177-03-27  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.BM_limits_sun_m#_alt_ge_#.Pleiades_up_at_dusk_runs[0][1]: -1177-03-24  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.both_ge_#_simultaneously_any_time_dark.runs[0][1]: -1177-03-30  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.both_ge_#_simultaneously_any_time_dark.runs[0][1]: -1177-03-25  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.both_ge_#_simultaneously_any_time_dark.runs[0][1]: -1177-03-14  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.each_ge_#_sometime_same_dark_night.runs[0][1]: -1177-03-30  strict  star  -> OTHER
+    $.stars.-#.pleiades_bootes.each_ge_#_sometime_same_dark_night.runs[0][1]: -1177-03-25  strict  star  -> OTHER
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzMax_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzAnyExtremum_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzMax_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzAnyExtremum_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzMax_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzAnyExtremum_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzMax_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzAnyExtremum_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzMax_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzAnyExtremum_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzMax_pm#[3]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzAnyExtremum_pm#[3]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzMax_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzAnyExtremum_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzMax_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.joint_hits_#_#BC.venus_day-#_lead#_mercury_day-#_riseAzAnyExtremum_pm#[1]: -1177-04-16  strict  conj mercury station  -> H3-other
+    $.bm_rates.case_#Apr#BC.conjunction_local_date: -1177-04-16  strict  conj elong equinox mercury  -> H3-other
+results/unread-primaries/deltat_checks.py  [text]  2 hit(s)
+    6: -1177-04-16  strict    -> OTHER
+    34: -1177-04-16  strict    -> OTHER
+results/unread-primaries/deltat_checks.txt  [text]  1 hit(s)
+    1: -1177-04-16  strict    -> OTHER
+results/unread-primaries/foh.html  [text]  1 hit(s)
+    419: -1177-04-16  jd  ecl sun  -> ECL
+results/unread-primaries/jd_checks.py  [text]  5 hit(s)
+    57: -1177-04-16  strict  ecl  -> ECL
+    58: -1177-04-01  strict  equinox  -> OTHER
+    59: -1177-04-04  strict  riseset star vis  -> OTHER
+    60: -1177-04-14  strict    -> OTHER
+    85: -1177-04-16  strict    -> OTHER
+results/unread-primaries/jd_checks.txt  [text]  5 hit(s)
+    9: -1177-04-16  strict  ecl  -> ECL
+    10: -1177-04-01  strict  equinox  -> OTHER
+    11: -1177-04-04  strict  riseset star vis  -> OTHER
+    12: -1177-04-14  strict    -> OTHER
+    26: -1177-04-16  strict    -> OTHER
+results/unread-primaries/pap2012.txt  [text]  5 hit(s)
+    89: -1177-04-16  jd    -> OTHER
+    542: -1177-04-16  jd    -> OTHER
+    551: -1177-04-01  jd    -> OTHER
+    563: -1177-04-14  jd    -> OTHER
+    604: -1177-04-04  jd  riseset vis  -> OTHER
+results/unread-primaries/pap2012_foh.pdf  [pdf]  5 hit(s)
+    p2:61: -1177-04-16  jd    -> OTHER
+    p8:70: -1177-04-16  jd    -> OTHER
+    p8:79: -1177-04-01  jd    -> OTHER
+    p8:91: -1177-04-14  jd    -> OTHER
+    p10:8: -1177-04-04  jd  riseset vis  -> OTHER
+results/unread-primaries/venus_elongation_check.py  [text]  2 hit(s)
+    7: -1177-04-11  strict  conj  -> OTHER
+    57: -1177-04-11  strict  conj elong twl  -> OTHER
+results/unread-primaries/venus_elongation_check.txt  [text]  2 hit(s)
+    6: -1177-03-16  strict  elong  -> OTHER
+    12: -1177-04-11  strict  conj elong twl  -> OTHER
+results/validate_ephem.txt  [text]  25 hit(s)
+    16: -1177-04-16  strict    -> D5-output
+    55: -1177-04-16  strict    -> D5-output
+    107: -1177-04-16  strict  dt  -> D5-output
+    115: -1177-03-18  strict  dt  -> D5-output
+    131: -1177-04-16  strict  dt  -> D5-output
+    187: -1177-04-16  strict    -> D5-output
+    294: -1177-04-16  strict  conj ecl  -> D5-output
+    303: -1177-04-10  strict  venus  -> D5-output
+    304: -1177-04-10  strict  venus  -> D5-output
+    305: -1177-04-10  strict  venus  -> D5-output
+    306: -1177-04-10  strict  mercury  -> D5-output
+    307: -1177-04-10  strict  mercury  -> D5-output
+    308: -1177-04-10  strict  mercury  -> D5-output
+    309: -1177-03-14  strict  venus  -> D5-output
+    310: -1177-03-14  strict  venus  -> D5-output
+    311: -1177-03-14  strict  venus  -> D5-output
+    312: -1177-03-14  strict  mercury  -> D5-output
+    313: -1177-03-14  strict  mercury  -> D5-output
+    314: -1177-03-14  strict  mercury  -> D5-output
+    321: -1177-04-16  strict  sun  -> D5-output
+    322: -1177-04-16  strict  sun  -> D5-output
+    323: -1177-04-16  strict  sun  -> D5-output
+    324: -1177-04-16  strict  moon  -> D5-output
+    325: -1177-04-16  strict  moon  -> D5-output
+    326: -1177-04-16  strict  moon  -> D5-output
+results/window/jsex/corfu.jsonl  [text]  1 hit(s)
+    765: -1177-04-16  strict  alt dt mag  -> OTHER
+results/window/jsex/ithaca.jsonl  [text]  1 hit(s)
+    765: -1177-04-16  strict  alt dt mag  -> OTHER
+results/window/jsex/kefalonia.jsonl  [text]  1 hit(s)
+    765: -1177-04-16  strict  alt dt mag  -> OTHER
+results/window/jsex/lefkada.jsonl  [text]  1 hit(s)
+    765: -1177-04-16  strict  alt dt mag  -> OTHER
+results/window/jsex/SEm1199.js  [text]  1 hit(s)
+    495: -1177-04-16  jd    -> OTHER
+results/window/jsex/windows-out.txt  [text]  20 hit(s)
+    15: -1177-04-16  strict  sep  -> OTHER
+    22: -1177-04-16  strict  sep  -> OTHER
+    29: -1177-04-16  strict  sep  -> OTHER
+    36: -1177-04-16  strict  pos sep  -> OTHER
+    43: -1177-04-16  strict  sep  -> OTHER
+    46: -1177-04-16  strict  dt ecl sep  -> ECL
+    47: -1177-04-16  strict  dt ecl sep  -> ECL
+    48: -1177-04-16  strict  sep  -> OTHER
+    49: -1177-04-16  strict  pos sep  -> OTHER
+    50: -1177-04-16  strict  mag sep  -> OTHER
+    53: -1177-04-16  strict  dt ecl sep  -> ECL
+    54: -1177-04-16  strict  dt ecl sep  -> ECL
+    55: -1177-04-16  strict  sep  -> OTHER
+    56: -1177-04-16  strict  pos sep  -> OTHER
+    57: -1177-04-16  strict  mag sep  -> OTHER
+    60: -1177-04-16  strict  dt ecl sep  -> ECL
+    61: -1177-04-16  strict  dt ecl sep  -> ECL
+    62: -1177-04-16  strict  sep  -> OTHER
+    63: -1177-04-16  strict  pos sep  -> OTHER
+    64: -1177-04-16  strict  mag sep  -> OTHER
+results/window/jsex/zakynthos.jsonl  [text]  1 hit(s)
+    765: -1177-04-16  strict  alt dt mag  -> OTHER
+data/bm2008-a/baikouzis-magnasco-2008-pnas.pdf  [pdf]  13 hit(s)
+    p1:9: -1177-04-16  strict  ecl sun  -> ECL
+    p1:25: -1177-04-16  strict    -> OTHER
+    p1:33: -1177-04-16  strict  ecl  -> ECL
+    p1:75: -1177-04-16  strict  ecl  -> ECL
+    p1:88: -1177-04-16  strict  ecl sun  -> ECL
+    p2:19: -1177-04-16  strict    -> OTHER
+    p4:29: -1177-04-16  strict    -> OTHER
+    p4:32: -1177-04-16  strict    -> OTHER
+    p4:35: -1177-03-13  strict    -> OTHER
+    p5:106: -1177-03-18  strict  twl  -> OTHER
+    p6:11: -1177-04-16  strict  ecl  -> ECL
+    p6:28: -1177-04-16  strict    -> OTHER
+    p6:39: -1177-04-16  strict  ecl  -> ECL
+data/bm2008-a/bm2008-pmc-fulltext.txt  [text]  13 hit(s)
+    8: -1177-04-16  strict  ecl sun  -> ECL
+    22: -1177-04-16  strict    -> OTHER
+    32: -1177-04-16  strict  ecl sun  -> ECL
+    53: -1177-04-16  strict  ecl sun  -> ECL
+    86: -1177-04-16  strict  ecl  -> ECL
+    103: -1177-04-16  strict    -> OTHER
+    457: -1177-04-16  strict    -> OTHER
+    473: -1177-04-16  strict    -> OTHER
+    476: -1177-03-13  strict  mercury  -> OTHER
+    504: -1177-03-18  strict  twl  -> OTHER
+    630: -1177-04-16  strict  ecl  -> ECL
+    647: -1177-04-16  strict  ecl  -> ECL
+    656: -1177-04-16  strict  ecl  -> ECL
+data/ephem/horizons/calendar_probe_5.txt  [horizons]  1 hit(s)
+    44-44: -1177-04-16  horizons  horizons Q=20 sun  -> OTHER
+data/ephem/horizons/sun_moon_m1177_04_16_eclipse_10.txt  [horizons]  2 hit(s)
+    0: -1177-04-16  strict  ecl moon sun  -> D6
+    43-45: -1177-04-16  horizons  horizons Q=1,2,4,20,23,30 sun  -> D6
+data/ephem/horizons/sun_moon_m1177_04_16_eclipse_301.txt  [horizons]  2 hit(s)
+    0: -1177-04-16  strict  ecl moon sun  -> D6
+    43-45: -1177-04-16  horizons  horizons Q=1,2,4,20,23,30 moon  -> D6
+data/ephem/horizons/venus_mercury_m1177_03_14_dusk_199.txt  [horizons]  2 hit(s)
+    0: -1177-03-14  strict  mercury twl venus  -> D5
+    43-45: -1177-03-14  horizons  horizons Q=1,2,4,20,23,30 mercury  -> D5
+data/ephem/horizons/venus_mercury_m1177_03_14_dusk_299.txt  [horizons]  2 hit(s)
+    0: -1177-03-14  strict  mercury twl venus  -> D5
+    43-45: -1177-03-14  horizons  horizons Q=1,2,4,20,23,30 venus  -> D5
+data/ephem/horizons/venus_mercury_m1177_04_10_dawn_199.txt  [horizons]  2 hit(s)
+    0: -1177-04-10  strict  mercury twl venus  -> D5
+    43-45: -1177-04-10  horizons  horizons Q=1,2,4,20,23,30 mercury  -> D5
+data/ephem/horizons/venus_mercury_m1177_04_10_dawn_299.txt  [horizons]  2 hit(s)
+    0: -1177-04-10  strict  mercury twl venus  -> D5
+    43-45: -1177-04-10  horizons  horizons Q=1,2,4,20,23,30 venus  -> D5
+data/jsex/SEm1199.js  [text]  1 hit(s)
+    495: -1177-04-16  jd    -> OTHER
+data/jsex/sites/corfu.jsonl  [text]  1 hit(s)
+    1966: -1177-04-16  strict  alt dt mag  -> OTHER
+data/jsex/sites/ithaca.jsonl  [text]  1 hit(s)
+    1966: -1177-04-16  strict  alt dt mag  -> OTHER
+data/jsex/sites/kefalonia.jsonl  [text]  1 hit(s)
+    1966: -1177-04-16  strict  alt dt mag  -> OTHER
+data/jsex/sites/lefkada.jsonl  [text]  1 hit(s)
+    1966: -1177-04-16  strict  alt dt mag  -> OTHER
+data/jsex/sites/zakynthos.jsonl  [text]  1 hit(s)
+    1966: -1177-04-16  strict  alt dt mag  -> OTHER
+data/ref/nasa_5mcse_catalog_lines.txt  [text]  1 hit(s)
+    3: -1177-04-16  strict    -> OTHER
+data/ref/nasa_besselian_-11770416.txt  [text]  5 hit(s)
+    5: -1177-04-16  strict  ecl sun  -> ECL
+    18: -1177-04-16  strict  ecl sun  -> ECL
+    19: -1177-04-16  jd    -> OTHER
+    27: -1177-04-16  strict    -> OTHER
+    47: -1177-04-16  strict  ecl  -> ECL
+data/refs/baikouzis-magnasco-2008.pdf  [pdf]  12 hit(s)
+    p1:18: -1177-04-16  strict  ecl sun  -> ECL
+    p1:34: -1177-04-16  strict    -> OTHER
+    p1:42: -1177-04-16  strict  ecl  -> ECL
+    p1:72: -1177-04-16  strict  ecl sun  -> ECL
+    p2:55: -1177-04-16  strict    -> OTHER
+    p4:29: -1177-04-16  strict    -> OTHER
+    p4:32: -1177-04-16  strict    -> OTHER
+    p4:35: -1177-03-13  strict    -> OTHER
+    p5:1: -1177-03-18  strict  twl  -> OTHER
+    p6:11: -1177-04-16  strict  ecl  -> ECL
+    p6:28: -1177-04-16  strict    -> OTHER
+    p6:39: -1177-04-16  strict  ecl  -> ECL
+data/refs/bm2008.txt  [text]  13 hit(s)
+    13: -1177-04-16  strict  ecl sun  -> ECL
+    29: -1177-04-16  strict    -> OTHER
+    35: -1177-04-16  strict  ecl sun  -> ECL
+    42: -1177-04-16  strict  ecl jupiter mars mercury saturn  -> H3-other
+    150: -1177-04-16  strict    -> OTHER
+    274: -1177-04-16  strict    -> OTHER
+    278: -1177-04-16  strict    -> OTHER
+    281: -1177-03-13  strict    -> OTHER
+    321: -1177-03-18  strict  twl  -> OTHER
+    401: -1177-04-16  strict  ecl  -> ECL
+    408: -1177-04-16  strict  ecl  -> ECL
+    415: -1177-04-16  strict    -> OTHER
+    427: -1177-04-16  strict    -> OTHER
+data/refs/nasa/JSEX-SEm1199.js  [text]  1 hit(s)
+    495: -1177-04-16  jd    -> OTHER
+data/refs/nasa/SEcat5_SE-1199--1100.html  [text]  1 hit(s)
+    351: -1177-04-16  strict    -> OTHER
+data/refs/nasa/SEdata_-11770416.html  [text]  6 hit(s)
+    17: -1177-04-16  jd    -> OTHER
+    29: -1177-04-16  strict  ecl sun  -> ECL
+    68: -1177-04-16  strict  ecl sun  -> ECL
+    72: -1177-04-16  jd    -> OTHER
+    84: -1177-04-16  strict    -> OTHER
+    121: -1177-04-16  strict  ecl  -> ECL
+data/refs/nasa/SEhistory.html  [text]  2 hit(s)
+    145: -1177-04-16  strict    -> OTHER
+    146: -1177-04-16  strict  ecl  -> ECL
+data/refs/nasa/SEsaros039.html  [text]  1 hit(s)
+    225: -1177-04-16  strict    -> OTHER
+data/refs/pap2012.txt  [text]  5 hit(s)
+    89: -1177-04-16  jd    -> OTHER
+    542: -1177-04-16  jd    -> OTHER
+    551: -1177-04-01  jd    -> OTHER
+    563: -1177-04-14  jd    -> OTHER
+    604: -1177-04-04  jd  riseset vis  -> OTHER
+data/refs/papamarinopoulos-2012-maa-12-117.pdf  [pdf]  5 hit(s)
+    p2:61: -1177-04-16  jd    -> OTHER
+    p8:70: -1177-04-16  jd    -> OTHER
+    p8:79: -1177-04-01  jd    -> OTHER
+    p8:91: -1177-04-14  jd    -> OTHER
+    p10:8: -1177-04-04  jd  riseset vis  -> OTHER
+data/sources/bm2008-b/baikouzis-magnasco-2008-pnas.pdf  [pdf]  12 hit(s)
+    p1:18: -1177-04-16  strict  ecl sun  -> ECL
+    p1:34: -1177-04-16  strict    -> OTHER
+    p1:42: -1177-04-16  strict  ecl  -> ECL
+    p1:72: -1177-04-16  strict  ecl sun  -> ECL
+    p2:55: -1177-04-16  strict    -> OTHER
+    p4:29: -1177-04-16  strict    -> OTHER
+    p4:32: -1177-04-16  strict    -> OTHER
+    p4:35: -1177-03-13  strict    -> OTHER
+    p5:1: -1177-03-18  strict  twl  -> OTHER
+    p6:11: -1177-04-16  strict  ecl  -> ECL
+    p6:28: -1177-04-16  strict    -> OTHER
+    p6:39: -1177-04-16  strict  ecl  -> ECL
+data/stars.json  [json]  1 hit(s)
+    $.stars.sirius.proper_motion_comparison_m#.epoch: -1177-04-16  strict  star  -> OTHER
+199 files, 1199 hits
+unscanned (listed, not read): data/bm2008-a/bm2008-table2-pmc.jpg, data/refs/nasa/5MCSEmap_-1177-04-16.gif, data/sources/bm2008-b/table2-pmc.jpg
+excluded by rule: 16 ephemeris kernels

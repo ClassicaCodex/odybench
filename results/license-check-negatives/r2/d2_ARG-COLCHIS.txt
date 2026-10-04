@@ -1,0 +1,589 @@
+====================================================================================================
+SET ARG-COLCHIS
+{
+ "set": "ARG-COLCHIS",
+ "role": "negative",
+ "searchable": true,
+ "text": "Apollonius, Argonautica 2.1097-4.183 (from the storm at the Island of Ares to the flight with the fleece)",
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "edition_id": 1,
+ "day0": "Day 0 is the day of Jason's ordeal; Night 0 is Medea's flight with the Moon rising; Dawn +1 is the flight with the fleece.",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "observer_places": [
+  {
+   "place": "Colchis: the Phasis and Aia",
+   "words": "ἐννύχιοι … ἵκοντο Φᾶσίν τʼ εὐρὺ ῥέοντα",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1260",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1261"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "lat": 42.15,
+   "lon": 41.6667,
+   "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+  },
+  {
+   "place": "the Island of Ares (the storm night, which ARG-COLCHIS-02 places: Night -7 under a3, Night -8 under a4, Night -7 to -10 under afree)",
+   "words": "νῆσον ἀποπροέλειπον Ἄρηος",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1230"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "lat": 40.9289,
+   "lon": 38.4361,
+   "coord_source": "Giresun Island (Wikipedia, fetched 2026-10-04); the identification with the Island of Ares is modern, not the text's"
+  }
+ ],
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "ARG-COLCHIS-01": "none",
+   "ARG-COLCHIS-02": "a3",
+   "ARG-COLCHIS-04": "b",
+   "ARG-COLCHIS-05": "none",
+   "ARG-COLCHIS-06": "a"
+  },
+  "BM-analogue": {
+   "ARG-COLCHIS-01": "a",
+   "ARG-COLCHIS-02": "a3",
+   "ARG-COLCHIS-04": "a",
+   "ARG-COLCHIS-05": "a",
+   "ARG-COLCHIS-06": "a"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "text",
+   "clue_ids": [
+    "ARG-COLCHIS-06"
+   ],
+   "note": "moonrise in the dark hours of Night 0: a waning Moon, not a conjunction"
+  },
+  "season_stars": {
+   "status": "text",
+   "clue_ids": [
+    "ARG-COLCHIS-01",
+    "ARG-COLCHIS-04"
+   ],
+   "note": "Arcturus' rainy season on Night -7 (phase unnamed); Orion seen by sailors on Night -3 (fork)"
+  },
+  "morning_star": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "mercury_turning_point": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "darkness_eclipse": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": "the starless night of 2.1103-1105 is storm cloud by the text's own words"
+  }
+ },
+ "notes": "",
+ "eclipse_compatible_options": [],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness",
+ "license_check": "edited: the Island of Ares label fixed the storm night at Night -7, which is only option a3 of ARG-COLCHIS-02; relabelled"
+}
+ PLACE Colchis: the Phasis and Aia: missing refs []
+   frag exact=True nfc=True where=['2.1260']: ἐννύχιοι
+   frag exact=True nfc=True where=['(spans rows)']: ἵκοντο Φᾶσίν τʼ εὐρὺ ῥέοντα
+      2.1258	οἰμωγῇ, μέσφʼ αὖτις ἀπʼ οὔρεος ἀίσσοντα
+      2.1259	αἰετὸν ὠμηστὴν αὐτὴν ὁδὸν εἰσενόησαν.
+   >> 2.1260	ἐννύχιοι δʼ Ἄργοιο δαημοσύνῃσιν ἵκοντο
+   >> 2.1261	Φᾶσίν τʼ εὐρὺ ῥέοντα, καὶ ἔσχατα πείρατα πόντου.
+      2.1262	αὐτίκα δʼ ἱστία μὲν καὶ ἐπίκριον ἔνδοθι κοίλης
+      2.1263	ἱστοδόκης στείλαντες ἐκόσμεον· ἐν δὲ καὶ αὐτὸν
+ PLACE the Island of Ares (the storm night, which ARG-COLCHIS-02 places: Night -7 under a3, Night -8 under a4, Night -7 to -10 under afree): missing refs []
+   frag exact=True nfc=True where=['2.1230']: νῆσον ἀποπροέλειπον Ἄρηος
+      2.1228	ἦρι δʼ ἀνεγρομένοισιν ἐυκραὴς ἄεν οὖρος·
+      2.1229	ἱστία δʼ ἤειραν, τὰ δʼ ὑπαὶ ῥιπῆς ἀνέμοιο
+   >> 2.1230	τείνετο· ῥίμφα δὲ νῆσον ἀποπροέλειπον Ἄρηος.
+      2.1231	νυκτὶ δʼ ἐπιπλομένῃ Φιλυρηίδα νῆσον ἄμειβον·
+      2.1232	ἔνθα μὲν Οὐρανίδης Φιλύρῃ Κρόνος, εὖτʼ ἐν Ὀλύμπῳ
+----------------------------------------------------------------------------------------------------
+CLUE ARG-COLCHIS-01  kind=season  level=narrator
+{
+ "set": "ARG-COLCHIS",
+ "clue_id": "ARG-COLCHIS-01",
+ "kind": "season",
+ "statement": "On the storm night (Night -7 under ARG-COLCHIS-02:a3, Night -8 under a4, Night -7 to -10 under afree; not placed under none), which ends the day the sons of Phrixus near the Island of Ares, Zeus stirs the north wind, 'marking with rain the wet path of Arcturus'; by night a storm wrecks their ship.",
+ "licence_words": "καὶ δὴ ἔσαν νήσοιο μάλα σχεδὸν ἤματι κείνῳ … ὕδατι σημαίνων διερὴν ὁδὸν Ἀρκτούροιο",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1097",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1098",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1099"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "the storm night (as ARG-COLCHIS-02 places it) within +-15 days of Arcturus' morning setting (setting at dawn)",
+   "justification": "the wet season of Arcturus read as its setting; the text does not name the phase; the +-15-day width is the drafter's"
+  },
+  {
+   "option": "b",
+   "operational": "the storm night (as ARG-COLCHIS-02 places it) within +-15 days of Arcturus' heliacal rising (first morning visibility)",
+   "justification": "Arcturus' rising was also a stormy sign; same caveat; the +-15-day width is the drafter's"
+  },
+  {
+   "option": "c",
+   "operational": "the storm night (as ARG-COLCHIS-02 places it) within +-15 days of Arcturus' evening setting (last evening visibility)",
+   "justification": "same caveat; the +-15-day width is the drafter's"
+  },
+  {
+   "option": "d",
+   "operational": "the storm night (as ARG-COLCHIS-02 places it) within +-15 days of Arcturus' evening (acronychal) rising (first rising seen after sunset)",
+   "justification": "the fourth seasonal phase of Arcturus in Greek calendars: Hesiod marks the end of winter by it [hesiod-worksdays-grc.tsv 564-567, 'ἐπιτέλλεται ἀκροκνέφαιος']; the text names no phase; the +-15-day width is the drafter's"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "a learned periphrasis for rain; no phase is named"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "The storm itself is cloud: 'κελαινὴ δʼ οὐρανὸν ἀχλὺς ἄμπεχεν ... ἐκ νεφέων' (2.1103-1105); it is not entered as darkness.",
+ "license_check": "edited: the statement and options a-d fixed the storm at Night -7, which is only option a3 of ARG-COLCHIS-02 (a4 puts it on Night -8, afree on Night -7 to -10); they now refer to the storm night as row 02 places it. Round 1's edits (option d; the +-15-day widths marked as the drafter's) are kept",
+ "license_check_r1": "edited: the text names no phase of Arcturus, but the menu offered only three of its four seasonal phases; option d (evening rising, Hes. WD 564-567) added, and the +-15-day widths marked as the drafter's"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['2.1097']: καὶ δὴ ἔσαν νήσοιο μάλα σχεδὸν ἤματι κείνῳ
+   frag exact=True nfc=True where=['2.1099']: ὕδατι σημαίνων διερὴν ὁδὸν Ἀρκτούροιο
+ TEXT:
+      2.1093	υἱῆες Φρίξοιο μετὰ πτόλιν Ὀρχομενοῖο
+      2.1094	ἐξ Αἴης ἐνέοντο παρʼ Αἰήταο Κυταίου,
+      2.1095	Κολχίδα νῆʼ ἐπιβάντες, ἵνʼ ἄσπετον ὄλβον ἄρωνται
+      2.1096	πατρός· ὁ γὰρ θνῄσκων ἐπετείλατο τήνδε κέλευθον.
+   >> 2.1097	καὶ δὴ ἔσαν νήσοιο μάλα σχεδὸν ἤματι κείνῳ.
+   >> 2.1098	Ζεὺς δʼ ἀνέμου βορέαο μένος κίνησεν ἀῆναι,
+   >> 2.1099	ὕδατι σημαίνων διερὴν ὁδὸν Ἀρκτούροιο·
+      2.1100	αὐτὰρ ὅγʼ ἠμάτιος μὲν ἐν οὔρεσι φύλλʼ ἐτίνασσεν
+      2.1101	τυτθὸν ἐπʼ ἀκροτάτοισιν ἀήσυρος ἀκρεμόνεσσιν·
+      2.1102	νυκτὶ δʼ ἔβη πόντονδε πελώριος, ὦρσε δὲ κῦμα
+----------------------------------------------------------------------------------------------------
+CLUE ARG-COLCHIS-02  kind=interval  level=narrator
+{
+ "set": "ARG-COLCHIS",
+ "clue_id": "ARG-COLCHIS-02",
+ "kind": "interval",
+ "statement": "From Night -7: the rain stops at sunrise (Day -6); they sleep that night; early next morning (Day -5) they leave the island; on the following night they pass Philyra; they sail on past the peoples of the coast, see Prometheus' eagle at evening and reach the Phasis by night (Night -4); dawn comes soon after (Day -3).",
+ "licence_words": "τὸ δὲ μυρίον ἐκ Διὸς ὕδωρ λῆξεν ἅμʼ ἠελίῳ … κατέδαρθεν … ἦρι δʼ ἀνεγρομένοισιν … νυκτὶ δʼ ἐπιπλομένῃ Φιλυρηίδα νῆσον ἄμειβον … ἐπιπρὸ γὰρ αἰὲν ἔτεμνον … ἴδον ἕσπερον … ἐννύχιοι … ἠὼς δʼ οὐ μετὰ δηρὸν ἐελδομένοις ἐφαάνθη",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1120",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1121",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1227",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1228",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1231",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1244",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1251",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1260",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1285"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a3",
+   "operational": "arrival at the Phasis on Night -4, so the Ares storm is Night -7",
+   "justification": "one day's coasting between the Philyra night and the arrival night [me: count]; the text gives no count for the coast ('ἐπιπρὸ γὰρ αἰὲν ἔτεμνον'), so this is the shortest reading, not a stated interval"
+  },
+  {
+   "option": "a4",
+   "operational": "arrival on Night -4 but the Ares storm on Night -8",
+   "justification": "more than one day passes along the coast ('ἐπιπρὸ γὰρ αἰὲν ἔτεμνον' gives no count)"
+  },
+  {
+   "option": "afree",
+   "operational": "arrival on Night -4; the Ares storm on Night -7 to Night -10 (0 to 3 extra coasting days; the bound is the drafter's)",
+   "justification": "no count is given for the coasting past the Macrones, Becheiri, Sapeires and Byzeres (2.1242-1245)"
+  },
+  {
+   "option": "none",
+   "operational": "no link: the Ares storm night is not placed relative to Day 0 (row 01 then fixes no searchable date)",
+   "justification": "the coasting passage has no count, so the storm night's offset is not stated"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "edited: option a3 presented a one-day coasting passage as a count, but the text gives none for it; a3 is now labelled the shortest reading, option afree (0-3 extra days, drafter's bound) is added beside a4, and a 'none' option (storm night unlinked) is added, as for the other uncounted intervals (AEN-CARTHAGE-02, VF-LEMNOS-07, ARG-RETURN-03)"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: τὸ δὲ μυρίον ἐκ Διὸς ὕδωρ λῆξεν ἅμʼ ἠελίῳ
+   frag exact=True nfc=True where=['2.1227']: κατέδαρθεν
+   frag exact=True nfc=True where=['2.1228']: ἦρι δʼ ἀνεγρομένοισιν
+   frag exact=True nfc=True where=['2.1231']: νυκτὶ δʼ ἐπιπλομένῃ Φιλυρηίδα νῆσον ἄμειβον
+   frag exact=True nfc=True where=['2.1244']: ἐπιπρὸ γὰρ αἰὲν ἔτεμνον
+   frag exact=True nfc=True where=['2.1251']: ἴδον ἕσπερον
+   frag exact=True nfc=True where=['2.1260']: ἐννύχιοι
+   frag exact=True nfc=True where=['2.1285']: ἠὼς δʼ οὐ μετὰ δηρὸν ἐελδομένοις ἐφαάνθη
+ TEXT:
+      2.1116	καὶ νῆσον καὶ πᾶσαν ὅσην κατεναντία νήσου
+      2.1117	χώρην Μοσσύνοικοι ὑπέρβιοι ἀμφενέμοντο.
+      2.1118	τοὺς δʼ ἄμυδις κρατερῷ σὺν δούρατι κύματος ὁρμὴ
+      2.1119	υἱῆας Φρίξοιο μετʼ ἠιόνας βάλε νήσου
+   >> 2.1120	νύχθʼ ὕπο λυγαίην· τὸ δὲ μυρίον ἐκ Διὸς ὕδωρ
+   >> 2.1121	λῆξεν ἅμʼ ἠελίῳ· τάχα δʼ ἐγγύθεν ἀντεβόλησαν
+      2.1122	ἀλλήλοις, Ἄργος δὲ παροίτατος ἔκφατο μῦθον·
+      2.1123	Ἀντόμεθα πρὸς Ζηνὸς Ἐποψίου, οἵτινές ἐστε
+      2.1124	ἀνδρῶν, εὐμενέειν τε καὶ ἀρκέσσαι χατέουσιν.
+      ...
+      2.1223	κεῖσε μολεῖν, μακάρων σχεδὸν αἵματος ἐκγεγαῶτας.
+      2.1224	τῶ εἰ μὴ φιλότητι δέρος χρύσειον ὀπάσσει,
+      2.1225	οὔ οἱ χραισμήσειν ἐπιέλπομαι ἔθνεα Κόλχων.
+      2.1226	ὧς οἵγʼ ἀλλήλοισιν ἀμοιβαδὸν ἠγορόωντο,
+   >> 2.1227	μέσφʼ αὖτις δόρποιο κορεσσάμενοι κατέδαρθεν.
+   >> 2.1228	ἦρι δʼ ἀνεγρομένοισιν ἐυκραὴς ἄεν οὖρος·
+      2.1229	ἱστία δʼ ἤειραν, τὰ δʼ ὑπαὶ ῥιπῆς ἀνέμοιο
+      2.1230	τείνετο· ῥίμφα δὲ νῆσον ἀποπροέλειπον Ἄρηος.
+   >> 2.1231	νυκτὶ δʼ ἐπιπλομένῃ Φιλυρηίδα νῆσον ἄμειβον·
+      2.1232	ἔνθα μὲν Οὐρανίδης Φιλύρῃ Κρόνος, εὖτʼ ἐν Ὀλύμπῳ
+      2.1233	Τιτήνων ἤνασσεν, ὁ δὲ Κρηταῖον ὑπʼ ἄντρον
+      2.1234	Ζεὺς ἔτι Κουρήτεσσι μετετρέφετʼ Ἰδαίοισιν,
+      ...
+      2.1240	ἦλθʼ, ἵνα δὴ Χείρωνα πελώριον, ἄλλα μὲν ἵππῳ,
+      2.1241	ἄλλα θεῷ ἀτάλαντον, ἀμοιβαίῃ τέκεν εὐνῇ.
+      2.1242	κεῖθεν δʼ αὖ Μάκρωνας ἀπειρεσίην τε Βεχείρων
+      2.1243	γαῖαν ὑπερφιάλους τε παρεξενέοντο Σάπειρας,
+   >> 2.1244	Βύζηράς τʼ ἐπὶ τοῖσιν· ἐπιπρὸ γὰρ αἰὲν ἔτεμνον
+      2.1245	ἐσσυμένως, λιαροῖο φορεύμενοι ἐξ ἀνέμοιο.
+      2.1246	καὶ δὴ νισσομένοισι μυχὸς διεφαίνετο Πόντου.
+      2.1247	καὶ δὴ Καυκασίων ὀρέων ἀνέτελλον ἐρίπναι
+      2.1248	ἠλίβατοι, τόθι γυῖα περὶ στυφελοῖσι πάγοισιν
+      2.1249	ἰλλόμενος χαλκέῃσιν ἀλυκτοπέδῃσι Προμηθεὺς
+      2.1250	αἰετὸν ἥπατι φέρβε παλιμπετὲς ἀίσσοντα.
+   >> 2.1251	τὸν μὲν ἐπʼ ἀκροτάτης ἴδον ἕσπερον ὀξέι ῥοίζῳ
+      2.1252	νηὸς ὑπερπτάμενον νεφέων σχεδόν· ἀλλὰ καὶ ἔμπης
+      2.1253	λαίφεα πάντʼ ἐτίναξε, παραιθύξας πτερύγεσσιν.
+      2.1254	οὐ γὰρʼ ὅγʼ αἰθερίοιο φυὴν ἔχεν οἰωνοῖο,
+      ...
+      2.1256	δηρὸν δʼ. οὐ μετέπειτα πολύστονον ἄιον αὐδὴν
+      2.1257	ἧπαρ ἀνελκομένοιο Προμηθέος· ἔκτυπε δʼ αἰθὴρ
+      2.1258	οἰμωγῇ, μέσφʼ αὖτις ἀπʼ οὔρεος ἀίσσοντα
+      2.1259	αἰετὸν ὠμηστὴν αὐτὴν ὁδὸν εἰσενόησαν.
+   >> 2.1260	ἐννύχιοι δʼ Ἄργοιο δαημοσύνῃσιν ἵκοντο
+      2.1261	Φᾶσίν τʼ εὐρὺ ῥέοντα, καὶ ἔσχατα πείρατα πόντου.
+      2.1262	αὐτίκα δʼ ἱστία μὲν καὶ ἐπίκριον ἔνδοθι κοίλης
+      2.1263	ἱστοδόκης στείλαντες ἐκόσμεον· ἐν δὲ καὶ αὐτὸν
+      ...
+      2.1281	ὧς ἔφατʼ· Ἄργου δʼ αὖτε παρηγορίῃσιν Ἰήσων
+      2.1282	ὑψόθι νῆʼ ἐκέλευσεν ἐπʼ εὐναίῃσιν ἐρύσσαι
+      2.1283	δάσκιον εἰσελάσαντας ἕλος· τὸ δʼ ἐπισχεδὸν ἦεν
+      2.1284	νισσομένων, ἔνθʼ οἵγε διὰ κνέφας ηὐλίζοντο.
+   >> 2.1285	ἠὼς δʼ οὐ μετὰ δηρὸν ἐελδομένοις ἐφαάνθη.
+      3.1	εἰ δʼ ἄγε νῦν, Ἐρατώ, παρά θʼ ἵστασο, καί μοι ἔνισπε,
+      3.2	ἔνθεν ὅπως ἐς Ἰωλκὸν ἀνήγαγε κῶας Ἰήσων
+      3.3	Μηδείης ὑπʼ ἔρωτι. σὺ γὰρ καὶ Κύπριδος αἶσαν
+----------------------------------------------------------------------------------------------------
+CLUE ARG-COLCHIS-03  kind=interval  level=narrator
+{
+ "set": "ARG-COLCHIS",
+ "clue_id": "ARG-COLCHIS-03",
+ "kind": "interval",
+ "statement": "In Colchis: Day -3 Jason visits Aeetes (Day -3 is the day of the dawn of 2.1285: no dawn or nightfall is narrated between 2.1285 and 3.744 [me: search of the Greek for time words]); Night -3 Medea lies sleepless; Day -2 she meets Jason at Hecate's temple; at dawn of Day -1 the heroes ask Aeetes for the teeth; Night -1 Jason sacrifices; Day 0 is the ordeal, ending at sunset.",
+ "licence_words": "νὺξ μὲν ἔπειτʼ ἐπὶ γαῖαν ἄγεν κνέφας … ἀλλὰ μάλʼ οὐ Μήδειαν ἐπὶ γλυκερὸς λάβεν ὕπνος … φέγγος Ἠριγενής … αὐτὰρ ἅμʼ ἠοῖ … Ἠέλιος μὲν ἄπωθεν ἐρεμνὴν δύετο γαῖαν … ἠριγενὴς Ἠὼς βάλεν ἀντέλλουσα … ἦμαρ ἔδυ, καὶ τῷ τετελεσμένος ἦεν ἄεθλος",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.744",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.751",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.823",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.824",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1171",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1172",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1191",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1223",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1224",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1407"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "edited: the statement's Night -3 (Medea sleepless) was not in the quoted words, and Day -3 rests on the absence of any time marker between 2.1285 and 3.744; 3.744 and 3.751 are now quoted and the inference is stated"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['3.744']: νὺξ μὲν ἔπειτʼ ἐπὶ γαῖαν ἄγεν κνέφας
+   frag exact=True nfc=True where=['3.751']: ἀλλὰ μάλʼ οὐ Μήδειαν ἐπὶ γλυκερὸς λάβεν ὕπνος
+   frag exact=True nfc=True where=['(spans rows)']: φέγγος Ἠριγενής
+   frag exact=True nfc=True where=['3.1172']: αὐτὰρ ἅμʼ ἠοῖ
+   frag exact=True nfc=True where=['3.1191']: Ἠέλιος μὲν ἄπωθεν ἐρεμνὴν δύετο γαῖαν
+   frag exact=True nfc=True where=['3.1224']: ἠριγενὴς Ἠὼς βάλεν ἀντέλλουσα
+   frag exact=True nfc=True where=['3.1407']: ἦμαρ ἔδυ, καὶ τῷ τετελεσμένος ἦεν ἄεθλος
+ TEXT:
+      3.740	ὧς ἥγʼ ἐκ θαλάμοιο πάλιν κίε, παισί τʼ ἀρωγὴν
+      3.741	αὐτοκασιγνήτης διεπέφραδε. τὴν δέ μιν αὖτις
+      3.742	αἰδώς τε στυγερόν τε δέος λάβε μουνωθεῖσαν,
+      3.743	τοῖα παρὲξ οὗ πατρὸς ἐπʼ ἀνέρι μητιάασθαι.
+   >> 3.744	νὺξ μὲν ἔπειτʼ ἐπὶ γαῖαν ἄγεν κνέφας· οἱ δʼ ἐνὶ πόντῳ
+      3.745	ναῦται εἰς Ἑλίκην τε καὶ ἀστέρας Ὠρίωνος
+      3.746	ἔδρακον ἐκ νηῶν· ὕπνοιο δὲ καί τις ὁδίτης
+      3.747	ἤδη καὶ πυλαωρὸς ἐέλδετο· καί τινα παίδων
+      3.748	μητέρα τεθνεώτων ἀδινὸν περὶ κῶμʼ ἐκάλυπτεν·
+      3.749	οὐδὲ κυνῶν ὑλακὴ ἔτʼ ἀνὰ πτόλιν, οὐ θρόος ἦεν
+      3.750	ἠχήεις· σιγὴ δὲ μελαινομένην ἔχεν ὄρφνην.
+   >> 3.751	ἀλλὰ μάλʼ οὐ Μήδειαν ἐπὶ γλυκερὸς λάβεν ὕπνος.
+      3.752	πολλὰ γὰρ Αἰσονίδαο πόθῳ μελεδήματʼ ἔγειρεν
+      3.753	δειδυῖαν ταύρων κρατερὸν μένος, οἷσιν ἔμελλεν
+      3.754	φθίσθαι ἀεικελίῃ μοίρῃ κατὰ νειὸν Ἄρηος.
+      ...
+      3.819	ἄλλῃ δοιάζεσκεν· ἐέλδετο δʼ αἶψα φανῆναι
+      3.820	ἠῶ τελλομένην, ἵνα οἱ θελκτήρια δοίη
+      3.821	φάρμακα συνθεσίῃσι, καὶ ἀντήσειεν ἐς ὠπήν.
+      3.822	πυκνὰ δʼ ἀνὰ κληῖδας ἑῶν λύεσκε θυράων,
+   >> 3.823	αἴγλην σκεπτομένη· τῇ δʼ ἀσπάσιον βάλε φέγγος
+   >> 3.824	Ἠριγενής, κίνυντο δʼ ἀνὰ πτολίεθρον ἕκαστοι.
+      3.825	ἔνθα κασιγνήτους μὲν ἔτʼ αὐτόθι μεῖναι ἀνώγει
+      3.826	Ἄργος, ἵνα φράζοιντο νόον καὶ μήδεα κούρης·
+      3.827	αὐτὸς δʼ αὖτʼ ἐπὶ νῆα κίεν προπάροιθε λιασθείς.
+      ...
+      3.1167	οἱ δέ μιν ἀμφαγάπαζον, ὅπως ἴδον, ἔκ τʼ ἐρέοντο.
+      3.1168	αὐτὰρ ὁ τοῖς πάντεσσι μετέννεπε δήνεα κούρης,
+      3.1169	δεῖξέ τε φάρμακον αἰνόν· ὁ δʼ οἰόθεν οἶος ἑταίρων
+      3.1170	Ἴδας ἧστʼ ἀπάνευθε δακὼν χόλον· οἱ δὲ δὴ ἄλλοι
+   >> 3.1171	γηθόσυνοι τῆμος μέν, ἐπεὶ κνέφας ἔργαθε νυκτός,
+   >> 3.1172	εὔκηλοι ἐμέλοντο περὶ σφίσιν. αὐτὰρ ἅμʼ ἠοῖ
+      3.1173	πέμπον ἐς Αἰήτην ἰέναι σπόρον αἰτήσοντας
+      3.1174	ἄνδρε δύω, πρὸ μὲν αὐτὸν ἀρηίφιλον Τελαμῶνα,
+      3.1175	σὺν δὲ καὶ Αἰθαλίδην, υἷα κλυτὸν Ἑρμείαο.
+      ...
+      3.1187	Ἄρεος ἀμώοντος ὅσοι ὑπὸ δουρὶ λίποντο·
+      3.1188	τοὺς δὲ τότʼ Αἰήτης ἔπορεν μετὰ νῆα φέρεσθαι
+      3.1189	προφρονέως, ἐπεὶ οὔ μιν ὀίσσατο πείρατʼ ἀέθλου
+      3.1190	ἐξανύσειν, εἰ καί περ ἐπὶ ζυγὰ βουσὶ βάλοιτο.
+   >> 3.1191	Ἠέλιος μὲν ἄπωθεν ἐρεμνὴν δύετο γαῖαν
+      3.1192	ἑσπέριος, νεάτας ὑπὲρ ἄκριας Αἰθιοπήων·
+      3.1193	Νὺξ δʼ ἵπποισιν ἔβαλλεν ἔπι ζυγά· τοὶ δὲ χαμεύνας
+      3.1194	ἔντυον ἥρωες παρὰ πείσμασιν. αὐτὰρ Ἰήσων
+      ...
+      3.1219	νύμφαι ἑλειονόμοι ποταμηίδες, αἳ περὶ κείνην
+      3.1220	Φάσιδος εἱαμενὴν Ἀμαραντίου εἱλίσσονται.
+      3.1221	Αἰσονίδην δʼ ἤτοι μὲν ἕλεν δέος, ἀλλά μιν οὐδʼ ὧς
+      3.1222	ἐντροπαλιζόμενον πόδες ἔκφερον, ὄφρʼ ἑτάροισιν
+   >> 3.1223	μίκτο κιών· ἤδη δὲ φόως νιφόεντος ὕπερθεν
+   >> 3.1224	Καυκάσου ἠριγενὴς Ἠὼς βάλεν ἀντέλλουσα.
+      3.1225	καὶ τότʼ ἄρʼ Αἰήτης περὶ μὲν στήθεσσιν ἕεστο
+      3.1226	θώρηκα στάδιον, τόν οἱ πόρεν ἐξεναρίξας
+      3.1227	σφωιτέραις Φλεγραῖον Ἄρης ὑπὸ χερσὶ Μίμαντα·
+      ...
+      3.1403	κλήρου σημαντῆρα φυτοτρόφον· ὧς τότʼ ἄνακτος
+      3.1404	Αἰήταο βαρεῖαι ὑπὸ φρένας ἦλθον ἀνῖαι.
+      3.1405	ἤιε δʼ ἐς πτολίεθρον ὑπότροπος ἄμμιγα Κόλχοις,
+      3.1406	πορφύρων, ᾗ κέ σφι θοώτερον ἀντιόῳτο.
+   >> 3.1407	ἦμαρ ἔδυ, καὶ τῷ τετελεσμένος ἦεν ἄεθλος.
+      4.1	αὐτὴ νῦν κάματόν γε, θεά, καὶ δήνεα κούρης
+      4.2	Κολχίδος ἔννεπε, Μοῦσα, Διὸς τέκος. ἦ γὰρ ἔμοιγε
+      4.3	ἀμφασίῃ νόος ἔνδον ἑλίσσεται ὁρμαίνοντι,
+----------------------------------------------------------------------------------------------------
+CLUE ARG-COLCHIS-04  kind=star  level=narrator
+{
+ "set": "ARG-COLCHIS",
+ "clue_id": "ARG-COLCHIS-04",
+ "kind": "star",
+ "statement": "At nightfall of Night -3, 'sailors at sea looked to Helice and the stars of Orion from their ships' (part of a nocturne of the whole sleeping world).",
+ "licence_words": "νὺξ μὲν ἔπειτʼ ἐπὶ γαῖαν ἄγεν κνέφας … οἱ δʼ ἐνὶ πόντῳ ναῦται εἰς Ἑλίκην τε καὶ ἀστέρας Ὠρίωνος ἔδρακον ἐκ νηῶν",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.744",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.745",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.746"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "Betelgeuse and Rigel >= 5 deg above the horizon at the end of evening nautical twilight of Night -3 (computed at the set's site as a stand-in; see notes)",
+   "justification": "the nocturne is set at nightfall ('νὺξ ... ἄγεν κνέφας')"
+  },
+  {
+   "option": "b",
+   "operational": "Betelgeuse and Rigel >= 5 deg at some instant of the dark hours of Night -3 (computed at the set's site as a stand-in; see notes)",
+   "justification": "sailors watch through the night"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "a generic nocturne: the sailors are not the Argonauts and Helice (the Bear) is circumpolar"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "The sailors are generic and unlocated ('ἐνὶ πόντῳ'); the nocturne is framed by Medea's night at Aia (3.751). The words state no observing site, so the set's site (Colchis) is the drafter's stand-in.",
+ "license_check": "ok",
+ "license_check_r1": "edited: the options were silently computed at the set's site (Colchis), but the words put the star-watching sailors only 'at sea'; the site is now marked as the drafter's stand-in"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['3.744']: νὺξ μὲν ἔπειτʼ ἐπὶ γαῖαν ἄγεν κνέφας
+   frag exact=True nfc=True where=['(spans rows)']: οἱ δʼ ἐνὶ πόντῳ ναῦται εἰς Ἑλίκην τε καὶ ἀστέρας Ὠρίωνος ἔδρακον ἐκ νηῶν
+ TEXT:
+      3.740	ὧς ἥγʼ ἐκ θαλάμοιο πάλιν κίε, παισί τʼ ἀρωγὴν
+      3.741	αὐτοκασιγνήτης διεπέφραδε. τὴν δέ μιν αὖτις
+      3.742	αἰδώς τε στυγερόν τε δέος λάβε μουνωθεῖσαν,
+      3.743	τοῖα παρὲξ οὗ πατρὸς ἐπʼ ἀνέρι μητιάασθαι.
+   >> 3.744	νὺξ μὲν ἔπειτʼ ἐπὶ γαῖαν ἄγεν κνέφας· οἱ δʼ ἐνὶ πόντῳ
+   >> 3.745	ναῦται εἰς Ἑλίκην τε καὶ ἀστέρας Ὠρίωνος
+   >> 3.746	ἔδρακον ἐκ νηῶν· ὕπνοιο δὲ καί τις ὁδίτης
+      3.747	ἤδη καὶ πυλαωρὸς ἐέλδετο· καί τινα παίδων
+      3.748	μητέρα τεθνεώτων ἀδινὸν περὶ κῶμʼ ἐκάλυπτεν·
+      3.749	οὐδὲ κυνῶν ὑλακὴ ἔτʼ ἀνὰ πτόλιν, οὐ θρόος ἦεν
+----------------------------------------------------------------------------------------------------
+CLUE ARG-COLCHIS-05  kind=time-of-day  level=narrator
+{
+ "set": "ARG-COLCHIS",
+ "clue_id": "ARG-COLCHIS-05",
+ "kind": "time-of-day",
+ "statement": "Night -1: after sunset, once the stars of Helice the Bear had leaned over and the air was still, Jason goes to his midnight sacrifice, as Medea told him to wait for the night halved in two.",
+ "licence_words": "μέσσην νύκτα διαμμοιρηδὰ φυλάξας … αὐτίκʼ ἐπεί ῥʼ Ἑλίκης εὐφεγγέος ἀστέρες Ἄρκτου ἔκλιθεν",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1029",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1195",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1196",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1197"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "Dubhe (alpha UMa) is past its upper culmination (west of the meridian) at local midnight of Night -1",
+   "justification": "the leaning Bear read as a midnight star-clock, which depends on the season"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "a time-of-night marker only (after midnight, as instructed)"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "3.1029 is Medea's speech (character speech); 3.1195-1197 is narrator.",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['3.1029']: μέσσην νύκτα διαμμοιρηδὰ φυλάξας
+   frag exact=True nfc=True where=['(spans rows)']: αὐτίκʼ ἐπεί ῥʼ Ἑλίκης εὐφεγγέος ἀστέρες Ἄρκτου ἔκλιθεν
+ TEXT:
+      3.1025	ὀψὲ δὲ δὴ τοίοισι μόλις προσπτύξατο κούρη·
+      3.1026	φράζεο νῦν, ὥς κέν τοι ἐγὼ μητίσομʼ ἀρωγήν.
+      3.1027	εὖτʼ ἂν δὴ μετιόντι πατὴρ ἐμὸς ἐγγυαλίξῃ
+      3.1028	ἐξ ὄφιος γενύων ὀλοοὺς σπείρασθαι ὀδόντας,
+   >> 3.1029	δὴ τότε μέσσην νύκτα διαμμοιρηδὰ φυλάξας,
+      3.1030	ἀκαμάτοιο ῥοῇσι λοεσσάμενος ποταμοῖο,
+      3.1031	οἶος ἄνευθʼ ἄλλων ἐνὶ φάρεσι κυανέοισιν
+      3.1032	βόθρον ὀρύξασθαι περιηγέα· τῷ δʼ ἔνι θῆλυν
+      ...
+      3.1191	Ἠέλιος μὲν ἄπωθεν ἐρεμνὴν δύετο γαῖαν
+      3.1192	ἑσπέριος, νεάτας ὑπὲρ ἄκριας Αἰθιοπήων·
+      3.1193	Νὺξ δʼ ἵπποισιν ἔβαλλεν ἔπι ζυγά· τοὶ δὲ χαμεύνας
+      3.1194	ἔντυον ἥρωες παρὰ πείσμασιν. αὐτὰρ Ἰήσων
+   >> 3.1195	αὐτίκʼ ἐπεί ῥʼ Ἑλίκης εὐφεγγέος ἀστέρες Ἄρκτου
+   >> 3.1196	ἔκλιθεν, οὐρανόθεν δὲ πανεύκηλος γένετʼ αἰθήρ,
+   >> 3.1197	βῆ ῥʼ ἐς ἐρημαίην, κλωπήιος ἠύτε τις φώρ,
+      3.1198	σὺν πᾶσιν χρήεσσι· πρὸ γάρ τʼ ἀλέγυνεν ἕκαστα
+      3.1199	ἠμάτιος· θῆλυν μὲν ὄιν, γάλα τʼ ἔκτοθι ποίμνης
+      3.1200	Ἄργος ἰὼν ἤνεικε· τὰ δʼ ἐξ αὐτῆς ἕλε νηός.
+----------------------------------------------------------------------------------------------------
+CLUE ARG-COLCHIS-06  kind=moon-phase  level=narrator
+{
+ "set": "ARG-COLCHIS",
+ "clue_id": "ARG-COLCHIS-06",
+ "kind": "moon-phase",
+ "statement": "In Night 0, as Medea runs from the palace, the Titan goddess Moon, newly rising from the horizon, sees her and exults.",
+ "licence_words": "τὴν δὲ νέον Τιτηνὶς ἀνερχομένη περάτηθεν φοιταλέην ἐσιδοῦσα θεὰ ἐπεχήρατο Μήνη",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.54",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.55"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "moonrise falls in the dark hours of Night 0 (between the end of evening nautical twilight and the start of morning nautical twilight)",
+   "justification": "'νέον ... ἀνερχομένη περάτηθεν': the Moon is just rising during the flight"
+  },
+  {
+   "option": "b",
+   "operational": "moonrise falls between local midnight and 2 hours before the start of morning nautical twilight",
+   "justification": "the drafter's inference that the flight is late: the rowing to the grove, the hunters' pre-dawn hour (4.109-113) and the taking of the fleece all follow before dawn"
+  },
+  {
+   "option": "c",
+   "operational": "the Moon is above the horizon at some instant of Night 0",
+   "justification": "Selene only sees her"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "Selene as a speaking goddess-witness (4.57-65)"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: τὴν δὲ νέον Τιτηνὶς ἀνερχομένη περάτηθεν φοιταλέην ἐσιδοῦσα θεὰ ἐπεχήρατο Μήνη
+ TEXT:
+      4.50	ἔνθεν ἴμεν νηόνδε μάλʼ ἐφράσατʼ· οὐ γὰρ ἄιδρις
+      4.51	ἦεν ὁδῶν, θαμὰ καὶ πρὶν ἀλωμένη ἀμφί τε νεκρούς,
+      4.52	ἀμφί τε δυσπαλέας ῥίζας χθονός, οἷα γυναῖκες
+      4.53	φαρμακίδες· τρομερῷ δʼ ὑπὸ δείματι πάλλετο θυμός.
+   >> 4.54	τὴν δὲ νέον Τιτηνὶς ἀνερχομένη περάτηθεν
+   >> 4.55	φοιταλέην ἐσιδοῦσα θεὰ ἐπεχήρατο Μήνη
+      4.56	ἁρπαλέως, καὶ τοῖα μετὰ φρεσὶν ᾗσιν ἔειπεν·
+      4.57	οὐκ ἄρʼ ἐγὼ μούνη μετὰ Λάτμιον ἄντρον ἀλύσκω,
+      4.58	οὐδʼ οἴη καλῷ περιδαίομαι Ἐνδυμίωνι·
+----------------------------------------------------------------------------------------------------
+CLUE ARG-COLCHIS-07  kind=time-of-day  level=narrator
+{
+ "set": "ARG-COLCHIS",
+ "clue_id": "ARG-COLCHIS-07",
+ "kind": "time-of-day",
+ "statement": "Before dawn, at the hour hunters wake to beat the daylight, Jason and Medea go for the fleece; Dawn +1 spreads as they return to the ship.",
+ "licence_words": "ἦμος δʼ ἀνέρες ὕπνον ἀπʼ ὀφθαλμῶν ἐβάλοντο ἀγρόται … τῆμος ἄρʼ Αἰσονίδης κούρη τʼ ἀπὸ νηὸς ἔβησαν … Ἠὼς μέν ῥʼ ἐπὶ γαῖαν ἐκίδνατο",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.109",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.110",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.111",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.112",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.113",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.114",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.183"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: ἦμος δʼ ἀνέρες ὕπνον ἀπʼ ὀφθαλμῶν ἐβάλοντο ἀγρόται
+   frag exact=True nfc=True where=['4.114']: τῆμος ἄρʼ Αἰσονίδης κούρη τʼ ἀπὸ νηὸς ἔβησαν
+   frag exact=True nfc=True where=['4.183']: Ἠὼς μέν ῥʼ ἐπὶ γαῖαν ἐκίδνατο
+ TEXT:
+      4.105	νῆα· πολὺς δʼ ὀρυμαγδὸς ἐπειγομένων ἐλάτῃσιν
+      4.106	ἦεν ἀριστήων· ἡ δʼ ἔμπαλιν ἀίσσουσα
+      4.107	γαίῃ χεῖρας ἔτεινεν ἀμήχανος. αὐτὰρ Ἰήσων
+      4.108	θάρσυνέν τʼ ἐπέεσσι, καὶ ἴσχανεν ἀσχαλόωσαν.
+   >> 4.109	ἦμος δʼ ἀνέρες ὕπνον ἀπʼ ὀφθαλμῶν ἐβάλοντο
+   >> 4.110	ἀγρόται, οἵ τε κύνεσσι πεποιθότες οὔποτε νύκτα
+   >> 4.111	ἄγχαυρον κνώσσουσιν, ἀλευάμενοι φάος ἠοῦς,
+   >> 4.112	μὴ πρὶν ἀμαλδύνῃ θηρῶν στίβον ἠδὲ καὶ ὀδμὴν
+   >> 4.113	θηρείην λευκῇσιν ἐνισκίμψασα βολῇσιν·
+   >> 4.114	τῆμος ἄρʼ Αἰσονίδης κούρη τʼ ἀπὸ νηὸς ἔβησαν
+      4.115	ποιήεντʼ ἀνὰ χῶρον, ἵνα κριοῦ καλέονται
+      4.116	εὐναί, ὅθι πρῶτον κεκμηότα γούνατʼ ἔκαμψεν,
+      4.117	νώτοισιν φορέων Μινυήιον υἷʼ Ἀθάμαντος.
+      ...
+      4.179	ἤιε δʼ ἄλλοτε μὲν λαιῷ ἐπιειμένος ὤμῳ
+      4.180	αὐχένος ἐξ ὑπάτοιο ποδηνεκές, ἄλλοτε δʼ αὖτε
+      4.181	εἴλει ἀφασσόμενος· περὶ γὰρ δίεν, ὄφρα ἓ μή τις
+      4.182	ἀνδρῶν ἠὲ θεῶν νοσφίσσεται ἀντιβολήσας.
+   >> 4.183	Ἠὼς μέν ῥʼ ἐπὶ γαῖαν ἐκίδνατο, τοὶ δʼ ἐς ὅμιλον
+      4.184	ἷξον· θάμβησαν δὲ νέοι μέγα κῶας ἰδόντες
+      4.185	λαμπόμενον στεροπῇ ἴκελον Διός. ὦρτο δʼ ἕκαστος
+      4.186	ψαῦσαι ἐελδόμενος δέχθαι τʼ ἐνὶ χερσὶν ἑῇσιν.

@@ -1,0 +1,57 @@
+{
+ "P_BM": {
+  "n": 76,
+  "x3": 15,
+  "x4": 2,
+  "x_both": 1,
+  "q3": 0.1974,
+  "q4": 0.0263,
+  "p_both": 0.026,
+  "p_h4_only": 0.039,
+  "p_h3_only": 0.2208
+ },
+ "P_MWRA": {
+  "n": 43,
+  "x3": 8,
+  "x4": 1,
+  "x_both": 0,
+  "q3": 0.186,
+  "q4": 0.0233,
+  "p_both": 0.0227,
+  "p_h4_only": 0.0455,
+  "p_h3_only": 0.2273
+ },
+ "P_GS": {
+  "n": 33,
+  "x3": 7,
+  "x4": 1,
+  "x_both": 1,
+  "q3": 0.2121,
+  "q4": 0.0303,
+  "p_both": 0.0588,
+  "p_h4_only": 0.0588,
+  "p_h3_only": 0.2353
+ },
+ "H3_by_class": {
+  "mwra": [
+   8,
+   43
+  ],
+  "gs_only": [
+   7,
+   33
+  ],
+  "fisher_p": 0.7801
+ },
+ "H4_by_class": {
+  "mwra": [
+   1,
+   43
+  ],
+  "gs_only": [
+   1,
+   33
+  ]
+ },
+ "note": "rough rows of r2; predicates as heldout_attain.py; target removed before computation"
+}

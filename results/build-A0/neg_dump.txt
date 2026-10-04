@@ -1,0 +1,253 @@
+AEN-TROY AEN-TROY-01 time-of-day :: Nightfall ends Day 0; the Trojans fall asleep on the walls. Night 0 begins.
+AEN-TROY AEN-TROY-02 moon-phase :: In the first part of Night 0 the Greek fleet sails from Tenedos 'through the friendly silences of the silent moon'.
+       i-a | None | "the Moon is above the horizon at some instant between the end of evening nautical twilight and local midnight of Night 0, with illuminated fraction >= 0.5"
+       i-b | None | "the Moon is above the horizon at some instant between the end of evening nautical twilight and local midnight of Night 0 (any phase)"
+       i-c | None | "the Moon is above the horizon at some instant between the end of evening nautical twilight and the start of morning nautical twilight of Night 0 (any phase)"
+       ii-a | None | "Day 0 is the date of conjunction (LMT at Troy)"
+       ii-b | None | "conjunction falls within +-1.5 days of local midnight of Night 0 (the Moon invisible: interlunium)"
+       iii | None | "the Moon is below the horizon at the end of evening nautical twilight of Night 0 (any phase)"
+       none | None | "clue dropped"
+AEN-TROY AEN-TROY-03 time-of-day :: The royal ship raises the fire signal and Sinon lets the men out of the horse; Hector's ghost appears to Aeneas at the hour of first sleep. 
+AEN-TROY AEN-TROY-04 moon-phase :: During the fighting of Night 0 Rhipeus, Epytus, Hypanis and Dymas join Aeneas, 'met by the moon'.
+       a | None | "the Moon is above the horizon at some instant between the end of evening nautical twilight and the start of morning nautical twilight of Night 0"
+       b | None | "as a, with illuminated fraction >= 0.5 at that instant"
+       none | None | "clue dropped"
+AEN-TROY AEN-TROY-05 other :: Day 0, the last day of Troy, is a day of public celebration: the Trojans deck the shrines with festal foliage.
+       conj | None | "Day 0 is a conjunction date (LMT at Troy)"
+       none | None | "clue dropped"
+AEN-TROY AEN-TROY-06 interval :: Lucifer's rising (row 07) comes at the end of Night 0, after the night is spent: it is Dawn +1.
+AEN-TROY AEN-TROY-07 planet :: At Dawn +1 Lucifer was rising over the ridges of highest Ida and leading in the day, seen by Aeneas at the mound of Ceres outside Troy.
+       lead60 | None | "Venus rises at least 60 min before the Sun on Dawn +1 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)"
+       lead90 | None | "Venus rises at least 90 min before the Sun on Dawn +1"
+       lead120 | None | "Venus rises at least 120 min before the Sun on Dawn +1"
+       vis7 | None | "Venus visible as a morning object on Dawn +1 (arcus visionis 7 deg)"
+       herald | None | "some bright dawn herald visible before sunrise on Dawn +1: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)"
+       none | None | "clue dropped"
+       ida | None | "Venus's rising azimuth on Dawn +1, seen from Troy, lies within +-15 deg (variant +-30 deg) of the bearing of the Ida summit, 119 deg [me: great-circle bearing from Troy's coordinates in observer_places to Ida's in landmarks]"
+AEN-CRETE AEN-CRETE-01 season :: Some time before Night 0 (interval unstated) a plague year strikes the new settlement: Sirius scorches the barren fields and the grass dries
+       a60 | None | "Night 0 lies between Sirius' heliacal rising (first morning visibility at the site) and 60 days after it"
+       a30 | None | "as a60 with 30 days"
+       none | None | "clue dropped"
+AEN-CRETE AEN-CRETE-02 moon-phase :: On Night 0 the Penates appear to the sleeping Aeneas, clear in the light the full moon pours through the windows.
+       a | None | "opposition falls within +-1 day of local midnight of Night 0 and the Moon is above the horizon at some instant of Night 0"
+       b | None | "illuminated fraction >= 0.9 at local midnight of Night 0 and the Moon above the horizon at some instant of Night 0"
+       none | None | "clue dropped"
+AEN-ITALY AEN-ITALY-01 time-of-day :: The Sun sets at the end of Day 0 as the fleet beaches; the crews sleep.
+AEN-ITALY AEN-ITALY-02 star :: Before local midnight of Night 0 Palinurus rises and notes all the gliding stars: Arcturus, the rainy Hyades, the twin Triones and Orion arm
+       a5 | None | "each of Arcturus, Aldebaran (Hyades), Betelgeuse and Rigel (Orion) is >= 5 deg above the horizon at some instant between the end of evening nautical twilight and local midnight of Night 0 (the Triones, the Bears, are circumpolar)
+       a2 | None | "as a5 with >= 2 deg"
+       b5 | None | "all four >= 5 deg at one and the same instant in that window"
+       none | None | "clue dropped"
+AEN-ITALY AEN-ITALY-03 time-of-day :: At Dawn +1, as the stars flee, they sight the low hills of Italy.
+AEN-ETNA AEN-ETNA-01 time-of-day :: The wind drops with the Sun at the end of Day 0 and the fleet drifts onto the Cyclopes' shore.
+AEN-ETNA AEN-ETNA-02 moon-phase :: On Night 0 no stars were visible and cloud covered the sky; 'the dead of night held the Moon in a cloud'.
+       a | None | "the Moon is above the horizon at local midnight of Night 0"
+       b | None | "the Moon is above the horizon at some instant of Night 0"
+       none | None | "clue dropped"
+AEN-ETNA AEN-ETNA-03 planet :: Dawn +1 was rising 'with the first Eous', and Aurora had driven the damp shadow from the sky.
+       lead60 | None | "Venus rises at least 60 min before the Sun on Dawn +1 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)"
+       lead90 | None | "Venus rises at least 90 min before the Sun on Dawn +1"
+       lead120 | None | "Venus rises at least 120 min before the Sun on Dawn +1"
+       vis7 | None | "Venus visible as a morning object on Dawn +1 (arcus visionis 7 deg)"
+       herald | None | "some bright dawn herald visible before sunrise on Dawn +1: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)"
+       none | None | "clue dropped"
+AEN-ETNA AEN-ETNA-04 moon-phase :: On Day +1 Achaemenides, a Greek left behind, says that the horns of the third moon are now filling with light since he began living in the w
+       a | None | "the Moon is waxing on Day +1 (between conjunction and opposition)"
+       b | None | "opposition falls within +-2 days of Day +1"
+       none | None | "clue dropped"
+AEN-CARTHAGE AEN-CARTHAGE-01 planet :: On Day M1 Mercury (Cyllenius) binds on his golden sandals, takes his wand, flies until he sees Atlas, alights there, plunges headlong toward
+       mwra | None | "Mercury's maximum western rise azimuth within +-t days of Day M1; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)"
+       gwe | None | "Mercury's greatest western elongation within +-t days of Day M1; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)"
+       station | None | "a Mercury station that ends retrograde motion (morning station) within +-t days of Day M1; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)"
+       any3 | None | "any of the three events above within +-t days of Day M1; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)"
+       firstvis | None | "Mercury's first morning visibility (arcus visionis 10 deg) within +-t days of Day M1; t in {1, 2, 3} days"
+       none | None | "clue dropped"
+AEN-CARTHAGE AEN-CARTHAGE-02 interval :: Between Day M1 and Night 0 Aeneas has the fleet readied in secret, Dido confronts him, the Trojans work on the ships and Dido prepares her r
+       free30 | None | "Day M1 lies 1 to 30 days before Day 0 (the upper bound is the drafter's)"
+       none | None | "clue dropped"
+AEN-CARTHAGE AEN-CARTHAGE-03 season :: Between Day M1 and Night 0 Dido says Aeneas is readying his fleet under the wintry star, hurrying to sea in the midst of the north winds.
+       a | None | "Night 0 falls when the Sun's ecliptic longitude is between 225 and 315 deg (winter solstice +-45 days)"
+       b | None | "Night 0 falls between the autumn equinox and the vernal equinox"
+       none | None | "clue dropped"
+AEN-CARTHAGE AEN-CARTHAGE-04 time-of-day :: Night 0: midnight, the stars in mid-course; all creatures sleep except Dido.
+AEN-CARTHAGE AEN-CARTHAGE-05 planet :: In Night 0 (after the midnight scene of row 04 in the narrative order; no hour is stated) Mercury appears again to the sleeping Aeneas on hi
+       mwra | None | "Mercury's maximum western rise azimuth within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)"
+       gwe | None | "Mercury's greatest western elongation within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)"
+       station | None | "a Mercury station that ends retrograde motion (morning station) within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)"
+       any3 | None | "any of the three events above within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)"
+       firstvis | None | "Mercury's first morning visibility (arcus visionis 10 deg) within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days"
+       none | None | "clue dropped"
+AEN-CARTHAGE AEN-CARTHAGE-06 time-of-day :: The fleet leaves at once; at Dawn +1 Dido sees the harbour empty.
+AEN-CARTHAGE AEN-CARTHAGE-07 interval :: At the banquet on the night Aeneas reaches Carthage (an unstated time before Night 0 of this set), Dido says the seventh 'aestas' (summer, o
+       a | None | "Night 0 of AEN-CARTHAGE falls 6 to 8 years after Night 0 of AEN-TROY"
+       none | None | "clue dropped"
+ARG-CIUS ARG-CIUS-01 time-of-day :: The Argo reaches Cius at the hour when a digger or ploughman goes home hungry for supper, at the end of Day 0.
+ARG-CIUS ARG-CIUS-02 moon-phase :: Early in Night 0, while Hylas draws water for supper, the full (mid-month) moon shines on him from the sky and the nymph of the spring sees 
+       a | None | "opposition falls within +-1 day of local midnight of Night 0 and the Moon is above the horizon at some instant in the 3 hours after sunset of Day 0"
+       b | None | "opposition within +-2 days of local midnight of Night 0 and the Moon above the horizon at some instant of Night 0"
+       none | None | "clue dropped"
+ARG-CIUS ARG-CIUS-03 planet :: At Dawn +1 the dawn star rose over the highest peaks and the breezes came down; Tiphys urges them aboard and they sail, leaving Heracles.
+       lead60 | None | "Venus rises at least 60 min before the Sun on Dawn +1 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)"
+       lead90 | None | "Venus rises at least 90 min before the Sun on Dawn +1"
+       lead120 | None | "Venus rises at least 120 min before the Sun on Dawn +1"
+       vis7 | None | "Venus visible as a morning object on Dawn +1 (arcus visionis 7 deg)"
+       herald | None | "some bright dawn herald visible before sunrise on Dawn +1: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)"
+       none | None | "clue dropped"
+ARG-CIUS ARG-CIUS-04 time-of-day :: Dawn +1 breaks after the sailing; only then do they see they have left Heracles behind.
+ARG-CIUS ARG-CIUS-05 darkness :: On the battle night (Night -17 under row 06's n17, Night -16 under n16, Night -18 under n18) the Argo, after a full day's sail, is driven ba
+       a | None | "the Moon is below the horizon for at least 75% of the dark hours of that night"
+       b | None | "the Moon is below the horizon at local midnight of that night"
+       none | None | "clue dropped"
+ARG-CIUS ARG-CIUS-06 interval :: From the battle night to Night 0: three whole days of mourning; from then on storms for twelve days and nights; the halcyon on the night the
+       n17 | None | "the battle night is Night -17 and the halcyon night is Night -2"
+       n18 | None | "battle night Night -18; halcyon Night -2"
+       n16 | None | "battle night Night -16; halcyon Night -2"
+ARG-CIUS ARG-CIUS-07 season :: On Night -2 a halcyon flies over the sleeping Jason, prophesying the end of the winds.
+       a | None | "Night -2 within +-7 days of the winter solstice"
+       b | None | "Night -2 within +-15 days of the Pleiades' morning setting or of either solstice"
+       none | None | "clue dropped"
+ARG-COLCHIS ARG-COLCHIS-01 season :: On the storm night (Night -7 under ARG-COLCHIS-02:a3, Night -8 under a4, Night -7 to -10 under afree; not placed under none), which ends the
+       a | None | "the storm night (as ARG-COLCHIS-02 places it) within +-15 days of Arcturus' morning setting (setting at dawn)"
+       b | None | "the storm night (as ARG-COLCHIS-02 places it) within +-15 days of Arcturus' heliacal rising (first morning visibility)"
+       c | None | "the storm night (as ARG-COLCHIS-02 places it) within +-15 days of Arcturus' evening setting (last evening visibility)"
+       d | None | "the storm night (as ARG-COLCHIS-02 places it) within +-15 days of Arcturus' evening (acronychal) rising (first rising seen after sunset)"
+       none | None | "clue dropped"
+ARG-COLCHIS ARG-COLCHIS-02 interval :: From Night -7: the rain stops at sunrise (Day -6); they sleep that night; early next morning (Day -5) they leave the island; on the followin
+       a3 | None | "arrival at the Phasis on Night -4, so the Ares storm is Night -7"
+       a4 | None | "arrival on Night -4 but the Ares storm on Night -8"
+       afree | None | "arrival on Night -4; the Ares storm on Night -7 to Night -10 (0 to 3 extra coasting days; the bound is the drafter's)"
+       none | None | "no link: the Ares storm night is not placed relative to Day 0 (row 01 then fixes no searchable date)"
+ARG-COLCHIS ARG-COLCHIS-03 interval :: In Colchis: Day -3 Jason visits Aeetes (Day -3 is the day of the dawn of 2.1285: no dawn or nightfall is narrated between 2.1285 and 3.744 [
+ARG-COLCHIS ARG-COLCHIS-04 star :: At nightfall of Night -3, 'sailors at sea looked to Helice and the stars of Orion from their ships' (part of a nocturne of the whole sleepin
+       a | None | "Betelgeuse and Rigel >= 5 deg above the horizon at the end of evening nautical twilight of Night -3 (computed at the set's site as a stand-in; see notes)"
+       b | None | "Betelgeuse and Rigel >= 5 deg at some instant of the dark hours of Night -3 (computed at the set's site as a stand-in; see notes)"
+       none | None | "clue dropped"
+ARG-COLCHIS ARG-COLCHIS-05 time-of-day :: Night -1: after sunset, once the stars of Helice the Bear had leaned over and the air was still, Jason goes to his midnight sacrifice, as Me
+       a | None | "Dubhe (alpha UMa) is past its upper culmination (west of the meridian) at local midnight of Night -1"
+       none | None | "clue dropped"
+ARG-COLCHIS ARG-COLCHIS-06 moon-phase :: In Night 0, as Medea runs from the palace, the Titan goddess Moon, newly rising from the horizon, sees her and exults.
+       a | None | "moonrise falls in the dark hours of Night 0 (between the end of evening nautical twilight and the start of morning nautical twilight)"
+       b | None | "moonrise falls between local midnight and 2 hours before the start of morning nautical twilight"
+       c | None | "the Moon is above the horizon at some instant of Night 0"
+       none | None | "clue dropped"
+ARG-COLCHIS ARG-COLCHIS-07 time-of-day :: Before dawn, at the hour hunters wake to beat the daylight, Jason and Medea go for the fleece; Dawn +1 spreads as they return to the ship.
+ARG-RETURN ARG-RETURN-01 planet :: On Day E, when the Sun set, the 'star of the fold' that brings rest to weary ploughmen came up; the wind then dropped in the black night.
+       lag60 | None | "Venus sets at least 60 min after the Sun on Day E"
+       lag90 | None | "Venus sets at least 90 min after the Sun on Day E"
+       lag120 | None | "Venus sets at least 120 min after the Sun on Day E"
+       vis7 | None | "Venus visible as an evening object on Day E (arcus visionis 7 deg)"
+       herald | None | "some bright evening object visible in the evening twilight of Day E: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter"
+       none | None | "clue dropped"
+ARG-RETURN ARG-RETURN-02 interval :: From the evening of Day E they row all night, the next day and the following night; Carpathos receives them on Day E+2.
+ARG-RETURN ARG-RETURN-03 interval :: From Carpathos they cross to Crete (no day count), where Talos bars them; they spend Night -1 on Crete and at the new dawn of Day 0 found a 
+       x0 | None | "the crossing to Crete is on Day E+2, so Day E = Day -3"
+       xfree | None | "the crossing takes x = 0 to 10 further days, so Day E is between Day -13 and Day -3 (the upper bound is the drafter's)"
+       none | None | "no link: Day E is not placed relative to Day 0 (row 01 then fixes no searchable date)"
+ARG-RETURN ARG-RETURN-04 darkness :: After they embark at the new dawn of Day 0 (row 03), 'at once' (Αὐτίκα), as they run over the Cretan sea, the night they call 'the pall' ter
+       a | None | "the Moon is below the horizon for at least 75% of the dark hours of Night 0"
+       b | None | "conjunction falls within +-2 days of local midnight of Night 0"
+       c | None | "an umbral lunar eclipse is in progress while the Moon is above the horizon during Night 0"
+       d | None | "a solar eclipse of class X1-X4 (DESIGN 3.1) visible at the set's first site (the Cretan sea beyond Cape Salmonis) on Day 0, maximum at any time the Sun is above the horizon"
+       none | None | "clue dropped"
+ARG-RETURN ARG-RETURN-05 time-of-day :: After Apollo's bow flashes, an islet appears; they anchor, and Dawn +1 rises at once: they name the island Anaphe.
+QS-SACK QS-SACK-01 time-of-day :: The fleet waits at Tenedos through Night -1 for the torch; Dawn of Day 0 comes; the Trojans see smoke over the Hellespont shore and the hors
+QS-SACK QS-SACK-02 darkness :: Among the portents at the Trojans' sacrifices on Night 0, night-birds cry and a mist covers all the stars above the city, although the shini
+       a | None | "an umbral lunar eclipse is in progress while the Moon is above the horizon at Troy in the evening of Night 0 (before local midnight)"
+       b | None | "the Moon is above the horizon with illuminated fraction >= 0.9 at the end of evening nautical twilight of Night 0"
+       c | None | "Day 0 is a conjunction date (LMT at Troy)"
+       none | None | "clue dropped"
+QS-SACK QS-SACK-03 star :: During the sack (Night 0) they say Electra, mother of Dardanus, wrapped herself in mist and cloud and left the dance of her sister Pleiades;
+       a | None | "the Pleiades (Alcyone) are above the horizon at some instant of the dark hours of Night 0"
+       b | None | "Alcyone >= 5 deg above the horizon at some instant of the dark hours of Night 0"
+       b-late | None | "Alcyone >= 5 deg above the horizon at some instant between local midnight and the start of morning nautical twilight of Night 0"
+       none | None | "clue dropped"
+QS-SACK QS-SACK-04 time-of-day :: When sleep holds the drunken city, Sinon raises the torch and the fleet sails from Tenedos: the sack is in Night 0.
+QS-SACK QS-SACK-05 time-of-day :: Dawn +1 rises from Ocean; the victors feast until midnight of Night +1; Dawn +2 scatters the night and the Greeks prepare to sail home.
+QS-SACK QS-SACK-06 darkness :: On the voyage home (day not stated, at least Day +2), near Euboea, Athena gathers clouds: night pours round the earth and the sea darkens.
+       a | None | "a solar eclipse of class X1-X4 (DESIGN 3.1) visible near Cape Caphereus, Sun above the horizon, on some day from Day +2 to Day +12 (the bound is the drafter's)"
+       none | None | "clue dropped"
+VF-LEMNOS VF-LEMNOS-01 interval :: The Argo sails at the dawn of 1.311; a storm whose darkness the text calls 'nox' (1.617, 1.670) passes and day shines again (1.655); the Arg
+       a | None | "the departure day is Day 0"
+       b | None | "the departure day is Day -3 to Day 0"
+VF-LEMNOS VF-LEMNOS-02 moon-phase :: At nightfall of Night 0 Tiphys tells the frightened crew the sky is steady and the Moon has risen clear, her horn not swollen, with no redne
+       a | None | "the Moon is above the horizon in the evening twilight of Night 0 with illuminated fraction <= 0.25"
+       b | None | "the Moon is above the horizon at some instant between sunset and local midnight of Night 0 (any phase)"
+       none | None | "clue dropped"
+VF-LEMNOS VF-LEMNOS-03 star :: Tiphys: he does not steer by the stars that slip from the pole into the sea, 'great Orion already sets, already Perseus hisses in the angry 
+       a | None | "Betelgeuse, Rigel and Mirfak (alpha Persei) are above the horizon at the end of evening nautical twilight of Night 0 and each sets before local midnight"
+       b | None | "Night 0 within +-15 days of Orion's morning setting (setting at dawn)"
+       none | None | "clue dropped"
+VF-LEMNOS VF-LEMNOS-04 star :: At Dawn +1 the fields whiten 'under the dim fires of the dawn Atlantid', the Sun first strikes Athos, and Lemnos rises from the sea.
+       a | None | "Dawn +1 within +-7 days of the Pleiades' heliacal rising (first morning visibility of Alcyone at the site)"
+       b | None | "Dawn +1 within +-7 days of the Pleiades' morning setting (setting at dawn)"
+       c | None | "Alcyone above the horizon at the start of morning nautical twilight of Dawn +1"
+       none | None | "clue dropped"
+VF-LEMNOS VF-LEMNOS-05 season :: On Day L, during the stay at Lemnos, Jupiter by the law of the sky had set the Pleiad moving with her stormy star, and storms burst on land 
+       a | None | "Day L within +-15 days of the Pleiades' morning setting"
+       b | None | "Day L between the Pleiades' morning setting and the vernal equinox"
+       none | None | "clue dropped"
+VF-LEMNOS VF-LEMNOS-06 moon-phase :: On a day of the Lemnos stay Tiphys sees the Moon thick with rain at her fourth rising.
+       a | None | "some day of the Lemnos stay (row 07) has a Moon 2.5 to 4.5 days past conjunction at sunset, visible in the evening"
+       none | None | "clue dropped"
+VF-LEMNOS VF-LEMNOS-07 interval :: The Argonauts stay at Lemnos an unstated time, kept by the storms and by love, until Heracles rouses them.
+       w60 | None | "Day L (rows 05 and 06) lies 1 to 60 days after Dawn +1 (the bound is the drafter's)"
+       none | None | "clue dropped"
+VF-CYZICUS VF-CYZICUS-01 time-of-day :: The third dawn at Cyzicus begins Day 0 and the Argo sails; in Night 0, as the stars incline and bring sleep, Tiphys dozes and the ship is ca
+VF-CYZICUS VF-CYZICUS-02 moon-phase :: In the battle of Night 0 the Moon, pitying, shines out from the pitch-black sky and turns a spear from Erymus.
+       a | None | "the Moon is above the horizon at some instant between local midnight and the start of morning nautical twilight of Night 0"
+       b | None | "the Moon is above the horizon at some instant of Night 0"
+       none | None | "clue dropped"
+VF-CYZICUS VF-CYZICUS-03 time-of-day :: Dawn +1 lights the harbour and the towers they know.
+VF-COLCHIS VF-COLCHIS-01 planet :: On Day 0 late 'vesper' (the evening, or the evening star) parts Medea from her Thessalian guest, and night falls.
+       lag60 | None | "Venus sets at least 60 min after the Sun on Day 0"
+       lag90 | None | "Venus sets at least 90 min after the Sun on Day 0"
+       lag120 | None | "Venus sets at least 120 min after the Sun on Day 0"
+       vis7 | None | "Venus visible as an evening object on Day 0 (arcus visionis 7 deg)"
+       herald | None | "some bright evening object visible in the evening twilight of Day 0: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter"
+       none | None | "clue dropped"
+VF-COLCHIS VF-COLCHIS-02 planet :: After a sleepless Night 0 Medea sees her threshold whiten with the thin light of Eous: Dawn +1.
+       lead60 | None | "Venus rises at least 60 min before the Sun on Dawn +1 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)"
+       lead90 | None | "Venus rises at least 90 min before the Sun on Dawn +1"
+       lead120 | None | "Venus rises at least 120 min before the Sun on Dawn +1"
+       vis7 | None | "Venus visible as a morning object on Dawn +1 (arcus visionis 7 deg)"
+       herald | None | "some bright dawn herald visible before sunrise on Dawn +1: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)"
+       none | None | "clue dropped"
+IL-PATROCLUS IL-PATROCLUS-01 time-of-day :: Dawn of Day 0 (11.1); Hera sends the unwilling Sun down to Ocean and it sets, ending Day 0 (18.239-241); Dawn +1 (19.1).
+IL-PATROCLUS IL-PATROCLUS-02 darkness :: Earlier on Day 0 than the noon and afternoon markers of 16.777-780, in the fight over Sarpedon's body, Zeus stretches deadly night over the 
+       conj | None | "Day 0 is a conjunction date (LMT at Troy)"
+       solar_am | None | "a solar eclipse of class X1-X4 (DESIGN 3.1) visible at Troy on Day 0 with maximum before local apparent noon"
+       solar_any | None | "a solar eclipse of class X1-X4 (DESIGN 3.1) visible at Troy on Day 0, maximum at any time the Sun is above the horizon"
+       none | None | "clue dropped"
+IL-PATROCLUS IL-PATROCLUS-03 time-of-day :: While the Sun bestrode mid-heaven the two sides were even; when it passed to the hour of unyoking oxen the Achaeans prevailed: noon, then af
+IL-PATROCLUS IL-PATROCLUS-04 darkness :: In the afternoon of Day 0, over Patroclus' body, 'you would not have said the Sun or the Moon was safe', for mist held the best fighters; th
+       a | None | "a solar eclipse of class X1-X4 visible at Troy on Day 0 with maximum after local apparent noon and last contact before sunset"
+       b | None | "the Moon is above the horizon at some instant of the afternoon of Day 0"
+       none | None | "clue dropped"
+IL-PATROCLUS IL-PATROCLUS-05 darkness :: At the end of Day 0 Hera sends the tireless Sun, unwilling, to the streams of Ocean, and it sets.
+       a | None | "a solar eclipse of class X1-X4 visible at Troy on Day 0 with maximum within the last 2 hours before sunset"
+       none | None | "clue dropped"
+IL-PATROCLUS IL-PATROCLUS-06 star :: In Night 0 Hephaestus makes the Shield: earth, sky and sea, the tireless Sun and the full Moon, and all the constellations: Pleiades, Hyades
+       a | None | "Alcyone, Aldebaran, Betelgeuse and Rigel are each >= 2 deg above the horizon at some instant of the dark hours of Night 0"
+       b | None | "Day 0 within +-15 days of the Pleiades' morning setting"
+       c | None | "opposition within +-1 day of local midnight of Night 0"
+       none | None | "clue dropped"
+IL-PATROCLUS IL-PATROCLUS-07 interval :: Hector dies on Day +1; Achilles sleeps on the shore in Night +1; at Dawn +2 they gather wood and build the pyre; the winds fan it all throug
+IL-PATROCLUS IL-PATROCLUS-08 planet :: At Dawn +3, when the light-bringer goes forth to announce light on the earth and saffron Dawn spreads over the sea after it, the pyre dies d
+       lead60 | None | "Venus rises at least 60 min before the Sun on Dawn +3 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)"
+       lead90 | None | "Venus rises at least 90 min before the Sun on Dawn +3"
+       lead120 | None | "Venus rises at least 120 min before the Sun on Dawn +3"
+       vis7 | None | "Venus visible as a morning object on Dawn +3 (arcus visionis 7 deg)"
+       herald | None | "some bright dawn herald visible before sunrise on Dawn +3: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)"
+       none | None | "clue dropped"
+IL-PATROCLUS IL-PATROCLUS-09 interval :: Day H, when Priam goes to Achilles, is the twelfth dawn after Hector's death.
+       h13 | None | "Day H = Day +13"
+       h12 | None | "Day H = Day +12"
+       h15 | None | "Day H = Day +15"
+IL-PATROCLUS IL-PATROCLUS-10 planet :: On the evening of Day H Hermes ties on his sandals, takes his wand and flies to Troy and the Hellespont (the seven lines that Od. 5.43-49 re
+       mwra | None | "Mercury's maximum western rise azimuth within +-t days of Day H; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)"
+       gwe | None | "Mercury's greatest western elongation within +-t days of Day H; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)"
+       station | None | "a Mercury station that ends retrograde motion (morning station) within +-t days of Day H; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)"
+       any3 | None | "any of the three events above within +-t days of Day H; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)"
+       firstvis | None | "Mercury's first morning visibility (arcus visionis 10 deg) within +-t days of Day H; t in {1, 2, 3} days"
+       dawnvis | None | "Mercury visible as a morning object at Dawn H+1 (arcus visionis 10 deg)"
+       none | None | "clue dropped"

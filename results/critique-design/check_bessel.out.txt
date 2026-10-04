@@ -1,0 +1,15 @@
+(-1177, 4, 16) canon dT 28590.0 mag 0.9839 partial max UT 10:22 LMT 11:45 Sun alt 57.2
+   totality window (dT, s): (28805, 29580)  offsets vs canon: (215.0, 990.0)
+(-1130, 9, 30) canon dT 27690.9 mag 1.0169 total max UT 09:49 LMT 11:12 Sun alt 51.6
+   totality window (dT, s): (27050, 28035)  offsets vs canon: (-640.9000000000015, 344.09999999999854)
+(-1311, 6, 24) canon dT 31202.6 mag 0.9841 partial max UT 10:39 LMT 12:02 Sun alt 74.9
+   totality window (dT, s): (31742, 32652)  offsets vs canon: (539.4000000000015, 1449.4000000000015)
+(-1182, 1, 12) canon dT 28690.5 mag 0.9684 partial max UT 06:32 LMT 07:55 Sun alt 3.9
+   totality window (dT, s): None  offsets vs canon: None
+1178 BC dT 27602.7 mag 0.909 UT 10:45 LMT 12:08 
+1178 BC dT 28543 mag 0.980 UT 10:23 LMT 11:46 
+1178 BC dT 28590 mag 0.984 UT 10:22 LMT 11:45 
+1178 BC dT 28907 mag 1.008 UT 10:15 LMT 11:38 total
+1178 BC dT 29263 mag 1.025 UT 10:07 LMT 11:30 total
+
+[exited with code 0]

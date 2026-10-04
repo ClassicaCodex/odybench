@@ -1,0 +1,10 @@
+ok   scan: a phrase across a wrap, the tiers, and the line numbers
+ok   detect: statements with every phrase present
+ok   named_pair parses the synthetic Appendix T
+ok   near_line: whole range inside the band
+ok   S0x alone: C(4,2) pairs
+ok   a single revision-7 knife-edge identifies the other near set
+ok   notfix removes only the pair that leaves one revision-8 knife-edge
+ok   row74: at least one exception with held-out rows (ALM-E and ALM-G have none)
+ok   identified
+selftest: passed

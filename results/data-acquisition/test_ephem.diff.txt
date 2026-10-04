@@ -1,0 +1,6 @@
+6,7c6,7
+< PASS test_dt_is_longitude_shift (0.2 s)
+< PASS test_babylon_135_window_with_de431 (1.8 s)
+---
+> PASS test_dt_is_longitude_shift (0.1 s)
+> PASS test_babylon_135_window_with_de431 (1.7 s)

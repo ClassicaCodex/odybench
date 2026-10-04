@@ -1,0 +1,605 @@
+==========================================================================================
+SET ALM-A: records ['IX.10.3', 'X.8.2', 'IX.9.4', 'XI.2.2'] span 55 d; tight True; anchor IX.10.3
+  description: Mercury evening star beside the Moon (Day 0); Mars about three days past opposition beside the Moon; Mercury at greatest morning elongation; Moon beside Jupiter before sunrise. Four records over about 55 days. (Lunar phases are inferred, and entered only as forks with a 'none' option.)
+  observer: {"value": "Alexandria for IX.10.3 and XI.2.2 (stated); unstated for X.8.2 and IX.9.4", "words": ["ἦν ὁ χρόνος ἐν Ἀλεξανδρείᾳ", "τὴν δʼ ἐν Ἀλεξανδρείᾳ φαινομένην"], "refs": ["9.10.3", "11.2.2"], "search_coordinates": {"lat": 31.2, "lon": 29.92}, "coordinates_source": "modern approximate placement written by the drafter; the text gives only the name"}
+----------------------------------------------------------------------
+ALM-A.1 [planet] day 0 rec IX.10.3 level: narrator
+  STATEMENT: Mercury is an evening star on this day (4.5 equinoctial hours before midnight) and has NOT yet reached its greatest eastern (evening) elongation.
+  LICENCE: μηδέπω ἐπὶ τὴν μεγίστην ἑσπερίαν ἀπόστασιν ἐληλυθότα … πρὸ δ U+2220ʹ ὡρῶν ἰσημερινῶν … μεσονυκτίου
+   * ge_after_within_j: {"j_days": [7, 15, 30]}
+       just: 'not yet at greatest elongation': the next greatest elongation on that side falls 0..j days later. The words ('μηδέπω … ἐληλυθότα') give no number of days: j (7/15/30) is the drafter's bound, an inference, not a stated interval; the unbounded literal reading is 'ge_after_same_apparition'
+     ge_after_same_apparition: {"bound": "same_apparition"}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-A.2 [moon-phase] day 0 rec IX.10.3 level: narrator
+  STATEMENT: The Moon stands close to Mercury (Mercury 1 1/6 deg to the east of the Moon's centre) at 4 1/2 equinoctial hours before midnight, while Mercury is an evening star.
+  LICENCE: μηδέπω ἐπὶ τὴν μεγίστην ἑσπερίαν ἀπόστασιν ἐληλυθότα … τότε δὲ καὶ τοῦ κέντρου τῆς σελήνης ὑπελείπετο μοῖραν α καὶ ϛʹ … πρὸ δ U+2220ʹ ὡρῶν ἰσημερινῶν … μεσονυκτίου
+   * phase_class: {"class": "young_crescent"}
+       just: Mercury is an evening star and never more than about 28 deg from the Sun, so a Moon beside it in the evening is a young crescent a few days after conjunction (my inference)
+     positional: {"tolerance_deg": [0.5, 1.0, 2.0]}
+     none: null
+  NOTES: Mercury 1 1/6 deg to the rear (east) of the Moon's centre
+----------------------------------------------------------------------
+ALM-A.3 [interval] day 13 rec X.8.2 level: narrator
+  STATEMENT: Record X.8.2 falls on civil day +13 relative to Day 0 (record IX.10.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 9.10.3 and 10.8.2 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+----------------------------------------------------------------------
+ALM-A.4 [planet] day 13 rec X.8.2 level: narrator
+  STATEMENT: Mars was at opposition (to the mean Sun, Ptolemy's 'ἀκρώνυκτος') about three days before this day.
+  LICENCE: μετὰ γ ἔγγιστα ἡμέρας τῆς γ΄ ἀκρωνύκτου
+     opp_true_k: {"k_days": [1, 2, 3]}
+   * opp_mean_k: {"k_days": [1, 2, 3]}
+       just: opposition to the mean Sun (Ptolemy's definition, 10.7.2) 3 +- k days earlier
+     none: null
+  NOTES: 'ἔγγιστα' (about): the three days are approximate in the words. 'To the mean Sun' is Ptolemy's definition of his acronychal observations at 10.7.2: 'τριῶν ἀκρωνύκτων τῶν πρὸς τὴν μέσην τοῦ ἡλίου πάροδον διαμέτρων'
+----------------------------------------------------------------------
+ALM-A.5 [moon-phase] day 13 rec X.8.2 level: narrator
+  STATEMENT: At 3 equinoctial hours before midnight the Moon stands close to Mars (Mars 1 3/5 deg to the east of the Moon's centre), about three days after Mars' opposition.
+  LICENCE: μετὰ γ ἔγγιστα ἡμέρας τῆς γ΄ ἀκρωνύκτου … πρὸ τριῶν ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου … καὶ τοῦ κέντρου τῆς σελήνης ἀπ- έχων ἐφαίνετο εἰς τὰ ἑπόμενα τὴν αὐτὴν μίαν μοῖραν καὶ γ πεμπτημόρια
+   * phase_class: {"class": "near_full"}
+       just: Mars is about three days from opposition, so a Moon beside it is near full (my inference)
+     positional: {"tolerance_deg": [0.5, 1.0, 2.0]}
+     none: null
+  NOTES: Mars 1 3/5 deg to the east of the Moon's centre
+----------------------------------------------------------------------
+ALM-A.6 [interval] day 52 rec IX.9.4 level: narrator
+  STATEMENT: Record IX.9.4 falls on civil day +52 relative to Day 0 (record IX.10.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 9.10.3 and 9.9.4 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+   * as_printed: {"day_offset": 52}
+       just: the Egyptian date as printed in the export
+     mean_sun_emended: {"day_offset": 49}
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+----------------------------------------------------------------------
+ALM-A.7 [planet] day 52 rec IX.9.4 level: narrator
+  STATEMENT: Mercury is a morning star at its greatest western (morning) elongation on this day (before dawn).
+  LICENCE: ὄρθρου … τηροῦντες τὴν μεγίστην αὐτοῦ διάστασιν … ὥστε γεγονέναι καὶ τὴν ἑῴαν μεγίστην ἀπόστασιν
+   * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       just: the words say the planet stood at (or about) its greatest distance from the Sun; read as: the day lies within k days of the greatest elongation from the TRUE Sun on that side (k = 1 is B&M's own tolerance)
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+     bm_mwra_k: {"k_days": [1, 2, 3]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates) The planet is not named in this row: the chapter heading 'τῶν τοῦ τοῦ Ἑρμοῦ ἀνωμαλιῶν' (9.9.1) names it. (the row has only 'αὐτοῦ').
+----------------------------------------------------------------------
+ALM-A.8 [interval] day 55 rec XI.2.2 level: narrator
+  STATEMENT: Record XI.2.2 falls on civil day +55 relative to Day 0 (record IX.10.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 9.10.3 and 11.2.2 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+----------------------------------------------------------------------
+ALM-A.9 [planet] day 55 rec XI.2.2 level: narrator
+  STATEMENT: Jupiter is seen (sighted with the astrolabe) before sunrise, about 5 equinoctial hours after midnight.
+  LICENCE: πρὸ τῆς τοῦ ἡλίου ἀνατολῆς, τουτέστιν μετὰ ε ὥρας ἔγγιστα ἰσημερινὰς τοῦ μεσονυκτίου … ὁ τοῦ Διὸς ἐπέχων ἐφαίνετο
+   * visible_before_sunrise: {"min_altitude_deg": [5]}
+       just: the observation was made before sunrise
+     none: null
+----------------------------------------------------------------------
+ALM-A.10 [moon-phase] day 55 rec XI.2.2 level: narrator
+  STATEMENT: Before sunrise (about 5 equinoctial hours after midnight) the Moon's centre has the same longitude as Jupiter, the Moon lying further south.
+  LICENCE: πρὸ τῆς τοῦ ἡλίου ἀνατολῆς, τουτέστιν μετὰ ε ὥρας ἔγγιστα ἰσημερινὰς τοῦ μεσονυκτίου, ἐπειδήπερ ἡ μὲν μέση τοῦ ἡλίου πάροδος ἐπεῖχεν Καρκίνου μοίρας ῑϚ ῑᾱ … ὁ τοῦ Διὸς ἐπέχων ἐφαίνετο Διδύμων μοίρας ῑε U+2220 δ΄, τῷ δὲ κέντρῳ τῆς σελήνης νοτιωτέρας οὔσης ἐξ ἴσου ἐφαίνετο
+   * phase_class: {"class": "waning_crescent"}
+       just: a Moon seen before sunrise is waning; with the longitudes Ptolemy states in the same sentence (Jupiter's, and the mean Sun's) it is about 30 deg west of the Sun, an old crescent (inference from the stated numbers)
+     positional: {"tolerance_deg": [0.5, 1.0, 2.0]}
+     none: null
+  NOTES: Jupiter appeared level (same longitude) with the Moon's centre, the Moon being further south
+==========================================================================================
+SET ALM-B: records ['X.4.3', 'XI.6.2', 'V.3.2', 'VII.2.4'] span 69 d; tight True; anchor X.4.3
+  description: Venus morning star past greatest elongation beside the Moon (Day 0); Moon beside Saturn 4 hours before midnight; two Sun-Moon elongation measurements (about last and first quarter). Four records over about 70 days. (The phase of the Moon in the first two records is inferred, fork with 'none'.)
+  observer: {"value": "Alexandria (stated in all four rows)", "words": ["ἐφαίνετο δʼ ἐν Ἀλεξανδρείᾳ", "ἡ δὲ ἐν Ἀλεξανδρείᾳ φαινομένη", "ἐν Ἀλεξανδρείᾳ", "μέλλοντος μὲν δύνειν ἐν Ἀλεξανδρείᾳ τοῦ ἡλίου"], "refs": ["10.4.3", "11.6.2", "5.3.2", "7.2.4"], "search_coordinates": {"lat": 31.2, "lon": 29.92}, "coordinates_source": "modern approximate placement written by the drafter; the text gives only the name"}
+----------------------------------------------------------------------
+ALM-B.1 [planet] day 0 rec X.4.3 level: narrator
+  STATEMENT: Venus is a morning star on this day (4.75 equinoctial hours after midnight) and is already PAST its greatest western (morning) elongation.
+  LICENCE: τὸν τῆς Ἀφροδίτης ἀστέρα μετὰ τὴν μεγίστην ἑῴαν ἀπόστασιν … ὁ δὲ χρόνος ἦν μετὰ δ U+2220΄ δ΄ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου
+   * ge_before_within_j: {"j_days": [7, 15, 30, 60]}
+       just: 'after greatest elongation': the last greatest elongation on that side fell 0..j days earlier. The words ('μετὰ τὴν μεγίστην ἑῴαν ἀπόστασιν') give no number of days: j (7/15/30/60) is the drafter's bound, an inference, not a stated interval; the unbounded literal reading is 'ge_before_same_apparition'
+     ge_before_same_apparition: {"bound": "same_apparition"}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+     bm_venus_lead: {"lead_min": [60, 90, 120]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-B.2 [moon-phase] day 0 rec X.4.3 level: narrator
+  STATEMENT: At 4 3/4 equinoctial hours after midnight Venus stands between beta Sco and the Moon's apparent centre, in line with them, and west of the Moon's centre by 1 1/2 times the amount by which it is east of beta Sco (the words give this ratio, not a distance).
+  LICENCE: τὸν τῆς Ἀφροδίτης ἀστέρα μετὰ τὴν μεγίστην ἑῴαν ἀπόστασιν … μεταξὺ καὶ ἐπʼ εὐθείας ἦν τῷ τε βορειοτάτῳ τῶν ἐν τῷ μετώπῳ τοῦ Σκορπίου καὶ τῷ φαινομένῳ κέντρῳ τῆς σελήνης, τοῦ δὲ κέντρου τῆς σελήνης προηγεῖτο ἡμιόλιον, οὗ ὑπελείπετο τοῦ βορειοτάτου τῶν ἐν τῷ μετώπῳ … ὁ δὲ χρόνος ἦν μετὰ δ U+2220΄ δ΄ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου
+   * phase_class: {"class": "waning_crescent"}
+       just: Venus is a morning star past its greatest elongation, which never exceeds about 47 deg, so a Moon beside it lies west of the Sun by less than about 47 deg: a waning crescent (drafter's inference; it needs no time of day)
+     positional: {"relation": "moon_app_lon - venus_lon = 1.5 * (venus_lon - star_lon), with venus_lon between star_lon and moon_app_lon", "star": "beta Sco", "tolerance_deg": [0.5, 1.0, 2.0]}
+     none: null
+  NOTES: Venus preceded (was west of) the Moon's centre by 1 1/2 times its distance east of beta Sco; with Ptolemy's own longitudes (Venus Scorpius 6;30, beta Sco 6;20 in 10.9.2, Moon 6;45) that is about 1/4 deg. That 1/4 deg is derived from Ptolemy's computed lunar longitude: it is not a stated offset and no option uses it
+----------------------------------------------------------------------
+ALM-B.3 [star] day 0 rec X.4.3 level: narrator
+  STATEMENT: Venus relative to a named star on this day: between and in line with beta Sco and the Moon's apparent centre.
+  LICENCE: μεταξὺ καὶ ἐπʼ εὐθείας ἦν τῷ τε βορειοτάτῳ τῶν ἐν τῷ μετώπῳ τοῦ Σκορπίου καὶ τῷ φαινομένῳ κέντρῳ τῆς σελήνης
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the alignment hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: between and in line with beta Sco and the Moon's apparent centre
+----------------------------------------------------------------------
+ALM-B.4 [interval] day 6 rec XI.6.2 level: narrator
+  STATEMENT: Record XI.6.2 falls on civil day +6 relative to Day 0 (record X.4.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 10.4.3 and 11.6.2 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+----------------------------------------------------------------------
+ALM-B.5 [moon-phase] day 6 rec XI.6.2 level: narrator
+  STATEMENT: At 4 equinoctial hours before midnight Saturn stands about 1/2 deg to the east of the Moon's centre (and as far from its northern horn).
+  LICENCE: πρὸ δ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου … τοῦ μέσου ἡλίου ἐπέχοντος Τοξότου μοίρας κη μα … καὶ τοῦ κέντρου δὲ τῆς σελήνης ὑπελείπετο ἥμισυ ἔγγιστα α μοίρας· τοσοῦτον γὰρ αὐτῆς ἀπεῖχεν τοῦ βορείου κέρατος … ὤφειλεν ἐπέχειν Ὑδροχόου μοίρας θ μ, ἡ δὲ ἐν Ἀλεξανδρείᾳ φαινομένη μοίρας η λδ
+   * phase_class: {"class": "waxing_crescent"}
+       just: a Moon still up at that hour and seen with a 'northern horn' is a crescent; with the Moon's and the mean Sun's longitudes Ptolemy states in this row it is about 40 deg east of the Sun, a waxing crescent (inference)
+     positional: {"tolerance_deg": [0.5, 1.0, 2.0]}
+     none: null
+  NOTES: Saturn about 1/2 deg to the rear (east) of the Moon's centre, the same distance from its northern horn
+----------------------------------------------------------------------
+ALM-B.6 [interval] day 55 rec V.3.2 level: narrator
+  STATEMENT: Record V.3.2 falls on civil day +55 relative to Day 0 (record X.4.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 10.4.3 and 5.3.2 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+----------------------------------------------------------------------
+ALM-B.7 [moon-phase] day 55 rec V.3.2 level: narrator
+  STATEMENT: The apparent Moon is about 99 deg west of the Sun (5.25 equinoctial hours before noon (after sunrise)): last quarter (Moon west of the Sun, seen after sunrise).
+  LICENCE: μετὰ μὲν τὴν ἀνατολὴν τὴν τοῦ ἡλίου, πρὸ πέντε δὲ καὶ δʼ ὡρῶν ἰσημερινῶν τῆς μεσημβρίας … τοῦ γὰρ ἡλίου διοπτευομένου κατὰ Ὑδροχόου μοίρας ιη U+2220΄ γʹ καὶ μέσουρανούσης Τοξότου μοίρας δ΄ ἡ σελήνη ἐφαίνετο ἐπέχουσα Σκορπίου μοίρας θ … ὡς τεταρτημορίου τυγχάνειν ἔγγιστα τὴν μέσην ἀποχὴν τοῦ ἡλίου
+     elongation_tol: {"tolerance_deg": [3, 6, 12]}
+   * phase_class: {"class": "last_quarter", "tolerance_days": [1, 2]}
+       just: quarter Moon within the tolerance in days
+  NOTES: the licence words also give the Sun's zodiacal longitude, a season statement that is NOT used here (no coordinates in the B&M grammar)
+----------------------------------------------------------------------
+ALM-B.8 [interval] day 69 rec VII.2.4 level: narrator
+  STATEMENT: Record VII.2.4 falls on civil day +69 relative to Day 0 (record X.4.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 10.4.3 and 7.2.4 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+----------------------------------------------------------------------
+ALM-B.9 [moon-phase] day 69 rec VII.2.4 level: narrator
+  STATEMENT: The apparent Moon is about 92 deg east of the Sun (5.5 equinoctial hours after noon): first quarter (Moon east of the Sun at sunset).
+  LICENCE: μέλλοντος μὲν δύνειν ἐν Ἀλεξανδρείᾳ τοῦ ἡλίου … μετὰ ἐ U+2220ʹ ὥρας ἴσημερινὰς … τὴν φαινομένην σελήνην ἀπέχουσαν τοῦ ἡλίου περὶ τὰς τρεῖς μοίρας τῶν Ἰχθύων διοπτευομένου τμήματα 9β καὶ η΄ … μοιρῶν εἰς τὰ ἑπόμενα διάστασιν
+     elongation_tol: {"tolerance_deg": [3, 6, 12]}
+   * phase_class: {"class": "first_quarter", "tolerance_days": [1, 2]}
+       just: quarter Moon within the tolerance in days
+  NOTES: the licence words also give the Sun's zodiacal longitude, a season statement that is NOT used here (no coordinates in the B&M grammar). '9β' in the licence is the numeral ϙβ (92), the export printing the koppa as the digit 9; Ptolemy's own reduction in the row confirms it (the Moon's longitude he derives exceeds the Sun's by 92 1/8 deg)
+==========================================================================================
+SET ALM-C: records ['IX.8.3', 'IV.6.14'] span 17 d; tight True; anchor IX.8.3
+  description: Mercury morning star about greatest elongation (Day 0) and a partial lunar eclipse on civil day +17.
+  observer: {"value": "Alexandria for the eclipse (4.6.13 introduces the three eclipses as observed there); unstated for IX.8.3", "words": ["ἐκ τῶν ἐπιμελέστατα ἡμῖν ἐν Ἀλεξανδρείᾳ τετηρημένων"], "refs": ["4.6.13"], "search_coordinates": {"lat": 31.2, "lon": 29.92}, "coordinates_source": "modern approximate placement written by the drafter; the text gives only the name"}
+----------------------------------------------------------------------
+ALM-C.1 [planet] day 0 rec IX.8.3 level: narrator
+  STATEMENT: Mercury is a morning star (ἑῷος) at about its greatest western (morning) elongation on this day; no hour is stated.
+  LICENCE: ἑῷος ὁ τοῦ Ἑρμοῦ περὶ τὴν μεγίστην τυγχάνων ἀπόστασιν
+   * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       just: the words say the planet stood at (or about) its greatest distance from the Sun; read as: the day lies within k days of the greatest elongation from the TRUE Sun on that side (k = 1 is B&M's own tolerance)
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+     bm_mwra_k: {"k_days": [1, 2, 3]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-C.2 [interval] day 17 rec IV.6.14 level: narrator
+  STATEMENT: Record IV.6.14 falls on civil day +17 relative to Day 0 (record IX.8.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 9.8.3 and 4.6.14 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters. The anchor record IX.8.3 has no hour word: 'ἑῷος' (morning star) places it in the pre-dawn part of the night it is dated to, giving +17 (an evening placement would give +18). Ptolemy's mean-Sun figure for IX.8.3 and true-Sun figure for the eclipse imply 17.72 days between the two instants against 17.75 from the dates (results/license-chec
+----------------------------------------------------------------------
+ALM-C.3 [eclipse-lunar] day 17 rec IV.6.14 level: narrator
+  STATEMENT: A partial lunar eclipse in the night of this day: 1/2 + 1/3 of the diameter eclipsed, from the north; mid-eclipse 1 equinoctial hour before midnight (Ptolemy's computed time).
+  LICENCE: τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι πρὸ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου· καὶ ἐξέλειπεν ἀπʼ ἄρκτων τὸ U+2220ʹ καὶ γʹ τῆς διαμέτρου
+     any_visible: null
+   * magnitude: {"umbral_mag_range": [[0.7, 0.95], [0.6, 1.0]]}
+       just: 5/6 (1/2 + 1/3) of the diameter eclipsed; this option tests the magnitude only (the side, 'ἀπʼ ἄρκτων', is tested by 'magnitude_and_side')
+     magnitude_and_side: {"umbral_mag_range": [[0.7, 0.95], [0.6, 1.0]], "eclipsed_limb": "north"}
+     magnitude_and_time: {"umbral_mag_range": [[0.7, 0.95], [0.6, 1.0]], "time_tol_h": [1, 2]}
+  NOTES: the mid-time is Ptolemy's reduction ('ἐπελογισάμεθα'), not a direct reading
+==========================================================================================
+SET ALM-D: records ['IX.7.4', 'X.1.3'] span 35 d; tight True; anchor IX.7.4
+  description: Mercury at greatest evening elongation (Day 0) and Venus at greatest evening elongation about 35 days later.
+  observer: {"value": "unstated", "words": [], "refs": [], "search_coordinates": null, "coordinates_source": "no site in the words: horizon-dependent options (visible_only, bm_venus_lead, bm_mwra_k, visible_before_sunrise) need one; the harness uses its default site and reports it"}
+----------------------------------------------------------------------
+ALM-D.1 [planet] day 0 rec IX.7.4 level: narrator
+  STATEMENT: Mercury is an evening star at its greatest eastern (evening) elongation on this day (evening).
+  LICENCE: ἑσπέρας τὸν τοῦ Ἑρμοῦ ἀστέρα … τὸ πλεῖστον ἀποστάντα τῆς μέσης τοῦ ἡλίου παρόδου … ἡ μεγίστη ἄρα τῆς μέσης ἀπόστασις ἑσπερία
+   * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       just: the words say the planet stood at (or about) its greatest distance from the Sun; read as: the day lies within k days of the greatest elongation from the TRUE Sun on that side (k = 1 is B&M's own tolerance)
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-D.2 [interval] day 35 rec X.1.3 level: narrator
+  STATEMENT: Record X.1.3 falls on civil day +35 relative to Day 0 (record IX.7.4); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 9.7.4 and 10.1.3 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters. X.1.3 has no hour word: 'ἑσπέριος' (evening star) places it in the evening part of its dated night, giving +35 (a pre-dawn placement would give +36); Ptolemy's mean-Sun figures in the two rows imply 35.00 days (results/license-check-almagest/r2/interval_check.txt)
+----------------------------------------------------------------------
+ALM-D.3 [planet] day 35 rec X.1.3 level: narrator
+  STATEMENT: Venus is an evening star (ἑσπέριος) at its greatest eastern (evening) elongation on this day; no hour is stated.
+  LICENCE: ὁ τῆς Ἀφροδίτης ἑσπέριος τὸ πλεῖστον ἀπέστη τοῦ ἡλίου
+   * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       just: the words say the planet stood at (or about) its greatest distance from the Sun; read as: the day lies within k days of the greatest elongation from the TRUE Sun on that side (k = 1 is B&M's own tolerance)
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates). The record has no hour or time word: 'ἑσπέριος' (as an evening star) places the sighting in the evening part of the night it is dated to, which fixes its civil day (the set's +35; a pre-dawn placement would give +36)
+----------------------------------------------------------------------
+ALM-D.4 [star] day 35 rec X.1.3 level: narrator
+  STATEMENT: Venus relative to a named star on this day: west of the middle of the Pleiades by the Pleiades' length (Ptolemy: about 1 1/2 deg), a little to the south.
+  LICENCE: προηγούμενος τοῦ μέσου τῆς Πλειάδος τὸ τῆς Πλειάδος μῆκος· ἐδόκει δὲ καὶ μικρῷ νοτιώτερος αὐτὴν παραπορεύεσθαι … τὸ δὲ μῆκος αὐτῆς α U+2220΄ ἐστιν ἔγγιστα μοίρας
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the stated offset in longitude holds within the tolerance: west of the middle of the Pleiades by one Pleiad length, 1 1/2 deg by Ptolemy's value in this row. Latitude: the words give only the side ('μικρῷ νοτιώτερος', a little to the south) and no amount, so only 'south of' is tested
+     none: null
+  NOTES: west of the middle of the Pleiades by the Pleiades' length (Ptolemy: about 1 1/2 deg), a little to the south
+==========================================================================================
+SET ALM-E: records ['X.3.2b', 'III.1.10'] span 33 d; tight True; anchor X.3.2b
+  description: Venus at greatest evening elongation (Day 0) and a spring equinox about 33 days later.
+  observer: {"value": "unstated", "words": [], "refs": [], "search_coordinates": null, "coordinates_source": "no site in the words: horizon-dependent options (visible_only, bm_venus_lead, bm_mwra_k, visible_before_sunrise) need one; the harness uses its default site and reports it"}
+----------------------------------------------------------------------
+ALM-E.1 [planet] day 0 rec X.3.2b level: narrator
+  STATEMENT: Venus is an evening star at its greatest eastern (evening) elongation on this day (evening).
+  LICENCE: ἐσπέρας, καθʼ ἣν τὸ πλεῖστον ὁ τῆς Ἀφροδίτης ἀπέσχεν τοῦ ἡλίου … τὴν ἑσπερίαν τῆς μέσης μεγίστην ἀπόστασιν
+   * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       just: the words say the planet stood at (or about) its greatest distance from the Sun; read as: the day lies within k days of the greatest elongation from the TRUE Sun on that side (k = 1 is B&M's own tolerance)
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-E.2 [interval] day 33 rec III.1.10 level: narrator
+  STATEMENT: Record III.1.10 falls on civil day +33 relative to Day 0 (record X.3.2b); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 10.3.2 and 3.1.10 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters. The two records are dated in different eras; the link between them is stated in the text itself at 3.1.9 (Ptolemy equates the regnal year of 10.3.2's second record with the year 'from Alexander's death' that 3.1.10 uses), so the interval needs no outside chronology
+----------------------------------------------------------------------
+ALM-E.3 [season] day 33 rec III.1.10 level: narrator
+  STATEMENT: The spring equinox occurred on this day, about one hour after noon (the words do not say 'equinoctial'; on an equinox day seasonal and equinoctial hours are equal).
+  LICENCE: ἐαρινὴν ἰσημερίαν εὑρίσκομεν γεγενημένην … μετὰ μίαν ὥραν ἔγγιστα τῆς μεσημβρίας
+   * equinox_tol: {"tolerance_days": [0.5, 1, 2]}
+       just: true equinox within the tolerance of the stated instant
+     spring_broad: {"tolerance_days": [10]}
+  NOTES: Ptolemy's verb is 'εὑρίσκομεν' (we find); 3.1.9 says the matching autumn equinox of the same year was observed ('ἐτηρήσαμεν')
+==========================================================================================
+SET ALM-F: records ['X.2.4', 'X.1.6'] span 37 d; tight True; anchor X.2.4
+  description: Two records of Venus 'at greatest evening elongation' about 37 days apart (same apparition).
+  observer: {"value": "unstated", "words": [], "refs": [], "search_coordinates": null, "coordinates_source": "no site in the words: horizon-dependent options (visible_only, bm_venus_lead, bm_mwra_k, visible_before_sunrise) need one; the harness uses its default site and reports it"}
+----------------------------------------------------------------------
+ALM-F.1 [planet] day 0 rec X.2.4 level: narrator
+  STATEMENT: Venus is an evening star at its greatest eastern (evening) elongation on this day (evening).
+  LICENCE: ἑσπέρας τὸν τῆς Ἀφροδίτης τὸ πλεῖστον ἀποστάντα τοῦ ἡλίου
+   * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       just: the words say the planet stood at (or about) its greatest distance from the Sun; read as: the day lies within k days of the greatest elongation from the TRUE Sun on that side (k = 1 is B&M's own tolerance)
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-F.2 [interval] day 37 rec X.1.6 level: narrator
+  STATEMENT: Record X.1.6 falls on civil day +37 relative to Day 0 (record X.2.4); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 10.2.4 and 10.1.6 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+----------------------------------------------------------------------
+ALM-F.3 [planet] day 37 rec X.1.6 level: narrator
+  STATEMENT: Venus is an evening star at its greatest eastern (evening) elongation on this day (evening).
+  LICENCE: ἐσπέρας ἐτηρήσαμεν τὸν τῆς Ἀφροδίτης τὸ πλεῖστον ἀποστάντα τοῦ ἡλίου … ἡ ἑσπερία μεγίστη διάστασις
+   * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       just: the words say the planet stood at (or about) its greatest distance from the Sun; read as: the day lies within k days of the greatest elongation from the TRUE Sun on that side (k = 1 is B&M's own tolerance)
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-F.4 [star] day 37 rec X.1.6 level: narrator
+  STATEMENT: Venus relative to a named star on this day: west of the northernmost of an Aquarius quadrilateral by about 2/3 of a full moon (1/3 deg), seeming to outshine it (star identification uncertain: drafter's candidates lambda, phi, psi1-3 Aqr, each a separate branch).
+  LICENCE: προηγεῖτο τοῦ βορειοτάτου τῶν ὡς ἐν τετραπλεύρῳ δ μετὰ τὸν ἑπόμενον καὶ ἐπʼ εὐθείας τοῖς βουβῶσι τοῦ Ὑδροχόου δύο μέρη ἔγγιστα σελήνης διχομήνου καὶ ἐδόκει καταλάμπειν τὸν ἀστέρα
+     positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0], "star_candidates": ["lambda Aqr", "phi Aqr", "psi1 Aqr", "psi2 Aqr", "psi3 Aqr"], "candidate_rule": "each candidate is a separate garden branch (the identification is the drafter's, not the text's); do not pick the best-fitting one silently"}
+   * none: null
+       just: B&M-vocabulary-only reading: positional relations to named stars are not used
+  NOTES: west of the northernmost of an Aquarius quadrilateral by about 2/3 of a full moon (1/3 deg), seeming to outshine it (star identification uncertain: drafter's candidates lambda, phi, psi1-3 Aqr, each a separate branch); the star is not securely identified, so 'none' is the default
+==========================================================================================
+SET ALM-G: records ['X.3.2a', 'IX.7.5'] span 106 d; tight False; anchor X.3.2a
+  description: LONG: Venus at greatest morning elongation (Day 0) and Mercury at greatest morning elongation about 106 days later.
+  observer: {"value": "unstated", "words": [], "refs": [], "search_coordinates": null, "coordinates_source": "no site in the words: horizon-dependent options (visible_only, bm_venus_lead, bm_mwra_k, visible_before_sunrise) need one; the harness uses its default site and reports it"}
+----------------------------------------------------------------------
+ALM-G.1 [planet] day 0 rec X.3.2a level: narrator
+  STATEMENT: Venus is a morning star (ἑῷος) at its greatest western (morning) elongation on this day; no hour is stated.
+  LICENCE: καθʼ ἣν ἑῷος ὁ τῆς Ἀφροδίτης τὸ πλεῖστον ἀπέστη τοῦ ἡλίου
+   * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       just: the words say the planet stood at (or about) its greatest distance from the Sun; read as: the day lies within k days of the greatest elongation from the TRUE Sun on that side (k = 1 is B&M's own tolerance)
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+     bm_venus_lead: {"lead_min": [60, 90, 120]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-G.2 [interval] day 106 rec IX.7.5 level: narrator
+  STATEMENT: Record IX.7.5 falls on civil day +106 relative to Day 0 (record X.3.2a); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 10.3.2 and 9.7.5 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters. The anchor X.3.2a has no hour word: 'ἑῷος' places it in the pre-dawn part of its dated night, giving +106 (an evening placement would give +107); Ptolemy's mean-Sun figures imply 106.02 days (results/license-check-almagest/r2/interval_check.txt)
+----------------------------------------------------------------------
+ALM-G.3 [planet] day 106 rec IX.7.5 level: narrator
+  STATEMENT: Mercury is a morning star at its greatest western (morning) elongation on this day (before dawn).
+  LICENCE: ὄρθρου ἐπὶ τῆς μεγίστης ὢν ἀποστάσεως ὁ τοῦ Ἑρμοῦ καὶ σφόδρα λεπτὸς καὶ ἀμαυρὸς φαινόμενος … ἡ μεγίστη τῆς μέσης ἀπόστασις ἑῴα
+   * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       just: the words say the planet stood at (or about) its greatest distance from the Sun; read as: the day lies within k days of the greatest elongation from the TRUE Sun on that side (k = 1 is B&M's own tolerance)
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+     bm_mwra_k: {"k_days": [1, 2, 3]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+==========================================================================================
+SET ALM-H: records ['IX.7.9', 'IX.7.11', 'IX.7.14'] span 192 d; tight False; anchor IX.7.9
+  description: LONG: three Mercury records relative to stars (morning, then two evenings), about 190 days; one interval is a textual fork.
+  observer: {"value": "unstated (the calendar a record is dated in is not a place statement)", "words": [], "refs": [], "search_coordinates": null, "coordinates_source": "no site in the words: horizon-dependent options (visible_only, bm_venus_lead, bm_mwra_k, visible_before_sunrise) need one; the harness uses its default site and reports it"}
+----------------------------------------------------------------------
+ALM-H.1 [planet] day 0 rec IX.7.9 level: narrator
+  STATEMENT: Mercury is a morning star on this day (before dawn); Ptolemy files the record among observations made about the greatest elongations.
+  LICENCE: ἑῷος ὁ Στίλβων … ὄρθρου. γέγονεν ἄρα ἡ μεγίστη τῆς μέσης ἀπόστασις ἑῴα
+   * visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       just: the record's own words say only morning/evening star (ἑῷος / ἑσπέρας)
+     ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     bm_mwra_k: {"k_days": [1, 2, 3]}
+  NOTES: the old record's own words say only 'ἑῷος'; the greatest-elongation status is Ptolemy's (narrator's) statement in this row ('γέγονεν ἄρα ἡ μεγίστη τῆς μέσης ἀπόστασις ἑῴα') and his selection rule for the chapter (9.7.2 'μεγίστων ἀποστάσεων τηρήσεις'; 9.7.8). The text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-H.2 [star] day 0 rec IX.7.9 level: narrator
+  STATEMENT: Mercury relative to a named star on this day: 3 'moons' (1 moon taken as 0.5 deg) north of delta Cap; Ptolemy then gives Mercury the star's own longitude.
+  LICENCE: τοῦ λαμπροτάτου οὐραίου ἐν Αἱγοκέρῳ διεῖχεν εἰς τὰ πρὸς ἄρκτους σελήνας γ
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the stated offsets in longitude/latitude hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: 3 'moons' (1 moon taken as 0.5 deg) north of delta Cap; Ptolemy then gives Mercury the star's own longitude
+----------------------------------------------------------------------
+ALM-H.3 [interval] day 102 rec IX.7.11 level: narrator
+  STATEMENT: Record IX.7.11 falls on civil day +102 relative to Day 0 (record IX.7.9); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 9.7.9 and 9.7.11 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+   * as_printed: {"day_offset": 102}
+       just: the Egyptian date as printed in the export
+     mean_sun_emended: {"day_offset": 72}
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+----------------------------------------------------------------------
+ALM-H.4 [planet] day 102 rec IX.7.11 level: narrator
+  STATEMENT: Mercury is an evening star on this day (evening); Ptolemy files the record among observations made about the greatest elongations.
+  LICENCE: ἑσπέρας … γέγονεν ἄρα ἡ μεγίστη τῆς μέσης ἀπόστασις ἑσπερία
+   * visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       just: the record's own words say only morning/evening star (ἑῷος / ἑσπέρας)
+     ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+  NOTES: the old record's own words say only 'ἑσπέρας'; the greatest-elongation status is Ptolemy's (narrator's) statement in this row ('γέγονεν ἄρα ἡ μεγίστη τῆς μέσης ἀπόστασις ἑσπερία') and his selection rule for the chapter (9.7.2; for 9.7.11 also 9.7.10 and 9.7.13). The planet is not named in this row: the chapter heading 9.7.1 ('τοῦ τοῦ Ἑρμοῦ ἀστέρος') names it. The text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-H.5 [star] day 102 rec IX.7.11 level: narrator
+  STATEMENT: Mercury relative to a named star on this day: 1.5 deg (3 moons) to the rear (east) of the line through the horns of Taurus (beta Tau - zeta Tau).
+  LICENCE: τῆς διὰ τῶν τοῦ Ταύρου κεράτων εὐθείας ὑπελείπετο τρεῖς σελήνας
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the stated distance from the line hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: 1.5 deg (3 moons) to the rear (east) of the line through the horns of Taurus (beta Tau - zeta Tau). The planet is not named in this row: the chapter heading 'τοῦ τοῦ Ἑρμοῦ ἀστέρος' (9.7.1) names it.
+----------------------------------------------------------------------
+ALM-H.6 [star] day 102 rec IX.7.11 level: narrator
+  STATEMENT: Mercury relative to a named star: it seemed that, in passing the common star (beta Tau), it would stand more than 3 moons (>1.5 deg) south of it ('ἀφέξειν' is future: the observer's expectation for the passage, not a separation measured on this day).
+  LICENCE: ἐδόκει δὲ παραπορευόμενος τοῦ κοινοῦ ἀφέξειν πρὸς μεσημβρίαν πλεῖον τριῶν σεληνῶν
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: Mercury's ecliptic latitude is more than 1.5 deg (3 moons) south of beta Tau's, within the tolerance, tested on this day: a stand-in for the separation at passing that the words describe (drafter's approximation)
+     none: null
+  NOTES: it seemed that, in passing the common star (beta Tau), it would stand more than 3 moons (>1.5 deg) south of it ('ἀφέξειν', future). The planet is not named in this row: the chapter heading 'τοῦ τοῦ Ἑρμοῦ ἀστέρος' (9.7.1) names it.
+----------------------------------------------------------------------
+ALM-H.7 [interval] day 192 rec IX.7.14 level: narrator
+  STATEMENT: Record IX.7.14 falls on civil day +192 relative to Day 0 (record IX.7.9); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 9.7.9 and 9.7.14 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+----------------------------------------------------------------------
+ALM-H.8 [planet] day 192 rec IX.7.14 level: narrator
+  STATEMENT: Mercury is an evening star on this day (evening); Ptolemy files the record among observations made about the greatest elongations.
+  LICENCE: ἑσπέρας … γέγονεν ἄρα ἡ μεγίστη τῆς μέσης ἀπόστασις ἑσπερία
+   * visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       just: the record's own words say only morning/evening star (ἑῷος / ἑσπέρας)
+     ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+  NOTES: the old record's own words say only 'ἑσπέρας'; the greatest-elongation status is Ptolemy's (narrator's) statement in this row ('γέγονεν ἄρα ἡ μεγίστη τῆς μέσης ἀπόστασις ἑσπερία') and his selection rule for the chapter (9.7.2; for 9.7.11 also 9.7.10 and 9.7.13). The planet is not named in this row: the chapter heading 9.7.1 ('τοῦ τοῦ Ἑρμοῦ ἀστέρος') names it. The text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-H.9 [star] day 192 rec IX.7.14 level: narrator
+  STATEMENT: Mercury relative to a named star on this day: preceded (west of) Spica by a little more than 3 deg (as reckoned by the astronomer the text names).
+  LICENCE: προηγεῖτο τοῦ Στάχυος, … μικρῷ πλεῖον γ μοιρῶν
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the stated offsets in longitude/latitude hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: preceded (west of) Spica by a little more than 3 deg (as reckoned by the astronomer the text names). The planet is not named in this row: the chapter heading 'τοῦ τοῦ Ἑρμοῦ ἀστέρος' (9.7.1) names it.
+==========================================================================================
+SET ALM-I: records ['IX.10.6a', 'IX.10.6b'] span 4 d; tight True; anchor IX.10.6a
+  description: Mercury morning star against the forehead of Scorpius, and again four days later (interval stated in words).
+  observer: {"value": "unstated", "words": [], "refs": [], "search_coordinates": null, "coordinates_source": "no site in the words: horizon-dependent options (visible_only, bm_venus_lead, bm_mwra_k, visible_before_sunrise) need one; the harness uses its default site and reports it"}
+----------------------------------------------------------------------
+ALM-I.1 [planet] day 0 rec IX.10.6a level: narrator
+  STATEMENT: Mercury is a morning star on this day (before dawn) and has NOT yet reached its greatest western (morning) elongation.
+  LICENCE: ἑῷος ὁ Στίλβων … ὅτι οὐδέπω ἐπὶ τὴν μεγίστην ἑῴαν ἀπόστασιν ἐληλύθει … ὄρθρου
+   * ge_after_within_j: {"j_days": [7, 15, 30]}
+       just: 'not yet at greatest elongation': the next greatest elongation on that side falls 0..j days later. The words ('οὐδέπω … ἐληλύθει') give no number of days: j (7/15/30) is the drafter's bound, an inference, not a stated interval; the unbounded literal reading is 'ge_after_same_apparition'
+     ge_after_same_apparition: {"bound": "same_apparition"}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+  NOTES: 'not yet at greatest elongation' is Ptolemy's inference from the record four days later, not the record's words; the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-I.2 [star] day 0 rec IX.10.6a level: narrator
+  STATEMENT: Mercury relative to a named star on this day: one moon (0.5 deg) to the rear (east) of the line through beta Sco and delta Sco.
+  LICENCE: τῆς διὰ τοῦ βορείου μετώπου τοῦ Σκορπίου καὶ μέσου εὐθείας ἀπεῖχεν εἰς τὰ ὑπολειπόμενα σελήνην
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the stated distance from the line hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: one moon (0.5 deg) to the rear (east) of the line through beta Sco and delta Sco
+----------------------------------------------------------------------
+ALM-I.3 [star] day 0 rec IX.10.6a level: narrator
+  STATEMENT: Mercury relative to a named star on this day: two moons (1 deg) north of beta Sco.
+  LICENCE: πρὸς ἄρκτους δὲ τοῦ βορείου μετώπου διεῖχεν β σελήνας
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the stated offsets in longitude/latitude hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: two moons (1 deg) north of beta Sco
+----------------------------------------------------------------------
+ALM-I.4 [interval] day 4 rec IX.10.6b level: narrator
+  STATEMENT: Record IX.10.6b falls on civil day +4 relative to Day 0 (record IX.10.6a); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: μετὰ δ ἡμέρας
+  NOTES: interval stated in words ('μετὰ δ ἡμέρας', four days later); the second record carries only a date in another (non-Egyptian) calendar, whose day numeral agrees (+4). Calendar words withheld from this file
+----------------------------------------------------------------------
+ALM-I.5 [star] day 4 rec IX.10.6b level: narrator
+  STATEMENT: Mercury relative to a named star on this day: 1 1/2 moons (0.75 deg) east of the same line.
+  LICENCE: τῆς αὐτῆς εὐθείας διεῖχεν εἰς τὰ ἑπόμενα ὅλην καὶ ἡμίσειαν σελήνην
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the stated distance from the line hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: 1 1/2 moons (0.75 deg) east of the same line
+==========================================================================================
+SET ALM-J: records ['X.9.2', 'X.4.6a', 'X.4.6b'] span 271 d; tight False; anchor X.9.2
+  description: LONG: Mars occults beta Sco (Day 0); about 270 days later Venus overtakes a Virgo star, and its place 4 days later.
+  observer: {"value": "unstated", "words": [], "refs": [], "search_coordinates": null, "coordinates_source": "no site in the words: horizon-dependent options (visible_only, bm_venus_lead, bm_mwra_k, visible_before_sunrise) need one; the harness uses its default site and reports it"}
+----------------------------------------------------------------------
+ALM-J.1 [planet] day 0 rec X.9.2 level: narrator
+  STATEMENT: Mars is a morning object (ἑῷος) on this day.
+  LICENCE: ἑῷος ὁ τοῦ Ἄρεως τῷ βορείῳ μετώπῳ τοῦ Σκορπίου ἐδόκει ἐπιπροσθετηκέναι
+   * visible_before_sunrise: {"min_altitude_deg": [5]}
+       just: 'ἑῷος': seen in the morning
+----------------------------------------------------------------------
+ALM-J.2 [star] day 0 rec X.9.2 level: narrator
+  STATEMENT: Mars relative to a named star on this day: Mars seemed to have occulted beta Sco (morning).
+  LICENCE: ἑῷος ὁ τοῦ Ἄρεως τῷ βορείῳ μετώπῳ τοῦ Σκορπίου ἐδόκει ἐπιπροσθετηκέναι
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the conjunction/occultation hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: Mars seemed to have occulted beta Sco (morning)
+----------------------------------------------------------------------
+ALM-J.3 [interval] day 267 rec X.4.6a level: narrator
+  STATEMENT: Record X.4.6a falls on civil day +267 relative to Day 0 (record X.9.2); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 10.9.2 and 10.4.6 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+----------------------------------------------------------------------
+ALM-J.4 [planet] day 267 rec X.4.6a level: narrator
+  STATEMENT: Venus is seen as a morning star at the twelfth (last) hour of the night; Ptolemy adds that it had already passed its greatest morning elongation.
+  LICENCE: ὥρᾳ ιβ΄ … ὁ τῆς Ἀφροδίτης ἐφαίνετο … παρεληλύθει δὲ καὶ ἐνταῦθα ὁ τῆς Ἀφροδίτης τὴν μεγίστην ἑῴαν ἀπόστασιν
+   * ge_before_within_j: {"j_days": [15, 30, 60]}
+       just: Ptolemy's 'παρεληλύθει ... τὴν μεγίστην ἑῴαν ἀπόστασιν' (his inference from the record four days later, not the observer's words), read as: the greatest morning elongation fell 0..j days earlier. The words ('παρεληλύθει … τὴν μεγίστην ἑῴαν ἀπόστασιν') give no number of days: j (15/30/60) is the drafter's bound, an inference, not a stated interval; the unbounded literal reading is 'ge_before_same_a
+     ge_before_same_apparition: {"bound": "same_apparition"}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+     bm_venus_lead: {"lead_min": [60, 90, 120]}
+  NOTES: the 'past greatest elongation' status is Ptolemy's inference; 'twelfth hour' is of the night: the record is dated to the night between two days (date words withheld)
+----------------------------------------------------------------------
+ALM-J.5 [star] day 267 rec X.4.6a level: narrator
+  STATEMENT: Venus relative to a named star on this day: Venus exactly overtook the star 'opposite Vindemiatrix' (Ptolemy: the star after the tip of the southern wing of Virgo, at Virgo 8 1/4 in his catalogue = eta Vir).
+  LICENCE: κατειληφὼς τὸν ἀντικείμενον τῷ Προτρυγητῆρι ἀκριβῶς … ὁ καθʼ ἡμιᾶς μετὰ τὸν ἐπʼ ἄκρας τῆς νοτίου πτέρυγος τῆς Παρθένου … Παρθένου μοίρας η δ΄
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the conjunction/occultation hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: Venus exactly overtook the star 'opposite Vindemiatrix' (Ptolemy: the star after the tip of the southern wing of Virgo, at Virgo 8 1/4 in his catalogue = eta Vir)
+----------------------------------------------------------------------
+ALM-J.6 [interval] day 271 rec X.4.6b level: narrator
+  STATEMENT: Record X.4.6b falls on civil day +271 relative to Day 0 (record X.9.2); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: μετὰ γὰρ δ ἡμέρας τῆς προκειμένης τηρήσεως
+  NOTES: +267 days to the first Venus report from the Egyptian dates the text states (the same era year for both records, stated at 10.9.2 and 10.4.6), then +4 stated in words ('μετὰ γὰρ δ ἡμέρας'); the Egyptian date of the second report agrees (+4). Date words withheld
+----------------------------------------------------------------------
+ALM-J.7 [planet] day 271 rec X.4.6b level: narrator
+  STATEMENT: Venus, four days after its conjunction with the star (previous row), stands about 4 2/3 deg further east (difference of the two longitudes Ptolemy gives for the two reports).
+  LICENCE: ὁ μὲν τῆς Ἀφροδίτης ἀστὴρ ἐπεῖχεν Παρθένου μοίρας δ ς΄ … ἐπεῖχεν κατὰ τὰς ἡμετέρας ἀρχὰς Παρθένου μοίρας η U+2220΄γ΄
+   * positional: {"tolerance_deg": [0.5, 1.0, 2.0]}
+       just: Venus' longitude gain over the four days as Ptolemy converts it
+     none: null
+  NOTES: the longitudes are Ptolemy's; only their difference is used
+==========================================================================================
+SET ALM-K: records ['IX.7.16', 'XI.3.2', 'IX.7.15'] span 2902 d; tight False; anchor IX.7.16
+  description: LONG (about 8 years): Mercury morning star above beta Sco (Day 0); Jupiter occults delta Cnc; Mercury morning star above alpha Lib.
+  observer: {"value": "unstated (the calendar a record is dated in is not a place statement; two of the three records may come from a Mesopotamian archive - an inference, not a clue)", "words": [], "refs": [], "search_coordinates": null, "coordinates_source": "no site in the words: horizon-dependent options (visible_only, bm_venus_lead, bm_mwra_k, visible_before_sunrise) need one; the harness uses its default
+----------------------------------------------------------------------
+ALM-K.1 [planet] day 0 rec IX.7.16 level: narrator
+  STATEMENT: Mercury is a morning star on this day (before dawn); Ptolemy files the record among observations made about the greatest elongations.
+  LICENCE: ἑῷος ἐπάνω ἦν τοῦ βορείου μετώπου τοῦ Σκορπίου πήχεως ἥμισυ … ὄρθρου … γέγονεν ἄρα καὶ αὕτη ἡ διάστασις
+   * visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       just: the record's own words say only morning/evening star (ἑῷος / ἑσπέρας)
+     ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     bm_mwra_k: {"k_days": [1, 2, 3]}
+  NOTES: the old record's own words say only 'ἑῷος'; the greatest-elongation status is Ptolemy's (narrator's) statement (this row; 9.7.17). The planet is not named in this row: the chapter heading 9.7.1 names it. The text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-K.2 [star] day 0 rec IX.7.16 level: narrator
+  STATEMENT: Mercury relative to a named star on this day: half a cubit above beta Sco (as IX.7.15).
+  LICENCE: ἐπάνω ἦν τοῦ βορείου μετώπου τοῦ Σκορπίου πήχεως ἥμισυ
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the stated offsets in longitude/latitude hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: half a cubit above beta Sco (as IX.7.15). The planet is not named in this row: the chapter heading 'τοῦ τοῦ Ἑρμοῦ ἀστέρος' (9.7.1) names it.
+----------------------------------------------------------------------
+ALM-K.3 [interval] day 1385 rec XI.3.2 level: narrator
+  STATEMENT: Record XI.3.2 falls on civil day +1385 relative to Day 0 (record IX.7.16); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 9.7.16 and 11.3.2 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters. The two records are dated in different eras; the link (the number of Egyptian years between the two eras) is stated in the text at 3.7.4 and again by the pair of years at 10.9.2, so the interval needs no outside chronology
+----------------------------------------------------------------------
+ALM-K.4 [planet] day 1385 rec XI.3.2 level: narrator
+  STATEMENT: Jupiter is a morning object (ἑῷος) on this day.
+  LICENCE: ὁ τοῦ Διὸς ἀστὴρ ἑῷος ἐπεκάλυψεν τὸν νότιον Ὄνον
+   * visible_before_sunrise: {"min_altitude_deg": [5]}
+       just: 'ἑῷος': seen in the morning
+----------------------------------------------------------------------
+ALM-K.5 [star] day 1385 rec XI.3.2 level: narrator
+  STATEMENT: Jupiter relative to a named star on this day: Jupiter occulted the southern Ass (delta Cnc), morning.
+  LICENCE: ἑῷος ἐπεκάλυψεν τὸν νότιον Ὄνον
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the conjunction/occultation hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: Jupiter occulted the southern Ass (delta Cnc), morning
+----------------------------------------------------------------------
+ALM-K.6 [interval] day 2902 rec IX.7.15 level: narrator
+  STATEMENT: Record IX.7.15 falls on civil day +2902 relative to Day 0 (record IX.7.16); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 9.7.16 and 9.7.15 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+----------------------------------------------------------------------
+ALM-K.7 [planet] day 2902 rec IX.7.15 level: narrator
+  STATEMENT: Mercury is a morning star on this day (before dawn); Ptolemy files the record among observations made about the greatest elongations.
+  LICENCE: ἑῷος ἐπάνω ἦν τοῦ νοτίου Ζυγοῦ πήχεως ἥμισυ … ὄρθρου … γέγονεν ἄρα ἡ ἑῴα μεγίστη διάστασις
+   * visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       just: the record's own words say only morning/evening star (ἑῷος / ἑσπέρας)
+     ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     bm_mwra_k: {"k_days": [1, 2, 3]}
+  NOTES: the old record's own words say only 'ἑῷος'; the greatest-elongation status is Ptolemy's (narrator's) statement (this row; 9.7.17). The planet is not named in this row: the chapter heading 9.7.1 names it. The text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-K.8 [star] day 2902 rec IX.7.15 level: narrator
+  STATEMENT: Mercury relative to a named star on this day: half a cubit 'above' the southern pan (alpha Lib); a cubit is about 2-2.5 deg in Babylonian usage (my gloss), taken here as 'north by about 1 deg'.
+  LICENCE: ἐπάνω ἦν τοῦ νοτίου Ζυγοῦ πήχεως ἥμισυ
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the stated offsets in longitude/latitude hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: half a cubit 'above' the southern pan (alpha Lib); a cubit is about 2-2.5 deg in Babylonian usage (my gloss), taken here as 'north by about 1 deg'. The planet is not named in this row: the chapter heading 'τοῦ τοῦ Ἑρμοῦ ἀστέρος' (9.7.1) names it.
+==========================================================================================
+SET ALM-L: records ['X.1.5', 'X.2.3', 'IX.9.3'] span 996 d; tight False; anchor X.1.5
+  description: LONG (about 2.7 years): three records of one written collection: Venus at greatest morning elongation twice, then Mercury at greatest evening elongation 3 5/6 deg east of Regulus.
+  observer: {"value": "unstated", "words": [], "refs": [], "search_coordinates": null, "coordinates_source": "no site in the words: horizon-dependent options (visible_only, bm_venus_lead, bm_mwra_k, visible_before_sunrise) need one; the harness uses its default site and reports it"}
+----------------------------------------------------------------------
+ALM-L.1 [planet] day 0 rec X.1.5 level: narrator
+  STATEMENT: Venus is a morning star (ἑῷος) at its greatest western (morning) elongation on this day; no hour is stated.
+  LICENCE: ὁ τῆς Ἀφροδίτης ἑῷος τὸ πλεῖστον ἀπέστη τοῦ ἡλίου
+   * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       just: the words say the planet stood at (or about) its greatest distance from the Sun; read as: the day lies within k days of the greatest elongation from the TRUE Sun on that side (k = 1 is B&M's own tolerance)
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+     bm_venus_lead: {"lead_min": [60, 90, 120]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-L.2 [star] day 0 rec X.1.5 level: narrator
+  STATEMENT: Venus relative to a named star on this day: east of the star at the tip of Virgo's southern wing (beta Vir) by a Pleiad-length (1 1/2 deg) less the planet's own size ('ἢ ἔλασσον τῷ ἑαυτοῦ μεγέθει'); passing it one moon (0.5 deg) to the north.
+  LICENCE: ὑπολειπόμενος τοῦ ἐπʼ ἄκρας τῆς νοτίου πτέρυγος τῆς Παρθένου Πλειάδος μῆκος ἢ ἔλασσον τῷ ἑαυτοῦ μεγέθει· ἐδόκει δὲ βορειότερος παραπορεύεσθαι τὸν ἀστέρα σελήνῃ μιᾷ
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the stated offsets in longitude/latitude hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: east of the star at the tip of Virgo's southern wing (beta Vir) by a Pleiad-length (1 1/2 deg) less the planet's own size ('ἢ ἔλασσον τῷ ἑαυτοῦ μεγέθει'); passing it one moon (0.5 deg) to the north
+----------------------------------------------------------------------
+ALM-L.3 [interval] day 586 rec X.2.3 level: narrator
+  STATEMENT: Record X.2.3 falls on civil day +586 relative to Day 0 (record X.1.5); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 10.1.5 and 10.2.3 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters. Neither record has an hour word: 'ἑῷος' places each in the pre-dawn part of its dated night; Ptolemy's mean-Sun figures imply 585.95 days (results/license-check-almagest/r2/interval_check.txt)
+----------------------------------------------------------------------
+ALM-L.4 [planet] day 586 rec X.2.3 level: narrator
+  STATEMENT: Venus is a morning star (ἑῷος) at its greatest western (morning) elongation on this day; no hour is stated.
+  LICENCE: ἑῷος ὁ τῆς Ἀφροδίτης τὸ πλεῖστον ἀπέστη τοῦ ἡλίου
+   * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       just: the words say the planet stood at (or about) its greatest distance from the Sun; read as: the day lies within k days of the greatest elongation from the TRUE Sun on that side (k = 1 is B&M's own tolerance)
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+     bm_venus_lead: {"lead_min": [60, 90, 120]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+----------------------------------------------------------------------
+ALM-L.5 [interval] day 996 rec IX.9.3 level: narrator
+  STATEMENT: Record IX.9.3 falls on civil day +996 relative to Day 0 (record X.1.5); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+  LICENCE: [Egyptian civil dates at 10.1.5 and 9.9.3 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+  NOTES: interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters. The anchor X.1.5 has no hour word: 'ἑῷος' places it in the pre-dawn part of its dated night; to the evening record IX.9.3 Ptolemy's mean-Sun figures imply 996.53 days against 996.58 from the dates (results/license-check-almagest/r2/interval_check.txt)
+----------------------------------------------------------------------
+ALM-L.6 [planet] day 996 rec IX.9.3 level: narrator
+  STATEMENT: Mercury is an evening star at its greatest eastern (evening) elongation on this day (evening).
+  LICENCE: ἑσπέρας … τὸ πλεῖστον, φησίν, ἀπέστη τοῦ ἡλίου … τὴν ἑσπερίαν μεγίστην ἀπόστασιν
+   * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       just: the words say the planet stood at (or about) its greatest distance from the Sun; read as: the day lies within k days of the greatest elongation from the TRUE Sun on that side (k = 1 is B&M's own tolerance)
+     ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+     visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+  NOTES: the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates). The planet is not named in this row: the chapter heading 'τῶν τοῦ τοῦ Ἑρμοῦ ἀνωμαλιῶν' (9.9.1) names it. The record is reported ('φησίν').
+----------------------------------------------------------------------
+ALM-L.7 [star] day 996 rec IX.9.3 level: narrator
+  STATEMENT: Mercury relative to a named star on this day: to the rear (east) of Regulus by 3 1/2 1/3 = 3 5/6 deg.
+  LICENCE: ὑπολειπόμενος τοῦ ἐπὶ τῆς καρδίας τοῦ Λέοντος μοίρας γ ∠ʹ γʹ
+   * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+       just: the stated offsets in longitude/latitude hold within the tolerance (unit conventions in notes)
+     none: null
+  NOTES: to the rear (east) of Regulus by 3 1/2 1/3 = 3 5/6 deg. The planet is not named in this row: the chapter heading 'τῶν τοῦ τοῦ Ἑρμοῦ ἀνωμαλιῶν' (9.9.1) names it.

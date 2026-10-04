@@ -1,0 +1,3367 @@
+{
+ "venus": {
+  "n_mornings": 49674,
+  "morning_side_geometric": 0.5000805250231509,
+  "west_elong_ge_5": 0.46605870274187705,
+  "west_elong_ge_10": 0.42551435358537665,
+  "west_elong_ge_20": 0.3441035551797721,
+  "west_elong_ge_30": 0.25747876152514393,
+  "west_elong_ge_40": 0.15172927487216653,
+  "visible_AV_4": 0.45931473205298545,
+  "visible_AV_5": 0.4474775536497967,
+  "visible_AV_6.1": 0.434714337480372,
+  "visible_AV_7": 0.42412529693602286,
+  "visible_AV_8.6": 0.4039135161251359,
+  "visible_AV_10": 0.3847284293594234,
+  "lead_ge_30min": 0.43254016185529653,
+  "lead_ge_45min": 0.4002496275717679,
+  "lead_ge_60min": 0.36171840399404115,
+  "lead_ge_90min": 0.295989853847083,
+  "lead_ge_120min": 0.20529854652333213,
+  "lead_ge_150min": 0.14776341748198252,
+  "lead_ge_180min": 0.09248298908885937,
+  "alt_ge_5_at_sun_m6": 0.3683415871482063,
+  "alt_ge_10_at_sun_m6": 0.3090550388533237,
+  "alt_ge_15_at_sun_m6": 0.21496154930144543,
+  "alt_ge_20_at_sun_m6": 0.15555421347183637,
+  "alt_ge_30_at_sun_m6": 0.06907033860772235,
+  "alt_ge_5_at_sun_m9": 0.33492370254056447,
+  "alt_ge_10_at_sun_m9": 0.2513588597656722,
+  "alt_ge_15_at_sun_m9": 0.1812215646011998,
+  "alt_ge_20_at_sun_m9": 0.12251882272416154,
+  "alt_ge_30_at_sun_m9": 0.04581873817288722,
+  "alt_ge_5_at_sun_m12": 0.28664895116157346,
+  "alt_ge_10_at_sun_m12": 0.20409067117606797,
+  "alt_ge_15_at_sun_m12": 0.14577042315899666,
+  "alt_ge_20_at_sun_m12": 0.096247533921166,
+  "alt_ge_30_at_sun_m12": 0.02174175625075492,
+  "morning_apparition_days_AV5": {
+   "mean": 261.3529411764706,
+   "min": 243,
+   "max": 275,
+   "n": 85
+  },
+  "morning_apparition_days_AV7": {
+   "mean": 247.71764705882353,
+   "min": 225,
+   "max": 264,
+   "n": 85
+  },
+  "by_month": {
+   "1": {
+    "lead_ge_90": 0.3221062618595825,
+    "visible_AV7": 0.44900379506641364
+   },
+   "2": {
+    "lead_ge_90": 0.30270692347735556,
+    "visible_AV7": 0.39901093180635083
+   },
+   "3": {
+    "lead_ge_90": 0.20659392789373815,
+    "visible_AV7": 0.4079696394686907
+   },
+   "4": {
+    "lead_ge_90": 0.17205882352941176,
+    "visible_AV7": 0.3875
+   },
+   "5": {
+    "lead_ge_90": 0.17362428842504743,
+    "visible_AV7": 0.38425047438330173
+   },
+   "6": {
+    "lead_ge_90": 0.2517156862745098,
+    "visible_AV7": 0.43529411764705883
+   },
+   "7": {
+    "lead_ge_90": 0.35507590132827327,
+    "visible_AV7": 0.411527514231499
+   },
+   "8": {
+    "lead_ge_90": 0.3368121442125237,
+    "visible_AV7": 0.43524667931688804
+   },
+   "9": {
+    "lead_ge_90": 0.367156862745098,
+    "visible_AV7": 0.4666666666666667
+   },
+   "10": {
+    "lead_ge_90": 0.34772296015180265,
+    "visible_AV7": 0.4172201138519924
+   },
+   "11": {
+    "lead_ge_90": 0.3541666666666667,
+    "visible_AV7": 0.4769607843137255
+   },
+   "12": {
+    "lead_ge_90": 0.36148007590132825,
+    "visible_AV7": 0.41888045540796964
+   }
+  },
+  "mag_when_visible": {
+   "min": -4.944810004480782,
+   "max": -3.8346401114346698,
+   "median": -4.040617013867481
+  },
+  "herald": {
+   "venus_visible_AV7": 0.42412529693602286,
+   "jupiter_visible_AV10": 0.40512139147240006,
+   "jupiter_rises_30_240min_before_sun_visible": 0.15414502556669485,
+   "not_venus_but_jupiter_30_240": 0.08867818174497726,
+   "not_venus_but_jupiter_any": 0.23217377299995973,
+   "mars_bright_mag_le_m1_visible": 0.03470628497805693,
+   "venus_or_jupiter_30_240": 0.5128034786810001,
+   "neither_venus_nor_jupiter_any": 0.3437009300640174,
+   "jupiter_mag_median_when_visible": -2.1352104001700036
+  }
+ },
+ "_meta": {
+  "ephemeris": "JPL DE441 excerpt (data/ephem/de441_m1320_m1030.bsp) via Skyfield",
+  "site": "Ithaca 38.37 N 20.7 E",
+  "span": "1250-1115 BC (astronomical -1249..-1114), proleptic Julian",
+  "script": "docs/research_visibility_calc.py"
+ },
+ "mercury": {
+  "n_mornings": 49674,
+  "morning_side_geometric": 0.4988726496758868,
+  "west_elong_ge_10": 0.35372629544630996,
+  "west_elong_ge_15": 0.2652292950034223,
+  "west_elong_ge_18": 0.19112614244876597,
+  "west_elong_ge_20": 0.13999275274791642,
+  "west_elong_ge_22": 0.09924709103353867,
+  "west_elong_ge_25": 0.04537585054555703,
+  "visible_AV_8": 0.3081692635986633,
+  "visible_AV_8_and_mag_le_1": 0.2687522647662761,
+  "visible_AV_10": 0.2349518862986673,
+  "visible_AV_10_and_mag_le_1": 0.20932479768087933,
+  "visible_AV_12": 0.1857309658976527,
+  "visible_AV_12_and_mag_le_1": 0.17083383661472804,
+  "alt_ge_3_at_sun_m6": 0.2579619116640496,
+  "alt_ge_5_at_sun_m6": 0.19809155695132263,
+  "alt_ge_8_at_sun_m6": 0.1299271248540484,
+  "alt_ge_10_at_sun_m6": 0.09081209485847727,
+  "alt_ge_3_at_sun_m9": 0.17749728228046865,
+  "alt_ge_5_at_sun_m9": 0.133772194709506,
+  "alt_ge_8_at_sun_m9": 0.07623706566815638,
+  "alt_ge_10_at_sun_m9": 0.04223537464267021,
+  "lead_ge_30min": 0.358678584370093,
+  "lead_ge_45min": 0.2669404517453799,
+  "lead_ge_60min": 0.19376333695695938,
+  "lead_ge_90min": 0.081833554777147,
+  "by_month_visible_AV10": {
+   "1": 0.42125237191650855,
+   "2": 0.37610619469026546,
+   "3": 0.24857685009487665,
+   "4": 0.02303921568627451,
+   "5": 0.0,
+   "6": 0.043627450980392155,
+   "7": 0.1676944971537002,
+   "8": 0.20944022770398482,
+   "9": 0.2551470588235294,
+   "10": 0.30740037950664134,
+   "11": 0.3620098039215686,
+   "12": 0.409392789373814
+  },
+  "by_month_alt5_at_sun_m6": {
+   "1": 0.37832068311195444,
+   "2": 0.31389901093180633,
+   "3": 0.12357685009487666,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.016176470588235296,
+   "7": 0.1392314990512334,
+   "8": 0.1859582542694497,
+   "9": 0.2299019607843137,
+   "10": 0.28154648956356737,
+   "11": 0.3333333333333333,
+   "12": 0.37855787476280833
+  }
+ },
+ "mercury_events": {
+  "n_gwe": 429,
+  "mean_gwe_spacing_days": 115.87383177570094,
+  "n_station_ret_to_dir": 429,
+  "within_0d_of_GWE": 0.00863630873293876,
+  "within_0d_of_GWE_and_visible_AV10": 0.0069654145025566695,
+  "within_0d_of_morning_station": 0.00863630873293876,
+  "within_0d_of_morning_station_and_visible_AV10": 0.005918589201594396,
+  "within_1d_of_GWE": 0.02590892619881628,
+  "within_1d_of_GWE_and_visible_AV10": 0.02089624350767001,
+  "within_1d_of_morning_station": 0.02590892619881628,
+  "within_1d_of_morning_station_and_visible_AV10": 0.017675242581632243,
+  "within_2d_of_GWE": 0.0431815436646938,
+  "within_2d_of_GWE_and_visible_AV10": 0.03480694125699561,
+  "within_2d_of_morning_station": 0.0431815436646938,
+  "within_2d_of_morning_station_and_visible_AV10": 0.029391633450094618,
+  "within_3d_of_GWE": 0.060454161130571324,
+  "within_3d_of_GWE_and_visible_AV10": 0.04861698272738253,
+  "within_3d_of_morning_station": 0.060454161130571324,
+  "within_3d_of_morning_station_and_visible_AV10": 0.040806055481740953,
+  "within_5d_of_GWE": 0.09499939606232637,
+  "within_5d_of_GWE_and_visible_AV10": 0.0758545718081894,
+  "within_5d_of_morning_station": 0.09499939606232637,
+  "within_5d_of_morning_station_and_visible_AV10": 0.06196400531465153,
+  "within_7d_of_GWE": 0.12954463099408142,
+  "within_7d_of_GWE_and_visible_AV10": 0.10226677940169908,
+  "within_7d_of_morning_station": 0.12954463099408142,
+  "within_7d_of_morning_station_and_visible_AV10": 0.08024318556991585,
+  "within_10d_of_GWE": 0.1813222208801385,
+  "within_10d_of_GWE_and_visible_AV10": 0.1389257961911664,
+  "within_10d_of_morning_station": 0.18136248339171399,
+  "within_10d_of_morning_station_and_visible_AV10": 0.10224664814591135,
+  "morning_first": {
+   "AV8": {
+    "n_runs": 429,
+    "omitted_morning_apparitions": 0,
+    "n_gwe": 429,
+    "within_1d_of_MF": 0.02590892619881628,
+    "within_3d_of_MF": 0.060454161130571324,
+    "within_5d_of_MF": 0.09499939606232637
+   },
+   "AV10": {
+    "n_runs": 360,
+    "omitted_morning_apparitions": 69,
+    "n_gwe": 429,
+    "within_1d_of_MF": 0.02174175625075492,
+    "within_3d_of_MF": 0.05073076458509482,
+    "within_5d_of_MF": 0.07971977291943472
+   },
+   "AV12": {
+    "n_runs": 314,
+    "omitted_morning_apparitions": 115,
+    "n_gwe": 429,
+    "within_1d_of_MF": 0.01896364295204735,
+    "within_3d_of_MF": 0.04424850022144381,
+    "within_5d_of_MF": 0.06953335749084028
+   }
+  },
+  "rise_az_extrema_counts": {
+   "max_az": 564,
+   "min_az": 565,
+   "max_az_minus_sun": 564,
+   "min_az_minus_sun": 565
+  },
+  "rise_az_max_morning_visible_per_year": 0.8897058823529411,
+  "gwe_per_year": 3.1544117647058822,
+  "within_1d_of_riseaz_max_morning_visible": 0.007307645850948182,
+  "within_1d_of_any_turning_point_GWE_station_riseaz": 0.0585416918307364,
+  "within_1d_of_any_turning_point_and_visible_AV10": 0.04525506301083061,
+  "within_2d_of_riseaz_max_morning_visible": 0.012179409751580304,
+  "within_2d_of_any_turning_point_GWE_station_riseaz": 0.09683134033901035,
+  "within_2d_of_any_turning_point_and_visible_AV10": 0.07448564641462334,
+  "within_3d_of_riseaz_max_morning_visible": 0.017051173652212426,
+  "within_3d_of_any_turning_point_GWE_station_riseaz": 0.13363127591899182,
+  "within_3d_of_any_turning_point_and_visible_AV10": 0.10178362926279341,
+  "within_5d_of_riseaz_max_morning_visible": 0.026794701453476667,
+  "within_5d_of_any_turning_point_GWE_station_riseaz": 0.19074364858879897,
+  "within_5d_of_any_turning_point_and_visible_AV10": 0.1387043523775013,
+  "gwe_minus_station_days": {
+   "mean": 13.545454545454545,
+   "min": 12,
+   "max": 15
+  },
+  "gwe_minus_riseazmax_days": {
+   "mean": -4.413223140495868,
+   "min": -26,
+   "max": 9,
+   "n": 121
+  },
+  "window_1178BC": {
+   "GWE": [
+    "19 Mar 1178 BC (astr. -1177)"
+   ],
+   "GEE": [
+    "2 Feb 1178 BC (astr. -1177)"
+   ],
+   "inferior_conj": [
+    "20 Feb 1178 BC (astr. -1177)"
+   ],
+   "station_dir_to_ret": [
+    "10 Feb 1178 BC (astr. -1177)"
+   ],
+   "station_ret_to_dir": [
+    "5 Mar 1178 BC (astr. -1177)"
+   ],
+   "rise_az_local_max": [
+    "12 Mar 1178 BC (astr. -1177)"
+   ],
+   "rise_az_local_min": [
+    "12 Feb 1178 BC (astr. -1177)"
+   ],
+   "rise_az_minus_sun_local_max": [
+    "25 Mar 1178 BC (astr. -1177)"
+   ],
+   "rise_az_minus_sun_local_min": [
+    "7 Feb 1178 BC (astr. -1177)"
+   ],
+   "morning_visible_runs_AV8": [
+    [
+     "25 Feb 1178 BC (astr. -1177)",
+     "5 Apr 1178 BC (astr. -1177)"
+    ]
+   ],
+   "morning_visible_runs_AV10": [
+    [
+     "28 Feb 1178 BC (astr. -1177)",
+     "29 Mar 1178 BC (astr. -1177)"
+    ]
+   ],
+   "morning_visible_runs_AV12": [
+    [
+     "5 Mar 1178 BC (astr. -1177)",
+     "21 Mar 1178 BC (astr. -1177)"
+    ]
+   ],
+   "daily_mar_apr": [
+    {
+     "date": "1 Mar 1178 BC (astr. -1177)",
+     "elong": -16.53,
+     "lead_min": 51.5,
+     "sun_alt_at_mercury_rise": -10.75,
+     "mag": 2.07,
+     "alt_at_civil_dawn": 4.1,
+     "rise_az": 109.67,
+     "sun_rise_az": 104.44
+    },
+    {
+     "date": "2 Mar 1178 BC (astr. -1177)",
+     "elong": -17.78,
+     "lead_min": 53.7,
+     "sun_alt_at_mercury_rise": -11.21,
+     "mag": 1.85,
+     "alt_at_civil_dawn": 4.49,
+     "rise_az": 110.11,
+     "sun_rise_az": 103.99
+    },
+    {
+     "date": "3 Mar 1178 BC (astr. -1177)",
+     "elong": -18.94,
+     "lead_min": 55.8,
+     "sun_alt_at_mercury_rise": -11.62,
+     "mag": 1.65,
+     "alt_at_civil_dawn": 4.83,
+     "rise_az": 110.5,
+     "sun_rise_az": 103.54
+    },
+    {
+     "date": "4 Mar 1178 BC (astr. -1177)",
+     "elong": -20.02,
+     "lead_min": 57.5,
+     "sun_alt_at_mercury_rise": -11.97,
+     "mag": 1.49,
+     "alt_at_civil_dawn": 5.12,
+     "rise_az": 110.86,
+     "sun_rise_az": 103.08
+    },
+    {
+     "date": "5 Mar 1178 BC (astr. -1177)",
+     "elong": -21.01,
+     "lead_min": 59.0,
+     "sun_alt_at_mercury_rise": -12.27,
+     "mag": 1.34,
+     "alt_at_civil_dawn": 5.37,
+     "rise_az": 111.19,
+     "sun_rise_az": 102.62
+    },
+    {
+     "date": "6 Mar 1178 BC (astr. -1177)",
+     "elong": -21.92,
+     "lead_min": 60.2,
+     "sun_alt_at_mercury_rise": -12.52,
+     "mag": 1.22,
+     "alt_at_civil_dawn": 5.57,
+     "rise_az": 111.47,
+     "sun_rise_az": 102.16
+    },
+    {
+     "date": "7 Mar 1178 BC (astr. -1177)",
+     "elong": -22.75,
+     "lead_min": 61.1,
+     "sun_alt_at_mercury_rise": -12.73,
+     "mag": 1.11,
+     "alt_at_civil_dawn": 5.73,
+     "rise_az": 111.71,
+     "sun_rise_az": 101.69
+    },
+    {
+     "date": "8 Mar 1178 BC (astr. -1177)",
+     "elong": -23.49,
+     "lead_min": 61.9,
+     "sun_alt_at_mercury_rise": -12.88,
+     "mag": 1.02,
+     "alt_at_civil_dawn": 5.85,
+     "rise_az": 111.91,
+     "sun_rise_az": 101.23
+    },
+    {
+     "date": "9 Mar 1178 BC (astr. -1177)",
+     "elong": -24.16,
+     "lead_min": 62.4,
+     "sun_alt_at_mercury_rise": -13.0,
+     "mag": 0.93,
+     "alt_at_civil_dawn": 5.94,
+     "rise_az": 112.07,
+     "sun_rise_az": 100.76
+    },
+    {
+     "date": "10 Mar 1178 BC (astr. -1177)",
+     "elong": -24.75,
+     "lead_min": 62.7,
+     "sun_alt_at_mercury_rise": -13.07,
+     "mag": 0.86,
+     "alt_at_civil_dawn": 6.0,
+     "rise_az": 112.19,
+     "sun_rise_az": 100.28
+    },
+    {
+     "date": "11 Mar 1178 BC (astr. -1177)",
+     "elong": -25.26,
+     "lead_min": 62.9,
+     "sun_alt_at_mercury_rise": -13.11,
+     "mag": 0.8,
+     "alt_at_civil_dawn": 6.02,
+     "rise_az": 112.26,
+     "sun_rise_az": 99.81
+    },
+    {
+     "date": "12 Mar 1178 BC (astr. -1177)",
+     "elong": -25.71,
+     "lead_min": 62.9,
+     "sun_alt_at_mercury_rise": -13.11,
+     "mag": 0.74,
+     "alt_at_civil_dawn": 6.02,
+     "rise_az": 112.29,
+     "sun_rise_az": 99.33
+    },
+    {
+     "date": "13 Mar 1178 BC (astr. -1177)",
+     "elong": -26.08,
+     "lead_min": 62.7,
+     "sun_alt_at_mercury_rise": -13.08,
+     "mag": 0.69,
+     "alt_at_civil_dawn": 5.99,
+     "rise_az": 112.29,
+     "sun_rise_az": 98.85
+    },
+    {
+     "date": "14 Mar 1178 BC (astr. -1177)",
+     "elong": -26.4,
+     "lead_min": 62.3,
+     "sun_alt_at_mercury_rise": -13.03,
+     "mag": 0.65,
+     "alt_at_civil_dawn": 5.94,
+     "rise_az": 112.24,
+     "sun_rise_az": 98.37
+    },
+    {
+     "date": "15 Mar 1178 BC (astr. -1177)",
+     "elong": -26.65,
+     "lead_min": 61.9,
+     "sun_alt_at_mercury_rise": -12.94,
+     "mag": 0.61,
+     "alt_at_civil_dawn": 5.87,
+     "rise_az": 112.15,
+     "sun_rise_az": 97.89
+    },
+    {
+     "date": "16 Mar 1178 BC (astr. -1177)",
+     "elong": -26.84,
+     "lead_min": 61.3,
+     "sun_alt_at_mercury_rise": -12.83,
+     "mag": 0.57,
+     "alt_at_civil_dawn": 5.78,
+     "rise_az": 112.01,
+     "sun_rise_az": 97.4
+    },
+    {
+     "date": "17 Mar 1178 BC (astr. -1177)",
+     "elong": -26.98,
+     "lead_min": 60.6,
+     "sun_alt_at_mercury_rise": -12.71,
+     "mag": 0.53,
+     "alt_at_civil_dawn": 5.68,
+     "rise_az": 111.84,
+     "sun_rise_az": 96.92
+    },
+    {
+     "date": "18 Mar 1178 BC (astr. -1177)",
+     "elong": -27.06,
+     "lead_min": 59.8,
+     "sun_alt_at_mercury_rise": -12.56,
+     "mag": 0.5,
+     "alt_at_civil_dawn": 5.56,
+     "rise_az": 111.63,
+     "sun_rise_az": 96.43
+    },
+    {
+     "date": "19 Mar 1178 BC (astr. -1177)",
+     "elong": -27.09,
+     "lead_min": 59.0,
+     "sun_alt_at_mercury_rise": -12.39,
+     "mag": 0.47,
+     "alt_at_civil_dawn": 5.42,
+     "rise_az": 111.38,
+     "sun_rise_az": 95.94
+    },
+    {
+     "date": "20 Mar 1178 BC (astr. -1177)",
+     "elong": -27.07,
+     "lead_min": 58.0,
+     "sun_alt_at_mercury_rise": -12.21,
+     "mag": 0.43,
+     "alt_at_civil_dawn": 5.28,
+     "rise_az": 111.09,
+     "sun_rise_az": 95.45
+    },
+    {
+     "date": "21 Mar 1178 BC (astr. -1177)",
+     "elong": -27.0,
+     "lead_min": 57.0,
+     "sun_alt_at_mercury_rise": -12.01,
+     "mag": 0.4,
+     "alt_at_civil_dawn": 5.12,
+     "rise_az": 110.76,
+     "sun_rise_az": 94.96
+    },
+    {
+     "date": "22 Mar 1178 BC (astr. -1177)",
+     "elong": -26.89,
+     "lead_min": 56.0,
+     "sun_alt_at_mercury_rise": -11.8,
+     "mag": 0.37,
+     "alt_at_civil_dawn": 4.95,
+     "rise_az": 110.39,
+     "sun_rise_az": 94.47
+    },
+    {
+     "date": "23 Mar 1178 BC (astr. -1177)",
+     "elong": -26.73,
+     "lead_min": 54.8,
+     "sun_alt_at_mercury_rise": -11.58,
+     "mag": 0.34,
+     "alt_at_civil_dawn": 4.77,
+     "rise_az": 109.98,
+     "sun_rise_az": 93.97
+    },
+    {
+     "date": "24 Mar 1178 BC (astr. -1177)",
+     "elong": -26.53,
+     "lead_min": 53.7,
+     "sun_alt_at_mercury_rise": -11.36,
+     "mag": 0.3,
+     "alt_at_civil_dawn": 4.59,
+     "rise_az": 109.54,
+     "sun_rise_az": 93.48
+    },
+    {
+     "date": "25 Mar 1178 BC (astr. -1177)",
+     "elong": -26.28,
+     "lead_min": 52.5,
+     "sun_alt_at_mercury_rise": -11.12,
+     "mag": 0.27,
+     "alt_at_civil_dawn": 4.4,
+     "rise_az": 109.05,
+     "sun_rise_az": 92.99
+    },
+    {
+     "date": "26 Mar 1178 BC (astr. -1177)",
+     "elong": -26.0,
+     "lead_min": 51.2,
+     "sun_alt_at_mercury_rise": -10.88,
+     "mag": 0.23,
+     "alt_at_civil_dawn": 4.19,
+     "rise_az": 108.53,
+     "sun_rise_az": 92.49
+    },
+    {
+     "date": "27 Mar 1178 BC (astr. -1177)",
+     "elong": -25.67,
+     "lead_min": 50.0,
+     "sun_alt_at_mercury_rise": -10.62,
+     "mag": 0.19,
+     "alt_at_civil_dawn": 3.99,
+     "rise_az": 107.98,
+     "sun_rise_az": 92.0
+    },
+    {
+     "date": "28 Mar 1178 BC (astr. -1177)",
+     "elong": -25.31,
+     "lead_min": 48.7,
+     "sun_alt_at_mercury_rise": -10.37,
+     "mag": 0.16,
+     "alt_at_civil_dawn": 3.77,
+     "rise_az": 107.39,
+     "sun_rise_az": 91.5
+    },
+    {
+     "date": "29 Mar 1178 BC (astr. -1177)",
+     "elong": -24.91,
+     "lead_min": 47.3,
+     "sun_alt_at_mercury_rise": -10.11,
+     "mag": 0.11,
+     "alt_at_civil_dawn": 3.55,
+     "rise_az": 106.76,
+     "sun_rise_az": 91.0
+    },
+    {
+     "date": "30 Mar 1178 BC (astr. -1177)",
+     "elong": -24.46,
+     "lead_min": 46.0,
+     "sun_alt_at_mercury_rise": -9.84,
+     "mag": 0.07,
+     "alt_at_civil_dawn": 3.33,
+     "rise_az": 106.09,
+     "sun_rise_az": 90.51
+    },
+    {
+     "date": "31 Mar 1178 BC (astr. -1177)",
+     "elong": -23.99,
+     "lead_min": 44.6,
+     "sun_alt_at_mercury_rise": -9.57,
+     "mag": 0.03,
+     "alt_at_civil_dawn": 3.1,
+     "rise_az": 105.39,
+     "sun_rise_az": 90.01
+    },
+    {
+     "date": "1 Apr 1178 BC (astr. -1177)",
+     "elong": -23.47,
+     "lead_min": 43.3,
+     "sun_alt_at_mercury_rise": -9.3,
+     "mag": -0.02,
+     "alt_at_civil_dawn": 2.86,
+     "rise_az": 104.66,
+     "sun_rise_az": 89.52
+    },
+    {
+     "date": "2 Apr 1178 BC (astr. -1177)",
+     "elong": -22.92,
+     "lead_min": 41.9,
+     "sun_alt_at_mercury_rise": -9.02,
+     "mag": -0.07,
+     "alt_at_civil_dawn": 2.62,
+     "rise_az": 103.89,
+     "sun_rise_az": 89.02
+    },
+    {
+     "date": "3 Apr 1178 BC (astr. -1177)",
+     "elong": -22.34,
+     "lead_min": 40.4,
+     "sun_alt_at_mercury_rise": -8.74,
+     "mag": -0.13,
+     "alt_at_civil_dawn": 2.38,
+     "rise_az": 103.09,
+     "sun_rise_az": 88.53
+    },
+    {
+     "date": "4 Apr 1178 BC (astr. -1177)",
+     "elong": -21.71,
+     "lead_min": 39.0,
+     "sun_alt_at_mercury_rise": -8.46,
+     "mag": -0.18,
+     "alt_at_civil_dawn": 2.13,
+     "rise_az": 102.25,
+     "sun_rise_az": 88.03
+    },
+    {
+     "date": "5 Apr 1178 BC (astr. -1177)",
+     "elong": -21.06,
+     "lead_min": 37.6,
+     "sun_alt_at_mercury_rise": -8.17,
+     "mag": -0.25,
+     "alt_at_civil_dawn": 1.88,
+     "rise_az": 101.38,
+     "sun_rise_az": 87.54
+    },
+    {
+     "date": "6 Apr 1178 BC (astr. -1177)",
+     "elong": -20.36,
+     "lead_min": 36.1,
+     "sun_alt_at_mercury_rise": -7.88,
+     "mag": -0.31,
+     "alt_at_civil_dawn": 1.63,
+     "rise_az": 100.47,
+     "sun_rise_az": 87.04
+    },
+    {
+     "date": "7 Apr 1178 BC (astr. -1177)",
+     "elong": -19.63,
+     "lead_min": 34.6,
+     "sun_alt_at_mercury_rise": -7.59,
+     "mag": -0.38,
+     "alt_at_civil_dawn": 1.37,
+     "rise_az": 99.54,
+     "sun_rise_az": 86.55
+    },
+    {
+     "date": "8 Apr 1178 BC (astr. -1177)",
+     "elong": -18.87,
+     "lead_min": 33.1,
+     "sun_alt_at_mercury_rise": -7.29,
+     "mag": -0.45,
+     "alt_at_civil_dawn": 1.11,
+     "rise_az": 98.57,
+     "sun_rise_az": 86.06
+    },
+    {
+     "date": "9 Apr 1178 BC (astr. -1177)",
+     "elong": -18.07,
+     "lead_min": 31.6,
+     "sun_alt_at_mercury_rise": -6.99,
+     "mag": -0.52,
+     "alt_at_civil_dawn": 0.85,
+     "rise_az": 97.56,
+     "sun_rise_az": 85.56
+    },
+    {
+     "date": "10 Apr 1178 BC (astr. -1177)",
+     "elong": -17.23,
+     "lead_min": 30.0,
+     "sun_alt_at_mercury_rise": -6.68,
+     "mag": -0.6,
+     "alt_at_civil_dawn": 0.58,
+     "rise_az": 96.53,
+     "sun_rise_az": 85.07
+    },
+    {
+     "date": "11 Apr 1178 BC (astr. -1177)",
+     "elong": -16.36,
+     "lead_min": 28.5,
+     "sun_alt_at_mercury_rise": -6.37,
+     "mag": -0.68,
+     "alt_at_civil_dawn": 0.32,
+     "rise_az": 95.47,
+     "sun_rise_az": 84.58
+    },
+    {
+     "date": "12 Apr 1178 BC (astr. -1177)",
+     "elong": -15.46,
+     "lead_min": 26.9,
+     "sun_alt_at_mercury_rise": -6.05,
+     "mag": -0.77,
+     "alt_at_civil_dawn": 0.05,
+     "rise_az": 94.38,
+     "sun_rise_az": 84.09
+    },
+    {
+     "date": "13 Apr 1178 BC (astr. -1177)",
+     "elong": -14.52,
+     "lead_min": 25.2,
+     "sun_alt_at_mercury_rise": -5.73,
+     "mag": -0.86,
+     "alt_at_civil_dawn": -0.21,
+     "rise_az": 93.26,
+     "sun_rise_az": 83.6
+    },
+    {
+     "date": "14 Apr 1178 BC (astr. -1177)",
+     "elong": -13.54,
+     "lead_min": 23.6,
+     "sun_alt_at_mercury_rise": -5.4,
+     "mag": -0.95,
+     "alt_at_civil_dawn": -1.17,
+     "rise_az": 92.11,
+     "sun_rise_az": 83.12
+    },
+    {
+     "date": "15 Apr 1178 BC (astr. -1177)",
+     "elong": -12.53,
+     "lead_min": 21.9,
+     "sun_alt_at_mercury_rise": -5.07,
+     "mag": -1.04,
+     "alt_at_civil_dawn": -1.51,
+     "rise_az": 90.94,
+     "sun_rise_az": 82.63
+    },
+    {
+     "date": "16 Apr 1178 BC (astr. -1177)",
+     "elong": -11.49,
+     "lead_min": 20.1,
+     "sun_alt_at_mercury_rise": -4.73,
+     "mag": -1.14,
+     "alt_at_civil_dawn": -1.86,
+     "rise_az": 89.74,
+     "sun_rise_az": 82.15
+    },
+    {
+     "date": "17 Apr 1178 BC (astr. -1177)",
+     "elong": -10.42,
+     "lead_min": 18.3,
+     "sun_alt_at_mercury_rise": -4.38,
+     "mag": -1.24,
+     "alt_at_civil_dawn": -2.22,
+     "rise_az": 88.52,
+     "sun_rise_az": 81.67
+    },
+    {
+     "date": "18 Apr 1178 BC (astr. -1177)",
+     "elong": -9.31,
+     "lead_min": 16.5,
+     "sun_alt_at_mercury_rise": -4.02,
+     "mag": -1.35,
+     "alt_at_civil_dawn": -2.59,
+     "rise_az": 87.28,
+     "sun_rise_az": 81.19
+    },
+    {
+     "date": "19 Apr 1178 BC (astr. -1177)",
+     "elong": -8.18,
+     "lead_min": 14.6,
+     "sun_alt_at_mercury_rise": -3.65,
+     "mag": -1.45,
+     "alt_at_civil_dawn": -2.96,
+     "rise_az": 86.02,
+     "sun_rise_az": 80.71
+    },
+    {
+     "date": "20 Apr 1178 BC (astr. -1177)",
+     "elong": -7.02,
+     "lead_min": 12.6,
+     "sun_alt_at_mercury_rise": -3.27,
+     "mag": -1.57,
+     "alt_at_civil_dawn": -3.35,
+     "rise_az": 84.75,
+     "sun_rise_az": 80.23
+    }
+   ]
+  }
+ },
+ "stars": {
+  "meeus_sun_minus_de441_arcmin_max": 0.7971725584575508,
+  "star_position_check_-1177": {
+   "Arcturus": {
+    "own_ra_dec": [
+     177.0002010065346,
+     37.73143503228428
+    ],
+    "skyfield_ra_dec": [
+     177.02061512057216,
+     37.725510801719196
+    ],
+    "diff_arcmin": 1.0318716891222748
+   },
+   "Alcyone": {
+    "own_ra_dec": [
+     13.148074298818555,
+     9.803174173656185
+    ],
+    "skyfield_ra_dec": [
+     13.14196834725462,
+     9.80150752305728
+    ],
+    "diff_arcmin": 0.37460162868350777
+   }
+  },
+  "-1177": {
+   "year": "1178 BC (astr. -1177)",
+   "star_radec_of_date": {
+    "Arcturus": [
+     177.003,
+     37.73
+    ],
+    "Alcyone": [
+     13.151,
+     9.805
+    ],
+    "Sirius": [
+     66.354,
+     -17.485
+    ],
+    "eta Boo": [
+     169.517,
+     35.934
+    ],
+    "eps Boo": [
+     185.549,
+     43.098
+    ],
+    "gam Boo": [
+     184.125,
+     54.489
+    ],
+    "bet Boo": [
+     194.668,
+     55.597
+    ],
+    "del Boo": [
+     196.296,
+     48.196
+    ]
+   },
+   "vernal_equinox": [
+    "2 Apr 1178 BC (astr. -1177)"
+   ],
+   "summer_solstice": [
+    "5 Jul 1178 BC (astr. -1177)"
+   ],
+   "winter_solstice": [],
+   "phases": {
+    "Arcturus_AV8": {
+     "morning_first_heliacal_rising": [
+      "8 Sep 1178 BC (astr. -1177)"
+     ],
+     "evening_last_heliacal_setting": [
+      "12 Nov 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "16 Feb 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_first_visible": [
+      "20 Nov 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "13 Jun 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_last_visible": [
+      "8 Aug 1178 BC (astr. -1177)"
+     ],
+     "never_visible_days": 0,
+     "invisible_runs": []
+    },
+    "Arcturus_AV10": {
+     "morning_first_heliacal_rising": [
+      "11 Sep 1178 BC (astr. -1177)"
+     ],
+     "evening_last_heliacal_setting": [
+      "9 Nov 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "14 Feb 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_first_visible": [
+      "20 Nov 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "16 Jun 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_last_visible": [
+      "8 Aug 1178 BC (astr. -1177)"
+     ],
+     "never_visible_days": 0,
+     "invisible_runs": []
+    },
+    "Arcturus_AV12": {
+     "morning_first_heliacal_rising": [
+      "13 Sep 1178 BC (astr. -1177)"
+     ],
+     "evening_last_heliacal_setting": [
+      "5 Nov 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "12 Feb 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_first_visible": [
+      "20 Nov 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "20 Jun 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_last_visible": [
+      "8 Aug 1178 BC (astr. -1177)"
+     ],
+     "never_visible_days": 0,
+     "invisible_runs": []
+    },
+    "Alcyone_AV12": {
+     "morning_first_heliacal_rising": [
+      "7 May 1178 BC (astr. -1177)"
+     ],
+     "evening_last_heliacal_setting": [
+      "6 Apr 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "14 Sep 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_first_visible": [
+      "8 Jul 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "3 Nov 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_last_visible": [
+      "23 Jan 1178 BC (astr. -1177)"
+     ],
+     "never_visible_days": 30,
+     "invisible_runs": [
+      [
+       "7 Apr 1178 BC (astr. -1177)",
+       "6 May 1178 BC (astr. -1177)",
+       30
+      ]
+     ]
+    },
+    "Alcyone_AV14": {
+     "morning_first_heliacal_rising": [
+      "12 May 1178 BC (astr. -1177)"
+     ],
+     "evening_last_heliacal_setting": [
+      "4 Apr 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "10 Sep 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_first_visible": [
+      "8 Jul 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "5 Nov 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_last_visible": [
+      "23 Jan 1178 BC (astr. -1177)"
+     ],
+     "never_visible_days": 37,
+     "invisible_runs": [
+      [
+       "5 Apr 1178 BC (astr. -1177)",
+       "11 May 1178 BC (astr. -1177)",
+       37
+      ]
+     ]
+    },
+    "Alcyone_AV16": {
+     "morning_first_heliacal_rising": [
+      "17 May 1178 BC (astr. -1177)"
+     ],
+     "evening_last_heliacal_setting": [
+      "2 Apr 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "5 Sep 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_first_visible": [
+      "8 Jul 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "7 Nov 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_last_visible": [
+      "23 Jan 1178 BC (astr. -1177)"
+     ],
+     "never_visible_days": 45,
+     "invisible_runs": [
+      [
+       "2 Apr 1178 BC (astr. -1177)",
+       "16 May 1178 BC (astr. -1177)",
+       45
+      ]
+     ]
+    },
+    "Alcyone_AV18": {
+     "morning_first_heliacal_rising": [
+      "22 May 1178 BC (astr. -1177)"
+     ],
+     "evening_last_heliacal_setting": [
+      "31 Mar 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "31 Aug 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_first_visible": [
+      "8 Jul 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "9 Nov 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_last_visible": [
+      "23 Jan 1178 BC (astr. -1177)"
+     ],
+     "never_visible_days": 52,
+     "invisible_runs": [
+      [
+       "31 Mar 1178 BC (astr. -1177)",
+       "21 May 1178 BC (astr. -1177)",
+       52
+      ]
+     ]
+    },
+    "Sirius_AV8": {
+     "morning_first_heliacal_rising": [
+      "25 Jul 1178 BC (astr. -1177)"
+     ],
+     "evening_last_heliacal_setting": [
+      "6 May 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "29 Dec 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_first_visible": [
+      "22 Sep 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "23 Nov 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_last_visible": [
+      "23 Feb 1178 BC (astr. -1177)"
+     ],
+     "never_visible_days": 79,
+     "invisible_runs": [
+      [
+       "7 May 1178 BC (astr. -1177)",
+       "24 Jul 1178 BC (astr. -1177)",
+       79
+      ]
+     ]
+    },
+    "Sirius_AV10": {
+     "morning_first_heliacal_rising": [
+      "27 Jul 1178 BC (astr. -1177)"
+     ],
+     "evening_last_heliacal_setting": [
+      "4 May 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "27 Dec 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_first_visible": [
+      "22 Sep 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "25 Nov 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_last_visible": [
+      "23 Feb 1178 BC (astr. -1177)"
+     ],
+     "never_visible_days": 84,
+     "invisible_runs": [
+      [
+       "4 May 1178 BC (astr. -1177)",
+       "26 Jul 1178 BC (astr. -1177)",
+       84
+      ]
+     ]
+    },
+    "Sirius_AV12": {
+     "morning_first_heliacal_rising": [
+      "30 Jul 1178 BC (astr. -1177)"
+     ],
+     "evening_last_heliacal_setting": [
+      "2 May 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "24 Dec 1178 BC (astr. -1177)"
+     ],
+     "evening_rising_first_visible": [
+      "22 Sep 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "27 Nov 1178 BC (astr. -1177)"
+     ],
+     "morning_setting_last_visible": [
+      "23 Feb 1178 BC (astr. -1177)"
+     ],
+     "never_visible_days": 89,
+     "invisible_runs": [
+      [
+       "2 May 1178 BC (astr. -1177)",
+       "29 Jul 1178 BC (astr. -1177)",
+       89
+      ]
+     ]
+    }
+   },
+   "pleiades_bootes": {
+    "evening_sun_m9_alt_ge_2": {
+     "fraction_of_year": 0.23013698630136986,
+     "runs": [
+      [
+       "20 Feb 1178 BC (astr. -1177)",
+       "6 Apr 1178 BC (astr. -1177)",
+       46
+      ],
+      [
+       "27 Sep 1178 BC (astr. -1177)",
+       "3 Nov 1178 BC (astr. -1177)",
+       38
+      ]
+     ]
+    },
+    "morning_sun_m9_alt_ge_2": {
+     "fraction_of_year": 0.2191780821917808,
+     "runs": [
+      [
+       "5 May 1178 BC (astr. -1177)",
+       "8 Jun 1178 BC (astr. -1177)",
+       35
+      ],
+      [
+       "13 Sep 1178 BC (astr. -1177)",
+       "27 Oct 1178 BC (astr. -1177)",
+       45
+      ]
+     ]
+    },
+    "evening_sun_m9_alt_ge_5": {
+     "fraction_of_year": 0.16712328767123288,
+     "runs": [
+      [
+       "24 Feb 1178 BC (astr. -1177)",
+       "3 Apr 1178 BC (astr. -1177)",
+       39
+      ],
+      [
+       "4 Oct 1178 BC (astr. -1177)",
+       "25 Oct 1178 BC (astr. -1177)",
+       22
+      ]
+     ]
+    },
+    "morning_sun_m9_alt_ge_5": {
+     "fraction_of_year": 0.1589041095890411,
+     "runs": [
+      [
+       "11 May 1178 BC (astr. -1177)",
+       "31 May 1178 BC (astr. -1177)",
+       21
+      ],
+      [
+       "18 Sep 1178 BC (astr. -1177)",
+       "24 Oct 1178 BC (astr. -1177)",
+       37
+      ]
+     ]
+    },
+    "evening_sun_m9_alt_ge_10": {
+     "fraction_of_year": 0.0684931506849315,
+     "runs": [
+      [
+       "4 Mar 1178 BC (astr. -1177)",
+       "28 Mar 1178 BC (astr. -1177)",
+       25
+      ]
+     ]
+    },
+    "morning_sun_m9_alt_ge_10": {
+     "fraction_of_year": 0.0684931506849315,
+     "runs": [
+      [
+       "25 Sep 1178 BC (astr. -1177)",
+       "19 Oct 1178 BC (astr. -1177)",
+       25
+      ]
+     ]
+    },
+    "BM_limits_sun_m9_alt_ge_0": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "15 Feb 1178 BC (astr. -1177)",
+       "10 Nov 1178 BC (astr. -1177)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "9 Apr 1178 BC (astr. -1177)"
+      ],
+      [
+       "21 Sep 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m9_alt_ge_2": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "20 Feb 1178 BC (astr. -1177)",
+       "3 Nov 1178 BC (astr. -1177)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "6 Apr 1178 BC (astr. -1177)"
+      ],
+      [
+       "27 Sep 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m9_alt_ge_5": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "24 Feb 1178 BC (astr. -1177)",
+       "25 Oct 1178 BC (astr. -1177)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "3 Apr 1178 BC (astr. -1177)"
+      ],
+      [
+       "4 Oct 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)"
+      ]
+     ]
+    },
+    "evening_sun_m12_alt_ge_2": {
+     "fraction_of_year": 0.23835616438356164,
+     "runs": [
+      [
+       "16 Feb 1178 BC (astr. -1177)",
+       "3 Apr 1178 BC (astr. -1177)",
+       47
+      ],
+      [
+       "20 Sep 1178 BC (astr. -1177)",
+       "29 Oct 1178 BC (astr. -1177)",
+       40
+      ]
+     ]
+    },
+    "morning_sun_m12_alt_ge_2": {
+     "fraction_of_year": 0.21643835616438356,
+     "runs": [
+      [
+       "12 May 1178 BC (astr. -1177)",
+       "14 Jun 1178 BC (astr. -1177)",
+       34
+      ],
+      [
+       "16 Sep 1178 BC (astr. -1177)",
+       "30 Oct 1178 BC (astr. -1177)",
+       45
+      ]
+     ]
+    },
+    "evening_sun_m12_alt_ge_5": {
+     "fraction_of_year": 0.16986301369863013,
+     "runs": [
+      [
+       "21 Feb 1178 BC (astr. -1177)",
+       "30 Mar 1178 BC (astr. -1177)",
+       38
+      ],
+      [
+       "27 Sep 1178 BC (astr. -1177)",
+       "20 Oct 1178 BC (astr. -1177)",
+       24
+      ]
+     ]
+    },
+    "morning_sun_m12_alt_ge_5": {
+     "fraction_of_year": 0.15616438356164383,
+     "runs": [
+      [
+       "18 May 1178 BC (astr. -1177)",
+       "6 Jun 1178 BC (astr. -1177)",
+       20
+      ],
+      [
+       "21 Sep 1178 BC (astr. -1177)",
+       "27 Oct 1178 BC (astr. -1177)",
+       37
+      ]
+     ]
+    },
+    "evening_sun_m12_alt_ge_10": {
+     "fraction_of_year": 0.0684931506849315,
+     "runs": [
+      [
+       "1 Mar 1178 BC (astr. -1177)",
+       "25 Mar 1178 BC (astr. -1177)",
+       25
+      ]
+     ]
+    },
+    "morning_sun_m12_alt_ge_10": {
+     "fraction_of_year": 0.0684931506849315,
+     "runs": [
+      [
+       "28 Sep 1178 BC (astr. -1177)",
+       "22 Oct 1178 BC (astr. -1177)",
+       25
+      ]
+     ]
+    },
+    "BM_limits_sun_m12_alt_ge_0": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "12 Feb 1178 BC (astr. -1177)",
+       "5 Nov 1178 BC (astr. -1177)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "6 Apr 1178 BC (astr. -1177)"
+      ],
+      [
+       "14 Sep 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m12_alt_ge_2": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "16 Feb 1178 BC (astr. -1177)",
+       "29 Oct 1178 BC (astr. -1177)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "3 Apr 1178 BC (astr. -1177)"
+      ],
+      [
+       "20 Sep 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m12_alt_ge_5": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "21 Feb 1178 BC (astr. -1177)",
+       "20 Oct 1178 BC (astr. -1177)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "30 Mar 1178 BC (astr. -1177)"
+      ],
+      [
+       "27 Sep 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)"
+      ]
+     ]
+    },
+    "evening_sun_m15_alt_ge_2": {
+     "fraction_of_year": 0.2410958904109589,
+     "runs": [
+      [
+       "13 Feb 1178 BC (astr. -1177)",
+       "31 Mar 1178 BC (astr. -1177)",
+       47
+      ],
+      [
+       "13 Sep 1178 BC (astr. -1177)",
+       "23 Oct 1178 BC (astr. -1177)",
+       41
+      ]
+     ]
+    },
+    "morning_sun_m15_alt_ge_2": {
+     "fraction_of_year": 0.21095890410958903,
+     "runs": [
+      [
+       "19 May 1178 BC (astr. -1177)",
+       "20 Jun 1178 BC (astr. -1177)",
+       33
+      ],
+      [
+       "20 Sep 1178 BC (astr. -1177)",
+       "2 Nov 1178 BC (astr. -1177)",
+       44
+      ]
+     ]
+    },
+    "evening_sun_m15_alt_ge_5": {
+     "fraction_of_year": 0.16986301369863013,
+     "runs": [
+      [
+       "18 Feb 1178 BC (astr. -1177)",
+       "27 Mar 1178 BC (astr. -1177)",
+       38
+      ],
+      [
+       "20 Sep 1178 BC (astr. -1177)",
+       "13 Oct 1178 BC (astr. -1177)",
+       24
+      ]
+     ]
+    },
+    "morning_sun_m15_alt_ge_5": {
+     "fraction_of_year": 0.15342465753424658,
+     "runs": [
+      [
+       "26 May 1178 BC (astr. -1177)",
+       "13 Jun 1178 BC (astr. -1177)",
+       19
+      ],
+      [
+       "24 Sep 1178 BC (astr. -1177)",
+       "30 Oct 1178 BC (astr. -1177)",
+       37
+      ]
+     ]
+    },
+    "evening_sun_m15_alt_ge_10": {
+     "fraction_of_year": 0.07123287671232877,
+     "runs": [
+      [
+       "25 Feb 1178 BC (astr. -1177)",
+       "22 Mar 1178 BC (astr. -1177)",
+       26
+      ]
+     ]
+    },
+    "morning_sun_m15_alt_ge_10": {
+     "fraction_of_year": 0.0684931506849315,
+     "runs": [
+      [
+       "1 Oct 1178 BC (astr. -1177)",
+       "25 Oct 1178 BC (astr. -1177)",
+       25
+      ]
+     ]
+    },
+    "BM_limits_sun_m15_alt_ge_0": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "9 Feb 1178 BC (astr. -1177)",
+       "30 Oct 1178 BC (astr. -1177)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "2 Apr 1178 BC (astr. -1177)"
+      ],
+      [
+       "7 Sep 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m15_alt_ge_2": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "13 Feb 1178 BC (astr. -1177)",
+       "23 Oct 1178 BC (astr. -1177)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "31 Mar 1178 BC (astr. -1177)"
+      ],
+      [
+       "13 Sep 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m15_alt_ge_5": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "18 Feb 1178 BC (astr. -1177)",
+       "13 Oct 1178 BC (astr. -1177)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "27 Mar 1178 BC (astr. -1177)"
+      ],
+      [
+       "20 Sep 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)"
+      ]
+     ]
+    },
+    "evening_sun_m18_alt_ge_2": {
+     "fraction_of_year": 0.2410958904109589,
+     "runs": [
+      [
+       "10 Feb 1178 BC (astr. -1177)",
+       "27 Mar 1178 BC (astr. -1177)",
+       46
+      ],
+      [
+       "5 Sep 1178 BC (astr. -1177)",
+       "16 Oct 1178 BC (astr. -1177)",
+       42
+      ]
+     ]
+    },
+    "morning_sun_m18_alt_ge_2": {
+     "fraction_of_year": 0.2054794520547945,
+     "runs": [
+      [
+       "28 May 1178 BC (astr. -1177)",
+       "27 Jun 1178 BC (astr. -1177)",
+       31
+      ],
+      [
+       "23 Sep 1178 BC (astr. -1177)",
+       "5 Nov 1178 BC (astr. -1177)",
+       44
+      ]
+     ]
+    },
+    "evening_sun_m18_alt_ge_5": {
+     "fraction_of_year": 0.17534246575342466,
+     "runs": [
+      [
+       "14 Feb 1178 BC (astr. -1177)",
+       "24 Mar 1178 BC (astr. -1177)",
+       39
+      ],
+      [
+       "12 Sep 1178 BC (astr. -1177)",
+       "6 Oct 1178 BC (astr. -1177)",
+       25
+      ]
+     ]
+    },
+    "morning_sun_m18_alt_ge_5": {
+     "fraction_of_year": 0.1506849315068493,
+     "runs": [
+      [
+       "3 Jun 1178 BC (astr. -1177)",
+       "20 Jun 1178 BC (astr. -1177)",
+       18
+      ],
+      [
+       "27 Sep 1178 BC (astr. -1177)",
+       "2 Nov 1178 BC (astr. -1177)",
+       37
+      ]
+     ]
+    },
+    "evening_sun_m18_alt_ge_10": {
+     "fraction_of_year": 0.07123287671232877,
+     "runs": [
+      [
+       "22 Feb 1178 BC (astr. -1177)",
+       "19 Mar 1178 BC (astr. -1177)",
+       26
+      ]
+     ]
+    },
+    "morning_sun_m18_alt_ge_10": {
+     "fraction_of_year": 0.0684931506849315,
+     "runs": [
+      [
+       "4 Oct 1178 BC (astr. -1177)",
+       "28 Oct 1178 BC (astr. -1177)",
+       25
+      ]
+     ]
+    },
+    "BM_limits_sun_m18_alt_ge_0": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "5 Feb 1178 BC (astr. -1177)",
+       "24 Oct 1178 BC (astr. -1177)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "30 Mar 1178 BC (astr. -1177)"
+      ],
+      [
+       "31 Aug 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m18_alt_ge_2": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "10 Feb 1178 BC (astr. -1177)",
+       "16 Oct 1178 BC (astr. -1177)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "27 Mar 1178 BC (astr. -1177)"
+      ],
+      [
+       "5 Sep 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m18_alt_ge_5": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "14 Feb 1178 BC (astr. -1177)",
+       "6 Oct 1178 BC (astr. -1177)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "24 Mar 1178 BC (astr. -1177)"
+      ],
+      [
+       "12 Sep 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)"
+      ]
+     ]
+    },
+    "both_ge_5_simultaneously_any_time_dark": {
+     "fraction_of_year": 0.8684931506849315,
+     "runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "30 Mar 1178 BC (astr. -1177)",
+       89
+      ],
+      [
+       "18 May 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)",
+       228
+      ]
+     ]
+    },
+    "both_ge_10_simultaneously_any_time_dark": {
+     "fraction_of_year": 0.4904109589041096,
+     "runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "25 Mar 1178 BC (astr. -1177)",
+       84
+      ],
+      [
+       "28 Sep 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)",
+       95
+      ]
+     ]
+    },
+    "both_ge_20_simultaneously_any_time_dark": {
+     "fraction_of_year": 0.4246575342465753,
+     "runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "14 Mar 1178 BC (astr. -1177)",
+       73
+      ],
+      [
+       "11 Oct 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)",
+       82
+      ]
+     ]
+    },
+    "each_ge_5_sometime_same_dark_night": {
+     "fraction_of_year": 0.8684931506849315,
+     "runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "30 Mar 1178 BC (astr. -1177)",
+       89
+      ],
+      [
+       "18 May 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)",
+       228
+      ]
+     ]
+    },
+    "each_ge_10_sometime_same_dark_night": {
+     "fraction_of_year": 0.8273972602739726,
+     "runs": [
+      [
+       "1 Jan 1178 BC (astr. -1177)",
+       "25 Mar 1178 BC (astr. -1177)",
+       84
+      ],
+      [
+       "28 May 1178 BC (astr. -1177)",
+       "31 Dec 1178 BC (astr. -1177)",
+       218
+      ]
+     ]
+    }
+   },
+   "late_setting": {
+    "sets_after_local_midnight_and_before_dawn": 0.13972602739726028,
+    "sets_in_dark_more_than_half_night_after_dusk": 0.136986301369863,
+    "visible_at_dusk_and_sets_after_dawn_or_never_sets_in_dark": 0.33972602739726027,
+    "sets_within_2h_after_dusk_while_visible_at_dusk": 0.13424657534246576,
+    "runs_sets_after_midnight_before_dawn": [
+     [
+      "20 Jun 1178 BC (astr. -1177)",
+      "9 Aug 1178 BC (astr. -1177)",
+      51
+     ]
+    ],
+    "runs_visible_dusk_and_all_night": [
+     [
+      "16 Feb 1178 BC (astr. -1177)",
+      "19 Jun 1178 BC (astr. -1177)",
+      124
+     ]
+    ],
+    "runs_sets_within_2h_after_dusk": [
+     [
+      "18 Sep 1178 BC (astr. -1177)",
+      "5 Nov 1178 BC (astr. -1177)",
+      49
+     ]
+    ],
+    "bootes_circumpolar_stars": [
+     "gam Boo",
+     "bet Boo"
+    ],
+    "bootes_star_decs": {
+     "Arcturus": 37.73,
+     "eta Boo": 35.93,
+     "eps Boo": 43.1,
+     "gam Boo": 54.49,
+     "bet Boo": 55.6,
+     "del Boo": 48.2
+    },
+    "bootes_rising_span_hours_sidereal": 0.43370046786816563,
+    "bootes_setting_span_hours_sidereal": 3.6936527581757823,
+    "bootes_first_to_set": "eta Boo",
+    "bootes_last_to_set": "del Boo",
+    "bootes_first_to_rise": "del Boo",
+    "bootes_last_to_rise": "Arcturus",
+    "arcturus_hours_above_horizon": 17.19319228741157,
+    "alcyone_hours_above_horizon": 13.147929170520696
+   },
+   "sirius_herald": {
+    "fraction_of_year": 0.10136986301369863,
+    "runs": [
+     [
+      "27 Jul 1178 BC (astr. -1177)",
+      "1 Sep 1178 BC (astr. -1177)",
+      37
+     ]
+    ]
+   }
+  },
+  "-700": {
+   "year": "701 BC (astr. -700)",
+   "star_radec_of_date": {
+    "Arcturus": [
+     182.806,
+     34.794
+    ],
+    "Alcyone": [
+     19.31,
+     12.378
+    ],
+    "Sirius": [
+     71.567,
+     -16.697
+    ],
+    "eta Boo": [
+     175.75,
+     33.223
+    ],
+    "eps Boo": [
+     191.199,
+     40.444
+    ],
+    "gam Boo": [
+     189.682,
+     51.844
+    ],
+    "bet Boo": [
+     199.565,
+     53.027
+    ],
+    "del Boo": [
+     201.388,
+     45.637
+    ]
+   },
+   "vernal_equinox": [
+    "28 Mar 701 BC (astr. -700)"
+   ],
+   "summer_solstice": [
+    "30 Jun 701 BC (astr. -700)"
+   ],
+   "winter_solstice": [
+    "28 Dec 701 BC (astr. -700)"
+   ],
+   "phases": {
+    "Arcturus_AV8": {
+     "morning_first_heliacal_rising": [
+      "12 Sep 701 BC (astr. -700)"
+     ],
+     "evening_last_heliacal_setting": [
+      "10 Nov 701 BC (astr. -700)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "21 Feb 701 BC (astr. -700)"
+     ],
+     "evening_rising_first_visible": [
+      "26 Nov 701 BC (astr. -700)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "10 Jun 701 BC (astr. -700)"
+     ],
+     "morning_setting_last_visible": [
+      "5 Aug 701 BC (astr. -700)"
+     ],
+     "never_visible_days": 0,
+     "invisible_runs": [],
+     "acronychal_minus_prev_winter_solstice_days": [
+      54
+     ]
+    },
+    "Arcturus_AV10": {
+     "morning_first_heliacal_rising": [
+      "14 Sep 701 BC (astr. -700)"
+     ],
+     "evening_last_heliacal_setting": [
+      "7 Nov 701 BC (astr. -700)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "19 Feb 701 BC (astr. -700)"
+     ],
+     "evening_rising_first_visible": [
+      "26 Nov 701 BC (astr. -700)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "13 Jun 701 BC (astr. -700)"
+     ],
+     "morning_setting_last_visible": [
+      "5 Aug 701 BC (astr. -700)"
+     ],
+     "never_visible_days": 0,
+     "invisible_runs": [],
+     "acronychal_minus_prev_winter_solstice_days": [
+      52
+     ]
+    },
+    "Arcturus_AV12": {
+     "morning_first_heliacal_rising": [
+      "16 Sep 701 BC (astr. -700)"
+     ],
+     "evening_last_heliacal_setting": [
+      "3 Nov 701 BC (astr. -700)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "17 Feb 701 BC (astr. -700)"
+     ],
+     "evening_rising_first_visible": [
+      "26 Nov 701 BC (astr. -700)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "17 Jun 701 BC (astr. -700)"
+     ],
+     "morning_setting_last_visible": [
+      "5 Aug 701 BC (astr. -700)"
+     ],
+     "never_visible_days": 0,
+     "invisible_runs": [],
+     "acronychal_minus_prev_winter_solstice_days": [
+      50
+     ]
+    },
+    "Alcyone_AV12": {
+     "morning_first_heliacal_rising": [
+      "8 May 701 BC (astr. -700)"
+     ],
+     "evening_last_heliacal_setting": [
+      "8 Apr 701 BC (astr. -700)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "18 Sep 701 BC (astr. -700)"
+     ],
+     "evening_rising_first_visible": [
+      "7 Jul 701 BC (astr. -700)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "5 Nov 701 BC (astr. -700)"
+     ],
+     "morning_setting_last_visible": [
+      "28 Jan 701 BC (astr. -700)"
+     ],
+     "never_visible_days": 29,
+     "invisible_runs": [
+      [
+       "9 Apr 701 BC (astr. -700)",
+       "7 May 701 BC (astr. -700)",
+       29
+      ]
+     ]
+    },
+    "Alcyone_AV14": {
+     "morning_first_heliacal_rising": [
+      "13 May 701 BC (astr. -700)"
+     ],
+     "evening_last_heliacal_setting": [
+      "6 Apr 701 BC (astr. -700)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "12 Sep 701 BC (astr. -700)"
+     ],
+     "evening_rising_first_visible": [
+      "7 Jul 701 BC (astr. -700)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "7 Nov 701 BC (astr. -700)"
+     ],
+     "morning_setting_last_visible": [
+      "28 Jan 701 BC (astr. -700)"
+     ],
+     "never_visible_days": 36,
+     "invisible_runs": [
+      [
+       "7 Apr 701 BC (astr. -700)",
+       "12 May 701 BC (astr. -700)",
+       36
+      ]
+     ]
+    },
+    "Alcyone_AV16": {
+     "morning_first_heliacal_rising": [
+      "18 May 701 BC (astr. -700)"
+     ],
+     "evening_last_heliacal_setting": [
+      "4 Apr 701 BC (astr. -700)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "7 Sep 701 BC (astr. -700)"
+     ],
+     "evening_rising_first_visible": [
+      "7 Jul 701 BC (astr. -700)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "9 Nov 701 BC (astr. -700)"
+     ],
+     "morning_setting_last_visible": [
+      "28 Jan 701 BC (astr. -700)"
+     ],
+     "never_visible_days": 43,
+     "invisible_runs": [
+      [
+       "5 Apr 701 BC (astr. -700)",
+       "17 May 701 BC (astr. -700)",
+       43
+      ]
+     ]
+    },
+    "Alcyone_AV18": {
+     "morning_first_heliacal_rising": [
+      "24 May 701 BC (astr. -700)"
+     ],
+     "evening_last_heliacal_setting": [
+      "2 Apr 701 BC (astr. -700)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "2 Sep 701 BC (astr. -700)"
+     ],
+     "evening_rising_first_visible": [
+      "7 Jul 701 BC (astr. -700)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "11 Nov 701 BC (astr. -700)"
+     ],
+     "morning_setting_last_visible": [
+      "28 Jan 701 BC (astr. -700)"
+     ],
+     "never_visible_days": 51,
+     "invisible_runs": [
+      [
+       "3 Apr 701 BC (astr. -700)",
+       "23 May 701 BC (astr. -700)",
+       51
+      ]
+     ]
+    },
+    "Sirius_AV8": {
+     "morning_first_heliacal_rising": [
+      "24 Jul 701 BC (astr. -700)"
+     ],
+     "evening_last_heliacal_setting": [
+      "6 May 701 BC (astr. -700)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "30 Dec 701 BC (astr. -700)"
+     ],
+     "evening_rising_first_visible": [
+      "22 Sep 701 BC (astr. -700)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "24 Nov 701 BC (astr. -700)"
+     ],
+     "morning_setting_last_visible": [
+      "26 Feb 701 BC (astr. -700)"
+     ],
+     "never_visible_days": 78,
+     "invisible_runs": [
+      [
+       "7 May 701 BC (astr. -700)",
+       "23 Jul 701 BC (astr. -700)",
+       78
+      ]
+     ]
+    },
+    "Sirius_AV10": {
+     "morning_first_heliacal_rising": [
+      "26 Jul 701 BC (astr. -700)"
+     ],
+     "evening_last_heliacal_setting": [
+      "4 May 701 BC (astr. -700)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "27 Dec 701 BC (astr. -700)"
+     ],
+     "evening_rising_first_visible": [
+      "22 Sep 701 BC (astr. -700)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "26 Nov 701 BC (astr. -700)"
+     ],
+     "morning_setting_last_visible": [
+      "26 Feb 701 BC (astr. -700)"
+     ],
+     "never_visible_days": 82,
+     "invisible_runs": [
+      [
+       "5 May 701 BC (astr. -700)",
+       "25 Jul 701 BC (astr. -700)",
+       82
+      ]
+     ]
+    },
+    "Sirius_AV12": {
+     "morning_first_heliacal_rising": [
+      "29 Jul 701 BC (astr. -700)"
+     ],
+     "evening_last_heliacal_setting": [
+      "2 May 701 BC (astr. -700)"
+     ],
+     "evening_rising_last_visible_acronychal": [
+      "24 Dec 701 BC (astr. -700)"
+     ],
+     "evening_rising_first_visible": [
+      "22 Sep 701 BC (astr. -700)"
+     ],
+     "morning_setting_first_visible_cosmical": [
+      "28 Nov 701 BC (astr. -700)"
+     ],
+     "morning_setting_last_visible": [
+      "26 Feb 701 BC (astr. -700)"
+     ],
+     "never_visible_days": 88,
+     "invisible_runs": [
+      [
+       "2 May 701 BC (astr. -700)",
+       "28 Jul 701 BC (astr. -700)",
+       88
+      ]
+     ]
+    }
+   },
+   "pleiades_bootes": {
+    "evening_sun_m9_alt_ge_2": {
+     "fraction_of_year": 0.22131147540983606,
+     "runs": [
+      [
+       "24 Feb 701 BC (astr. -700)",
+       "9 Apr 701 BC (astr. -700)",
+       46
+      ],
+      [
+       "29 Sep 701 BC (astr. -700)",
+       "2 Nov 701 BC (astr. -700)",
+       35
+      ]
+     ]
+    },
+    "morning_sun_m9_alt_ge_2": {
+     "fraction_of_year": 0.20491803278688525,
+     "runs": [
+      [
+       "6 May 701 BC (astr. -700)",
+       "5 Jun 701 BC (astr. -700)",
+       31
+      ],
+      [
+       "17 Sep 701 BC (astr. -700)",
+       "30 Oct 701 BC (astr. -700)",
+       44
+      ]
+     ]
+    },
+    "evening_sun_m9_alt_ge_5": {
+     "fraction_of_year": 0.15027322404371585,
+     "runs": [
+      [
+       "29 Feb 701 BC (astr. -700)",
+       "5 Apr 701 BC (astr. -700)",
+       37
+      ],
+      [
+       "7 Oct 701 BC (astr. -700)",
+       "24 Oct 701 BC (astr. -700)",
+       18
+      ]
+     ]
+    },
+    "morning_sun_m9_alt_ge_5": {
+     "fraction_of_year": 0.1448087431693989,
+     "runs": [
+      [
+       "13 May 701 BC (astr. -700)",
+       "29 May 701 BC (astr. -700)",
+       17
+      ],
+      [
+       "21 Sep 701 BC (astr. -700)",
+       "26 Oct 701 BC (astr. -700)",
+       36
+      ]
+     ]
+    },
+    "evening_sun_m9_alt_ge_10": {
+     "fraction_of_year": 0.06830601092896176,
+     "runs": [
+      [
+       "7 Mar 701 BC (astr. -700)",
+       "31 Mar 701 BC (astr. -700)",
+       25
+      ]
+     ]
+    },
+    "morning_sun_m9_alt_ge_10": {
+     "fraction_of_year": 0.06557377049180328,
+     "runs": [
+      [
+       "28 Sep 701 BC (astr. -700)",
+       "21 Oct 701 BC (astr. -700)",
+       24
+      ]
+     ]
+    },
+    "BM_limits_sun_m9_alt_ge_0": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "21 Feb 701 BC (astr. -700)",
+       "8 Nov 701 BC (astr. -700)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "11 Apr 701 BC (astr. -700)"
+      ],
+      [
+       "24 Sep 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m9_alt_ge_2": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "24 Feb 701 BC (astr. -700)",
+       "2 Nov 701 BC (astr. -700)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "9 Apr 701 BC (astr. -700)"
+      ],
+      [
+       "29 Sep 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m9_alt_ge_5": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "29 Feb 701 BC (astr. -700)",
+       "24 Oct 701 BC (astr. -700)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "5 Apr 701 BC (astr. -700)"
+      ],
+      [
+       "7 Oct 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)"
+      ]
+     ]
+    },
+    "evening_sun_m12_alt_ge_2": {
+     "fraction_of_year": 0.2185792349726776,
+     "runs": [
+      [
+       "21 Feb 701 BC (astr. -700)",
+       "5 Apr 701 BC (astr. -700)",
+       45
+      ],
+      [
+       "23 Sep 701 BC (astr. -700)",
+       "27 Oct 701 BC (astr. -700)",
+       35
+      ]
+     ]
+    },
+    "morning_sun_m12_alt_ge_2": {
+     "fraction_of_year": 0.1994535519125683,
+     "runs": [
+      [
+       "14 May 701 BC (astr. -700)",
+       "11 Jun 701 BC (astr. -700)",
+       29
+      ],
+      [
+       "20 Sep 701 BC (astr. -700)",
+       "2 Nov 701 BC (astr. -700)",
+       44
+      ]
+     ]
+    },
+    "evening_sun_m12_alt_ge_5": {
+     "fraction_of_year": 0.15300546448087432,
+     "runs": [
+      [
+       "26 Feb 701 BC (astr. -700)",
+       "2 Apr 701 BC (astr. -700)",
+       37
+      ],
+      [
+       "30 Sep 701 BC (astr. -700)",
+       "18 Oct 701 BC (astr. -700)",
+       19
+      ]
+     ]
+    },
+    "morning_sun_m12_alt_ge_5": {
+     "fraction_of_year": 0.1448087431693989,
+     "runs": [
+      [
+       "20 May 701 BC (astr. -700)",
+       "5 Jun 701 BC (astr. -700)",
+       17
+      ],
+      [
+       "24 Sep 701 BC (astr. -700)",
+       "29 Oct 701 BC (astr. -700)",
+       36
+      ]
+     ]
+    },
+    "evening_sun_m12_alt_ge_10": {
+     "fraction_of_year": 0.06830601092896176,
+     "runs": [
+      [
+       "4 Mar 701 BC (astr. -700)",
+       "28 Mar 701 BC (astr. -700)",
+       25
+      ]
+     ]
+    },
+    "morning_sun_m12_alt_ge_10": {
+     "fraction_of_year": 0.06557377049180328,
+     "runs": [
+      [
+       "1 Oct 701 BC (astr. -700)",
+       "24 Oct 701 BC (astr. -700)",
+       24
+      ]
+     ]
+    },
+    "BM_limits_sun_m12_alt_ge_0": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "17 Feb 701 BC (astr. -700)",
+       "3 Nov 701 BC (astr. -700)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "8 Apr 701 BC (astr. -700)"
+      ],
+      [
+       "18 Sep 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m12_alt_ge_2": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "21 Feb 701 BC (astr. -700)",
+       "27 Oct 701 BC (astr. -700)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "5 Apr 701 BC (astr. -700)"
+      ],
+      [
+       "23 Sep 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m12_alt_ge_5": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "26 Feb 701 BC (astr. -700)",
+       "18 Oct 701 BC (astr. -700)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "2 Apr 701 BC (astr. -700)"
+      ],
+      [
+       "30 Sep 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)"
+      ]
+     ]
+    },
+    "evening_sun_m15_alt_ge_2": {
+     "fraction_of_year": 0.22131147540983606,
+     "runs": [
+      [
+       "18 Feb 701 BC (astr. -700)",
+       "2 Apr 701 BC (astr. -700)",
+       45
+      ],
+      [
+       "16 Sep 701 BC (astr. -700)",
+       "21 Oct 701 BC (astr. -700)",
+       36
+      ]
+     ]
+    },
+    "morning_sun_m15_alt_ge_2": {
+     "fraction_of_year": 0.19672131147540983,
+     "runs": [
+      [
+       "21 May 701 BC (astr. -700)",
+       "17 Jun 701 BC (astr. -700)",
+       28
+      ],
+      [
+       "23 Sep 701 BC (astr. -700)",
+       "5 Nov 701 BC (astr. -700)",
+       44
+      ]
+     ]
+    },
+    "evening_sun_m15_alt_ge_5": {
+     "fraction_of_year": 0.16120218579234974,
+     "runs": [
+      [
+       "22 Feb 701 BC (astr. -700)",
+       "30 Mar 701 BC (astr. -700)",
+       38
+      ],
+      [
+       "23 Sep 701 BC (astr. -700)",
+       "13 Oct 701 BC (astr. -700)",
+       21
+      ]
+     ]
+    },
+    "morning_sun_m15_alt_ge_5": {
+     "fraction_of_year": 0.13934426229508196,
+     "runs": [
+      [
+       "27 May 701 BC (astr. -700)",
+       "11 Jun 701 BC (astr. -700)",
+       16
+      ],
+      [
+       "28 Sep 701 BC (astr. -700)",
+       "1 Nov 701 BC (astr. -700)",
+       35
+      ]
+     ]
+    },
+    "evening_sun_m15_alt_ge_10": {
+     "fraction_of_year": 0.06830601092896176,
+     "runs": [
+      [
+       "29 Feb 701 BC (astr. -700)",
+       "24 Mar 701 BC (astr. -700)",
+       25
+      ]
+     ]
+    },
+    "morning_sun_m15_alt_ge_10": {
+     "fraction_of_year": 0.06557377049180328,
+     "runs": [
+      [
+       "4 Oct 701 BC (astr. -700)",
+       "27 Oct 701 BC (astr. -700)",
+       24
+      ]
+     ]
+    },
+    "BM_limits_sun_m15_alt_ge_0": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "14 Feb 701 BC (astr. -700)",
+       "28 Oct 701 BC (astr. -700)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "5 Apr 701 BC (astr. -700)"
+      ],
+      [
+       "10 Sep 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m15_alt_ge_2": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "18 Feb 701 BC (astr. -700)",
+       "21 Oct 701 BC (astr. -700)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "2 Apr 701 BC (astr. -700)"
+      ],
+      [
+       "16 Sep 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m15_alt_ge_5": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "22 Feb 701 BC (astr. -700)",
+       "13 Oct 701 BC (astr. -700)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "30 Mar 701 BC (astr. -700)"
+      ],
+      [
+       "23 Sep 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)"
+      ]
+     ]
+    },
+    "evening_sun_m18_alt_ge_2": {
+     "fraction_of_year": 0.22404371584699453,
+     "runs": [
+      [
+       "15 Feb 701 BC (astr. -700)",
+       "30 Mar 701 BC (astr. -700)",
+       45
+      ],
+      [
+       "9 Sep 701 BC (astr. -700)",
+       "15 Oct 701 BC (astr. -700)",
+       37
+      ]
+     ]
+    },
+    "morning_sun_m18_alt_ge_2": {
+     "fraction_of_year": 0.1912568306010929,
+     "runs": [
+      [
+       "29 May 701 BC (astr. -700)",
+       "23 Jun 701 BC (astr. -700)",
+       26
+      ],
+      [
+       "26 Sep 701 BC (astr. -700)",
+       "8 Nov 701 BC (astr. -700)",
+       44
+      ]
+     ]
+    },
+    "evening_sun_m18_alt_ge_5": {
+     "fraction_of_year": 0.15846994535519127,
+     "runs": [
+      [
+       "19 Feb 701 BC (astr. -700)",
+       "26 Mar 701 BC (astr. -700)",
+       37
+      ],
+      [
+       "16 Sep 701 BC (astr. -700)",
+       "6 Oct 701 BC (astr. -700)",
+       21
+      ]
+     ]
+    },
+    "morning_sun_m18_alt_ge_5": {
+     "fraction_of_year": 0.1366120218579235,
+     "runs": [
+      [
+       "4 Jun 701 BC (astr. -700)",
+       "18 Jun 701 BC (astr. -700)",
+       15
+      ],
+      [
+       "1 Oct 701 BC (astr. -700)",
+       "4 Nov 701 BC (astr. -700)",
+       35
+      ]
+     ]
+    },
+    "evening_sun_m18_alt_ge_10": {
+     "fraction_of_year": 0.06830601092896176,
+     "runs": [
+      [
+       "26 Feb 701 BC (astr. -700)",
+       "21 Mar 701 BC (astr. -700)",
+       25
+      ]
+     ]
+    },
+    "morning_sun_m18_alt_ge_10": {
+     "fraction_of_year": 0.06284153005464481,
+     "runs": [
+      [
+       "8 Oct 701 BC (astr. -700)",
+       "30 Oct 701 BC (astr. -700)",
+       23
+      ]
+     ]
+    },
+    "BM_limits_sun_m18_alt_ge_0": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "11 Feb 701 BC (astr. -700)",
+       "22 Oct 701 BC (astr. -700)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "2 Apr 701 BC (astr. -700)"
+      ],
+      [
+       "2 Sep 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m18_alt_ge_2": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "15 Feb 701 BC (astr. -700)",
+       "15 Oct 701 BC (astr. -700)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "30 Mar 701 BC (astr. -700)"
+      ],
+      [
+       "9 Sep 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)"
+      ]
+     ]
+    },
+    "BM_limits_sun_m18_alt_ge_5": {
+     "Arcturus_up_at_dusk_runs": [
+      [
+       "19 Feb 701 BC (astr. -700)",
+       "6 Oct 701 BC (astr. -700)"
+      ]
+     ],
+     "Pleiades_up_at_dusk_runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "26 Mar 701 BC (astr. -700)"
+      ],
+      [
+       "16 Sep 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)"
+      ]
+     ]
+    },
+    "both_ge_5_simultaneously_any_time_dark": {
+     "fraction_of_year": 0.8715846994535519,
+     "runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "2 Apr 701 BC (astr. -700)",
+       93
+      ],
+      [
+       "20 May 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)",
+       226
+      ]
+     ]
+    },
+    "both_ge_10_simultaneously_any_time_dark": {
+     "fraction_of_year": 0.4918032786885246,
+     "runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "28 Mar 701 BC (astr. -700)",
+       88
+      ],
+      [
+       "1 Oct 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)",
+       92
+      ]
+     ]
+    },
+    "both_ge_20_simultaneously_any_time_dark": {
+     "fraction_of_year": 0.42896174863387976,
+     "runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "17 Mar 701 BC (astr. -700)",
+       77
+      ],
+      [
+       "13 Oct 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)",
+       80
+      ]
+     ]
+    },
+    "each_ge_5_sometime_same_dark_night": {
+     "fraction_of_year": 0.8715846994535519,
+     "runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "2 Apr 701 BC (astr. -700)",
+       93
+      ],
+      [
+       "20 May 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)",
+       226
+      ]
+     ]
+    },
+    "each_ge_10_sometime_same_dark_night": {
+     "fraction_of_year": 0.8306010928961749,
+     "runs": [
+      [
+       "1 Jan 701 BC (astr. -700)",
+       "28 Mar 701 BC (astr. -700)",
+       88
+      ],
+      [
+       "30 May 701 BC (astr. -700)",
+       "31 Dec 701 BC (astr. -700)",
+       216
+      ]
+     ]
+    }
+   },
+   "late_setting": {
+    "sets_after_local_midnight_and_before_dawn": 0.13934426229508196,
+    "sets_in_dark_more_than_half_night_after_dusk": 0.13387978142076504,
+    "visible_at_dusk_and_sets_after_dawn_or_never_sets_in_dark": 0.319672131147541,
+    "sets_within_2h_after_dusk_while_visible_at_dusk": 0.13387978142076504,
+    "runs_sets_after_midnight_before_dawn": [
+     [
+      "17 Jun 701 BC (astr. -700)",
+      "6 Aug 701 BC (astr. -700)",
+      51
+     ]
+    ],
+    "runs_visible_dusk_and_all_night": [
+     [
+      "21 Feb 701 BC (astr. -700)",
+      "16 Jun 701 BC (astr. -700)",
+      117
+     ]
+    ],
+    "runs_sets_within_2h_after_dusk": [
+     [
+      "16 Sep 701 BC (astr. -700)",
+      "3 Nov 701 BC (astr. -700)",
+      49
+     ]
+    ],
+    "bootes_circumpolar_stars": [
+     "gam Boo",
+     "bet Boo"
+    ],
+    "bootes_star_decs": {
+     "Arcturus": 34.79,
+     "eta Boo": 33.22,
+     "eps Boo": 40.44,
+     "gam Boo": 51.84,
+     "bet Boo": 53.03,
+     "del Boo": 45.64
+    },
+    "bootes_rising_span_hours_sidereal": 0.32471327621897594,
+    "bootes_setting_span_hours_sidereal": 3.282944106617155,
+    "bootes_first_to_set": "eta Boo",
+    "bootes_last_to_set": "del Boo",
+    "bootes_first_to_rise": "eta Boo",
+    "bootes_last_to_rise": "Arcturus",
+    "arcturus_hours_above_horizon": 16.592448769563394,
+    "alcyone_hours_above_horizon": 13.435104510937789
+   },
+   "sirius_herald": {
+    "fraction_of_year": 0.10382513661202186,
+    "runs": [
+     [
+      "26 Jul 701 BC (astr. -700)",
+      "1 Sep 701 BC (astr. -700)",
+      38
+     ]
+    ]
+   }
+  }
+ },
+ "moon": {
+  "n_new_moons_1250_1115BC": 1683,
+  "fraction_conjunctions_in_local_daylight": 0.5092097445038621,
+  "crescent": {
+   "yallop_A": {
+    "first_evening_offset_days_hist": {
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.5656565656565656,
+     "2": 0.4236482471776589,
+     "3": 0.0106951871657754,
+     "4": 0.0
+    },
+    "first_evening_offset_hist_daylight_conjunctions": {
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.588098016336056,
+     "2": 0.41073512252042005,
+     "3": 0.0011668611435239206,
+     "4": 0.0
+    },
+    "last_morning_offset_days_hist": {
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.5317884729649436,
+     "2": 0.4533571004159239,
+     "3": 0.014854426619132501,
+     "4": 0.0
+    },
+    "age_at_first_sighting_h": {
+     "min": 21.94560804963112,
+     "median": 41.46243602782488,
+     "mean": 41.77312706738259,
+     "max": 75.82572608068585
+    },
+    "age_before_conj_at_last_sighting_h": {
+     "min": 19.79308400116861,
+     "median": 41.481410974636674,
+     "max": 74.04027044400573
+    },
+    "dates_with_no_crescent_hist": {
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.20855614973262032,
+     "2": 0.6547831253713606,
+     "3": 0.13666072489601902,
+     "4": 0.0,
+     "5": 0.0,
+     "6": 0.0,
+     "7": 0.0,
+     "8": 0.0,
+     "9": 0.0
+    },
+    "mean_first_offset": 1.4450386215092097,
+    "mean_last_offset": 1.483065953654189
+   },
+   "yallop_B": {
+    "first_evening_offset_days_hist": {
+     "-1": 0.0,
+     "0": 0.0172311348781937,
+     "1": 0.6934046345811051,
+     "2": 0.2857991681521093,
+     "3": 0.0035650623885918,
+     "4": 0.0
+    },
+    "first_evening_offset_hist_daylight_conjunctions": {
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.7479579929988331,
+     "2": 0.25204200700116686,
+     "3": 0.0,
+     "4": 0.0
+    },
+    "last_morning_offset_days_hist": {
+     "-1": 0.0,
+     "0": 0.0029708853238265003,
+     "1": 0.6815210932857991,
+     "2": 0.3143196672608437,
+     "3": 0.0011883541295306002,
+     "4": 0.0
+    },
+    "age_at_first_sighting_h": {
+     "min": 15.607472162693739,
+     "median": 37.40810031071305,
+     "mean": 37.646368379311205,
+     "max": 68.17065860331059
+    },
+    "age_before_conj_at_last_sighting_h": {
+     "min": 16.30104129575193,
+     "median": 37.49874600581825,
+     "max": 66.90229630842805
+    },
+    "dates_with_no_crescent_hist": {
+     "-1": 0.0,
+     "0": 0.013666072489601902,
+     "1": 0.42483660130718953,
+     "2": 0.5199049316696376,
+     "3": 0.041592394533571005,
+     "4": 0.0,
+     "5": 0.0,
+     "6": 0.0,
+     "7": 0.0,
+     "8": 0.0,
+     "9": 0.0
+    },
+    "mean_first_offset": 1.2756981580510993,
+    "mean_last_offset": 1.3137254901960784
+   },
+   "yallop_C": {
+    "first_evening_offset_days_hist": {
+     "-1": 0.0,
+     "0": 0.04040404040404041,
+     "1": 0.756387403446227,
+     "2": 0.20202020202020202,
+     "3": 0.0011883541295306002,
+     "4": 0.0
+    },
+    "first_evening_offset_hist_daylight_conjunctions": {
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.8249708284714119,
+     "2": 0.1750291715285881,
+     "3": 0.0,
+     "4": 0.0
+    },
+    "last_morning_offset_days_hist": {
+     "-1": 0.0,
+     "0": 0.016042780748663103,
+     "1": 0.7593582887700535,
+     "2": 0.22400475341651813,
+     "3": 0.0005941770647653001,
+     "4": 0.0
+    },
+    "age_at_first_sighting_h": {
+     "min": 15.058100011199713,
+     "median": 34.38166547007859,
+     "mean": 34.92470624495743,
+     "max": 67.68892946094275
+    },
+    "age_before_conj_at_last_sighting_h": {
+     "min": 14.79910478554666,
+     "median": 35.46347731165588,
+     "max": 66.50801090709865
+    },
+    "dates_with_no_crescent_hist": {
+     "-1": 0.0,
+     "0": 0.0421865715983363,
+     "1": 0.5484254307783719,
+     "2": 0.40344622697563876,
+     "3": 0.0059417706476530005,
+     "4": 0.0,
+     "5": 0.0,
+     "6": 0.0,
+     "7": 0.0,
+     "8": 0.0,
+     "9": 0.0
+    },
+    "mean_first_offset": 1.1639928698752229,
+    "mean_last_offset": 1.2091503267973855
+   },
+   "age24_lag48": {
+    "first_evening_offset_days_hist": {
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.5995246583481878,
+     "2": 0.3493761140819964,
+     "3": 0.0510992275698158,
+     "4": 0.0
+    },
+    "first_evening_offset_hist_daylight_conjunctions": {
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.7071178529754959,
+     "2": 0.2508751458576429,
+     "3": 0.042007001166861145,
+     "4": 0.0
+    },
+    "last_morning_offset_days_hist": {
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.5543672014260249,
+     "2": 0.39334521687462864,
+     "3": 0.05169340463458111,
+     "4": 0.0005941770647653001
+    },
+    "age_at_first_sighting_h": {
+     "min": 24.00549648888409,
+     "median": 40.6503702364862,
+     "mean": 41.92760570315103,
+     "max": 86.93423536419868
+    },
+    "age_before_conj_at_last_sighting_h": {
+     "min": 24.012602146714926,
+     "median": 40.878466760739684,
+     "max": 90.70729928277433
+    },
+    "dates_with_no_crescent_hist": {
+     "-1": 0.0,
+     "0": 0.0,
+     "1": 0.24658348187759951,
+     "2": 0.5626856803327391,
+     "3": 0.18478906714200832,
+     "4": 0.0059417706476530005,
+     "5": 0.0,
+     "6": 0.0,
+     "7": 0.0,
+     "8": 0.0,
+     "9": 0.0
+    },
+    "mean_first_offset": 1.451574569221628,
+    "mean_last_offset": 1.4985145573380867
+   }
+  },
+  "skotomenios_14_457": {
+   "day0_conjunction_date|night_after_day_-5": {
+    "moon_up_fraction_of_dark_median": 0.2463768115942029,
+    "moon_up_fraction_of_dark_range": [
+     0.02127659574468085,
+     0.5306122448979592
+    ],
+    "illuminated_fraction_median": 0.21598331717421865
+   },
+   "day0_conjunction_date|night_after_day_-4": {
+    "moon_up_fraction_of_dark_median": 0.16216216216216217,
+    "moon_up_fraction_of_dark_range": [
+     0.0,
+     0.4090909090909091
+    ],
+    "illuminated_fraction_median": 0.13512488937894934
+   },
+   "day0_conjunction_date|night_after_day_-2": {
+    "moon_up_fraction_of_dark_median": 0.0,
+    "moon_up_fraction_of_dark_range": [
+     0.0,
+     0.11320754716981132
+    ],
+    "illuminated_fraction_median": 0.026975391403385673
+   },
+   "day0_first_crescent_noumenia_yallopB|night_after_day_-5": {
+    "moon_up_fraction_of_dark_median": 0.04081632653061224,
+    "moon_up_fraction_of_dark_range": [
+     0.0,
+     0.27906976744186046
+    ],
+    "illuminated_fraction_median": 0.05900338925543264
+   },
+   "day0_first_crescent_noumenia_yallopB|night_after_day_-4": {
+    "moon_up_fraction_of_dark_median": 0.0,
+    "moon_up_fraction_of_dark_range": [
+     0.0,
+     0.13953488372093023
+    ],
+    "illuminated_fraction_median": 0.018400379260344435
+   },
+   "day0_first_crescent_noumenia_yallopB|night_after_day_-2": {
+    "moon_up_fraction_of_dark_median": 0.0,
+    "moon_up_fraction_of_dark_range": [
+     0.0,
+     0.0
+    ],
+    "illuminated_fraction_median": 0.007918657672597862
+   },
+   "base_rate_all_nights": {
+    "moon_up_lt_10pct_of_dark": 0.20095890410958905,
+    "moon_up_lt_25pct": 0.31589041095890413,
+    "moon_up_lt_50pct": 0.5057534246575343,
+    "moonlight_index_le_day-5_median": 0.30753424657534245,
+    "moonlight_index_le_day-4_median": 0.24136986301369864,
+    "illum_lt_0.25": 0.3291780821917808
+   }
+  }
+ },
+ "bm_rates": {
+  "n_new_moons": 1683,
+  "star_window_fraction": 0.0825906120023767,
+  "star_window_per_year": 1.0220588235294117,
+  "star_and_equinox_fraction": 0.013071895424836602,
+  "years_per_star_and_equinox_moon": 6.181818181818182,
+  "venus_lead_ge_60_on_day-5_all": 0.3612596553773024,
+  "venus_lead_ge_60_on_day-5_starwindow": 0.31654676258992803,
+  "venus_lead_ge_90_on_day-5_all": 0.29411764705882354,
+  "venus_lead_ge_90_on_day-5_starwindow": 0.15827338129496402,
+  "venus_lead_ge_120_on_day-5_all": 0.2043969102792632,
+  "venus_lead_ge_120_on_day-5_starwindow": 0.06474820143884892,
+  "venus_visible_AV7_on_day-5_all": 0.4236482471776589,
+  "venus_visible_AV7_on_day-5_starwindow": 0.4316546762589928,
+  "venus_lead_ge_60_on_day-4_all": 0.3630421865715983,
+  "venus_lead_ge_60_on_day-4_starwindow": 0.3237410071942446,
+  "venus_lead_ge_90_on_day-4_all": 0.2947118241235888,
+  "venus_lead_ge_90_on_day-4_starwindow": 0.16546762589928057,
+  "venus_lead_ge_120_on_day-4_all": 0.20380273321449793,
+  "venus_lead_ge_120_on_day-4_starwindow": 0.06474820143884892,
+  "venus_visible_AV7_on_day-4_all": 0.42483660130718953,
+  "venus_visible_AV7_on_day-4_starwindow": 0.4316546762589928,
+  "mercury_day-34_within_1_GWE_vis": 0.0184194890077243,
+  "mercury_day-34_within_1_GWE_vis_starwindow": 0.014388489208633094,
+  "mercury_day-34_within_1_GWE_or_station_vis_starwindow": 0.03597122302158273,
+  "mercury_day-34_within_2_GWE_vis": 0.035056446821152706,
+  "mercury_day-34_within_2_GWE_vis_starwindow": 0.02877697841726619,
+  "mercury_day-34_within_2_GWE_or_station_vis_starwindow": 0.06474820143884892,
+  "mercury_day-34_within_3_GWE_vis": 0.04931669637551991,
+  "mercury_day-34_within_3_GWE_vis_starwindow": 0.04316546762589928,
+  "mercury_day-34_within_3_GWE_or_station_vis_starwindow": 0.08633093525179857,
+  "mercury_day-34_within_5_GWE_vis": 0.0754604872251931,
+  "mercury_day-34_within_5_GWE_vis_starwindow": 0.08633093525179857,
+  "mercury_day-34_within_5_GWE_or_station_vis_starwindow": 0.17266187050359713,
+  "mercury_day-33_within_1_GWE_vis": 0.0213903743315508,
+  "mercury_day-33_within_1_GWE_vis_starwindow": 0.014388489208633094,
+  "mercury_day-33_within_1_GWE_or_station_vis_starwindow": 0.03597122302158273,
+  "mercury_day-33_within_2_GWE_vis": 0.0344622697563874,
+  "mercury_day-33_within_2_GWE_vis_starwindow": 0.03597122302158273,
+  "mercury_day-33_within_2_GWE_or_station_vis_starwindow": 0.07194244604316546,
+  "mercury_day-33_within_3_GWE_vis": 0.04931669637551991,
+  "mercury_day-33_within_3_GWE_vis_starwindow": 0.04316546762589928,
+  "mercury_day-33_within_3_GWE_or_station_vis_starwindow": 0.09352517985611511,
+  "mercury_day-33_within_5_GWE_vis": 0.0748663101604278,
+  "mercury_day-33_within_5_GWE_vis_starwindow": 0.10071942446043165,
+  "mercury_day-33_within_5_GWE_or_station_vis_starwindow": 0.17985611510791366,
+  "mercury_day-34_within_2_riseAzMax_vis_starwindow": 0.050359712230215826,
+  "mercury_day-34_within_2_riseAzAnyExtremum_vis_starwindow": 0.050359712230215826,
+  "mercury_day-34_within_2_riseAzMax_vis_all": 0.008912655971479501,
+  "mercury_day-34_within_3_riseAzMax_vis_starwindow": 0.07913669064748201,
+  "mercury_day-34_within_3_riseAzAnyExtremum_vis_starwindow": 0.07913669064748201,
+  "mercury_day-34_within_3_riseAzMax_vis_all": 0.013666072489601902,
+  "mercury_day-33_within_2_riseAzMax_vis_starwindow": 0.06474820143884892,
+  "mercury_day-33_within_2_riseAzAnyExtremum_vis_starwindow": 0.06474820143884892,
+  "mercury_day-33_within_2_riseAzMax_vis_all": 0.010101010101010102,
+  "mercury_day-33_within_3_riseAzMax_vis_starwindow": 0.09352517985611511,
+  "mercury_day-33_within_3_riseAzAnyExtremum_vis_starwindow": 0.09352517985611511,
+  "mercury_day-33_within_3_riseAzMax_vis_all": 0.016042780748663103,
+  "joint_hits_1250_1115BC": {
+   "venus_day-5_lead60_mercury_day-34_GWEorStation_pm2": [
+    "2 Apr 1250 BC (astr. -1249)",
+    "31 Mar 1125 BC (astr. -1124)"
+   ],
+   "venus_day-5_lead60_mercury_day-34_GWEorStation_pm3": [
+    "2 Apr 1250 BC (astr. -1249)",
+    "31 Mar 1125 BC (astr. -1124)"
+   ],
+   "venus_day-5_lead90_mercury_day-34_GWEorStation_pm2": [
+    "2 Apr 1250 BC (astr. -1249)"
+   ],
+   "venus_day-5_lead90_mercury_day-34_GWEorStation_pm3": [
+    "2 Apr 1250 BC (astr. -1249)"
+   ],
+   "venus_day-4_lead60_mercury_day-33_GWEorStation_pm2": [
+    "2 Apr 1250 BC (astr. -1249)",
+    "31 Mar 1125 BC (astr. -1124)"
+   ],
+   "venus_day-4_lead60_mercury_day-33_GWEorStation_pm3": [
+    "2 Apr 1250 BC (astr. -1249)",
+    "25 Mar 1138 BC (astr. -1137)",
+    "31 Mar 1125 BC (astr. -1124)"
+   ],
+   "venus_day-4_lead90_mercury_day-33_GWEorStation_pm2": [
+    "2 Apr 1250 BC (astr. -1249)"
+   ],
+   "venus_day-4_lead90_mercury_day-33_GWEorStation_pm3": [
+    "2 Apr 1250 BC (astr. -1249)",
+    "25 Mar 1138 BC (astr. -1137)"
+   ],
+   "venus_day-5_lead60_mercury_day-34_riseAzMax_pm2": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)"
+   ],
+   "venus_day-5_lead60_mercury_day-34_riseAzAnyExtremum_pm2": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)"
+   ],
+   "venus_day-5_lead60_mercury_day-34_riseAzMax_pm3": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)",
+    "24 Mar 1157 BC (astr. -1156)"
+   ],
+   "venus_day-5_lead60_mercury_day-34_riseAzAnyExtremum_pm3": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)",
+    "24 Mar 1157 BC (astr. -1156)"
+   ],
+   "venus_day-5_lead90_mercury_day-34_riseAzMax_pm2": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)"
+   ],
+   "venus_day-5_lead90_mercury_day-34_riseAzAnyExtremum_pm2": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)"
+   ],
+   "venus_day-5_lead90_mercury_day-34_riseAzMax_pm3": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)"
+   ],
+   "venus_day-5_lead90_mercury_day-34_riseAzAnyExtremum_pm3": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)"
+   ],
+   "venus_day-4_lead60_mercury_day-33_riseAzMax_pm2": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)",
+    "24 Mar 1157 BC (astr. -1156)"
+   ],
+   "venus_day-4_lead60_mercury_day-33_riseAzAnyExtremum_pm2": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)",
+    "24 Mar 1157 BC (astr. -1156)"
+   ],
+   "venus_day-4_lead60_mercury_day-33_riseAzMax_pm3": [
+    "8 Apr 1237 BC (astr. -1236)",
+    "9 Apr 1191 BC (astr. -1190)",
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)",
+    "24 Mar 1157 BC (astr. -1156)",
+    "20 Mar 1143 BC (astr. -1142)"
+   ],
+   "venus_day-4_lead60_mercury_day-33_riseAzAnyExtremum_pm3": [
+    "8 Apr 1237 BC (astr. -1236)",
+    "9 Apr 1191 BC (astr. -1190)",
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)",
+    "24 Mar 1157 BC (astr. -1156)",
+    "20 Mar 1143 BC (astr. -1142)"
+   ],
+   "venus_day-4_lead90_mercury_day-33_riseAzMax_pm2": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)"
+   ],
+   "venus_day-4_lead90_mercury_day-33_riseAzAnyExtremum_pm2": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)"
+   ],
+   "venus_day-4_lead90_mercury_day-33_riseAzMax_pm3": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)"
+   ],
+   "venus_day-4_lead90_mercury_day-33_riseAzAnyExtremum_pm3": [
+    "18 Mar 1189 BC (astr. -1188)",
+    "16 Apr 1178 BC (astr. -1177)"
+   ],
+   "DAY0=conj+1_venus_day-5_lead90_mercury_day-34_riseAzMax_pm2": [
+    "19 Mar 1189 BC (astr. -1188) [conj 18 Mar 1189 BC (astr. -1188)]"
+   ],
+   "DAY0=conj+1_venus_day-5_lead90_mercury_day-34_GWEorStation_pm2": [
+    "3 Apr 1250 BC (astr. -1249) [conj 2 Apr 1250 BC (astr. -1249)]"
+   ],
+   "DAY0=conj+1_venus_day-5_lead90_mercury_day-34_riseAzMax_pm3": [
+    "19 Mar 1189 BC (astr. -1188) [conj 18 Mar 1189 BC (astr. -1188)]"
+   ],
+   "DAY0=conj+1_venus_day-5_lead90_mercury_day-34_GWEorStation_pm3": [
+    "3 Apr 1250 BC (astr. -1249) [conj 2 Apr 1250 BC (astr. -1249)]",
+    "26 Mar 1138 BC (astr. -1137) [conj 25 Mar 1138 BC (astr. -1137)]"
+   ],
+   "DAY0=conj+2_venus_day-5_lead90_mercury_day-34_riseAzMax_pm2": [],
+   "DAY0=conj+2_venus_day-5_lead90_mercury_day-34_GWEorStation_pm2": [
+    "4 Apr 1250 BC (astr. -1249) [conj 2 Apr 1250 BC (astr. -1249)]",
+    "27 Mar 1138 BC (astr. -1137) [conj 25 Mar 1138 BC (astr. -1137)]"
+   ],
+   "DAY0=conj+2_venus_day-5_lead90_mercury_day-34_riseAzMax_pm3": [
+    "20 Mar 1189 BC (astr. -1188) [conj 18 Mar 1189 BC (astr. -1188)]"
+   ],
+   "DAY0=conj+2_venus_day-5_lead90_mercury_day-34_GWEorStation_pm3": [
+    "4 Apr 1250 BC (astr. -1249) [conj 2 Apr 1250 BC (astr. -1249)]",
+    "27 Mar 1138 BC (astr. -1137) [conj 25 Mar 1138 BC (astr. -1137)]"
+   ],
+   "DAY0=conj+3_venus_day-5_lead90_mercury_day-34_riseAzMax_pm2": [],
+   "DAY0=conj+3_venus_day-5_lead90_mercury_day-34_GWEorStation_pm2": [
+    "28 Mar 1138 BC (astr. -1137) [conj 25 Mar 1138 BC (astr. -1137)]"
+   ],
+   "DAY0=conj+3_venus_day-5_lead90_mercury_day-34_riseAzMax_pm3": [],
+   "DAY0=conj+3_venus_day-5_lead90_mercury_day-34_GWEorStation_pm3": [
+    "5 Apr 1250 BC (astr. -1249) [conj 2 Apr 1250 BC (astr. -1249)]",
+    "28 Mar 1138 BC (astr. -1137) [conj 25 Mar 1138 BC (astr. -1137)]"
+   ]
+  },
+  "case_16Apr1178BC": {
+   "conjunction_local_date": "16 Apr 1178 BC (astr. -1177)",
+   "venus_lead_min_day-5": 103.69692128151655,
+   "venus_lead_min_day-4": 102.78059922158718,
+   "venus_mag_day-5": -4.163124254168483,
+   "mercury_elong_day-34": -26.08473352358386,
+   "in_star_window": true,
+   "in_equinox_window": true
+  }
+ },
+ "herald": {
+  "mercury_alt_ge_5_at_civil_dawn_by_month": {
+   "1": 0.37832068311195444,
+   "2": 0.31389901093180633,
+   "3": 0.12357685009487666,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.016176470588235296,
+   "7": 0.1392314990512334,
+   "8": 0.1859582542694497,
+   "9": 0.2299019607843137,
+   "10": 0.28154648956356737,
+   "11": 0.3333333333333333,
+   "12": 0.37855787476280833
+  },
+  "mercury_alt_ge_8_at_civil_dawn_by_month": {
+   "1": 0.29293168880455406,
+   "2": 0.15616866215512754,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.016366223908918405,
+   "8": 0.11693548387096774,
+   "9": 0.16936274509803922,
+   "10": 0.22106261859582543,
+   "11": 0.2730392156862745,
+   "12": 0.31309297912713474
+  },
+  "mercury_alt_ge_10_at_civil_dawn_by_month": {
+   "1": 0.22509487666034156,
+   "2": 0.038781884435190005,
+   "3": 0.0,
+   "4": 0.0,
+   "5": 0.0,
+   "6": 0.0,
+   "7": 0.0,
+   "8": 0.036290322580645164,
+   "9": 0.11813725490196078,
+   "10": 0.17409867172675522,
+   "11": 0.22794117647058823,
+   "12": 0.2642314990512334
+  },
+  "any_herald_venus_jupiter_sirius_mars": 0.7001650762974594,
+  "no_herald": 0.29983492370254056,
+  "not_venus_but_other_herald": 0.2760397793614366,
+  "venus_faintest_mag_when_visible": -3.8346401114346698,
+  "jupiter_brightest_mag": -2.9164593992465675,
+  "venus_visible_AV5_by_month": {
+   "1": 0.4632352941176471,
+   "2": 0.42920353982300885,
+   "3": 0.4342979127134725,
+   "4": 0.4404411764705882,
+   "5": 0.3939753320683112,
+   "6": 0.46740196078431373,
+   "7": 0.4466318785578748,
+   "8": 0.444022770398482,
+   "9": 0.48455882352941176,
+   "10": 0.43595825426944973,
+   "11": 0.48651960784313725,
+   "12": 0.44473434535104367
+  }
+ }
+}

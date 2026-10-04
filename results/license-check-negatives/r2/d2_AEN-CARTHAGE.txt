@@ -1,0 +1,497 @@
+====================================================================================================
+SET AEN-CARTHAGE
+{
+ "set": "AEN-CARTHAGE",
+ "role": "negative",
+ "searchable": true,
+ "text": "Virgil, Aeneid 4 (Mercury's descent and Aeneas' night departure from Carthage), with the year count of 1.755-1.756",
+ "text_file": "virgil-aeneid-lat.tsv",
+ "edition_id": 1827,
+ "day0": "Night 0 is the night Mercury appears to Aeneas in sleep and the fleet leaves; Dawn +1 shows Dido the empty harbour. Day M1, Mercury's descent, lies an unstated number of days before Day 0.",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "observer_places": [
+  {
+   "place": "Carthage",
+   "words": "Tu nunc Karthaginis altae",
+   "ref": [
+    "4.265"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "lat": 36.8528,
+   "lon": 10.3233,
+   "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+  }
+ ],
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "AEN-CARTHAGE-01": "none",
+   "AEN-CARTHAGE-02": "free30",
+   "AEN-CARTHAGE-03": "a",
+   "AEN-CARTHAGE-05": "none",
+   "AEN-CARTHAGE-07": "a"
+  },
+  "BM-analogue": {
+   "AEN-CARTHAGE-01": "mwra",
+   "AEN-CARTHAGE-02": "free30",
+   "AEN-CARTHAGE-03": "a",
+   "AEN-CARTHAGE-05": "none",
+   "AEN-CARTHAGE-07": "a"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "season_stars": {
+   "status": "text",
+   "clue_ids": [
+    "AEN-CARTHAGE-03"
+   ],
+   "note": "'hiberno sidere': a season named by a star, without the star's name"
+  },
+  "morning_star": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "mercury_turning_point": {
+   "status": "text",
+   "clue_ids": [
+    "AEN-CARTHAGE-01",
+    "AEN-CARTHAGE-05"
+   ],
+   "note": "Virgil's rewriting of Od. 5.43-54 (sandals, wand, a seabird skimming the waves); the only clean negative with a Hermes slot. Its interval to Day 0 is unstated"
+  },
+  "darkness_eclipse": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  }
+ },
+ "notes": "Outside the books the task named (2-3). Added because it is the one clean negative where B&M's Hermes = Mercury rule can be applied to a Hermes journey written in imitation of the Odyssey's. Row 07 links it to AEN-TROY through Dido's count of summers of wandering ('septima aestas', 1.755-756); the year interval between the two Night 0s is inferred from that count, not stated.",
+ "eclipse_compatible_options": [],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness",
+ "license_check": "ok"
+}
+ PLACE Carthage: missing refs []
+   frag exact=True nfc=True where=['4.265']: Tu nunc Karthaginis altae
+      4.263	demissa ex umeris, dives quae munera Dido
+      4.264	fecerat, et tenui telas discreverat auro.
+   >> 4.265	Continuo invadit: Tu nunc Karthaginis altae
+      4.266	fundamenta locas, pulchramque uxorius urbem
+      4.267	exstruis, heu regni rerumque oblite tuarum?
+----------------------------------------------------------------------------------------------------
+CLUE AEN-CARTHAGE-01  kind=planet  level=narrator
+{
+ "set": "AEN-CARTHAGE",
+ "clue_id": "AEN-CARTHAGE-01",
+ "kind": "planet",
+ "statement": "On Day M1 Mercury (Cyllenius) binds on his golden sandals, takes his wand, flies until he sees Atlas, alights there, plunges headlong toward the waves, and reaches Carthage, where he finds Aeneas building.",
+ "licence_words": "pedibus talaria nectit aurea … tum virgam capit … iamque volans apicem et latera ardua cernit Atlantis … Hic primum paribus nitens Cyllenius alis constitit; hinc toto praeceps se corpore ad undas misit … Ut primum alatis tetigit magalia plantis, Aenean fundantem arces ac tecta novantem conspicit",
+ "ref": [
+  "4.239",
+  "4.240",
+  "4.241",
+  "4.242",
+  "4.246",
+  "4.247",
+  "4.252",
+  "4.253",
+  "4.254",
+  "4.259",
+  "4.260",
+  "4.261"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "mwra",
+   "operational": "Mercury's maximum western rise azimuth within +-t days of Day M1; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; B&M's own event"
+  },
+  {
+   "option": "gwe",
+   "operational": "Mercury's greatest western elongation within +-t days of Day M1; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; one of the three events B&M name [DESIGN 3.4 F5]"
+  },
+  {
+   "option": "station",
+   "operational": "a Mercury station that ends retrograde motion (morning station) within +-t days of Day M1; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; one of the three events B&M name"
+  },
+  {
+   "option": "any3",
+   "operational": "any of the three events above within +-t days of Day M1; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]"
+  },
+  {
+   "option": "firstvis",
+   "operational": "Mercury's first morning visibility (arcus visionis 10 deg) within +-t days of Day M1; t in {1, 2, 3} days",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; B&M also speak of Mercury's heliacal rising [txt 2.1]"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the passage has no light, star, rising or turning vocabulary; Hermes is the messenger god [txt 5.9 for the Odyssey's version]"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "The model is Od. 5.43-54 (Hermes ties on his sandals, takes his wand, skims the waves like a gull). 4.254-4.258 ('avi similis, quae ... volat aequora iuxta. Haud aliter ...') is a simile (a low-flying seabird) and is kept out of the licence: it carries no date, as the Odyssey's gull comparison (Od. 5.51-54) carries none. The god is named 'Cyllenius' (4.252) and 'Mercurium' (4.222).",
+ "license_check": "ok",
+ "license_check_r1": "edited: the licence and the statement included the simile 'avi similis, quae circum litora ... volat aequora iuxta' (4.254-255, closed by 'Haud aliter', 4.256), and the statement's Atlas and arrival at Carthage were not quoted; the simile is removed, the non-simile frame (4.246-247, 4.252-254, 4.259-261) is quoted and the refs corrected. No fork option used the simile, so the operational content is unchanged"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: pedibus talaria nectit aurea
+   frag exact=True nfc=True where=['4.242']: tum virgam capit
+   frag exact=True nfc=True where=['(spans rows)']: iamque volans apicem et latera ardua cernit Atlantis
+   frag exact=True nfc=True where=['(spans rows)']: Hic primum paribus nitens Cyllenius alis constitit; hinc toto praeceps se corpore ad undas misit
+   frag exact=True nfc=True where=['(spans rows)']: Ut primum alatis tetigit magalia plantis, Aenean fundantem arces ac tecta novantem conspicit
+ TEXT:
+      4.235	Quid struit, aut qua spe inimica in gente moratur,
+      4.236	nec prolem Ausoniam et Lavinia respicit arva?
+      4.237	Naviget: haec summa est; hic nostri nuntius esto.
+      4.238	Dixerat. Ille patris magni parere parabat
+   >> 4.239	imperio; et primum pedibus talaria nectit
+   >> 4.240	aurea, quae sublimem alis sive aequora supra
+   >> 4.241	seu terram rapido pariter cum flamine portant;
+   >> 4.242	tum virgam capit: hac animas ille evocat Orco
+      4.243	pallentis, alias sub Tartara tristia mittit,
+      4.244	dat somnos adimitque, et lumina morte resignat.
+      4.245	Illa fretus agit ventos, et turbida tranat
+   >> 4.246	nubila; iamque volans apicem et latera ardua cernit
+   >> 4.247	Atlantis duri, caelum qui vertice fulcit,
+      4.248	Atlantis, cinctum adsidue cui nubibus atris
+      4.249	piniferum caput et vento pulsatur et imbri;
+      4.250	nix umeros infusa tegit; tum flumina mento
+      4.251	praecipitant senis, et glacie riget horrida barba.
+   >> 4.252	Hic primum paribus nitens Cyllenius alis
+   >> 4.253	constitit; hinc toto praeceps se corpore ad undas
+   >> 4.254	misit, avi similis, quae circum litora, circum
+      4.255	piscosos scopulos humilis volat aequora iuxta.
+      4.256	Haud aliter terras inter caelumque volabat,
+      4.257	litus harenosum Libyae ventosque secabat
+      4.258	materno veniens ab avo Cyllenia proles.
+   >> 4.259	Ut primum alatis tetigit magalia plantis,
+   >> 4.260	Aenean fundantem arces ac tecta novantem
+   >> 4.261	conspicit; atque illi stellatus iaspide fulva
+      4.262	ensis erat, Tyrioque ardebat murice laena
+      4.263	demissa ex umeris, dives quae munera Dido
+      4.264	fecerat, et tenui telas discreverat auro.
+----------------------------------------------------------------------------------------------------
+CLUE AEN-CARTHAGE-02  kind=interval  level=narrator
+{
+ "set": "AEN-CARTHAGE",
+ "clue_id": "AEN-CARTHAGE-02",
+ "kind": "interval",
+ "statement": "Between Day M1 and Night 0 Aeneas has the fleet readied in secret, Dido confronts him, the Trojans work on the ships and Dido prepares her rites: the number of days is not stated.",
+ "licence_words": "Mnesthea Sergestumque vocat … classem aptent taciti … Tum vero Teucri incumbunt, et litore celsas deducunt toto naves",
+ "ref": [
+  "4.288",
+  "4.289",
+  "4.290",
+  "4.291",
+  "4.397",
+  "4.398"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "free30",
+   "operational": "Day M1 lies 1 to 30 days before Day 0 (the upper bound is the drafter's)",
+   "justification": "the text gives no count; the events need at least a day"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "no interval: row 01 is unlinked"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['4.288']: Mnesthea Sergestumque vocat
+   frag exact=True nfc=True where=['4.289']: classem aptent taciti
+   frag exact=True nfc=True where=['(spans rows)']: Tum vero Teucri incumbunt, et litore celsas deducunt toto naves
+ TEXT:
+      4.284	audeat adfatu? Quae prima exordia sumat?
+      4.285	Atque animum nunc huc celerem, nunc dividit illuc,
+      4.286	in partisque rapit varias perque omnia versat.
+      4.287	Haec alternanti potior sententia visa est:
+   >> 4.288	Mnesthea Sergestumque vocat fortemque Serestum,
+   >> 4.289	classem aptent taciti sociosque ad litora cogant,
+   >> 4.290	arma parent, et quae rebus sit causa novandis
+   >> 4.291	dissimulent; sese interea, quando optuma Dido
+      4.292	nesciat et tantos rumpi non speret amores,
+      4.293	temptaturum aditus, et quae mollissima fandi
+      4.294	tempora, quis rebus dexter modus. Ocius omnes
+      ...
+      4.393	At pius Aeneas, quamquam lenire dolentem
+      4.394	solando cupit et dictis avertere curas,
+      4.395	multa gemens magnoque animum labefactus amore,
+      4.396	iussa tamen divom exsequitur, classemque revisit.
+   >> 4.397	Tum vero Teucri incumbunt, et litore celsas
+   >> 4.398	deducunt toto naves: natat uncta carina;
+      4.399	frondentisque ferunt remos et robora silvis
+      4.400	infabricata, fugae studio.
+      4.401	Migrantis cernas, totaque ex urbe ruentis.
+----------------------------------------------------------------------------------------------------
+CLUE AEN-CARTHAGE-03  kind=season  level=character speech
+{
+ "set": "AEN-CARTHAGE",
+ "clue_id": "AEN-CARTHAGE-03",
+ "kind": "season",
+ "statement": "Between Day M1 and Night 0 Dido says Aeneas is readying his fleet under the wintry star, hurrying to sea in the midst of the north winds.",
+ "licence_words": "Quin etiam hiberno moliris sidere classem, et mediis properas aquilonibus ire per altum",
+ "ref": [
+  "4.309",
+  "4.310"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "Night 0 falls when the Sun's ecliptic longitude is between 225 and 315 deg (winter solstice +-45 days)",
+   "justification": "'hiberno sidere': winter; the width is the drafter's; the words date Dido's speech and the fleet-building (between Day M1 and Night 0), not Night 0 itself: applying them to Night 0 assumes the unstated interval of row 02 is short"
+  },
+  {
+   "option": "b",
+   "operational": "Night 0 falls between the autumn equinox and the vernal equinox",
+   "justification": "the winter half-year between the equinoxes, the widest reading of 'hiberno' (the width is the drafter's; the earlier wording equated it with 'the whole closed sailing season', which no cited source supports); the words date Dido's speech and the fleet-building (between Day M1 and Night 0), not Night 0 itself: applying them to Night 0 assumes the unstated interval of row 02 is short"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "Dido's reproach; 'hiberno sidere' as rhetoric"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "",
+ "license_check": "edited: option b's justification equated the equinox-to-equinox window with 'the whole closed sailing season', an equation no cited source supports; it now describes the window as what it is (the winter half-year, the widest reading of 'hiberno', the drafter's width). Operational content unchanged; round 1's edit (the transfer to Night 0 stated as an inference) is kept",
+ "license_check_r1": "edited: options a and b put the season on Night 0, but the words belong to Dido's reproach on an earlier, uncounted day; that transfer is now stated as an inference in both justifications"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: Quin etiam hiberno moliris sidere classem, et mediis properas aquilonibus ire per altum
+ TEXT:
+      4.305	Dissimulare etiam sperasti, perfide, tantum
+      4.306	posse nefas, tacitusque mea decedere terra?
+      4.307	Nec te noster amor, nec te data dextera quondam,
+      4.308	nec moritura tenet crudeli funere Dido?
+   >> 4.309	Quin etiam hiberno moliris sidere classem,
+   >> 4.310	et mediis properas aquilonibus ire per altum,
+      4.311	crudelis? Quid, si non arva aliena domosque
+      4.312	ignotas peteres, sed Troia antiqua maneret,
+      4.313	Troia per undosum peteretur classibus aequor
+----------------------------------------------------------------------------------------------------
+CLUE AEN-CARTHAGE-04  kind=time-of-day  level=narrator
+{
+ "set": "AEN-CARTHAGE",
+ "clue_id": "AEN-CARTHAGE-04",
+ "kind": "time-of-day",
+ "statement": "Night 0: midnight, the stars in mid-course; all creatures sleep except Dido.",
+ "licence_words": "Nox erat … cum medio volvuntur sidera lapsu",
+ "ref": [
+  "4.522",
+  "4.523",
+  "4.524"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['4.522']: Nox erat
+   frag exact=True nfc=True where=['4.524']: cum medio volvuntur sidera lapsu
+ TEXT:
+      4.518	unum exuta pedem vinclis, in veste recincta,
+      4.519	testatur moritura deos et conscia fati
+      4.520	sidera; tum, si quod non aequo foedere amantes
+      4.521	curae numen habet iustumque memorque, precatur.
+   >> 4.522	Nox erat, et placidum carpebant fessa soporem
+   >> 4.523	corpora per terras, silvaeque et saeva quierant
+   >> 4.524	aequora: cum medio volvuntur sidera lapsu,
+      4.525	cum tacet omnis ager, pecudes pictaeque volucres,
+      4.526	quaeque lacus late liquidos, quaeque aspera dumis
+      4.527	rura tenent, somno positae sub nocte silenti
+----------------------------------------------------------------------------------------------------
+CLUE AEN-CARTHAGE-05  kind=planet  level=narrator
+{
+ "set": "AEN-CARTHAGE",
+ "clue_id": "AEN-CARTHAGE-05",
+ "kind": "planet",
+ "statement": "In Night 0 (after the midnight scene of row 04 in the narrative order; no hour is stated) Mercury appears again to the sleeping Aeneas on his ship, urges him to flee before dawn, and vanishes into the black night.",
+ "licence_words": "Aeneas celsa in puppi … carpebat somnos … Huic se forma dei voltu redeuntis eodem obtulit in somnis … omnia Mercurio similis … Non fugis hinc praeceps … si te his attigerit terris Aurora morantem … nocti se immiscuit atrae",
+ "ref": [
+  "4.554",
+  "4.555",
+  "4.556",
+  "4.557",
+  "4.558",
+  "4.565",
+  "4.568",
+  "4.570"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "mwra",
+   "operational": "Mercury's maximum western rise azimuth within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; B&M's own event"
+  },
+  {
+   "option": "gwe",
+   "operational": "Mercury's greatest western elongation within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; one of the three events B&M name [DESIGN 3.4 F5]"
+  },
+  {
+   "option": "station",
+   "operational": "a Mercury station that ends retrograde motion (morning station) within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; one of the three events B&M name"
+  },
+  {
+   "option": "any3",
+   "operational": "any of the three events above within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]"
+  },
+  {
+   "option": "firstvis",
+   "operational": "Mercury's first morning visibility (arcus visionis 10 deg) within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; B&M also speak of Mercury's heliacal rising [txt 2.1]"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "a dream apparition, not a journey"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: 'Later in Night 0' gave a relative time of night that the words do not state; the statement now says the order is narrative order (after row 04's midnight scene) and that no hour is given. No option used it. Round 1's additions to the licence (4.565, 4.568) are kept",
+ "license_check_r1": "edited: the statement's 'urges him to flee before dawn' was not in the quoted words; 'Non fugis hinc praeceps' (4.565) and 'si te his attigerit terris Aurora morantem' (4.568) added to the licence and refs"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['4.554']: Aeneas celsa in puppi
+   frag exact=True nfc=True where=['4.555']: carpebat somnos
+   frag exact=True nfc=True where=['(spans rows)']: Huic se forma dei voltu redeuntis eodem obtulit in somnis
+   frag exact=True nfc=True where=['4.558']: omnia Mercurio similis
+   frag exact=True nfc=True where=['4.565']: Non fugis hinc praeceps
+   frag exact=True nfc=True where=['4.568']: si te his attigerit terris Aurora morantem
+   frag exact=True nfc=True where=['4.570']: nocti se immiscuit atrae
+ TEXT:
+      4.550	Non licuit thalami expertem sine crimine vitam
+      4.551	degere, more ferae, tales nec tangere curas!
+      4.552	Non servata fides cineri promissa Sychaeo!
+      4.553	Tantos illa suo rumpebat pectore questus.
+   >> 4.554	Aeneas celsa in puppi, iam certus eundi,
+   >> 4.555	carpebat somnos, rebus iam rite paratis.
+   >> 4.556	Huic se forma dei voltu redeuntis eodem
+   >> 4.557	obtulit in somnis, rursusque ita visa monere est—
+   >> 4.558	omnia Mercurio similis, vocemque coloremque
+      4.559	et crinis flavos et membra decora iuventa:
+      4.560	Nate dea, potes hoc sub casu ducere somnos,
+      4.561	nec, quae te circum stent deinde pericula, cernis,
+      4.562	demens, nec Zephyros audis spirare secundos?
+      4.563	Illa dolos dirumque nefas in pectore versat,
+      4.564	certa mori, varioque irarum fluctuat aestu.
+   >> 4.565	Non fugis hinc praeceps, dum praecipitare potestas?
+      4.566	Iam mare turbari trabibus, saevasque videbis
+      4.567	conlucere faces, iam fervere litora flammis,
+   >> 4.568	si te his attigerit terris Aurora morantem.
+      4.569	Heia age, rumpe moras. Varium et mutabile semper
+   >> 4.570	femina. Sic fatus, nocti se immiscuit atrae.
+      4.571	Tum vero Aeneas, subitis exterritus umbris,
+      4.572	corripit e somno corpus, sociosque fatigat:
+      4.573	Praecipites vigilate, viri, et considite transtris;
+----------------------------------------------------------------------------------------------------
+CLUE AEN-CARTHAGE-06  kind=time-of-day  level=narrator
+{
+ "set": "AEN-CARTHAGE",
+ "clue_id": "AEN-CARTHAGE-06",
+ "kind": "time-of-day",
+ "statement": "The fleet leaves at once; at Dawn +1 Dido sees the harbour empty.",
+ "licence_words": "litora deseruere … Et iam prima novo spargebat lumine terras Tithoni croceum linquens Aurora cubile … classem procedere velis",
+ "ref": [
+  "4.582",
+  "4.584",
+  "4.585",
+  "4.586",
+  "4.587"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "edited: 'the fleet leaves at once' (before Dawn +1) was not in the quoted words; 'litora deseruere' (4.582) added to the licence and refs"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['4.582']: litora deseruere
+   frag exact=True nfc=True where=['(spans rows)']: Et iam prima novo spargebat lumine terras Tithoni croceum linquens Aurora cubile
+   frag exact=True nfc=True where=['4.587']: classem procedere velis
+ TEXT:
+      4.578	Adsis o placidusque iuves, et sidera caelo
+      4.579	dextra feras. Dixit, vaginaque eripit ensem
+      4.580	fulmineum, strictoque ferit retinacula ferro.
+      4.581	Idem omnes simul ardor habet, rapiuntque ruuntque;
+   >> 4.582	litora deseruere; latet sub classibus aequor;
+      4.583	adnixi torquent spumas et caerula verrunt.
+   >> 4.584	Et iam prima novo spargebat lumine terras
+   >> 4.585	Tithoni croceum linquens Aurora cubile.
+   >> 4.586	Regina e speculis ut primum albescere lucem
+   >> 4.587	vidit, et aequatis classem procedere velis,
+      4.588	litoraque et vacuos sensit sine remige portus,
+      4.589	terque quaterque manu pectus percussa decorum,
+      4.590	flaventesque abscissa comas, Pro Iuppiter, ibit
+----------------------------------------------------------------------------------------------------
+CLUE AEN-CARTHAGE-07  kind=interval  level=character speech
+{
+ "set": "AEN-CARTHAGE",
+ "clue_id": "AEN-CARTHAGE-07",
+ "kind": "interval",
+ "statement": "At the banquet on the night Aeneas reaches Carthage (an unstated time before Night 0 of this set), Dido says the seventh 'aestas' (summer, or by the common synecdoche year) is now carrying him in his wandering over all lands and seas.",
+ "licence_words": "nam te iam septima portat omnibus errantem terris et fluctibus aestas",
+ "ref": [
+  "1.755",
+  "1.756"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "Night 0 of AEN-CARTHAGE falls 6 to 8 years after Night 0 of AEN-TROY",
+   "justification": "'septima aestas' counts the summers of wandering at the banquet; everything else is inference: the wandering began in the first summer after the fall (3.8 'Vix prima inceperat aestas', Aeneas' narrative), and Night 0 here falls in a later winter if Dido's 'hiberno ... sidere' (4.309, row 03) is taken literally; 6 to 8 years covers inclusive or exclusive counting, the months from the fall to that first summer, and the stay at Carthage. The range is the drafter's"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "a round number; Iris, disguised, repeats 'the seventh summer' a year later (5.626), so the poem's count is not exact"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "The only year count in the Aeneid sets. The text states the count of summers at the banquet; the interval between the two Night 0s is inferred from it (option a). It allows AEN-TROY and AEN-CARTHAGE to be run as one linked set.",
+ "license_check": "ok",
+ "license_check_r1": "edited: the statement put the banquet 'in the summer before Night 0' and counted 'since Troy', neither of which the words state ('aestas' can stand for a year; the count is of summers of wandering, which began after the fall); the statement is reworded, option a's chain of inference is spelled out, and the row's notes and the set's notes no longer call the interval between the two Night 0s 'stated'"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: nam te iam septima portat omnibus errantem terris et fluctibus aestas
+ TEXT:
+      1.751	nunc quibus Aurorae venisset filius armis,
+      1.752	nunc quales Diomedis equi, nunc quantus Achilles.
+      1.753	Immo age, et a prima dic, hospes, origine nobis
+      1.754	insidias, inquit, Danaum, casusque tuorum,
+   >> 1.755	erroresque tuos; nam te iam septima portat
+   >> 1.756	omnibus errantem terris et fluctibus aestas.
+      2.1	Conticuere omnes, intentique ora tenebant.
+      2.2	Inde toro pater Aeneas sic orsus ab alto:
+      2.3	Infandum, regina, iubes renovare dolorem,

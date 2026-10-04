@@ -1,0 +1,12 @@
+PASS test_every_day_against_day_counting (0.2 s)
+PASS test_scalar_and_vector_paths_agree (0.0 s)
+PASS test_against_ephem_meeus_formulas (1.5 s)
+PASS test_leap_rule (0.0 s)
+PASS test_identity_1178_bc (0.0 s)
+PASS test_meeus_examples (0.0 s)
+PASS test_round_trips_of_instants (0.0 s)
+PASS test_zones_and_day_bounds (0.0 s)
+PASS test_time_scales_and_epochs (0.0 s)
+PASS test_horizons_calendar_output (0.0 s)
+PASS test_no_gregorian_datetime_types_in_bench_sources (0.0 s)
+all passed

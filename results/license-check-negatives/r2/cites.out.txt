@@ -1,0 +1,50 @@
+================================================================================
+CITED pliny-nh-lat.tsv 16.39.2  at clues/1/fork_options
+    16.39.2 :: Caedi tempestivum quae decorticentur et teretes ad templa ceteraque usus rotundi, cum germinant, alias cortice inextricabili et carie subnascente ei materiaque nigrescente; tigna et quibus aufert securis corticem a bruma ad favonium aut, si praevenire cogamur, arcturi occasu et ante eum fidiculae, novissima ratione solstitio. dies siderum horum reddentur suo loco. vulgo satis putant observare, ne qua dedolanda sternatur ante editos suos fructus. robur vere caesum teredinem sentit, bruma autem neque vitiatur neque pandatur, alias obnoxium etiam, ut torqueat sese findatque, quod in subere tempestive quoque caeso evenit. infinitum refert et lunaris ratio, nec nisi a xx in xxx caedi volunt. inte
+================================================================================
+CITED pliny-nh-lat.tsv 10.32.1  at clues/29/fork_options
+    10.32.1 :: Eo maxime sunt insignes halcyones. dies earum partus maria quique navigant novere. ipsa avis paulo amplior passere, colore cyanea et parte inferiore tantum purpurea, candidis admixta pinnis collo, gracili ac procero rostro. alterum genus earum magnitudine distinguitur et cantu: minores in harundinetis canunt.halcyonemvidere rarissimum est nec nisi vergiliarum occasu et circa solstitia brumamve, nave aliquando circumvolata statim in latebras abeuntem. fetificant bruma, qui dies halcyonides vocantur, placido mari per eos et navigabili, Siculo maxime . faciunt autem VII ante brumam diebus nidos et totidem sequentibus pariunt. nidi earum admirationem habent pilae figura paulum eminenti, ore perq
+================================================================================
+CITED hesiod-worksdays-grc.tsv 564-567  at clues/30/fork_options
+    urn:cts:greekLit:tlg0020.tlg002.perseus-grc2.564 :: εὖτʼ ἂν δʼ ἑξήκοντα μετὰ τροπὰς ἠελίοιο
+    urn:cts:greekLit:tlg0020.tlg002.perseus-grc2.565 :: χειμέριʼ ἐκτελέσῃ Ζεὺς ἤματα, δή ῥα τότʼ ἀστὴρ
+    urn:cts:greekLit:tlg0020.tlg002.perseus-grc2.566 :: Ἀρκτοῦρος προλιπὼν ἱερὸν ῥόον Ὠκεανοῖο
+    urn:cts:greekLit:tlg0020.tlg002.perseus-grc2.567 :: πρῶτον παμφαίνων ἐπιτέλλεται ἀκροκνέφαιος.
+================================================================================
+CITED scholia-iliad-grc.tsv 2.18.198.1  at clues/44/fork_options
+    urn:cts:greekLit:tlg5026.tlg001.1st1K-grc1.2.18.198.1 :: 486. Πληϊάδας ζ΄ ἀστέρες εἰσὶ κείμενοι ἐπὶ τῇ οὐρᾷ τοῦ ταύρου, μᾶλλον δὲ ἐπὶ τοῦ διχοτομήματος αὐτοῦ· ὁ γὰρ ταῦρος σῶος οὐκ ἀνηστέρισται, ἀλλʼ ἕως τῶν ἰσχίων. αὗται δέ εἰσιν Ἄτλαντος καὶ Πληϊόνης θυγατέρες, ὧν τὰ ὀνόματα Μαῖα, Ταϋγέτη, Κελαινὼ, Μερόπη, Ἠλέκτρα, Στερόπη, Ἀλκυόνη. Ἄτλας δὲ εἷς τῶν Γιγάντων μιγεὶς Πληϊόνῃ τῇ·Ὠκεανοῦ ἔσχε θυγατέρας ζ΄, αἳ τὴν παρθενείαν ἀγαπήσασαι συνεκυνήγουν τῇ Ἀρτέμιδι. θεασάμενος δὲ Ὠρίων ἠράσθη, καὶ ἐδίωκεν αὐτὰς μιγῆναι βουλόμενος. αἱ δὲ περικατάληπτοι γενόμεναι θεοῖς ηὔξαντο μεταβαλεῖν τὴν φύσιν· Ζεὺς δὲ ἐλεήσας αὐτὰς καὶ διὰ τῶν ἄρκτων κατηστέρισεν. ὠνομάσθησαν δὲ Πληιάδες ἀπὸ Πληιόνης τῆς μητρὸς αὐτῶν. φασὶ δὲ Ἠλέκτραν, οὐ βουλομένην τὴν Ἰλίου πόρθησιν 
+================================================================================
+CITED aratus-phaenomena-grc.tsv 783-784  at clues/49/fork_options
+    urn:cts:greekLit:tlg0653.tlg001.perseus-grc2.783 :: λεπτὴ μὲν καθαρή τε περὶ τρίτον ἦμαρ ἐοῦσα
+    urn:cts:greekLit:tlg0653.tlg001.perseus-grc2.784 :: εὔδιός κʼ εἴη· λεπτὴ δὲ καὶ εὖ μάλʼ ἐρευθὴς
+================================================================================
+CITED virgil-georgics-lat.tsv 1.221  at clues/51/fork_options
+    1.221 :: ante tibi Eoae Atlantides abscondantur
+================================================================================
+CITED aratus-phaenomena-grc.tsv 785-787  at clues/53/fork_options
+    urn:cts:greekLit:tlg0653.tlg001.perseus-grc2.785 :: πνευματίη· παχίων δέ καὶ ἀμβλείῃσι κεραίαις
+    urn:cts:greekLit:tlg0653.tlg001.perseus-grc2.786 :: τέτρατον ἐκ τριτάτοιο φόως ἀμενηνὸν ἔχουσα
+    urn:cts:greekLit:tlg0653.tlg001.perseus-grc2.787 :: ἤ νότῳ ἄμβλυνται ἢ ὕδατος ἐγγὺς ἐόντος.
+================================================================================
+CITED scholia-iliad-grc.tsv 6.16.341.1  at clues/61/fork_options
+    urn:cts:greekLit:tlg5026.tlg001.1st1K-grc1.6.16.341.1 :: 567. νύκτʼ ὀλοήν] σκότον, “ὀρώρει δʼ οὐρανόθεν νύξ” (Od. 5. 294). καὶ ἐπὶ Πατρόκλῳ “ἐπεὶ οὐδὲ Μενοιτιάδην ἤχθαιρε” (Il. 17. 270). ἐπʼ αὐτῷ δὲ δεινὴν τὴν μάχην ἤγειρεν· μόνος γὰρ ἐν ἀμφοτέροις τοῖς στρατοῖς υἱὸς Διός.
+================================================================================
+CITED scholia-iliad-grc.tsv 6.17.183.1  at clues/63/fork_options
+    urn:cts:greekLit:tlg5026.tlg001.1st1K-grc1.6.17.183.1 :: 366. οὐδέ κε φαίης] ὑπελάμβανες ἂν ἔκλειψιν εἶναι τῶν στοι- χείων αὐτῶν.
+================================================================================
+CITED scholia-iliad-grc.tsv 4.18.84.1, 6.18.109.1  at clues/64/fork_options
+    urn:cts:greekLit:tlg5026.tlg001.1st1K-grc1.4.18.84.1 :: 240. ἐπεὶ ὑπέσχετο Ζεύς (Il. 17, 455) “δύῃ τʼ ἠέλιος.” Ἀπόλ- λων δὲ ὁ ἥλιος, ὃς ἄκων δύνει· ἠπίστατο γὰρ πρὸς ἀριστείαν Τρωσὶ δοθεῖσαν παρὰ Διὸς τὴν ἡμέραν. μυθικὸν δέ ἐστι τὸ ὅλον.
+    urn:cts:greekLit:tlg5026.tlg001.1st1K-grc1.6.18.109.1 :: 239. ἠέλιον δὲ —πέμψεν] ἐπεὶ ὑπέσχετο Ζεὺς “δύῃ τʼ ἠέλιος” (Il. 17. 455). Ἀπόλλων δὲ ὁ ἥλιος, ὃς ἄκων δύνει· ἠπίστατο γὰρ πρὸς ἀριστείαν Τρωσὶ δεδομένην παρὰ Διὸς τὴν ἡμέραν ταύτην (Il. 8. 72). μυθικῶς δὲ τοῦτο, ὡς καὶ ἐν Ὀδυσσείᾳ (23. 243) “ἠῶ δʼ αὖτε ῥύσατʼ ἐπʼ Ὤκεανοῦ.”
+================================================================================
+CITED hesiod-worksdays-grc.tsv 615-616  at clues/65/fork_options
+    urn:cts:greekLit:tlg0020.tlg002.perseus-grc2.615 :: Πληιάδες θʼ Ὑάδες τε τό τε σθένος Ὠαρίωνος
+    urn:cts:greekLit:tlg0020.tlg002.perseus-grc2.616 :: δύνωσιν, τότʼ ἔπειτʼ ἀρότου μεμνημένος εἶναι
+================================================================================
+CITED scholia-iliad-grc.tsv 2.18.196.1  at clues/65/fork_options
+    urn:cts:greekLit:tlg5026.tlg001.1st1K-grc1.2.18.196.1 :: 484. πλήθουσαν τὴν οἷον πεπληρωμένην καὶ ἐγκύμονα τοῦ ἡλιακοῦ φωτός· λέγει δὲ τὴν πανσέληνον. εἴρηται δὲ σελήνη οἱονεὶ σέλας νέον.
+================================================================================
+CITED scholia-iliad-grc.tsv 2.23.90.1  at clues/67/notes
+    urn:cts:greekLit:tlg5026.tlg001.1st1K-grc1.2.23.90.1 :: 226. φόως ἐρέων ὅτι μεταφορικῶς ἐρέων ἀντὶ τοῦ ἀπαγγελῶν. τοῦτο δέ ἐστι προσημαίνων· οὐ γὰρ διὰ λόγου τοῦτο ποιεῖ, ἀλλὰ δʼ ἐπιτολῆς.
+================================================================================
+CITED scholia-iliad-grc.tsv 4.24.22.1  at clues/68/fork_options
+    urn:cts:greekLit:tlg5026.tlg001.1st1K-grc1.4.24.22.1 :: 31. ἐκ τοῖο] ἐξ οὗ Ἕκτωρ ἀπέθανεν. εἶτα ὑλοτόμησαν, τρίτη δὲ ἡ τοῦ ἀγῶνος, εἶτα μετὰ ταῦτα ἐννέα· φησὶ γοῦν (107) “ἐννῆμαρ δὴ νεῖκος ἐν ἀθανάτοισιν ὀρώρει.” ἐπίτηδες δὲ ἀνοχὰς παρέχουσε Τρωσὶ γνωσιμαχῆσαι. ἢ ὅτι πλέον ἐβούλετο Πάτροκλον ὁ στρατη- γῶν Ἀχιλλεὺς πενθῆσαι.

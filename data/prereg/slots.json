@@ -1,0 +1,207 @@
+{
+ "schema": "odybench slots v1 (DESIGN 4.2)",
+ "written": "2026-10-04 by A0 (lead), from DESIGN.md revision 8",
+ "purpose": "A slot defines the categorical reading formed with the target in view (5.3). Nothing in the record fixes its width, so the bench freezes a family and uses it against the claim (4.2) [r2 R2-2].",
+ "day_counts": {
+  "sequential": {
+   "C": [
+    -29,
+    -12
+   ],
+   "venus": -5,
+   "mercury": -34
+  },
+  "parallel": {
+   "C": [
+    -28,
+    -11
+   ],
+   "venus": -4,
+   "mercury": -33
+  },
+  "pairing": "C, the Venus slot and the Mercury slot hold on one count; a target is in T_A(v) if either count passes as a whole (revision 3's mixing is withdrawn) [r2 R2-2]",
+  "day0": "the UT+2 conjunction date, the Day 0 and count of P_spring (4.2)"
+ },
+ "combine_modes": {
+  "event_and_visible": "the event within k days, and Mercury visible on the slot day",
+  "event_or_visible": "the event within k days, or Mercury visible",
+  "event": "the event within k days"
+ },
+ "variants": {
+  "v0": {
+   "venus": {
+    "rule": "rises_before_sun_visible",
+    "sun_alt_max_at_venus_rise_deg": -7.0,
+    "text": "Venus rises before the Sun, with the Sun at or below -7 deg at Venus' rising (a visible morning star, AV 7 deg)"
+   },
+   "mercury": {
+    "events": [
+     "rise_azimuth_max_vertex",
+     "greatest_western_elongation",
+     "morning_station"
+    ],
+    "k_days": 6.0,
+    "continuous": true,
+    "combine": "event_and_visible",
+    "visibility": {
+     "sun_alt_max_at_mercury_rise_deg": -10.0,
+     "text": "visible: Sun at or below -10 deg at Mercury's rising"
+    }
+   },
+   "n_A_design": 82,
+   "label": "documented",
+   "source": "V: MacDonald identifies the herald as Venus, the morning star of that spring [unread 2.1, 2.5], with de Jong's AV [vis 1.2]. M: B&M name the three events and require Mercury visible [B&M References]; 6 d is the slack of Ptolemy's Mercury records, all 14 within 5.5 d [alm 4]"
+  },
+  "v1": {
+   "venus": {
+    "rule": "rises_before_sun_visible",
+    "sun_alt_max_at_venus_rise_deg": -7.0,
+    "text": "Venus rises before the Sun, with the Sun at or below -7 deg at Venus' rising (a visible morning star, AV 7 deg)"
+   },
+   "mercury": {
+    "events": [
+     "rise_azimuth_max_vertex",
+     "greatest_western_elongation",
+     "morning_station"
+    ],
+    "k_days": 6.0,
+    "continuous": true,
+    "combine": "event_or_visible",
+    "visibility": {
+     "sun_alt_max_at_mercury_rise_deg": -10.0,
+     "text": "visible: Sun at or below -10 deg at Mercury's rising"
+    }
+   },
+   "n_A_design": 131,
+   "label": "revision 3",
+   "source": "[v3 4.2]"
+  },
+  "v2": {
+   "venus": {
+    "rule": "rises_before_sun_visible",
+    "sun_alt_max_at_venus_rise_deg": -7.0,
+    "text": "Venus rises before the Sun, with the Sun at or below -7 deg at Venus' rising (a visible morning star, AV 7 deg)"
+   },
+   "mercury": {
+    "events": [
+     "rise_azimuth_max_vertex",
+     "greatest_western_elongation",
+     "morning_station"
+    ],
+    "k_days": 6.0,
+    "continuous": true,
+    "combine": "event",
+    "visibility": null
+   },
+   "n_A_design": 87,
+   "label": "",
+   "source": "DESIGN 4.2"
+  },
+  "v3": {
+   "venus": {
+    "rule": "rises_before_sun_visible",
+    "sun_alt_max_at_venus_rise_deg": -7.0,
+    "text": "Venus rises before the Sun, with the Sun at or below -7 deg at Venus' rising (a visible morning star, AV 7 deg)"
+   },
+   "mercury": {
+    "events": [
+     "rise_azimuth_max_vertex",
+     "greatest_western_elongation",
+     "morning_station"
+    ],
+    "k_days": 4.0,
+    "continuous": true,
+    "combine": "event",
+    "visibility": null
+   },
+   "n_A_design": 66,
+   "label": "",
+   "source": "4.0 d: 12 of the 14 Almagest records [alm 4]"
+  },
+  "v4": {
+   "venus": {
+    "rule": "rise_lead_min",
+    "lead_min": 60.0,
+    "text": "Venus rises at least 60 min before the Sun"
+   },
+   "mercury": {
+    "events": [
+     "rise_azimuth_max_vertex",
+     "greatest_western_elongation",
+     "morning_station"
+    ],
+    "k_days": 6.0,
+    "continuous": true,
+    "combine": "event_or_visible",
+    "visibility": {
+     "sun_alt_max_at_mercury_rise_deg": -10.0,
+     "text": "visible: Sun at or below -10 deg at Mercury's rising"
+    }
+   },
+   "n_A_design": 101,
+   "label": "",
+   "source": "the FULL-tier herald threshold [vis 1.3]"
+  },
+  "v5": {
+   "venus": {
+    "rule": "rise_lead_min",
+    "lead_min": 60.0,
+    "text": "Venus rises at least 60 min before the Sun"
+   },
+   "mercury": {
+    "events": [
+     "rise_azimuth_max_vertex",
+     "greatest_western_elongation",
+     "morning_station"
+    ],
+    "k_days": 4.0,
+    "continuous": true,
+    "combine": "event",
+    "visibility": null
+   },
+   "n_A_design": 56,
+   "label": "",
+   "source": "DESIGN 4.2"
+  }
+ },
+ "rule_family": [
+  "v0",
+  "v1",
+  "v2",
+  "v3",
+  "v4",
+  "v5"
+ ],
+ "reported": {
+  "v6": {
+   "venus": {
+    "rule": "western_elongation_near_apparition_max",
+    "within_deg": 2.0,
+    "text": "Venus' western elongation within 2 deg of the apparition's maximum"
+   },
+   "mercury": {
+    "events": [
+     "rise_azimuth_max_vertex",
+     "greatest_western_elongation",
+     "morning_station"
+    ],
+    "k_days": 6.0,
+    "continuous": true,
+    "combine": "event_and_visible",
+    "visibility": {
+     "sun_alt_max_at_mercury_rise_deg": -10.0,
+     "text": "visible: Sun at or below -10 deg at Mercury's rising"
+    }
+   },
+   "in_rule": false,
+   "source": "DESIGN 4.2: reported, not in the family, because its width is set by the target's own value. Its Mercury slot is not stated; v0's is used [A0]"
+  }
+ },
+ "use": {
+  "label_2_G_leg_and_Q_tol": "the variant most favourable to B&M, the smallest G_BM,lo (4.2, 9.2)",
+  "Q_slot": "printed when a decision differs between variants (4.2, 9.2)",
+  "held_out": "the held-out test does not use T_A, so outcome 1 does not depend on the slots (4.2, 7.2)",
+  "identity": "every reading of G_BM* implies the slots of v1-v5, so G(G_BM*, T) = (n_A(v)/n_T) G(G_BM*, T_A(v)) exactly for v1-v5 (4.2; checked by I9(c))"
+ },
+ "n_A_source": "design-stage counts of 2.9 (the recheck's rough rows); recomputed by attain.py at the null-side stage"
+}

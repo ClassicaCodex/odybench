@@ -1,0 +1,22 @@
+controls_real: rows 78; licence fragments 125, found verbatim 125
+   date-like hits in operational fields (and ALM statement/notes): 0
+controls_almagest: rows 72; licence fragments 118, found verbatim 100
+   NOT FOUND: ('ALM-A.3', '[Egyptian civil dates at 9.10.3 and 10.8.2 (regnal or era ye', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.10.8.2', False)
+   NOT FOUND: ('ALM-A.6', '[Egyptian civil dates at 9.10.3 and 9.9.4 (regnal or era yea', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.9.9.4', False)
+   NOT FOUND: ('ALM-A.8', '[Egyptian civil dates at 9.10.3 and 11.2.2 (regnal or era ye', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.11.2.2', False)
+   NOT FOUND: ('ALM-B.4', '[Egyptian civil dates at 10.4.3 and 11.6.2 (regnal or era ye', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.11.6.2', False)
+   NOT FOUND: ('ALM-B.6', '[Egyptian civil dates at 10.4.3 and 5.3.2 (regnal or era yea', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.5.3.2', False)
+   NOT FOUND: ('ALM-B.8', '[Egyptian civil dates at 10.4.3 and 7.2.4 (regnal or era yea', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.7.2.4', False)
+   NOT FOUND: ('ALM-C.2', '[Egyptian civil dates at 9.8.3 and 4.6.14 (regnal or era yea', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14', False)
+   NOT FOUND: ('ALM-D.2', '[Egyptian civil dates at 9.7.4 and 10.1.3 (regnal or era yea', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.10.1.3', False)
+   NOT FOUND: ('ALM-E.2', '[Egyptian civil dates at 10.3.2 and 3.1.10 (regnal or era ye', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.3.1.10', False)
+   NOT FOUND: ('ALM-F.2', '[Egyptian civil dates at 10.2.4 and 10.1.6 (regnal or era ye', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.10.1.6', False)
+   NOT FOUND: ('ALM-G.2', '[Egyptian civil dates at 10.3.2 and 9.7.5 (regnal or era yea', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.9.7.5', False)
+   NOT FOUND: ('ALM-H.3', '[Egyptian civil dates at 9.7.9 and 9.7.11 (regnal or era yea', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.9.7.11', False)
+   NOT FOUND: ('ALM-H.7', '[Egyptian civil dates at 9.7.9 and 9.7.14 (regnal or era yea', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.9.7.14', False)
+   NOT FOUND: ('ALM-J.3', '[Egyptian civil dates at 10.9.2 and 10.4.6 (regnal or era ye', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.10.4.6', False)
+   NOT FOUND: ('ALM-K.3', '[Egyptian civil dates at 9.7.16 and 11.3.2 (regnal or era ye', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.11.3.2', False)
+   NOT FOUND: ('ALM-K.6', '[Egyptian civil dates at 9.7.16 and 9.7.15 (regnal or era ye', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.9.7.15', False)
+   NOT FOUND: ('ALM-L.3', '[Egyptian civil dates at 10.1.5 and 10.2.3 (regnal or era ye', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.10.2.3', False)
+   NOT FOUND: ('ALM-L.5', '[Egyptian civil dates at 10.1.5 and 9.9.3 (regnal or era yea', 'urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.9.9.3', False)
+   date-like hits in operational fields (and ALM statement/notes): 0

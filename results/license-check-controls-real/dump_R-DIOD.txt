@@ -1,0 +1,144 @@
+#### SET R-DIOD
+-- observer_place {"events": ["D1"], "place": "Agathocles' fleet at sea, the day after leaving Syracuse", "licence_words": ["ὡς ἴδεν τὸ στόμα τοῦ λιμένος ἔρημον τῶν ἐφορμούντων, ἐξέπλευσεν"], "ref": ["urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.5.2.1"], "text_file": ["data/text/diodorus-bk18-20-grc.tsv"], "search_coordinates": {"lat": 37.07, "lon": 15.29, "radius_km": 150}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name; centre Syracuse"}
+   CHECK exact | ὡς ἴδεν τὸ στόμα τοῦ λιμένος ἔρημον τῶν ἐφορμούντων, ἐξέπλευσεν | urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.5.2.1
+
+====================================================================================================
+{
+ "set": "R-DIOD",
+ "clue_id": "D-ECL",
+ "event": "D1",
+ "kind": "eclipse-solar",
+ "feature": "magnitude",
+ "statement": "D1: on the day after Agathocles' fleet escaped from Syracuse (at nightfall), an eclipse of the Sun so great that it seemed fully night, with stars seen everywhere.",
+ "licence_words": [
+  "τῇ δʼ ὑστεραίᾳ τηλικαύτην ἔκλειψιν ἡλίου συνέβη γενέσθαι ὥστε ὁλοσχερῶς φανῆναι νύκτα, θεωρουμένων τῶν ἀστέρων πανταχοῦ"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.5.5.1"
+ ],
+ "text_file": [
+  "data/text/diodorus-bk18-20-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "X3",
+   "reading": "magnitude >= 0.95 at the observer",
+   "justification": "darkness 'like full night' with stars everywhere: the design's near-total class (DESIGN 3.1 X3); ancient accounts do not separate total from near-total",
+   "operational": {
+    "smag": [
+     0.95,
+     null
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "total",
+   "reading": "magnitude >= 1.0 at the observer",
+   "justification": "'ὁλοσχερῶς ... νύκτα' read as totality",
+   "operational": {
+    "smag": [
+     1.0,
+     null
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "X4",
+   "reading": "magnitude >= 0.60",
+   "justification": "the design's darkness-wording class (X4)",
+   "operational": {
+    "smag": [
+     0.6,
+     null
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "No hour and no season are in the text; none is entered. 'τῇ δʼ ὑστεραίᾳ' ties the eclipse to the escape (20.5.4 'ἐπιλαβούσης τῆς νυκτὸς'), which is not dated.",
+ "license_check": "ok"
+}
+   CHECK exact | τῇ δʼ ὑστεραίᾳ τηλικαύτην ἔκλειψιν ἡλίου συνέβη γενέσθαι ὥστε ὁλοσχερῶς φανῆναι νύκτα, θεωρουμένων τῶν ἀστέρων πανταχοῦ | urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.5.5.1
+   ROW [data/text/diodorus-bk18-20-grc.tsv] urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.5.5.1 :: τῇ δʼ ὑστεραίᾳ τηλικαύτην ἔκλειψιν ἡλίου συνέβη γενέσθαι ὥστε ὁλοσχερῶς φανῆναι νύκτα, θεωρουμένων τῶν ἀστέρων πανταχοῦ· διόπερ οἱ περὶ τὸν Ἀγαθοκλέα, νομίσαντες καὶ τὸ θεῖον αὐτοῖς προσημαίνειν τὸ δυσχερές, ἔτι μᾶλλον ὑπὲρ τοῦ μέλλοντος ἐν ἀγωνίᾳ καθειστήκεισαν.
+
+====================================================================================================
+{
+ "set": "R-DIOD",
+ "clue_id": "D-SITE",
+ "event": "D1",
+ "kind": "site",
+ "feature": "observer",
+ "statement": "The observers are Agathocles' men at sea, one day out of Syracuse, bound for Libya (six days and nights of sailing, 20.6.1).",
+ "licence_words": [
+  "ἐξέπλευσεν",
+  "οἱ περὶ τὸν Ἀγαθοκλέα",
+  "ἓξ δʼ ἡμέρας καὶ τὰς ἴσας νύκτας αὐτῶν πλευσάντων"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.5.2.1",
+  "urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.5.5.1",
+  "urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.6.1.1"
+ ],
+ "text_file": [
+  "data/text/diodorus-bk18-20-grc.tsv",
+  "data/text/diodorus-bk18-20-grc.tsv",
+  "data/text/diodorus-bk18-20-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "day-out",
+   "reading": "any point at sea within 150 km of Syracuse",
+   "justification": "one day's rowing from the harbour (drafter's distance); the direction of the first day's course is not given",
+   "operational": {
+    "site_disc": {
+     "lat": 37.07,
+     "lon": 15.29,
+     "radius_km": 150
+    }
+   },
+   "primary": true
+  },
+  {
+   "option": "syracuse",
+   "reading": "Syracuse itself",
+   "justification": "the departure point",
+   "operational": {
+    "site": {
+     "lat": 37.07,
+     "lon": 15.29
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "route-box",
+   "reading": "anywhere in 35.5-38.5N, 10.0-16.0E (Sicily to the African coast)",
+   "justification": "the whole crossing",
+   "operational": {
+    "site_box": {
+     "lat": [
+      35.5,
+      38.5
+     ],
+     "lon": [
+      10.0,
+      16.0
+     ]
+    }
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ἐξέπλευσεν | urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.5.2.1
+   CHECK exact | οἱ περὶ τὸν Ἀγαθοκλέα | urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.5.5.1
+   CHECK exact | ἓξ δʼ ἡμέρας καὶ τὰς ἴσας νύκτας αὐτῶν πλευσάντων | urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.6.1.1
+   ROW [data/text/diodorus-bk18-20-grc.tsv] urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.5.2.1 :: ἐφορμούντων δὲ τῶν πολεμίων πολλαπλασίαις τριήρεσι τὸ μὲν πρῶτον ἐφʼ ἡμέρας τινὰς ἠνάγκάζε συνέχειν ἑαυτοὺς ἐν ταῖς ναυσὶ τοὺς στρατιώτας, οὐ δυναμένους ἐκπλεῦσαι· ἔπειτα δὲ σιτηγῶν πλοίων τῇ πόλει προσθεόντων οἱ μὲν Καρχηδόνιοι παντὶ τῷ στόλῳ πρὸς τὰς ναῦς ἀνήχθησαν, ὁ δʼ Ἀγαθοκλῆς ἀπελπίζων ἤδη τὴν ἐπιβολήν, ὡς ἴδεν τὸ στόμα τοῦ λιμένος ἔρημον τῶν ἐφορμούντων, ἐξέπλευσεν ὀξείαις ταῖς εἰρεσίαις χρώμενος.
+   ROW [data/text/diodorus-bk18-20-grc.tsv] urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.5.5.1 :: τῇ δʼ ὑστεραίᾳ τηλικαύτην ἔκλειψιν ἡλίου συνέβη γενέσθαι ὥστε ὁλοσχερῶς φανῆναι νύκτα, θεωρουμένων τῶν ἀστέρων πανταχοῦ· διόπερ οἱ περὶ τὸν Ἀγαθοκλέα, νομίσαντες καὶ τὸ θεῖον αὐτοῖς προσημαίνειν τὸ δυσχερές, ἔτι μᾶλλον ὑπὲρ τοῦ μέλλοντος ἐν ἀγωνίᾳ καθειστήκεισαν.
+   ROW [data/text/diodorus-bk18-20-grc.tsv] urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.6.1.1 :: ἓξ δʼ ἡμέρας καὶ τὰς ἴσας νύκτας αὐτῶν πλευσάντων ὑποφαινούσης τῆς ἕω παραδόξως ὁ στόλος τῶν Καρχηδονίων οὐκ ἄπωθεν ὢν ἑωράθη. διόπερ ἀμφοτέροις ἐμπεσούσης σπουδῆς ἡμιλλῶντο πρὸς ἀλλήλους ταῖς εἰρεσίαις, οἱ μὲν Φοίνικες νομίζοντες ἅμα τῇ τῶν νεῶν ἁλώσει Συρακούσσας μὲν ὑποχειρίους ἕξειν, τὴν δὲ πατρίδα μεγάλων ἐλευθερώσειν κινδύνων· οἱ δʼ Ἕλληνες, εἰ μὴ φθάσειαν τῆς χώρας ἁψάμενοι, προκειμένην ἑώρων αὑτοῖς μὲν τιμωρίαν, τοῖς δὲ καταλειφθεῖσιν ἐν οἴκῳ τὰ τῆς δουλείας δεινά.

@@ -1,0 +1,38 @@
+alcyone     * eta Tau    HIP  17702 (confirmed); hip2 vs SIMBAD  0.0000"; Hp-V -0.02; AstroRef '' MultFlag '' Sn 5 So 0; RV 5.4 (B)
+arcturus    * alf Boo    HIP  69673 (confirmed); hip2 vs SIMBAD  0.0001"; Hp-V +0.16; AstroRef '*' MultFlag 'C' Sn 55 So 3; RV -5.229 (A)
+eps_boo     * eps Boo    HIP  72105 (confirmed); hip2 vs SIMBAD  0.0096"; Hp-V +0.07; AstroRef 'A' MultFlag 'C' Sn 15 So 3; RV -16.6 (A)
+eta_boo     * eta Boo    HIP  67927 (confirmed); hip2 vs SIMBAD  0.0000"; Hp-V +0.12; AstroRef '+' MultFlag 'O' Sn 75 So 4; RV 5.77111 (A)
+sirius      * alf CMa    HIP  32349 (confirmed); hip2 vs SIMBAD  0.0003"; Hp-V +0.37; AstroRef '+' MultFlag 'O' Sn 0 So 4; RV -5.5 (A)
+aldebaran   * alf Tau    HIP  21421 (confirmed); hip2 vs SIMBAD  0.0000"; Hp-V +0.14; AstroRef '' MultFlag '' Sn 1 So 0; RV 54.398 (A)
+betelgeuse  * alf Ori    HIP  27989 (confirmed); hip2 vs SIMBAD  0.0000"; Hp-V +0.08; AstroRef '' MultFlag 'X' Sn 1 So 2; RV 21.91 (A)
+rigel       * bet Ori    HIP  24436 (confirmed); hip2 vs SIMBAD  0.0000"; Hp-V +0.06; AstroRef '' MultFlag '' Sn 5 So 0; RV 17.8 (A)
+dubhe       * alf UMa    HIP  54061 (confirmed); hip2 vs SIMBAD  0.0000"; Hp-V +0.16; AstroRef 'A' MultFlag 'C' Sn 17 So 3; RV -9.4 (A)
+gam_tau     * gam Tau    HIP  20205 (from SIMBAD); hip2 vs SIMBAD  0.0042"; Hp-V +0.16; AstroRef '' MultFlag '' Sn 5 So 0; RV 38.458 (A)
+del01_tau   * del01 Tau  HIP  20455 (from SIMBAD); hip2 vs SIMBAD  0.0376"; Hp-V +0.17; AstroRef '' MultFlag '' Sn 1 So 0; RV 37.5875 (A)
+eps_tau     * eps Tau    HIP  20889 (from SIMBAD); hip2 vs SIMBAD  0.0275"; Hp-V +0.17; AstroRef '' MultFlag '' Sn 5 So 0; RV 38.42 (A)
+tet02_tau   * tet02 Tau  HIP  20894 (from SIMBAD); hip2 vs SIMBAD  0.0290"; Hp-V +0.05; AstroRef '' MultFlag '' Sn 1 So 0; RV 38.9 (A)
+bellatrix   * gam Ori    HIP  25336 (from SIMBAD); hip2 vs SIMBAD  0.0000"; Hp-V -0.09; AstroRef '' MultFlag '' Sn 7 So 0; RV 17.31 (A)
+mintaka     * del Ori    HIP  25930 (from SIMBAD); hip2 vs SIMBAD  0.0000"; Hp-V -0.27; AstroRef '*' MultFlag 'C' Sn 55 So 3; RV 18.5 (A)
+alnilam     * eps Ori    HIP  26311 (from SIMBAD); hip2 vs SIMBAD  0.0000"; Hp-V -0.07; AstroRef '' MultFlag '' Sn 5 So 0; RV 27.3 (A)
+alnitak     * zet Ori    HIP  26727 (from SIMBAD); hip2 vs SIMBAD  0.0000"; Hp-V -0.09; AstroRef 'A' MultFlag 'C' Sn 15 So 3; RV 18.5 (B)
+saiph       * kap Ori    HIP  27366 (from SIMBAD); hip2 vs SIMBAD  0.0000"; Hp-V -0.05; AstroRef '' MultFlag '' Sn 5 So 0; RV 20.5 (B)
+gam_boo     * gam Boo    HIP  71075 (from SIMBAD); hip2 vs SIMBAD  0.0113"; Hp-V +0.08; AstroRef '' MultFlag '' Sn 5 So 0; RV -32.4 (B)
+bet_boo     * bet Boo    HIP  73555 (from SIMBAD); hip2 vs SIMBAD  0.0063"; Hp-V +0.13; AstroRef '' MultFlag '' Sn 5 So 0; RV -18.4 (A)
+del_boo     * del Boo    HIP  74666 (from SIMBAD); hip2 vs SIMBAD  0.0017"; Hp-V +0.14; AstroRef '' MultFlag '' Sn 5 So 0; RV -12.29 (A)
+
+Sirius at -1177, difference from the adopted (Hipparcos centre-of-mass) proper motion:
+  hipparcos_1997_I239                    pm (  -546.01,  -1223.08) dpm    0.01 mas/yr ->   0.001 arcmin
+  fk5_long_baseline_I149A                pm (  -552.66,  -1205.30) dpm   18.98 mas/yr ->   0.991 arcmin
+  hipparcos_reduced_with_bond2017_orbit  pm (  -546.60,  -1203.62) dpm   19.46 mas/yr ->   1.017 arcmin
+  sirius_A_instantaneous_J1991.25        pm (  -230.49,   -882.86) dpm  464.00 mas/yr ->  24.240 arcmin
+  rv_simbad_sirius_A                     pm (  -546.01,  -1223.07) dpm    0.00 mas/yr ->   0.254 arcmin
+  rv_bond_observed                       pm (  -546.01,  -1223.07) dpm    0.00 mas/yr ->   0.066 arcmin
+  FK5 vs Hipparcos re-referred to the Bond orbit: 6.29 mas/yr apart
+  orbital velocity of A at J1991.25: Bond 2017 464.0 mas/yr, DMSA/O 480.1 mas/yr; Bond - DMSA slope over the mission (+0.59, -19.45) mas/yr
+ephem.HIP_STARS['alcyone'] astrometry identical to hip2 row: True; RV ephem 5.4 SIMBAD 5.4
+ephem.HIP_STARS['arcturus'] astrometry identical to hip2 row: True; RV ephem -5.229 SIMBAD -5.229
+ephem.HIP_STARS['eps_boo'] astrometry identical to hip2 row: True; RV ephem -16.6 SIMBAD -16.6
+ephem.HIP_STARS['eta_boo'] astrometry identical to hip2 row: True; RV ephem 5.77111 SIMBAD 5.77111
+
+wrote data\stars.json (21 stars); sha256 d9d5062eea270cf4d14f40002dec05399fdc4608754091597ee3cd01c0e6da8a
+problems: none

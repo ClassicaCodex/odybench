@@ -1,0 +1,11 @@
+rows (target removed before any computation): 2285
+P_BM   halves       n  41/ 35  H3 12/41 vs 3/35 (Fisher p 0.0408)  H4 2/41 vs 0/35 (Fisher p 0.4965)
+P_BM   near_vs_far  n  49/ 27  H3 10/49 vs 5/27 (Fisher p 1.0)  H4 2/49 vs 0/27 (Fisher p 0.5358)
+P_BM   whole pool : {'n': 76, 'x3': 15, 'x4': 2, 'both': 1, 'p_both': 0.026, 'p_h4_only': 0.039, 'p_h3_only': 0.2208, 'p_min_h3_alone': 0.2078}
+P_BM   +-700 pool : {'n': 49, 'x3': 10, 'x4': 2, 'both': 1, 'p_both': 0.04, 'p_h4_only': 0.06, 'p_h3_only': 0.24, 'p_min_h3_alone': 0.22}
+P_MWRA halves       n  25/ 18  H3 8/25 vs 0/18 (Fisher p 0.0132)  H4 1/25 vs 0/18 (Fisher p 1.0)
+P_MWRA near_vs_far  n  28/ 15  H3 6/28 vs 2/15 (Fisher p 0.6916)  H4 1/28 vs 0/15 (Fisher p 1.0)
+P_MWRA whole pool : {'n': 43, 'x3': 8, 'x4': 1, 'both': 0, 'p_both': 0.0227, 'p_h4_only': 0.0455, 'p_h3_only': 0.2273, 'p_min_h3_alone': 0.2045}
+P_MWRA +-700 pool : {'n': 28, 'x3': 6, 'x4': 1, 'both': 0, 'p_both': 0.0345, 'p_h4_only': 0.069, 'p_h3_only': 0.2759, 'p_min_h3_alone': 0.2414}
+rule (max over pools), pool_all: p_H,min 0.026; H4 only 0.0455; H3 only 0.2273; floor if H4 were dropped 0.2078
+rule (max over pools), pool_pm700: p_H,min 0.04; H4 only 0.069; H3 only 0.2759; floor if H4 were dropped 0.2414

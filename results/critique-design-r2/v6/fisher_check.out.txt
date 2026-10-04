@@ -1,0 +1,5 @@
+P_BM halves H3 12/41 vs 3/35 two-sided Fisher p = 0.0408
+P_MWRA halves H3 8/25 vs 0/18 two-sided Fisher p = 0.0132
+P_BM near/far H3 10/49 vs 5/27 two-sided Fisher p = 1.0000
+P_MWRA near/far 6/28 vs 2/15 two-sided Fisher p = 0.6916
+P_BM classes H3 8/43 vs 7/33 two-sided Fisher p = 0.7801

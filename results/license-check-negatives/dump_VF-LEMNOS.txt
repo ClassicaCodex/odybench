@@ -1,0 +1,539 @@
+#### SET VF-LEMNOS
+{
+ "set": "VF-LEMNOS",
+ "role": "negative",
+ "searchable": true,
+ "text": "Valerius Flaccus, Argonautica 1.309-2.79 and 2.350-2.372 (the first night at sea, landfall at Lemnos, the delay there)",
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "edition_id": 2081,
+ "day0": "Day 0 is the day whose sunset (2.34-37) begins Tiphys' night: the first day of the voyage under VF-LEMNOS-01 option a only; Night 0 is that night (Tiphys' speech); Dawn +1 brings Lemnos in sight. Day L, the storm at Lemnos, is an unstated number of days later.",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "VF-LEMNOS-01": "a",
+   "VF-LEMNOS-02": "b",
+   "VF-LEMNOS-03": "a",
+   "VF-LEMNOS-04": "c",
+   "VF-LEMNOS-05": "a",
+   "VF-LEMNOS-06": "a",
+   "VF-LEMNOS-07": "w60"
+  },
+  "BM-analogue": {
+   "VF-LEMNOS-01": "a",
+   "VF-LEMNOS-02": "a",
+   "VF-LEMNOS-03": "a",
+   "VF-LEMNOS-04": "a",
+   "VF-LEMNOS-05": "none",
+   "VF-LEMNOS-06": "none",
+   "VF-LEMNOS-07": "w60"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "text",
+   "clue_ids": [
+    "VF-LEMNOS-02",
+    "VF-LEMNOS-06"
+   ],
+   "note": "a clear horned Moon at nightfall of Night 0 (a young crescent under option a: a few days after conjunction); a fourth-day Moon during the Lemnos stay"
+  },
+  "season_stars": {
+   "status": "text",
+   "clue_ids": [
+    "VF-LEMNOS-03",
+    "VF-LEMNOS-04",
+    "VF-LEMNOS-05"
+   ],
+   "note": "Orion and Perseus setting on Night 0, a Pleiad at Dawn +1, the Pleiad's stormy setting at Lemnos"
+  },
+  "morning_star": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": "the dawn star of 2.72 is a Pleiad, not Venus"
+  },
+  "mercury_turning_point": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "darkness_eclipse": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  }
+ },
+ "notes": "Both lunar statements render Aratus' weather signs (Phaenomena 783-787): the clear thin third-day moon means fair weather, the thick fourth-day moon means rain.",
+ "eclipse_compatible_options": [],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+}
+-- observer_place {"place": "at sea between Pallene, Athos and Lemnos (Night 0 and Dawn +1)", "words": "Phoebus Athon … Vulcania surgit Lemnos aquis", "ref": ["2.75", "2.76", "2.77", "2.78", "2.79"], "text_file": "valerius-flaccus-argonautica-lat.tsv", "lat": 40.0, "lon": 24.7, "coord_source": "the drafter's point between Mount Athos (40.158 N 24.327 E) and Lemnos (39.917 N 25.25 E), Wikipedia; the text names the landmarks, not the ship's position"}
+   CHECK exact | Phoebus Athon | in ['2.76']
+   CHECK exact | Vulcania surgit Lemnos aquis | in []
+   2.67       Pleiones Hyadumque locos, quo sidere vibret
+   2.68       Ensis et Actaeus niteat qua luce Bootes.
+   2.69       haec ubi dicta dedit, Cereris tum munere fessas
+   2.70       restituunt vires et parco pectora Baccho.
+   2.71       mox somno cessere; regunt sua sidera puppem.
+   2.72       Iamque sub Eoae dubios Atlantidis ignes
+   2.73       albet ager, motisque truces ab ovilibus ursi
+   2.74       tuta domosque petunt, raras et litus in altum
+>> 2.75       mittit aves, cum primus equis exegit anhelis
+>> 2.76       Phoebus Athon mediasque diem dispersit in undas.
+>> 2.77       certatim remis agitur mare rostraque cursu
+>> 2.78       prima tremunt, et iam summis Vulcania surgit
+>> 2.79       Lemnos aquis tibi per varios dilecta labores,
+   2.80       Ignipotens; nec te furiis et crimine matrum
+   2.81       terra fugat meritique piget meminisse prioris.
+   2.82       Tempore quo primum fremitus insurgere opertos
+   2.83       caelicolum et regni sensit novitate tumentes
+   2.84       Iuppiter aetheriae nec stare silentia pacis,
+-- observer_place {"place": "Lemnos (Day L)", "words": "Lemnos", "ref": ["2.79"], "text_file": "valerius-flaccus-argonautica-lat.tsv", "lat": 39.8833, "lon": 25.0667, "coord_source": "Myrina, Lemnos (Wikipedia, fetched 2026-10-04)"}
+   CHECK exact | Lemnos | in ['2.79']
+   2.71       mox somno cessere; regunt sua sidera puppem.
+   2.72       Iamque sub Eoae dubios Atlantidis ignes
+   2.73       albet ager, motisque truces ab ovilibus ursi
+   2.74       tuta domosque petunt, raras et litus in altum
+   2.75       mittit aves, cum primus equis exegit anhelis
+   2.76       Phoebus Athon mediasque diem dispersit in undas.
+   2.77       certatim remis agitur mare rostraque cursu
+   2.78       prima tremunt, et iam summis Vulcania surgit
+>> 2.79       Lemnos aquis tibi per varios dilecta labores,
+   2.80       Ignipotens; nec te furiis et crimine matrum
+   2.81       terra fugat meritique piget meminisse prioris.
+   2.82       Tempore quo primum fremitus insurgere opertos
+   2.83       caelicolum et regni sensit novitate tumentes
+   2.84       Iuppiter aetheriae nec stare silentia pacis,
+
+==============================================================================================================
+{
+ "set": "VF-LEMNOS",
+ "clue_id": "VF-LEMNOS-01",
+ "kind": "interval",
+ "statement": "The Argo sails at the dawn of 1.311; a storm whose darkness the text calls 'nox' (1.617, 1.670) passes and day shines again (1.655); the Argo coasts past Pelion, Sciathos, Sepias and Pallene until the Sun sets (2.34-37): Night 0 follows. The text gives no count of days.",
+ "licence_words": "Minyas simul optulit omnis alma novo crispans pelagus Tithonia Phoebo … piceoque premit nox omnia caelo … emicuit reserata dies … Iamque Hyperionius metas maris urget Hiberi currus",
+ "ref": [
+  "1.310",
+  "1.311",
+  "1.617",
+  "1.655",
+  "2.34",
+  "2.35"
+ ],
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "the departure day is Day 0",
+   "justification": "the storm's 'nox' (1.617; Jason's 'nox ista', 1.670) read as storm darkness inside the departure day ('emicuit reserata dies', 1.655) and the coasting of 2.6-33 as the rest of that day; an inference, the text gives no count"
+  },
+  {
+   "option": "b",
+   "operational": "the departure day is Day -3 to Day 0",
+   "justification": "the storm's 'nox' may be a real night, and no count is given for the coasting; the -3 bound is the drafter's"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: option a ('the departure day is Day 0') ignored the storm of 1.608-656, whose darkness the text calls 'nox' (1.617, 1.670) before day returns (1.655), so a one-day voyage is an inference, not a reading of the words; the storm is now quoted, both justifications state the inference, and the set's day0 no longer calls Day 0 'the first day of the voyage' outright"
+}
+   CHECK exact | Minyas simul optulit omnis alma novo crispans pelagus Tithonia Phoebo | in []
+   CHECK exact | piceoque premit nox omnia caelo | in ['1.617']
+   CHECK exact | emicuit reserata dies | in ['1.655']
+   CHECK exact | Iamque Hyperionius metas maris urget Hiberi currus | in []
+   --- context (valerius-flaccus-argonautica-lat.tsv) ---
+   1.302      vocibus his instare duci: 'Dodonida quercum
+   1.303      Chaoniique vides famulam Iovis. aequora tecum
+   1.304      ingredior, nec fatidicis avellere silvis
+   1.305      me nisi promisso potuit Saturnia caelo.
+   1.306      tempus adest; age rumpe moras; dumque aequore toto
+   1.307      currimus, incertus si nubila duxerit aether,
+   1.308      iam nunc mitte metus fidens superisque mihique.'
+   1.309      dixerat. ille pavens, laeto quamquam omine divum,
+>> 1.310      prosiluit stratis. Minyas simul optulit omnis
+>> 1.311      alma novo crispans pelagus Tithonia Phoebo.
+   1.312      discurrunt transtris: hi celso cornua malo
+   1.313      expediunt, alii tonsas in marmore summo
+   1.314      praetemptant, prora funem legit Argus ab alta.
+   1.315      Increscunt matrum gemitus et fortia languent
+   1.316      corda patrum; longis flentes amplexibus haerent.
+   ...
+   1.609      poscere. tum validam contorto turbine portam
+   1.610      impulit Hippotades. fundunt se carcere laeti
+   1.611      Thraces equi Zephyrusque et nocti concolor alas
+   1.612      nimborum cum prole Notus crinemque procellis
+   1.613      hispidus et multa flavus caput Eurus harena;
+   1.614      induxere hiemem raucoque ad litora tractu
+   1.615      unanimi freta curva ferunt nec sola tridentis
+   1.616      regna movent: vasto pariter ruit igneus aether
+>> 1.617      cum tonitru piceoque premit nox omnia caelo.
+   1.618      excussi manibus remi, conversaque frontem
+   1.619      puppis in oblicum resonos latus accipit ictus,
+   1.620      vela super tremulum subitus volitantia malum
+   1.621      turbo rapit. qui tum Minyis trepidantibus horror,
+   1.622      cum picei fulsere poli pavidamque coruscae
+   ...
+   1.647      non meus Orion aut saevus Pliade Taurus
+   1.648      mortis causa novae. miseris tu gentibus, Argo,
+   1.649      fata paras, nec iam merito tibi, Tiphy, quietum
+   1.650      ulla parens volet Elysium manesque piorum.'
+   1.651      haec ait et pontum pater ac turbata reponit
+   1.652      litora depellitque Notos, quos caerulus horror
+   1.653      et madido gravis unda sinu longeque secutus
+   1.654      imber ad Aeoliam tendunt simul aequore portam.
+>> 1.655      emicuit reserata dies caelumque resolvit
+   1.656      arcus et in summos redierunt nubila montes.
+   1.657      iam placidis ratis exstat aquis, quam gurgite ab imo
+   1.658      et Thetis et magnis Nereus socer erigit ulnis.
+   1.659      ergo umeros ductor sacro velatur amictu
+   1.660      Aesoniamque capit pateram, quam munere gaudens
+   ...
+   2.26       ut memorant, prensum ipse comis Neptunus in altum
+   2.27       abstulit implicuitque vadis totiensque cruenta
+   2.28       mole resurgentem torquentemque anguibus undas
+   2.29       Sicanium dedit usque fretum cumque urbibus Aetnam
+   2.30       intulit ora premens. trux ille eiectat adesi
+   2.31       fundamental iugi; pariter tune omnis anhelat
+   2.32       Trinacria, iniectam fesso dum pectore molem
+   2.33       commovet experiens gemituque reponit inani.
+>> 2.34       Iamque Hyperionius metas maris urget Hiberi
+>> 2.35       currus et evectae prono laxantur habenae
+   2.36       aethere, cum palmas Tethys grandaeva sinusque
+   2.37       sustulit et rupto sonuit sacer aequore Titan.
+   2.38       auxerat hora metus, iam se vertentis Olympi
+   2.39       ut faciem raptosque simul montesque locosque
+   2.40       ex oculis circumque graves videre tenebras.
+
+==============================================================================================================
+{
+ "set": "VF-LEMNOS",
+ "clue_id": "VF-LEMNOS-02",
+ "kind": "moon-phase",
+ "statement": "At nightfall of Night 0 Tiphys tells the frightened crew the sky is steady and the Moon has risen clear, her horn not swollen, with no redness on her face.",
+ "licence_words": "micat immutabile caelum puraque nec gravido surrexit Cynthia cornu, nullus in ore rubor",
+ "ref": [
+  "2.55",
+  "2.56",
+  "2.57"
+ ],
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "the Moon is above the horizon in the evening twilight of Night 0 with illuminated fraction <= 0.25",
+   "justification": "a horned Moon at nightfall is a young crescent; Aratus' clear, thin third-day moon means fair weather [aratus-phaenomena-grc.tsv 783-784]"
+  },
+  {
+   "option": "b",
+   "operational": "the Moon is above the horizon at some instant between sunset and local midnight of Night 0 (any phase)",
+   "justification": "'surrexit': the Moon is up; 'cornu' as a stock attribute"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "Aratean weather-sign diction in a speech meant to reassure"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | micat immutabile caelum puraque nec gravido surrexit Cynthia cornu, nullus in ore rubor | in []
+   --- context (valerius-flaccus-argonautica-lat.tsv) ---
+   2.47       haud aliter trepidare viri. sed pectora firmans
+   2.48       Hagniades 'non hanc' inquit 'sine numine pinum
+   2.49       derigimus, nec me tantum Tritonia cursus
+   2.50       erudiit; saepe ipsa manu dignata carinam est.
+   2.51       an non experti, subitus cum luce fugata
+   2.52       horruit imbre dies? quantis, pro Iuppiter, austris
+   2.53       restitimus, quanta quotiens et Palladis arte
+   2.54       incassum decimae cecidit tumor arduus undae.
+>> 2.55       quin agite, o socii; micat immutabile caelum
+>> 2.56       puraque nec gravido surrexit Cynthia cornu,
+>> 2.57       nullus in ore rubor, certusque ad talia Titan
+   2.58       integer in fluctus et in uno decidit auro.
+   2.59       adde, quod in noctem venti veloque marique
+   2.60       incumbunt magis et tacitis ratis ocior horis.
+   2.61       atque adeo non illa sequi mihi sidera monstrat,
+   2.62       quae delapsa polo reficit mare: tantus Orion
+
+==============================================================================================================
+{
+ "set": "VF-LEMNOS",
+ "clue_id": "VF-LEMNOS-03",
+ "kind": "star",
+ "statement": "Tiphys: he does not steer by the stars that slip from the pole into the sea, 'great Orion already sets, already Perseus hisses in the angry sea', but by the never-setting Serpent.",
+ "licence_words": "non illa sequi mihi sidera monstrat, quae delapsa polo reficit mare: tantus Orion iam cadit, irato iam stridet in aequore Perseus … axe nitet serpens",
+ "ref": [
+  "2.61",
+  "2.62",
+  "2.63",
+  "2.64",
+  "2.65"
+ ],
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "Betelgeuse, Rigel and Mirfak (alpha Persei) are above the horizon at the end of evening nautical twilight of Night 0 and each sets before local midnight",
+   "justification": "'iam cadit ... iam stridet': setting now, at nightfall"
+  },
+  {
+   "option": "b",
+   "operational": "Night 0 within +-15 days of Orion's morning setting (setting at dawn)",
+   "justification": "'iam cadit' read as the season of Orion's setting"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "a general contrast between setting stars and the circumpolar Serpent"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | non illa sequi mihi sidera monstrat, quae delapsa polo reficit mare: tantus Orion iam cadit, irato iam stridet in aequore Perseus | in []
+   CHECK exact | axe nitet serpens | in ['2.65']
+   --- context (valerius-flaccus-argonautica-lat.tsv) ---
+   2.53       restitimus, quanta quotiens et Palladis arte
+   2.54       incassum decimae cecidit tumor arduus undae.
+   2.55       quin agite, o socii; micat immutabile caelum
+   2.56       puraque nec gravido surrexit Cynthia cornu,
+   2.57       nullus in ore rubor, certusque ad talia Titan
+   2.58       integer in fluctus et in uno decidit auro.
+   2.59       adde, quod in noctem venti veloque marique
+   2.60       incumbunt magis et tacitis ratis ocior horis.
+>> 2.61       atque adeo non illa sequi mihi sidera monstrat,
+>> 2.62       quae delapsa polo reficit mare: tantus Orion
+>> 2.63       iam cadit, irato iam stridet in aequore Perseus:
+>> 2.64       sed mihi dux, vetitis qui numquam conditus undis
+>> 2.65       axe nitet serpens septenosque implicat ignes.'
+   2.66       sic ait et certi memorat qui vultus Olympi,
+   2.67       Pleiones Hyadumque locos, quo sidere vibret
+   2.68       Ensis et Actaeus niteat qua luce Bootes.
+   2.69       haec ubi dicta dedit, Cereris tum munere fessas
+   2.70       restituunt vires et parco pectora Baccho.
+
+==============================================================================================================
+{
+ "set": "VF-LEMNOS",
+ "clue_id": "VF-LEMNOS-04",
+ "kind": "star",
+ "statement": "At Dawn +1 the fields whiten 'under the dim fires of the dawn Atlantid', the Sun first strikes Athos, and Lemnos rises from the sea.",
+ "licence_words": "Iamque sub Eoae dubios Atlantidis ignes albet ager … Phoebus Athon … Vulcania surgit Lemnos aquis",
+ "ref": [
+  "2.72",
+  "2.73",
+  "2.75",
+  "2.76",
+  "2.77",
+  "2.78",
+  "2.79"
+ ],
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "Dawn +1 within +-7 days of the Pleiades' heliacal rising (first morning visibility of Alcyone at the site)",
+   "justification": "an Atlantid (a Pleiad) seen dimly at dawn: the first dawn appearance"
+  },
+  {
+   "option": "b",
+   "operational": "Dawn +1 within +-7 days of the Pleiades' morning setting (setting at dawn)",
+   "justification": "Virgil uses 'Eoae Atlantides' for the Pleiades' dawn setting [virgil-georgics-lat.tsv 1.221]"
+  },
+  {
+   "option": "c",
+   "operational": "Alcyone above the horizon at the start of morning nautical twilight of Dawn +1",
+   "justification": "the Pleiad is visible at dawn, phase unspecified"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "an elaborate dawn periphrasis"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | Iamque sub Eoae dubios Atlantidis ignes albet ager | in []
+   CHECK exact | Phoebus Athon | in ['2.76']
+   CHECK exact | Vulcania surgit Lemnos aquis | in []
+   --- context (valerius-flaccus-argonautica-lat.tsv) ---
+   2.64       sed mihi dux, vetitis qui numquam conditus undis
+   2.65       axe nitet serpens septenosque implicat ignes.'
+   2.66       sic ait et certi memorat qui vultus Olympi,
+   2.67       Pleiones Hyadumque locos, quo sidere vibret
+   2.68       Ensis et Actaeus niteat qua luce Bootes.
+   2.69       haec ubi dicta dedit, Cereris tum munere fessas
+   2.70       restituunt vires et parco pectora Baccho.
+   2.71       mox somno cessere; regunt sua sidera puppem.
+>> 2.72       Iamque sub Eoae dubios Atlantidis ignes
+>> 2.73       albet ager, motisque truces ab ovilibus ursi
+   2.74       tuta domosque petunt, raras et litus in altum
+>> 2.75       mittit aves, cum primus equis exegit anhelis
+>> 2.76       Phoebus Athon mediasque diem dispersit in undas.
+>> 2.77       certatim remis agitur mare rostraque cursu
+>> 2.78       prima tremunt, et iam summis Vulcania surgit
+>> 2.79       Lemnos aquis tibi per varios dilecta labores,
+   2.80       Ignipotens; nec te furiis et crimine matrum
+   2.81       terra fugat meritique piget meminisse prioris.
+   2.82       Tempore quo primum fremitus insurgere opertos
+   2.83       caelicolum et regni sensit novitate tumentes
+   2.84       Iuppiter aetheriae nec stare silentia pacis,
+
+==============================================================================================================
+{
+ "set": "VF-LEMNOS",
+ "clue_id": "VF-LEMNOS-05",
+ "kind": "season",
+ "statement": "On Day L, during the stay at Lemnos, Jupiter by the law of the sky had set the Pleiad moving with her stormy star, and storms burst on land and sea.",
+ "licence_words": "Pliada lege poli nimboso moverat astro Iuppiter … simul undis cuncta ruunt",
+ "ref": [
+  "2.357",
+  "2.358",
+  "2.359"
+ ],
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "Day L within +-15 days of the Pleiades' morning setting",
+   "justification": "the Pleiad's stormy setting that closed the sailing season"
+  },
+  {
+   "option": "b",
+   "operational": "Day L between the Pleiades' morning setting and the vernal equinox",
+   "justification": "the winter storm season"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "Jupiter's storm told in astronomical periphrasis; no phase or day is named"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | Pliada lege poli nimboso moverat astro Iuppiter | in []
+   CHECK exact | simul undis cuncta ruunt | in []
+   --- context (valerius-flaccus-argonautica-lat.tsv) ---
+   2.349      aula silet; dapibus coeptis mox tempora fallunt
+   2.350      noctis et in seras durant sermonibus umbras,
+   2.351      praecipueque ducis casus mirata requirit
+   2.352      Hypsipyle, quae fata trahant, quae regis agat vis
+   2.353      aut unde Haemoniae molem ratis: unius haeret
+   2.354      adloquio et blandos paulatim colligit ignes
+   2.355      iam non dura toris Veneri nec iniqua reversae,
+   2.356      et deus ipse moras spatiumque indulget amori.
+>> 2.357      Pliada lege poli nimboso moverat astro
+>> 2.358      Iuppiter aeternum volvens opus, et simul undis
+>> 2.359      cuncta ruunt, unoque dei Pangaea sub ictu
+   2.360      Gargaraque et maesti steterunt formidine luci.
+   2.361      saevior haut alio mortales tempore gentes
+   2.362      terror agit; tune urget enim, tune flagitat iras
+   2.363      in populos Astraea Iovem terrisque relictis
+   2.364      invocat adsiduo Saturnia sidera questu.
+
+==============================================================================================================
+{
+ "set": "VF-LEMNOS",
+ "clue_id": "VF-LEMNOS-06",
+ "kind": "moon-phase",
+ "statement": "On a day of the Lemnos stay Tiphys sees the Moon thick with rain at her fourth rising.",
+ "licence_words": "et lunam quarto densam videt imbribus ortu Thespiades",
+ "ref": [
+  "2.367",
+  "2.368"
+ ],
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "some day of the Lemnos stay (row 07) has a Moon 2.5 to 4.5 days past conjunction at sunset, visible in the evening",
+   "justification": "'quarto ortu': the fourth day of the Moon; Aratus' thick fourth-day moon presages rain [aratus-phaenomena-grc.tsv 785-787]"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "an Aratean weather sign; the day is not fixed"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | et lunam quarto densam videt imbribus ortu Thespiades | in []
+   --- context (valerius-flaccus-argonautica-lat.tsv) ---
+   2.359      cuncta ruunt, unoque dei Pangaea sub ictu
+   2.360      Gargaraque et maesti steterunt formidine luci.
+   2.361      saevior haut alio mortales tempore gentes
+   2.362      terror agit; tune urget enim, tune flagitat iras
+   2.363      in populos Astraea Iovem terrisque relictis
+   2.364      invocat adsiduo Saturnia sidera questu.
+   2.365      insequitur niger et magnis cum fratribus Eurus
+   2.366      intonat Aegaeo, tenditque ad litora pontus;
+>> 2.367      et lunam quarto densam videt imbribus ortu
+>> 2.368      Thespiades, longus coeptis et fluctibus arcens
+   2.369      qui metus. usque novos divae melioris ad ignis
+   2.370      urbe sedent laeti Minyae viduisque vacantes
+   2.371      indulgent thalamis nimbosque educere luxu
+   2.372      nec iam velle vias, zephyrosque audire vocantes
+   2.373      dissimulant, donec resides Tirynthius heros
+
+==============================================================================================================
+{
+ "set": "VF-LEMNOS",
+ "clue_id": "VF-LEMNOS-07",
+ "kind": "interval",
+ "statement": "The Argonauts stay at Lemnos an unstated time, kept by the storms and by love, until Heracles rouses them.",
+ "licence_words": "urbe sedent laeti Minyae … nec iam velle vias",
+ "ref": [
+  "2.369",
+  "2.370",
+  "2.371",
+  "2.372"
+ ],
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "fork_options": [
+  {
+   "option": "w60",
+   "operational": "Day L (rows 05 and 06) lies 1 to 60 days after Dawn +1 (the bound is the drafter's)",
+   "justification": "the text gives no count"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "rows 05 and 06 are unlinked"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | urbe sedent laeti Minyae | in ['2.370']
+   CHECK exact | nec iam velle vias | in ['2.372']
+   --- context (valerius-flaccus-argonautica-lat.tsv) ---
+   2.361      saevior haut alio mortales tempore gentes
+   2.362      terror agit; tune urget enim, tune flagitat iras
+   2.363      in populos Astraea Iovem terrisque relictis
+   2.364      invocat adsiduo Saturnia sidera questu.
+   2.365      insequitur niger et magnis cum fratribus Eurus
+   2.366      intonat Aegaeo, tenditque ad litora pontus;
+   2.367      et lunam quarto densam videt imbribus ortu
+   2.368      Thespiades, longus coeptis et fluctibus arcens
+>> 2.369      qui metus. usque novos divae melioris ad ignis
+>> 2.370      urbe sedent laeti Minyae viduisque vacantes
+>> 2.371      indulgent thalamis nimbosque educere luxu
+>> 2.372      nec iam velle vias, zephyrosque audire vocantes
+   2.373      dissimulant, donec resides Tirynthius heros
+   2.374      non tulit, ipse rati invigilans atque integer urbis:
+   2.375      invidisse deos tantum maris aequor adortis,
+   2.376      desertasque domos, fraudataque tempore segni
+   2.377      vota patrum. quid et ipse viris cunctantibus adsit?

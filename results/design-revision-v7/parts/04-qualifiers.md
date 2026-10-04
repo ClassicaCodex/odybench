@@ -1,0 +1,16 @@
+| qualifier | meaning | inputs | section |
+|---|---|---|---|
+| Q_attain | outcome 1 could not have been reached by any target, because p_H,min > 0.05 (the largest of the four pools' floors). Every "no" about the dating is then a "could not have said yes" | null-side | 7, 9.4 |
+| Q_record | the held-out test could not have said "yes" for **this** target, given facts on record before H3 and H4 were frozen: every pass pattern with p_H ≤ 0.05 needs a predicate that the frozen disclosure table records as failing at the target [r1v5 N2] | null-side and the frozen table | 7.1, 7.2 |
+| Q_contra | a measured held-out flag of the target contradicts a value the disclosure table records as determined. The record, the inference from it, or the bench is wrong | target-side | 7.1 |
+| Q_exch | the exchangeability that label 1's exact test rests on is in doubt: P10's held-out part fails (H3 or H4 passes at different rates on eclipse and non-eclipse spring new moons), or H3 or H4 drifts inside the epoch band (two-sided Fisher p ≤ 0.05 for any of six tests). Printed beside label 1; it does not block it [r2v6 N9] | null-side | 7.2 |
+| Q_tol | B&M's own readings could not have dated any target at 5%: G_BM,lo > 0.05 under every slot definition. Printed beside the words' ceiling 1/P(A) [r2 R2-1 fix 3] | null-side | 5.3, 5.7 |
+| Q_slot | a G-based decision (label 2's G leg, or Q_tol) differs between slot definitions: "slot-dependent" [r2 R2-2 fix 3] | null-side | 4.2 |
+| Q_attain4 | outcome 4 could not have fired: no clean negative has both 0 < G_j with G_j,hi ≤ G_BM,u,lo, and E_j ≥ 1, an eclipse new moon of the Odyssey's strength (h_tot ≥ m̂ = 0.304) that its eclipse-compatible readings can make unique. "No label 4" then means nothing [r1v5 N5; r2v6 N8, #71] | null-side | 6.5, 9.4 |
+| Q_attain3a | gate 3a could not have passed: on some leg, fewer than 4 counted PC-R sets can be narrowed. Label 3a is then printed as "untested by these controls" [r2v6 N1] | null-side | 6.3.2 |
+| Q_attain3b | gate 3b could not have passed: on some leg, fewer than 6 counted *Almagest* sets can be narrowed. Label 3b is then printed as "untested by these controls" [r2v6 N1] | null-side | 6.4 |
+| Q_BM | B&M's own tolerances and proxies cannot recover expert planetary records | controls | 6.4 |
+| Q_H | the held-out rank test does not recover real records: at some rounding step of the held-out ceilings, fewer than 6 of the 11 counted *Almagest* sets give their true date p ≤ 0.05 on their own held-out rows. At most 8 sets can, because three have no held-out row, and fewer if a truth fails its projection (6.4) [r1v5 N8; r2v6 N6] | controls | 6.4 |
+| Q_score | a gate's decision rests on a choice made with the answers in view: the legs of gate 3a, or of gate 3b, fall on both sides of the gate's threshold; or gate 3b's decision changes under the other meaning of `same_apparition`. It replaces revision 5's Q_strict [r1v5 N1; r2v6 N1] | controls | 6.3.2, 6.4 |
+| Q_exposure | gate 3a's combined decision changes when the possibly steered control rows are re-drafted blind, or set to a sourced sibling convention | controls | 6.3.4 |
+| Q_ΔT | gate 3a's combined decision changes when the controls whose eclipses helped fit the ΔT models are scored without that fit | controls | 6.3.3 |

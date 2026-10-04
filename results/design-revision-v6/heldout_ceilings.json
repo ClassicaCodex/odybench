@@ -1,0 +1,332 @@
+{
+ "ALM-A": {
+  "star": {
+   "max": 1.793,
+   "record": "IX.7.14",
+   "tolerance": 1.8,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "moon": {
+   "max": 0.699,
+   "record": "XI.6.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "sunmoon": {
+   "max": 0.633,
+   "record": "V.3.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "opp": {
+   "max": 0.424,
+   "record": "X.7.3c",
+   "tolerance": 1.0,
+   "unit": "d",
+   "source": "own class"
+  }
+ },
+ "ALM-B": {
+  "star": {
+   "max": 1.793,
+   "record": "IX.7.14",
+   "tolerance": 1.8,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "moon": {
+   "max": 0.667,
+   "record": "IX.10.3",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "sunmoon": {
+   "max": 0.667,
+   "record": "IX.10.3",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "pooled lunar classes"
+  },
+  "opp": {
+   "max": 0.424,
+   "record": "X.7.3c",
+   "tolerance": 1.0,
+   "unit": "d",
+   "source": "own class"
+  }
+ },
+ "ALM-D": {
+  "star": {
+   "max": 1.793,
+   "record": "IX.7.14",
+   "tolerance": 1.8,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "moon": {
+   "max": 0.699,
+   "record": "XI.6.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "sunmoon": {
+   "max": 0.633,
+   "record": "V.3.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "opp": {
+   "max": 0.424,
+   "record": "X.7.3c",
+   "tolerance": 1.0,
+   "unit": "d",
+   "source": "own class"
+  }
+ },
+ "ALM-E": {
+  "star": {
+   "max": 1.793,
+   "record": "IX.7.14",
+   "tolerance": 1.8,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "moon": {
+   "max": 0.699,
+   "record": "XI.6.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "sunmoon": {
+   "max": 0.633,
+   "record": "V.3.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "opp": {
+   "max": 0.424,
+   "record": "X.7.3c",
+   "tolerance": 1.0,
+   "unit": "d",
+   "source": "own class"
+  }
+ },
+ "ALM-F": {
+  "star": {
+   "max": 1.793,
+   "record": "IX.7.14",
+   "tolerance": 1.8,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "moon": {
+   "max": 0.699,
+   "record": "XI.6.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "sunmoon": {
+   "max": 0.633,
+   "record": "V.3.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "opp": {
+   "max": 0.424,
+   "record": "X.7.3c",
+   "tolerance": 1.0,
+   "unit": "d",
+   "source": "own class"
+  }
+ },
+ "ALM-G": {
+  "star": {
+   "max": 1.793,
+   "record": "IX.7.14",
+   "tolerance": 1.8,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "moon": {
+   "max": 0.699,
+   "record": "XI.6.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "sunmoon": {
+   "max": 0.633,
+   "record": "V.3.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "opp": {
+   "max": 0.424,
+   "record": "X.7.3c",
+   "tolerance": 1.0,
+   "unit": "d",
+   "source": "own class"
+  }
+ },
+ "ALM-H": {
+  "star": {
+   "max": 1.323,
+   "record": "X.1.4",
+   "tolerance": 1.4,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "moon": {
+   "max": 0.699,
+   "record": "XI.6.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "sunmoon": {
+   "max": 0.633,
+   "record": "V.3.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "opp": {
+   "max": 0.424,
+   "record": "X.7.3c",
+   "tolerance": 1.0,
+   "unit": "d",
+   "source": "own class"
+  }
+ },
+ "ALM-I": {
+  "star": {
+   "max": 1.793,
+   "record": "IX.7.14",
+   "tolerance": 1.8,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "moon": {
+   "max": 0.699,
+   "record": "XI.6.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "sunmoon": {
+   "max": 0.633,
+   "record": "V.3.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "opp": {
+   "max": 0.424,
+   "record": "X.7.3c",
+   "tolerance": 1.0,
+   "unit": "d",
+   "source": "own class"
+  }
+ },
+ "ALM-J": {
+  "star": {
+   "max": 1.793,
+   "record": "IX.7.14",
+   "tolerance": 1.8,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "moon": {
+   "max": 0.699,
+   "record": "XI.6.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "sunmoon": {
+   "max": 0.633,
+   "record": "V.3.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "opp": {
+   "max": 0.424,
+   "record": "X.7.3c",
+   "tolerance": 1.0,
+   "unit": "d",
+   "source": "own class"
+  }
+ },
+ "ALM-K": {
+  "star": {
+   "max": 1.793,
+   "record": "IX.7.14",
+   "tolerance": 1.8,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "moon": {
+   "max": 0.699,
+   "record": "XI.6.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "sunmoon": {
+   "max": 0.633,
+   "record": "V.3.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "opp": {
+   "max": 0.424,
+   "record": "X.7.3c",
+   "tolerance": 1.0,
+   "unit": "d",
+   "source": "own class"
+  }
+ },
+ "ALM-L": {
+  "star": {
+   "max": 1.793,
+   "record": "IX.7.14",
+   "tolerance": 1.8,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "moon": {
+   "max": 0.699,
+   "record": "XI.6.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "sunmoon": {
+   "max": 0.633,
+   "record": "V.3.2",
+   "tolerance": 0.7,
+   "unit": "deg",
+   "source": "own class"
+  },
+  "opp": {
+   "max": 0.424,
+   "record": "X.7.3c",
+   "tolerance": 1.0,
+   "unit": "d",
+   "source": "own class"
+  }
+ }
+}

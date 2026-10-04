@@ -1,0 +1,17 @@
+spring conjunctions (fixed C bounds) in -1499..-1000: 519
+
+all spring conjunctions: n = 519
+  Venus slot (visible morning star AV 7, Day -5): 0.397
+  Mercury slot (6 d of morning event, or visible, Day -34): 0.349   [event-only 0.247; visible-only 0.337]
+  P(A) = P(Venus slot and Mercury slot) = 0.148  ->  LR cap 1/P(A) = 6.7
+  binomial 95% for P(A): [0.118, 0.179] -> cap in [5.6, 8.5]
+  B&M V (lead >= 90 min): 0.198;  B&M M approx (|D| <= 1 to MWRA): 0.044;  V and M: 7/519
+  share of B&M V-and-M passers that satisfy A: 7/7
+
+spring DAYLIGHT conjunctions (the pool of R_obs and G): n = 266
+  Venus slot (visible morning star AV 7, Day -5): 0.398
+  Mercury slot (6 d of morning event, or visible, Day -34): 0.342   [event-only 0.241; visible-only 0.327]
+  P(A) = P(Venus slot and Mercury slot) = 0.154  ->  LR cap 1/P(A) = 6.5
+  binomial 95% for P(A): [0.111, 0.198] -> cap in [5.1, 9.0]
+  B&M V (lead >= 90 min): 0.195;  B&M M approx (|D| <= 1 to MWRA): 0.045;  V and M: 5/266
+  share of B&M V-and-M passers that satisfy A: 5/5

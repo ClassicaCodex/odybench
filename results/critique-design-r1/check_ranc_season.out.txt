@@ -1,0 +1,5 @@
+conjunction -1130-09-30 10:30:25 UT (30 Sep 1131 BC, proleptic Julian)  Sun apparent longitude 176.69 deg
+conjunction -1177-04-16 10:09:27 UT (16 Apr 1178 BC, proleptic Julian)  Sun apparent longitude 14.28 deg
+conjunction -1206-10-30 13:26:59 UT (30 Oct 1207 BC, proleptic Julian)  Sun apparent longitude 206.70 deg
+conjunction -1182-01-12 07:45:50 UT (12 Jan 1183 BC, proleptic Julian)  Sun apparent longitude 282.20 deg
+autumnal equinox -1130: -1130-10-03 17:17:26 UT (3 Oct 1131 BC, proleptic Julian)

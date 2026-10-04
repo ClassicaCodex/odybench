@@ -1,0 +1,214 @@
+--- results/design-revision-v8/DESIGN-v8-before-c8.md	2026-10-04 12:25:04.690267800 -0500
++++ DESIGN.md	2026-10-04 13:18:13.319653400 -0500
+@@ -17,7 +17,10 @@
+ outcome 4 can fire at all. It raised 11 new issues: three major (R3-1 to
+ R3-3) and eight minor (R3-4 to R3-11), which section 14 numbers 92–102.
+ Revision 8 answers all of them, and #71 through R3-2. Section 14 lists every
+-issue of every review with its resolution; 14.7 is new.
++issue of every review with its resolution; 14.7 is new. An independent check
++of revision 8 [c8] then found one new blocker, wording in the public text
++that rested on truth-side facts. It is fixed in place, and the end of 14.7
++records it.
+ 
+ **What revision 8 changes.**
+ 
+@@ -31,7 +34,7 @@
+     narrowing gets harder. On the recheck's estimate ALM-A now passes about
+     4.9% of a window's days, where revision 7's projection passed 0.6%. So
+     three counted sets lie within about 0.6 percentage points of the 5%
+-    line, ALM-A, ALM-B and ALM-H, and P21 is open again [R3-4].
++    line, ALM-A, ALM-B and ALM-H, and P21 is restated.
+   - Revision 7's projection, with the inferred phases, is reported as a
+     sensitivity.
+ - **Q_attain4 reads the windows where label 4 is scored** (6.5) [r3v7 R3-2].
+@@ -54,7 +57,7 @@
+   cases are measured, not passed, and the other synthetic cases are bisected
+   to 0.01 s.
+ - **Smaller changes.**
+-  - P21 is open again, because three sets lie near the line [R3-4].
++  - P21 is restated [R3-4].
+   - `same_apparition` tests visibility on the row's own day, not on Day 0.
+     `visible_before_sunrise` has one instant rule in 6.4 and 10.3: the
+     stated hour, else the Sun at −8° [R3-5].
+@@ -262,6 +265,7 @@
+ | [r2v6: script] | a script of that recheck in `results/critique-design-r2/v6/`, with its output |
+ | [r3v7 R3-n], [r3v7 #n], [r3v7 Cn], [r3v7 §n] | the recheck of revision 7, the final review of the loop (new issue R3-n, old issue #n, passed check Cn, or section n), written 2026-10-04 as `docs/critique-design-r3.md`, SHA-256 `2d83486c…29d0`. A byte copy is kept at `results/design-revision-v8/critique-design-r3.recheck-of-rev7.md`, because a later round may reuse the name. Section 14.7 numbers its R3-1 to R3-11 as 92–102 |
+ | [r3v7: script] | a script of that recheck in `results/critique-design-r3/`, with its output |
++| [c8] | the check of revision 8: an independent check of this file, made 2026-10-04 before any public copy of it existed; `results/design-check-v8/check_v8.py`, with its tests and outputs. It found one new blocker, recorded at the end of 14.7 |
+ | [v1 §n] … [v7 §n] | `docs/DESIGN-v1.md` … `docs/DESIGN-v7.md` (revision 4: SHA-256 `bd828f14…f5db`; revision 5: `dc082ae1…c85d`; revision 6: `c386efda…49b1`; revision 7: `4151842d…4cf2`) |
+ | [AppT n] | item n of Appendix T, the truth-side facts, at the end of this file (withheld from build agents, 10.1) |
+ | [B&M §X] | the paper: Baikouzis & Magnasco, PNAS 105 (2008) 8823–8828, by section heading; [SI], [S2] its Supporting Information |
+@@ -1064,7 +1068,7 @@
+ | v6 P24 (Q_H does not hold) | **rested on a rounding step chosen with the slack table in view** | the step was chosen after the slack table existed, and its effect at the truths is in [AppT 2b] [r2v6 N6]. Restated across three steps |
+ | v6 P25 (outcome 4 attainable) | **read a necessary condition only, against the Odyssey's point value** | the G condition does not show that a negative can reach an eclipse of the Odyssey's strength [r2v6 #71], and the Odyssey's side should be its lower bound [r2v6 N8]. Restated |
+ | v6 P27 ({3a}) | **rested on P21's misread ceiling** | restated with the frozen meaning of `same_apparition`; the verdict is {3a, 3b} if gate 3b fails (S0y) [r2v6 N1] |
+-| v7 P21 (gate 3b does not fire; ALM-B the knife-edge) | **nearly determined by known numbers**, through a margin that came from rows the gate's own rule excludes | every narrowable set but ALM-B and ALM-H passed 0.07–1.03% of days, ALM-A 0.6% only through A.2's and A.5's inferred phases; which sets keep their truth is in [AppT 6] [r3v7 R3-1, R3-4]. With those phases at "none" ALM-A passes about 4.9%, so three sets lie within about 0.6 percentage points of the line, and P21 is open again. Restated (8) |
++| v7 P21 (gate 3b does not fire) | **restated**; see [AppT 6] | revision 7's projection kept A.2's and A.5's inferred phases, under which ALM-A passed about 0.6% of days; with them at "none" it passes about 4.9%, and three sets now lie within about 0.6 percentage points of the line (2.6) [r3v7 R3-1]. Restated (8) |
+ | v7 P25 (outcome 4 attainable: the G condition and E_j ≥ 1) | **read the eclipse condition over the whole core** | label 4 is scored only in the Odyssey's two windows, so E_j ≥ 1 did not show that it could fire; and the G condition allows at most about 4 targets reached, not "about 11 reach-units" [r3v7 R3-2]. Restated as open (8) |
+ 
+ ### 2.8 Known from the recheck of revision 2
+@@ -1478,8 +1482,8 @@
+     `same_apparition`, and ALM-H 4.4–4.6%. Under the other meaning ALM-B
+     passes 5.2% and cannot be seen. So the gate's decision may rest on the
+     reading, and Q_score3b then says so.
+-  - Whether it passes is P21, now open again [r3v7 R3-4]. If it does not,
+-    the expected verdict gains 3b (S0y).
++  - Whether it passes is P21, which the known numbers do not settle. If it
++    does not, the expected verdict gains 3b (S0y).
+ - **Q_attain3a and Q_attain3b are not expected** (R28). They are printed
+   only beside a gate that fires (6.3.2, 6.4) [r3v7 R3-8]. On the rough
+   estimates, 5 counted PC-R sets can be narrowed (all but R-THUC and R-XEN)
+@@ -4186,8 +4190,8 @@
+ 
+ Revision 8 changes these [r3v7 R3-1, R3-2, R3-4, R3-8, R3-10, R3-11]:
+ 
+-- **P21 is open again.** With A.2, A.5 and B.2 at "none", three counted sets
+-  lie near the 5% line, so known numbers no longer nearly fix it (2.7).
++- **P21 is restated** for revision 8's projection, under which three counted
++  sets lie near the 5% line (2.6, 2.7).
+ - **P25 is restated as open on attainability.** Its counted part is that no
+   clean negative fires outcome 4. Whether one could is reported, not
+   predicted (2.10).
+@@ -4315,7 +4319,7 @@
+   keeping its truth; [AppT 6] gives the truth-side count. Three sets lie
+   within about 0.6 percentage points of the line on the rough estimate
+   (2.6): ALM-A about 4.9% of days, ALM-B about 4.4% and ALM-H 4.4–4.6%. So
+-  P21 is open, and not fixed by known numbers [r3v7 R3-4]. (v3 P25;
++  P21 is open, and not fixed by known numbers. (v3 P25;
+   restated in revisions 6, 7 and 8 [r2v6 N1; r3v7 R3-1, R3-4])
+ - **P22.** *Withdrawn in revision 6* to R25. (v3 P26)
+ - **P23.** *Withdrawn in revision 6* to R26. (v3 P27)
+@@ -5926,7 +5930,8 @@
+ - 14.6 gives the 10 issues N1–N10 of the recheck of revision 6 [r2v6],
+   numbered 82–91, and its finding on #71;
+ - **14.7 gives the 11 issues R3-1 to R3-11 of the recheck of revision 7
+-  [r3v7], numbered 92–102, and its finding on #71.**
++  [r3v7], numbered 92–102, and its finding on #71; its last note records
++  the check of revision 8 [c8].**
+ 
+ Each row gives the resolution and the sections it changed. Where a
+ resolution departs from the reviewer's proposed fix, the row says why,
+@@ -5963,7 +5968,7 @@
+ | 14 | major | **Resolved,** and confirmed. PC-S has an instrument mode (I10) and a science mode, feeds no rule, and both checks are reported beside INSTR. I10's independent path is now Horizons plus the Meeus-based star routines [r1v5 N4] | 6.1, 6.2 |
+ | 15 | major | **Resolved,** and confirmed. The Iliad is a same-tradition comparison, beside 12 clean negatives under the Odyssey's selection rules; the storm rule is in place; the eclipse-compatible lists are filtered consistently with the file [r1v5 C12]. **Revision 6:** whether any clean negative could fire outcome 4 is computed on the null side, before the target (G_j, Q_attain4) [r1v5 N5]. **Revision 8** [r3v7 R3-2]: that question is now asked in the Odyssey's two windows, where label 4 is scored | 6.5, 9 |
+ | 16 | major | **Resolved,** and confirmed. No LR enters the rule; the ceiling 1/P(A) is a standing finding; every G interval is the wider of the gamma and block-bootstrap intervals. **Revision 6** sets I9(b)'s per-side coverage bound at 0.975 − 3 SE [r1v5 N14]. **Departure** (kept from revision 3): the review wanted the LR to decide outcomes 1 and 2. On a fixed poem every such ratio is set by the observation model [r1 N1] | 5.3, 5.7, 6.1, 9 |
+-| 17 | major | **Resolved in revision 6.** Everything computable from known numbers is in section 2. The recheck found four remnants [r1v5 §2, #17]: P6 was settled by the rough values; P20 sat exactly on its threshold; P8's second clause was nearly fixed by the C_rel calibration; P24's real ceiling was lower than stated [AppT 2]. P6 is now R22, P8's second clause R23, P20 R24 (gate 3a fires), and P22 and P23 R25 and R26. P24, P25 and P27 are restated. Section 8 counts only quantities that need new runs. **Revision 7** [r2v6 N1, N9, #71]: P21, P24, P25 and P27 are restated on the gate's real ceiling, the rounding family and the lower bound, and P10's held-out part, now roughly known, moves to R29. **Revision 8** [r3v7 R3-1, R3-2, R3-4]: P21 is open again, because the words-only projection puts three sets near the line, and P25 no longer predicts attainability | 2.7, 2.10, 8 |
++| 17 | major | **Resolved in revision 6.** Everything computable from known numbers is in section 2. The recheck found four remnants [r1v5 §2, #17]: P6 was settled by the rough values; P20 sat exactly on its threshold; P8's second clause was nearly fixed by the C_rel calibration; P24's real ceiling was lower than stated [AppT 2]. P6 is now R22, P8's second clause R23, P20 R24 (gate 3a fires), and P22 and P23 R25 and R26. P24, P25 and P27 are restated. Section 8 counts only quantities that need new runs. **Revision 7** [r2v6 N1, N9, #71]: P21, P24, P25 and P27 are restated on the gate's real ceiling, the rounding family and the lower bound, and P10's held-out part, now roughly known, moves to R29. **Revision 8** [r3v7 R3-1, R3-2]: P21 is restated for the words-only projection, and P25 no longer predicts attainability | 2.7, 2.10, 8 |
+ | 18 | major | **Resolved,** and confirmed. R_anc's season comes from ancient definitions, under four bounds reported with equal prominence, with and without the eclipse clue; the order in which the union was adopted is recorded [r2 R2-11] | 5.3, 2.9 |
+ | 19 | minor | **Resolved,** and confirmed: one Espenak–Meeus model, four in the mixture | 0, 2.3 |
+ | 20 | minor | **Resolved,** and confirmed: A1–A5 are regression tests; I3 is a reported calibration. Revision 6's new tolerances (I5(a), I6, I15(b)) are derived beforehand from documented model differences [acq §1.3], the review's second option. **Revision 8** corrects I2's accuracy statement for the bisection [r3v7 R3-3, R3-11] | 3.4, 6.1 |
+@@ -6121,10 +6126,10 @@
+ 
+ | # | r3v7 | severity | issue | resolution | sections |
+ |---|---|---|---|---|---|
+-| 92 | R3-1 | major | Gate 3b's projection kept three lunar phases that the clue file says are not in the words. A.2, A.5 and B.2 infer their class from planet–Moon proximity, and A.5 also from an opposition, relations the gate holds out. Under 6.4's own words-only rule ALM-A passes about 4.9% of a window's days instead of 0.6%, so the expected pass of gate 3b leaned on rows that favour "the method can see" | **Fixes 1–3.** A.2, A.5 and B.2 go to "none", found by the rows' own "none" options ("the Moon's phase is not stated in words"); only B.7 keeps its class. Revision 7's inferred-phase projection is reported as a sensitivity. Only rows are loosened, so R10's nine truths stand [AppT 2]. `alm_rows.py` and I13(f)'s list are updated, and the held-out rows do not change [me: `alm_rows.py`]. The design-stage narrowing is restated from the recheck's recorded runs: ALM-A 4.88–4.89%, ALM-B 4.40–4.45% (B.2 adds nothing), ALM-H 4.37–4.59% [me: `narrowing_v8.py`]. 2.6, 2.10, R28, P21 and [AppT 2, 6] are restated; S0x and S0y stand, because they already cover gate 3b passing and failing. The lunar-phase component now rests on B.7 alone, and the verdict says so. The held-out positional rows of A.2, A.5 and B.2 are no longer scored inside a pool their coarsened copies filtered | 1.3, 2.6, 2.7, 2.10, 6.4, 8, 9.3, 10.1, 10.3, 10.4, 12.1, 13 row 52, App. T 2, 6 |
++| 92 | R3-1 | major | Gate 3b's projection kept three lunar phases that the clue file says are not in the words. A.2, A.5 and B.2 infer their class from planet–Moon proximity, and A.5 also from an opposition, relations the gate holds out. Under 6.4's own words-only rule ALM-A passes about 4.9% of a window's days instead of 0.6%, so the three rows favoured "the method can see", the claim the gate tests | **Fixes 1–3.** A.2, A.5 and B.2 go to "none", found by the rows' own "none" options ("the Moon's phase is not stated in words"); only B.7 keeps its class. Revision 7's inferred-phase projection is reported as a sensitivity. Only rows are loosened, so R10's nine truths stand [AppT 2]. `alm_rows.py` and I13(f)'s list are updated, and the held-out rows do not change [me: `alm_rows.py`]. The design-stage narrowing is restated from the recheck's recorded runs: ALM-A 4.88–4.89%, ALM-B 4.40–4.45% (B.2 adds nothing), ALM-H 4.37–4.59% [me: `narrowing_v8.py`]. 2.6, 2.10, R28, P21 and [AppT 2, 6] are restated; S0x and S0y stand, because they already cover gate 3b passing and failing. The lunar-phase component now rests on B.7 alone, and the verdict says so. The held-out positional rows of A.2, A.5 and B.2 are no longer scored inside a pool their coarsened copies filtered | 1.3, 2.6, 2.7, 2.10, 6.4, 8, 9.3, 10.1, 10.3, 10.4, 12.1, 13 row 52, App. T 2, 6 |
+ | 93 | R3-2 | major | Q_attain4 read the eclipse condition over the whole core (E_j), but label 4 is scored only in the Odyssey's two fixed windows, so Q_attain4 could stay silent while label 4 was impossible. "About 11 reach-units" was the bound itself, not what it allows | **Fix 1:** Q_attain4 reads hit_j(m̂): some eclipse-compatible reading has, in one of the two windows, a unique survivor with h_tot ≥ m̂, computed on the masked pool at the null-side stage. E_j is reported beside it as context. **Fix 2:** C4, C6, C7, S4, S4b, S14, S14b, P25, 12.3 and 14.6's #71 are restated, and S14c shows E_j ≥ 1 without a hit in the two windows. **Fix 3:** the G condition allows at most 4 targets reached at reach 1 (the Poisson bound is 0.00096 at four and 0.00109 at five), and at most about 8 units however the reach is spread; the bound is about 11.4 units, so the garden must be at least about four times more selective than 𝒢_BM* [me: `outcome4_bound.py`]. No argument makes that plausible, so P25 is restated as open on attainability. **Fix 4:** 4.4 says that m̂ lies 0.0036 below the exact M_Ody, so Q_attain4 errs only towards silence. **Beyond the fix:** the mask hides 16 Apr −1177 from every null-side search, so a negative whose only hit is that date would have hit_j without hit_j(m̂). The rule therefore never prints Q_attain4 beside a label 4, and S4c shows it | 1.3, 2.6, 2.7, 2.10, 4.4, 6.5, 8, 9, 10.2, 10.5, 11.2, 12.3, 13 rows 55 and 66, 14.6 |
+ | 94 | R3-3 | major | I2(c) could not be met reliably. The 2.3 table integrated the first review's 5-s-grid windows; over the continuous window the SMH2016 parabola gives 0.5030 against the printed 0.498, a gap equal to the 0.005 tolerance, where the design budgeted 0.003. The synthetic cases' 10⁻⁴ contradicted the sub-step loss of up to 0.007, and the 0.1-s bisection | **Fix 1:** the 2.3 table is recomputed over the continuous windows that the recheck bisected to 0.01 s [r3v7: i2c_table_gap.py]. For 1178 BC: 0.297, 0.175, 0.503 and 0.255, mixture 0.308; for 1131 BC: 0.496, 0.643, 0.446 and 0.414, mixture 0.500; joints 0.051–0.113 [me: `i2c_table.py`, which reproduces revision 7's table exactly on the grid windows]. The tolerance stays 0.005, and the accuracy column is corrected: a correct implementation lands within about 0.002. 2.7's two rows on these values are updated; R7's bounds still hold (the Addendum's joint is at most 0.060 under a 40-s frame shift). **Fix 2:** the sub-step cases are measured, not passed; the other synthetic cases are bisected to 0.01 s, where the bound is 7.4 × 10⁻⁶ per boundary. **Fix 3:** 2.3 and 4.4 say that 0.304, and so m̂, are grid-window values, and that the exact mixture is 0.308 | 2.3, 2.7, 4.4, 6.1, 10.2, 10.4, 13 row 66 |
+-| 95 | R3-4 | minor | P21 was nearly determined by known numbers [AppT 6]. By the rule that moved P10's held-out part to R29, it was a regression expectation | **Lapses with #92**, as the recheck said it would. With A.2, A.5 and B.2 at "none", ALM-A passes about 4.9% of days, so three sets lie near the line and P21 is open again. 2.7 records revision 7's P21 as nearly determined, and P21 is restated | 2.7, 2.10, 8, App. T 6 |
++| 95 | R3-4 | minor | A point on revision 7's P21 that rests on which sets keep their truth, so it is stated in [AppT 6] | **Answered in [AppT 6].** P21 is restated for revision 8's projection (8), and 2.7 records revision 7's P21 as restated | 2.7, 2.10, 8, App. T 6 |
+ | 96 | R3-5 | minor | Two definitions could be read differently by the bench and by I16's reference: `same_apparition`'s "visible on Day 0" tests J.4 on the wrong day, and `visible_before_sunrise`'s instant was the Sun at −8° (or the stated hour) in 6.4 but civil dawn in 10.3 | "On the row's own day", in 6.4 and 10.3. One instant rule in both: the hour the row states (A.9), else the Sun at −8° (J.1, K.4). The rough estimate judged A.9 at −8° (4.88%) and at civil dawn (4.90%); its stated hour is not estimated before the freeze, and 2.6 says so | 2.6, 6.4, 10.3, App. T 2 |
+ | 97 | R3-6 | minor | I16's witness rule did not say whose site-search miss fails INSTR, so the reference's coarser search could fail a correct bench | Every miss is resolved to the witnessed value on both sides and listed with the side that made it. A miss by the reference never fails INSTR; a miss by the bench fails it if correcting it changes a seen or strict flag or a set's narrowability; a side that fails at the witness too, outside the tie bands, fails INSTR | 6.1 |
+ | 98 | R3-7 | minor | The 21 null windows could run past the data: a late window loses its linked events (R-THUC reaches 18 war-years, ALM-K 2,902 days), and an early one carries ΔT σ of 2,000–3,700 s | Both of the recheck's fixes. Each set's windows lie in −1000..+300, a range that reads no truth, and each is placed so that every event its rows can link to lies inside −1999..+300. Two of the three windows of the design-stage estimate lie before −1000, and 2.6 says so | 2.6, 6.1, 6.3.2, 10.4, 11.2, 13 row 64 |
+@@ -6149,6 +6154,29 @@
+ weaker reading [r3v7 §3, #82]. Q_exch's six uncorrected tests are a choice,
+ not an error [r3v7 §3, #90].
+ 
++**The check of revision 8** [c8]. An independent check of revision 8, made
++before any public copy of this file existed, found the resolutions above in
++place and one new blocker. The public text described revision 7's P21 in
++words that rest on truth-side facts, so that a public-tier reader could infer
++one of them. No date was involved. The file stays at revision 8, and only
++wording changes:
++
++- 2.7's row for revision 7's P21, and row 95, now say that P21 is restated,
++  and point to [AppT 6];
++- the sentences that said the same in other words now say only that P21 is
++  restated or open, or follow 6.4's wording: the summary at the head of this
++  file, 2.10, section 8 (twice), 14.1 row 17 and row 92;
++- the explanation stays in Appendix T, which also records the words removed
++  and why [AppT 2, 6].
++
++No number, rule, threshold, expectation or label changes. A scratch script
++scans this file for those words on both sides of the Appendix T marker, and
++models what the public statements let a reader deduce, on revision 8 as
++first written and as amended [me:
++`results/design-revision-v8/public_inference.py`]. `check_design.py` now
++fails if such words return above the marker, and `scan_public.py` lists them
++for review.
++
+ ---
+ 
+ ## Sources
+@@ -6197,6 +6225,9 @@
+   `results/design-revision-v8/critique-design-r3.recheck-of-rev7.md`;
+   scripts in `results/critique-design-r3/` (`scan_clues.py`,
+   `narrowing_inferred_phase.py`, `i2c_table_gap.py`).
++- the check of revision 8 [c8], an independent check of this file made before
++  any public copy existed; `results/design-check-v8/` (`check_v8.py` and
++  `test_check_v8.py`, with their outputs).
+ - `data-acquisition.md`, the ephemeris extension, NASA elements, stars and
+   calendar; `results/data-acquisition/`.
+ - `controls-real-drafting.md` and `license-check-controls-real.md`, the real
+@@ -6310,10 +6341,17 @@
+ - `test_scratch.py`: unit tests of every function in these scripts, on
+   hand-built cases;
+ - `check_design.py` and `scan_public.py`: revision 7's mechanical checks
+-  and leak scan, extended to issues 92–102 and the new tags;
++  and leak scan, extended to issues 92–102 and the new tags, and after [c8]
++  to the wording of 14.7's last note;
++- `public_inference.py`, added after [c8], with its tests in
++  `test_public_inference.py`: a scan of this file for wording about revision
++  7's P21 that rests on truth-side facts, and a model of what the public
++  statements let a reader deduce, run on revision 8 as first written
++  (`DESIGN-v8-before-c8.md`, a byte copy) and as amended;
+ - `replace_region.py` and `parts/`: how the longer passages of this file
+   were spliced into revision 7, the rest being direct edits; the full
+-  difference is `design-v7-to-v8.diff`;
++  difference is `design-v7-to-v8.diff`, and the amendment after [c8] is
++  `design-v8-c8.diff`;
+ - `critique-design-r3.recheck-of-rev7.md` and `preserved_sha256.txt`: the
+   byte copy of the recheck, and the hashes of what revision 8 cites.
+ 
+@@ -6625,6 +6663,41 @@
+   narrowed, at most 5 sets can be seen, and gate 3b fires. So if P21 holds,
+   Q_score3b is expected from the meaning alone (S0x); if it fails, the
+   verdict is {3a, 3b} (S0y).
++- **What the public text no longer says** [c8; me:
++  `results/design-revision-v8/public_inference.py`].
++  - **The finding behind R3-4.** The recheck found revision 7's P21 nearly
++    determined by known numbers, with ALM-B its one knife-edge. Under
++    revision 7's projection, of the six sets that can be narrowed and keep
++    their truth, ALM-D, E, F and L passed 0.07–1.03% of days, ALM-A
++    0.54–0.60% through A.2's and A.5's inferred phases alone, and ALM-B
++    4.40–4.45%. ALM-H, as near the line (4.37–4.59%), loses its truth (T2).
++    By the rule that moved P10's held-out part to R29, P21 was then a
++    regression expectation. R3-1 added that gate 3b's expected pass leaned
++    on the inferred phases. With A.2, A.5 and B.2 at "none" P21 has two
++    knife-edges, ALM-A and ALM-B, and R3-4 lapses with #92, as the recheck
++    said it would.
++  - **What revision 8 first printed above the marker.** "ALM-B the
++    knife-edge" and "nearly determined by known numbers" (2.7, 14.7 row 95);
++    "open again" (the head of the file, 2.7, 2.10, section 8, 14.1 row 17,
++    14.7 row 95); "known numbers no longer nearly fix it" (section 8); "not
++    fixed by known numbers" tagged R3-4 (P21); and "the expected pass of
++    gate 3b leaned on" the inferred phases (14.7 row 92). 14.1 row 17 also
++    counted R3-4 under #17, the issue of predictions fixed by known numbers.
++  - **What a reader could infer.** ALM-H's share is unchanged by revision 8,
++    which changed only rows of ALM-A and ALM-B, so it lay as near the line
++    under revision 7's projection. Beside 14.6 row 82's nil margin and S0x,
++    where ALM-B decides the gate, a single knife-edge in revision 7 makes
++    ALM-H an exception in every pair a reader can form: 5 pairs, or 6
++    without row 92's wording, which implied that ALM-A keeps its truth.
++    With 13 row 60's tolerance hint taken at its strongest, only ALM-G and
++    ALM-H remain. After the fix the public statements leave 21 pairs and
++    identify no set; with that hint, 6 pairs, each with ALM-G, which the
++    design already records as inherent (13 row 60). ALM-H's own per-set
++    value (T2b) is a planet–star tolerance, which bears on held-out rows
++    only, not on R10.
++  - The public text now says only that P21 is restated or open, and points
++    here. No public copy had been made, so no public-tier agent read the
++    words removed.
+ - **P24 at the fine step** [r2v6 N6]: B.5 fails at the truth (T2b). If that
+   costs ALM-B its p ≤ 0.05, P24 needs all six other sets that can qualify.
+ - **Gate 3a's narrowable sets** [r2v6 N1]: R-PTOL-BAB, R-PTOL-ALEX,

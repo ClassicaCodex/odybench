@@ -1,0 +1,498 @@
+====================================================================================================
+SET AEN-TROY
+{
+ "set": "AEN-TROY",
+ "role": "negative",
+ "searchable": true,
+ "text": "Virgil, Aeneid 2 (Latin; Aeneas narrates the last night of Troy to Dido)",
+ "text_file": "virgil-aeneid-lat.tsv",
+ "edition_id": 1827,
+ "day0": "Day 0 is the Trojans' festal day at whose end the Greek fleet sails back from Tenedos; Night 0 is the night of the sack; Dawn +1 is Lucifer's rising.",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "observer_places": [
+  {
+   "place": "Troy (Ilium), the city and the mound of ancient Ceres outside it",
+   "words": "tumulum antiquae Cereris sedemque sacratam venimus",
+   "ref": [
+    "2.742",
+    "2.743"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "lat": 39.9575,
+   "lon": 26.2389,
+   "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+  },
+  {
+   "place": "Tenedos (the Greek fleet's departure point)",
+   "words": "a Tenedo",
+   "ref": [
+    "2.255"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "lat": 39.8219,
+   "lon": 26.0289,
+   "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+  }
+ ],
+ "landmarks": [
+  {
+   "place": "Mount Ida, the ridge over which Lucifer rises as seen from Troy: the bearing target of AEN-TROY-07's 'ida' rider, not a place the narrative puts an observer",
+   "words": "iugis summae … Idae",
+   "ref": [
+    "2.801"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "lat": 39.7,
+   "lon": 26.8333,
+   "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+  }
+ ],
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "R-i (moon up)": {
+   "AEN-TROY-02": "i-b",
+   "AEN-TROY-04": "a",
+   "AEN-TROY-05": "none",
+   "AEN-TROY-07": "vis7"
+  },
+  "R-ii (silent moon = conjunction; 2.340 read figuratively)": {
+   "AEN-TROY-02": "ii-a",
+   "AEN-TROY-04": "none",
+   "AEN-TROY-05": "none",
+   "AEN-TROY-07": "vis7"
+  },
+  "R-ii-literal (conjunction, and 2.340 kept: contradictory)": {
+   "AEN-TROY-02": "ii-a",
+   "AEN-TROY-04": "a",
+   "AEN-TROY-05": "none",
+   "AEN-TROY-07": "vis7"
+  },
+  "R-iii (silent moon = not yet up when the fleet sails; up later, so 2.340 is kept)": {
+   "AEN-TROY-02": "iii",
+   "AEN-TROY-04": "a",
+   "AEN-TROY-05": "none",
+   "AEN-TROY-07": "vis7"
+  },
+  "BM-analogue": {
+   "AEN-TROY-02": "ii-a",
+   "AEN-TROY-04": "none",
+   "AEN-TROY-05": "conj",
+   "AEN-TROY-07": "lead90"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "fork",
+   "clue_ids": [
+    "AEN-TROY-02"
+   ],
+   "note": "only reading ii of 2.255 (silens luna = conjunction) gives the Odyssey's Day-0 conjunction; reading i puts a lit moon in the sky instead; reading iii (no Moon up when the fleet sails) is a waning or very young Moon, not a conjunction"
+  },
+  "season_stars": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": "no star or season statement in the night of the sack"
+  },
+  "morning_star": {
+   "status": "text",
+   "clue_ids": [
+    "AEN-TROY-07"
+   ],
+   "note": "Lucifer at Dawn +1, after the anchor (the Odyssey's is five days before it)"
+  },
+  "mercury_turning_point": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": "no Hermes/Mercury in book 2"
+  },
+  "darkness_eclipse": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": "'nox atra' (2.360) and 'caecam noctem' (2.397) describe the night, not a darkening; no eclipse-compatible darkness statement"
+  },
+  "other": {
+   "status": "fork",
+   "clue_ids": [
+    "AEN-TROY-05"
+   ],
+   "note": "Day 0 is a day of public celebration, like Apollo's feast on the Odyssey's Day 0 (Od. 20.156)"
+  }
+ },
+ "notes": "Both readings of 2.255 are pinned, as critique-design issue 15 requires. Under reading ii the moonlight of 2.340 contradicts the conjunction; R-ii drops 2.340, R-ii-literal keeps it. Reading iii (added by the round-2 licence check: the Moon not yet up when the fleet sails) is the one reading under which 2.255 and 2.340 agree; it is pinned as R-iii. Mount Ida, listed in observer_places until round 2, is a landmark for the 'ida' rider and now sits under 'landmarks'.",
+ "eclipse_compatible_options": [
+  "AEN-TROY-02:ii-a",
+  "AEN-TROY-02:ii-b",
+  "AEN-TROY-05:conj"
+ ],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness",
+ "license_check": "edited: Mount Ida moved from observer_places to a new 'landmarks' list (it is the bearing target of AEN-TROY-07's 'ida' rider; the narrative puts no observer there); pinned reading R-iii added for the new option AEN-TROY-02:iii; the day0_phase note and the set notes updated to match"
+}
+ PLACE Troy (Ilium), the city and the mound of ancient Ceres outside it: missing refs []
+   frag exact=True nfc=True where=['(spans rows)']: tumulum antiquae Cereris sedemque sacratam venimus
+      2.740	incertum; nec post oculis est reddita nostris.
+      2.741	Nec prius amissam respexi animumque reflexi,
+   >> 2.742	quam tumulum antiquae Cereris sedemque sacratam
+   >> 2.743	venimus; hic demum collectis omnibus una
+      2.744	defuit, et comites natumque virumque fefellit.
+      2.745	Quem non incusavi amens hominumque deorumque,
+ PLACE Tenedos (the Greek fleet's departure point): missing refs []
+   frag exact=True nfc=True where=['2.255']: a Tenedo
+      2.253	conticuere, sopor fessos complectitur artus:
+      2.254	et iam Argiva phalanx instructis navibus ibat
+   >> 2.255	a Tenedo tacitae per amica silentia lunae
+      2.256	litora nota petens, flammas cum regia puppis
+      2.257	extulerat, fatisque deum defensus iniquis
+----------------------------------------------------------------------------------------------------
+CLUE AEN-TROY-01  kind=time-of-day  level=character speech
+{
+ "set": "AEN-TROY",
+ "clue_id": "AEN-TROY-01",
+ "kind": "time-of-day",
+ "statement": "Nightfall ends Day 0; the Trojans fall asleep on the walls. Night 0 begins.",
+ "licence_words": "Vertitur interea caelum et ruit oceano nox … fusi per moenia Teucri conticuere, sopor fessos complectitur artus",
+ "ref": [
+  "2.250",
+  "2.251",
+  "2.252",
+  "2.253"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [],
+ "narrative_level": "character speech",
+ "notes": "Aeneas' narrative to Dido (true within the fiction; the Odyssey's level E). Fixes the sailing of row 02 in Night 0.",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['2.250']: Vertitur interea caelum et ruit oceano nox
+   frag exact=True nfc=True where=['(spans rows)']: fusi per moenia Teucri conticuere, sopor fessos complectitur artus
+ TEXT:
+      2.246	Tunc etiam fatis aperit Cassandra futuris
+      2.247	ora, dei iussu non umquam credita Teucris.
+      2.248	Nos delubra deum miseri, quibus ultimus esset
+      2.249	ille dies, festa velamus fronde per urbem.
+   >> 2.250	Vertitur interea caelum et ruit oceano nox,
+   >> 2.251	involvens umbra magna terramque polumque
+   >> 2.252	Myrmidonumque dolos; fusi per moenia Teucri
+   >> 2.253	conticuere, sopor fessos complectitur artus:
+      2.254	et iam Argiva phalanx instructis navibus ibat
+      2.255	a Tenedo tacitae per amica silentia lunae
+      2.256	litora nota petens, flammas cum regia puppis
+----------------------------------------------------------------------------------------------------
+CLUE AEN-TROY-02  kind=moon-phase  level=character speech
+{
+ "set": "AEN-TROY",
+ "clue_id": "AEN-TROY-02",
+ "kind": "moon-phase",
+ "statement": "In the first part of Night 0 the Greek fleet sails from Tenedos 'through the friendly silences of the silent moon'.",
+ "licence_words": "et iam Argiva phalanx instructis navibus ibat … a Tenedo tacitae per amica silentia lunae",
+ "ref": [
+  "2.254",
+  "2.255",
+  "2.256"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "i-a",
+   "operational": "the Moon is above the horizon at some instant between the end of evening nautical twilight and local midnight of Night 0, with illuminated fraction >= 0.5",
+   "justification": "reading i: 'amica' lunar light guides the fleet; the >= 0.5 threshold is DESIGN NC2's addition, not in the words; the local-midnight bound is not stated either: it is inferred from the order nightfall (2.250) -> fleet under way (2.254) -> horse opened (2.259) -> 'Tempus erat, quo prima quies ... incipit' (2.268)"
+  },
+  {
+   "option": "i-b",
+   "operational": "the Moon is above the horizon at some instant between the end of evening nautical twilight and local midnight of Night 0 (any phase)",
+   "justification": "reading i without the phase threshold the words do not give; the midnight bound is the same inference as in i-a"
+  },
+  {
+   "option": "i-c",
+   "operational": "the Moon is above the horizon at some instant between the end of evening nautical twilight and the start of morning nautical twilight of Night 0 (any phase)",
+   "justification": "reading i with neither the phase threshold nor the inferred midnight bound: the words put the sailing after nightfall and name no hour"
+  },
+  {
+   "option": "ii-a",
+   "operational": "Day 0 is the date of conjunction (LMT at Troy)",
+   "justification": "reading ii: 'silens luna' is the Moon at conjunction; Pliny NH 16.190 says the day of coitus is called by some interlunium, by others the day of the silent moon [pliny-nh-lat.tsv 16.39.2]; Pliny contrasts 'silente luna' with 'plena' [local key 18.31.3] and pairs it with eclipses [local key 28.7.3]"
+  },
+  {
+   "option": "ii-b",
+   "operational": "conjunction falls within +-1.5 days of local midnight of Night 0 (the Moon invisible: interlunium)",
+   "justification": "reading ii taken as the days of invisibility round conjunction rather than one date"
+  },
+  {
+   "option": "iii",
+   "operational": "the Moon is below the horizon at the end of evening nautical twilight of Night 0 (any phase)",
+   "justification": "reading iii: 'tacitae ... lunae' as a Moon that gives no light because it is not up when the fleet sails after nightfall ('et iam', 2.254, follows 2.250-253); with row 04's 'per lunam' (2.340) kept, it becomes a Moon that rises later in Night 0, the one reading under which rows 02 and 04 agree; the end-of-twilight instant stands for 'after nightfall' and is the checker's choice, since the words name no hour; added by the round-2 licence check"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "'silentia' read as the stillness of night and the Moon as an attribute; the line states no phase"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "The fork that decides whether this negative has the Odyssey's Day-0 anchor. The ancient commentary on the line (Servius) is not in the library and was not read.",
+ "license_check": "edited: the fork lacked a reading the words admit, 'tacitae ... lunae' as a Moon not up (not yet risen, or already set) when the fleet sails; unlike readings i and ii it agrees with 'per lunam' at 2.340 (row 04). Option iii added (not eclipse-compatible) and pinned as R-iii. Round 1's edits (option i-c; the midnight bound stated as an inference) are kept",
+ "license_check_r1": "edited: options i-a and i-b bounded the moonlight by local midnight, which the words do not state (it is inferred from the order 2.250 -> 2.254 -> 2.259 -> 2.268 'prima quies'); the inference is now spelled out in their justifications and option i-c, without the midnight bound, is added"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['2.254']: et iam Argiva phalanx instructis navibus ibat
+   frag exact=True nfc=True where=['2.255']: a Tenedo tacitae per amica silentia lunae
+ TEXT:
+      2.250	Vertitur interea caelum et ruit oceano nox,
+      2.251	involvens umbra magna terramque polumque
+      2.252	Myrmidonumque dolos; fusi per moenia Teucri
+      2.253	conticuere, sopor fessos complectitur artus:
+   >> 2.254	et iam Argiva phalanx instructis navibus ibat
+   >> 2.255	a Tenedo tacitae per amica silentia lunae
+   >> 2.256	litora nota petens, flammas cum regia puppis
+      2.257	extulerat, fatisque deum defensus iniquis
+      2.258	inclusos utero Danaos et pinea furtim
+      2.259	laxat claustra Sinon. Illos patefactus ad auras
+----------------------------------------------------------------------------------------------------
+CLUE AEN-TROY-03  kind=time-of-day  level=character speech
+{
+ "set": "AEN-TROY",
+ "clue_id": "AEN-TROY-03",
+ "kind": "time-of-day",
+ "statement": "The royal ship raises the fire signal and Sinon lets the men out of the horse; Hector's ghost appears to Aeneas at the hour of first sleep. The fighting then runs to the end of Night 0 ('consumpta nocte', 2.795, row 06).",
+ "licence_words": "flammas cum regia puppis extulerat … laxat claustra Sinon. Illos patefactus ad auras reddit equus … Tempus erat, quo prima quies mortalibus aegris incipit",
+ "ref": [
+  "2.256",
+  "2.257",
+  "2.259",
+  "2.260",
+  "2.268",
+  "2.269",
+  "2.270"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [],
+ "narrative_level": "character speech",
+ "notes": "Time-of-night only; orders rows 02 and 04 within Night 0.",
+ "license_check": "edited: two features of the statement were not in the cited rows: the men leaving the horse (now quoted from 2.259-260, refs added) and 'the sack fills the rest of Night 0', which rests on 'consumpta nocte' (2.795) and is now attributed to row 06. No option; ordering only",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: flammas cum regia puppis extulerat
+   frag exact=True nfc=True where=['(spans rows)']: laxat claustra Sinon. Illos patefactus ad auras reddit equus
+   frag exact=True nfc=True where=['(spans rows)']: Tempus erat, quo prima quies mortalibus aegris incipit
+ TEXT:
+      2.252	Myrmidonumque dolos; fusi per moenia Teucri
+      2.253	conticuere, sopor fessos complectitur artus:
+      2.254	et iam Argiva phalanx instructis navibus ibat
+      2.255	a Tenedo tacitae per amica silentia lunae
+   >> 2.256	litora nota petens, flammas cum regia puppis
+   >> 2.257	extulerat, fatisque deum defensus iniquis
+      2.258	inclusos utero Danaos et pinea furtim
+   >> 2.259	laxat claustra Sinon. Illos patefactus ad auras
+   >> 2.260	reddit equus, laetique cavo se robore promunt
+      2.261	Thessandrus Sthenelusque duces, et dirus Ulixes,
+      2.262	demissum lapsi per funem, Acamasque, Thoasque,
+      2.263	Pelidesque Neoptolemus, primusque Machaon,
+      2.264	et Menelaus, et ipse doli fabricator Epeos.
+      2.265	Invadunt urbem somno vinoque sepultam;
+      2.266	caeduntur vigiles, portisque patentibus omnis
+      2.267	accipiunt socios atque agmina conscia iungunt.
+   >> 2.268	Tempus erat, quo prima quies mortalibus aegris
+   >> 2.269	incipit, et dono divom gratissima serpit.
+   >> 2.270	In somnis, ecce, ante oculos maestissimus Hector
+      2.271	visus adesse mihi, largosque effundere fletus,
+      2.272	raptatus bigis, ut quondam, aterque cruento
+      2.273	pulvere, perque pedes traiectus lora tumentis.
+----------------------------------------------------------------------------------------------------
+CLUE AEN-TROY-04  kind=moon-phase  level=character speech
+{
+ "set": "AEN-TROY",
+ "clue_id": "AEN-TROY-04",
+ "kind": "moon-phase",
+ "statement": "During the fighting of Night 0 Rhipeus, Epytus, Hypanis and Dymas join Aeneas, 'met by the moon'.",
+ "licence_words": "Addunt se socios Rhipeus et maximus armis … Epytus oblati per lunam",
+ "ref": [
+  "2.339",
+  "2.340"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "the Moon is above the horizon at some instant between the end of evening nautical twilight and the start of morning nautical twilight of Night 0",
+   "justification": "'per lunam': they appear by moonlight"
+  },
+  {
+   "option": "b",
+   "operational": "as a, with illuminated fraction >= 0.5 at that instant",
+   "justification": "they are recognised by the light, which a thin crescent would not give; the threshold is the drafter's"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "'per lunam' read as 'by night'; the same night is 'nox atra' (2.360) and 'caeca' (2.397)"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "Incompatible with reading ii of row 02 (a Moon at conjunction is not up at night). See pinned readings.",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['2.339']: Addunt se socios Rhipeus et maximus armis
+   frag exact=True nfc=True where=['2.340']: Epytus oblati per lunam
+ TEXT:
+      2.335	portarum vigiles, et caeco Marte resistunt.
+      2.336	Talibus Othryadae dictis et numine divom
+      2.337	in flammas et in arma feror, quo tristis Erinys,
+      2.338	quo fremitus vocat et sublatus ad aethera clamor.
+   >> 2.339	Addunt se socios Rhipeus et maximus armis
+   >> 2.340	Epytus oblati per lunam Hypanisque Dymasque,
+      2.341	et lateri adglomerant nostro, iuvenisque Coroebus,
+      2.342	Mygdonides: illis ad Troiam forte diebus
+      2.343	venerat, insano Cassandrae incensus amore,
+----------------------------------------------------------------------------------------------------
+CLUE AEN-TROY-05  kind=other  level=character speech
+{
+ "set": "AEN-TROY",
+ "clue_id": "AEN-TROY-05",
+ "kind": "other",
+ "statement": "Day 0, the last day of Troy, is a day of public celebration: the Trojans deck the shrines with festal foliage.",
+ "licence_words": "quibus ultimus esset ille dies, festa velamus fronde per urbem",
+ "ref": [
+  "2.248",
+  "2.249"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "conj",
+   "operational": "Day 0 is a conjunction date (LMT at Troy)",
+   "justification": "analogy only: B&M read Apollo's feast on the Odyssey's Day 0 as a new-moon feast through a scholion citing Philochorus [txt 5.3]; no source ties this celebration to the Moon"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the text gives the celebration a cause (the Greeks' apparent departure), not a calendar date"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: quibus ultimus esset ille dies, festa velamus fronde per urbem
+ TEXT:
+      2.244	instamus tamen inmemores caecique furore,
+      2.245	et monstrum infelix sacrata sistimus arce.
+      2.246	Tunc etiam fatis aperit Cassandra futuris
+      2.247	ora, dei iussu non umquam credita Teucris.
+   >> 2.248	Nos delubra deum miseri, quibus ultimus esset
+   >> 2.249	ille dies, festa velamus fronde per urbem.
+      2.250	Vertitur interea caelum et ruit oceano nox,
+      2.251	involvens umbra magna terramque polumque
+      2.252	Myrmidonumque dolos; fusi per moenia Teucri
+----------------------------------------------------------------------------------------------------
+CLUE AEN-TROY-06  kind=interval  level=character speech
+{
+ "set": "AEN-TROY",
+ "clue_id": "AEN-TROY-06",
+ "kind": "interval",
+ "statement": "Lucifer's rising (row 07) comes at the end of Night 0, after the night is spent: it is Dawn +1.",
+ "licence_words": "Sic demum socios consumpta nocte reviso … Iamque",
+ "ref": [
+  "2.795",
+  "2.801"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [],
+ "narrative_level": "character speech",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['2.795']: Sic demum socios consumpta nocte reviso
+   frag exact=True nfc=True where=['2.801']: Iamque
+ TEXT:
+      2.791	dicere deseruit, tenuisque recessit in auras.
+      2.792	Ter conatus ibi collo dare bracchia circum:
+      2.793	ter frustra comprensa manus effugit imago,
+      2.794	par levibus ventis volucrique simillima somno.
+   >> 2.795	Sic demum socios consumpta nocte reviso.
+      2.796	Atque hic ingentem comitum adfluxisse novorum
+      2.797	invenio admirans numerum, matresque virosque,
+      2.798	collectam exsilio pubem, miserabile volgus.
+      2.799	Undique convenere, animis opibusque parati,
+      2.800	in quascumque velim pelago deducere terras.
+   >> 2.801	Iamque iugis summae surgebat Lucifer Idae
+      2.802	ducebatque diem, Danaique obsessa tenebant
+      2.803	limina portarum, nec spes opis ulla dabatur;
+      2.804	cessi, et sublato montes genitore petivi.
+----------------------------------------------------------------------------------------------------
+CLUE AEN-TROY-07  kind=planet  level=character speech
+{
+ "set": "AEN-TROY",
+ "clue_id": "AEN-TROY-07",
+ "kind": "planet",
+ "statement": "At Dawn +1 Lucifer was rising over the ridges of highest Ida and leading in the day, seen by Aeneas at the mound of Ceres outside Troy.",
+ "licence_words": "Iamque iugis summae surgebat Lucifer Idae ducebatque diem",
+ "ref": [
+  "2.801",
+  "2.802"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "lead60",
+   "operational": "Venus rises at least 60 min before the Sun on Dawn +1 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)",
+   "justification": "the morning star taken as Venus; lowest lead threshold of the Odyssey's F4 menu [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "lead90",
+   "operational": "Venus rises at least 90 min before the Sun on Dawn +1",
+   "justification": "B&M's own threshold for Od. 13.93-95 [DESIGN 1.1, criterion V]"
+  },
+  {
+   "option": "lead120",
+   "operational": "Venus rises at least 120 min before the Sun on Dawn +1",
+   "justification": "strict end of the F4 menu [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "vis7",
+   "operational": "Venus visible as a morning object on Dawn +1 (arcus visionis 7 deg)",
+   "justification": "the words name a morning star, not a lead; visibility is the least-inference reading [vis 1.2]"
+  },
+  {
+   "option": "herald",
+   "operational": "some bright dawn herald visible before sunrise on Dawn +1: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)",
+   "justification": "the text does not say which star; the Odyssey's F4 menu allows any bright herald [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the dawn star is a traditional time-marker for the last hour of night (Od. 13.93-95 and Il. 23.226-228 use the same device) [txt 5.7]"
+  },
+  {
+   "option": "ida",
+   "operational": "Venus's rising azimuth on Dawn +1, seen from Troy, lies within +-15 deg (variant +-30 deg) of the bearing of the Ida summit, 119 deg [me: great-circle bearing from Troy's coordinates in observer_places to Ida's in landmarks]",
+   "justification": "'iugis ... Idae' puts the rising over Ida; the bearing and its tolerance are the drafter's geography, not the text. At 40 deg N an azimuth of 119 deg needs a declination near -22 deg"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "'ida' is a rider that can be combined with any non-none F4 option. Latin Lucifer is the planet Venus as morning star, so 'vis7' is the least-inference reading.",
+ "license_check": "edited: the 'ida' rider cited the Ida coordinates as part of observer_places; Ida is now under the set's 'landmarks' (set-level edit: the narrative puts no observer on Ida), and the citation is updated. Operational content, the 119-deg bearing and the rider's other text are unchanged",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: Iamque iugis summae surgebat Lucifer Idae ducebatque diem
+ TEXT:
+      2.797	invenio admirans numerum, matresque virosque,
+      2.798	collectam exsilio pubem, miserabile volgus.
+      2.799	Undique convenere, animis opibusque parati,
+      2.800	in quascumque velim pelago deducere terras.
+   >> 2.801	Iamque iugis summae surgebat Lucifer Idae
+   >> 2.802	ducebatque diem, Danaique obsessa tenebant
+      2.803	limina portarum, nec spes opis ulla dabatur;
+      2.804	cessi, et sublato montes genitore petivi.
+      3.1	Postquam res Asiae Priamique evertere gentem

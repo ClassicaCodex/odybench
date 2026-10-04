@@ -1,0 +1,22 @@
+conjunction -1177-03-18 09:11:04 TT (18 Mar 1178 BC, proleptic Julian) | UT+2 with dT 27602.7 s: 03:31.0 | UT+2 with SMH2020: 03:15.2 (dT 28553 s)
+conjunction -1177-04-16 18:05:10 TT (16 Apr 1178 BC, proleptic Julian) | UT+2 with dT 27602.7 s: 12:25.1 | UT+2 with SMH2020: 12:09.3 (dT 28553 s)
+vernal equinox -1177-04-01 21:11:31 TT (1 Apr 1178 BC, proleptic Julian) | UT+2 (dT 27602.7): 15:31.5 B&M: 1 Apr 3:24 p.m.
+Sun at -12 deg (airless) on 18 Mar 1178 BC: 19:34.0 B&M Fig. 2: 7:38 p.m.
+eclipse at 38.4N 20.7E, dT=27603 s: max 12:48.3 UT+2 = 12:11.1 LMT, LAT 12.17 h, magnitude 0.901, total False, duration 0 s, Sun alt 57.2
+eclipse at 38.4N 20.7E, dT=28589 s: max 12:25.7 UT+2 = 11:48.5 LMT, LAT 11.79 h, magnitude 0.976, total False, duration 0 s, Sun alt 57.2
+eclipse at 38.4N 20.7E, dT=28543 s: max 12:26.8 UT+2 = 11:49.6 LMT, LAT 11.81 h, magnitude 0.973, total False, duration 0 s, Sun alt 57.2
+1178 Ti-36                             Mercury rises 06:11.0 UT+2, az 112.20, Sun alt then -13.19 deg, elongation 25.2, V +0.81 (phase angle 113)
+1178 Ti-35 (B&M: not visible)          Mercury rises 06:09.0 UT+2, az 112.16, Sun alt then -13.29 deg, elongation 25.7, V +0.75 (phase angle 111)
+1178 Ti-34 (B&M: heliacal rising)      Mercury rises 06:08.0 UT+2, az 112.20, Sun alt then -13.19 deg, elongation 26.1, V +0.70 (phase angle 109)
+1178 Ti-33 (parallel)                  Mercury rises 06:07.0 UT+2, az 112.18, Sun alt then -13.10 deg, elongation 26.4, V +0.65 (phase angle 106)
+1189 Ti-35                             Mercury rises 06:21.0 UT+2, az 120.46, Sun alt then -17.49 deg, elongation 27.4, V +0.19 (phase angle 80)
+1189 Ti-34 = DE441 MWRA                Mercury rises 06:22.0 UT+2, az 120.44, Sun alt then -17.14 deg, elongation 27.2, V +0.17 (phase angle 78)
+1190 Ti-34                             Mercury rises 06:16.0 UT+2, az 117.85, Sun alt then -16.32 deg, elongation 27.5, V +0.44 (phase angle 97)
+1157 Ti-34                             Mercury rises 06:17.0 UT+2, az 117.78, Sun alt then -17.17 deg, elongation 26.7, V +0.52 (phase angle 102)
+1111 Ti-34                             Mercury rises 06:16.0 UT+2, az 117.79, Sun alt then -16.78 deg, elongation 27.2, V +0.47 (phase angle 99)
+Paliki ~38.25N 20.40E, dT=27603 s: max 12:47.6 UT+2, magnitude 0.904, total False, duration 0 s
+Paliki ~38.25N 20.40E, dT=28590 s: max 12:25.0 UT+2, magnitude 0.979, total False, duration 0 s
+Paliki ~38.25N 20.40E, dT=28907 s: max 12:17.8 UT+2, magnitude 1.003, total True, duration 105 s
+Ithaca 38.37N 20.72E, dT=27603 s: max 12:48.3 UT+2, magnitude 0.900, total False, duration 0 s
+Ithaca 38.37N 20.72E, dT=28590 s: max 12:25.7 UT+2, magnitude 0.975, total False, duration 0 s
+Ithaca 38.37N 20.72E, dT=28907 s: max 12:18.5 UT+2, magnitude 0.999, total False, duration 0 s

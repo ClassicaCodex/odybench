@@ -1,0 +1,88 @@
+{
+ "Cius (ancient city)": "missing",
+ "Ancient Cius": "missing",
+ "Mount Gargaros": "missing",
+ "Kaz Mountains": "missing",
+ "Ida (mountain)": "missing",
+ "Aci Castello": [
+  [
+   37.55555556,
+   15.14583333,
+   ""
+  ]
+ ],
+ "Anafi": [
+  [
+   36.37194444,
+   25.79527778,
+   ""
+  ]
+ ],
+ "Cape Sideros": null,
+ "Ceraunian Mountains": null,
+ "Cyrene, Libya": [
+  [
+   32.8225,
+   21.8625,
+   ""
+  ]
+ ],
+ "Gazipaşa": [
+  [
+   36.27277778,
+   32.31305556,
+   ""
+  ]
+ ],
+ "Gemlik": [
+  [
+   40.43166667,
+   29.15611111,
+   ""
+  ]
+ ],
+ "Giresun Island": [
+  [
+   40.92888889,
+   38.43611111,
+   ""
+  ]
+ ],
+ "Lefkada": [
+  [
+   38.71666667,
+   20.65,
+   ""
+  ]
+ ],
+ "Myrina, Greece": [
+  [
+   39.88333333,
+   25.06666667,
+   ""
+  ]
+ ],
+ "Strofades": [
+  [
+   37.25,
+   21,
+   ""
+  ]
+ ],
+ "Cape Caphereus": null,
+ "Cius": [
+  [
+   40.432468,
+   29.156389,
+   ""
+  ]
+ ],
+ "Kapıdağ Peninsula": null,
+ "Karaburun Peninsula, Albania": null,
+ "_redirects": {
+  "Kios": "Cius",
+  "Kapıdağ": "Kapıdağ Peninsula",
+  "Cape Kafireas": "Cape Caphereus",
+  "Karaburun Peninsula (Albania)": "Karaburun Peninsula, Albania"
+ }
+}

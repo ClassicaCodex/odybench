@@ -1,0 +1,78 @@
+1. byte identity with earlier downloads
+PASS program.js == results\window\jsex\program.js
+PASS program.js == data\refs\nasa\JSEX-program.js
+PASS SEm1499.js == results\window\jsex\SEm1499.js
+PASS SEm1399.js == results\window\jsex\SEm1399.js
+PASS SEm1399.js == data\refs\nasa\JSEX-SEm1399.js
+PASS SEm1299.js == results\window\jsex\SEm1299.js
+PASS SEm1299.js == data\refs\nasa\JSEX-SEm1299.js
+PASS SEm1199.js == results\window\jsex\SEm1199.js
+PASS SEm1199.js == data\refs\nasa\JSEX-SEm1199.js
+PASS SEm1099.js == results\window\jsex\SEm1099.js
+PASS SEm1099.js == data\refs\nasa\JSEX-SEm1099.js
+PASS SEm0999.js == results\window\jsex\SEm0999.js
+PASS SEm0899.js == results\window\jsex\SEm0899.js
+PASS SEm0799.js == results\window\jsex\SEm0799.js
+PASS SEm0699.js == results\window\jsex\SEm0699.js
+PASS SEm0699.js == data\refs\nasa\JSEX-SEm0699.js
+PASS SEm0599.js == data\refs\nasa\JSEX-SEm0599.js
+PASS SEm0499.js == data\refs\nasa\JSEX-SEm0499.js
+
+5. coverage: 5486 eclipses in 23 century files
+   SEm1999: 239
+   SEm1899: 253
+   SEm1799: 254
+   SEm1699: 230
+   SEm1599: 225
+   SEm1499: 226
+   SEm1399: 234
+   SEm1299: 250
+   SEm1199: 252
+   SEm1099: 238
+   SEm0999: 226
+   SEm0899: 225
+   SEm0799: 234
+   SEm0699: 253
+   SEm0599: 255
+   SEm0499: 241
+   SEm0399: 225
+   SEm0299: 226
+   SEm0199: 237
+   SEm0099: 251
+   SE0001: 248
+   SE0101: 237
+   SE0201: 227
+   first T0 -1999-06-12 03:14:51 TT (12 Jun 2000 BC, proleptic Julian); last T0 +0300-10-29 12:00:54 TT (29 Oct AD 300, proleptic Julian)
+PASS span -1999..+300
+
+3. element Delta-T vs the Canon's rule dt_em2006_canon(decimal year)
+   decimal year y + (m - 0.5)/12 (NASA deltatpoly page):        max |diff| 1.06 s
+   decimal year y + (day of year - 1 + h/24)/days in year:   max |diff| 0.15 s (elements print 0.1 s)
+PASS element Delta-T = Canon rule at the day-resolved decimal year, max 0.15 s over 5486 rows
+
+4. NASA catalogue pages vs element files
+PASS SE-1599--1500.html: catalogue 225 eclipses, element rows in century 225, matched 225; max |dTD| 0.5 s, |dDeltaT| 0.50 s, |dgamma| 0.00005
+PASS SE-1699--1600.html: catalogue 230 eclipses, element rows in century 230, matched 230; max |dTD| 0.5 s, |dDeltaT| 0.50 s, |dgamma| 0.00005
+PASS SE-1799--1700.html: catalogue 254 eclipses, element rows in century 254, matched 254; max |dTD| 0.5 s, |dDeltaT| 0.50 s, |dgamma| 0.00005
+PASS SE-1899--1800.html: catalogue 253 eclipses, element rows in century 253, matched 253; max |dTD| 0.5 s, |dDeltaT| 0.50 s, |dgamma| 0.00005
+PASS SE-1999--1900.html: catalogue 239 eclipses, element rows in century 239, matched 239; max |dTD| 0.5 s, |dDeltaT| 0.50 s, |dgamma| 0.00005
+PASS SEcat5_SE-1099--1000.html: catalogue 238 eclipses, element rows in century 238, matched 238; max |dTD| 0.5 s, |dDeltaT| 0.50 s, |dgamma| 0.00005
+PASS SEcat5_SE-1199--1100.html: catalogue 252 eclipses, element rows in century 252, matched 252; max |dTD| 0.5 s, |dDeltaT| 0.50 s, |dgamma| 0.00005
+PASS SEcat5_SE-1299--1200.html: catalogue 250 eclipses, element rows in century 250, matched 250; max |dTD| 0.5 s, |dDeltaT| 0.50 s, |dgamma| 0.00005
+
+2. site catalogue -1499..-600 vs results/window/jsex/<site>.jsonl
+PASS ithaca: 2138 rows of SEm0699.js..SEm1499.js identical to the window catalogue (5486 rows in all)
+PASS kefalonia: 2138 rows of SEm0699.js..SEm1499.js identical to the window catalogue (5486 rows in all)
+PASS lefkada: 2138 rows of SEm0699.js..SEm1499.js identical to the window catalogue (5486 rows in all)
+PASS corfu: 2138 rows of SEm0699.js..SEm1499.js identical to the window catalogue (5486 rows in all)
+PASS zakynthos: 2138 rows of SEm0699.js..SEm1499.js identical to the window catalogue (5486 rows in all)
+
+-1177 Apr 16 at Ithaca: type 1 mag 0.984 utH 10.374 LAT 11.739 alt 57.16 sigma 1008 (huber2000)  [research-window: mag 0.984, about 11:44 LAT]
+PASS 1178 BC Ithaca magnitude 0.984 as in research-window
+
+class counts at Ithaca by span (nominal total & Sun up; total within +-1 sigma):
+   -1999..-1500: 1201 eclipses; total nominal 0; total within 1 sigma 7
+   -1499..-600: 2138 eclipses; total nominal 6; total within 1 sigma 10
+   -599..300: 2147 eclipses; total nominal 3; total within 1 sigma 4
+
+ALL PASS

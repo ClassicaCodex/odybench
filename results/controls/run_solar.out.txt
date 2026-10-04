@@ -1,0 +1,26 @@
+Odyssey/B&M -1177 Apr 16       | Ithaca                 | dT_H=28418s max=0.961 sunUp=0.961 -1177 04 16 10:29UT LMT 11:52 sunEl=57.3 | dT_NASA=28590s max=0.974 sunUp=0.974 LMT 11:48 sunEl=57.2
+Odyssey/B&M dT=B&M 27602.7     | Ithaca                 | dT_H=28418s max=0.962 sunUp=0.962 -1177 04 16 10:29UT LMT 11:52 sunEl=57.3 | dT_NASA=27603s max=0.900 sunUp=0.900 LMT 12:10 sunEl=57.3
+Assyrian eponym -762 Jun 15    | Assur                  | dT_H=21118s max=0.951 sunUp=0.951 -762 06 15 07:52UT LMT 10:45 sunEl=70.7 | dT_NASA=21211s max=0.953 sunUp=0.953 LMT 10:43 sunEl=70.3
+Assyrian eponym -762 Jun 15    | Nineveh                | dT_H=21118s max=0.979 sunUp=0.979 -762 06 15 07:54UT LMT 10:47 sunEl=70.4 | dT_NASA=21211s max=0.982 sunUp=0.982 LMT 10:43 sunEl=69.7
+Archilochus -647 Apr 06        | Thasos                 | dT_H=19273s max=1.004 TOTAL sunUp=1.004 -647 04 06 08:13UT LMT 09:52 sunEl=42.5 | dT_NASA=19364s max=1.000 sunUp=1.000 LMT 09:50 sunEl=42.2
+Archilochus -647 Apr 06        | Paros                  | dT_H=19273s max=0.988 sunUp=0.988 -647 04 06 08:07UT LMT 09:48 sunEl=44.3 | dT_NASA=19364s max=0.992 sunUp=0.992 LMT 09:46 sunEl=44.0
+Thales -584 May 28             | Halys (approx. Kizilirmak crossing) | dT_H=18282s max=0.969 sunUp=0.969 -584 05 28 16:00UT LMT 18:16 sunEl=8.2 | dT_NASA=18384s max=0.974 sunUp=0.974 LMT 18:14 sunEl=8.6
+Thales alt -609 Sep 30         | Halys (approx.)        | dT_H=18667s max=0.699 sunUp=0.699 -609 09 30 06:51UT LMT 09:07 sunEl=35.2 | dT_NASA=18764s max=0.696 sunUp=0.696 LMT 09:05 sunEl=34.9
+Thales alt -602 May 18         | Halys (approx.)        | dT_H=18563s max=0.572 sunUp=0.572 -602 05 18 06:23UT LMT 08:39 sunEl=43.2 | dT_NASA=18661s max=0.566 sunUp=0.566 LMT 08:37 sunEl=42.8
+Hdt 9.10 -479 Oct 02           | Isthmus of Corinth     | dT_H=16678s max=0.600 sunUp=0.600 -479 10 02 12:05UT LMT 13:37 sunEl=43.8 | dT_NASA=16741s max=0.602 sunUp=0.602 LMT 13:35 sunEl=44.0
+Hdt 7.37 cand -479 Oct 02      | Sardis                 | dT_H=16678s max=0.546 sunUp=0.546 -479 10 02 12:15UT LMT 14:07 sunEl=39.4 | dT_NASA=16741s max=0.548 sunUp=0.548 LMT 14:05 sunEl=39.7
+Hdt 7.37 cand -480 Apr 19      | Sardis                 | dT_H=16699s max=-0.007 sunUp=-0.007 -480 04 19 03:32UT LMT 05:24 sunEl=-1.0 | dT_NASA=16766s max=-0.008 sunUp=-0.009 LMT 05:24 sunEl=-1.0
+Hdt 7.37 cand -477 Feb 17      | Sardis                 | dT_H=16657s max=0.945 sunUp=0.945 -477 02 17 10:21UT LMT 12:13 sunEl=37.5 | dT_NASA=16717s max=0.948 sunUp=0.948 LMT 12:11 sunEl=37.5
+Pindar Pae.9 -462 Apr 30       | Thebes                 | dT_H=16432s max=0.975 sunUp=0.975 -462 04 30 13:02UT LMT 14:36 sunEl=46.3 | dT_NASA=16456s max=0.976 sunUp=0.976 LMT 14:36 sunEl=46.3
+Thuc 2.28 -430 Aug 03          | Athens                 | dT_H=15958s max=0.875 sunUp=0.875 -430 08 03 15:59UT LMT 17:34 sunEl=17.3 | dT_NASA=15923s max=0.877 sunUp=0.877 LMT 17:34 sunEl=17.3
+Thuc 4.52 -423 Mar 21          | Athens                 | dT_H=15861s max=0.704 sunUp=0.704 -423 03 21 07:06UT LMT 08:41 sunEl=27.6 | dT_NASA=15817s max=0.703 sunUp=0.703 LMT 08:43 sunEl=28.0
+Ennius -399 Jun 21             | Rome                   | dT_H=15511s max=0.994 sunUp=0.739 -399 06 21 18:55UT LMT 19:45 sunEl=-2.7 | dT_NASA=15437s max=0.995 sunUp=0.717 LMT 19:45 sunEl=-2.7
+Pelopidas -363 Jul 13          | Thebes                 | dT_H=14999s max=0.672 sunUp=0.672 -363 07 13 07:41UT LMT 09:14 sunEl=51.5 | dT_NASA=14894s max=0.668 sunUp=0.668 LMT 09:16 sunEl=51.9
+Agathocles -309 Aug 15         | Syracuse               | dT_H=14249s max=0.998 sunUp=0.998 -309 08 15 06:35UT LMT 07:37 sunEl=28.1 | dT_NASA=14127s max=0.995 sunUp=0.995 LMT 07:39 sunEl=28.5
+Livy 37.4.4 -189 Mar 14        | Rome                   | dT_H=12680s max=0.919 sunUp=0.919 -189 03 14 06:28UT LMT 07:18 sunEl=9.4 | dT_NASA=12597s max=0.919 sunUp=0.919 LMT 07:20 sunEl=9.7
+Livy 38.36.4 -187 Jul 17       | Rome                   | dT_H=12651s max=0.990 sunUp=0.990 -187 07 17 05:26UT LMT 06:16 sunEl=17.2 | dT_NASA=12569s max=0.993 sunUp=0.993 LMT 06:16 sunEl=17.2
+Tarutius/Romulus -771 Jun 24   | Rome                   | dT_H=21265s max=0.000 sunUp=0.000 -771 06 24 07:25UT LMT 08:15 sunEl=41.2 | dT_NASA=21358s max=0.005 sunUp=0.005 LMT 08:13 sunEl=40.9
+De facie 71 Mar 20             | Chaeronea              | dT_H=9734s max=0.986 sunUp=0.986 71 03 20 09:29UT LMT 11:00 sunEl=47.5 | dT_NASA=9830s max=0.979 sunUp=0.979 LMT 10:58 sunEl=47.3
+Ugarit cand -1222 Mar 05       | Ugarit                 | dT_H=29276s max=0.914 sunUp=0.914 -1222 03 05 11:40UT LMT 14:03 sunEl=37.7 | dT_NASA=29458s max=0.923 sunUp=0.923 LMT 13:59 sunEl=38.1
+Ugarit cand -1374 May 03       | Ugarit                 | dT_H=32260s max=0.967 sunUp=0.967 -1374 05 03 03:49UT LMT 06:12 sunEl=10.0 | dT_NASA=32475s max=0.970 sunUp=0.970 LMT 06:08 sunEl=9.2
+Mursili cand -1311 Jun 24      | Hattusa                | dT_H=31001s max=0.991 sunUp=0.991 -1311 06 24 11:19UT LMT 13:37 sunEl=62.4 | dT_NASA=31203s max=0.991 sunUp=0.991 LMT 13:33 sunEl=63.1

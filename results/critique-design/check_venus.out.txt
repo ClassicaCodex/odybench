@@ -1,0 +1,2 @@
+-1177 4 11 sunrise UT+2 6:24:13 Venus rise 4:40:34 lead 103.6 min
+-1188 3 13 sunrise UT+2 7:10:14 Venus rise 5:29:17 lead 100.9 min

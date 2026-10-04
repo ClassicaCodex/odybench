@@ -1,0 +1,528 @@
+#### SET R-XEN
+-- observer_place {"events": ["X1"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "unstated; forks in X1-SITE"}
+-- observer_place {"events": ["X2"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "unstated; forks in X2-SITE"}
+-- observer_place {"events": ["X3"], "place": "Agesilaus' army at the entry into Boeotia, coming from Phthiotis", "licence_words": ["ὄντος δʼ αὐτοῦ ἐπὶ τῇ ἐμβολῇ", "μέχρι πρὸς τὰ Βοιωτῶν ὅρια"], "ref": ["urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.4.3.10.1", "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.4.3.9.1"], "text_file": ["data/text/xenophon-hellenica-grc.tsv", "data/text/xenophon-hellenica-grc.tsv"], "search_coordinates": {"lat": 38.5, "lon": 22.85}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name; the Boeotian frontier towards Phocis, near Chaeronea and Coronea (4.3.15)"}
+   CHECK exact | ὄντος δʼ αὐτοῦ ἐπὶ τῇ ἐμβολῇ | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.4.3.10.1
+   CHECK exact | μέχρι πρὸς τὰ Βοιωτῶν ὅρια | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.4.3.9.1
+
+====================================================================================================
+{
+ "set": "R-XEN",
+ "clue_id": "X1-ECL",
+ "event": "X1",
+ "kind": "eclipse-lunar",
+ "feature": "occurrence",
+ "statement": "X1: the Moon was eclipsed in the evening, in the same year as the burning of the old temple of Athena at Athens.",
+ "licence_words": [
+  "ἥ τε σελήνη ἐξέλιπεν ἑσπέρας"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.1.6.1.1"
+ ],
+ "text_file": [
+  "data/text/xenophon-hellenica-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "use",
+   "reading": "umbral lunar eclipse (umag > 0), Moon above the horizon at the observer during part of the umbral phase",
+   "justification": "as written",
+   "operational": {
+    "umag": [
+     0.0,
+     null
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "penumbral-deep",
+   "reading": "umbral, or penumbral with penumbral magnitude >= 0.7, Moon up at the observer",
+   "justification": "'ἐξέλιπεν' gives no magnitude; the umbral requirement of 'use' is an inference that a recorded eclipse was umbral. Same relaxation and threshold as T3-ECL (drafter's rough threshold, general knowledge)",
+   "operational": {
+    "umag": null,
+    "pmag": [
+     0.7,
+     null
+    ],
+    "moon_up": true
+   },
+   "primary": false
+  },
+  {
+   "option": "exclude",
+   "reading": "drop X1 (heading treated as a gloss)",
+   "justification": "The chronological notices of Hellenica 1-2 (ephors, archons, Olympiads, war-year counts, Sicilian notices) are widely held to be later interpolations [critique-design issue 2 cites ctl §4.4 for this; the drafter did not open that note]. The local text prints them without brackets, and the drafter could not check from it whether the eclipse clause belongs to the gloss.",
+   "operational": {
+    "exclude": true
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (inside a year heading that may be an interpolated gloss)",
+ "notes": "",
+ "license_check": "edited: added the alternative 'penumbral-deep' (as in T3-ECL). 'ἐξέλιπεν ἑσπέρας' states no magnitude, so the umbral requirement in the primary 'use' is an inference, and the row had no option that relaxed it short of dropping X1. Primary unchanged."
+}
+   CHECK exact | ἥ τε σελήνη ἐξέλιπεν ἑσπέρας | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.1.6.1.1
+   ROW [data/text/xenophon-hellenica-grc.tsv] urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.1.6.1.1 :: τῷ δʼ ἐπιόντι ἔτει, ᾧ ἥ τε σελήνη ἐξέλιπεν ἑσπέρας καὶ ὁ παλαιὸς τῆς Ἀθηνᾶς νεὼς ἐν Ἀθήναις ἐνεπρήσθη, Πιτύα μὲν ἐφορεύοντος, ἄρχοντος δὲ Καλλίου Ἀθήνησιν, οἱ Λακεδαιμόνιοι τῷ Λυσάνδρῳ παρεληλυθότος ἤδη τοῦ χρόνου καὶ τῷ πολέμῳ τεττάρων καὶ εἴκοσιν ἐτῶν ἔπεμψαν ἐπὶ τὰς ναῦς Καλλικρατίδαν.
+
+====================================================================================================
+{
+ "set": "R-XEN",
+ "clue_id": "X1-TIME",
+ "event": "X1",
+ "kind": "time-of-day",
+ "feature": "evening",
+ "statement": "X1 'in the evening'.",
+ "licence_words": [
+  "ἑσπέρας"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.1.6.1.1"
+ ],
+ "text_file": [
+  "data/text/xenophon-hellenica-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "early-night",
+   "reading": "some umbral phase visible between sunset and sunset + 3 h at the observer",
+   "justification": "ἑσπέρα = evening; 3 h is the drafter's width",
+   "operational": {
+    "umbral_visible_between_h_after_sunset": [
+     0.0,
+     3.0
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "before-midnight",
+   "reading": "some umbral phase visible before local apparent midnight",
+   "justification": "looser reading of 'evening'",
+   "operational": {
+    "umbral_visible_before_LAT_h": 24.0
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "no timing",
+   "justification": "sensitivity",
+   "operational": {
+    "timing": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (year heading)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ἑσπέρας | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.1.6.1.1
+   ROW [data/text/xenophon-hellenica-grc.tsv] urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.1.6.1.1 :: τῷ δʼ ἐπιόντι ἔτει, ᾧ ἥ τε σελήνη ἐξέλιπεν ἑσπέρας καὶ ὁ παλαιὸς τῆς Ἀθηνᾶς νεὼς ἐν Ἀθήναις ἐνεπρήσθη, Πιτύα μὲν ἐφορεύοντος, ἄρχοντος δὲ Καλλίου Ἀθήνησιν, οἱ Λακεδαιμόνιοι τῷ Λυσάνδρῳ παρεληλυθότος ἤδη τοῦ χρόνου καὶ τῷ πολέμῳ τεττάρων καὶ εἴκοσιν ἐτῶν ἔπεμψαν ἐπὶ τὰς ναῦς Καλλικρατίδαν.
+
+====================================================================================================
+{
+ "set": "R-XEN",
+ "clue_id": "X1-SITE",
+ "event": "X1",
+ "kind": "site",
+ "feature": "observer",
+ "statement": "Where X1 was seen: unstated. The same clause names Athens for the temple fire only.",
+ "licence_words": [
+  "ὁ παλαιὸς τῆς Ἀθηνᾶς νεὼς ἐν Ἀθήναις ἐνεπρήσθη"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.1.6.1.1"
+ ],
+ "text_file": [
+  "data/text/xenophon-hellenica-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "point",
+   "reading": "observer at Athens",
+   "justification": "inference: the clause pairs the eclipse with an Athenian event",
+   "operational": {
+    "site": {
+     "lat": 37.97,
+     "lon": 23.72
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "box",
+   "reading": "observer anywhere inside the box; the clue holds if it holds at some site in the box",
+   "justification": "the theatre of the narrative (Aegean war) (an inference from context; kept as an alternative, no longer primary)",
+   "operational": {
+    "site_box": {
+     "lat": [
+      35.0,
+      41.5
+     ],
+     "lon": [
+      19.5,
+      28.5
+     ]
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "no site: the eclipse need only satisfy the other clues somewhere on Earth",
+   "justification": "the text names no place from which this sky event was seen, and the set records the observer as 'unstated'; by policy 2 the primary option takes no site from narrative context or outside knowledge (licence check, 2026-10-04)",
+   "operational": {
+    "site": null
+   },
+   "primary": true
+  }
+ ],
+ "narrative_level": "narrator (year heading)",
+ "notes": "",
+ "license_check": "edited: primary moved from 'box' (the Aegean box, 'the theatre of the narrative') to 'none'. The text does not say where the event was seen; the set itself records the observer place as 'unstated', and policy 2 bars inference from narrative context or outside knowledge in the primary option. The drafter applied that rule to the narrative-order seasons (X2-SEASON, X3-SEASON, L1-, L2-, L4-DATE: primary 'none') but not to sites. 'box' and the other site options stay as alternatives."
+}
+   CHECK exact | ὁ παλαιὸς τῆς Ἀθηνᾶς νεὼς ἐν Ἀθήναις ἐνεπρήσθη | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.1.6.1.1
+   ROW [data/text/xenophon-hellenica-grc.tsv] urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.1.6.1.1 :: τῷ δʼ ἐπιόντι ἔτει, ᾧ ἥ τε σελήνη ἐξέλιπεν ἑσπέρας καὶ ὁ παλαιὸς τῆς Ἀθηνᾶς νεὼς ἐν Ἀθήναις ἐνεπρήσθη, Πιτύα μὲν ἐφορεύοντος, ἄρχοντος δὲ Καλλίου Ἀθήνησιν, οἱ Λακεδαιμόνιοι τῷ Λυσάνδρῳ παρεληλυθότος ἤδη τοῦ χρόνου καὶ τῷ πολέμῳ τεττάρων καὶ εἴκοσιν ἐτῶν ἔπεμψαν ἐπὶ τὰς ναῦς Καλλικρατίδαν.
+
+====================================================================================================
+{
+ "set": "R-XEN",
+ "clue_id": "X2-ECL",
+ "event": "X2",
+ "kind": "eclipse-solar",
+ "feature": "occurrence",
+ "statement": "X2: 'about the time of an eclipse of the Sun'; no magnitude, no hour.",
+ "licence_words": [
+  "κατὰ δὲ τοῦτον τὸν καιρὸν περὶ ἡλίου ἔκλειψιν"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.4.1"
+ ],
+ "text_file": [
+  "data/text/xenophon-hellenica-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "any",
+   "reading": "a solar eclipse with magnitude > 0 at the observer, Sun up",
+   "justification": "the text says only that there was a solar eclipse",
+   "operational": {
+    "smag": [
+     0.0,
+     null
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "noticed",
+   "reading": "magnitude >= 0.5 at the observer",
+   "justification": "an eclipse noticed without being sought; 0.5 is the drafter's rough threshold",
+   "operational": {
+    "smag": [
+     0.5,
+     null
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | κατὰ δὲ τοῦτον τὸν καιρὸν περὶ ἡλίου ἔκλειψιν | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.4.1
+   ROW [data/text/xenophon-hellenica-grc.tsv] urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.4.1 :: κατὰ δὲ τοῦτον τὸν καιρὸν περὶ ἡλίου ἔκλειψιν Λυκόφρων ὁ Φεραῖος, βουλόμενος ἄρξαι ὅλης τῆς Θετταλίας, τοὺς ἐναντιουμένους αὐτῷ τῶν Θετταλῶν, Λαρισαίους τε καὶ ἄλλους, μάχῃ ἐνίκησε καὶ πολλοὺς ἀπέκτεινεν.
+
+====================================================================================================
+{
+ "set": "R-XEN",
+ "clue_id": "X2-SITE",
+ "event": "X2",
+ "kind": "site",
+ "feature": "observer",
+ "statement": "Where X2 was seen: unstated. The clause dates a battle in Thessaly fought by Lycophron of Pherae against the Larisaeans.",
+ "licence_words": [
+  "Λυκόφρων ὁ Φεραῖος",
+  "Λαρισαίους"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.4.1",
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.4.1"
+ ],
+ "text_file": [
+  "data/text/xenophon-hellenica-grc.tsv",
+  "data/text/xenophon-hellenica-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "box",
+   "reading": "anywhere in the Aegean box",
+   "justification": "no place is given for the eclipse itself (an inference from context; kept as an alternative, no longer primary)",
+   "operational": {
+    "site_box": {
+     "lat": [
+      35.0,
+      41.5
+     ],
+     "lon": [
+      19.5,
+      28.5
+     ]
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "thessaly",
+   "reading": "Thessaly (Pherae-Larisa, 39.5N 22.6E)",
+   "justification": "inference: the eclipse dates a Thessalian event",
+   "operational": {
+    "site": {
+     "lat": 39.5,
+     "lon": 22.6
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "athens",
+   "reading": "Athens",
+   "justification": "inference: the surrounding narrative (2.3.1-3) is Athenian",
+   "operational": {
+    "site": {
+     "lat": 37.97,
+     "lon": 23.72
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "anywhere on Earth",
+   "justification": "the text names no place from which this sky event was seen, and the set records the observer as 'unstated'; by policy 2 the primary option takes no site from narrative context or outside knowledge (licence check, 2026-10-04)",
+   "operational": {
+    "site": null
+   },
+   "primary": true
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: primary moved from 'box' (the Aegean box) to 'none'. The text does not say where the event was seen; the set itself records the observer place as 'unstated', and policy 2 bars inference from narrative context or outside knowledge in the primary option. The drafter applied that rule to the narrative-order seasons (X2-SEASON, X3-SEASON, L1-, L2-, L4-DATE: primary 'none') but not to sites. 'box' and the other site options stay as alternatives."
+}
+   CHECK exact | Λυκόφρων ὁ Φεραῖος | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.4.1
+   CHECK exact | Λαρισαίους | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.4.1
+   ROW [data/text/xenophon-hellenica-grc.tsv] urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.4.1 :: κατὰ δὲ τοῦτον τὸν καιρὸν περὶ ἡλίου ἔκλειψιν Λυκόφρων ὁ Φεραῖος, βουλόμενος ἄρξαι ὅλης τῆς Θετταλίας, τοὺς ἐναντιουμένους αὐτῷ τῶν Θετταλῶν, Λαρισαίους τε καὶ ἄλλους, μάχῃ ἐνίκησε καὶ πολλοὺς ἀπέκτεινεν.
+
+====================================================================================================
+{
+ "set": "R-XEN",
+ "clue_id": "X-INT-12",
+ "event": [
+  "X1",
+  "X2"
+ ],
+ "kind": "interval",
+ "feature": "year-headings",
+ "statement": "X1 is in the year opened at 1.6.1 ('τῷ δ’ ἐπιόντι ἔτει'); the next year opens at 2.1.10 and ends at 2.2.24 ('καὶ ὁ ἐνιαυτὸς ἔληγεν'); the year after opens at 2.3.1, and X2 falls 'at this time' within it. X2 is two Xenophontic years after X1.",
+ "licence_words": [
+  "τῷ δʼ ἐπιόντι ἔτει",
+  "τῷ δʼ ἐπιόντι ἔτει",
+  "καὶ ὁ ἐνιαυτὸς ἔληγεν",
+  "τῷ δʼ ἐπιόντι ἔτει"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.1.6.1.1",
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.1.10.1",
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.2.24.1",
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.1.1"
+ ],
+ "text_file": [
+  "data/text/xenophon-hellenica-grc.tsv",
+  "data/text/xenophon-hellenica-grc.tsv",
+  "data/text/xenophon-hellenica-grc.tsv",
+  "data/text/xenophon-hellenica-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "1to3",
+   "reading": "1 year < t(X2) - t(X1) < 3 years",
+   "justification": "two year-boundaries apart; the position of each event within its year is unknown",
+   "operational": {
+    "delta_years": [
+     1.0,
+     3.0
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "none",
+   "reading": "unlinked",
+   "justification": "The chronological notices of Hellenica 1-2 (ephors, archons, Olympiads, war-year counts, Sicilian notices) are widely held to be later interpolations [critique-design issue 2 cites ctl §4.4 for this; the drafter did not open that note]. The local text prints them without brackets, and the drafter could not check from it whether the eclipse clause belongs to the gloss.",
+   "operational": {
+    "delta_years": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (year headings, possibly interpolated)",
+ "notes": "The war-year counts in the same headings (1.6.1 'τεττάρων καὶ εἴκοσιν ἐτῶν', 2.1.7 'πέντε καὶ εἴκοσι') agree with consecutive years but are not used, being the most suspect part of the headings.",
+ "license_check": "ok"
+}
+   CHECK exact | τῷ δʼ ἐπιόντι ἔτει | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.1.6.1.1
+   CHECK exact | τῷ δʼ ἐπιόντι ἔτει | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.1.10.1
+   CHECK exact | καὶ ὁ ἐνιαυτὸς ἔληγεν | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.2.24.1
+   CHECK exact | τῷ δʼ ἐπιόντι ἔτει | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.1.1
+   ROW [data/text/xenophon-hellenica-grc.tsv] urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.1.6.1.1 :: τῷ δʼ ἐπιόντι ἔτει, ᾧ ἥ τε σελήνη ἐξέλιπεν ἑσπέρας καὶ ὁ παλαιὸς τῆς Ἀθηνᾶς νεὼς ἐν Ἀθήναις ἐνεπρήσθη, Πιτύα μὲν ἐφορεύοντος, ἄρχοντος δὲ Καλλίου Ἀθήνησιν, οἱ Λακεδαιμόνιοι τῷ Λυσάνδρῳ παρεληλυθότος ἤδη τοῦ χρόνου καὶ τῷ πολέμῳ τεττάρων καὶ εἴκοσιν ἐτῶν ἔπεμψαν ἐπὶ τὰς ναῦς Καλλικρατίδαν.
+   ROW [data/text/xenophon-hellenica-grc.tsv] urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.1.10.1 :: τῷ δʼ ἐπιόντι ἔτει ἐπὶ Ἀρχύτα μὲν ἐφορεύοντος, ἄρχοντος δʼ ἐν Ἀθήναις Ἀλεξίου, Λύσανδρος ἀφικόμενος εἰς Ἔφεσον μετεπέμψατο Ἐτεόνικον ἐκ Χίου σὺν ταῖς ναυσί, καὶ τὰς ἄλλας πάσας συνήθροισεν, εἴ πού τις ἦν, καὶ ταύτας τʼ ἐπεσκεύαζε καὶ ἄλλας ἐν Ἀντάνδρῳ ἐναυπηγεῖτο.
+   ROW [data/text/xenophon-hellenica-grc.tsv] urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.2.24.1 :: καὶ ὁ ἐνιαυτὸς ἔληγεν, ἐν ᾧ μεσοῦντι Διονύσιος ὁ Ἑρμοκράτους Συρακόσιος ἐτυράννησε, μάχῃ μὲν πρότερον ἡττηθέντων ὑπὸ Συρακοσίων Καρχηδονίων, σπάνει δὲ σίτου ἑλόντων Ἀκράγαντα, ἐκλιπόντων τῶν Σικελιωτῶν τὴν πόλιν.
+   ROW [data/text/xenophon-hellenica-grc.tsv] urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.1.1 :: τῷ δʼ ἐπιόντι ἔτει ᾧ ἦν Ὀλυμπιάς, ᾗ τὸ στάδιον ἐνίκα Κροκίνας Θετταλός, Εὐδίου ἐν Σπάρτῃ ἐφορεύοντος, Πυθοδώρου δʼ ἐν Ἀθήναις ἄρχοντος, ὃν Ἀθηναῖοι, ὅτι ἐν ὀλιγαρχίᾳ ᾑρέθη, οὐκ ὀνομάζουσιν, ἀλλʼ ἀναρχίαν τὸν ἐνιαυτὸν καλοῦσιν. ἐγένετο δὲ αὕτη ἡ ὀλιγαρχία ὧδε.
+
+====================================================================================================
+{
+ "set": "R-XEN",
+ "clue_id": "X2-SEASON",
+ "event": "X2",
+ "kind": "season",
+ "feature": "narrative-order",
+ "statement": "Not stated. 2.3.9 has Lysander back at Sparta 'τελευτῶντος τοῦ θέρους' after the events of 2.3.3-4.",
+ "licence_words": [
+  "τελευτῶντος τοῦ θέρους"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.9.1"
+ ],
+ "text_file": [
+  "data/text/xenophon-hellenica-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "none",
+   "reading": "no season constraint",
+   "justification": "the eclipse's own sentence gives no season",
+   "operational": {
+    "season": null
+   },
+   "primary": true
+  },
+  {
+   "option": "before-autumn",
+   "reading": "Sun's tropical longitude in [330, 210] deg",
+   "justification": "inference from narrative order: X2 precedes an end of summer in the same year",
+   "operational": {
+    "sun_lon_deg": [
+     330.0,
+     210.0
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | τελευτῶντος τοῦ θέρους | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.9.1
+   ROW [data/text/xenophon-hellenica-grc.tsv] urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.2.3.9.1 :: ταῦτα δὲ πάντα Λακεδαιμονίοις ἀπέδωκε τελευτῶντος τοῦ θέρους εἰς ὃ ἑξάμηνος καὶ ὀκτὼ καὶ εἴκοσιν ἔτη τῷ πολέμῳ ἐτελεύτα, ἐν οἷς ἔφοροι οἱ ἀριθμούμενοι οἵδε ἐγένοντο, Αἰνησίας πρῶτος, ἐφʼ οὗ ἤρξατο ὁ πόλεμος, πέμπτῳ καὶ δεκάτῳ ἔτει τῶν μετʼ Εὐβοίας ἅλωσιν τριακονταετίδων σπονδῶν, μετὰ δὲ τοῦτον οἵδε·
+
+====================================================================================================
+{
+ "set": "R-XEN",
+ "clue_id": "X3-ECL",
+ "event": "X3",
+ "kind": "eclipse-solar",
+ "feature": "magnitude",
+ "statement": "X3: 'the Sun seemed to appear crescent-shaped' while Agesilaus was at the entry into Boeotia.",
+ "licence_words": [
+  "ὁ ἥλιος μηνοειδὴς ἔδοξε φανῆναι"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.4.3.10.1"
+ ],
+ "text_file": [
+  "data/text/xenophon-hellenica-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "crescent",
+   "reading": "0.5 <= magnitude < 1.0 at the observer",
+   "justification": "a visible crescent needs more than half the diameter covered (drafter's geometry); not described as total or dark",
+   "operational": {
+    "smag": [
+     0.5,
+     1.0
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "any",
+   "reading": "any magnitude > 0",
+   "justification": "'ἔδοξε' (seemed): a weak impression",
+   "operational": {
+    "smag": [
+     0.0,
+     null
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ὁ ἥλιος μηνοειδὴς ἔδοξε φανῆναι | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.4.3.10.1
+   ROW [data/text/xenophon-hellenica-grc.tsv] urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.4.3.10.1 :: ὄντος δʼ αὐτοῦ ἐπὶ τῇ ἐμβολῇ ὁ ἥλιος μηνοειδὴς ἔδοξε φανῆναι, καὶ ἠγγέλθη ὅτι ἡττημένοι εἶεν Λακεδαιμόνιοι τῇ ναυμαχίᾳ καὶ ὁ ναύαρχος Πείσανδρος τεθναίη. ἐλέγετο δὲ καὶ ᾧ τρόπῳ ἡ ναυμαχία ἐγένετο.
+
+====================================================================================================
+{
+ "set": "R-XEN",
+ "clue_id": "X3-SEASON",
+ "event": "X3",
+ "kind": "season",
+ "feature": "narrative-order",
+ "statement": "Not stated. 4.1.41 says spring was just showing when Agesilaus left Pharnabazus' country; the recall (4.2.1-3), the march (4.2.8-4.3.9) and X3 follow.",
+ "licence_words": [
+  "σχεδὸν δὲ καὶ ἔαρ ἤδη ὑπέφαινεν"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.4.1.41.1"
+ ],
+ "text_file": [
+  "data/text/xenophon-hellenica-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "none",
+   "reading": "no season constraint",
+   "justification": "the eclipse's own sentence gives no season",
+   "operational": {
+    "season": null
+   },
+   "primary": true
+  },
+  {
+   "option": "after-spring",
+   "reading": "Sun's tropical longitude in [330, 225] deg",
+   "justification": "inference from narrative order: after the start of spring, within one campaigning season",
+   "operational": {
+    "sun_lon_deg": [
+     330.0,
+     225.0
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | σχεδὸν δὲ καὶ ἔαρ ἤδη ὑπέφαινεν | urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.4.1.41.1
+   ROW [data/text/xenophon-hellenica-grc.tsv] urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.4.1.41.1 :: καὶ τότε δή, ὥσπερ εἶπε πρὸς τὸν Φαρνάβαζον, εὐθὺς ἀπεπορεύετο ἐκ τῆς χώρας· σχεδὸν δὲ καὶ ἔαρ ἤδη ὑπέφαινεν. ἀφικόμενος δʼ εἰς Θήβης πεδίον κατεστρατοπεδεύσατο περὶ τὸ τῆς Ἀστυρηνῆς Ἀρτέμιδος ἱερόν, καὶ ἐκεῖ πρὸς ᾧ εἶχε συνέλεγε πανταχόθεν πάμπληθες στράτευμα. παρεσκευάζετο γὰρ πορευσόμενος ὡς δύναιτο ἀνωτάτω, νομίζων ὁπόσα ὄπισθεν ποιήσαιτο ἔθνη πάντα ἀποστερήσειν βασιλέως.

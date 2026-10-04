@@ -1,0 +1,63 @@
+conjunctions -1999..200: 27212
+C_rel calibration at -1177: Arcturus 1.722 -> 2.348 deg (h_A 2.035); Alcyone 1.378 -> 0.454 deg (h_P 0.916)
+  A(-1700) = (-1700, 2, 11), P(-1700) = (-1700, 3, 31)
+  A(-1177) = (-1177, 2, 17), P(-1177) = (-1177, 4, 4)
+  A(-700) = (-700, 2, 22), P(-700) = (-700, 4, 6)
+spring candidates (C_rel seq or par): 2286
+16 Apr -1177 present: 1; C seq [ True], C par [False]
+survivors of any BM reading outside slot A (identity of DESIGN 4.2): 0
+core -1748..-51 (1698 yr): n_TC = 892, n_A = 131, P(A|T_C) = 0.147
+
+G over T_A (W = 136 yr; Fay-Feuer gamma interval as DESIGN 5.3):
+T0b reading (seq, MWRA_vtx 1.5 d, vis off) G 0.0198  [0.0039, 0.0608]  k   4/131  G_any 0.031  reach(16 Apr -1177) 0.0815
+seq, MWRA, all tol and vis (6)             G 0.0324  [0.0116, 0.0757]  k  10/131  G_any 0.076  reach(16 Apr -1177) 0.0815
+seq, all events, tol and vis (18)          G 0.1212  [0.0725, 0.1919]  k  25/131  G_any 0.191  reach(16 Apr -1177) 0.0815
+G_BM* (36 readings)                        G 0.1400  [0.0867, 0.2153]  k  26/131  G_any 0.198  reach(16 Apr -1177) 0.0815
+  G_BM* on the first half of the core: G 0.1301 [0.0630, 0.2400], n 71, k 13
+  G_BM* on the second half of the core: G 0.1517 [0.0753, 0.2770], n 60, k 13
+  share of T_A targets with reach >= r_Ody (0.0815) under G_BM*: 0.198;  with reach > 0: 0.198
+  reach distribution of reached T_A targets: [0.096, 0.154, 0.257, 0.257, 0.257, 0.257, 0.258, 0.367, 0.434, 0.588, 0.765, 0.823, 0.823, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+  G_BM* over T_C = 0.0206;  G_BM,u = (n_A/n_T) G_BM with n_T ~ 10690: 0.00172
+
+per reading: survivors per century (all candidates, day or night), passes in T_A, G alone
+  ('seq', 'mwra', 1.5, False)        lambda  0.55/cy  pass(T_A)   4  G 0.0198  16 Apr -1177 passes True
+  ('seq', 'mwra', 1.5, True)         lambda  0.55/cy  pass(T_A)   4  G 0.0198  16 Apr -1177 passes True
+  ('seq', 'mwra', 2.5, False)        lambda  1.27/cy  pass(T_A)  11  G 0.0131  16 Apr -1177 passes True
+  ('seq', 'mwra', 2.5, True)         lambda  1.27/cy  pass(T_A)  11  G 0.0131  16 Apr -1177 passes True
+  ('seq', 'mwra', 3.5, False)        lambda  1.55/cy  pass(T_A)  13  G 0.0121  16 Apr -1177 passes True
+  ('seq', 'mwra', 3.5, True)         lambda  1.55/cy  pass(T_A)  13  G 0.0121  16 Apr -1177 passes True
+  ('seq', 'gwe', 1.5, False)         lambda  0.32/cy  pass(T_A)   2  G 0.0153  16 Apr -1177 passes False
+  ('seq', 'gwe', 1.5, True)          lambda  0.32/cy  pass(T_A)   2  G 0.0153  16 Apr -1177 passes False
+  ('seq', 'gwe', 2.5, False)         lambda  0.68/cy  pass(T_A)   5  G 0.0312  16 Apr -1177 passes False
+  ('seq', 'gwe', 2.5, True)          lambda  0.68/cy  pass(T_A)   5  G 0.0312  16 Apr -1177 passes False
+  ('seq', 'gwe', 3.5, False)         lambda  1.00/cy  pass(T_A)   8  G 0.0314  16 Apr -1177 passes False
+  ('seq', 'gwe', 3.5, True)          lambda  1.00/cy  pass(T_A)   8  G 0.0314  16 Apr -1177 passes False
+  ('seq', 'station', 1.5, False)     lambda  0.41/cy  pass(T_A)   3  G 0.0229  16 Apr -1177 passes False
+  ('seq', 'station', 1.5, True)      lambda  0.41/cy  pass(T_A)   3  G 0.0229  16 Apr -1177 passes False
+  ('seq', 'station', 2.5, False)     lambda  0.64/cy  pass(T_A)   6  G 0.0313  16 Apr -1177 passes False
+  ('seq', 'station', 2.5, True)      lambda  0.64/cy  pass(T_A)   6  G 0.0313  16 Apr -1177 passes False
+  ('seq', 'station', 3.5, False)     lambda  1.00/cy  pass(T_A)  11  G 0.0285  16 Apr -1177 passes False
+  ('seq', 'station', 3.5, True)      lambda  1.00/cy  pass(T_A)  11  G 0.0285  16 Apr -1177 passes False
+  ('par', 'mwra', 1.5, False)        lambda  0.82/cy  pass(T_A)   8  G 0.0246  16 Apr -1177 passes False
+  ('par', 'mwra', 1.5, True)         lambda  0.82/cy  pass(T_A)   8  G 0.0246  16 Apr -1177 passes False
+  ('par', 'mwra', 2.5, False)        lambda  1.09/cy  pass(T_A)   9  G 0.0186  16 Apr -1177 passes False
+  ('par', 'mwra', 2.5, True)         lambda  1.09/cy  pass(T_A)   9  G 0.0186  16 Apr -1177 passes False
+  ('par', 'mwra', 3.5, False)        lambda  1.77/cy  pass(T_A)  18  G 0.0098  16 Apr -1177 passes False
+  ('par', 'mwra', 3.5, True)         lambda  1.77/cy  pass(T_A)  18  G 0.0098  16 Apr -1177 passes False
+  ('par', 'gwe', 1.5, False)         lambda  0.50/cy  pass(T_A)   3  G 0.0229  16 Apr -1177 passes False
+  ('par', 'gwe', 1.5, True)          lambda  0.50/cy  pass(T_A)   3  G 0.0229  16 Apr -1177 passes False
+  ('par', 'gwe', 2.5, False)         lambda  0.68/cy  pass(T_A)   5  G 0.0382  16 Apr -1177 passes False
+  ('par', 'gwe', 2.5, True)          lambda  0.68/cy  pass(T_A)   5  G 0.0382  16 Apr -1177 passes False
+  ('par', 'gwe', 3.5, False)         lambda  0.86/cy  pass(T_A)   8  G 0.0289  16 Apr -1177 passes False
+  ('par', 'gwe', 3.5, True)          lambda  0.86/cy  pass(T_A)   8  G 0.0289  16 Apr -1177 passes False
+  ('par', 'station', 1.5, False)     lambda  0.27/cy  pass(T_A)   2  G 0.0146  16 Apr -1177 passes False
+  ('par', 'station', 1.5, True)      lambda  0.27/cy  pass(T_A)   2  G 0.0146  16 Apr -1177 passes False
+  ('par', 'station', 2.5, False)     lambda  0.68/cy  pass(T_A)   6  G 0.0266  16 Apr -1177 passes False
+  ('par', 'station', 2.5, True)      lambda  0.68/cy  pass(T_A)   6  G 0.0266  16 Apr -1177 passes False
+  ('par', 'station', 3.5, False)     lambda  0.91/cy  pass(T_A)   8  G 0.0182  16 Apr -1177 passes False
+  ('par', 'station', 3.5, True)      lambda  0.91/cy  pass(T_A)   8  G 0.0182  16 Apr -1177 passes False
+
+P_spring (seq, all candidates) n = 2204: P(V) 0.198, P(M vtx 1.5) 0.036, p_fix|C = P(V and M) 0.0054, dependence ratio 0.76
+BF_BM(rho = 1) = 2.60; BF_max = 20.69
+T0b-reading survivors in -1260..-1040 (Day 0, UT+2): [(-1188, 3, 18), (-1177, 4, 16)]
+P22: mean P(unique) of T0b-reading passers in T_A = 0.647 (n 4)

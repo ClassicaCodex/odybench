@@ -1,0 +1,1624 @@
+{
+ "schema": "odybench sites v1 (DESIGN 0, 4.1, 10.2)",
+ "written": "2026-10-04 by A0 (lead), from DESIGN.md revision 8",
+ "fields": {
+  "lat, lon": "degrees, east positive",
+  "elev_m": "metres (sea level throughout)",
+  "span": "Julian years [y0, y1], inclusive (model.Site)",
+  "columns": "the SkyTable arrays the site needs (10.2 sky.py)",
+  "build.bodies, build.stars": "the bodies (model.BODIES) and stars (data/stars.json keys) sky.build fills; the arrays with a body or star axis hold only these",
+  "role, span_source, span_rule, sets, needs, build_extra, on_demand": "provenance and use; model.Site takes key, lat, lon, elev_m, source, span and columns"
+ },
+ "spans": {
+  "background": [
+   -1999,
+   200
+  ],
+  "data_margins": [
+   -2060,
+   241
+  ],
+  "control_envelope": [
+   -1999,
+   300
+  ],
+  "source": "4.1: background -1999..+200; data margins -2060..+241; every control window lies inside -1999..+300"
+ },
+ "not_sites": "site boxes and discs of controls_real.json (the Greek box, Sicily, the Italian box, Sardinia, Diodorus' disc and route box) are site rules evaluated on a grid by the searcher (6.3.1), not table sites; AEN-TROY's Mount Ida is a landmark, the bearing target of its 'ida' rider, not an observer place (6.5)",
+ "data_gaps": [
+  "VF-LEMNOS-03:a names Mirfak (alpha Per), which data/stars.json does not hold; the star must be fetched (tools/fetch_stars.py) or the option recorded as unevaluable before the freeze (A3/A9)",
+  "the Almagest reference stars of the held-out rows are not in data/stars.json yet (11.1)"
+ ],
+ "sites": {
+  "ithaki": {
+   "lat": 38.37,
+   "lon": 20.72,
+   "elev_m": 0.0,
+   "source": "Ithaki (Vathy): the coordinates that reproduce the NASA site catalogue [acq 2.2]; Vathy 38.367, 20.717 differs by 0.3 km (DESIGN 0)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "rise_az",
+    "set_az",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "primary Odyssey site: every column over the whole span (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon",
+     "mercury",
+     "venus",
+     "mars",
+     "jupiter",
+     "saturn"
+    ],
+    "stars": [
+     "alcyone",
+     "arcturus",
+     "eps_boo",
+     "eta_boo",
+     "sirius",
+     "aldebaran",
+     "betelgeuse",
+     "rigel",
+     "dubhe",
+     "gam_tau",
+     "del01_tau",
+     "eps_tau",
+     "tet02_tau",
+     "bellatrix",
+     "mintaka",
+     "alnilam",
+     "alnitak",
+     "saiph",
+     "gam_boo",
+     "bet_boo",
+     "del_boo"
+    ]
+   },
+   "span_source": "the data margins -2060..+241 (4.1, 10.2 sky.py): the background -1999..+200 with the 40-day clue offsets and the +/-60-day Mercury searches"
+  },
+  "bm": {
+   "lat": 38.4,
+   "lon": 20.7,
+   "elev_m": 0.0,
+   "source": "B&M's fitted site, the S2 clock fit [bm 3.2] (DESIGN 0)",
+   "span": [
+    -1250,
+    -1113
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "rise_az",
+    "set_az",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "night_len_h"
+   ],
+   "role": "T0b only (3.2): B&M's clock, a constant Delta-T",
+   "build": {
+    "bodies": [
+     "sun",
+     "mercury",
+     "venus"
+    ],
+    "stars": [
+     "arcturus",
+     "alcyone"
+    ]
+   },
+   "span_source": "the reproduction window -1249..-1114 (4.6) with one year on each side for the -34-day offsets and the +/-60-day Mercury searches",
+   "build_extra": {
+    "dt_model": 27602.7,
+    "dt_source": "B&M's clock, 27,602.7 s (DESIGN 0, 2.3; T0b only)"
+   }
+  },
+  "kefalonia": {
+   "lat": 38.18,
+   "lon": 20.49,
+   "elev_m": 0.0,
+   "source": "Argostoli [acq 2.2] (DESIGN 0)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "sensitivity (DESIGN 0): the Ionian sites of the eclipse sensitivities (5.6, 6.2 pool ii); the eclipse circumstances come from eclipses.py, the table serves daylight and twilight",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   }
+  },
+  "lefkada": {
+   "lat": 38.83,
+   "lon": 20.7,
+   "elev_m": 0.0,
+   "source": "Lefkada town [acq 2.2]; research-ephemeris used 20.71 [eph conventions]; 20.70 is adopted so that the site catalogue reproduces (DESIGN 0)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "sensitivity (DESIGN 0): the Ionian sites of the eclipse sensitivities (5.6, 6.2 pool ii); the eclipse circumstances come from eclipses.py, the table serves daylight and twilight",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   }
+  },
+  "corfu": {
+   "lat": 39.62,
+   "lon": 19.92,
+   "elev_m": 0.0,
+   "source": "Corfu town [acq 2.2] (DESIGN 0)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "sensitivity (DESIGN 0): the Ionian sites of the eclipse sensitivities (5.6, 6.2 pool ii); the eclipse circumstances come from eclipses.py, the table serves daylight and twilight",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   }
+  },
+  "zakynthos": {
+   "lat": 37.78,
+   "lon": 20.9,
+   "elev_m": 0.0,
+   "source": "Zakynthos town [acq 2.2] (DESIGN 0)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "sensitivity (DESIGN 0): the Ionian sites of the eclipse sensitivities (5.6, 6.2 pool ii); the eclipse circumstances come from eclipses.py, the table serves daylight and twilight",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   }
+  },
+  "troy": {
+   "lat": 39.9575,
+   "lon": 26.2389,
+   "elev_m": 0.0,
+   "source": "negatives.json AEN-TROY observer_places[0]: Troy (Ilium), the city and the mound of ancient Ceres outside it (coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "rise_az",
+    "set_az",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon",
+     "mercury",
+     "venus",
+     "mars",
+     "jupiter"
+    ],
+    "stars": [
+     "alcyone",
+     "sirius",
+     "aldebaran",
+     "betelgeuse",
+     "rigel"
+    ]
+   },
+   "sets": [
+    "AEN-TROY",
+    "QS-SACK",
+    "IL-PATROCLUS"
+   ],
+   "needs": [
+    "AEN-TROY: 02 Moon up / conjunction; 04 Moon up; 05 conjunction; 07 Venus lead, AV 7, herald (Venus, Jupiter, Sirius, Mars), Venus rise azimuth (ida rider)",
+    "QS-SACK: 02 lunar eclipse, Moon up and full, conjunction; 03 Alcyone above the horizon; 06 solar eclipse",
+    "IL-PATROCLUS: 02, 04, 05 conjunction, solar eclipse, Moon up; 06 stars above 2 deg, Pleiades' morning setting, opposition; 08 Venus lead, AV 7, herald; 10 Mercury events, first visibility, dawn visibility"
+   ]
+  },
+  "tenedos": {
+   "lat": 39.8219,
+   "lon": 26.0289,
+   "elev_m": 0.0,
+   "source": "negatives.json AEN-TROY observer_places[1]: Tenedos (the Greek fleet's departure point) (coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "rise_az",
+    "set_az",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon",
+     "venus",
+     "mars",
+     "jupiter"
+    ],
+    "stars": [
+     "alcyone",
+     "sirius"
+    ]
+   },
+   "sets": [
+    "AEN-TROY",
+    "QS-SACK"
+   ],
+   "needs": [
+    "AEN-TROY: 02 Moon up / conjunction; 04 Moon up; 05 conjunction; 07 Venus lead, AV 7, herald (Venus, Jupiter, Sirius, Mars), Venus rise azimuth (ida rider)",
+    "QS-SACK: 02 lunar eclipse, Moon up and full, conjunction; 03 Alcyone above the horizon; 06 solar eclipse"
+   ]
+  },
+  "crete_pergamea": {
+   "lat": 35.21,
+   "lon": 24.91,
+   "elev_m": 0.0,
+   "source": "negatives.json AEN-CRETE observer_places[0]: Crete, the town Aeneas founds and calls Pergamea (its location is not given) (central Crete chosen by the drafter as a representative point; the text names the island and the town only)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": [
+     "sirius"
+    ]
+   },
+   "sets": [
+    "AEN-CRETE"
+   ],
+   "needs": [
+    "AEN-CRETE: 01 Sirius heliacal rising; 02 opposition, Moon up"
+   ]
+  },
+  "ceraunia": {
+   "lat": 40.1986,
+   "lon": 19.5917,
+   "elev_m": 0.0,
+   "source": "negatives.json AEN-ITALY observer_places[0]: the shore by the Ceraunian mountains (Epirus) (Llogara Pass (Wikipedia, fetched 2026-10-04) taken by the drafter as a point on the Ceraunian range)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun"
+    ],
+    "stars": [
+     "arcturus",
+     "aldebaran",
+     "betelgeuse",
+     "rigel",
+     "dubhe"
+    ]
+   },
+   "sets": [
+    "AEN-ITALY"
+   ],
+   "needs": [
+    "AEN-ITALY: 02 Arcturus, Aldebaran, Betelgeuse, Rigel above 5 or 2 deg (the Triones circumpolar)"
+   ]
+  },
+  "etna_coast": {
+   "lat": 37.5636,
+   "lon": 15.1614,
+   "elev_m": 0.0,
+   "source": "negatives.json AEN-ETNA observer_places[0]: the Cyclopes' harbour under Etna (Sicily) (Aci Trezza (Wikipedia, fetched 2026-10-04), the drafter's point on the Etna coast)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon",
+     "venus",
+     "mars",
+     "jupiter"
+    ],
+    "stars": [
+     "sirius"
+    ]
+   },
+   "sets": [
+    "AEN-ETNA"
+   ],
+   "needs": [
+    "AEN-ETNA: 02 Moon up; 03 Venus lead, AV 7, herald; 04 waxing Moon, opposition"
+   ]
+  },
+  "carthage": {
+   "lat": 36.8528,
+   "lon": 10.3233,
+   "elev_m": 0.0,
+   "source": "negatives.json AEN-CARTHAGE observer_places[0]: Carthage (coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "rise_az",
+    "set_az",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "mercury"
+    ],
+    "stars": []
+   },
+   "sets": [
+    "AEN-CARTHAGE"
+   ],
+   "needs": [
+    "AEN-CARTHAGE: 01, 05 Mercury rise-azimuth maximum, GWE, station, first visibility (AV 10); 03 season"
+   ]
+  },
+  "cius": {
+   "lat": 40.4325,
+   "lon": 29.1564,
+   "elev_m": 0.0,
+   "source": "negatives.json ARG-CIUS observer_places[0]: Cius, by Mount Arganthonios and the mouth of the Cius river (coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon",
+     "venus",
+     "mars",
+     "jupiter"
+    ],
+    "stars": [
+     "alcyone",
+     "sirius"
+    ]
+   },
+   "sets": [
+    "ARG-CIUS"
+   ],
+   "needs": [
+    "ARG-CIUS: 02 opposition, Moon up; 03 Venus lead, AV 7, herald; 05 Moon below the horizon; 07 solstice, Pleiades' morning setting"
+   ]
+  },
+  "cyzicus": {
+   "lat": 40.3878,
+   "lon": 27.8706,
+   "elev_m": 0.0,
+   "source": "negatives.json ARG-CIUS observer_places[1]: Cyzicus, land of the Doliones (the battle night: Night -17, -16 or -18 by ARG-CIUS-06) (coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon",
+     "venus",
+     "mars",
+     "jupiter"
+    ],
+    "stars": [
+     "alcyone",
+     "sirius"
+    ]
+   },
+   "sets": [
+    "ARG-CIUS",
+    "VF-CYZICUS"
+   ],
+   "needs": [
+    "ARG-CIUS: 02 opposition, Moon up; 03 Venus lead, AV 7, herald; 05 Moon below the horizon; 07 solstice, Pleiades' morning setting",
+    "VF-CYZICUS: 02 Moon up in Night 0"
+   ]
+  },
+  "colchis_phasis": {
+   "lat": 42.15,
+   "lon": 41.6667,
+   "elev_m": 0.0,
+   "source": "negatives.json ARG-COLCHIS observer_places[0]: Colchis: the Phasis and Aia (coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon",
+     "venus",
+     "mars",
+     "jupiter"
+    ],
+    "stars": [
+     "arcturus",
+     "sirius",
+     "betelgeuse",
+     "rigel",
+     "dubhe"
+    ]
+   },
+   "sets": [
+    "ARG-COLCHIS",
+    "VF-COLCHIS"
+   ],
+   "needs": [
+    "ARG-COLCHIS: 01 Arcturus' four phases; 04 Betelgeuse, Rigel at nautical dusk; 05 Dubhe past culmination; 06 moonrise in the dark hours",
+    "VF-COLCHIS: 01 Venus set lag, AV 7, evening herald; 02 Venus lead, AV 7, herald"
+   ]
+  },
+  "ares_island": {
+   "lat": 40.9289,
+   "lon": 38.4361,
+   "elev_m": 0.0,
+   "source": "negatives.json ARG-COLCHIS observer_places[1]: the Island of Ares (the storm night, which ARG-COLCHIS-02 places: Night -7 under a3, Night -8 under a4, Night -7 to -10 under afree) (Giresun Island (Wikipedia, fetched 2026-10-04); the identification with the Island of Ares is modern, not the text's)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": [
+     "arcturus",
+     "betelgeuse",
+     "rigel",
+     "dubhe"
+    ]
+   },
+   "sets": [
+    "ARG-COLCHIS"
+   ],
+   "needs": [
+    "ARG-COLCHIS: 01 Arcturus' four phases; 04 Betelgeuse, Rigel at nautical dusk; 05 Dubhe past culmination; 06 moonrise in the dark hours"
+   ]
+  },
+  "cape_salmonis": {
+   "lat": 35.3128,
+   "lon": 26.3076,
+   "elev_m": 0.0,
+   "source": "negatives.json ARG-RETURN observer_places[0]: the Cretan sea beyond Cape Salmonis (Day 0 after the embarkation, and Night 0) (Cape Sideros (Wikipedia, fetched 2026-10-04); identifying Salmonis with Sideros is modern, not the text's)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon",
+     "venus",
+     "mars",
+     "jupiter"
+    ],
+    "stars": [
+     "sirius"
+    ]
+   },
+   "sets": [
+    "ARG-RETURN"
+   ],
+   "needs": [
+    "ARG-RETURN: 01 Venus set lag, AV 7, evening herald; 04 Moon below the horizon, conjunction, lunar and solar eclipse"
+   ]
+  },
+  "anaphe": {
+   "lat": 36.3719,
+   "lon": 25.7953,
+   "elev_m": 0.0,
+   "source": "negatives.json ARG-RETURN observer_places[1]: Anaphe (Dawn +1) (coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon",
+     "venus",
+     "mars",
+     "jupiter"
+    ],
+    "stars": [
+     "sirius"
+    ]
+   },
+   "sets": [
+    "ARG-RETURN"
+   ],
+   "needs": [
+    "ARG-RETURN: 01 Venus set lag, AV 7, evening herald; 04 Moon below the horizon, conjunction, lunar and solar eclipse"
+   ]
+  },
+  "libyan_coast": {
+   "lat": 32.8225,
+   "lon": 21.8625,
+   "elev_m": 0.0,
+   "source": "negatives.json ARG-RETURN observer_places[2]: at sea off the Libyan desert coast, east of Triton's harbour (Day E); no place named (Cyrene (Wikipedia) chosen by the drafter as a representative point; the text names no place)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon",
+     "venus",
+     "mars",
+     "jupiter"
+    ],
+    "stars": [
+     "sirius"
+    ]
+   },
+   "sets": [
+    "ARG-RETURN"
+   ],
+   "needs": [
+    "ARG-RETURN: 01 Venus set lag, AV 7, evening herald; 04 Moon below the horizon, conjunction, lunar and solar eclipse"
+   ]
+  },
+  "cape_caphereus": {
+   "lat": 38.1167,
+   "lon": 24.5667,
+   "elev_m": 0.0,
+   "source": "negatives.json QS-SACK observer_places[2]: Cape Caphereus, Euboea (the storm) (coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": [
+     "alcyone"
+    ]
+   },
+   "sets": [
+    "QS-SACK"
+   ],
+   "needs": [
+    "QS-SACK: 02 lunar eclipse, Moon up and full, conjunction; 03 Alcyone above the horizon; 06 solar eclipse"
+   ]
+  },
+  "athos_lemnos_sea": {
+   "lat": 40.0,
+   "lon": 24.7,
+   "elev_m": 0.0,
+   "source": "negatives.json VF-LEMNOS observer_places[0]: at sea between Pallene, Athos and Lemnos (Night 0 and Dawn +1) (the drafter's point between Mount Athos (40.158 N 24.327 E) and Lemnos (39.917 N 25.25 E), Wikipedia; the text names the landmarks, not the ship's position)",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": [
+     "alcyone",
+     "betelgeuse",
+     "rigel"
+    ]
+   },
+   "sets": [
+    "VF-LEMNOS"
+   ],
+   "needs": [
+    "VF-LEMNOS: 02 Moon in evening twilight; 03 Betelgeuse, Rigel, Mirfak, Orion's morning setting; 04 Pleiades' phases, Alcyone at nautical dawn; 05 Pleiades' morning setting, equinox; 06 Moon's age at sunset. Mirfak (alpha Per) is not in data/stars.json"
+   ]
+  },
+  "lemnos": {
+   "lat": 39.8833,
+   "lon": 25.0667,
+   "elev_m": 0.0,
+   "source": "negatives.json VF-LEMNOS observer_places[1]: Lemnos (Day L) (Myrina, Lemnos (Wikipedia, fetched 2026-10-04))",
+   "span": [
+    -2060,
+    241
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "star_alt_eve12",
+    "star_alt_morn12",
+    "star_rise_ut",
+    "star_set_ut",
+    "sun_alt_at_star_rise",
+    "sun_alt_at_star_set",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "negative control (6.5): the background with margins, only the columns its sets use (4.1)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": [
+     "alcyone",
+     "betelgeuse",
+     "rigel"
+    ]
+   },
+   "sets": [
+    "VF-LEMNOS"
+   ],
+   "needs": [
+    "VF-LEMNOS: 02 Moon in evening twilight; 03 Betelgeuse, Rigel, Mirfak, Orion's morning setting; 04 Pleiades' phases, Alcyone at nautical dawn; 05 Pleiades' morning setting, equinox; 06 Moon's age at sunset. Mirfak (alpha Per) is not in data/stars.json"
+   ]
+  },
+  "babylon": {
+   "lat": 32.54,
+   "lon": 44.42,
+   "elev_m": 0.0,
+   "source": "controls_real.json R-PTOL-BAB observer_place Babylon; controls_real.json R-PTOL-CHAIN observer_place Babylon (modern approximate placement written by the drafter; the text gives only the name)",
+   "span": [
+    -1999,
+    300
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "rise_az",
+    "set_az",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "control (6.3, 6.4): Babylonian lunar eclipses (R-PTOL-BAB) and the Babylon sensitivity of ALM-K",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon",
+     "mercury",
+     "venus",
+     "mars",
+     "jupiter",
+     "saturn"
+    ],
+    "stars": []
+   },
+   "span_rule": "windows only (4.1): tables are built for the union of the set's window positions as the harness places them (seeds.json; truth-side), each widened by the set's longest link, and for I16(a)'s null windows; 'span' is the public envelope of every control window (4.1) and reads no truth",
+   "on_demand": "eclipse and lunar-eclipse circumstances, LAT and seasonal hours of a contact come from eclipses.py and lunar.py at the instant, not from these tables"
+  },
+  "alexandria": {
+   "lat": 31.2,
+   "lon": 29.92,
+   "elev_m": 0.0,
+   "source": "controls_real.json R-PTOL-ALEX observer_place Alexandria; controls_real.json R-PTOL-CHAIN observer_place Alexandria; controls_almagest.json ALM-A observer_place; controls_almagest.json ALM-B observer_place; controls_almagest.json ALM-C observer_place (modern approximate placement written by the drafter; the text gives only the name)",
+   "span": [
+    -1999,
+    300
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "rise_az",
+    "set_az",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "control (6.3, 6.4): the default site of the Almagest control (6.4)",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon",
+     "mercury",
+     "venus",
+     "mars",
+     "jupiter",
+     "saturn"
+    ],
+    "stars": []
+   },
+   "span_rule": "windows only (4.1): tables are built for the union of the set's window positions as the harness places them (seeds.json; truth-side), each widened by the set's longest link, and for I16(a)'s null windows; 'span' is the public envelope of every control window (4.1) and reads no truth",
+   "on_demand": "eclipse and lunar-eclipse circumstances, LAT and seasonal hours of a contact come from eclipses.py and lunar.py at the instant, not from these tables"
+  },
+  "syracuse": {
+   "lat": 37.07,
+   "lon": 15.29,
+   "elev_m": 0.0,
+   "source": "controls_real.json R-THUC observer_place the Athenian camp at Syracuse; controls_real.json R-ARBELA A-SICILY option syracuse; controls_real.json R-DIOD observer_place Agathocles' fleet at sea, the day after leaving Syracuse; controls_real.json R-DIOD D-SITE option syracuse (modern approximate placement written by the drafter; the text gives only the name)",
+   "span": [
+    -1999,
+    300
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "control (6.3): a point option or observer place of controls_real.json",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   },
+   "span_rule": "windows only (4.1): tables are built for the union of the set's window positions as the harness places them (seeds.json; truth-side), each widened by the set's longest link, and for I16(a)'s null windows; 'span' is the public envelope of every control window (4.1) and reads no truth",
+   "on_demand": "eclipse and lunar-eclipse circumstances, LAT and seasonal hours of a contact come from eclipses.py and lunar.py at the instant, not from these tables"
+  },
+  "athens": {
+   "lat": 37.97,
+   "lon": 23.72,
+   "elev_m": 0.0,
+   "source": "controls_real.json R-THUC T1-SITE option point; controls_real.json R-THUC T2-SITE option point; controls_real.json R-XEN X1-SITE option point; controls_real.json R-XEN X2-SITE option athens (modern approximate placement written by the drafter; the text gives only the name)",
+   "span": [
+    -1999,
+    300
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "control (6.3): a point option or observer place of controls_real.json",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   },
+   "span_rule": "windows only (4.1): tables are built for the union of the set's window positions as the harness places them (seeds.json; truth-side), each widened by the set's longest link, and for I16(a)'s null windows; 'span' is the public envelope of every control window (4.1) and reads no truth",
+   "on_demand": "eclipse and lunar-eclipse circumstances, LAT and seasonal hours of a contact come from eclipses.py and lunar.py at the instant, not from these tables"
+  },
+  "boeotia_entry": {
+   "lat": 38.5,
+   "lon": 22.85,
+   "elev_m": 0.0,
+   "source": "controls_real.json R-XEN observer_place Agesilaus' army at the entry into Boeotia, coming from Phthiotis (modern approximate placement written by the drafter; the text gives only the name)",
+   "span": [
+    -1999,
+    300
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "control (6.3): a point option or observer place of controls_real.json",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   },
+   "span_rule": "windows only (4.1): tables are built for the union of the set's window positions as the harness places them (seeds.json; truth-side), each widened by the set's longest link, and for I16(a)'s null windows; 'span' is the public envelope of every control window (4.1) and reads no truth",
+   "on_demand": "eclipse and lunar-eclipse circumstances, LAT and seasonal hours of a contact come from eclipses.py and lunar.py at the instant, not from these tables"
+  },
+  "thessaly": {
+   "lat": 39.5,
+   "lon": 22.6,
+   "elev_m": 0.0,
+   "source": "controls_real.json R-XEN X2-SITE option thessaly (modern approximate placement written by the drafter; the text gives only the name)",
+   "span": [
+    -1999,
+    300
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "control (6.3): a point option or observer place of controls_real.json",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   },
+   "span_rule": "windows only (4.1): tables are built for the union of the set's window positions as the harness places them (seeds.json; truth-side), each widened by the set's longest link, and for I16(a)'s null windows; 'span' is the public envelope of every control window (4.1) and reads no truth",
+   "on_demand": "eclipse and lunar-eclipse circumstances, LAT and seasonal hours of a contact come from eclipses.py and lunar.py at the instant, not from these tables"
+  },
+  "arbela": {
+   "lat": 36.19,
+   "lon": 44.01,
+   "elev_m": 0.0,
+   "source": "controls_real.json R-ARBELA observer_place Arbela (Pliny's report) (modern approximate placement written by the drafter; the text gives only the name)",
+   "span": [
+    -1999,
+    300
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "control (6.3): a point option or observer place of controls_real.json",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   },
+   "span_rule": "windows only (4.1): tables are built for the union of the set's window positions as the harness places them (seeds.json; truth-side), each widened by the set's longest link, and for I16(a)'s null windows; 'span' is the public envelope of every control window (4.1) and reads no truth",
+   "on_demand": "eclipse and lunar-eclipse circumstances, LAT and seasonal hours of a contact come from eclipses.py and lunar.py at the instant, not from these tables"
+  },
+  "tigris_camp": {
+   "lat": 36.5,
+   "lon": 43.0,
+   "elev_m": 0.0,
+   "source": "controls_real.json R-ARBELA observer_place the Macedonian camp just across the Tigris (Arrian, Curtius) (modern approximate placement written by the drafter; the text gives only the name)",
+   "span": [
+    -1999,
+    300
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "control (6.3): a point option or observer place of controls_real.json",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   },
+   "span_rule": "windows only (4.1): tables are built for the union of the set's window positions as the harness places them (seeds.json; truth-side), each widened by the set's longest link, and for I16(a)'s null windows; 'span' is the public envelope of every control window (4.1) and reads no truth",
+   "on_demand": "eclipse and lunar-eclipse circumstances, LAT and seasonal hours of a contact come from eclipses.py and lunar.py at the instant, not from these tables"
+  },
+  "pydna": {
+   "lat": 40.37,
+   "lon": 22.6,
+   "elev_m": 0.0,
+   "source": "controls_real.json R-PYDNA observer_place the Roman and Macedonian camps before Pydna (modern approximate placement written by the drafter; the text gives only the name)",
+   "span": [
+    -1999,
+    300
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "control (6.3): a point option or observer place of controls_real.json",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   },
+   "span_rule": "windows only (4.1): tables are built for the union of the set's window positions as the harness places them (seeds.json; truth-side), each widened by the set's longest link, and for I16(a)'s null windows; 'span' is the public envelope of every control window (4.1) and reads no truth",
+   "on_demand": "eclipse and lunar-eclipse circumstances, LAT and seasonal hours of a contact come from eclipses.py and lunar.py at the instant, not from these tables"
+  },
+  "cumae": {
+   "lat": 40.85,
+   "lon": 14.05,
+   "elev_m": 0.0,
+   "source": "controls_real.json H-LIVY observer_place Cumae (modern approximate placement written by the drafter; the text gives only the name)",
+   "span": [
+    -1999,
+    300
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "control (6.3): a point option or observer place of controls_real.json",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   },
+   "span_rule": "windows only (4.1): tables are built for the union of the set's window positions as the harness places them (seeds.json; truth-side), each widened by the set's longest link, and for I16(a)'s null windows; 'span' is the public envelope of every control window (4.1) and reads no truth",
+   "on_demand": "eclipse and lunar-eclipse circumstances, LAT and seasonal hours of a contact come from eclipses.py and lunar.py at the instant, not from these tables"
+  },
+  "rome": {
+   "lat": 41.89,
+   "lon": 12.49,
+   "elev_m": 0.0,
+   "source": "controls_real.json H-LIVY L1-SITE option rome; controls_real.json H-LIVY L3-SITE option rome; controls_real.json H-LIVY L4-SITE option rome (modern approximate placement written by the drafter; the text gives only the name)",
+   "span": [
+    -1999,
+    300
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "control (6.3): a point option or observer place of controls_real.json",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   },
+   "span_rule": "windows only (4.1): tables are built for the union of the set's window positions as the harness places them (seeds.json; truth-side), each widened by the set's longest link, and for I16(a)'s null windows; 'span' is the public envelope of every control window (4.1) and reads no truth",
+   "on_demand": "eclipse and lunar-eclipse circumstances, LAT and seasonal hours of a contact come from eclipses.py and lunar.py at the instant, not from these tables"
+  },
+  "arpi": {
+   "lat": 41.5,
+   "lon": 15.56,
+   "elev_m": 0.0,
+   "source": "controls_real.json H-LIVY L1b-ARPI option eclipse-arpi (modern approximate placement written by the drafter; the text gives only the name)",
+   "span": [
+    -1999,
+    300
+   ],
+   "columns": [
+    "jdn",
+    "jd0_ut",
+    "rise_ut",
+    "set_ut",
+    "sun_alt_at_rise",
+    "sun_alt_at_set",
+    "mag_at_rise",
+    "mag_at_set",
+    "elong",
+    "lat_ecl",
+    "lon_ecl",
+    "twl_eve_ut",
+    "twl_morn_ut",
+    "moon_frac_midnight",
+    "moon_up_frac_dark",
+    "night_len_h"
+   ],
+   "role": "control (6.3): a point option or observer place of controls_real.json",
+   "build": {
+    "bodies": [
+     "sun",
+     "moon"
+    ],
+    "stars": []
+   },
+   "span_rule": "windows only (4.1): tables are built for the union of the set's window positions as the harness places them (seeds.json; truth-side), each widened by the set's longest link, and for I16(a)'s null windows; 'span' is the public envelope of every control window (4.1) and reads no truth",
+   "on_demand": "eclipse and lunar-eclipse circumstances, LAT and seasonal hours of a contact come from eclipses.py and lunar.py at the instant, not from these tables"
+  }
+ }
+}

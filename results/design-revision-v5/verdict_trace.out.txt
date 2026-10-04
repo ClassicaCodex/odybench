@@ -1,0 +1,25 @@
+S0    p_BM 0.2208 p_MWRA 0.2273 -> p_H 0.2273 (p_H,min 0.0260)  labels ['inconclusive']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [realisable]
+S1    p_BM 0.0260 p_MWRA 0.0227 -> p_H 0.0260 (p_H,min 0.0260)  labels ['1']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [realisable]
+S1b   p_BM 0.0390 p_MWRA 0.0455 -> p_H 0.0455 (p_H,min 0.0260)  labels ['1']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [realisable]
+S2    p_BM 0.2208 p_MWRA 0.2273 -> p_H 0.2273 (p_H,min 0.0260)  labels ['2 (ordinary)']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [realisable]
+S2nm  p_BM 0.2208 p_MWRA 0.2273 -> p_H 0.2273 (p_H,min 0.0260)  labels ['2 (no match)']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [realisable]
+S3a   p_BM 0.2208 p_MWRA 0.2273 -> p_H 0.2273 (p_H,min 0.0260)  labels ['3a']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [realisable]
+S3b   p_BM 0.2208 p_MWRA 0.2273 -> p_H 0.2273 (p_H,min 0.0260)  labels ['3b']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [realisable]
+S4    p_BM 0.2208 p_MWRA 0.2273 -> p_H 0.2273 (p_H,min 0.0260)  labels ['4']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [realisable]
+S5    p_BM 0.0649 p_MWRA 0.0227 -> p_H 0.0649 (p_H,min 0.0649)  labels ['inconclusive']  qualifiers ['Q_BM', 'Q_attain', 'Q_slot', 'Q_tol']  [branch test: C7 pools]
+S6    p_BM 0.0260 p_MWRA 0.0227 -> p_H 0.0260 (p_H,min 0.0260)  labels ['1', '2 (ordinary)']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [realisable]
+S6b   p_BM 0.2208 p_MWRA 0.2273 -> p_H 0.2273 (p_H,min 0.0260)  labels ['2 (ordinary)', '3b', '4']  qualifiers ['Q_BM', 'Q_H', 'Q_dT', 'Q_exposure', 'Q_slot', 'Q_strict', 'Q_tol']  [realisable]
+S7    -  labels BLOCKED  qualifiers []  [realisable]
+S8    p_BM 0.0260 p_MWRA 0.0227 -> p_H 0.0260 (p_H,min 0.0260)  labels ['inconclusive']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [realisable]
+S9    p_BM 0.0260 p_MWRA 0.0227 -> p_H 0.0260 (p_H,min 0.0260)  labels ['3a']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [realisable]
+S10   p_BM 0.2208 p_MWRA 0.2273 -> p_H 0.2273 (p_H,min 0.0260)  labels ['2 (ordinary)']  qualifiers ['Q_BM', 'Q_tol']  [branch test: C7 G_BM]
+S11   p_BM 0.0260 p_MWRA 0.0227 -> p_H 0.0260 (p_H,min 0.0260)  labels ['1']  qualifiers ['Q_H', 'Q_slot', 'Q_tol']  [realisable]
+S12   p_BM 0.0260 p_MWRA 1.0000 -> p_H 1.0000 (p_H,min 0.0260)  labels ['inconclusive']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [realisable]
+S13   p_BM 0.0390 p_MWRA 0.0682 -> p_H 0.0682 (p_H,min 0.0260)  labels ['inconclusive']  qualifiers ['Q_BM', 'Q_slot', 'Q_tol']  [branch test: C7 pools]
+
+Lattice at the design-stage counts (target pattern -> p_BM / p_MWRA -> p_H):
+  both  0.0260 / 0.0227 -> 0.0260
+  h4    0.0390 / 0.0455 -> 0.0455
+  h3    0.2208 / 0.2273 -> 0.2273
+  none  1.0000 / 1.0000 -> 1.0000
+p_H,min = 0.026

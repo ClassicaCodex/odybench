@@ -1,0 +1,29 @@
+program.js     36759 bytes  sha256 9676f7922ced83c47fc088af5b8f53f7f51cc13563e527ee53910c54ed61c881  fetched
+SEm1999.js     84865 bytes  sha256 d33e214a65eecebc936275edd5f67e2d08c4ddb7ff310a6b854ea3e49dba3483  fetched
+SEm1899.js     89821 bytes  sha256 e91ed1d186bf1fb27cd68734b44553ed18c7825bca107d68fb3459cbc5dd3399  fetched
+SEm1799.js     90175 bytes  sha256 a70f2d1fd3271477ed1a5c92800a763ff04d098322e466863a1a5c19b5deb0f2  fetched
+SEm1699.js     81679 bytes  sha256 3ac058ac231dcb7dd94deb5feb1d64086ee4d21ce623e06213b8b231260846e6  fetched
+SEm1599.js     79909 bytes  sha256 4366c753f59a9485c0a1df516f5d72efd864cbfc8f47ecac430f20e2921258eb  fetched
+SEm1499.js     80263 bytes  sha256 43e6c10d5784005d59fd79bc1d7f7bd5a4d4a3b3e87c12d1db08d1405ac50db3  fetched
+SEm1399.js     83095 bytes  sha256 1d783d1d12ce7cb59b20f512f9d3baa606ba7dcc08053e02c283130b7f6ff5d1  fetched
+SEm1299.js     88759 bytes  sha256 b4ea0f873f627ff6666a6a69cecb36e144a78cf2607799ab33ee767489cd9cc5  fetched
+SEm1199.js     89467 bytes  sha256 d298ed58c50a51f9a23f4d6ceff6b9cad13dcc08ce1d221faaa062d99d02120f  fetched
+SEm1099.js     84511 bytes  sha256 02bd9fd0403327aec6beac4469fa68df81cff1b7dab051969f07948475a68de3  fetched
+SEm0999.js     80263 bytes  sha256 fbb793bb6ceb117e262179d49838332e6a19c4c7f16e02ab0e9a8eb3d2f5b2cf  fetched
+SEm0899.js     79909 bytes  sha256 98025204787995961b3d177dca10708e420767189d096468bf9cb043c8f2926b  fetched
+SEm0799.js     83095 bytes  sha256 89e1a016af9ede7394811bc162c5b46b33562f98a123c95fc442eccf67ffe842  fetched
+SEm0699.js     89821 bytes  sha256 f28e82449388a8afd1cb7e671faa4a83a2963041b4ca09abe165f44293ad8fa4  fetched
+SEm0599.js     90529 bytes  sha256 cd2eeb3dc1101c0be0cfba5b8c31bbcc256fc5e4eb97a9bb4f1e3d81212519d3  fetched
+SEm0499.js     85573 bytes  sha256 127e34483d18f6b86326a61a337b78f07f9120d58ddecd4ce309c068b3abd858  fetched
+SEm0399.js     79909 bytes  sha256 7058b5d2a174e95f070001e3ec9e7b1ae538c89f08ad9f3802122c94bc5d3c19  fetched
+SEm0299.js     80263 bytes  sha256 c5550b9bbfaa5c1361c4370ae10f86f45ba42bf314234ad829706b9e5d3c3add  fetched
+SEm0199.js     84157 bytes  sha256 1cb2371049858419262cc27f81d9c3eae1441ff9215d9aee6a341518b959d261  fetched
+SEm0099.js     89113 bytes  sha256 deb529d7026cac31c214b6ee1e7f1871cb1f740c52df8b5299166f2e613d1d4a  fetched
+SE0001.js      88050 bytes  sha256 80d177c37f39bbc2c36922529ee0f2c3a495906c36d3a974a82b2069fa843f30  fetched
+SE0101.js      84156 bytes  sha256 56bb26410ceda1d67baefcc3a0af9a9d9c0ad5fdd4122734e72a2efba52bbe01  fetched
+SE0201.js      80616 bytes  sha256 3faaacfeab0a1872871b59a65bb72ea2601d9ee6cd9299f51c6c005db55a0381  fetched
+data\jsex\sites\ithaca.jsonl: 5486 eclipses
+data\jsex\sites\kefalonia.jsonl: 5486 eclipses
+data\jsex\sites\lefkada.jsonl: 5486 eclipses
+data\jsex\sites\corfu.jsonl: 5486 eclipses
+data\jsex\sites\zakynthos.jsonl: 5486 eclipses

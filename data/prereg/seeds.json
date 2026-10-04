@@ -1,0 +1,241 @@
+{
+ "schema": "odybench seeds v1 (DESIGN 4.6, 5.4, 6.1-6.5)",
+ "written": "2026-10-04 by A0 (lead), from DESIGN.md revision 8",
+ "rule": "seed(purpose, key) = the first 8 bytes, big-endian, of SHA-256('odybench|<purpose>|<key>') as an unsigned integer; no seed is chosen by hand. Draws use numpy.random.default_rng(seed) (PCG64), one generator per (purpose, key), consumed in the order the owning module documents.",
+ "generator": "numpy.random.default_rng",
+ "purposes": {
+  "control_window": {
+   "source": "6.3.1, 6.4: the harness places each set's 136-year window so that its anchor's accepted date falls at a uniformly random position (u = rng.random(); a = t_anchor - u * 365.25 * 136); H-LIVY's notices are searched alone (6.3.5)",
+   "seeds": {
+    "R-PTOL-BAB": 9538212919642090460,
+    "R-PTOL-ALEX": 16727021212538790900,
+    "R-PTOL-CHAIN": 9998678509979784479,
+    "R-THUC": 1934315571237796451,
+    "R-XEN": 13583249894036072937,
+    "R-ARBELA": 18331134863539034341,
+    "R-PYDNA": 12680779050035215176,
+    "R-DIOD": 6207687162240065420,
+    "H-LIVY:L1": 16829650823830278302,
+    "H-LIVY:L2": 5823977792102052548,
+    "H-LIVY:L3": 7309779723324387146,
+    "H-LIVY:L4": 5432280780491273103,
+    "ALM-A": 1474625102831643018,
+    "ALM-B": 11389635469673615398,
+    "ALM-C": 11605845037586113748,
+    "ALM-D": 10163117910718338990,
+    "ALM-E": 12334078827632739521,
+    "ALM-F": 14900045554125363858,
+    "ALM-G": 3082091820693709965,
+    "ALM-H": 10124275575922686808,
+    "ALM-I": 14856090359659691825,
+    "ALM-J": 18410464762370293636,
+    "ALM-K": 1304800813573575794,
+    "ALM-L": 15501077295716504215
+   }
+  },
+  "control_window_sensitivity": {
+   "source": "6.3.2, 6.4: twenty further window positions per set, drawn as above",
+   "seeds": {
+    "R-PTOL-BAB": 5590269672714362244,
+    "R-PTOL-ALEX": 4460078558429707206,
+    "R-PTOL-CHAIN": 5919790451355232696,
+    "R-THUC": 4817480060930067364,
+    "R-XEN": 16597581517091808213,
+    "R-ARBELA": 14436934791779617402,
+    "R-PYDNA": 15960203941917013822,
+    "R-DIOD": 10371473974439482413,
+    "H-LIVY:L1": 5751024903236483207,
+    "H-LIVY:L2": 1990051364583644217,
+    "H-LIVY:L3": 7789900515976351049,
+    "H-LIVY:L4": 14947560600082759066,
+    "ALM-A": 13207923858114251109,
+    "ALM-B": 650809929236792612,
+    "ALM-C": 2784295511389893030,
+    "ALM-D": 17206108943459385099,
+    "ALM-E": 7142110446678082532,
+    "ALM-F": 16183669518066064922,
+    "ALM-G": 15372748351785544550,
+    "ALM-H": 13468950965463841016,
+    "ALM-I": 18362133089830333304,
+    "ALM-J": 16328962319976093202,
+    "ALM-K": 10083259273019958458,
+    "ALM-L": 12528318680147627487
+   }
+  },
+  "null_windows_I16a": {
+   "source": "6.3.2, I16(a): 21 null windows per counted set, placed at random around no truth within windows.json spans.null_window_range, redrawn until every event the set's rows can link to lies inside -1999..+300",
+   "seeds": {
+    "R-PTOL-BAB": 10119137946211167826,
+    "R-PTOL-ALEX": 11233465072025301449,
+    "R-THUC": 6175331485424547146,
+    "R-XEN": 15571717598803468293,
+    "R-ARBELA": 2550716137981064663,
+    "R-PYDNA": 16812051451691073396,
+    "R-DIOD": 16475842642511582709,
+    "ALM-A": 17674545820558152213,
+    "ALM-B": 10834353243227489387,
+    "ALM-D": 12650727529210877743,
+    "ALM-E": 16074265212021123614,
+    "ALM-F": 4348457135861156342,
+    "ALM-G": 3689021669884759785,
+    "ALM-H": 8623547948647473322,
+    "ALM-I": 11162020434579507737,
+    "ALM-J": 12757338389187289532,
+    "ALM-K": 15401340120690895091,
+    "ALM-L": 4240447429488228462
+   }
+  },
+  "negative_window_sensitivity": {
+   "source": "6.5: twenty further random positions per width per set, inside the background with the core's margins",
+   "seeds": {
+    "AEN-TROY:136": 9305314040631396102,
+    "AEN-TROY:251": 17653521722573760485,
+    "AEN-CRETE:136": 16215246668756024770,
+    "AEN-CRETE:251": 6172767336083972642,
+    "AEN-ITALY:136": 1359414231107641602,
+    "AEN-ITALY:251": 4357236964185897741,
+    "AEN-ETNA:136": 10905617837421608530,
+    "AEN-ETNA:251": 3201294223429842353,
+    "AEN-CARTHAGE:136": 5296700030850478007,
+    "AEN-CARTHAGE:251": 11908378803779601795,
+    "ARG-CIUS:136": 11884831109317799126,
+    "ARG-CIUS:251": 176163449790019310,
+    "ARG-COLCHIS:136": 13941974738381579218,
+    "ARG-COLCHIS:251": 6251333754522467009,
+    "ARG-RETURN:136": 16951862741571165153,
+    "ARG-RETURN:251": 10341929539348450214,
+    "QS-SACK:136": 5833702755158809057,
+    "QS-SACK:251": 7065651405631495097,
+    "VF-LEMNOS:136": 876935597272085609,
+    "VF-LEMNOS:251": 3641079448563653659,
+    "VF-CYZICUS:136": 6302203612941776523,
+    "VF-CYZICUS:251": 3710150314945822341,
+    "VF-COLCHIS:136": 16476070902682457821,
+    "VF-COLCHIS:251": 12495604253236295465,
+    "IL-PATROCLUS:136": 241325024039339482,
+    "IL-PATROCLUS:251": 9887690626406987355
+   }
+  },
+  "epics": {
+   "source": "5.4: epics drawn per variant from a seeded stream, until 200 enter the stratum or 10^6 draws",
+   "seeds": {
+    "A": 12867296996818353074,
+    "B": 6151372222118700329
+   }
+  },
+  "epic_windows": {
+   "source": "5.4: each stratum epic's 136-year window at a random position (p_N4)",
+   "seeds": {
+    "A": 9229821191089445348,
+    "B": 162019538879174262
+   }
+  },
+  "pcs_truths": {
+   "source": "6.2: pool (i), 2,000 daylight conjunctions drawn from T; the instrument mode's 200 truths drawn from pool (i)",
+   "seeds": {
+    "pool_i": 17195796618678035931,
+    "instrument_200": 503005507625804295
+   }
+  },
+  "pcs_noise": {
+   "source": "6.2: offset jitter and displacement draws of the noise study",
+   "seeds": {
+    "science": 14134160718704789510
+   }
+  },
+  "I2c_monte_carlo": {
+   "source": "6.1 I2(c): a 10^6-draw Monte Carlo of the four-model mixture",
+   "seeds": {
+    "mixture": 3996107683148269258
+   }
+  },
+  "I4_pages": {
+   "source": "6.1 I4: three LEcat5 century pages for the convention check",
+   "seeds": {
+    "convention_check": 17930097355101076720
+   }
+  },
+  "I5_events": {
+   "source": "6.1 I5: 1,000 random events (Sun, Moon, Venus, Mercury, Jupiter; Ithaki, Alexandria, Troy; -1999..+300) and 2,000 events for (b)",
+   "seeds": {
+    "horizons_1000": 640403793979581401,
+    "check_mwra_2000": 18094643896353702606
+   }
+  },
+  "I6b_events": {
+   "source": "6.1 I6(b): 200 random stations, greatest elongations and oppositions",
+   "seeds": {
+    "horizons_200": 4893582903574547339
+   }
+  },
+  "I7_years": {
+   "source": "6.1 I7: 300 random background years",
+   "seeds": {
+    "background_300": 9925953174316304301
+   }
+  },
+  "I9_synthetic": {
+   "source": "6.1 I9: (a) 10,000 random synthetic survivor sets; (b) 2,000 synthetic cores of 243-year blocks",
+   "seeds": {
+    "reach_10000": 17215399993023202322,
+    "cores_2000": 15347017289857601838
+   }
+  },
+  "G_bootstrap": {
+   "source": "5.3: moving-block bootstrap of G, 10,000 resamples (136-year blocks; 243-year blocks reported)",
+   "seeds": {
+    "block_136": 3740730613785499109,
+    "block_243": 157569095973297447
+   }
+  },
+  "bessel_vec_check": {
+   "source": "10.2 bessel_vec.check: 1,000 random site-eclipse pairs",
+   "seeds": {
+    "pairs_1000": 3405718330121171004
+   }
+  },
+  "reading_sample": {
+   "source": "6.3.2: the fraction of readings that make the truth the unique strict survivor, sampled to 10,000 fork combinations where there are more",
+   "seeds": {
+    "R-PTOL-BAB": 14187544530860626978,
+    "R-PTOL-ALEX": 14041547956866844264,
+    "R-PTOL-CHAIN": 11420365208642288258,
+    "R-THUC": 11701707846920716698,
+    "R-XEN": 5549065689277475982,
+    "R-ARBELA": 16864709990049236283,
+    "R-PYDNA": 8613402157528150388,
+    "R-DIOD": 8765780416651141360,
+    "ALM-A": 138245228636071820,
+    "ALM-B": 12703963219752542541,
+    "ALM-C": 465834581649656917,
+    "ALM-D": 4876355274192284730,
+    "ALM-E": 1065046135540161836,
+    "ALM-F": 16981620484874951148,
+    "ALM-G": 10714011893949900677,
+    "ALM-H": 16139048770793877376,
+    "ALM-I": 7236304453125095516,
+    "ALM-J": 16027125998728661707,
+    "ALM-K": 17907843596727924629,
+    "ALM-L": 11341067146996409719
+   }
+  },
+  "n1_permutation": {
+   "source": "5.1 item 7: 10,000 permutations of the Venus outcome",
+   "seeds": {
+    "venus_mercury": 8380562463499156440
+   }
+  },
+  "I12_lunations": {
+   "source": "6.1 I12: 500 lunations",
+   "seeds": {
+    "yallop_500": 3517157152078773565
+   }
+  },
+  "heldout_simulation": {
+   "source": "10.5 test_heldout.py: exactness under exchangeability by simulation",
+   "seeds": {
+    "test_heldout": 11265350457734367941
+   }
+  }
+ }
+}

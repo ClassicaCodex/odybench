@@ -1,0 +1,42 @@
+== 1. Ithaca, -1177 Apr 16: local magnitude vs Delta T (DE441 via Horizons, dT emulated by longitude shift)
+25000 0.7132  13:12 53.6
+26000 0.7827  12:48 55.7
+27000 0.8548  12:24 56.9
+28000 0.9298  12:03 57.4
+29000 1.0057 TOTAL 11:39 57.0
+30000 0.9756  11:18 55.9
+31000 0.9027  10:54 54.0
+32000 0.8288  10:33 51.7
+33000 0.7579  10:09 48.6
+34000 0.6908  09:48 45.5
+28400 0.9606  11:53 57.3
+28600 0.9754  11:48 57.2
+28800 0.9911  11:44 57.1
+29000 1.0057 TOTAL 11:39 57.0
+29200 1.0213 TOTAL 11:35 56.8
+29400 1.0226 TOTAL 11:30 56.6
+29600 1.0084 TOTAL 11:26 56.4
+29800 0.9932  11:21 56.1
+== 2. Almagest / Tarutius Egyptian dates -> Julian (Nabonassar epoch JD 1448638 = -746 Feb 26)
+Mardokempad 1 Thoth 29/30 (Alm IV.6)                    -> evening of -720 03 19.50
+Mardokempad 2 Thoth 18/19                               -> evening of -719 03 08.50
+Mardokempad 2 Phamenoth 15/16                           -> evening of -719 09 01.50
+Nab 366 Thoth 26/27 (Alm IV.11, Phanostratus)           -> evening of -382 12 22.50
+Nab 366 Phamenoth 24/25                                 -> evening of -381 06 18.50
+Hadrian 17 Payni 20/21 (Hadrian 1 = Nab 864)            -> evening of 133 05 06.50
+Hadrian 19 Choiak 2/3                                   -> evening of 134 10 20.50
+Hadrian 20 Pharmouthi 19/20                             -> evening of 136 03 05.50
+Theon Venus, Hadrian 16 Pharmouthi 21/22 (Alm X.1)      -> evening of 132 03 08.50
+Mercury, Hadrian 19 Athyr 14/15 (Alm IX.8)              -> evening of 134 10 02.50
+Tarutius conception Choiak 23 (Nab year -24)            -> evening of -771 06 24.50
+== 3. Almagest planetary records vs true greatest elongation (Horizons geocentric S-O-T)
+Venus (Theon, Alm X.1): record 132-03-8.5 elong 45.00; true max 46.04 /T on (132, 2, 21.5) (offset -16 d); days within 0.5 deg of max: 21
+Mercury (Alm IX.8): record 134-10-2.5 elong 18.15; true max 18.51 /L on (134, 9, 29.5) (offset -3 d); days within 0.5 deg of max: 6
+== 4. Alternatives and portents at fixed sites (NASA catalogue dT)
+Archilochus alt -710 Mar 14                Thasos   max=1.015 TOTAL sunUp=1.015 LMT 10:33 sunEl=38.3
+Archilochus alt -710 Mar 14                Paros    max=0.962 sunUp=0.962 LMT 10:29 sunEl=41.0
+Ennius alt (Bennett) -404 Mar 20           Rome     max=0.748 sunUp=0.748 LMT 17:55 sunEl=1.5
+Caesar death yr -43 Apr 18                 Rome     max=-1.007 sunUp=-1.621 LMT 20:10 sunEl=-16.5
+Caesar death yr -43 Oct 12                 Rome     max=0.728 sunUp=n/a LMT 23:04 sunEl=-53.2
+Dio 41.14.3 / Lucan 1.540 cand -50 Mar 07  Rome     max=0.883 sunUp=0.883 LMT 13:23 sunEl=39.3
+-49 Aug 21                                 Rome     max=0.369 sunUp=0.369 LMT 06:12 sunEl=10.9

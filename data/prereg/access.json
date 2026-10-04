@@ -1,0 +1,650 @@
+{
+ "schema": "odybench access v1 (DESIGN 10.1, 7.1)",
+ "written": "2026-10-04 by A0 (truth tier), before any public-tier agent starts (10.1 step 1)",
+ "design": {
+  "path": "DESIGN.md",
+  "revision": 8,
+  "sha256": "3eb362a1b96539c7daba108d93c56ec22d8e44fe106d9214cfa1709f3624c51b"
+ },
+ "paths": "repository-relative, forward slashes; globs in fnmatch syntax where ** spans directories",
+ "tiers": {
+  "truth": {
+   "agents": [
+    "A0",
+    "A6",
+    "A11",
+    "integrator"
+   ],
+   "read": [
+    "**"
+   ],
+   "except": "the sealed list, before prereg-2",
+   "note": "reads this design in full and the truth files its task needs (10.1)"
+  },
+  "public": {
+   "agents": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A7",
+    "A9",
+    "A10"
+   ],
+   "read": [
+    "build/DESIGN.public.md",
+    "build/public/**",
+    "odybench/**",
+    "tools/**",
+    "tests/**",
+    "data/prereg/*.json",
+    "data/prereg/verdict_synthetic/**",
+    "data/jsex/**",
+    "data/ephem/**",
+    "data/stars.json",
+    "data/bm2008-a/table_s2.tsv",
+    "results/critique-design/check_bessel.py",
+    "results/critique-design/check_mwra.py",
+    "results/bm2008-reconcile/check_mwra.py",
+    "results/design-revision-r2/ranc_season.py",
+    "results/research-critiques/eclipse_local.py",
+    "results/design-revision-v8/alm_rows.py",
+    "results/design-revision-v8/verdict_trace.py",
+    "results/design-revision-v7/pcr_rows.py"
+   ],
+   "deny": [
+    "data/prereg/*truth*",
+    "data/bm2008-a/baikouzis-magnasco-2008-pnas.pdf",
+    "data/ephem/horizons/venus_mercury_m1177_03_14_dusk_199.txt",
+    "data/ephem/horizons/venus_mercury_m1177_03_14_dusk_299.txt",
+    "data/ephem/horizons/venus_mercury_m1177_04_10_dawn_199.txt",
+    "data/ephem/horizons/venus_mercury_m1177_04_10_dawn_299.txt",
+    "data/refs/baikouzis-magnasco-2008.pdf",
+    "data/sources/bm2008-b/baikouzis-magnasco-2008-pnas.pdf"
+   ],
+   "default": "deny: a path matched by no read glob is off the whitelist",
+   "deny_overrides_read": true,
+   "notes_via_export": {
+    "docs/research-bm2008.md": "build/public/docs/research-bm2008.md",
+    "docs/research-bm2008-a.md": "build/public/docs/research-bm2008-a.md",
+    "docs/research-bm2008-b.md": "build/public/docs/research-bm2008-b.md",
+    "docs/research-chronology.md": "build/public/docs/research-chronology.md",
+    "docs/research-textclues.md": "build/public/docs/research-textclues.md",
+    "docs/research-ephemeris.md": "build/public/docs/research-ephemeris.md",
+    "docs/research-visibility.md": "build/public/docs/research-visibility.md",
+    "docs/research_visibility_calc.py": "build/public/docs/research_visibility_calc.py",
+    "docs/research-window.md": "build/public/docs/research-window.md",
+    "docs/research-unread-primaries.md": "build/public/docs/research-unread-primaries.md",
+    "docs/data-acquisition.md": "build/public/docs/data-acquisition.md",
+    "docs/controls-real-drafting.md": "build/public/docs/controls-real-drafting.md",
+    "docs/license-check-controls-real.md": "build/public/docs/license-check-controls-real.md",
+    "docs/license-check-almagest.md": "build/public/docs/license-check-almagest.md",
+    "results/license-check-almagest/r2/license-check-almagest.r1.md": "build/public/results/license-check-almagest/r2/license-check-almagest.r1.md",
+    "docs/negatives-drafting.md": "build/public/docs/negatives-drafting.md",
+    "docs/license-check-negatives.md": "build/public/docs/license-check-negatives.md",
+    "results/design-revision-v5/license-check-negatives-r2.relayed.md": "build/public/results/design-revision-v5/license-check-negatives-r2.relayed.md"
+   },
+   "text_export": "build/public/text/ (in place of data/text/): whole files for the Odyssey (Greek, Murray, Butler), the Iliad, both scholia, Virgil, Apollonius, Quintus Smyrnaeus, Valerius Flaccus, Hesiod, Aratus, Geminus and Plutarch's De facie; of every other file only the rows negatives.json cites and the six rows of the re-draft (Thucydides 2.28.1, 2.47.1, 4.51.1, 4.52.1; Diodorus 20.5.5; Livy 38.36.4); no row of Ptolemy's Syntaxis and no other row of the PC-R historians",
+   "shell_reads_only_under": "build/public/",
+   "design_copy": "build/DESIGN.public.md (everything above Appendix T's marker line)",
+   "note": "the notes and the reference scripts are read in the export, which masks the sealed lines; data/bm2008-a/table_s2.tsv is added for A10's S2 replay (T0a, test_t0.py), which 10.1's list omits; it holds B&M's Table S2 and no control truth"
+  },
+  "brief": {
+   "agents": [
+    "A8"
+   ],
+   "read": [
+    "data/prereg/pcr_redraft_brief.json"
+   ],
+   "note": "reads nothing else in the repository (6.3.4)"
+  }
+ },
+ "not_whitelisted": {
+  "carry a control's accepted date or a fact measured at it": [
+   "data/text/",
+   "docs/research-controls.md",
+   "docs/controls-almagest.md",
+   "docs/research-critiques.md",
+   "docs/critique-design*.md",
+   "docs/DESIGN-v*.md",
+   "data/ref*/",
+   "the rest of results/"
+  ],
+  "hold the target's sky (7.1)": "the sealed files below"
+ },
+ "sealed": {
+  "until": "prereg-2",
+  "applies_to": "every agent of every tier (7.1; tools/check_access.py flags a direct read)",
+  "from": "data/prereg/heldout_disclosure.json, block 'sealed' (facts D3, D5, D7, D8; D4 is public by design)",
+  "files": [
+   {
+    "path": "data/bm2008-a/baikouzis-magnasco-2008-pnas.pdf",
+    "sha256": "45e48d99aa8f69b42770094104baaca4c2cd2c7f58e99c6fd965e31033fc7111"
+   },
+   {
+    "path": "data/ephem/horizons/venus_mercury_m1177_03_14_dusk_199.txt",
+    "sha256": "e0be8b17fed11148ff29b36a45a65c8a71e12312a00663b2bdd2849b0ebd6e52"
+   },
+   {
+    "path": "data/ephem/horizons/venus_mercury_m1177_03_14_dusk_299.txt",
+    "sha256": "a6030a752442e444a00dbeced51ec0ec458da8310c4c187746fb222b94806d29"
+   },
+   {
+    "path": "data/ephem/horizons/venus_mercury_m1177_04_10_dawn_199.txt",
+    "sha256": "fc3d00686555e3b04d76371a420b91678791d8aa5a036e84700bdafe7f30e624"
+   },
+   {
+    "path": "data/ephem/horizons/venus_mercury_m1177_04_10_dawn_299.txt",
+    "sha256": "470dd6684db4c352b376ed0e54c17d5ae3e5ed547e1ddcf641438a66873250b8"
+   },
+   {
+    "path": "data/refs/baikouzis-magnasco-2008.pdf",
+    "sha256": "4416547ad43a91aab1086c99a7bc6c5808c80dd5d42ea770ca6f10b1463029ef"
+   },
+   {
+    "path": "data/sources/bm2008-b/baikouzis-magnasco-2008-pnas.pdf",
+    "sha256": "4416547ad43a91aab1086c99a7bc6c5808c80dd5d42ea770ca6f10b1463029ef"
+   },
+   {
+    "path": "results/data-acquisition/validate_ephem.after.txt",
+    "sha256": "e31d24575515df9eb038c2b5c753f1197a998faa9a0250b9eebf9f7ef3e91928"
+   },
+   {
+    "path": "results/data-acquisition/validate_ephem.after1.txt",
+    "sha256": "ae51b064154d1c474ca15ce97cc9af52cca9a08675d862767dbf2b29315f38c3"
+   },
+   {
+    "path": "results/data-acquisition/validate_ephem.before.txt",
+    "sha256": "5569562356805fa947fe5fbed097341507339b526458ee6222396609c98462d4"
+   },
+   {
+    "path": "results/research-visibility-mornings.npz",
+    "sha256": "8c52637d15b0c6052144c9ba032ac0b7c96be890b6aba4a8b73154313c5143ad"
+   },
+   {
+    "path": "results/research-visibility.json",
+    "sha256": "3e5d1170135596bbae410f341e4fbe85f5782546322f6498fadb54f12a27770c"
+   },
+   {
+    "path": "results/validate_ephem.txt",
+    "sha256": "47b53149602fa97986bd0a7a583eef51543c4abba3fce74f2a6d8fb8180e11b4"
+   }
+  ],
+  "lines": [
+   {
+    "path": "data/bm2008-a/bm2008-pmc-fulltext.txt",
+    "lines": [
+     57,
+     58
+    ],
+    "anchors": [
+     {
+      "line": 57,
+      "anchor_line": 56,
+      "anchor_sha256": "8318689844a8bf1a187a790b3150d13e72507b0a3c63963ebf72e0b83016e164",
+      "n_lines_in_file": 925
+     },
+     {
+      "line": 58,
+      "anchor_line": 56,
+      "anchor_sha256": "8318689844a8bf1a187a790b3150d13e72507b0a3c63963ebf72e0b83016e164",
+      "n_lines_in_file": 925
+     }
+    ]
+   },
+   {
+    "path": "data/refs/bm2008.txt",
+    "lines": [
+     42
+    ],
+    "anchors": [
+     {
+      "line": 42,
+      "anchor_line": 40,
+      "anchor_sha256": "d1218d1242195e2d9662c33460755724e811acea1faacf77a19893c790b4ab34",
+      "n_lines_in_file": 486
+     }
+    ]
+   },
+   {
+    "path": "docs/critique-design-r1.md",
+    "lines": [
+     286,
+     701
+    ],
+    "anchors": [
+     {
+      "line": 286,
+      "anchor_line": 285,
+      "anchor_sha256": "aea38171453e77717884a8ab0dbb4625aadc64781dff390fc171dbfca920f8b4",
+      "n_lines_in_file": 724
+     },
+     {
+      "line": 701,
+      "anchor_line": 700,
+      "anchor_sha256": "99de3b0c8d97fee981b7da9d1bf0a6ea746521ba00c9bb4f1c878fdec9c8870a",
+      "n_lines_in_file": 724
+     }
+    ]
+   },
+   {
+    "path": "docs/research-bm2008-a.md",
+    "lines": [
+     315
+    ],
+    "anchors": [
+     {
+      "line": 315,
+      "anchor_line": 314,
+      "anchor_sha256": "3853633b2bc95fd83b9904a0cc3c5f16cbc1ab689674fcaa29c343f0c4a3d169",
+      "n_lines_in_file": 417
+     }
+    ]
+   },
+   {
+    "path": "docs/research-bm2008-b.md",
+    "lines": [
+     410
+    ],
+    "anchors": [
+     {
+      "line": 410,
+      "anchor_line": 409,
+      "anchor_sha256": "8e88fe58fa8a8a7d655d40323f37c1d08ed9090c933cba713fb8b90662f95665",
+      "n_lines_in_file": 502
+     }
+    ]
+   },
+   {
+    "path": "docs/research-bm2008.md",
+    "lines": [
+     596
+    ],
+    "anchors": [
+     {
+      "line": 596,
+      "anchor_line": 595,
+      "anchor_sha256": "a8d37dad046228919df4d46be7e81a5e9e07f66ebaf4a9eabc206a4661be5e44",
+      "n_lines_in_file": 691
+     }
+    ]
+   },
+   {
+    "path": "docs/research-chronology.md",
+    "lines": [
+     64
+    ],
+    "anchors": [
+     {
+      "line": 64,
+      "anchor_line": 63,
+      "anchor_sha256": "7e99e071414049593f1a625bb2fb0279778286d8cdd897af70c8036d663ae1e5",
+      "n_lines_in_file": 420
+     }
+    ]
+   },
+   {
+    "path": "docs/research-ephemeris.md",
+    "lines": [
+     552,
+     553,
+     570,
+     571,
+     572,
+     573,
+     950,
+     951,
+     952,
+     953,
+     954,
+     955,
+     956,
+     957,
+     958,
+     959,
+     960,
+     961
+    ],
+    "anchors": [
+     {
+      "line": 552,
+      "anchor_line": 551,
+      "anchor_sha256": "12af00ef4beed04e98324a76d971f94419a92b77311cf21629020e3449b8f457",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 553,
+      "anchor_line": 551,
+      "anchor_sha256": "12af00ef4beed04e98324a76d971f94419a92b77311cf21629020e3449b8f457",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 570,
+      "anchor_line": 568,
+      "anchor_sha256": "65b574528ac7dcce2c26060c3da15ab41d12aec91354bc735c274fa7ef3b6017",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 571,
+      "anchor_line": 568,
+      "anchor_sha256": "65b574528ac7dcce2c26060c3da15ab41d12aec91354bc735c274fa7ef3b6017",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 572,
+      "anchor_line": 568,
+      "anchor_sha256": "65b574528ac7dcce2c26060c3da15ab41d12aec91354bc735c274fa7ef3b6017",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 573,
+      "anchor_line": 568,
+      "anchor_sha256": "65b574528ac7dcce2c26060c3da15ab41d12aec91354bc735c274fa7ef3b6017",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 950,
+      "anchor_line": 949,
+      "anchor_sha256": "5e567958cd661c8e95e21828f9b9912f18203287f688961c6a0826962f2c5c36",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 951,
+      "anchor_line": 949,
+      "anchor_sha256": "5e567958cd661c8e95e21828f9b9912f18203287f688961c6a0826962f2c5c36",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 952,
+      "anchor_line": 949,
+      "anchor_sha256": "5e567958cd661c8e95e21828f9b9912f18203287f688961c6a0826962f2c5c36",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 953,
+      "anchor_line": 949,
+      "anchor_sha256": "5e567958cd661c8e95e21828f9b9912f18203287f688961c6a0826962f2c5c36",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 954,
+      "anchor_line": 949,
+      "anchor_sha256": "5e567958cd661c8e95e21828f9b9912f18203287f688961c6a0826962f2c5c36",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 955,
+      "anchor_line": 949,
+      "anchor_sha256": "5e567958cd661c8e95e21828f9b9912f18203287f688961c6a0826962f2c5c36",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 956,
+      "anchor_line": 949,
+      "anchor_sha256": "5e567958cd661c8e95e21828f9b9912f18203287f688961c6a0826962f2c5c36",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 957,
+      "anchor_line": 949,
+      "anchor_sha256": "5e567958cd661c8e95e21828f9b9912f18203287f688961c6a0826962f2c5c36",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 958,
+      "anchor_line": 949,
+      "anchor_sha256": "5e567958cd661c8e95e21828f9b9912f18203287f688961c6a0826962f2c5c36",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 959,
+      "anchor_line": 949,
+      "anchor_sha256": "5e567958cd661c8e95e21828f9b9912f18203287f688961c6a0826962f2c5c36",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 960,
+      "anchor_line": 949,
+      "anchor_sha256": "5e567958cd661c8e95e21828f9b9912f18203287f688961c6a0826962f2c5c36",
+      "n_lines_in_file": 1051
+     },
+     {
+      "line": 961,
+      "anchor_line": 949,
+      "anchor_sha256": "5e567958cd661c8e95e21828f9b9912f18203287f688961c6a0826962f2c5c36",
+      "n_lines_in_file": 1051
+     }
+    ]
+   },
+   {
+    "path": "results/design-revision-v6/critique-design-r1.recheck-of-rev5.md",
+    "lines": [
+     286,
+     701
+    ],
+    "anchors": [
+     {
+      "line": 286,
+      "anchor_line": 285,
+      "anchor_sha256": "aea38171453e77717884a8ab0dbb4625aadc64781dff390fc171dbfca920f8b4",
+      "n_lines_in_file": 724
+     },
+     {
+      "line": 701,
+      "anchor_line": 700,
+      "anchor_sha256": "99de3b0c8d97fee981b7da9d1bf0a6ea746521ba00c9bb4f1c878fdec9c8870a",
+      "n_lines_in_file": 724
+     }
+    ]
+   }
+  ],
+  "globs": [
+   "results/instrument/i1/*"
+  ],
+  "export": "the public export omits the sealed files and serves each note with its sealed lines masked (10.1, 7.1)",
+  "unchecked": "code that reads a sealed file without printing it (tests/test_ephem.py, tools/disclosure_scan.py), and what an agent remembers (7.1)"
+ },
+ "rules": [
+  {
+   "applies_to": "public",
+   "rule": "read only the paths of tiers.public.read, less tiers.public.deny"
+  },
+  {
+   "applies_to": "public",
+   "rule": "a file-reading shell command (cat, type, Get-Content, grep, rg, findstr, Select-String, head, tail, sed, awk, less, more) applies only under build/public/"
+  },
+  {
+   "applies_to": "all",
+   "rule": "no direct read of a sealed path or line before prereg-2"
+  },
+  {
+   "applies_to": "all",
+   "rule": "do not run docs/research_visibility_calc.py as a script before prereg-2: its sections planets, mercury_events, bm_rates and herald recompute sealed facts D7 and D8 and write them to results/; importing its functions (the star routines of I6(c) and I10) is allowed"
+  },
+  {
+   "applies_to": "all",
+   "rule": "write only the files the agent owns (agents.<id>.owns); scratch work under results/build-<agent>/"
+  }
+ ],
+ "agents": {
+  "A0": {
+   "tier": "truth",
+   "owns": [
+    "odybench/model.py",
+    "tests/test_model.py",
+    "data/prereg/access.json",
+    "data/prereg/sites.json",
+    "data/prereg/windows.json",
+    "data/prereg/seeds.json",
+    "data/prereg/deltat_models.json",
+    "data/prereg/slots.json",
+    "data/prereg/verdict_rule.json",
+    "tools/build_regimes.py",
+    "data/prereg/almagest_regimes.json",
+    "tools/build_pcr_projection.py",
+    "data/prereg/pcr_projection.json",
+    "tools/disclosure_scan.py",
+    "data/prereg/heldout_disclosure.json",
+    "tests/test_build_regimes.py",
+    "tests/test_build_pcr_projection.py",
+    "tests/test_disclosure_scan.py",
+    "tests/test_prereg_a0.py",
+    "results/build-A0/**"
+   ]
+  },
+  "A1": {
+   "tier": "public",
+   "owns": [
+    "odybench/sky.py",
+    "odybench/events.py",
+    "tools/build_sky.py",
+    "tools/build_events.py",
+    "tools/validate_events.py",
+    "tools/fetch_horizons_obs.py",
+    "tests/test_events.py",
+    "results/build-A1/**"
+   ]
+  },
+  "A2": {
+   "tier": "public",
+   "owns": [
+    "odybench/eclipses.py",
+    "odybench/lunar.py",
+    "odybench/deltat_mix.py",
+    "data/prereg/eclipse_hit.json",
+    "tools/build_eclipses.py",
+    "tools/validate_eclipses.py",
+    "tools/fetch_lecat.py",
+    "tests/test_eclipses.py",
+    "tests/test_lunar.py",
+    "results/build-A2/**"
+   ]
+  },
+  "A3": {
+   "tier": "public",
+   "owns": [
+    "odybench/prereg_io.py",
+    "odybench/clues.py",
+    "odybench/search.py",
+    "data/prereg/operational_map.json",
+    "data/prereg/sibling_pairs.json",
+    "tools/make_redraft_brief.py",
+    "data/prereg/pcr_redraft_brief.json",
+    "tests/test_clues.py",
+    "tests/test_prereg_io.py",
+    "results/build-A3/**"
+   ]
+  },
+  "A4": {
+   "tier": "public",
+   "owns": [
+    "odybench/readings.py",
+    "odybench/pools.py",
+    "odybench/reach.py",
+    "odybench/evidence.py",
+    "data/prereg/garden.json",
+    "data/prereg/readings.json",
+    "attain.py",
+    "rates.py",
+    "coincidence.py",
+    "garden.py",
+    "windows.py",
+    "tests/test_reach.py",
+    "results/build-A4/**"
+   ]
+  },
+  "A5": {
+   "tier": "public",
+   "owns": [
+    "odybench/epic.py",
+    "odybench/pcs.py",
+    "data/prereg/epic_grammar.json",
+    "randomepic.py",
+    "synthetic.py",
+    "results/build-A5/**"
+   ]
+  },
+  "A6": {
+   "tier": "truth",
+   "owns": [
+    "tools/public_design.py",
+    "tools/export_public.py",
+    "tools/check_access.py",
+    "tools/run_i1.py",
+    "odybench/harness.py",
+    "tools/build_truth_index.py",
+    "tools/run_i2b.py",
+    "data/prereg/i2b_truth.json",
+    "data/prereg/truth_index.json",
+    "controls.py",
+    "almagest.py",
+    "negatives.py",
+    "odybench/heldout.py",
+    "heldout.py",
+    "data/prereg/heldout.json",
+    "odybench/verdict_rule.py",
+    "verdict.py",
+    "read.py",
+    "odybench/stats.py",
+    "odybench/prereg.py",
+    "tools/freeze.py",
+    "tests/test_verdict.py",
+    "tests/test_heldout.py",
+    "data/prereg/verdict_synthetic/**",
+    "build/**",
+    "results/instrument/**",
+    "results/build-A6/**"
+   ]
+  },
+  "A7": {
+   "tier": "public",
+   "owns": [
+    "tests/bm_reference.py",
+    "tests/heldout_reference.py",
+    "tests/mwra_reference.py",
+    "tests/control_reference.py",
+    "tests/bessel_vec.py",
+    "results/build-A7/**"
+   ]
+  },
+  "A8": {
+   "tier": "brief",
+   "owns": [
+    "data/prereg/pcr_redraft.json"
+   ]
+  },
+  "A9": {
+   "tier": "public",
+   "owns": [
+    "data/prereg/operational_map.json (review of its negatives section)",
+    "data/prereg/sibling_pairs.json (review)",
+    "data/prereg/heldout_disclosure.json (review)",
+    "results/build-A9/**"
+   ]
+  },
+  "A10": {
+   "tier": "public",
+   "owns": [
+    "reproduce.py",
+    "deltat.py",
+    "odybench/s2.py",
+    "tests/test_t0.py",
+    "results/build-A10/**"
+   ]
+  },
+  "A11": {
+   "tier": "truth",
+   "owns": [
+    "data/prereg/deltat_circular_truth.json",
+    "results/build-A11/**"
+   ]
+  },
+  "integrator": {
+   "tier": "truth",
+   "owns": [
+    "any file, by merging the agents' work; no new content of its own"
+   ]
+  }
+ }
+}

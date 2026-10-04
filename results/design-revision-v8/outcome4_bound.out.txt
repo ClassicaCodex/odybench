@@ -1,0 +1,21 @@
+n_T 10690; G_BM,u 0.001716 (18.3 reach-units); G_BM,u,lo 0.001066 (11.40 units)
+no target reached: G_hi = 0.000345 = 3.689/n (U0, DESIGN 9.2: 3.69/n)
+k targets each of reach 1 (the exact Poisson bound gamma.ppf(0.975, k + 1)/n):
+  k 0: G_hi 0.000345  (gamma 0.000345)  <= G_BM,u,lo
+  k 1: G_hi 0.000521  (gamma 0.000521)  <= G_BM,u,lo
+  k 2: G_hi 0.000676  (gamma 0.000676)  <= G_BM,u,lo
+  k 3: G_hi 0.000820  (gamma 0.000820)  <= G_BM,u,lo
+  k 4: G_hi 0.000958  (gamma 0.000958)  <= G_BM,u,lo
+  k 5: G_hi 0.001092  (gamma 0.001092)  >  G_BM,u,lo
+  k 6: G_hi 0.001222  (gamma 0.001222)  >  G_BM,u,lo
+largest number of reached targets, and reach-units, with G_hi <= G_BM,u,lo, by reach per target:
+  reach 1.00: at most    4 targets =  4.00 units
+  reach 0.75: at most    7 targets =  5.25 units
+  reach 0.50: at most   11 targets =  5.50 units
+  reach 0.25: at most   27 targets =  6.75 units
+  reach 0.10: at most   76 targets =  7.60 units
+  reach 0.05: at most  158 targets =  7.90 units
+  reach 0.01: at most  824 targets =  8.24 units
+a garden shaped like G_BM*'s (half its reached targets at reach 1, the rest 0.41): at most 4.23 units
+G_BM* reaches 18.3 units, so the negative's garden must reach at most 0.22 of that at reach 1 (4.6 times more selective), and at most 0.23 if shaped like G_BM* (4.3 times)
+(against revision 6's point value G_BM,u the count at reach 1 would have been 9)

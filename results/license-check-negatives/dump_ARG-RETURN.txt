@@ -1,0 +1,403 @@
+#### SET ARG-RETURN
+{
+ "set": "ARG-RETURN",
+ "role": "negative",
+ "searchable": true,
+ "text": "Apollonius, Argonautica 4.1620-4.1718 (from Triton's harbour by Carpathos and Crete to Anaphe)",
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "edition_id": 1,
+ "day0": "Day 0 is the day the Argo leaves Crete; Night 0 is the 'pall' night with neither stars nor moon; Dawn +1 shows Anaphe. The evening star is on Day E = Day -(3 + x).",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "ARG-RETURN-01": "vis7",
+   "ARG-RETURN-03": "x0",
+   "ARG-RETURN-04": "a"
+  },
+  "BM-analogue": {
+   "ARG-RETURN-01": "lag90",
+   "ARG-RETURN-03": "x0",
+   "ARG-RETURN-04": "b"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "text",
+   "clue_ids": [
+    "ARG-RETURN-04"
+   ],
+   "note": "a moonless night on Night 0, the analogue of the Odyssey's σκοτομήνιος (14.457) rather than of its Day-0 conjunction; option b turns it into a conjunction anchor"
+  },
+  "season_stars": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "morning_star": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": "an evening star instead, on Day E"
+  },
+  "mercury_turning_point": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "darkness_eclipse": {
+   "status": "fork",
+   "clue_ids": [
+    "ARG-RETURN-04"
+   ],
+   "note": "a night darkness; eclipse-compatible only as a lunar eclipse (option c)"
+  }
+ },
+ "notes": "",
+ "eclipse_compatible_options": [
+  "ARG-RETURN-04:b",
+  "ARG-RETURN-04:c"
+ ],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+}
+-- observer_place {"place": "the Cretan sea beyond Cape Salmonis (Night 0)", "words": "ὑπὲρ Σαλμωνίδος ἄκρης … Κρηταῖον ὑπὲρ μέγα λαῖτμα", "ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1693", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1694"], "text_file": "apollonius-argonautica-grc.tsv", "lat": 35.3128, "lon": 26.3076, "coord_source": "Cape Sideros (Wikipedia, fetched 2026-10-04); identifying Salmonis with Sideros is modern, not the text's"}
+   CHECK exact | ὑπὲρ Σαλμωνίδος ἄκρης | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1693']
+   CHECK exact | Κρηταῖον ὑπὲρ μέγα λαῖτμα | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1694']
+   4.1685     ῥιπῇσιν μὲν πρῶτα τινάσσεται, ὕστερον αὖτε
+   4.1686     πρυμνόθεν ἐξαγεῖσα κατήριπεν· ὧς ὅγε ποσσὶν
+   4.1687     ἀκαμάτοις τείως μὲν ἐπισταδὸν ᾐωρεῖτο,
+   4.1688     ὕστερον αὖτʼ ἀμενηνὸς ἀπείρονι κάππεσε δούπῳ.
+   4.1689     κεῖνο μὲν οὖν Κρήτῃ ἐνὶ δὴ κνέφας ηὐλίζοντο
+   4.1690     ἥρωες· μετὰ δʼ οἵγε νέον φαέθουσαν ἐς ἠῶ
+   4.1691     ἱρὸν Ἀθηναίης Μινωίδος ἱδρύσαντο,
+   4.1692     ὕδωρ τʼ εἰσαφύσαντο καὶ εἰσέβαν, ὥς κεν ἐρετμοῖς
+>> 4.1693     παμπρώτιστα βάλοιεν ὑπὲρ Σαλμωνίδος ἄκρης.
+>> 4.1694     Αὐτίκα δὲ Κρηταῖον ὑπὲρ μέγα λαῖτμα θέοντας
+   4.1695     νὺξ ἐφόβει, τήνπερ τε κατουλάδα κικλήσκουσιν·
+   4.1696     νύκτʼ ὀλοὴν οὐκ ἄστρα διίσχανεν, οὐκ ἀμαρυγαὶ
+   4.1697     μήνης· οὐρανόθεν δὲ μέλαν χάος, ἠέ τις ἄλλη
+   4.1698     ὠρώρει σκοτίη μυχάτων ἀνιοῦσα βερέθρων.
+   4.1699     αὐτοὶ δʼ, εἴτʼ Ἀίδῃ, εἴθʼ ὕδασιν ἐμφορέοντο,
+-- observer_place {"place": "Anaphe (Dawn +1)", "words": "Ἀνάφην δέ τε λισσάδα νῆσον", "ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1717"], "text_file": "apollonius-argonautica-grc.tsv", "lat": 36.3719, "lon": 25.7953, "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"}
+   CHECK exact | Ἀνάφην δέ τε λισσάδα νῆσον | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1717']
+   4.1709     δεξιτερῇ χρύσειον ἀνέσχεθες ὑψόθι τόξον·
+   4.1710     μαρμαρέην δʼ ἀπέλαμψε βιὸς περὶ πάντοθεν αἴγλην.
+   4.1711     τοῖσι δέ τις Σποράδων βαιὴ ἀπὸ τόφρʼ ἐφαάνθη
+   4.1712     νῆσος ἰδεῖν, ὀλίγης Ἱππουρίδος ἀντία νήσου,
+   4.1713     ἔνθʼ εὐνὰς ἐβάλοντο καὶ ἔσχεθον· αὐτίκα δʼ Ἠὼς
+   4.1714     φέγγεν ἀνερχομένη· τοὶ δʼ ἀγλαὸν Ἀπόλλωνι
+   4.1715     ἄλσει ἐνὶ σκιερῷ τέμενος σκιόεντά τε βωμὸν
+   4.1716     ποίεον, Αἰγλήτην μὲν ἐυσκόπου εἵνεκεν αἴγλης
+>> 4.1717     Φοῖβον κεκλόμενοι· Ἀνάφην δέ τε λισσάδα νῆσον
+   4.1718     ἴσκον, ὃ δὴ Φοῖβός μιν ἀτυζομένοις ἀνέφηνεν.
+   4.1719     ῥέζον δʼ ὅσσα περ ἄνδρες ἐρημαίῃ ἐνὶ ῥέζειν
+   4.1720     ἀκτῇ ἐφοπλίσσειαν· ὃ δή σφεας ὁππότε δαλοῖς
+   4.1721     ὕδωρ αἰθομένοισιν ἐπιλλείβοντας ἴδοντο
+   4.1722     Μηδείης δμωαὶ Φαιηκίδες, οὐκέτʼ ἔπειτα
+-- observer_place {"place": "at sea off the Libyan desert coast, east of Triton's harbour (Day E); no place named", "words": "αὐτὴν ἐπὶ δεξίʼ ἔχοντες γαῖαν ἐρημαίην", "ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1623", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1624"], "text_file": "apollonius-argonautica-grc.tsv", "lat": 32.8225, "lon": 21.8625, "coord_source": "Cyrene (Wikipedia) chosen by the drafter as a representative point; the text names no place"}
+   CHECK exact | αὐτὴν ἐπὶ δεξίʼ ἔχοντες γαῖαν ἐρημαίην | in []
+   4.1615     ἄκρον ὕδωρ, αἵ τε σκολιοῖς ἐπινειόθι κέντροις
+   4.1616     μήνης ὡς κεράεσσιν ἐειδόμεναι διχόωντο.
+   4.1617     τόφρα δʼ ἄγεν, τείως μιν ἐπιπροέηκε θαλάσσῃ
+   4.1618     νισσομένην· δῦ δʼ αἶψα μέγαν βυθόν· οἱ δʼ ὁμάδησαν
+   4.1619     ἥρωες, τέρας αἰνὸν ἐν ὀφθαλμοῖσιν ἰδόντες.
+   4.1620     ἔνθα μὲν Ἀργῷός τε λιμὴν καὶ σήματα νηὸς
+   4.1621     ἠδὲ Ποσειδάωνος ἰδὲ Τρίτωνος ἔασιν
+   4.1622     βωμοί· ἐπεὶ κεῖνʼ ἦμαρ ἐπέσχεθον. αὐτὰρ ἐς ἠῶ
+>> 4.1623     λαίφεσι πεπταμένοις αὐτὴν ἐπὶ δεξίʼ ἔχοντες
+>> 4.1624     γαῖαν ἐρημαίην, πνοιῇ ζεφύροιο θέεσκον.
+   4.1625     ἦρι δʼ ἔπειτʼ ἀγκῶνά θʼ ὁμοῦ μυχάτην τε θάλασσαν
+   4.1626     κεκλιμένην ἀγκῶνος ὕπερ προύχοντος ἴδοντο.
+   4.1627     αὐτίκα δὲ ζέφυρος μὲν ἐλώφεεν, ἤλυθε δʼ αὔρη
+   4.1628     ἀργέσταο νότου· κεχάροντο δὲ θυμὸν ἰωῇ.
+   4.1629     ἦμος δʼ ἠέλιος μὲν ἔδυ, ἀνὰ δʼ ἤλυθεν ἀστὴρ
+
+==============================================================================================================
+{
+ "set": "ARG-RETURN",
+ "clue_id": "ARG-RETURN-01",
+ "kind": "planet",
+ "statement": "On Day E, when the Sun set, the 'star of the fold' that brings rest to weary ploughmen came up; the wind then dropped in the black night.",
+ "licence_words": "ἦμος δʼ ἠέλιος μὲν ἔδυ, ἀνὰ δʼ ἤλυθεν ἀστὴρ αὔλιος, ὅς τʼ ἀνέπαυσεν ὀιζυροὺς ἀροτῆρας … κελαινῇ νυκτὶ",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1629",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1630",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1631"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "lag60",
+   "operational": "Venus sets at least 60 min after the Sun on Day E",
+   "justification": "the evening star taken as Venus; mirror of the F4 lead thresholds"
+  },
+  {
+   "option": "lag90",
+   "operational": "Venus sets at least 90 min after the Sun on Day E",
+   "justification": "mirror of B&M's 90-min threshold"
+  },
+  {
+   "option": "lag120",
+   "operational": "Venus sets at least 120 min after the Sun on Day E",
+   "justification": "strict end of the mirrored menu"
+  },
+  {
+   "option": "vis7",
+   "operational": "Venus visible as an evening object on Day E (arcus visionis 7 deg)",
+   "justification": "the words name an evening star; visibility is the least-inference reading"
+  },
+  {
+   "option": "herald",
+   "operational": "some bright evening object visible in the evening twilight of Day E: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter",
+   "justification": "the text does not say which star"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the evening star is a stock marker of nightfall (the star of the fold / of evening)"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "A literal 'rising at sunset' of an unnamed bright star constrains nothing (some bright star always rises near sunset) and is folded into 'none'.",
+ "license_check": "ok"
+}
+   CHECK exact | ἦμος δʼ ἠέλιος μὲν ἔδυ, ἀνὰ δʼ ἤλυθεν ἀστὴρ αὔλιος, ὅς τʼ ἀνέπαυσεν ὀιζυροὺς ἀροτῆρας | in []
+   CHECK exact | κελαινῇ νυκτὶ | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1631']
+   --- context (apollonius-argonautica-grc.tsv) ---
+   4.1621     ἠδὲ Ποσειδάωνος ἰδὲ Τρίτωνος ἔασιν
+   4.1622     βωμοί· ἐπεὶ κεῖνʼ ἦμαρ ἐπέσχεθον. αὐτὰρ ἐς ἠῶ
+   4.1623     λαίφεσι πεπταμένοις αὐτὴν ἐπὶ δεξίʼ ἔχοντες
+   4.1624     γαῖαν ἐρημαίην, πνοιῇ ζεφύροιο θέεσκον.
+   4.1625     ἦρι δʼ ἔπειτʼ ἀγκῶνά θʼ ὁμοῦ μυχάτην τε θάλασσαν
+   4.1626     κεκλιμένην ἀγκῶνος ὕπερ προύχοντος ἴδοντο.
+   4.1627     αὐτίκα δὲ ζέφυρος μὲν ἐλώφεεν, ἤλυθε δʼ αὔρη
+   4.1628     ἀργέσταο νότου· κεχάροντο δὲ θυμὸν ἰωῇ.
+>> 4.1629     ἦμος δʼ ἠέλιος μὲν ἔδυ, ἀνὰ δʼ ἤλυθεν ἀστὴρ
+>> 4.1630     αὔλιος, ὅς τʼ ἀνέπαυσεν ὀιζυροὺς ἀροτῆρας,
+>> 4.1631     δὴ τότʼ ἔπειτʼ ἀνέμοιο κελαινῇ νυκτὶ λιπόντος
+   4.1632     ἱστία λυσάμενοι περιμήκεά τε κλίναντες
+   4.1633     ἱστόν, ἐυξέστῃσιν ἐπερρώοντʼ ἐλάτῃσιν
+   4.1634     παννύχιοι καὶ ἐπʼ ἦμαρ, ἐπʼ ἤματι δʼ αὖτις ἰοῦσαν
+   4.1635     νύχθʼ ἑτέρην. ὑπέδεκτο δʼ ἀπόπροθι παιπαλόεσσα
+   4.1636     Κάρπαθος· ἔνθεν δʼ οἵγε περαιώσεσθαι ἔμελλον
+
+==============================================================================================================
+{
+ "set": "ARG-RETURN",
+ "clue_id": "ARG-RETURN-02",
+ "kind": "interval",
+ "statement": "From the evening of Day E they row all night, the next day and the following night; Carpathos receives them on Day E+2.",
+ "licence_words": "παννύχιοι καὶ ἐπʼ ἦμαρ, ἐπʼ ἤματι δʼ αὖτις ἰοῦσαν νύχθʼ ἑτέρην … ὑπέδεκτο δʼ ἀπόπροθι παιπαλόεσσα Κάρπαθος",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1633",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1634",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1635",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1636"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | παννύχιοι καὶ ἐπʼ ἦμαρ, ἐπʼ ἤματι δʼ αὖτις ἰοῦσαν νύχθʼ ἑτέρην | in []
+   CHECK exact | ὑπέδεκτο δʼ ἀπόπροθι παιπαλόεσσα Κάρπαθος | in []
+   --- context (apollonius-argonautica-grc.tsv) ---
+   4.1625     ἦρι δʼ ἔπειτʼ ἀγκῶνά θʼ ὁμοῦ μυχάτην τε θάλασσαν
+   4.1626     κεκλιμένην ἀγκῶνος ὕπερ προύχοντος ἴδοντο.
+   4.1627     αὐτίκα δὲ ζέφυρος μὲν ἐλώφεεν, ἤλυθε δʼ αὔρη
+   4.1628     ἀργέσταο νότου· κεχάροντο δὲ θυμὸν ἰωῇ.
+   4.1629     ἦμος δʼ ἠέλιος μὲν ἔδυ, ἀνὰ δʼ ἤλυθεν ἀστὴρ
+   4.1630     αὔλιος, ὅς τʼ ἀνέπαυσεν ὀιζυροὺς ἀροτῆρας,
+   4.1631     δὴ τότʼ ἔπειτʼ ἀνέμοιο κελαινῇ νυκτὶ λιπόντος
+   4.1632     ἱστία λυσάμενοι περιμήκεά τε κλίναντες
+>> 4.1633     ἱστόν, ἐυξέστῃσιν ἐπερρώοντʼ ἐλάτῃσιν
+>> 4.1634     παννύχιοι καὶ ἐπʼ ἦμαρ, ἐπʼ ἤματι δʼ αὖτις ἰοῦσαν
+>> 4.1635     νύχθʼ ἑτέρην. ὑπέδεκτο δʼ ἀπόπροθι παιπαλόεσσα
+>> 4.1636     Κάρπαθος· ἔνθεν δʼ οἵγε περαιώσεσθαι ἔμελλον
+   4.1637     Κρήτην, ἥ τʼ ἄλλων ὑπερέπλετο εἰν ἁλὶ νήσων.
+   4.1638     τοὺς δὲ Τάλως χάλκειος, ἀπὸ στιβαροῦ σκοπέλοιο
+   4.1639     ῥηγνύμενος πέτρας, εἶργε χθονὶ πείσματʼ ἀνάψαι,
+   4.1640     Δικταίην ὅρμοιο κατερχομένους ἐπιωγήν·
+   4.1641     τὸν μὲν χαλκείης μελιηγενέων ἀνθρώπων
+
+==============================================================================================================
+{
+ "set": "ARG-RETURN",
+ "clue_id": "ARG-RETURN-03",
+ "kind": "interval",
+ "statement": "From Carpathos they cross to Crete (no day count), where Talos bars them; they spend Night -1 on Crete and at the new dawn of Day 0 found a shrine, take water and embark.",
+ "licence_words": "ἔνθεν δʼ οἵγε περαιώσεσθαι ἔμελλον Κρήτην … κεῖνο μὲν οὖν Κρήτῃ ἐνὶ δὴ κνέφας ηὐλίζοντο ἥρωες … νέον φαέθουσαν ἐς ἠῶ",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1636",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1637",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1689",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1690",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1691",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1692"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "x0",
+   "operational": "the crossing to Crete is on Day E+2, so Day E = Day -3",
+   "justification": "the shortest reading: the text names no stay at Carpathos and no day for the crossing, so x = 0 assumes none (an inference)"
+  },
+  {
+   "option": "xfree",
+   "operational": "the crossing takes x = 0 to 10 further days, so Day E is between Day -13 and Day -3 (the upper bound is the drafter's)",
+   "justification": "no count is given for Carpathos and the crossing"
+  },
+  {
+   "option": "none",
+   "operational": "no link: Day E is not placed relative to Day 0 (row 01 then fixes no searchable date)",
+   "justification": "the text gives no count for the stay at Carpathos or the crossing to Crete"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: x0 assumes no stay at Carpathos, which the text does not state, and the fork had no 'none'; x0's justification now says so and a 'none' option (Day E unlinked) is added"
+}
+   CHECK exact | ἔνθεν δʼ οἵγε περαιώσεσθαι ἔμελλον Κρήτην | in []
+   CHECK exact | κεῖνο μὲν οὖν Κρήτῃ ἐνὶ δὴ κνέφας ηὐλίζοντο ἥρωες | in []
+   CHECK exact | νέον φαέθουσαν ἐς ἠῶ | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1690']
+   --- context (apollonius-argonautica-grc.tsv) ---
+   4.1628     ἀργέσταο νότου· κεχάροντο δὲ θυμὸν ἰωῇ.
+   4.1629     ἦμος δʼ ἠέλιος μὲν ἔδυ, ἀνὰ δʼ ἤλυθεν ἀστὴρ
+   4.1630     αὔλιος, ὅς τʼ ἀνέπαυσεν ὀιζυροὺς ἀροτῆρας,
+   4.1631     δὴ τότʼ ἔπειτʼ ἀνέμοιο κελαινῇ νυκτὶ λιπόντος
+   4.1632     ἱστία λυσάμενοι περιμήκεά τε κλίναντες
+   4.1633     ἱστόν, ἐυξέστῃσιν ἐπερρώοντʼ ἐλάτῃσιν
+   4.1634     παννύχιοι καὶ ἐπʼ ἦμαρ, ἐπʼ ἤματι δʼ αὖτις ἰοῦσαν
+   4.1635     νύχθʼ ἑτέρην. ὑπέδεκτο δʼ ἀπόπροθι παιπαλόεσσα
+>> 4.1636     Κάρπαθος· ἔνθεν δʼ οἵγε περαιώσεσθαι ἔμελλον
+>> 4.1637     Κρήτην, ἥ τʼ ἄλλων ὑπερέπλετο εἰν ἁλὶ νήσων.
+   4.1638     τοὺς δὲ Τάλως χάλκειος, ἀπὸ στιβαροῦ σκοπέλοιο
+   4.1639     ῥηγνύμενος πέτρας, εἶργε χθονὶ πείσματʼ ἀνάψαι,
+   4.1640     Δικταίην ὅρμοιο κατερχομένους ἐπιωγήν·
+   4.1641     τὸν μὲν χαλκείης μελιηγενέων ἀνθρώπων
+   4.1642     ῥίζης λοιπὸν ἐόντα μετʼ ἀνδράσιν ἡμιθέοισιν
+   ...
+   4.1681     εἱστήκει προβλῆτος ἐπεμβεβαὼς σκοπέλοιο.
+   4.1682     ἀλλʼ ὥς τίς τʼ ἐν ὄρεσσι πελωρίη ὑψόθι πεύκη,
+   4.1683     τήν τε θοοῖς πελέκεσσιν ἔθʼ ἡμιπλῆγα λιπόντες
+   4.1684     ὑλοτόμοι δρυμοῖο κατήλυθον· ἡ δʼ ὑπὸ νυκτὶ
+   4.1685     ῥιπῇσιν μὲν πρῶτα τινάσσεται, ὕστερον αὖτε
+   4.1686     πρυμνόθεν ἐξαγεῖσα κατήριπεν· ὧς ὅγε ποσσὶν
+   4.1687     ἀκαμάτοις τείως μὲν ἐπισταδὸν ᾐωρεῖτο,
+   4.1688     ὕστερον αὖτʼ ἀμενηνὸς ἀπείρονι κάππεσε δούπῳ.
+>> 4.1689     κεῖνο μὲν οὖν Κρήτῃ ἐνὶ δὴ κνέφας ηὐλίζοντο
+>> 4.1690     ἥρωες· μετὰ δʼ οἵγε νέον φαέθουσαν ἐς ἠῶ
+>> 4.1691     ἱρὸν Ἀθηναίης Μινωίδος ἱδρύσαντο,
+>> 4.1692     ὕδωρ τʼ εἰσαφύσαντο καὶ εἰσέβαν, ὥς κεν ἐρετμοῖς
+   4.1693     παμπρώτιστα βάλοιεν ὑπὲρ Σαλμωνίδος ἄκρης.
+   4.1694     Αὐτίκα δὲ Κρηταῖον ὑπὲρ μέγα λαῖτμα θέοντας
+   4.1695     νὺξ ἐφόβει, τήνπερ τε κατουλάδα κικλήσκουσιν·
+   4.1696     νύκτʼ ὀλοὴν οὐκ ἄστρα διίσχανεν, οὐκ ἀμαρυγαὶ
+   4.1697     μήνης· οὐρανόθεν δὲ μέλαν χάος, ἠέ τις ἄλλη
+
+==============================================================================================================
+{
+ "set": "ARG-RETURN",
+ "clue_id": "ARG-RETURN-04",
+ "kind": "darkness",
+ "statement": "On Night 0, as they run over the Cretan sea, the night they call 'the pall' terrifies them: neither stars nor moonbeams pierce it; black chaos from heaven, or darkness risen from the depths.",
+ "licence_words": "νὺξ ἐφόβει, τήνπερ τε κατουλάδα κικλήσκουσιν … νύκτʼ ὀλοὴν οὐκ ἄστρα διίσχανεν, οὐκ ἀμαρυγαὶ μήνης … οὐρανόθεν δὲ μέλαν χάος",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1694",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1695",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1696",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1697",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1698"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "the Moon is below the horizon for at least 75% of the dark hours of Night 0",
+   "justification": "'no moonbeams'; the predicate is DESIGN H2's for the Odyssey's σκοτομήνιος"
+  },
+  {
+   "option": "b",
+   "operational": "conjunction falls within +-2 days of local midnight of Night 0",
+   "justification": "the moonless night read as the dark of the moon"
+  },
+  {
+   "option": "c",
+   "operational": "an umbral lunar eclipse is in progress while the Moon is above the horizon during Night 0",
+   "justification": "the darkness slot read as an eclipse; the drafter's inference, not the text"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "a supernatural darkness: the stars are hidden too, so the Moon's absence is not the cause the text gives"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | νὺξ ἐφόβει, τήνπερ τε κατουλάδα κικλήσκουσιν | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1695']
+   CHECK exact | νύκτʼ ὀλοὴν οὐκ ἄστρα διίσχανεν, οὐκ ἀμαρυγαὶ μήνης | in []
+   CHECK exact | οὐρανόθεν δὲ μέλαν χάος | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1697']
+   --- context (apollonius-argonautica-grc.tsv) ---
+   4.1686     πρυμνόθεν ἐξαγεῖσα κατήριπεν· ὧς ὅγε ποσσὶν
+   4.1687     ἀκαμάτοις τείως μὲν ἐπισταδὸν ᾐωρεῖτο,
+   4.1688     ὕστερον αὖτʼ ἀμενηνὸς ἀπείρονι κάππεσε δούπῳ.
+   4.1689     κεῖνο μὲν οὖν Κρήτῃ ἐνὶ δὴ κνέφας ηὐλίζοντο
+   4.1690     ἥρωες· μετὰ δʼ οἵγε νέον φαέθουσαν ἐς ἠῶ
+   4.1691     ἱρὸν Ἀθηναίης Μινωίδος ἱδρύσαντο,
+   4.1692     ὕδωρ τʼ εἰσαφύσαντο καὶ εἰσέβαν, ὥς κεν ἐρετμοῖς
+   4.1693     παμπρώτιστα βάλοιεν ὑπὲρ Σαλμωνίδος ἄκρης.
+>> 4.1694     Αὐτίκα δὲ Κρηταῖον ὑπὲρ μέγα λαῖτμα θέοντας
+>> 4.1695     νὺξ ἐφόβει, τήνπερ τε κατουλάδα κικλήσκουσιν·
+>> 4.1696     νύκτʼ ὀλοὴν οὐκ ἄστρα διίσχανεν, οὐκ ἀμαρυγαὶ
+>> 4.1697     μήνης· οὐρανόθεν δὲ μέλαν χάος, ἠέ τις ἄλλη
+>> 4.1698     ὠρώρει σκοτίη μυχάτων ἀνιοῦσα βερέθρων.
+   4.1699     αὐτοὶ δʼ, εἴτʼ Ἀίδῃ, εἴθʼ ὕδασιν ἐμφορέοντο,
+   4.1700     ἠείδειν οὐδʼ ὅσσον· ἐπέτρεψαν δὲ θαλάσσῃ
+   4.1701     νόστον, ἀμηχανέοντες, ὅπῃ φέροι. αὐτὰρ Ἰήσων
+   4.1702     χεῖρας ἀνασχόμενος μεγάλῃ ὀπὶ Φοῖβον ἀύτει,
+   4.1703     ῥύσασθαι καλέων· κατὰ δʼ ἔρρεεν ἀσχαλόωντι
+
+==============================================================================================================
+{
+ "set": "ARG-RETURN",
+ "clue_id": "ARG-RETURN-05",
+ "kind": "time-of-day",
+ "statement": "After Apollo's bow flashes, an islet appears; they anchor, and Dawn +1 rises at once: they name the island Anaphe.",
+ "licence_words": "αὐτίκα δʼ Ἠὼς φέγγεν ἀνερχομένη … Ἀνάφην",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1713",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1714",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1717"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | αὐτίκα δʼ Ἠὼς φέγγεν ἀνερχομένη | in []
+   CHECK exact | Ἀνάφην | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1717']
+   --- context (apollonius-argonautica-grc.tsv) ---
+   4.1705     πολλὰ δʼ ἐς Ὀρτυγίην ἀπερείσια δῶρα κομίσσειν.
+   4.1706     Λητοΐδη, τύνη δὲ κατʼ οὐρανοῦ ἵκεο πέτρας
+   4.1707     ῥίμφα Μελαντίους ἀριήκοος, αἵ τʼ ἐνὶ πόντῳ
+   4.1708     ἧνται· δοιάων δὲ μιῆς ἐφύπερθεν ὀρούσας,
+   4.1709     δεξιτερῇ χρύσειον ἀνέσχεθες ὑψόθι τόξον·
+   4.1710     μαρμαρέην δʼ ἀπέλαμψε βιὸς περὶ πάντοθεν αἴγλην.
+   4.1711     τοῖσι δέ τις Σποράδων βαιὴ ἀπὸ τόφρʼ ἐφαάνθη
+   4.1712     νῆσος ἰδεῖν, ὀλίγης Ἱππουρίδος ἀντία νήσου,
+>> 4.1713     ἔνθʼ εὐνὰς ἐβάλοντο καὶ ἔσχεθον· αὐτίκα δʼ Ἠὼς
+>> 4.1714     φέγγεν ἀνερχομένη· τοὶ δʼ ἀγλαὸν Ἀπόλλωνι
+   4.1715     ἄλσει ἐνὶ σκιερῷ τέμενος σκιόεντά τε βωμὸν
+   4.1716     ποίεον, Αἰγλήτην μὲν ἐυσκόπου εἵνεκεν αἴγλης
+>> 4.1717     Φοῖβον κεκλόμενοι· Ἀνάφην δέ τε λισσάδα νῆσον
+   4.1718     ἴσκον, ὃ δὴ Φοῖβός μιν ἀτυζομένοις ἀνέφηνεν.
+   4.1719     ῥέζον δʼ ὅσσα περ ἄνδρες ἐρημαίῃ ἐνὶ ῥέζειν
+   4.1720     ἀκτῇ ἐφοπλίσσειαν· ὃ δή σφεας ὁππότε δαλοῖς
+   4.1721     ὕδωρ αἰθομένοισιν ἐπιλλείβοντας ἴδοντο
+   4.1722     Μηδείης δμωαὶ Φαιηκίδες, οὐκέτʼ ἔπειτα

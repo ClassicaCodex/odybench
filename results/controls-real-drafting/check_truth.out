@@ -1,0 +1,82 @@
+
+== PB E1: greatest -0720-03-20 00:22:01 TT (20 Mar 721 BC, proleptic Julian)  UT -0720-03-19 18:42:33 UT (19 Mar 721 BC, proleptic Julian)
+   umag 1.524  pmag 2.567  Moon ecl. lat +0.158 deg  Sun lon 351.80 deg
+   Babylon: mid LAT 21.49 h (from midnight -2.51 h); Moon alt at mid  43.6; night 12.13 h; mid 3.57 h after sunset = seasonal hour 4.53; U1 1.69 h after sunset (seasonal 2.67, Moon alt 22.1); U4 5.45 h (seasonal 6.39, Moon alt 58.5); moonrise 1.90 h before U1
+
+== PB E2: greatest -0719-03-09 02:33:52 TT (9 Mar 720 BC, proleptic Julian)  UT -0719-03-08 20:54:39 UT (8 Mar 720 BC, proleptic Julian)
+   umag 0.111  pmag 1.193  Moon ecl. lat +0.833 deg  Sun lon 340.93 deg
+   Babylon: mid LAT 23.63 h (from midnight -0.37 h); Moon alt at mid  64.9; night 12.50 h; mid 5.90 h after sunset = seasonal hour 6.66; U1 5.22 h after sunset (seasonal 6.02, Moon alt 61.5); U4 6.58 h (seasonal 7.31, Moon alt 65.1); moonrise 5.53 h before U1
+
+== PB E3: greatest -0719-09-01 22:44:33 TT (1 Sep 720 BC, proleptic Julian)  UT -0719-09-01 17:05:29 UT (1 Sep 720 BC, proleptic Julian)
+   umag 0.489  pmag 1.449  Moon ecl. lat -0.769 deg  Sun lon 151.23 deg
+   Babylon: mid LAT 20.04 h (from midnight -3.96 h); Moon alt at mid  16.8; night 10.90 h; mid 1.50 h after sunset = seasonal hour 2.65; U1 0.31 h after sunset (seasonal 1.35, Moon alt 3.3); U4 2.69 h (seasonal 3.96, Moon alt 29.0); moonrise 0.37 h before U1
+
+== PA H1: greatest +0133-05-06 23:21:05 TT (6 May AD 133, proleptic Julian)  UT +0133-05-06 20:49:52 UT (6 May AD 133, proleptic Julian)
+   umag 1.068  pmag 2.120  Moon ecl. lat -0.379 deg  Sun lon 44.32 deg
+   Alexandria: mid LAT 22.93 h (from midnight -1.07 h); Moon alt at mid  39.0; night 10.50 h; mid 4.20 h after sunset = seasonal hour 5.80; U1 2.44 h after sunset (seasonal 3.79, Moon alt 27.0); U4 5.96 h (seasonal 7.81, Moon alt 40.4); moonrise 2.63 h before U1
+
+== PA H2: greatest +0134-10-20 23:17:16 TT (20 Oct AD 134, proleptic Julian)  UT +0134-10-20 20:46:17 UT (20 Oct AD 134, proleptic Julian)
+   umag 0.828  pmag 1.894  Moon ecl. lat -0.503 deg  Sun lon 206.38 deg
+   Alexandria: mid LAT 22.98 h (from midnight -1.02 h); Moon alt at mid  63.9; night 12.73 h; mid 5.37 h after sunset = seasonal hour 6.06; U1 3.77 h after sunset (seasonal 4.55, Moon alt 47.6); U4 6.96 h (seasonal 7.56, Moon alt 67.3); moonrise 3.93 h before U1
+
+== PA H3: greatest +0136-03-06 04:06:04 TT (6 Mar AD 136, proleptic Julian)  UT +0136-03-06 01:35:19 UT (6 Mar AD 136, proleptic Julian)
+   umag 0.437  pmag 1.404  Moon ecl. lat -0.787 deg  Sun lon 344.77 deg
+   Alexandria: mid LAT  3.36 h (from midnight +3.36 h); Moon alt at mid  35.2; night 12.37 h; mid 9.57 h after sunset = seasonal hour 10.28; U1 8.43 h after sunset (seasonal 9.18, Moon alt 48.3); U4 10.71 h (seasonal 11.39, Moon alt 21.2); moonrise 8.90 h before U1
+
+== T1 Thuc 2.28: conjunction -0430-08-03 19:11:54 TT (3 Aug 431 BC, proleptic Julian)  Sun lon 124.65 deg
+   Athens: sunrise->max 12.67 h, day 14.27 h, max in seasonal day hour 11.65
+   Athens: mag 0.878 total=False annular=False max LAT 17.52 h  Sun alt 17.3  c1 LAT 16.46  c4 LAT 18.49  Sun alt c4 6.2
+
+== T2 Thuc 4.52 (Mar): conjunction -0423-03-21 12:08:13 TT (21 Mar 424 BC, proleptic Julian)  Sun lon 355.27 deg
+   Athens: sunrise->max 2.53 h, day 11.93 h, max in seasonal day hour 3.55
+   Athens: mag 0.703 total=False annular=False max LAT 8.56 h  Sun alt 27.9  c1 LAT 7.27  c4 LAT 10.01  Sun alt c4 41.6
+
+== T3 Thuc 7.50: greatest -0412-08-28 01:16:37 TT (28 Aug 413 BC, proleptic Julian)  UT -0412-08-27 20:56:01 UT (27 Aug 413 BC, proleptic Julian)
+   umag 1.081  pmag 2.098  Moon ecl. lat +0.401 deg  Sun lon 148.98 deg
+   Syracuse: mid LAT 21.93 h (from midnight -2.07 h); Moon alt at mid  32.5; night 10.63 h; mid 3.27 h after sunset = seasonal hour 4.69; U1 1.58 h after sunset (seasonal 2.78, Moon alt 17.6); U4 4.95 h (seasonal 6.59, Moon alt 40.6); moonrise 1.73 h before U1
+
+== X1 Hell 1.6.1: greatest -0405-04-15 23:34:14 TT (15 Apr 406 BC, proleptic Julian)  UT -0405-04-15 19:15:13 UT (15 Apr 406 BC, proleptic Julian)
+   umag 1.268  pmag 2.232  Moon ecl. lat +0.330 deg  Sun lon 19.53 deg
+   Athens: mid LAT 20.84 h (from midnight -3.16 h); Moon alt at mid  25.7; night 11.03 h; mid 2.37 h after sunset = seasonal hour 3.57; U1 0.67 h after sunset (seasonal 1.73, Moon alt 8.5); U4 4.06 h (seasonal 5.42, Moon alt 38.7); moonrise 0.87 h before U1
+
+== X2 Hell 2.3.4: conjunction -0403-09-03 12:47:32 TT (3 Sep 404 BC, proleptic Julian)  Sun lon 155.18 deg
+   Athens: sunrise->max 3.23 h, day 13.13 h, max in seasonal day hour 3.95
+   Athens: mag 0.731 total=False annular=False max LAT 8.64 h  Sun alt 36.9  c1 LAT 7.41  c4 LAT 10.03  Sun alt c4 51.3
+   Pherae: sunrise->max 3.20 h, day 13.23 h, max in seasonal day hour 3.90
+   Pherae: mag 0.774 total=False annular=False max LAT 8.56 h  Sun alt 35.4  c1 LAT 7.33  c4 LAT 9.94  Sun alt c4 49.5
+
+== X3 Hell 4.3.10: conjunction -0393-08-14 13:25:59 TT (14 Aug 394 BC, proleptic Julian)  Sun lon 135.16 deg
+   Boeotia: sunrise->max 4.50 h, day 13.97 h, max in seasonal day hour 4.87
+   Boeotia: mag 0.914 total=False annular=False max LAT 9.51 h  Sun alt 50.6  c1 LAT 7.97  c4 LAT 11.21  Sun alt c4 65.6
+
+== A1 Arbela: greatest -0330-09-20 22:25:21 TT (20 Sep 331 BC, proleptic Julian)  UT -0330-09-20 18:24:01 UT (20 Sep 331 BC, proleptic Julian)
+   umag 1.210  pmag 2.172  Moon ecl. lat +0.370 deg  Sun lon 172.77 deg
+   Arbela: mid LAT 21.41 h (from midnight -2.59 h); Moon alt at mid  36.3; night 11.57 h; mid 3.20 h after sunset = seasonal hour 4.32; U1 1.56 h after sunset (seasonal 2.61, Moon alt 19.1); U4 4.84 h (seasonal 6.03, Moon alt 48.5); moonrise 1.73 h before U1
+   TigrisCamp: mid LAT 21.34 h (from midnight -2.66 h); Moon alt at mid  35.4; night 11.57 h; mid 3.13 h after sunset = seasonal hour 4.25; U1 1.49 h after sunset (seasonal 2.54, Moon alt 18.2); U4 4.78 h (seasonal 5.96, Moon alt 47.8); moonrise 1.67 h before U1
+   Syracuse: mid LAT 19.50 h (from midnight -4.50 h); Moon alt at mid  15.2; night 11.57 h; mid 1.30 h after sunset = seasonal hour 2.35; U1 -0.34 h after sunset (seasonal 0.64, Moon alt -3.7); U4 2.94 h (seasonal 4.05, Moon alt 32.7)
+
+== P1 Pydna: greatest -0167-06-21 22:04:59 TT (21 Jun 168 BC, proleptic Julian)  UT -0167-06-21 18:39:04 UT (21 Jun 168 BC, proleptic Julian)
+   umag 1.251  pmag 2.307  Moon ecl. lat -0.286 deg  Sun lon 85.74 deg
+   Pydna: mid LAT 20.22 h (from midnight -3.78 h); Moon alt at mid   6.0; night 8.93 h; mid 0.70 h after sunset = seasonal hour 1.94; U1 -1.15 h after sunset (seasonal -0.54, Moon alt -11.5); U4 2.55 h (seasonal 4.42, Moon alt 19.1)
+
+== D1 Diod 20.5.5: conjunction -0309-08-15 12:01:06 TT (15 Aug 310 BC, proleptic Julian)  Sun lon 136.72 deg
+   Syracuse: sunrise->max 2.50 h, day 13.80 h, max in seasonal day hour 3.17
+   Syracuse: mag 0.997 total=False annular=False max LAT 7.58 h  Sun alt 28.3  c1 LAT 6.54  c4 LAT 8.73  Sun alt c4 42.0
+
+== L1 Livy 22.1.9: conjunction -0216-02-11 17:36:04 TT (11 Feb 217 BC, proleptic Julian)  Sun lon 318.93 deg
+   Rome: sunrise->max 9.17 h, day 10.27 h, max in seasonal day hour 11.71
+   Rome: mag 0.652 total=False annular=False max LAT 16.03 h  Sun alt 10.3  c1 LAT 14.96  c4 LAT 17.01  Sun alt c4 0.5
+   Sardinia(Carales): sunrise->max 9.03 h, day 10.43 h, max in seasonal day hour 11.39
+   Sardinia(Carales): mag 0.688 total=False annular=False max LAT 15.80 h  Sun alt 13.9  c1 LAT 14.68  c4 LAT 16.81  Sun alt c4 3.6
+
+== L2 Livy 30.38.8: conjunction -0202-05-06 16:41:02 TT (6 May 203 BC, proleptic Julian)  Sun lon 41.19 deg
+   Cumae: sunrise->max 10.63 h, day 14.00 h, max in seasonal day hour 10.11
+   Cumae: mag 0.482 total=False annular=False max LAT 15.62 h  Sun alt 36.8  c1 LAT 14.44  c4 LAT 16.69  Sun alt c4 24.8
+
+== L3 Livy 37.4.4: conjunction -0189-03-14 10:39:29 TT (14 Mar 190 BC, proleptic Julian)  Sun lon 349.68 deg
+   Rome: sunrise->max 0.97 h, day 11.67 h, max in seasonal day hour 1.99
+   Rome: mag 0.919 total=False annular=False max LAT 7.12 h  Sun alt 9.5  c1 LAT 6.11  c4 LAT 8.21  Sun alt c4 21.0
+
+== L4 Livy 38.36.4: conjunction -0187-07-17 10:25:46 TT (17 Jul 188 BC, proleptic Julian)  Sun lon 110.01 deg
+   Rome: sunrise->max 1.77 h, day 15.03 h, max in seasonal day hour 2.41
+   Rome: mag 0.998 total=False annular=False max LAT 6.24 h  Sun alt 17.2  c1 LAT 5.25  c4 LAT 7.32  Sun alt c4 29.1

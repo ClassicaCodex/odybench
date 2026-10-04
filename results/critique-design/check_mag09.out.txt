@@ -1,0 +1,5 @@
+mag>=0.9 for canon-frame dT in [27500, 30900] s (20-s grid)
+smh2020           P(mag>=0.9) = 0.932
+smh2020_parabola  P(mag>=0.9) = 0.934
+smh2016_parabola  P(mag>=0.9) = 0.997
+em2006_canon      P(mag>=0.9) = 0.849

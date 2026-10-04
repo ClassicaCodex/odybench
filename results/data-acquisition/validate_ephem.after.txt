@@ -1,0 +1,390 @@
+
+==============================================================================
+0. Software and data
+==============================================================================
+python 3.14.3  numpy 2.5.0  scipy 1.18.0
+skyfield 1.55  jplephem 2.24  pyerfa 2.0.1.5 (ERFA 2.0.1)
+de441_m0135_eclipse.bsp             0.09 MB  JD 1671793.5..1671913.5 (-135..-135)  targets [3, 10, 301, 399]
+de441_m0584_eclipse.bsp             0.09 MB  JD 1507839.5..1507959.5 (-584..-584)  targets [3, 10, 301, 399]
+de441_m0708_eclipse.bsp             0.09 MB  JD 1462598.5..1462718.5 (-708..-708)  targets [3, 10, 301, 399]
+de441_m0762_eclipse.bsp             0.09 MB  JD 1442842.5..1442962.5 (-762..-762)  targets [3, 10, 301, 399]
+de441_m1320_m1030.bsp              30.04 MB  JD 1238939.5..1344860.5 (-1320..-1030)  targets [1, 2, 3, 4, 5, 6, 10, 199, 299, 301, 399]
+de441_m2060_p0241.bsp             237.91 MB  JD 968642.5..1809083.5 (-2060..241)  targets [1, 2, 3, 4, 5, 6, 10, 199, 299, 301, 399]
+
+==============================================================================
+1. Delta-T
+==============================================================================
+decimal year (Julian epoch) of -1177 Apr 16 = -1176.6776
+model                      -1300  -1177.29     -1100     -1050   sigma(-1177) [source of sigma]
+smh2020                    30800     28543     27153     26249      720  [HMNAO epsilon table]
+smh2020_parabola           30654     28282     26855     25944      541  [+-0.6 tau^2 (eq. 5.1)]
+smh2016_parabola           31418     28963     27486     26543      541  [+-0.6 tau^2 (eq. 4.1)]
+em2006                     31130     28716     27264     26338     1008  [Huber 2000 (NASA page)]
+em2006_canon               30993     28589     27144     26221     1008  [Huber 2000 (NASA page)]
+skyfield builtin           31334     28786     27250     26270   (no sigma)
+MS2004 0.8u^2 sigma                    718   (formula stated for 1000 BC-AD 1200)
+n-dot correction -25.82 -> -25.858 at -1177: +33.9 s;  -26.00 -> -25.82: -160.8 s
+
+1a. HMNAO extrapolated Delta-T table -2000..-800 (hours, 1 decimal) vs dt_smh2020:
+   -2000  HMNAO  12.8 h   ours  12.7318 h  rounded  12.7  rounded-up  12.8
+   -1900  HMNAO  12.1 h   ours  12.0455 h  rounded  12.0  rounded-up  12.1
+   -1800  HMNAO  11.4 h   ours  11.3889 h  rounded  11.4  rounded-up  11.4
+   -1700  HMNAO  10.8 h   ours  10.7650 h  rounded  10.8  rounded-up  10.8
+   -1600  HMNAO  10.2 h   ours  10.1739 h  rounded  10.2  rounded-up  10.2
+   -1500  HMNAO   9.7 h   ours   9.6124 h  rounded   9.6  rounded-up   9.7
+   -1400  HMNAO   9.1 h   ours   9.0753 h  rounded   9.1  rounded-up   9.1
+   -1300  HMNAO   8.6 h   ours   8.5555 h  rounded   8.6  rounded-up   8.6
+   -1200  HMNAO   8.1 h   ours   8.0464 h  rounded   8.0  rounded-up   8.1
+   -1100  HMNAO   7.6 h   ours   7.5426 h  rounded   7.5  rounded-up   7.6
+   -1000  HMNAO   7.1 h   ours   7.0408 h  rounded   7.0  rounded-up   7.1
+    -900  HMNAO   6.6 h   ours   6.5413 h  rounded   6.5  rounded-up   6.6
+    -800  HMNAO   6.1 h   ours   6.0470 h  rounded   6.0  rounded-up   6.1
+  entries reproduced: rounded-up 13/13, rounded-nearest 5/13
+
+1b. HMNAO spline table -720..+1600 (seconds, nearest 10) vs dt_smh2020:
+    -720  HMNAO  20370  ours   20371.8
+    -700  HMNAO  20050  ours   20050.1
+    -600  HMNAO  18470  ours   18468.5
+    -100  HMNAO  11560  ours   11557.7
+    1000  HMNAO   1650  ours    1650.4
+    1600  HMNAO    110  ours     109.1
+  max |ours - HMNAO| over 25 epochs = 5.0 s (table rounded to 10 s)
+
+1c. skyfield-bundled S15 v2020 vs HMNAO file: 58 rows compared, 0 mismatches
+
+1d. NASA Canon Delta-T (Espenak-Meeus with n-dot correction) vs dt_em2006_canon:
+  -1177-04-16  Canon  28590.0  ours  28590.0  diff  +0.0 s
+   -762-06-15  Canon  21210.6  ours  21210.5  diff  -0.1 s
+   -584-05-28  Canon  18383.9  ours  18384.4  diff  +0.5 s
+   -135-04-15  Canon  11968.9  ours  11968.8  diff  -0.1 s
+   -708-07-17  Canon  20330.0  ours  20330.1  diff  +0.1 s
+  NASA phase table prints 07h59m for -1177; dt_em2006 (no n-dot corr.) = +7h58m41.6s
+
+1e. JPL Horizons' own TDB-UT (quantity 30) at sample epochs:
+   -2000  Horizons   46100.0   manual formula(T from 1825.0)   45934.7   smh2020   45833.5
+   -1500  Horizons   34852.6   manual formula(T from 1825.0)   34726.5   smh2020   34604.1
+   -1300  Horizons   30794.1   manual formula(T from 1825.0)   30682.1   smh2020   30799.3
+   -1177  Horizons   28423.1   manual formula(T from 1825.0)   28319.4   smh2020   28548.2
+   -1100  Horizons   26987.2   manual formula(T from 1825.0)   26888.6   smh2020   27152.6
+   -1050  Horizons   26074.8   manual formula(T from 1825.0)   25979.4   smh2020   26248.8
+    -800  Horizons   21748.8   manual formula(T from 1825.0)   21668.5   smh2020   21768.5
+    -722  Horizons   20479.5   manual formula(T from 1825.0)   20403.8   smh2020   20405.8
+    -700  Horizons   20124.6   manual formula(T from 1825.0)   20053.9   smh2020   20049.6
+    -500  Horizons   17003.3   manual formula(T from 1825.0)   17012.8   smh2020   16939.1
+  quadratic fit to Horizons before -721: 65.80 + 31.457566 ((y - 1825.44)/100)^2, max resid 0.000 s
+
+==============================================================================
+2. Precession: Vondrak et al. 2011 (ERFA) vs paper, and vs IAU 2006
+==============================================================================
+  routine            ERFA (corrected) - paper   typo-C7 port - paper
+  ltp_PECL (A.1)       2.71e-09 ( 0.559 mas)     1.11e-16 (0.0000 mas)
+  ltp_PEQU (A.2)       2.50e-15 ( 0.000 mas)     2.50e-15 (0.0000 mas)
+  ltp_PMAT (A.3)       3.94e-09 ( 0.812 mas)     6.44e-15 (0.0000 mas)
+  ltp_PBMAT (A.4)      3.94e-09 ( 0.812 mas)     6.44e-15 (0.0000 mas)
+  port with corrected C7 vs ERFA eraLtpecl: 0.0e+00
+  (test epoch -1374 May 3 (Gregorian) 13:52:19.2 TT = JD 1219339.078; paper sect. A.5. The paper's test values were made with the C7 = 198.296071 typo that the 2012 corrigendum fixes; ERFA uses 198.296701. The difference is < 1 mas.)
+
+2a. CIO locator s: quadrature along the IAU 2006 pole path + first-order nutation term, vs ERFA eraS06a
+    (full IAU 2006/2000A series).  Neglected: a 2.6 mas 18.6-yr term and the 3.8 mas/cy cross term.
+   1700.0  ours  -1121.852 mas   eraS06a  -1131.922 mas   diff +10.070 mas
+   1800.0  ours   -223.509 mas   eraS06a   -230.580 mas   diff +7.071 mas
+   1900.0  ours    -49.039 mas   eraS06a    -48.196 mas   diff -0.843 mas
+   2000.0  ours     -2.013 mas   eraS06a     -2.090 mas   diff +0.078 mas
+   2100.0  ours     -7.392 mas   eraS06a     -0.991 mas   diff -6.401 mas
+   2200.0  ours    366.565 mas   eraS06a    378.023 mas   diff -11.458 mas
+  (1 s of Delta-T = 15 000 mas of Earth rotation; these residuals are irrelevant here.)
+
+2b. IAU 2006 (P03) vs Vondrak 2011 at selected epochs:
+      epoch  pole sep  rotation  EO V-P03 EO P03 int-poly obl V-P03  (arcsec)
+       1000     0.031     0.052    +0.083          +0.036    +0.009
+          0     0.212     0.370    +0.367          +0.061    -0.196
+       -500     0.509     0.814    +0.695          +0.043    -0.579
+      -1000     1.109     1.681    +1.282          -0.032    -1.325
+      -1177     1.430     2.139    +1.582          -0.082    -1.710
+      -1300     1.696     2.518    +1.825          -0.127    -2.022
+      -2000     4.133     5.943    +3.947          -0.603    -4.676
+  -> at -1177 the hour-angle (sidereal time) difference is +1.58" = +0.105 s of time; 1 s of Delta-T = 15.04".
+
+2c. Mean sidereal time at -1177 Apr 16 10:00 UT1 (Delta-T 28417.6 s as Horizons), three formulations:
+  GMST(IAU 1982, eraGmst82; used by Horizons and, presumably, the NASA Canon) - GMST(Vondrak-consistent) = +30.1"
+  GMST(IAU 2006, eraGmst06; skyfield)                                          - GMST(Vondrak-consistent) = +1.6"
+  (15" = 1 s of time.  The IAU 1982 expression is a UT1 polynomial tied to IAU 1976 precession.)
+
+==============================================================================
+3. Stars: Hipparcos 2007 + space motion to -1177, both precession models
+==============================================================================
+epoch -1177-03-18 18:00:00 UT (18 Mar 1178 BC, proleptic Julian); Delta-T smh2020 28544 s; site Ithaki 38.37N 20.72E
+star         mu tot   shift  sky-ERFA  RV eff   HIP97    RA date   Dec date    dRA*    dDec      alt   dAlt    dAz
+alcyone      0.048"  0.042d    0.003"   0.02"   1.77"    13.1418    +9.8009   -0.70   -2.54   12.174  -0.86  -2.60
+arcturus     2.279"  2.002d    0.125"  10.96"   2.10"   177.0175   +37.7231   -1.39   +2.28   27.988  +1.21  -2.20
+eps_boo      0.055"  0.048d    0.010"   0.16"   3.51"   185.5535   +43.0974   -1.19   +2.44   24.944  +1.25  -2.31
+eta_boo      0.361"  0.319d    0.022"   1.90"   5.75"   169.5211   +35.9350   -1.54   +2.10   32.484  +1.18  -2.09
+columns: total proper motion ("/yr); angular shift J1991.25 -> -1177 (deg); skyfield vs ERFA eraPmsafe ("); effect of radial velocity ("); HIP1997 vs HIP2007 ("); apparent RA/Dec of date (deg, Vondrak); dRA*=dRA cos dec and dDec, Vondrak - IAU2006 ("); airless altitude (deg) at Ithaki and its Vondrak - IAU2006 difference in alt and az (").
+  alcyone: light-time change over -3168 yr = -20.8 d -> expected 0.003", found 0.003"
+  arcturus: light-time change over -3168 yr = +20.2 d -> expected 0.126", found 0.125"
+  eps_boo: light-time change over -3168 yr = +64.1 d -> expected 0.010", found 0.010"
+  eta_boo: light-time change over -3168 yr = -22.3 d -> expected 0.022", found 0.022"
+
+==============================================================================
+4. Solar eclipses vs NASA Five Millennium Canon (VSOP87/ELP-2000/82)
+==============================================================================
+
+-1177 -1177-04-16 17:59:51 TT (16 Apr 1178 BC, proleptic Julian)  (Canon Delta-T 28590.0 s)
+  greatest eclipse TT      ours 17:59:51   Canon 17:57:28   diff +143 s
+  gamma                    ours 0.5179     Canon 0.5187    diff -0.0008
+  x, y at t0=18h TT       ours -0.24818 +0.45460   Canon -0.22851 +0.46631
+  d at t0 (deg)            ours 5.71695   Canon 5.71733
+  mu at t0 (ephemeris HA)  ours 90.0791  Canon 90.0876  diff -31" = -2.0 s of time
+  GE point (Canon dT)      ours 32.67N 12.19E at 10:03:21 UT   Canon 32.7° N 12.7° E at 10:0:58 UT
+  mag (ratio, k2) at GE    ours 1.0600     Canon 1.0599
+  central duration at GE   ours 273 s     Canon 04m33s (273 s)
+  Sun alt/az at GE         ours 58.6 / 145.5   Canon 58.6 / 145.5
+
+-762 -0762-06-15 14:09:09 TT (15 Jun 763 BC, proleptic Julian)  (Canon Delta-T 21210.6 s)
+  greatest eclipse TT      ours 14:09:09   Canon 14:07:32   diff +97 s
+  gamma                    ours 0.2720     Canon 0.2715    diff +0.0005
+  x, y at t0=14h TT       ours -0.09180 +0.27051   Canon -0.07641 +0.27028
+  d at t0 (deg)            ours 22.90269   Canon 22.90360
+  mu at t0 (ephemeris HA)  ours 32.0653  Canon 32.0703  diff -18" = -1.2 s of time
+  GE point (Canon dT)      ours 38.89N 53.93E at 08:15:38 UT   Canon 38.9° N 54.3° E at 8:14:1 UT
+  mag (ratio, k2) at GE    ours 1.0596     Canon 1.0596
+  central duration at GE   ours 300 s     Canon 05m00s (300 s)
+  Sun alt/az at GE         ours 74.0 / 178.9   Canon 74.0 / 178.9
+
+-584 -0584-05-28 19:29:57 TT (28 May 585 BC, proleptic Julian)  (Canon Delta-T 18383.9 s)
+  greatest eclipse TT      ours 19:29:57   Canon 19:28:50   diff +67 s
+  gamma                    ours 0.3198     Canon 0.3201    diff -0.0003
+  x, y at t0=19h TT       ours -0.37639 +0.21310   Canon -0.36627 +0.21679
+  d at t0 (deg)            ours 20.36410   Canon 20.36465
+  mu at t0 (ephemeris HA)  ours 107.3403  Canon 107.3441  diff -14" = -0.9 s of time
+  GE point (Canon dT)      ours 38.14N -45.28E at 14:23:33 UT   Canon 38.2° N 45.0° W at 14:22:26 UT
+  mag (ratio, k2) at GE    ours 1.0798     Canon 1.0798
+  central duration at GE   ours 364 s     Canon 06m04s (364 s)
+  Sun alt/az at GE         ours 71.2 / 158.5   Canon 71.1 / 158.5
+
+-135 -0135-04-15 09:27:39 TT (15 Apr 136 BC, proleptic Julian)  (Canon Delta-T 11968.9 s)
+  greatest eclipse TT      ours 09:27:39   Canon 09:27:08   diff +31 s
+  gamma                    ours 0.7118     Canon 0.7119    diff -0.0001
+  x, y at t0=9h TT       ours -0.56618 +0.50588   Canon -0.56178 +0.50833
+  d at t0 (deg)            ours 8.48565   Canon 8.48555
+  mu at t0 (ephemeris HA)  ours 315.2716  Canon 315.2733  diff -6" = -0.4 s of time
+  GE point (Canon dT)      ours 46.84N 58.80E at 06:08:10 UT   Canon 46.8° N 58.9° E at 6:7:39 UT
+  mag (ratio, k2) at GE    ours 1.0527     Canon 1.0527
+  central duration at GE   ours 219 s     Canon 03m39s (219 s)
+  Sun alt/az at GE         ours 44.4 / 137.8   Canon 44.4 / 137.8
+
+-708 -0708-07-17 12:30:20 TT (17 Jul 709 BC, proleptic Julian)  (Canon Delta-T 20330.0 s)
+  greatest eclipse TT      ours 12:30:20   Canon 12:28:51   diff +89 s
+  gamma                    ours 0.4760     Canon 0.4756    diff +0.0004
+  x, y at t0=12h TT       ours -0.18015 +0.52827   Canon -0.16639 +0.52473
+  d at t0 (deg)            ours 22.77526   Canon 22.77618
+  mu at t0 (ephemeris HA)  ours 0.1978  Canon 0.2021  diff -16" = -1.0 s of time
+  GE point (Canon dT)      ours 50.48N 86.57E at 06:51:30 UT   Canon 50.5° N 86.9° E at 6:50:1 UT
+  mag (ratio, k2) at GE    ours 1.0601     Canon 1.0601
+  central duration at GE   ours 265 s     Canon 04m25s (265 s)
+  Sun alt/az at GE         ours 61.3 / 198.3   Canon 61.4 / 198.3
+
+==============================================================================
+5. -1177 Apr 16: local circumstances at Ithaca, Kefalonia, Lefkada
+==============================================================================
+5a. Same Delta-T (Canon 28590 s): ours (DE441, direct) vs NASA Besselian elements (independent algorithm)
+  Ithaki (Vathy)         max UT ours 10:25:41 NASA 10:22:24 (+197 s); mag ours 0.9751 NASA 0.9839; total False/False; Sun alt 57.2/57.2
+  Kefalonia (Argostoli)  max UT ours 10:25:03 NASA 10:21:46 (+197 s); mag ours 0.9755 NASA 0.9844; total False/False; Sun alt 57.4/57.3
+  Lefkada (town)         max UT ours 10:26:23 NASA 10:23:06 (+196 s); mag ours 0.9845 NASA 0.9932; total False/False; Sun alt 56.8/56.7
+
+5b. Ithaki as a function of constant Delta-T (DE441, Vondrak precession):
+   Delta-T    max UT    LAT    mag   obsc total  dur s Sun alt  Sun az
+     26000  11:25:11 12:47  0.783  0.738 False      0    55.6   201.1
+     26500  11:13:38 12:35  0.819  0.784 False      0    56.4   196.2
+     27000  11:02:07 12:24  0.856  0.831 False      0    56.9   191.0
+     27500  10:50:37 12:12  0.893  0.878 False      0    57.2   185.8
+     28000  10:39:10 12:01  0.930  0.925 False      0    57.4   180.5
+     28500  10:27:44 11:49  0.968  0.971 False      0    57.3   175.2
+     29000  10:16:21 11:38  1.006  1.000  True    162    57.0   170.0
+     29500  10:05:01 11:26  1.016  1.000  True    237    56.5   164.9
+     30000  09:53:43 11:15  0.978  0.982 False      0    55.8   160.0
+     30500  09:42:28 11:04  0.940  0.938 False      0    55.0   155.3
+     31000  09:31:15 10:53  0.903  0.891 False      0    54.0   150.8
+     31500  09:20:06 10:41  0.866  0.843 False      0    52.9   146.6
+     32000  09:09:00 10:30  0.829  0.797 False      0    51.6   142.5
+
+5c. Delta-T windows for TOTALITY (constant Delta-T, 0.5 s):
+  Ithaki (Vathy)         DE441: [28922, 29706] (width 784 s, mid 29314)
+                         NASA elements: [28801, 29585]
+  Kefalonia (Argostoli)  DE441: [28916, 29697] (width 782 s, mid 29306)
+                         NASA elements: [28794, 29576]
+  Lefkada (town)         DE441: [28801, 29591] (width 790 s, mid 29196)
+                         NASA elements: [28680, 29470]
+  Delta-T models at -1177.29 (value +- stated 1 sigma):
+    smh2020              28543 +-  720   Ithaki window mid - model =   +771 s = +1.07 sigma
+    smh2020_parabola     28282 +-  541   Ithaki window mid - model =  +1033 s = +1.91 sigma
+    smh2016_parabola     28963 +-  541   Ithaki window mid - model =   +351 s = +0.65 sigma
+    em2006               28716 +- 1008   Ithaki window mid - model =   +598 s = +0.59 sigma
+    em2006_canon         28589 +- 1008   Ithaki window mid - model =   +725 s = +0.72 sigma
+    Horizons TDB-UT      28423 (at -1177 Jan 1)
+
+5d. Self-check: Delta-T change == longitude shift (exact in this formulation)
+  mag 0.940154 vs 0.940154;  max TT diff +0.001 s
+
+5e. Which lunar ephemeris?  SMH's Delta-T is tied to DE430 / analytical j=2 (n-dot -25.82 / -26.00).
+    DE431 (same lunar model as DE430, long span) vs DE441, greatest-eclipse TT:
+  -135   DE441 - DE431 =   +55.8 s   (Moon-Sun elongation rate 0.573"/s ->  +31.9" along-track);  gamma 0.71178 vs 0.71210
+  -708   DE441 - DE431 =  +115.2 s   (Moon-Sun elongation rate 0.578"/s ->  +66.6" along-track);  gamma 0.47603 vs 0.47538
+  -762   DE441 - DE431 =  +122.9 s   (Moon-Sun elongation rate 0.570"/s ->  +70.1" along-track);  gamma 0.27202 vs 0.27133
+  -1177  DE441 - DE431 =  +187.7 s   (Moon-Sun elongation rate 0.575"/s -> +107.9" along-track);  gamma 0.51793 vs 0.51900
+  fit Moon(DE441) - Moon(DE431) = 0.5 b T^2: coefficient -0.19251, residuals +11.9" +3.9" +3.4" -10.8"  (T in Julian centuries from J2000)
+  fit Moon(DE441) - Moon(DE431) = k T^3: coefficient +0.00335, residuals +0.7" -0.1" +0.5" -0.5"  (T in Julian centuries from J2000)
+
+5f. Totality windows at the three sites with DE431, and the chance of totality under each Delta-T model
+    (Gaussian with the model's stated sigma; window = constant Delta-T range giving totality):
+  Ithaki (Vathy)         DE441 [28922, 29706]   DE431 [28761, 29545]   shift +161/+161 s
+  Kefalonia (Argostoli)  DE441 [28916, 29697]   DE431 [28754, 29536]   shift +161/+161 s
+  Lefkada (town)         DE441 [28801, 29591]   DE431 [28640, 29430]   shift +161/+161 s
+  P(total at site)               Ithaki 441       Ithaki 431    Kefalonia 441    Kefalonia 431      Lefkada 441      Lefkada 431
+  smh2020             28543+- 720            0.246            0.299            0.248            0.301            0.287            0.337
+  smh2020_parabola    28282+- 541            0.114            0.178            0.116            0.181            0.161            0.237
+  smh2016_parabola    28963+- 541            0.445            0.505            0.448            0.505            0.495            0.531
+  em2006              28716+-1008            0.256            0.277            0.256            0.277            0.274            0.291
+  em2006_canon        28589+-1008            0.237            0.261            0.237            0.261            0.257            0.278
+  (em2006/em2006_canon sigma is Huber's 1008 s; with MS2004's 0.8u^2 = 718 s the numbers change little)
+
+5g. Where the central line crosses Ithaki's meridian (20.72E), DE441 and DE431, by Delta-T:
+  Delta-T   27823: central line at  43.75N (DE441),  43.24N (DE431); Ithaki is   -599 /   -542 km north of it (along the meridian)
+  Delta-T   28543: central line at  41.30N (DE441),  40.72N (DE431); Ithaki is   -326 /   -262 km north of it (along the meridian)
+  Delta-T   29263: central line at  38.58N (DE441),  37.93N (DE431); Ithaki is    -23 /    +49 km north of it (along the meridian)
+  Delta-T   29314: central line at  38.37N (DE441),  37.72N (DE431); Ithaki is     -0 /    +73 km north of it (along the meridian)
+
+==============================================================================
+6. Historical eclipses with observations: totality windows vs published Delta-T
+==============================================================================
+
+-135 Babylon (32.54N 44.42E)  [SMH Table S10 v2020 (total at Babylon)]
+  totality window DE441 (ours):   [11259, 12170]
+  totality window NASA elements: [11232, 12143]
+  published SMH bounds:           [11220, 12140]
+  DE441 - SMH: lower +39 s, upper +30 s
+  totality window DE431:          [11214, 12126]
+  DE431 - SMH: lower -6 s, upper -14 s
+  Delta-T models: smh2020 11968 +- 103; em2006 12025; em2006_canon 11968
+
+-708 Qufu (Lu) (35.6N 116.99E)  [SMH Table S10 v2020 (total, China)]
+  totality window DE441 (ours):   [20271, 21198]
+  totality window NASA elements: [20197, 21124]
+  published SMH bounds:           [20160, 21100]
+  DE441 - SMH: lower +111 s, upper +98 s
+  totality window DE431:          [20176, 21103]
+  DE431 - SMH: lower +16 s, upper +3 s
+  Delta-T models: smh2020 20169 +- 174; em2006 20421; em2006_canon 20329
+
+-762 Assur (35.46N 43.26E)  [Assyrian eponym chronicle (no totality stated)]
+  totality window DE441 (ours):   [22853, 24413]
+  totality window NASA elements: [22729, 24294]
+  Delta-T models: smh2020 21093 +- 273; em2006 21305; em2006_canon 21210
+
+-762 Nineveh (36.36N 43.15E)  [Assyrian eponym chronicle (no totality stated)]
+  totality window DE441 (ours):   [21910, 23705]
+  totality window NASA elements: [21781, 23585]
+  Delta-T models: smh2020 21093 +- 273; em2006 21305; em2006_canon 21210
+
+==============================================================================
+7. New moons (conjunctions in apparent ecliptic longitude) vs NASA phase catalogue
+==============================================================================
+  24 NASA new moons in -1178/-1177 matched to ours (TT); NASA UT + 07h59m (their Delta-T column)
+  ours - NASA (minutes): mean +18.7, sd 0.4, min +17.9, max +19.3
+  (NASA times are rounded to 1 min and computed with Meeus' truncated series; Delta-T column rounded to 1 min)
+  conjunction nearest the eclipse: -1177-04-16 18:05:10 TT (16 Apr 1178 BC, proleptic Julian)
+  instrument check: our conjunction comes +5.3 min after our greatest eclipse; applying the same gap to the
+  Canon's own greatest eclipse (17:57:28 TD) predicts a Canon-consistent conjunction at 18:02:46 TD, but the phase catalogue gives 17:47:00 TD:
+  NASA's two products disagree by -15.8 min, i.e. most of the +18.7 min offset is internal to the reference (Meeus' phase series without the Canon's n-dot treatment), and ours - Canon-consistent = +2.4 min.
+
+==============================================================================
+8. Planets, Sun, Moon vs JPL Horizons (topocentric Ithaki, airless)
+==============================================================================
+body                       UT    dT_HZ |  astrom |  appRA*  appDec |     dAz     dEl | P03 dAz P03 dEl |    elong d elong |   el(HZ)   el smh
+venus     -1177-04-10 03:00:0  28417.9 |   0.000 |   +1.39   +0.59 |  -20.58  -22.79 |  -21.47  -21.77 |  44.4636   +0.06 |    2.913    2.906
+venus     -1177-04-10 03:30:0  28417.9 |   0.000 |   +1.39   +0.59 |  -21.51  -21.92 |  -22.35  -20.86 |  44.4613   -0.01 |    8.298    8.291
+venus     -1177-04-10 04:00:0  28417.9 |   0.000 |   +1.39   +0.59 |  -22.58  -20.81 |  -23.37  -19.71 |  44.4590   -0.06 |   13.455   13.448
+mercury   -1177-04-10 03:00:0  28417.9 |   0.000 |   +1.40   +0.55 |  -19.89  -24.50 |  -21.22  -22.65 |  17.2879   +0.08 |  -11.471  -11.479
+mercury   -1177-04-10 03:30:0  28417.9 |   0.000 |   +1.40   +0.55 |  -19.90  -24.49 |  -21.23  -22.64 |  17.2702   +0.16 |   -5.593   -5.600
+mercury   -1177-04-10 04:00:0  28417.9 |   0.000 |   +1.40   +0.55 |  -20.12  -24.32 |  -21.43  -22.45 |  17.2525   +0.18 |    0.265    0.257
+venus     -1177-03-14 16:30:0  28419.3 |   0.000 |   +1.45   +0.51 |  -16.60  +24.94 |  -16.56  +25.14 |  46.1329   +0.05 |  -43.507  -43.499
+venus     -1177-03-14 17:00:0  28419.3 |   0.000 |   +1.45   +0.51 |  -17.35  +24.42 |  -17.33  +24.62 |  46.1329   -0.08 |  -49.257  -49.249
+venus     -1177-03-14 17:30:0  28419.3 |   0.000 |   +1.44   +0.51 |  -18.62  +23.47 |  -18.60  +23.67 |  46.1328   +0.14 |  -54.833  -54.826
+mercury   -1177-03-14 16:30:0  28419.3 |   0.000 |   +1.39   +0.58 |  -16.77  +25.21 |  -15.89  +25.79 |  26.5246   -0.14 |  -25.994  -25.986
+mercury   -1177-03-14 17:00:0  28419.3 |   0.000 |   +1.39   +0.58 |  -16.76  +25.21 |  -15.89  +25.79 |  26.5297   -0.03 |  -31.875  -31.867
+mercury   -1177-03-14 17:30:0  28419.3 |   0.000 |   +1.39   +0.58 |  -17.02  +25.04 |  -16.15  +25.63 |  26.5348   -0.02 |  -37.736  -37.728
+venus     -1210-06-01 02:30:0  29041.9 |   0.000 |   +1.45   -0.20 |  -25.17  -17.00 |  -26.25  -15.52 |  16.9794   -0.17 |  -15.729  -15.735
+venus     -1210-06-01 03:00:0  29041.9 |   0.000 |   +1.45   -0.20 |  -23.79  -18.88 |  -24.98  -17.50 |  16.9850   +0.17 |  -11.716  -11.722
+venus     -1210-06-01 03:30:0  29041.9 |   0.000 |   +1.45   -0.20 |  -22.43  -20.47 |  -23.72  -19.18 |  16.9908   -0.16 |   -7.310   -7.316
+mercury   -1210-06-01 02:30:0  29041.9 |   0.001 |   +1.43   -0.29 |  -26.92  -13.91 |  -27.75  -12.73 |  26.2760   -0.06 |  -20.225  -20.230
+mercury   -1210-06-01 03:00:0  29041.9 |   0.001 |   +1.43   -0.29 |  -25.58  -16.25 |  -26.52  -15.14 |  26.2775   -0.16 |  -16.878  -16.883
+mercury   -1210-06-01 03:30:0  29041.9 |   0.001 |   +1.43   -0.29 |  -24.19  -18.25 |  -25.21  -17.22 |  26.2789   +0.05 |  -13.040  -13.046
+sun       -1177-04-16 09:30:0  28417.6 |   0.000 |   +1.46   +0.43 |  -29.28  -11.91 |  -29.50   -9.25 |   0.0000   +0.00 |   53.872   53.868
+sun       -1177-04-16 10:00:0  28417.6 |   0.000 |   +1.46   +0.43 |  -30.83   -6.96 |  -30.62   -4.30 |   0.0000   +0.00 |   56.222   56.220
+sun       -1177-04-16 10:30:0  28417.6 |   0.000 |   +1.46   +0.43 |  -31.59   -1.19 |  -30.89   +1.39 |   0.0000   +0.00 |   57.302   57.302
+moon      -1177-04-16 09:30:0  28417.6 |   0.169 |   +1.62   +0.39 |  -29.53  -11.75 |  -29.73   -9.05 |   0.4187   -0.02 |   53.761   53.760
+moon      -1177-04-16 10:00:0  28417.6 |   0.174 |   +1.63   +0.39 |  -31.03   -6.88 |  -30.79   -4.19 |   0.2092   -0.17 |   56.151   56.155
+moon      -1177-04-16 10:30:0  28417.6 |   0.175 |   +1.63   +0.40 |  -31.76   -1.21 |  -31.04   +1.40 |   0.0360   -0.04 |   57.331   57.340
+columns: Horizons TDB-UT used as our Delta-T (s); |ours - HZ| astrometric ICRF position ("); apparent RA* and Dec of date, ours(Vondrak) - HZ ("); az* and el, ours(Vondrak) - HZ ("); the same with IAU 2006 precession; Horizons S-O-T elongation (deg) and ours - HZ (", HZ prints 4 decimals = 0.36"); HZ elevation (deg) and ours with smh2020 Delta-T instead of Horizons' (deg).
+worst |diff|: astrometric 0.001" (Moon 0.175"), apparent of date 1.68", az/el 31.78", elongation 0.18"
+
+==============================================================================
+9. Summary of checks
+==============================================================================
+  [PASS] HMNAO -2000..-800 table reproduced (rounded up)  13/13
+  [PASS] HMNAO -720..1600 spline table reproduced  5.0 s
+  [PASS] S15 v2020 coefficients identical to HMNAO file  58 rows
+  [PASS] Canon Delta-T -1177  +0.0 s
+  [PASS] Canon Delta-T -762  -0.1 s
+  [PASS] Canon Delta-T -584  +0.5 s
+  [PASS] Canon Delta-T -135  -0.1 s
+  [PASS] Canon Delta-T -708  +0.1 s
+  [PASS] Vondrak test case ltp_PECL (A.1) (typo-C7 port reproduces paper to double precision)  1.1e-16
+  [PASS] Vondrak test case ltp_PECL (A.1) (ERFA within corrigendum effect)  2.7e-09
+  [PASS] Vondrak test case ltp_PEQU (A.2) (typo-C7 port reproduces paper to double precision)  2.5e-15
+  [PASS] Vondrak test case ltp_PEQU (A.2) (ERFA within corrigendum effect)  2.5e-15
+  [PASS] Vondrak test case ltp_PMAT (A.3) (typo-C7 port reproduces paper to double precision)  6.4e-15
+  [PASS] Vondrak test case ltp_PMAT (A.3) (ERFA within corrigendum effect)  3.9e-09
+  [PASS] Vondrak test case ltp_PBMAT (A.4) (typo-C7 port reproduces paper to double precision)  6.4e-15
+  [PASS] Vondrak test case ltp_PBMAT (A.4) (ERFA within corrigendum effect)  3.9e-09
+  [PASS] s vs eraS06a at 1700.0 (< 20 mas)  +10.1 mas
+  [PASS] s vs eraS06a at 1800.0 (< 20 mas)  +7.1 mas
+  [PASS] s vs eraS06a at 1900.0 (< 20 mas)  -0.8 mas
+  [PASS] s vs eraS06a at 2000.0 (< 20 mas)  +0.1 mas
+  [PASS] s vs eraS06a at 2100.0 (< 20 mas)  -6.4 mas
+  [PASS] s vs eraS06a at 2200.0 (< 20 mas)  -11.5 mas
+  [PASS] star alcyone: skyfield vs ERFA pmsafe (= Roemer light-time term)  0.003" vs 0.003"
+  [PASS] star arcturus: skyfield vs ERFA pmsafe (= Roemer light-time term)  0.125" vs 0.126"
+  [PASS] star eps_boo: skyfield vs ERFA pmsafe (= Roemer light-time term)  0.010" vs 0.010"
+  [PASS] star eta_boo: skyfield vs ERFA pmsafe (= Roemer light-time term)  0.022" vs 0.022"
+  [PASS] -1177 gamma vs Canon  -0.0008
+  [PASS] -1177 GE time vs Canon  +143 s
+  [PASS] -1177 magnitude vs Canon  +0.0001
+  [PASS] -1177 duration vs Canon  -0 s
+  [PASS] -762 gamma vs Canon  +0.0005
+  [PASS] -762 GE time vs Canon  +97 s
+  [PASS] -762 magnitude vs Canon  +0.0000
+  [PASS] -762 duration vs Canon  +0 s
+  [PASS] -584 gamma vs Canon  -0.0003
+  [PASS] -584 GE time vs Canon  +67 s
+  [PASS] -584 magnitude vs Canon  +0.0000
+  [PASS] -584 duration vs Canon  +0 s
+  [PASS] -135 gamma vs Canon  -0.0001
+  [PASS] -135 GE time vs Canon  +31 s
+  [PASS] -135 magnitude vs Canon  -0.0000
+  [PASS] -135 duration vs Canon  -0 s
+  [PASS] -708 gamma vs Canon  +0.0004
+  [PASS] -708 GE time vs Canon  +89 s
+  [PASS] -708 magnitude vs Canon  +0.0000
+  [PASS] -708 duration vs Canon  -0 s
+  [PASS] Delta-T / longitude equivalence  
+  [PASS] -135 Babylon DE431 totality window vs SMH (< 60 s)  -6/-14 s
+  [PASS] -708 Qufu (Lu) DE431 totality window vs SMH (< 60 s)  +16/+3 s
+  [PASS] new moons: scatter vs NASA phases < 1 min (offset explained above)  sd 0.40 min
+  [PASS] new moons: ours vs Canon-consistent conjunction < 5 min  +2.4 min
+  [PASS] Horizons astrometric Sun/Venus/Mercury < 0.01"  0.001"
+  [PASS] Horizons astrometric Moon < 0.5" (observer-orientation parallax)  0.175"
+  [PASS] Horizons elongation < 1"  0.18"
+  [PASS] Horizons az/el < 60" (model differences)  31.8"
+
+55/55 passed; run time 118 s

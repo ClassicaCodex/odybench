@@ -1,0 +1,106 @@
+===== R-PTOL-BAB | role: positive control (pass/fail) | window 136 | anchor E1
+   PLACE ['E1', 'E2', 'E3'] Babylon | {'lat': 32.54, 'lon': 44.42}
+   PB-CAL | other | calendar-date | PRIM [] | ALT [] | narrative: narrator (Ptolemy, dating the Babylonian records in his own calendar) | LC: ok
+   PB-INT-12 | interval | day-interval | PRIM [('calendar-exact', '{"delta_nights": 354}')] | ALT ['ptolemy-hours', 'none'] | narrative: narrator (Ptolemy) | LC: ok
+   PB-INT-23 | interval | day-interval | PRIM [('calendar-exact', '{"delta_nights": 177}')] | ALT ['ptolemy-hours', 'none'] | narrative: narrator (Ptolemy) | LC: ok
+   PB-E1-MAG | eclipse-lunar | magnitude | PRIM [] | ALT [] | narrative: narrator (Ptolemy quoting the Babylonian record: φησίν) | LC: ok
+   PB-E1-TIME | time-of-day | eclipse-timing | PRIM [('record', '{"first_contact_after_moonrise_h": [1.0, 2.0], "site": "Babylon"}')] | ALT ['reduction', 'none'] | narrative: record: narrator quoting the Babylonian report; reduction: narrator (P | LC: ok
+   PB-E1-SUN | season | solar-longitude | PRIM [('pm5', '{"sun_lon_deg": 354.5, "tol_deg": 5.0}')] | ALT ['pm15', 'none'] | narrative: narrator (Ptolemy's computation from his own solar tables: κατὰ τοὺς ἐ | LC: ok
+   PB-E2-MAG | eclipse-lunar | magnitude | PRIM [('pm0.10', '{"umag": [0.15, 0.35]}')] | ALT ['pm0.20', 'partial'] | narrative: narrator quoting the Babylonian record (φησίν) | LC: ok
+   PB-E2-DIR | eclipse-lunar | direction | PRIM [('north-of-axis', '{"moon_lat_sign": 1}')] | ALT ['none'] | narrative: narrator quoting the record | LC: ok
+   PB-E2-TIME | time-of-day | eclipse-timing | PRIM [('mid-at-midnight', '{"mid_minus_midnight_LAT_h": 0.0, "tol_h": 1.0, "site": "Babylon"}')] | ALT ['in-progress', 'none'] | narrative: narrator quoting the record; reduction by Ptolemy | LC: ok
+   PB-E2-SUN | season | solar-longitude | PRIM [('pm5', '{"sun_lon_deg": 343.75, "tol_deg": 5.0}')] | ALT ['pm15', 'none'] | narrative: narrator (Ptolemy's computation) | LC: ok
+   PB-E3-MAG | eclipse-lunar | magnitude | PRIM [('partial-gt-half', '{"umag": [0.5, 1.0]}')] | ALT ['gt-half', 'loose'] | narrative: narrator quoting the Babylonian record (φησίν) | LC: edited: statement said 'more than half the diameter'; the re
+   PB-E3-DIR | eclipse-lunar | direction | PRIM [('south-of-axis', '{"moon_lat_sign": -1}')] | ALT ['none'] | narrative: narrator quoting the record | LC: ok
+   PB-E3-TIME | time-of-day | eclipse-timing | PRIM [('record', '{"first_contact_after_moonrise_h": [0.0, null], "site": "Babylon"}')] | ALT ['record-soon', 'reduction', 'none'] | narrative: record: narrator quoting the report; reduction: Ptolemy's inference | LC: ok
+   PB-E3-SUN | season | solar-longitude | PRIM [('pm5', '{"sun_lon_deg": 153.25, "tol_deg": 5.0}')] | ALT ['pm15', 'none'] | narrative: narrator (Ptolemy's computation) | LC: ok
+===== R-PTOL-ALEX | role: positive control (pass/fail) | window 136 | anchor H1
+   PLACE ['H1', 'H2', 'H3'] Alexandria | {'lat': 31.2, 'lon': 29.92}
+   PA-CAL | other | calendar-date | PRIM [] | ALT [] | narrative: narrator (Ptolemy, his own observations) | LC: ok
+   PA-INT | interval | day-interval | PRIM [('calendar-exact', '{"delta_nights": {"H1->H2": 532, "H2->H3": 502}}')] | ALT ['none'] | narrative: narrator (Ptolemy) | LC: edited: licence_words lengthened to take in the hour figures
+   PA-H1-MAG | eclipse-lunar | magnitude | PRIM [] | ALT [] | narrative: narrator (Ptolemy's own observation) | LC: ok
+   PA-H1-TIME | time-of-day | eclipse-timing | PRIM [('pm0.5', '{"mid_minus_midnight_LAT_h": -0.75, "tol_h": 0.5, "site": "Alexandria"}')] | ALT ['pm1', 'none'] | narrative: narrator (Ptolemy: 'we computed', a reduction of his own observation) | LC: ok
+   PA-H1-SUN | season | solar-longitude | PRIM [('pm3', '{"sun_lon_deg": 43.25, "tol_deg": 3.0}')] | ALT ['pm15', 'none'] | narrative: narrator (Ptolemy's computation) | LC: ok
+   PA-H2-MAG | eclipse-lunar | magnitude | PRIM [('pm0.10', '{"umag": [0.73, 0.93]}')] | ALT ['pm0.20', 'partial'] | narrative: narrator (Ptolemy's own observation) | LC: ok
+   PA-H2-DIR | eclipse-lunar | direction | PRIM [('south-of-axis', '{"moon_lat_sign": -1}')] | ALT ['none'] | narrative: narrator (Ptolemy) | LC: ok
+   PA-H2-TIME | time-of-day | eclipse-timing | PRIM [('pm0.5', '{"mid_minus_midnight_LAT_h": -1.0, "tol_h": 0.5, "site": "Alexandria"}')] | ALT ['pm1', 'none'] | narrative: narrator (Ptolemy: 'we computed', a reduction of his own observation) | LC: ok
+   PA-H2-SUN | season | solar-longitude | PRIM [('pm3', '{"sun_lon_deg": 205.17, "tol_deg": 3.0}')] | ALT ['pm15', 'none'] | narrative: narrator (Ptolemy's computation) | LC: ok
+   PA-H3-MAG | eclipse-lunar | magnitude | PRIM [('pm0.10', '{"umag": [0.4, 0.6]}')] | ALT ['pm0.20', 'partial'] | narrative: narrator (Ptolemy's own observation) | LC: ok
+   PA-H3-DIR | eclipse-lunar | direction | PRIM [('south-of-axis', '{"moon_lat_sign": -1}')] | ALT ['none'] | narrative: narrator (Ptolemy) | LC: ok
+   PA-H3-TIME | time-of-day | eclipse-timing | PRIM [('pm0.5', '{"mid_minus_midnight_LAT_h": 4.0, "tol_h": 0.5, "site": "Alexandria"}')] | ALT ['pm1', 'none'] | narrative: narrator (Ptolemy: 'we computed', a reduction of his own observation) | LC: ok
+   PA-H3-SUN | season | solar-longitude | PRIM [('pm3', '{"sun_lon_deg": 344.08, "tol_deg": 3.0}')] | ALT ['pm15', 'none'] | narrative: narrator (Ptolemy's computation) | LC: ok
+===== R-PTOL-CHAIN | role: positive control (pass/fail); the strongest of the Ptolemy sets | window 136 | anchor E1
+   PLACE ['E1', 'E2', 'E3'] Babylon | {'lat': 32.54, 'lon': 44.42}
+   PLACE ['H1', 'H2', 'H3'] Alexandria | {'lat': 31.2, 'lon': 29.92}
+   PC-LINK | interval | day-interval | PRIM [('calendar-exact', '{"delta_nights": 311784}')] | ALT ['none'] | narrative: narrator (Ptolemy) | LC: edited: licence_words lengthened. The old quotation gave onl
+===== R-THUC | role: positive control (pass/fail) | window 136 | anchor T1
+   PLACE ['T1'] unstated | None
+   PLACE ['T2'] unstated | None
+   PLACE ['T3'] the Athenian camp at Syracuse | {'lat': 37.07, 'lon': 15.29}
+   T1-ECL | eclipse-solar | occurrence | PRIM [('end-seen', '{"last_contact_sun_up": true}')] | ALT ['none'] | narrative: narrator | LC: ok
+   T1-PHASE | moon-phase | new-moon | PRIM [] | ALT [] | narrative: narrator | LC: ok
+   T1-TIME | time-of-day | eclipse-timing | PRIM [('max-pm', '{"max_LAT_h": [12.0, null]}')] | ALT ['start-pm', 'none'] | narrative: narrator | LC: ok
+   T1-SHAPE | eclipse-solar | magnitude | PRIM [('crescent-max', '{"smag": [0.5, 1.0]}')] | ALT ['crescent-passed', 'none'] | narrative: narrator | LC: ok
+   T1-DARK | darkness | stars-visible | PRIM [('X4', '{"smag": [0.6, null]}')] | ALT ['X3', 'none'] | narrative: narrator | LC: ok
+   T1-SEASON | season | half-year | PRIM [('half-year', '{"sun_lon_deg": [0.0, 180.0]}')] | ALT ['campaign', 'none'] | narrative: narrator | LC: ok
+   T2-ECL | eclipse-solar | magnitude | PRIM [('partial', '{"smag": [0.0, 1.0]}')] | ALT ['any'] | narrative: narrator | LC: edited: statement asserted 'partial' as though the text said
+   T2-SEASON | season | early-summer | PRIM [('early', '{"sun_lon_deg": [330.0, 60.0]}')] | ALT ['half-year', 'campaign', 'none'] | narrative: narrator | LC: edited: the primary option's justification did not say that 
+   T3-ECL | eclipse-lunar | occurrence | PRIM [('umbral', '{"umag": [0.0, null], "moon_up_during_umbral": true}')] | ALT ['penumbral-deep'] | narrative: narrator | LC: ok
+   T3-SEASON | season | half-year | PRIM [('half-year', '{"sun_lon_deg": [0.0, 180.0]}')] | ALT ['campaign', 'none'] | narrative: narrator | LC: ok
+   T-INT-12 | interval | war-years | PRIM [('pm0.5', '{"delta_years": 7, "tol_years": 0.5}')] | ALT ['pm1', 'none'] | narrative: narrator | LC: ok
+   T-INT-13 | interval | war-years | PRIM [('pm0.5', '{"delta_years": 18, "tol_years": 0.5}')] | ALT ['pm1', 'none'] | narrative: narrator | LC: ok
+   T1-SITE | site | observer | PRIM [('none', '{"site": null}')] | ALT ['point', 'box'] | narrative: narrator (self-identification) | LC: edited: primary moved from 'box' (the Greek mainland and Aeg
+   T2-SITE | site | observer | PRIM [('none', '{"site": null}')] | ALT ['point', 'box'] | narrative: narrator (self-identification) | LC: edited: primary moved from 'box' (the Greek mainland and Aeg
+===== R-XEN | role: positive control (pass/fail) | window 136 | anchor X1
+   PLACE ['X1'] unstated | None
+   PLACE ['X2'] unstated | None
+   PLACE ['X3'] Agesilaus' army at the entry into Boeotia, coming from Phthiotis | {'lat': 38.5, 'lon': 22.85}
+   X1-ECL | eclipse-lunar | occurrence | PRIM [('use', '{"umag": [0.0, null]}')] | ALT ['penumbral-deep', 'exclude'] | narrative: narrator (inside a year heading that may be an interpolated gloss) | LC: edited: added the alternative 'penumbral-deep' (as in T3-ECL
+   X1-TIME | time-of-day | evening | PRIM [('early-night', '{"umbral_visible_between_h_after_sunset": [0.0, 3.0]}')] | ALT ['before-midnight', 'none'] | narrative: narrator (year heading) | LC: ok
+   X1-SITE | site | observer | PRIM [('none', '{"site": null}')] | ALT ['point', 'box'] | narrative: narrator (year heading) | LC: edited: primary moved from 'box' (the Aegean box, 'the theat
+   X2-ECL | eclipse-solar | occurrence | PRIM [('any', '{"smag": [0.0, null]}')] | ALT ['noticed'] | narrative: narrator | LC: ok
+   X2-SITE | site | observer | PRIM [('none', '{"site": null}')] | ALT ['box', 'thessaly', 'athens'] | narrative: narrator | LC: edited: primary moved from 'box' (the Aegean box) to 'none'.
+   X-INT-12 | interval | year-headings | PRIM [('1to3', '{"delta_years": [1.0, 3.0]}')] | ALT ['none'] | narrative: narrator (year headings, possibly interpolated) | LC: ok
+   X2-SEASON | season | narrative-order | PRIM [('none', '{"season": null}')] | ALT ['before-autumn'] | narrative: narrator | LC: ok
+   X3-ECL | eclipse-solar | magnitude | PRIM [('crescent', '{"smag": [0.5, 1.0]}')] | ALT ['any'] | narrative: narrator | LC: ok
+   X3-SEASON | season | narrative-order | PRIM [('none', '{"season": null}')] | ALT ['after-spring'] | narrative: narrator | LC: ok
+===== R-ARBELA | role: positive control (pass/fail) | window 136 | anchor A1
+   PLACE ['A1'] Arbela (Pliny's report) | {'lat': 36.19, 'lon': 44.01}
+   PLACE ['A1'] the Macedonian camp just across the Tigris (Arrian, Curtius) | {'lat': 36.5, 'lon': 43.0}
+   PLACE ['A1'] Sicily (Pliny: Moon rising) | {'lat': [36.6, 38.3], 'lon': [12.4, 15.7]}
+   A-ECL | eclipse-lunar | occurrence | PRIM [] | ALT [] | narrative: narrator (all four) | LC: ok
+   A-MAG | eclipse-lunar | magnitude | PRIM [('gt-half', '{"umag": [0.5, null]}')] | ALT ['total', 'partial-gt-half', 'none'] | narrative: narrator | LC: ok
+   A-TIME-PLINY | time-of-day | eclipse-timing | PRIM [('in-progress', '{"seasonal_night_hour": 2, "site": "Arbela", "relation": "umbral phase overlaps hour"}')] | ALT ['onset', 'none'] | narrative: narrator (Pliny, reporting a tradition: 'est prodita') | LC: ok
+   A-TIME-CURTIUS | time-of-day | eclipse-timing | PRIM [('first-watch', '{"night_quarter": 1, "tol_h": 1.0, "site": "Tigris camp"}')] | ALT ['none'] | narrative: narrator | LC: edited: statement said 'two days after crossing the Tigris',
+   A-SICILY | other | moonrise-elsewhere | PRIM [('sicily-box', '{"moonrise_during_umbral": true, "site_box": {"lat": [36.6, 38.3], "lon": [12.4, 15.7]}}')] | ALT ['syracuse', 'none'] | narrative: narrator (Pliny) | LC: ok
+   A-MONTH | other | calendar-date | PRIM [('either', '{"attic_month": [3, 4], "lunation_offset": [-1, 0, 1]}')] | ALT ['boedromion', 'pyanepsion', 'none'] | narrative: narrator | LC: ok
+===== R-PYDNA | role: positive control (pass/fail) | window 136 | anchor P1
+   PLACE ['P1'] the Roman and Macedonian camps before Pydna | {'lat': 40.37, 'lon': 22.6}
+   P-ECL | eclipse-lunar | occurrence | PRIM [] | ALT [] | narrative: narrator (Livy reports Gallus' forecast, a character's speech in indir | LC: ok
+   P-MAG | eclipse-lunar | magnitude | PRIM [('total', '{"umag": [1.0, null]}')] | ALT ['deep', 'umbral'] | narrative: narrator (Plutarch) | LC: ok
+   P-TIME | time-of-day | eclipse-timing | PRIM [('overlap', '{"seasonal_night_hours": [2, 4], "relation": "umbral phase overlaps", "site": "Pydna"}')] | ALT ['within', 'none'] | narrative: Livy: character's forecast (indirect speech) confirmed by the narrator | LC: ok
+   P-ALT | other | moon-altitude | PRIM [('aloft', '{"moon_alt_deg_at_first_umbral_contact": [10.0, null]}')] | ALT ['up', 'none'] | narrative: narrator (Plutarch) | LC: ok
+   P-END | eclipse-lunar | emergence-seen | PRIM [('emergence', '{"moon_up_at_last_umbral_contact": true}')] | ALT ['none'] | narrative: narrator | LC: ok
+   P-SEASON | season | after-solstice | PRIM [('summer-after-solstice', '{"sun_lon_deg": [90.0, 180.0]}')] | ALT ['livy-just-after', 'plutarch', 'none'] | narrative: narrator | LC: ok
+   P-DATE | other | calendar-date | PRIM [('free', '{"roman_date": "a.d. III Non. Sept. (night before pridie Non. Sept.)", "offset_days": null}')] | ALT ['bounded90', 'naive'] | narrative: narrator (Livy) | LC: ok
+===== R-DIOD | role: positive control (pass/fail) | window 136 | anchor D1
+   PLACE ['D1'] Agathocles' fleet at sea, the day after leaving Syracuse | {'lat': 37.07, 'lon': 15.29, 'radius_km': 150}
+   D-ECL | eclipse-solar | magnitude | PRIM [('X3', '{"smag": [0.95, null]}')] | ALT ['total', 'X4'] | narrative: narrator | LC: ok
+   D-SITE | site | observer | PRIM [('day-out', '{"site_disc": {"lat": 37.07, "lon": 15.29, "radius_km": 150}}')] | ALT ['syracuse', 'route-box'] | narrative: narrator | LC: ok
+===== H-LIVY | role: HARD CASE (reported, not pass/fail) | window 136 | anchor None
+   PLACE ['L1', 'L1b'] unstated | None
+   PLACE ['L2'] Cumae | {'lat': 40.85, 'lon': 14.05}
+   PLACE ['L3'] unstated | None
+   PLACE ['L4'] unstated | None
+   L1-ECL | eclipse-solar | magnitude | PRIM [('any', '{"smag": [0.0, null]}')] | ALT ['noticed'] | narrative: narrator (reported prodigy) | LC: ok
+   L1-SITE | site | observer | PRIM [('none', '{"site": null}')] | ALT ['italy-box', 'sardinia', 'rome'] | narrative: narrator (reported prodigy) | LC: edited: primary moved from 'italy-box' (Italy, Sicily and Sa
+   L1-DATE | season | report-time | PRIM [('none', '{"season": null}')] | ALT ['within-12mo'] | narrative: narrator | LC: ok
+   L1b-ARPI | other | possible-eclipse | PRIM [('not-eclipse', '{"exclude": true}')] | ALT ['eclipse-arpi'] | narrative: narrator (reported prodigy) | LC: ok
+   L2-ECL | eclipse-solar | magnitude | PRIM [('any', '{"smag": [0.0, null]}')] | ALT ['noticed'] | narrative: narrator (reported prodigy) | LC: ok
+   L2-DATE | other | narrative-order | PRIM [('none', '{"season": null}')] | ALT ['before-ludi'] | narrative: narrator | LC: ok
+   L3-ECL | eclipse-solar | magnitude | PRIM [('X4', '{"smag": [0.6, null]}')] | ALT ['any', 'X3'] | narrative: narrator | LC: ok
+   L3-DATE | other | calendar-date | PRIM [('free', '{"roman_date": "a.d. V Id. Quint. (11 Quinctilis)", "offset_days": null}')] | ALT ['bounded90', 'naive'] | narrative: narrator | LC: ok
+   L3-SITE | site | observer | PRIM [('none', '{"site": null}')] | ALT ['rome', 'italy-box'] | narrative: narrator | LC: edited: primary moved from 'rome' (Rome, where the narrative
+   L4-DARK | darkness | daytime-darkness | PRIM [('eclipse-hours', '{"smag": [0.6, null], "seasonal_day_hours": [3, 4], "tol_h": 1.0, "relation": "maximum in window"}')] | ALT ['eclipse-any-hour', 'not-eclipse'] | narrative: narrator (reported prodigy) | LC: ok
+   L4-SITE | site | observer | PRIM [('none', '{"site": null}')] | ALT ['rome', 'italy-box'] | narrative: narrator | LC: edited: primary moved from 'rome' (Rome, where the expiation
+   L4-DATE | other | report-time | PRIM [('none', '{"season": null}')] | ALT ['near-ides-march'] | narrative: narrator | LC: ok

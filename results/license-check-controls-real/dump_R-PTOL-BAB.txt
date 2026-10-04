@@ -1,0 +1,765 @@
+#### SET R-PTOL-BAB
+-- observer_place {"events": ["E1", "E2", "E3"], "place": "Babylon", "licence_words": ["ἐκ τῶν ἐν Βαβυλῶνι τετηρημένων"], "ref": ["urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3"], "text_file": ["data/text/ptolemy-syntaxis-grc.tsv"], "search_coordinates": {"lat": 32.54, "lon": 44.42}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+   CHECK exact | ἐκ τῶν ἐν Βαβυλῶνι τετηρημένων | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-CAL",
+ "event": [
+  "E1",
+  "E2",
+  "E3"
+ ],
+ "kind": "other",
+ "feature": "calendar-date",
+ "statement": "Mid-eclipse nights in Ptolemy's Egyptian reckoning by regnal years of Mardokempados: E1 = year 1 Thoth 29 into 30; E2 = year 2 Thoth 18 into 19; E3 = year 2 Phamenoth 15 into 16. night_index: E1 = 29, E2 = 383, E3 = 560. One free integer J_free (shared by E1-E3) maps night_index to Julian Day; it is not constrained by anything in the text.",
+ "licence_words": [
+  "τῷ πρώτῳ ἔτει Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ κθʹ εἰς τὴν λ΄",
+  "τῷ δευτέρῳ ἔτει τοῦ αὐτοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ ιη΄ εἰς τὴν ιθ΄",
+  "τῷ αὐτῷ δευτέρῳ ἔτει τοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Φαμενὼθ ιεʹ εἰς τὴν ιϛ΄"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [],
+ "narrative_level": "narrator (Ptolemy, dating the Babylonian records in his own calendar)",
+ "notes": "Egyptian civil calendar: 12 months of 30 days (Thoth=1, Phaophi=2, Athyr=3, Choiak=4, Tybi=5, Mechir=6, Phamenoth=7, Pharmouthi=8, Pachon=9, Payni=10, Epiphi=11, Mesore=12) plus 5 epagomenal days, no leap day. 'D into D+1' (D εἰς τὴν D+1) is the night between civil days D and D+1. night_index = 365*(Y-1) + 30*(M-1) + D. JD of local midnight of that night = J_free + night_index, J_free an unknown integer: the epoch of the regnal count in Julian terms is NOT in the text, and the 365-day year wanders against the seasons, so the dates fix intervals only. The night differences E2-E1 = 354 and E3-E2 = 177 are what Ptolemy himself states in IV.6.6 (clues PB-INT-12, PB-INT-23); this row and those rows carry the same information and a searcher uses one or the other, not both.",
+ "license_check": "ok"
+}
+   CHECK exact | τῷ πρώτῳ ἔτει Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ κθʹ εἰς τὴν λ΄ | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3
+   CHECK exact | τῷ δευτέρῳ ἔτει τοῦ αὐτοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ ιη΄ εἰς τὴν ιθ΄ | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4
+   CHECK exact | τῷ αὐτῷ δευτέρῳ ἔτει τοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Φαμενὼθ ιεʹ εἰς τὴν ιϛ΄ | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3 :: ὧν τοίνυν εἰλήφαμεν παλαιῶν τριῶν ἐκλείψεων ἐκ τῶν ἐν Βαβυλῶνι τετηρημένων, ἡ μὲν πρώτη ἀναγέγραπται γεγονυῖα τῷ πρώτῳ ἔτει Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ κθʹ εἰς τὴν λ΄. ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν μιᾶς ὥρας ἱκανῶς παρελθούσης καὶ ἐξέλειπεν ὅλη. ἐπειδὴ οὖν ὁ ἥλιος περὶ τὰ ἔσχατα τῶν Ἰχθύων ἦν, καὶ ἡ νὺξ ὡρῶν ἰσημερινῶν ιβ ἔγγιστα, ἡ μὲν ἀρχὴ τῆς ἐκλείψεως ἐγένετο δηλονότι πρὸ δ U+2220΄ ἁρῶν ἰσημεριῶν τοῦ μεσονυκτίου, ὁ δὲ μέσος χρόνος, ἐπειδήπερ τελεία ἦν ἡ ἔκλειψις, πρὸ β U+2220΄ ὡρῶν. ἐν Ἀλεξανδρείᾳ ἄρα, ἐπειδήπερ πρὸς τὸν διʼ αὐτῆς μεσημβρινὸν τὰς ὡριαίας ἐποχὰς συνιστάμεθα, προηγεῖται δὲ ὁ διʼ αὐτῆς μεσημβρινὸς τοῦ διὰ Βαβυλῶνος ἡμίσει καὶ τρίτῳ ἔγγιστα μιᾶς ὥρας ἰσημερινῆς, ὁ μέσος χρόνος γέγονεν τῆς προκειμένης ἐκλείψεως πρὸ γ καὶ γ΄ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος κατὰ τοὺς ἐκτεθειμένους ἡμῖν ἐπιλογισμοὺς ἐπεῖχεν ἀκριβῶς τῶν Ἰχθύων μοίρας κδ U+2220΄ ἔγγιστα.
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4 :: ἡ δὲ δευτέρα τῶν ἐκλείψεων ἀναγέγραπται γεγονυῖα τῷ δευτέρῳ ἔτει τοῦ αὐτοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ ιη΄ εἰς τὴν ιθ΄. ἐξέλειπε δέ, φησίν, ἀπὸ νότου δακτύλους γ αὐτοῦ τοῦ μεσονυκτίου. ἐπεὶ οὖν ὁ μέσος χρόνος ἐν Βαβυλῶνι φαίνεται γεγονὼς κατʼ αὐτὸ τὸ μεσονύκτιον, ἐν Ἀλεξανδρείᾳ ὀφείλει γεγονέναι πρὸ U+2220΄ καὶ γʹ μέρους μιᾶς ὥρας τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος ἐπεῖχεν ἀκριβῶς τῶν Ἰχθύων μοίρας ιγ U+2220΄ δ΄.
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5 :: ἡ δὲ γ΄ τῶν ἐκλείψεων ἀναγέγραπται γεγονυῖα τῷ αὐτῷ δευτέρῳ ἔτει τοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Φαμενὼθ ιεʹ εἰς τὴν ιϛ΄. ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν καὶ ἐξέλειπεν ἀπʼ ἄρκτων πλεῖον τοῦ ἡμίσους. ἐπειδὴ οὖν ὁ ἥλιος περὶ τὴν ἀρχὴν ἦν τῆς Παρθένου, τὸ μὲν τῆς νυκτὸς μέγεθος ἐν Βαβυλῶνι ια ἔγγιστα ὡρῶν ἐτύγχανεν ἰσημερινῶν, τὸ δὲ ἥμισυ τῆς νυκτὸς ε U+2220΄ ὡρῶν· καὶ ἡ μὲν ἀρχὴ ἄρα τῆς ἐκλείψεως γέγονε πρὸ πέντε μάλιστα ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου διὰ τὸ μετὰ τὴν ἀνατολὴν ἦρχθαι, ὁ δὲ μέσος χρόνος πρὸ γ U+2220΄ ὡρῶν, ἐπειδήπερ ὁ πᾶς χρόνος τοῦ τηλικούτου μεγέθους τῆς ἐπισκοτήσεως τριῶν ἔγγιστα ὡρῶν ὀφείλει γεγονέναι. ἐν Ἀλεξανδρείᾳ πάλιν ἄρα ὁ μέσος χρόνος τῆς ἐκλείψεως ἀπετελέσθη πρὸ δ καὶ γʹ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος ἐπεῖχεν ἀκριβῶς τῆς Παρθένου μοίρας γ δ΄ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-INT-12",
+ "event": [
+  "E1",
+  "E2"
+ ],
+ "kind": "interval",
+ "feature": "day-interval",
+ "statement": "From E1 to E2: 354 days and 2 1/2 equinoctial hours (apparent), 2 1/2 + 1/15 h in mean days, mid-eclipse to mid-eclipse.",
+ "licence_words": [
+  "ἡμέρας περιέχει τνδ καὶ ὥρας ἰσημερινὰς ἁπλῶς μὲν οὕτως θεωροῦσιν δύο ἥμισυ"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.6"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "calendar-exact",
+   "reading": "E2 falls on the night exactly 354 civil nights after E1's night (whole-night count)",
+   "justification": "the day count is calendar arithmetic on two dates the record gives; it does not depend on Ptolemy's hour reductions",
+   "operational": {
+    "delta_nights": 354
+   },
+   "primary": true
+  },
+  {
+   "option": "ptolemy-hours",
+   "reading": "mid-eclipse E2 - mid-eclipse E1 = 354 d 2.5 h +/- 1 h",
+   "justification": "uses Ptolemy's reduced hours as well (see PB-E1-TIME, PB-E2-TIME)",
+   "operational": {
+    "delta_days": 354.104,
+    "tol_hours": 1.0
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "E1 and E2 treated as unlinked",
+   "justification": "sensitivity: drops the interval",
+   "operational": {
+    "delta_nights": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy)",
+ "notes": "Redundant with PB-CAL.",
+ "license_check": "ok"
+}
+   CHECK exact | ἡμέρας περιέχει τνδ καὶ ὥρας ἰσημερινὰς ἁπλῶς μὲν οὕτως θεωροῦσιν δύο ἥμισυ | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.6
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.6 :: φανερὸν οὖν, ὅτι ἀπὸ μὲν τοῦ μέσου χρόνου τῆς πρώτης ἐκλείψεως ἐπὶ τὸν τῆς δευτέρας κεκίνηται ὁ ἥλιος, τουτέστι καὶ ἡ σελήνη, μεθʼ ὅλους κύκλους μοίρας τμθ ιε, ἀπὸ δὲ τοῦ τῆς δευτέρας ἐκλείψεως μέσου χρόνου ἐπὶ τὸν τῆς τρίτης μοίρας ρξθ λ. ἀλλὰ καὶ ἡ τῶν μεταξὺ χρόνων διάστασις ἀπὸ μὲν τοῦ πρώτου ἐπὶ τὸν δεύτερον ἡμέρας περιέχει τνδ καὶ ὥρας ἰσημερινὰς ἁπλῶς μὲν οὕτως θεωροῦσιν δύο ἥμισυ, πρὸς δὲ τὸν τῶν ὁμαλῶν νυχθημέρων ἐπιλογισμὸν δύο ἥμισυ πεντεκαιδέκατον, ἀπὸ δὲ τοῦ δευτέρου ἐπὶ τὸν τρίτον ἡμέρας ρος καὶ ὥρας ἰσημερινὰς ἀπλῶς μὲν πάλιν κ U+2220΄, ἀκριβῶς δὲ κ πέμπτον. κινεῖται δὲ ὁμαλῶς ἡ σελήνη· πρὸς γὰρ τὸν τοσοῦτον χρόνον οὐδενὶ αἰσθητῷ διοίσει, κἂν ταῖς σύνεγγυς τῶν ἀκριβῶν περιόδων τις ἀκολουθήσῃ· ἐν μὲν ταῖς τνδ ἡμέραις καὶ ὥραις ἰσημεριναῖς β U+2220΄ ιε΄ ἀνωμαλίας μὲν μεθʼ ὅλους κύκλους μοίρας τ κε, μήκους δὲ μοίρας τμε να, ἐν δὲ ταῖς ρος ἡμέραις καὶ ὥραις ἰσημεριναῖς κ καὶ πέμπτῳ ἀνωμαλίας μὲν μοίρας ρ κς, μήκους δὲ μοίρας ρο ζ ἔγγιστα. δῆλον οὖν, ὅτι αἰ μὲν τῆς πρώτης διαστάσεως τοῦ ἐπικύκλου μοῖραι ις κε προστεθείκασι τῇ μέσῃ κινήσει τῆς σελήνης μοίρας γ κδ, αἱ δὲ τῆς δευτέρας διαστάσεως μοῖραι ρ κς ἀφῃρήκασι τῆς μέσης κινήσεως μοίρας ο λξ.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-INT-23",
+ "event": [
+  "E2",
+  "E3"
+ ],
+ "kind": "interval",
+ "feature": "day-interval",
+ "statement": "From E2 to E3: 176 days and 20 1/2 equinoctial hours (apparent), 20 1/5 h in mean days; equivalently the night of E3 is 177 civil nights after the night of E2.",
+ "licence_words": [
+  "ἡμέρας ρος καὶ ὥρας ἰσημερινὰς ἀπλῶς μὲν πάλιν κ U+2220΄"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.6"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "calendar-exact",
+   "reading": "E3 falls on the night exactly 177 civil nights after E2's night",
+   "justification": "calendar arithmetic on the recorded dates",
+   "operational": {
+    "delta_nights": 177
+   },
+   "primary": true
+  },
+  {
+   "option": "ptolemy-hours",
+   "reading": "mid-eclipse E3 - mid-eclipse E2 = 176 d 20.5 h +/- 1 h",
+   "justification": "uses Ptolemy's reduced hours",
+   "operational": {
+    "delta_days": 176.854,
+    "tol_hours": 1.0
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "E2 and E3 treated as unlinked",
+   "justification": "sensitivity",
+   "operational": {
+    "delta_nights": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy)",
+ "notes": "Redundant with PB-CAL. The local text prints the half-sign of Heiberg's edition as the literal string 'U+2220' (an export artefact); κ U+2220΄ is 20 1/2.",
+ "license_check": "ok"
+}
+   CHECK exact | ἡμέρας ρος καὶ ὥρας ἰσημερινὰς ἀπλῶς μὲν πάλιν κ U+2220΄ | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.6
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.6 :: φανερὸν οὖν, ὅτι ἀπὸ μὲν τοῦ μέσου χρόνου τῆς πρώτης ἐκλείψεως ἐπὶ τὸν τῆς δευτέρας κεκίνηται ὁ ἥλιος, τουτέστι καὶ ἡ σελήνη, μεθʼ ὅλους κύκλους μοίρας τμθ ιε, ἀπὸ δὲ τοῦ τῆς δευτέρας ἐκλείψεως μέσου χρόνου ἐπὶ τὸν τῆς τρίτης μοίρας ρξθ λ. ἀλλὰ καὶ ἡ τῶν μεταξὺ χρόνων διάστασις ἀπὸ μὲν τοῦ πρώτου ἐπὶ τὸν δεύτερον ἡμέρας περιέχει τνδ καὶ ὥρας ἰσημερινὰς ἁπλῶς μὲν οὕτως θεωροῦσιν δύο ἥμισυ, πρὸς δὲ τὸν τῶν ὁμαλῶν νυχθημέρων ἐπιλογισμὸν δύο ἥμισυ πεντεκαιδέκατον, ἀπὸ δὲ τοῦ δευτέρου ἐπὶ τὸν τρίτον ἡμέρας ρος καὶ ὥρας ἰσημερινὰς ἀπλῶς μὲν πάλιν κ U+2220΄, ἀκριβῶς δὲ κ πέμπτον. κινεῖται δὲ ὁμαλῶς ἡ σελήνη· πρὸς γὰρ τὸν τοσοῦτον χρόνον οὐδενὶ αἰσθητῷ διοίσει, κἂν ταῖς σύνεγγυς τῶν ἀκριβῶν περιόδων τις ἀκολουθήσῃ· ἐν μὲν ταῖς τνδ ἡμέραις καὶ ὥραις ἰσημεριναῖς β U+2220΄ ιε΄ ἀνωμαλίας μὲν μεθʼ ὅλους κύκλους μοίρας τ κε, μήκους δὲ μοίρας τμε να, ἐν δὲ ταῖς ρος ἡμέραις καὶ ὥραις ἰσημεριναῖς κ καὶ πέμπτῳ ἀνωμαλίας μὲν μοίρας ρ κς, μήκους δὲ μοίρας ρο ζ ἔγγιστα. δῆλον οὖν, ὅτι αἰ μὲν τῆς πρώτης διαστάσεως τοῦ ἐπικύκλου μοῖραι ις κε προστεθείκασι τῇ μέσῃ κινήσει τῆς σελήνης μοίρας γ κδ, αἱ δὲ τῆς δευτέρας διαστάσεως μοῖραι ρ κς ἀφῃρήκασι τῆς μέσης κινήσεως μοίρας ο λξ.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-E1-MAG",
+ "event": "E1",
+ "kind": "eclipse-lunar",
+ "feature": "magnitude",
+ "statement": "E1 is a lunar eclipse seen from Babylon and was total: umbral magnitude >= 1.0.",
+ "licence_words": [
+  "καὶ ἐξέλειπεν ὅλη"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [],
+ "narrative_level": "narrator (Ptolemy quoting the Babylonian record: φησίν)",
+ "notes": "Ptolemy also says 'ἐπειδήπερ τελεία ἦν ἡ ἔκλειψις' in the same row.",
+ "license_check": "ok"
+}
+   CHECK exact | καὶ ἐξέλειπεν ὅλη | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3 :: ὧν τοίνυν εἰλήφαμεν παλαιῶν τριῶν ἐκλείψεων ἐκ τῶν ἐν Βαβυλῶνι τετηρημένων, ἡ μὲν πρώτη ἀναγέγραπται γεγονυῖα τῷ πρώτῳ ἔτει Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ κθʹ εἰς τὴν λ΄. ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν μιᾶς ὥρας ἱκανῶς παρελθούσης καὶ ἐξέλειπεν ὅλη. ἐπειδὴ οὖν ὁ ἥλιος περὶ τὰ ἔσχατα τῶν Ἰχθύων ἦν, καὶ ἡ νὺξ ὡρῶν ἰσημερινῶν ιβ ἔγγιστα, ἡ μὲν ἀρχὴ τῆς ἐκλείψεως ἐγένετο δηλονότι πρὸ δ U+2220΄ ἁρῶν ἰσημεριῶν τοῦ μεσονυκτίου, ὁ δὲ μέσος χρόνος, ἐπειδήπερ τελεία ἦν ἡ ἔκλειψις, πρὸ β U+2220΄ ὡρῶν. ἐν Ἀλεξανδρείᾳ ἄρα, ἐπειδήπερ πρὸς τὸν διʼ αὐτῆς μεσημβρινὸν τὰς ὡριαίας ἐποχὰς συνιστάμεθα, προηγεῖται δὲ ὁ διʼ αὐτῆς μεσημβρινὸς τοῦ διὰ Βαβυλῶνος ἡμίσει καὶ τρίτῳ ἔγγιστα μιᾶς ὥρας ἰσημερινῆς, ὁ μέσος χρόνος γέγονεν τῆς προκειμένης ἐκλείψεως πρὸ γ καὶ γ΄ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος κατὰ τοὺς ἐκτεθειμένους ἡμῖν ἐπιλογισμοὺς ἐπεῖχεν ἀκριβῶς τῶν Ἰχθύων μοίρας κδ U+2220΄ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-E1-TIME",
+ "event": "E1",
+ "kind": "time-of-day",
+ "feature": "eclipse-timing",
+ "statement": "Timing of E1 at Babylon. The record: it began to be eclipsed after the rising, a full hour having passed. Ptolemy's reduction: night of 12 equinoctial hours, first contact 4 1/2 h and mid-eclipse 2 1/2 h before local midnight at Babylon (3 1/3 h before midnight at Alexandria, using his 5/6 h longitude difference).",
+ "licence_words": [
+  "ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν μιᾶς ὥρας ἱκανῶς παρελθούσης",
+  "ὁ δὲ μέσος χρόνος, ἐπειδήπερ τελεία ἦν ἡ ἔκλειψις, πρὸ β U+2220΄ ὡρῶν"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "record",
+   "reading": "first umbral contact between 1.0 and 2.0 equinoctial hours after moonrise at Babylon",
+   "justification": "'μιᾶς ὥρας ἱκανῶς παρελθούσης' = one hour well passed; the upper bound of 2 h is the drafter's reading of ἱκανῶς; ἀνατολή read as the Moon's rising, as Ptolemy reads it",
+   "operational": {
+    "first_contact_after_moonrise_h": [
+     1.0,
+     2.0
+    ],
+    "site": "Babylon"
+   },
+   "primary": true
+  },
+  {
+   "option": "reduction",
+   "reading": "mid-eclipse 2.5 equinoctial hours before local apparent midnight (LAT) at Babylon, +/- 1 h",
+   "justification": "Ptolemy's own reduction in the text; the 1 h tolerance is the drafter's allowance for his assumed 12 h night",
+   "operational": {
+    "mid_minus_midnight_LAT_h": -2.5,
+    "tol_h": 1.0,
+    "site": "Babylon"
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "no timing constraint beyond the Moon being above the horizon during totality at Babylon",
+   "justification": "sensitivity",
+   "operational": {
+    "timing": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "record: narrator quoting the Babylonian report; reduction: narrator (Ptolemy's inference)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν μιᾶς ὥρας ἱκανῶς παρελθούσης | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3
+   CHECK exact | ὁ δὲ μέσος χρόνος, ἐπειδήπερ τελεία ἦν ἡ ἔκλειψις, πρὸ β U+2220΄ ὡρῶν | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3 :: ὧν τοίνυν εἰλήφαμεν παλαιῶν τριῶν ἐκλείψεων ἐκ τῶν ἐν Βαβυλῶνι τετηρημένων, ἡ μὲν πρώτη ἀναγέγραπται γεγονυῖα τῷ πρώτῳ ἔτει Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ κθʹ εἰς τὴν λ΄. ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν μιᾶς ὥρας ἱκανῶς παρελθούσης καὶ ἐξέλειπεν ὅλη. ἐπειδὴ οὖν ὁ ἥλιος περὶ τὰ ἔσχατα τῶν Ἰχθύων ἦν, καὶ ἡ νὺξ ὡρῶν ἰσημερινῶν ιβ ἔγγιστα, ἡ μὲν ἀρχὴ τῆς ἐκλείψεως ἐγένετο δηλονότι πρὸ δ U+2220΄ ἁρῶν ἰσημεριῶν τοῦ μεσονυκτίου, ὁ δὲ μέσος χρόνος, ἐπειδήπερ τελεία ἦν ἡ ἔκλειψις, πρὸ β U+2220΄ ὡρῶν. ἐν Ἀλεξανδρείᾳ ἄρα, ἐπειδήπερ πρὸς τὸν διʼ αὐτῆς μεσημβρινὸν τὰς ὡριαίας ἐποχὰς συνιστάμεθα, προηγεῖται δὲ ὁ διʼ αὐτῆς μεσημβρινὸς τοῦ διὰ Βαβυλῶνος ἡμίσει καὶ τρίτῳ ἔγγιστα μιᾶς ὥρας ἰσημερινῆς, ὁ μέσος χρόνος γέγονεν τῆς προκειμένης ἐκλείψεως πρὸ γ καὶ γ΄ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος κατὰ τοὺς ἐκτεθειμένους ἡμῖν ἐπιλογισμοὺς ἐπεῖχεν ἀκριβῶς τῶν Ἰχθύων μοίρας κδ U+2220΄ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-E1-SUN",
+ "event": "E1",
+ "kind": "season",
+ "feature": "solar-longitude",
+ "statement": "Ptolemy computes the Sun at mid-eclipse E1 at Pisces 24 1/2 deg, i.e. tropical longitude 354.5 deg ('about the end of Pisces'; night of about 12 equinoctial hours).",
+ "licence_words": [
+  "ὁ ἥλιος περὶ τὰ ἔσχατα τῶν Ἰχθύων ἦν",
+  "ἐπεῖχεν ἀκριβῶς τῶν Ἰχθύων μοίρας κδ U+2220΄ ἔγγιστα"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm5",
+   "reading": "tropical solar longitude 354.5 +/- 5 deg at mid-eclipse",
+   "justification": "the value is computed from Ptolemy's solar theory, not observed; the drafter allows 5 deg for the drift of a tables-derived longitude carried back about nine centuries (general knowledge that Ptolemy's year is a few minutes too long; not a figure taken from any control answer)",
+   "operational": {
+    "sun_lon_deg": 354.5,
+    "tol_deg": 5.0
+   },
+   "primary": true
+  },
+  {
+   "option": "pm15",
+   "reading": "354.5 +/- 15 deg (season only: late winter)",
+   "justification": "looser: uses only 'about the end of Pisces'",
+   "operational": {
+    "sun_lon_deg": 354.5,
+    "tol_deg": 15.0
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "solar longitude not used",
+   "justification": "the value is a derived quantity",
+   "operational": {
+    "sun_lon_deg": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy's computation from his own solar tables: κατὰ τοὺς ἐκτεθειμένους ἡμῖν ἐπιλογισμούς)",
+ "notes": "Ptolemy also gives the night as about 12 equinoctial hours ('ἡ νὺξ ὡρῶν ἰσημερινῶν ιβ ἔγγιστα'), which follows from the same computed longitude and adds nothing; the Babylonian record quoted in the row gives no season of its own.",
+ "license_check": "ok"
+}
+   CHECK exact | ὁ ἥλιος περὶ τὰ ἔσχατα τῶν Ἰχθύων ἦν | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3
+   CHECK exact | ἐπεῖχεν ἀκριβῶς τῶν Ἰχθύων μοίρας κδ U+2220΄ ἔγγιστα | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3 :: ὧν τοίνυν εἰλήφαμεν παλαιῶν τριῶν ἐκλείψεων ἐκ τῶν ἐν Βαβυλῶνι τετηρημένων, ἡ μὲν πρώτη ἀναγέγραπται γεγονυῖα τῷ πρώτῳ ἔτει Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ κθʹ εἰς τὴν λ΄. ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν μιᾶς ὥρας ἱκανῶς παρελθούσης καὶ ἐξέλειπεν ὅλη. ἐπειδὴ οὖν ὁ ἥλιος περὶ τὰ ἔσχατα τῶν Ἰχθύων ἦν, καὶ ἡ νὺξ ὡρῶν ἰσημερινῶν ιβ ἔγγιστα, ἡ μὲν ἀρχὴ τῆς ἐκλείψεως ἐγένετο δηλονότι πρὸ δ U+2220΄ ἁρῶν ἰσημεριῶν τοῦ μεσονυκτίου, ὁ δὲ μέσος χρόνος, ἐπειδήπερ τελεία ἦν ἡ ἔκλειψις, πρὸ β U+2220΄ ὡρῶν. ἐν Ἀλεξανδρείᾳ ἄρα, ἐπειδήπερ πρὸς τὸν διʼ αὐτῆς μεσημβρινὸν τὰς ὡριαίας ἐποχὰς συνιστάμεθα, προηγεῖται δὲ ὁ διʼ αὐτῆς μεσημβρινὸς τοῦ διὰ Βαβυλῶνος ἡμίσει καὶ τρίτῳ ἔγγιστα μιᾶς ὥρας ἰσημερινῆς, ὁ μέσος χρόνος γέγονεν τῆς προκειμένης ἐκλείψεως πρὸ γ καὶ γ΄ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος κατὰ τοὺς ἐκτεθειμένους ἡμῖν ἐπιλογισμοὺς ἐπεῖχεν ἀκριβῶς τῶν Ἰχθύων μοίρας κδ U+2220΄ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-E2-MAG",
+ "event": "E2",
+ "kind": "eclipse-lunar",
+ "feature": "magnitude",
+ "statement": "E2 is a partial lunar eclipse of 3 digits (1 digit = 1/12 of the lunar diameter): umbral magnitude about 0.25.",
+ "licence_words": [
+  "ἐξέλειπε δέ, φησίν, ἀπὸ νότου δακτύλους γ"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm0.10",
+   "reading": "umbral magnitude 0.25 +/- 0.10",
+   "justification": "3 digits as stated, with a tolerance of about one digit",
+   "operational": {
+    "umag": [
+     0.15,
+     0.35
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "pm0.20",
+   "reading": "umbral magnitude 0.25 +/- 0.20",
+   "justification": "looser",
+   "operational": {
+    "umag": [
+     0.05,
+     0.45
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "partial",
+   "reading": "any partial umbral eclipse, 0 < umag < 1",
+   "justification": "uses 'partial' only",
+   "operational": {
+    "umag": [
+     0.0,
+     1.0
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator quoting the Babylonian record (φησίν)",
+ "notes": "The digit as 1/12 of the diameter is the drafter's convention (general knowledge of Greek and Babylonian eclipse reports), not stated in this row.",
+ "license_check": "ok"
+}
+   CHECK exact | ἐξέλειπε δέ, φησίν, ἀπὸ νότου δακτύλους γ | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4 :: ἡ δὲ δευτέρα τῶν ἐκλείψεων ἀναγέγραπται γεγονυῖα τῷ δευτέρῳ ἔτει τοῦ αὐτοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ ιη΄ εἰς τὴν ιθ΄. ἐξέλειπε δέ, φησίν, ἀπὸ νότου δακτύλους γ αὐτοῦ τοῦ μεσονυκτίου. ἐπεὶ οὖν ὁ μέσος χρόνος ἐν Βαβυλῶνι φαίνεται γεγονὼς κατʼ αὐτὸ τὸ μεσονύκτιον, ἐν Ἀλεξανδρείᾳ ὀφείλει γεγονέναι πρὸ U+2220΄ καὶ γʹ μέρους μιᾶς ὥρας τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος ἐπεῖχεν ἀκριβῶς τῶν Ἰχθύων μοίρας ιγ U+2220΄ δ΄.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-E2-DIR",
+ "event": "E2",
+ "kind": "eclipse-lunar",
+ "feature": "direction",
+ "statement": "E2 was eclipsed 'from the south': the southern part of the disk was darkened, so the Moon passed north of the shadow axis (ecliptic latitude of the Moon > 0 at mid-eclipse).",
+ "licence_words": [
+  "ἀπὸ νότου"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "north-of-axis",
+   "reading": "Moon's ecliptic latitude > 0 at mid-eclipse",
+   "justification": "the darkened limb faces the shadow centre, which lies on the ecliptic",
+   "operational": {
+    "moon_lat_sign": 1
+   },
+   "primary": true
+  },
+  {
+   "option": "none",
+   "reading": "direction not used",
+   "justification": "the direction words could describe where the darkening began rather than which side was covered",
+   "operational": {
+    "moon_lat_sign": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator quoting the record",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ἀπὸ νότου | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4 :: ἡ δὲ δευτέρα τῶν ἐκλείψεων ἀναγέγραπται γεγονυῖα τῷ δευτέρῳ ἔτει τοῦ αὐτοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ ιη΄ εἰς τὴν ιθ΄. ἐξέλειπε δέ, φησίν, ἀπὸ νότου δακτύλους γ αὐτοῦ τοῦ μεσονυκτίου. ἐπεὶ οὖν ὁ μέσος χρόνος ἐν Βαβυλῶνι φαίνεται γεγονὼς κατʼ αὐτὸ τὸ μεσονύκτιον, ἐν Ἀλεξανδρείᾳ ὀφείλει γεγονέναι πρὸ U+2220΄ καὶ γʹ μέρους μιᾶς ὥρας τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος ἐπεῖχεν ἀκριβῶς τῶν Ἰχθύων μοίρας ιγ U+2220΄ δ΄.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-E2-TIME",
+ "event": "E2",
+ "kind": "time-of-day",
+ "feature": "eclipse-timing",
+ "statement": "The record: 3 digits eclipsed at midnight itself. Ptolemy: mid-eclipse at local midnight at Babylon (5/6 h before midnight at Alexandria).",
+ "licence_words": [
+  "αὐτοῦ τοῦ μεσονυκτίου",
+  "ἐπεὶ οὖν ὁ μέσος χρόνος ἐν Βαβυλῶνι φαίνεται γεγονὼς κατʼ αὐτὸ τὸ μεσονύκτιον"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "mid-at-midnight",
+   "reading": "mid-eclipse within +/- 1 h of local apparent midnight (LAT) at Babylon",
+   "justification": "Ptolemy's reading of the record",
+   "operational": {
+    "mid_minus_midnight_LAT_h": 0.0,
+    "tol_h": 1.0,
+    "site": "Babylon"
+   },
+   "primary": true
+  },
+  {
+   "option": "in-progress",
+   "reading": "the umbral eclipse is in progress at local apparent midnight at Babylon",
+   "justification": "the record says only that it was eclipsed at midnight",
+   "operational": {
+    "umbral_phase_contains_LAT_h": 0.0,
+    "site": "Babylon"
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "no timing constraint beyond visibility from Babylon",
+   "justification": "sensitivity",
+   "operational": {
+    "timing": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator quoting the record; reduction by Ptolemy",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | αὐτοῦ τοῦ μεσονυκτίου | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4
+   CHECK exact | ἐπεὶ οὖν ὁ μέσος χρόνος ἐν Βαβυλῶνι φαίνεται γεγονὼς κατʼ αὐτὸ τὸ μεσονύκτιον | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4 :: ἡ δὲ δευτέρα τῶν ἐκλείψεων ἀναγέγραπται γεγονυῖα τῷ δευτέρῳ ἔτει τοῦ αὐτοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ ιη΄ εἰς τὴν ιθ΄. ἐξέλειπε δέ, φησίν, ἀπὸ νότου δακτύλους γ αὐτοῦ τοῦ μεσονυκτίου. ἐπεὶ οὖν ὁ μέσος χρόνος ἐν Βαβυλῶνι φαίνεται γεγονὼς κατʼ αὐτὸ τὸ μεσονύκτιον, ἐν Ἀλεξανδρείᾳ ὀφείλει γεγονέναι πρὸ U+2220΄ καὶ γʹ μέρους μιᾶς ὥρας τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος ἐπεῖχεν ἀκριβῶς τῶν Ἰχθύων μοίρας ιγ U+2220΄ δ΄.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-E2-SUN",
+ "event": "E2",
+ "kind": "season",
+ "feature": "solar-longitude",
+ "statement": "Ptolemy computes the Sun at Pisces 13 3/4 deg: tropical longitude 343.75 deg.",
+ "licence_words": [
+  "τῶν Ἰχθύων μοίρας ιγ U+2220΄ δ΄"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm5",
+   "reading": "343.75 +/- 5 deg",
+   "justification": "as PB-E1-SUN",
+   "operational": {
+    "sun_lon_deg": 343.75,
+    "tol_deg": 5.0
+   },
+   "primary": true
+  },
+  {
+   "option": "pm15",
+   "reading": "343.75 +/- 15 deg",
+   "justification": "as PB-E1-SUN",
+   "operational": {
+    "sun_lon_deg": 343.75,
+    "tol_deg": 15.0
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "derived quantity",
+   "operational": {
+    "sun_lon_deg": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy's computation)",
+ "notes": "ιγ U+2220΄ δ΄ = 13 + 1/2 + 1/4.",
+ "license_check": "ok"
+}
+   CHECK exact | τῶν Ἰχθύων μοίρας ιγ U+2220΄ δ΄ | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.4 :: ἡ δὲ δευτέρα τῶν ἐκλείψεων ἀναγέγραπται γεγονυῖα τῷ δευτέρῳ ἔτει τοῦ αὐτοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ ιη΄ εἰς τὴν ιθ΄. ἐξέλειπε δέ, φησίν, ἀπὸ νότου δακτύλους γ αὐτοῦ τοῦ μεσονυκτίου. ἐπεὶ οὖν ὁ μέσος χρόνος ἐν Βαβυλῶνι φαίνεται γεγονὼς κατʼ αὐτὸ τὸ μεσονύκτιον, ἐν Ἀλεξανδρείᾳ ὀφείλει γεγονέναι πρὸ U+2220΄ καὶ γʹ μέρους μιᾶς ὥρας τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος ἐπεῖχεν ἀκριβῶς τῶν Ἰχθύων μοίρας ιγ U+2220΄ δ΄.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-E3-MAG",
+ "event": "E3",
+ "kind": "eclipse-lunar",
+ "feature": "magnitude",
+ "statement": "E3: eclipsed from the north by 'more than half' (πλεῖον τοῦ ἡμίσους); not said to be total. The words do not say half of what. The options read it as a fraction of the diameter, as Ptolemy's own records state it (IV.6.14-15 'τῆς διαμέτρου'); umbral magnitude > 0.5 is the weaker of the diameter and area readings.",
+ "licence_words": [
+  "ἐξέλειπεν ἀπʼ ἄρκτων πλεῖον τοῦ ἡμίσους"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "partial-gt-half",
+   "reading": "0.5 < umbral magnitude < 1.0",
+   "justification": "'more than half' and not 'whole' as for E1 in the same record",
+   "operational": {
+    "umag": [
+     0.5,
+     1.0
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "gt-half",
+   "reading": "umbral magnitude > 0.5 (totality allowed)",
+   "justification": "reads 'more than half' as a lower bound only",
+   "operational": {
+    "umag": [
+     0.5,
+     null
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "loose",
+   "reading": "umbral magnitude > 0.4",
+   "justification": "allows a rounded report",
+   "operational": {
+    "umag": [
+     0.4,
+     null
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator quoting the Babylonian record (φησίν)",
+ "notes": "",
+ "license_check": "edited: statement said 'more than half the diameter'; the record says only 'more than half'. Statement reworded; options unchanged, because umag > 0.5 is already the weaker of the diameter and area readings."
+}
+   CHECK exact | ἐξέλειπεν ἀπʼ ἄρκτων πλεῖον τοῦ ἡμίσους | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5 :: ἡ δὲ γ΄ τῶν ἐκλείψεων ἀναγέγραπται γεγονυῖα τῷ αὐτῷ δευτέρῳ ἔτει τοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Φαμενὼθ ιεʹ εἰς τὴν ιϛ΄. ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν καὶ ἐξέλειπεν ἀπʼ ἄρκτων πλεῖον τοῦ ἡμίσους. ἐπειδὴ οὖν ὁ ἥλιος περὶ τὴν ἀρχὴν ἦν τῆς Παρθένου, τὸ μὲν τῆς νυκτὸς μέγεθος ἐν Βαβυλῶνι ια ἔγγιστα ὡρῶν ἐτύγχανεν ἰσημερινῶν, τὸ δὲ ἥμισυ τῆς νυκτὸς ε U+2220΄ ὡρῶν· καὶ ἡ μὲν ἀρχὴ ἄρα τῆς ἐκλείψεως γέγονε πρὸ πέντε μάλιστα ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου διὰ τὸ μετὰ τὴν ἀνατολὴν ἦρχθαι, ὁ δὲ μέσος χρόνος πρὸ γ U+2220΄ ὡρῶν, ἐπειδήπερ ὁ πᾶς χρόνος τοῦ τηλικούτου μεγέθους τῆς ἐπισκοτήσεως τριῶν ἔγγιστα ὡρῶν ὀφείλει γεγονέναι. ἐν Ἀλεξανδρείᾳ πάλιν ἄρα ὁ μέσος χρόνος τῆς ἐκλείψεως ἀπετελέσθη πρὸ δ καὶ γʹ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος ἐπεῖχεν ἀκριβῶς τῆς Παρθένου μοίρας γ δ΄ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-E3-DIR",
+ "event": "E3",
+ "kind": "eclipse-lunar",
+ "feature": "direction",
+ "statement": "E3 eclipsed 'from the north': Moon south of the shadow axis (ecliptic latitude < 0).",
+ "licence_words": [
+  "ἀπʼ ἄρκτων"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "south-of-axis",
+   "reading": "Moon's ecliptic latitude < 0 at mid-eclipse",
+   "justification": "as PB-E2-DIR",
+   "operational": {
+    "moon_lat_sign": -1
+   },
+   "primary": true
+  },
+  {
+   "option": "none",
+   "reading": "direction not used",
+   "justification": "as PB-E2-DIR",
+   "operational": {
+    "moon_lat_sign": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator quoting the record",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ἀπʼ ἄρκτων | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5 :: ἡ δὲ γ΄ τῶν ἐκλείψεων ἀναγέγραπται γεγονυῖα τῷ αὐτῷ δευτέρῳ ἔτει τοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Φαμενὼθ ιεʹ εἰς τὴν ιϛ΄. ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν καὶ ἐξέλειπεν ἀπʼ ἄρκτων πλεῖον τοῦ ἡμίσους. ἐπειδὴ οὖν ὁ ἥλιος περὶ τὴν ἀρχὴν ἦν τῆς Παρθένου, τὸ μὲν τῆς νυκτὸς μέγεθος ἐν Βαβυλῶνι ια ἔγγιστα ὡρῶν ἐτύγχανεν ἰσημερινῶν, τὸ δὲ ἥμισυ τῆς νυκτὸς ε U+2220΄ ὡρῶν· καὶ ἡ μὲν ἀρχὴ ἄρα τῆς ἐκλείψεως γέγονε πρὸ πέντε μάλιστα ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου διὰ τὸ μετὰ τὴν ἀνατολὴν ἦρχθαι, ὁ δὲ μέσος χρόνος πρὸ γ U+2220΄ ὡρῶν, ἐπειδήπερ ὁ πᾶς χρόνος τοῦ τηλικούτου μεγέθους τῆς ἐπισκοτήσεως τριῶν ἔγγιστα ὡρῶν ὀφείλει γεγονέναι. ἐν Ἀλεξανδρείᾳ πάλιν ἄρα ὁ μέσος χρόνος τῆς ἐκλείψεως ἀπετελέσθη πρὸ δ καὶ γʹ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος ἐπεῖχεν ἀκριβῶς τῆς Παρθένου μοίρας γ δ΄ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-E3-TIME",
+ "event": "E3",
+ "kind": "time-of-day",
+ "feature": "eclipse-timing",
+ "statement": "The record: it began to be eclipsed after the rising. Ptolemy: night of 11 equinoctial hours, first contact about 5 h and mid-eclipse 3 1/2 h before local midnight at Babylon, assuming a 3-hour eclipse.",
+ "licence_words": [
+  "ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν",
+  "ὁ δὲ μέσος χρόνος πρὸ γ U+2220΄ ὡρῶν"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "record",
+   "reading": "first umbral contact after moonrise at Babylon, Moon above the horizon at first contact",
+   "justification": "'μετὰ τὴν ἀνατολήν' gives a lower bound only",
+   "operational": {
+    "first_contact_after_moonrise_h": [
+     0.0,
+     null
+    ],
+    "site": "Babylon"
+   },
+   "primary": true
+  },
+  {
+   "option": "record-soon",
+   "reading": "first umbral contact within 0 to 1 h after moonrise at Babylon",
+   "justification": "reads 'after the rising' as 'soon after', as Ptolemy's 1/2 h does",
+   "operational": {
+    "first_contact_after_moonrise_h": [
+     0.0,
+     1.0
+    ],
+    "site": "Babylon"
+   },
+   "primary": false
+  },
+  {
+   "option": "reduction",
+   "reading": "mid-eclipse 3.5 h before local apparent midnight at Babylon +/- 1 h",
+   "justification": "Ptolemy's reduction (assumes a 3 h duration)",
+   "operational": {
+    "mid_minus_midnight_LAT_h": -3.5,
+    "tol_h": 1.0,
+    "site": "Babylon"
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "no timing constraint beyond visibility",
+   "justification": "sensitivity",
+   "operational": {
+    "timing": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "record: narrator quoting the report; reduction: Ptolemy's inference",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5
+   CHECK exact | ὁ δὲ μέσος χρόνος πρὸ γ U+2220΄ ὡρῶν | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5 :: ἡ δὲ γ΄ τῶν ἐκλείψεων ἀναγέγραπται γεγονυῖα τῷ αὐτῷ δευτέρῳ ἔτει τοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Φαμενὼθ ιεʹ εἰς τὴν ιϛ΄. ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν καὶ ἐξέλειπεν ἀπʼ ἄρκτων πλεῖον τοῦ ἡμίσους. ἐπειδὴ οὖν ὁ ἥλιος περὶ τὴν ἀρχὴν ἦν τῆς Παρθένου, τὸ μὲν τῆς νυκτὸς μέγεθος ἐν Βαβυλῶνι ια ἔγγιστα ὡρῶν ἐτύγχανεν ἰσημερινῶν, τὸ δὲ ἥμισυ τῆς νυκτὸς ε U+2220΄ ὡρῶν· καὶ ἡ μὲν ἀρχὴ ἄρα τῆς ἐκλείψεως γέγονε πρὸ πέντε μάλιστα ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου διὰ τὸ μετὰ τὴν ἀνατολὴν ἦρχθαι, ὁ δὲ μέσος χρόνος πρὸ γ U+2220΄ ὡρῶν, ἐπειδήπερ ὁ πᾶς χρόνος τοῦ τηλικούτου μεγέθους τῆς ἐπισκοτήσεως τριῶν ἔγγιστα ὡρῶν ὀφείλει γεγονέναι. ἐν Ἀλεξανδρείᾳ πάλιν ἄρα ὁ μέσος χρόνος τῆς ἐκλείψεως ἀπετελέσθη πρὸ δ καὶ γʹ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος ἐπεῖχεν ἀκριβῶς τῆς Παρθένου μοίρας γ δ΄ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-BAB",
+ "clue_id": "PB-E3-SUN",
+ "event": "E3",
+ "kind": "season",
+ "feature": "solar-longitude",
+ "statement": "Ptolemy computes the Sun at Virgo 3 1/4 deg ('about the beginning of Virgo'): tropical longitude 153.25 deg.",
+ "licence_words": [
+  "ὁ ἥλιος περὶ τὴν ἀρχὴν ἦν τῆς Παρθένου",
+  "τῆς Παρθένου μοίρας γ δ΄ ἔγγιστα"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm5",
+   "reading": "153.25 +/- 5 deg",
+   "justification": "as PB-E1-SUN",
+   "operational": {
+    "sun_lon_deg": 153.25,
+    "tol_deg": 5.0
+   },
+   "primary": true
+  },
+  {
+   "option": "pm15",
+   "reading": "153.25 +/- 15 deg",
+   "justification": "as PB-E1-SUN",
+   "operational": {
+    "sun_lon_deg": 153.25,
+    "tol_deg": 15.0
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "derived quantity",
+   "operational": {
+    "sun_lon_deg": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy's computation)",
+ "notes": "Ptolemy's night of about 11 hours at Babylon ('τὸ μὲν τῆς νυκτὸς μέγεθος ἐν Βαβυλῶνι ια ἔγγιστα') follows from the same computed longitude.",
+ "license_check": "ok"
+}
+   CHECK exact | ὁ ἥλιος περὶ τὴν ἀρχὴν ἦν τῆς Παρθένου | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5
+   CHECK exact | τῆς Παρθένου μοίρας γ δ΄ ἔγγιστα | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.5 :: ἡ δὲ γ΄ τῶν ἐκλείψεων ἀναγέγραπται γεγονυῖα τῷ αὐτῷ δευτέρῳ ἔτει τοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Φαμενὼθ ιεʹ εἰς τὴν ιϛ΄. ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν καὶ ἐξέλειπεν ἀπʼ ἄρκτων πλεῖον τοῦ ἡμίσους. ἐπειδὴ οὖν ὁ ἥλιος περὶ τὴν ἀρχὴν ἦν τῆς Παρθένου, τὸ μὲν τῆς νυκτὸς μέγεθος ἐν Βαβυλῶνι ια ἔγγιστα ὡρῶν ἐτύγχανεν ἰσημερινῶν, τὸ δὲ ἥμισυ τῆς νυκτὸς ε U+2220΄ ὡρῶν· καὶ ἡ μὲν ἀρχὴ ἄρα τῆς ἐκλείψεως γέγονε πρὸ πέντε μάλιστα ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου διὰ τὸ μετὰ τὴν ἀνατολὴν ἦρχθαι, ὁ δὲ μέσος χρόνος πρὸ γ U+2220΄ ὡρῶν, ἐπειδήπερ ὁ πᾶς χρόνος τοῦ τηλικούτου μεγέθους τῆς ἐπισκοτήσεως τριῶν ἔγγιστα ὡρῶν ὀφείλει γεγονέναι. ἐν Ἀλεξανδρείᾳ πάλιν ἄρα ὁ μέσος χρόνος τῆς ἐκλείψεως ἀπετελέσθη πρὸ δ καὶ γʹ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου, καθʼ ἣν ὥραν ὁ ἥλιος ἐπεῖχεν ἀκριβῶς τῆς Παρθένου μοίρας γ δ΄ ἔγγιστα.

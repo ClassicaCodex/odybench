@@ -1,0 +1,471 @@
+#### SET QS-SACK
+{
+ "set": "QS-SACK",
+ "role": "negative",
+ "searchable": true,
+ "text": "Quintus Smyrnaeus, Posthomerica 12.340-14.470 (the horse brought in, the sack, the departure and Athena's storm)",
+ "text_file": "quintus-smyrnaeus-grc.tsv",
+ "edition_id": 1600,
+ "day0": "Day 0 is the day the Trojans find the horse; Night 0 is the night of the portents and the sack; Dawn +1 is 14.1.",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "QS-SACK-02": "none",
+   "QS-SACK-03": "none",
+   "QS-SACK-06": "none"
+  },
+  "BM-analogue": {
+   "QS-SACK-02": "c",
+   "QS-SACK-03": "b",
+   "QS-SACK-06": "none"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": "no lunar statement in books 12-14"
+  },
+  "season_stars": {
+   "status": "fork",
+   "clue_ids": [
+    "QS-SACK-03"
+   ],
+   "note": "only through the lost-Pleiad aetiology"
+  },
+  "morning_star": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "mercury_turning_point": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "darkness_eclipse": {
+   "status": "fork",
+   "clue_ids": [
+    "QS-SACK-02",
+    "QS-SACK-06"
+   ],
+   "note": "stars hidden under a cloudless sky on Night 0 (a prodigy); storm darkness at sea later"
+  }
+ },
+ "notes": "The thinnest set: Quintus has no Moon, morning star or Hermes in the sack. Expected to have many survivors under every reading.",
+ "eclipse_compatible_options": [
+  "QS-SACK-02:a",
+  "QS-SACK-02:c",
+  "QS-SACK-06:a"
+ ],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+}
+-- observer_place {"place": "Troy, the god-built city", "words": "θεοδμήτοιο πόληος", "ref": ["urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.514"], "text_file": "quintus-smyrnaeus-grc.tsv", "lat": 39.9575, "lon": 26.2389, "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"}
+   CHECK exact | θεοδμήτοιο πόληος | in ['urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.514']
+   12.506     πῖπτε χαμαὶ τρομέοντα· κατηρείποντο δὲ βωμοί·
+   12.507     σπονδαὶ δʼ αἷμα γένοντο· θεῶν δʼ ἐξέρρεε δάκρυ,
+   12.508     καὶ νηοὶ δεύοντο λύθρῳ· στοναχαὶ δʼ ἐφέροντο
+   12.509     ἔκποθεν ἀπροφάτοιο· περισσείοντο δὲ μακρὰ
+   12.510     τείχεα καὶ πύργοι μεγάλʼ ἔκτυπον, ὡς ἀχέοντες·
+   12.511     αὐτόματοι δʼ ἄρʼ ὀχῆες ἀνωίγνυντο πυλάων
+   12.512     αἰνὸν κεκλήγοντες· ἐπεστενάχοντο δὲ λυγρὸν
+   12.513     ἐννύχιοι ὄρνιθες ἐρημαῖον βοόωντες·
+>> 12.514     ἄστρα δὲ πάντʼ ἐφύπερθε θεοδμήτοιο πόληος
+   12.515     ἀχλὺς ἀμφεκάλυψε καὶ ἀννεφέλου περ ἐόντος
+   12.516     οὐρανοῦ αἰγλήεντος· ἀπαυαίνοντο δὲ δάφναι
+   12.517     πὰρ νηῷ Φοίβοιο πάρος θαλεραί περ ἐοῦσαι·
+   12.518     ἐν δὲ λύκοι καὶ θῶες ἀναιδέες ὠρύσαντο
+   12.519     ἔντοσθεν πυλέων· μάλα μυρία δʼ ἄλλα φαάνθη
+-- observer_place {"place": "Tenedos (the fleet)", "words": "πρὸς ἠιόνας Τενέδοιο", "ref": ["urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.345"], "text_file": "quintus-smyrnaeus-grc.tsv", "lat": 39.8219, "lon": 26.0289, "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"}
+   CHECK exact | πρὸς ἠιόνας Τενέδοιο | in ['urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.345']
+   12.337     ἃς κλισίας πρήσαντες, ὅπῃ πάρος αὐτοὶ ἴαυον.
+   12.338     τοῖσι δὲ κοιρανέοντε δύω κρατερόφρονε φῶτε
+   12.339     σήμαινον, Νέστωρ τε καὶ αἰχμητὴς Ἀγαμέμνων·
+   12.340     τοὺς δὲ καἰ ἐλδομένους καταβήμεναι ἔνδοθεν ἵππου
+   12.341     Ἀργεῖοι κατέρυξαν, ἵνʼ ἐν νήεσσι μένοντες
+   12.342     λαοῖς σημαίνωσιν, ἐπεὶ πολὺ λώιον ἄνδρες
+   12.343     ἔργον ἐποίχονται, ὁπότʼ εἰσορόωσιν ἄνακτες·
+   12.344     τοὔνεκʼ ἄρʼ ἔκτοθι μίμνον ἀριστῆές περ ἐόντες.
+>> 12.345     οἱ δὲ θοῶς ἀφίκοντο πρὸς ἠιόνας Τενέδοιο·
+   12.346     εὐνὰς δʼ ἔνθʼ ἔβαλον κατὰ βένθεος· ἐκ δʼ ἔβαν αὐτοὶ
+   12.347     νηῶν ἐσσυμένως· ἀπὸ δʼ ἔκτοθι πείσματʼ ἔδησαν
+   12.348     ἠιόνων· αὐτοὶ δὲ παραυτόθι μίμνον ἕκηλοι
+   12.349     δέγμενοι, ὁππότε πυρσὸς ἐελδομένοισι φανείη.
+   12.350     οἱ δʼ ἄρʼ ἐν ἵππῳ ἔσαν δηΐων σχεδόν, ἄλλοτε μέν που
+-- observer_place {"place": "Cape Caphereus, Euboea (the storm)", "words": "Καφηρέος", "ref": ["urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.469"], "text_file": "quintus-smyrnaeus-grc.tsv", "lat": 38.1167, "lon": 24.5667, "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"}
+   CHECK exact | Καφηρέος | in ['urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.469']
+   14.461     σὺν δʼ ἔχεεν νεφέλας τε καὶ ἠέρα πᾶσαν ὕπερθε·
+   14.462     νὺξ δʼ ἐχύθη περὶ γαῖαν, ἐπήχλυσεν δὲ θάλασσα·
+   14.463     Ζεὺς δὲ μέγʼ εἰσορόων ἐπετέρπετο· κίνυτο δʼ εὐρὺς
+   14.464     οὐρανὸς ἀμφὶ πόδεσσι θεῆς· περὶ δʼ ἔβραχεν αἰθήρ,
+   14.465     ὡς Διὸς ἀκαμάτοιο ποτὶ κλόνον ἐμμεμαῶτος.
+   14.466     ἡ δʼ ἄφαρ ἠερόεντος ὑπὲρ πόντοιο φέρεσθαι
+   14.467     οὐρανόθεν προέηκεν ἐς Αἴολον ἄμβροτον Ἶριν,
+   14.468     ὄφρʼ ἀνέμους ἅμα πάντας ἐπιβρίσαντας ἰάλλῃ
+>> 14.469     ἐλθέμεναι κραναοῖο Καφηρέος ἐγγύθεν ἄκρων
+   14.470     νωλεμέως χριμφθέντας, ἀνοιδῆναί τε θάλασσαν,
+   14.471     λευγαλέῃς ῥιπῇσι μεμηνότας. ἡ δʼ ἀΐουσα
+   14.472     ἐσσυμένως οἴμησε περιγναμφθεῖσα νέφεσσι·
+   14.473     φαίης κεν πῦρ ἔμμεν ἅμʼ ἠέρι καὶ μέλαν ὕδωρ.
+   14.474     ἵκετο δʼ Αἰολίην, ἀνέμων ὅθι λάβρον ἀέντων
+
+==============================================================================================================
+{
+ "set": "QS-SACK",
+ "clue_id": "QS-SACK-01",
+ "kind": "time-of-day",
+ "statement": "The fleet waits at Tenedos through Night -1 for the torch; Dawn of Day 0 comes; the Trojans see smoke over the Hellespont shore and the horse.",
+ "licence_words": "πρὸς ἠιόνας Τενέδοιο … ὁππότε πυρσὸς ἐελδομένοισι φανείη … ἐπήλυθεν Ἠριγένεια … Τρῶες εἰσενόησαν ἐπʼ ᾐόσιν Ἑλλησπόντου",
+ "ref": [
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.345",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.349",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.352",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.353"
+ ],
+ "text_file": "quintus-smyrnaeus-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | πρὸς ἠιόνας Τενέδοιο | in ['urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.345']
+   CHECK exact | ὁππότε πυρσὸς ἐελδομένοισι φανείη | in ['urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.349']
+   CHECK exact | ἐπήλυθεν Ἠριγένεια | in ['urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.352']
+   CHECK exact | Τρῶες εἰσενόησαν ἐπʼ ᾐόσιν Ἑλλησπόντου | in ['urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.353']
+   --- context (quintus-smyrnaeus-grc.tsv) ---
+   12.337     ἃς κλισίας πρήσαντες, ὅπῃ πάρος αὐτοὶ ἴαυον.
+   12.338     τοῖσι δὲ κοιρανέοντε δύω κρατερόφρονε φῶτε
+   12.339     σήμαινον, Νέστωρ τε καὶ αἰχμητὴς Ἀγαμέμνων·
+   12.340     τοὺς δὲ καἰ ἐλδομένους καταβήμεναι ἔνδοθεν ἵππου
+   12.341     Ἀργεῖοι κατέρυξαν, ἵνʼ ἐν νήεσσι μένοντες
+   12.342     λαοῖς σημαίνωσιν, ἐπεὶ πολὺ λώιον ἄνδρες
+   12.343     ἔργον ἐποίχονται, ὁπότʼ εἰσορόωσιν ἄνακτες·
+   12.344     τοὔνεκʼ ἄρʼ ἔκτοθι μίμνον ἀριστῆές περ ἐόντες.
+>> 12.345     οἱ δὲ θοῶς ἀφίκοντο πρὸς ἠιόνας Τενέδοιο·
+   12.346     εὐνὰς δʼ ἔνθʼ ἔβαλον κατὰ βένθεος· ἐκ δʼ ἔβαν αὐτοὶ
+   12.347     νηῶν ἐσσυμένως· ἀπὸ δʼ ἔκτοθι πείσματʼ ἔδησαν
+   12.348     ἠιόνων· αὐτοὶ δὲ παραυτόθι μίμνον ἕκηλοι
+>> 12.349     δέγμενοι, ὁππότε πυρσὸς ἐελδομένοισι φανείη.
+   12.350     οἱ δʼ ἄρʼ ἐν ἵππῳ ἔσαν δηΐων σχεδόν, ἄλλοτε μέν που
+   12.351     φθεῖσθαι ὀϊόμενοι, ὁτὲ ἱερὸν ἄστυ δαΐξαι·
+>> 12.352     καὶ τὰ μὲν ἐλπομένοισιν ἐπήλυθεν Ἠριγένεια.
+>> 12.353     Τρῶες εἰσενόησαν ἐπʼ ᾐόσιν Ἑλλησπόντου
+   12.354     καπνὸν ἔτʼ ἀΐσσοντα διʼ ἠέρος· οὐδʼ ἄρα νῆας
+   12.355     δέρκονθʼ, αἵ σφιν ἔνεικαν ἀφʼ Ἑλλάδος αἰνὸν ὄλεθρον.
+   12.356     γηθόσυνοι δʼ ἄρα πάντες ἐπέδραμον αἰγιαλοῖσι
+   12.357     τεύχἐ ἐφεσσάμενοι· ἔτι γὰρ δέος ἄμφεχε θυμόν·
+   12.358     ἵππον δʼ εἰσενόησαν ἐΰξοον. ἀμφὶ δʼ ἄρʼ αὐτῷ
+
+==============================================================================================================
+{
+ "set": "QS-SACK",
+ "clue_id": "QS-SACK-02",
+ "kind": "darkness",
+ "statement": "Among the portents at the Trojans' sacrifices on Night 0, night-birds cry and a mist covers all the stars above the city, although the shining sky is cloudless. The hour is not stated; the portents come before the meal of 13.1 and the sleep of 13.21, so they fall early in the night by inference.",
+ "licence_words": "ἐπεστενάχοντο δὲ λυγρὸν ἐννύχιοι ὄρνιθες … ἄστρα δὲ πάντʼ ἐφύπερθε θεοδμήτοιο πόληος ἀχλὺς ἀμφεκάλυψε καὶ ἀννεφέλου περ ἐόντος οὐρανοῦ αἰγλήεντος",
+ "ref": [
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.512",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.513",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.514",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.515",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.516"
+ ],
+ "text_file": "quintus-smyrnaeus-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "an umbral lunar eclipse is in progress while the Moon is above the horizon at Troy in the evening of Night 0 (before local midnight)",
+   "justification": "the darkness slot read as an eclipse; the drafter's inference; the before-midnight bound is inferred from the order portents (12.500-520) -> meal (13.1) -> sleep and torch (13.21-23)"
+  },
+  {
+   "option": "b",
+   "operational": "the Moon is above the horizon with illuminated fraction >= 0.9 at the end of evening nautical twilight of Night 0",
+   "justification": "a 'gleaming' cloudless sky that hides the stars read as bright moonlight; a weak reading"
+  },
+  {
+   "option": "c",
+   "operational": "Day 0 is a conjunction date (LMT at Troy)",
+   "justification": "a starless, moonless-seeming night read as the dark of the moon; eclipse-compatible anchor; the drafter's inference"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "a prodigy among others (bleeding altars, weeping statues, self-opening gates); the text rules out cloud and names no Moon"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: the statement put the portents 'in the evening', and option a bounded them before local midnight, but the words give no hour; both now state that the timing is inferred from the order 12.500-520 -> 13.1 -> 13.21"
+}
+   CHECK exact | ἐπεστενάχοντο δὲ λυγρὸν ἐννύχιοι ὄρνιθες | in []
+   CHECK exact | ἄστρα δὲ πάντʼ ἐφύπερθε θεοδμήτοιο πόληος ἀχλὺς ἀμφεκάλυψε καὶ ἀννεφέλου περ ἐόντος οὐρανοῦ αἰγλήεντος | in []
+   --- context (quintus-smyrnaeus-grc.tsv) ---
+   12.504     ὄμβρου ὅπως καθύπερθε δυσηχέος ἐσσυμένοιο·
+   12.505     καπνὸς δʼ αἱματόεις ἀνεκήκιε· μηρὰ δὲ πάντα
+   12.506     πῖπτε χαμαὶ τρομέοντα· κατηρείποντο δὲ βωμοί·
+   12.507     σπονδαὶ δʼ αἷμα γένοντο· θεῶν δʼ ἐξέρρεε δάκρυ,
+   12.508     καὶ νηοὶ δεύοντο λύθρῳ· στοναχαὶ δʼ ἐφέροντο
+   12.509     ἔκποθεν ἀπροφάτοιο· περισσείοντο δὲ μακρὰ
+   12.510     τείχεα καὶ πύργοι μεγάλʼ ἔκτυπον, ὡς ἀχέοντες·
+   12.511     αὐτόματοι δʼ ἄρʼ ὀχῆες ἀνωίγνυντο πυλάων
+>> 12.512     αἰνὸν κεκλήγοντες· ἐπεστενάχοντο δὲ λυγρὸν
+>> 12.513     ἐννύχιοι ὄρνιθες ἐρημαῖον βοόωντες·
+>> 12.514     ἄστρα δὲ πάντʼ ἐφύπερθε θεοδμήτοιο πόληος
+>> 12.515     ἀχλὺς ἀμφεκάλυψε καὶ ἀννεφέλου περ ἐόντος
+>> 12.516     οὐρανοῦ αἰγλήεντος· ἀπαυαίνοντο δὲ δάφναι
+   12.517     πὰρ νηῷ Φοίβοιο πάρος θαλεραί περ ἐοῦσαι·
+   12.518     ἐν δὲ λύκοι καὶ θῶες ἀναιδέες ὠρύσαντο
+   12.519     ἔντοσθεν πυλέων· μάλα μυρία δʼ ἄλλα φαάνθη
+   12.520     σήματα Δαρδανίδῃσι καὶ ἄστεϊ πῆμα φέροντα.
+   12.521     ἀλλʼ οὐ δεῖμʼ ἀλεγεινὸν ὑπὸ Τρώων φρένας ἷξε
+
+==============================================================================================================
+{
+ "set": "QS-SACK",
+ "clue_id": "QS-SACK-03",
+ "kind": "star",
+ "statement": "During the sack (Night 0) they say Electra, mother of Dardanus, wrapped herself in mist and cloud and left the dance of her sister Pleiades; the others rise in a crowd, she alone is hidden for ever.",
+ "licence_words": "Ἠλέκτρην βαθύπεπλον ἑὸν δέμας ἀμφικαλύψαι ἀχλύϊ καὶ νεφέεσσιν ἀποιχομένην χοροῦ ἄλλων πληιάδων … ἡ δʼ ἄρα μούνη κεύθεται αἰὲν ἄϊστος",
+ "ref": [
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.551",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.552",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.553",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.554",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.555",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.556",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.557"
+ ],
+ "text_file": "quintus-smyrnaeus-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "the Pleiades (Alcyone) are above the horizon at some instant of the dark hours of Night 0",
+   "justification": "the withdrawal read as an event seen that night"
+  },
+  {
+   "option": "b",
+   "operational": "Alcyone >= 5 deg above the horizon at some instant of the dark hours of Night 0",
+   "justification": "as a, with a visibility altitude (the 5-deg threshold is the drafter's)"
+  },
+  {
+   "option": "b-late",
+   "operational": "Alcyone >= 5 deg above the horizon at some instant between local midnight and the start of morning nautical twilight of Night 0",
+   "justification": "the withdrawal is placed 'Ἰλίου ὀλλυμένης' (13.551), during the sack, which begins only after the city sleeps (13.21-29); the midnight bound is the drafter's inference from that order"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "an aetiology of the lost Pleiad told as hearsay ('φασι', 13.551) and made permanent ('αἰέν'); schol. Il. 18.486 tells the same story and assigns it to the Cyclic poets [scholia-iliad-grc.tsv key 2.18.198.1]"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: option b timed the Pleiades at nightfall ('seen at nightfall'), which the words do not state: the passage is set 'Ἰλίου ὀλλυμένης', during the sack, after the city sleeps (13.21-29); b now spans the dark hours, and option b-late carries the after-midnight reading with its inference spelled out. The BM-analogue pinned reading still names b, which now means the dark-hours version"
+}
+   CHECK exact | Ἠλέκτρην βαθύπεπλον ἑὸν δέμας ἀμφικαλύψαι ἀχλύϊ καὶ νεφέεσσιν ἀποιχομένην χοροῦ ἄλλων πληιάδων | in []
+   CHECK exact | ἡ δʼ ἄρα μούνη κεύθεται αἰὲν ἄϊστος | in []
+   --- context (quintus-smyrnaeus-grc.tsv) ---
+   13.543     ὣς τῶν πυρομένων λαρὸς γόος ἀμφιδεδήει.
+   13.544     καὶ τότε που Πριάμοιο πολυκτήτοιο θύγατρα
+   13.545     Λαοδίκην ἐνέπουσιν ἐς αἰθέρα χεῖρας ὀρέξαι
+   13.546     εὐχομένην μακάρεσσιν ἀτειρέσιν, ὄφρα ἑ γαῖα
+   13.547     ἀμφιχάνῃ, πρὶν χεῖρα βαλεῖν ἐπὶ δούλια ἔργα.
+   13.548     τῆς δὲ θεῶν τις ἄκουσε καὶ αὐτίκα γαῖαν ἔνερθεν
+   13.549     ῥῆξεν ἀπειρεσίην· ἡ δʼ ἐννεσίῃσι θεοῖο
+   13.550     κούρην δέξατο δῖαν ἔσω κοίλοιο βερέθρου,
+>> 13.551     Ἰλίου ὀλλυμένης, ἧς εἵνεκά φασι καὶ αὐτὴν
+>> 13.552     Ἠλέκτρην βαθύπεπλον ἑὸν δέμας ἀμφικαλύψαι
+>> 13.553     ἀχλύϊ καὶ νεφέεσσιν ἀποιχομένην χοροῦ ἄλλων
+>> 13.554     πληιάδων, αἳ δή οἱ ἀδελφειαὶ γεγάασιν·
+>> 13.555     ἀλλʼ αἱ μὲν μογεροῖσιν ἐπόψιαι ἀνθρώποισιν
+>> 13.556     ἰλαδὸν ἀντέλλουσιν ἐς οὐρανόν· ἡ δʼ ἄρα μούνη
+>> 13.557     κεύθεται αἰὲν ἄϊστος, ἐπεί ῥά οἱ υἱέος ἐσθλοῦ
+   13.558     Δαρδάνου ἱερὸν ἄστυ κατήριπεν· οὐδέ οἱ αὐτὸς
+   13.559     Ζεὺς ὕπατος χραίσμησεν ἀπʼ αἰθέρος, οὕνεκα Μοίραις
+   13.560     εἴκει καὶ μεγάλοιο Διὸς μένος· ἀλλὰ τὸ μέν που
+   13.561     ἀθανάτων τάχʼ ἔρεξεν ἐῢς νόος, ἠὲ καὶ αὐταί·
+   13.562     Ἀργεῖοι δʼ ἔτι θυμὸν ἐπὶ Τρώεσσιν ὄρινον
+
+==============================================================================================================
+{
+ "set": "QS-SACK",
+ "clue_id": "QS-SACK-04",
+ "kind": "time-of-day",
+ "statement": "When sleep holds the drunken city, Sinon raises the torch and the fleet sails from Tenedos: the sack is in Night 0.",
+ "licence_words": "εὖτε γὰρ ὕπνος ἔρυκεν ἀνὰ πτόλιν … Σίνων ἀνὰ πυρσὸν ἄειρε … ἐκ Τενέδου νήεσσιν ἐπὶ πλόον ἐντύνοντο",
+ "ref": [
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.21",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.22",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.23",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.29"
+ ],
+ "text_file": "quintus-smyrnaeus-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | εὖτε γὰρ ὕπνος ἔρυκεν ἀνὰ πτόλιν | in ['urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.21']
+   CHECK exact | Σίνων ἀνὰ πυρσὸν ἄειρε | in ['urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.23']
+   CHECK exact | ἐκ Τενέδου νήεσσιν ἐπὶ πλόον ἐντύνοντο | in ['urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.29']
+   --- context (quintus-smyrnaeus-grc.tsv) ---
+   13.13      καὶ νόος αἰζηῶν, ὁπότʼ ἐς φρένα χανδὸν ἵκηται·
+   13.14      καί ῥα καρηβαρέων τοῖον ποτὶ μῦθον ἔειπεν·
+   13.15      ἦ ῥʼ ἅλιον Δαναοὶ πουλὺν στρατὸν ἐνθάδʼ ἄγειραν,
+   13.16      σχέτλιοι, οὐδʼ ἐτέλεσσαν ὅσα φρεσὶ μηχανόωντο,
+   13.17      ἀλλʼ αὕτως ἀπόρουσαν ἀπʼ ἄστεος ἡμετέροιο
+   13.18      νηπιάχοις παίδεσσιν ἐοικότες ἠὲ γυναιξίν.
+   13.19      ὣς ἄρʼ ἔφη Τρώων τις ἐεργόμενος φρένας οἴνῳ,
+   13.20      νήπιος· οὐδʼ ἄρʼ ἐφράσσατʼ ἐπὶ προθύροισιν ὄλεθρον.
+>> 13.21      εὖτε γὰρ ὕπνος ἔρυκεν ἀνὰ πτόλιν ἄλλοθεν ἄλλον
+>> 13.22      οἴνῳ ἀναπλήθοντας ἀπειρεσίῳ καὶ ἐδωδῇ,
+>> 13.23      δὴ τότʼ ἄρʼ αἰθαλόεντα Σίνων ἀνὰ πυρσὸν ἄειρε
+   13.24      δεικνὺς Ἀργείοισι πυρὸς σέλας. ἀμφὶ δέ οἱ κῆρ
+   13.25      ἄσπετα πορφύρεσκε κατὰ φρένα, μή μιν ἴδωνται
+   13.26      Τρῶες ἐϋσθενέες, τάχα δʼ ἀμφαδὰ πάντα γένηται·
+   13.27      ἀλλʼ οἱ μὲν λεχέεσι πανύστατον ὕπνον ἴαυον
+   13.28      πολλῷ ὑπʼ ἀκρήτῳ βεβαρηότες· οἱ δʼ ἐσιδόντες
+>> 13.29      ἐκ Τενέδου νήεσσιν ἐπὶ πλόον ἐντύνοντο.
+   13.30      αὐτὸς δʼ ἄγχʼ ἵπποιο Σίνων κίεν· ἦκα δʼ ἄϋσεν,
+   13.31      ἦκα μάκʼ, ὡς μήπου τις ἐνὶ Τρώεσσι πύθηται,
+   13.32      ἀλλʼ οἶοι Δαναῶν ἡγήτορες, ὧν ἀπὸ νόσφιν
+   13.33      ὕπνος ἄδην πεπότητο λιλαιομένων πονέεσθαι.
+   13.34      οἵ ῥά οἱ ἔνδον ἐόντες ἐπέκλυον, ἐς δʼ Ὀδυσῆα
+
+==============================================================================================================
+{
+ "set": "QS-SACK",
+ "clue_id": "QS-SACK-05",
+ "kind": "time-of-day",
+ "statement": "Dawn +1 rises from Ocean; the victors feast until midnight of Night +1; Dawn +2 scatters the night and the Greeks prepare to sail home.",
+ "licence_words": "καὶ τότʼ ἀπʼ Ὠκεανοῖο θεὰ χρυσόθρονος Ἠὼς οὐρανὸν εἰσανόρουσε … μέσον περιτέλλετο νυκτός … ἀνήιεν Ἠριγένεια νύκτα διασκεδάσασα",
+ "ref": [
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.1",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.2",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.143",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.228",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.229"
+ ],
+ "text_file": "quintus-smyrnaeus-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | καὶ τότʼ ἀπʼ Ὠκεανοῖο θεὰ χρυσόθρονος Ἠὼς οὐρανὸν εἰσανόρουσε | in []
+   CHECK exact | μέσον περιτέλλετο νυκτός | in ['urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.143']
+   CHECK exact | ἀνήιεν Ἠριγένεια νύκτα διασκεδάσασα | in []
+   --- context (quintus-smyrnaeus-grc.tsv) ---
+   13.556     ἰλαδὸν ἀντέλλουσιν ἐς οὐρανόν· ἡ δʼ ἄρα μούνη
+   13.557     κεύθεται αἰὲν ἄϊστος, ἐπεί ῥά οἱ υἱέος ἐσθλοῦ
+   13.558     Δαρδάνου ἱερὸν ἄστυ κατήριπεν· οὐδέ οἱ αὐτὸς
+   13.559     Ζεὺς ὕπατος χραίσμησεν ἀπʼ αἰθέρος, οὕνεκα Μοίραις
+   13.560     εἴκει καὶ μεγάλοιο Διὸς μένος· ἀλλὰ τὸ μέν που
+   13.561     ἀθανάτων τάχʼ ἔρεξεν ἐῢς νόος, ἠὲ καὶ αὐταί·
+   13.562     Ἀργεῖοι δʼ ἔτι θυμὸν ἐπὶ Τρώεσσιν ὄρινον
+   13.563     πάντῃ ἀνὰ πτολίεθρον· ἔρις δʼ ἔχε πείρατα χάρμης.
+>> 14.1       καὶ τότʼ ἀπʼ Ὠκεανοῖο θεὰ χρυσόθρονος Ἠὼς
+>> 14.2       οὐρανὸν εἰσανόρουσε· χάος δʼ ὑπεδέξατο νύκτα.
+   14.3       οἱ δὲ βίη Τροίην εὐερκέα δῃώσαντο
+   14.4       Ἀργεῖοι καὶ κτῆσιν ἀπείρονα ληίσσαντο,
+   14.5       χειμάρροις ποταμοῖσιν ἐοικότες, οἵ τε φέρονται
+   14.6       ἐξ ἐρέων καναχηδὸν ὀρινομένου ὑετοῖο,
+   14.7       πολλὰ δὲ δένδρεα μακρὰ καὶ ὁππόσα φύετʼ ὄρεσφιν
+   ...
+   14.135     υἱέα Τιθωνοῖο, καὶ ὡς κτάνε καρτερὸς Αἴας
+   14.136     Γλαῦκον ἐϋμμελίην, ἠδʼ ὡς ἐρικυδέα φῶτα
+   14.137     Εὐρύπυλον κατέπεφνε θοοῦ πάϊς Αἰακίδαο,
+   14.138     ὡς δὲ Πάριν δαμάσαντο Φιλοκτήταο βέλεμνα,
+   14.139     ἠδʼ ὁπόσοι δολόεντος ἐσήλυθον ἔνδοθεν ἵππου
+   14.140     ἀνέρες, ὥς τε πόληα θεηγενέος Πριάμοιο
+   14.141     πέρσαντες δαίνυντο κακῶν ἀπὸ νόσφι κυδοιμῶν.
+   14.142     ἄλλα δʼ ἄρʼ ἄλλος ἄειδεν, ὅ τι φρεσὶν ᾗσι μενοίνα.
+>> 14.143     ἀλλʼ ὅτε δαινυμένοισι μέσον περιτέλλετο νυκτός,
+   14.144     δὴ τότε που δόρποιο καὶ ἀκρήτοιο πότοιο
+   14.145     παυσάμενοι πάντες λαθικηδέα κοῖτον ἕλοντο·
+   14.146     χθιζὸν γὰρ καμάτοιο μένος κατεδάμνατο πάντας·
+   14.147     τῷ καὶ παννύχιοι λελιημένοι εἰλαπινάζειν
+   14.148     παύσανθʼ, οὕνεκεν ὕπνος ἄδην ἀέκοντας ἔρυκεν·
+   ...
+   14.220     λοιβὰς ἀμφιχέωνται ἐελδόμενοι μέγα νόστου·
+   14.221     αὐτὴν δʼ, εἴ κʼ ἐθέλωσιν, ἐπὴν ἀπὸ θυμὸν ἕλωνται,
+   14.222     κούρην ταρχύσασθαι ἀπόπροθεν οὔτι μεγαίρω.
+   14.223     ὣς εἰπὼν ἀπόρουσε θοῇ ἐναλίγκιος αὔρῃ·
+   14.224     αἶψα δʼ ἐς Ἠλύσιον πεδίον κίεν, ᾗχι τέτυκται
+   14.225     οὐρανοῦ ἐξ ὑπάτοιο καταιβασίη τʼ ἄνοδός τε
+   14.226     ἀθανάτοις μακάρεσσιν· ὁ δʼ, ὁππότε μιν λίπεν ὕπνος,
+   14.227     μνήσατο πατρὸς ἑοῖο· νόος δέ οἱ ἠῢς ἰάνθη.
+>> 14.228     ἀλλʼ ὅτʼ ἐς οὐρανὸν εὐρὺν ἀνήιεν Ἠριγένεια
+>> 14.229     νύκτα διασκεδάσασα, φάνη δʼ ἄρα γαῖα καὶ αἰθήρ,
+   14.230     δὴ τότʼ Ἀχαιῶν υἷες ἀπὲκ λεχέων ἀνόρουσαν
+   14.231     ἱέμενοι νόστοιο, νέας δʼ ἐς βένθεα πόντου
+   14.232     εἷλκον καγχαλόωντες ἀνὰ φρένας, εἰ μὴ ἄρʼ αὐτοὺς
+   14.233     ἐσσυμένους κατέρυκεν Ἀχιλλέος ὄβριμος υἱός,
+   14.234     εἰς ἀγορήν τʼ ἐκάλεσσε καὶ ἔκφατο πατρὸς ἐφετμήν·
+
+==============================================================================================================
+{
+ "set": "QS-SACK",
+ "clue_id": "QS-SACK-06",
+ "kind": "darkness",
+ "statement": "On the voyage home (day not stated, at least Day +2), near Euboea, Athena gathers clouds: night pours round the earth and the sea darkens.",
+ "licence_words": "ὁπότʼ Εὐβοίης σχεδὸν ἤλυθον … σὺν δʼ ἔχεεν νεφέλας τε καὶ ἠέρα πᾶσαν ὕπερθε· νὺξ δʼ ἐχύθη περὶ γαῖαν",
+ "ref": [
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.422",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.461",
+  "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.462"
+ ],
+ "text_file": "quintus-smyrnaeus-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "a solar eclipse of class X1-X4 (DESIGN 3.1) visible near Cape Caphereus, Sun above the horizon, on some day from Day +2 to Day +12 (the bound is the drafter's)",
+   "justification": "the darkness slot read as an eclipse; the day is unstated"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "storm darkness: the text names the clouds that make it"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ὁπότʼ Εὐβοίης σχεδὸν ἤλυθον | in ['urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.422']
+   CHECK exact | σὺν δʼ ἔχεεν νεφέλας τε καὶ ἠέρα πᾶσαν ὕπερθε· νὺξ δʼ ἐχύθη περὶ γαῖαν | in []
+   --- context (quintus-smyrnaeus-grc.tsv) ---
+   14.414     Λέσβος δʼ ἠνεμόεσσʼ ἀνεφαίνετο· κάμπτετο δʼ ἄκρη
+   14.415     ἐσσυμένως Λεκτοῖο, τόθι ῥίον ὕστατον Ἴδης.
+   14.416     λαίφεα δὲ πρησθέντα περίαχεν· ἀμφὶ δὲ πρώραις
+   14.417     ἔβραχεν οἶδμα κελαινόν· ἐπεσκιόωντο δὲ μακρὰ
+   14.418     κύματα· λευκαίνοντο δʼ ὑπὲρ πόντοιο κέλευθοι.
+   14.419     καί νύ κεν Ἀργεῖοι κίον Ἑλλάδος ἱερὸν οὖδας
+   14.420     πάντες ἁλὸς κατὰ βένθος ἀκηδέες, εἰ μὴ ἄρα σφι
+   14.421     κούρη ἐριγδούποιο Διὸς νεμέσησεν Ἀθήνη·
+>> 14.422     καί ῥʼ ὁπότʼ Εὐβοίης σχεδὸν ἤλυθον ἠνεμοέσσης,
+   14.423     δὴ τότε μητιόωσα βαρὺν καὶ ἀνηλέα πότμον
+   14.424     ἀμφὶ Λοκρῶν βασιλῆι καὶ ἄσχετον ἀσχαλόωσα
+   14.425     Ζηνὶ θεῶν μεδέοντι παρισταμένη φάτο μῦθον
+   14.426     ἀθανάτων ἀπάνευθε· χόλον δέ οἱ οὐ χάδε θυμός·
+   14.427     Ζεῦ πάτερ, οὐκέτʼ ἀνεκτὰ θεοῖς ἐπιμηχανόωνται
+   ...
+   14.453     ἄρρηκτον βριαρήν τε καὶ ἀθανάτοισιν ἀγητήν·
+   14.454     ἐν γάρ οἱ πεπόνητο κάρη βλοσυροῖο Μεδούσης
+   14.455     σμερδαλέον· κρατεροὶ δὲ καὶ ἀκαμάτου πυρὸς ὁρμὴν
+   14.456     λάβρον ἀποπνείοντες ἔσαν καθύπερθε δράκοντες·
+   14.457     ἔβραχε δʼ αἰγὶς ἅπασα περὶ στήθεσσιν ἀνάσσης,
+   14.458     οἷον ὅτε στεροπῇσιν ἐπιβρέμει ἄσπετος αἰθήρ.
+   14.459     λάζετο δʼ ἔντεα πατρός, ἅπερ θεὸς οὔτις ἀείρει
+   14.460     νόσφι Διὸς μεγάλοιο· τίναξε δὲ μακρὸν Ὄλυμπον·
+>> 14.461     σὺν δʼ ἔχεεν νεφέλας τε καὶ ἠέρα πᾶσαν ὕπερθε·
+>> 14.462     νὺξ δʼ ἐχύθη περὶ γαῖαν, ἐπήχλυσεν δὲ θάλασσα·
+   14.463     Ζεὺς δὲ μέγʼ εἰσορόων ἐπετέρπετο· κίνυτο δʼ εὐρὺς
+   14.464     οὐρανὸς ἀμφὶ πόδεσσι θεῆς· περὶ δʼ ἔβραχεν αἰθήρ,
+   14.465     ὡς Διὸς ἀκαμάτοιο ποτὶ κλόνον ἐμμεμαῶτος.
+   14.466     ἡ δʼ ἄφαρ ἠερόεντος ὑπὲρ πόντοιο φέρεσθαι
+   14.467     οὐρανόθεν προέηκεν ἐς Αἴολον ἄμβροτον Ἶριν,

@@ -1,0 +1,74 @@
+problems: []
+rows edited: 43 of 72
+ALM-A.1 | edited: licence_words lacked the words for the time of day the statement gives (4 1/2 equinoctial hours before
+ALM-A.2 | edited: licence_words lacked the words for the stated time of day (4 1/2 equinoctial hours before midnight); a
+ALM-A.3 | ok
+ALM-A.4 | ok
+ALM-A.5 | edited: licence_words lacked the words for the stated time of day (3 equinoctial hours before midnight); added
+ALM-A.6 | ok
+ALM-A.7 | edited: licence_words lacked the word for the stated time of day ('ὄρθρου', at dawn); added it. Note added: Me
+ALM-A.8 | ok
+ALM-A.9 | edited: statement said '(a morning object)', which can be read as heliacal morning-star status; the words say 
+ALM-A.10 | edited: licence_words lacked the words for the stated time of day (about 5 equinoctial hours after midnight); 
+ALM-B.1 | edited: licence_words lacked the words for the stated time of day (4 3/4 equinoctial hours after midnight); ad
+ALM-B.2 | edited: statement said 'Before dawn', which the words do not say (they give 4 3/4 equinoctial hours after midn
+ALM-B.3 | ok
+ALM-B.4 | ok
+ALM-B.5 | edited: licence_words lacked the words for the stated time of day (4 equinoctial hours before midnight); added
+ALM-B.6 | ok
+ALM-B.7 | edited: licence_words lacked the words for the stated time of day (after sunrise, 5 1/4 equinoctial hours befo
+ALM-B.8 | ok
+ALM-B.9 | edited: licence_words lacked the words for the stated time (Sun about to set, 5 1/2 hours after noon) and for 
+ALM-C.1 | edited: statement said '(before dawn)'; the row has no hour word, only 'ἑῷος' (as a morning star). Reworded; o
+ALM-C.2 | ok
+ALM-C.3 | ok
+ALM-D.1 | edited: licence_words lacked the word for the stated time of day ('ἑσπέρας', in the evening); added it
+ALM-D.2 | ok
+ALM-D.3 | ok
+ALM-D.4 | ok
+ALM-E.1 | edited: licence_words did not contain the words for 'evening' (time of day and side of the Sun); replaced by t
+ALM-E.2 | edited: notes only: recorded that the cross-era link the interval needs is stated at 3.1.9 (checked; interval 
+ALM-E.3 | edited: notes said 'observed equinox' and glossed 'εὑρίσκομεν' as observed; corrected to the verb's meaning (w
+ALM-F.1 | edited: licence_words lacked the word for 'evening' ('ἑσπέρας'); replaced by the contiguous phrase that includ
+ALM-F.2 | ok
+ALM-F.3 | edited: licence_words lacked the words for 'evening'; replaced by the contiguous phrase that includes 'ἐσπέρας
+ALM-F.4 | edited: the row's notes said 'none' is the default because the star is not securely identified, but 'positiona
+ALM-G.1 | edited: statement said '(before dawn)'; the record has no hour word, only 'ἑῷος'. Reworded; operational option
+ALM-G.2 | ok
+ALM-G.3 | edited: licence_words fragments were out of text order and lacked the time word; replaced by the contiguous ph
+ALM-H.1 | edited: licence_words quoted a fragment from another row (9.7.8) with a '[9.7.8]' prefix, so it was not a subs
+ALM-H.2 | ok
+ALM-H.3 | edited: fork justification said the printed 'day numeral' conflicts with the mean Sun; the conflict is 30 days
+ALM-H.4 | edited: licence_words quoted '[9.7.10] …' with a bracketed row prefix, so it was not an exact substring of the
+ALM-H.5 | edited: notes only: Mercury is named only in the chapter heading 9.7.1, not in the cited row
+ALM-H.6 | edited: notes only: Mercury is named only in the chapter heading 9.7.1, not in the cited row
+ALM-H.7 | ok
+ALM-H.8 | edited: licence_words quoted '[9.7.14] …' with a bracketed row prefix, so it was not an exact substring of the
+ALM-H.9 | edited: notes only: Mercury is named only in the chapter heading 9.7.1, not in the cited row
+ALM-I.1 | edited: licence_words lacked the time word ('ὄρθρου', in Ptolemy's sentence on the same morning); added it. Fo
+ALM-I.2 | ok
+ALM-I.3 | ok
+ALM-I.4 | edited: licence_words was the interval phrase followed by a bracketed placeholder, so not an exact substring; 
+ALM-I.5 | ok
+ALM-J.1 | ok
+ALM-J.2 | ok
+ALM-J.3 | ok
+ALM-J.4 | edited: fork set incomplete: 'had passed greatest elongation' was bounded to <= 60 days or dropped; added the 
+ALM-J.5 | ok
+ALM-J.6 | edited: licence_words was the interval phrase followed by a bracketed placeholder, so not an exact substring; 
+ALM-J.7 | edited: licence_words quoted only the second of the two longitudes whose difference the statement uses; added 
+ALM-K.1 | edited: licence_words carried a '[9.7.16]' prefix inside the string, so it was not an exact substring; replace
+ALM-K.2 | edited: notes only: Mercury is named only in the chapter heading 9.7.1, not in the cited row
+ALM-K.3 | edited: notes only: recorded the text-stated era link (3.7.4; 10.9.2) the interval needs (checked; interval re
+ALM-K.4 | ok
+ALM-K.5 | ok
+ALM-K.6 | ok
+ALM-K.7 | edited: licence_words carried a '[9.7.15]' prefix inside the string, so it was not an exact substring; replace
+ALM-K.8 | edited: notes only: Mercury is named only in the chapter heading 9.7.1, not in the cited row
+ALM-L.1 | edited: statement said '(before dawn)'; the record has no hour word, only 'ἑῷος'. Reworded; operational option
+ALM-L.2 | edited: statement glossed 'Πλειάδος μῆκος ἢ ἔλασσον τῷ ἑαυτοῦ μεγέθει' as 'a Pleiad-length or less'; the words
+ALM-L.3 | ok
+ALM-L.4 | edited: statement said '(before dawn)'; the record has no hour word, only 'ἑῷος'. Reworded; operational option
+ALM-L.5 | ok
+ALM-L.6 | edited: licence_words lacked the words for 'evening' (time and side); added 'ἑσπέρας' and 'τὴν ἑσπερίαν μεγίστ
+ALM-L.7 | edited: notes only: Mercury is named only in the chapter heading 9.9.1, not in the cited row

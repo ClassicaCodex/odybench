@@ -1,0 +1,214 @@
+#### SET VF-COLCHIS
+{
+ "set": "VF-COLCHIS",
+ "role": "negative",
+ "searchable": true,
+ "text": "Valerius Flaccus, Argonautica 7.1-7.24 (Medea's sleepless night)",
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "edition_id": 2081,
+ "day0": "Day 0 is the day Medea parts from her Thessalian guest at evening; Night 0 is her sleepless night; Dawn +1 whitens her threshold.",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "VF-COLCHIS-01": "vis7",
+   "VF-COLCHIS-02": "vis7"
+  },
+  "BM-analogue": {
+   "VF-COLCHIS-01": "none",
+   "VF-COLCHIS-02": "lead90"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "season_stars": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "morning_star": {
+   "status": "fork",
+   "clue_ids": [
+    "VF-COLCHIS-02"
+   ],
+   "note": "'eoo' at Dawn +1"
+  },
+  "mercury_turning_point": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "darkness_eclipse": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  }
+ },
+ "notes": "Read literally, Venus is both the evening star on Day 0 and the morning star at Dawn +1, which happens only near inferior conjunction; the literal pinned reading may therefore have no survivors.",
+ "eclipse_compatible_options": [],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+}
+-- observer_place {"place": "Colchis at the mouth of the Phasis (Aeetes' city)", "words": "optatos iam lux ostendere Colchos … Phasis in aequor ore ruit", "ref": ["5.178", "5.179", "5.180"], "text_file": "valerius-flaccus-argonautica-lat.tsv", "lat": 42.15, "lon": 41.6667, "coord_source": "Phasis (Wikipedia, fetched 2026-10-04)"}
+   CHECK exact | optatos iam lux ostendere Colchos | in ['5.178']
+   CHECK exact | Phasis in aequor ore ruit | in []
+   5.170      vociferans, fixos scopulis dum vellitur artus.
+   5.171      contra autem ignari (quis enim nunc credat in illis
+   5.172      montibus Alciden dimissave vota retemptet?)
+   5.173      pergere iter socii; tantum mirantur ab alto
+   5.174      litora discussa sterni nive ruptaque saxa
+   5.175      et simul ingentem moribundae desuper umbram
+   5.176      alitis atque atris rorantes imbribus auras.
+   5.177      Sol propius flammabat aquas, extremaque fessis
+>> 5.178      coeperat optatos iam lux ostendere Colchos,
+>> 5.179      magnus ubi adversum spumanti Phasis in aequor
+>> 5.180      ore ruit. cuncti pariter loca debita noscunt
+   5.181      signaque commemorant emensasque ordine gentes
+   5.182      dantque ratem fluvio. simul aethere plena corusco
+   5.183      Pallas et alipedum Iuno iuga sistit equorum.
+   5.184      Ac dum prima gravi ductor subit ostia pulsu,
+   5.185      populeos flexus tumulumque virentia supra
+
+==============================================================================================================
+{
+ "set": "VF-COLCHIS",
+ "clue_id": "VF-COLCHIS-01",
+ "kind": "planet",
+ "statement": "On Day 0 late 'vesper' (the evening, or the evening star) parts Medea from her Thessalian guest, and night falls.",
+ "licence_words": "Te quoque Thessalico iam serus ab hospite vesper dividit … noxque ruit",
+ "ref": [
+  "7.1",
+  "7.2",
+  "7.3"
+ ],
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "fork_options": [
+  {
+   "option": "lag60",
+   "operational": "Venus sets at least 60 min after the Sun on Day 0",
+   "justification": "the evening star taken as Venus; mirror of the F4 lead thresholds"
+  },
+  {
+   "option": "lag90",
+   "operational": "Venus sets at least 90 min after the Sun on Day 0",
+   "justification": "mirror of B&M's 90-min threshold"
+  },
+  {
+   "option": "lag120",
+   "operational": "Venus sets at least 120 min after the Sun on Day 0",
+   "justification": "strict end of the mirrored menu"
+  },
+  {
+   "option": "vis7",
+   "operational": "Venus visible as an evening object on Day 0 (arcus visionis 7 deg)",
+   "justification": "the words name an evening star; visibility is the least-inference reading"
+  },
+  {
+   "option": "herald",
+   "operational": "some bright evening object visible in the evening twilight of Day 0: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter",
+   "justification": "the text does not say which star"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "'vesper' read as the time of day (evening), its commonest sense, rather than the evening star; or the evening star as a stock marker of nightfall"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: the statement asserted 'the late evening star', but 'serus vesper' is just as naturally 'late evening'; the statement is made neutral and 'none' now gives that reading"
+}
+   CHECK exact | Te quoque Thessalico iam serus ab hospite vesper dividit | in []
+   CHECK exact | noxque ruit | in ['7.3']
+   --- context (valerius-flaccus-argonautica-lat.tsv) ---
+   6.754      digreditur longum virgo perpessa timorem.
+   6.755      ut fera Nyctelii paulum per sacra resistunt,
+   6.756      mox rapuere deum iam iam quodcumque paratae
+   6.757      Thyiades, haut alio remeat Medea tumultu
+   6.758      atque inter Graiumque acies patriasque phalangas
+   6.759      semper inexpletis adgnoscit Iasona curis
+   6.760      armaque quique cava superest de casside vultum.
+   7.head     C. Valeri Flacci Argonauticon Liber Septimus.
+>> 7.1        Te quoque Thessalico iam serus ab hospite vesper
+>> 7.2        dividit et iam te tua gaudia, virgo, relinquunt,
+>> 7.3        noxque ruit soli veniens non mitis amanti.
+   7.4        ergo ubi cunctatis extremo in limine plantis
+   7.5        contigit aegra toros et mens incensa tenebris,
+   7.6        vertere tunc varios per longa insomnia questus
+   7.7        nec pereat quo scire malo, tandemque fateri
+   7.8        ausa sibi paulum, medio sic fata dolore est:
+
+==============================================================================================================
+{
+ "set": "VF-COLCHIS",
+ "clue_id": "VF-COLCHIS-02",
+ "kind": "planet",
+ "statement": "After a sleepless Night 0 Medea sees her threshold whiten with the thin light of Eous: Dawn +1.",
+ "licence_words": "ecce videt tenui candescere limen eoo … lux orta",
+ "ref": [
+  "7.21",
+  "7.22",
+  "7.23"
+ ],
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "fork_options": [
+  {
+   "option": "lead60",
+   "operational": "Venus rises at least 60 min before the Sun on Dawn +1 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)",
+   "justification": "the morning star taken as Venus; lowest lead threshold of the Odyssey's F4 menu [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "lead90",
+   "operational": "Venus rises at least 90 min before the Sun on Dawn +1",
+   "justification": "B&M's own threshold for Od. 13.93-95 [DESIGN 1.1, criterion V]"
+  },
+  {
+   "option": "lead120",
+   "operational": "Venus rises at least 120 min before the Sun on Dawn +1",
+   "justification": "strict end of the F4 menu [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "vis7",
+   "operational": "Venus visible as a morning object on Dawn +1 (arcus visionis 7 deg)",
+   "justification": "the words name a morning star, not a lead; visibility is the least-inference reading [vis 1.2]"
+  },
+  {
+   "option": "herald",
+   "operational": "some bright dawn herald visible before sunrise on Dawn +1: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)",
+   "justification": "the text does not say which star; the Odyssey's F4 menu allows any bright herald [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "'eous' read as the dawn light"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ecce videt tenui candescere limen eoo | in ['7.22']
+   CHECK exact | lux orta | in ['7.23']
+   --- context (valerius-flaccus-argonautica-lat.tsv) ---
+   7.13       tam magno discreta mari? quid in hospite solo
+   7.14       mens mihi? cognati potius iam vellera Phrixi
+   7.15       accipiat, quae sola petit quaeque una laborum
+   7.16       causa viro. nam quando domos has ille reviset?
+   7.17       aut meus Aesonias quando pater ibit ad urbes?
+   7.18       felices, mediis qui se dare fluctibus ausi
+   7.19       nec tantas timuere vias talemque secuti
+   7.20       hunc qui deinde virum: sed sic quoque talis abito.'
+>> 7.21       tum iactata toro totumque experta cubile
+>> 7.22       ecce videt tenui candescere limen eoo;
+>> 7.23       nec minus insomnem lux orta refecit amantem,
+   7.24       quam cum languentes levis erigit imber aristas
+   7.25       grataque iam fessis descendunt flamina remis.
+   7.26       At sua longarum Minyas iam cura viarum
+   7.27       admonet, inque ipso nequiquam tempore regem
+   7.28       laetitiae meritique petunt. quem passus Iason

@@ -1,0 +1,159 @@
+{
+ "schema": "odybench controls_real_truth v1",
+ "WARNING": "TRUTH FILE. The searcher must never read this file. Only the harness may read it, to place each window around the anchor event; the evaluation step reads it afterwards.",
+ "written": "2026-10-04, after the clue file was frozen",
+ "clue_file_frozen_before_this_file": {
+  "file": "data/prereg/controls_real.json",
+  "sha256": "eb1f0401c3984c1b007f74c9bae68d9156a35662258f6d332e70c1abdbbe9256",
+  "utc": "2026-10-04T05:19:15Z",
+  "record": "results/controls-real-drafting/clue_file_sha256.txt",
+  "changed_since": false
+ },
+ "conventions": "Dates are proleptic Julian, historical BC with the astronomical year in brackets. 'Night of D/D+1' is the local evening and night. Greatest-eclipse times are computed by me with results/controls-real-drafting/check_truth.py (DE441 through odybench.ephem, SMH2020 Delta-T); full output in results/controls-real-drafting/check_truth.out. The lunar part of that script is a quick geocentric Danjon-style shadow model (enlargement factor 1.01, as in Espenak & Meeus), not the bench's lunar module: instrument check I4 has not been run. Its umbral magnitudes may be off by a few hundredths, and its times carry the Delta-T uncertainty.",
+ "sources_consulted": [
+  {"id": "voisey-bab", "what": "Almagest IV Babylonian triple, with the Julian dates of Toomer's translation and Pedersen's Survey (secondary)", "url": "https://jonvoisey.net/blog/2020/06/almagest-book-iv-the-babylonian-eclipse-triple/"},
+  {"id": "voisey-alex", "what": "Almagest IV Alexandrian triple, Julian dates (secondary)", "url": "https://jonvoisey.net/blog/2020/08/almagest-book-iv-alexandrian-eclipse-triple-solar-lunar-positions-epicyclic-anomaly/"},
+  {"id": "gautschy", "what": "R. Gautschy, list of ancient solar-eclipse citations with dates; local copy results/controls-real-drafting/gautschy-eclipsecitations.pdf (text extract .txt beside it)", "url": "https://www.gautschy.ch/~rita/archast/solec/eclipsecitations.pdf"},
+  {"id": "nasa-lehist", "what": "F. Espenak, NASA 'Lunar Eclipses of Historical Interest' (dates of greatest eclipse in TD)", "url": "https://eclipse.gsfc.nasa.gov/LEhistory/LEhistory.html"},
+  {"id": "thuc-search", "what": "web search summary of the Thucydides eclipse literature, including the paper 'The Eclipses Recorded by Thucydides' (academia.edu) and Wikipedia '424 BC'; secondary", "url": "https://www.academia.edu/9051702/The_Eclipses_Recorded_by_Thucydides"},
+  {"id": "me", "what": "computed by me with results/controls-real-drafting/check_truth.py; output check_truth.out"}
+ ],
+ "sets": [
+  {
+   "set_id": "R-PTOL-BAB",
+   "events": [
+    {"event_id": "E1", "type": "lunar, total", "accepted": "night of 19/20 Mar 721 BC (-720)", "greatest_UT_computed": "-0720-03-19 18:43 UT", "sources": ["voisey-bab (Pedersen; Toomer writes the astronomical year -720)", "me"]},
+    {"event_id": "E2", "type": "lunar, partial", "accepted": "night of 8/9 Mar 720 BC (-719)", "greatest_UT_computed": "-0719-03-08 20:55 UT", "sources": ["voisey-bab", "me"]},
+    {"event_id": "E3", "type": "lunar, partial", "accepted": "night of 1/2 Sep 720 BC (-719)", "greatest_UT_computed": "-0719-09-01 17:05 UT", "sources": ["voisey-bab", "me"]}
+   ],
+   "post_hoc_check_of_primary_options": [
+    {"clue": "PB-CAL / PB-INT", "result": "pass", "value": "JD differences 354 and 177 nights, exactly as the Egyptian dates give [me]"},
+    {"clue": "PB-E1-MAG", "result": "pass", "value": "umag about 1.52"},
+    {"clue": "PB-E1-TIME (record)", "result": "pass, near the edge", "value": "first umbral contact 1.90 h after moonrise at Babylon; the bound was 1-2 h. The reduction option also passes: mid-eclipse 2.51 h before LAT midnight against Ptolemy's 2.5 h"},
+    {"clue": "PB-E1-SUN", "result": "pass", "value": "Sun 351.8 deg against Ptolemy's 354.5 (-2.7 deg)"},
+    {"clue": "PB-E2-MAG (+/-0.10)", "result": "FAIL", "value": "umag about 0.11 in my rough model, against the record's 3 digits (0.25). The +/-0.20 option passes"},
+    {"clue": "PB-E2-DIR", "result": "pass", "value": "Moon latitude +0.83 deg"},
+    {"clue": "PB-E2-TIME", "result": "pass", "value": "mid-eclipse 0.37 h before LAT midnight"},
+    {"clue": "PB-E2-SUN", "result": "pass", "value": "340.9 against 343.75 (-2.8 deg)"},
+    {"clue": "PB-E3-MAG (0.5 < umag < 1)", "result": "FAIL (borderline, model-dependent)", "value": "umag about 0.49 in my rough model. The 'gt-half' option also fails; the 'loose' option (> 0.4) passes"},
+    {"clue": "PB-E3-DIR", "result": "pass", "value": "Moon latitude -0.77 deg"},
+    {"clue": "PB-E3-TIME (record)", "result": "pass", "value": "first umbral contact 0.37 h after moonrise. The reduction option passes too: -3.96 h against -3.5 h"},
+    {"clue": "PB-E3-SUN", "result": "pass", "value": "151.2 against 153.25 (-2.0 deg)"}
+   ]
+  },
+  {
+   "set_id": "R-PTOL-ALEX",
+   "events": [
+    {"event_id": "H1", "type": "lunar, total", "accepted": "night of 6/7 May AD 133", "greatest_UT_computed": "+0133-05-06 20:50 UT", "sources": ["voisey-alex", "me"]},
+    {"event_id": "H2", "type": "lunar, partial", "accepted": "night of 20/21 Oct AD 134", "greatest_UT_computed": "+0134-10-20 20:46 UT", "sources": ["voisey-alex", "me"]},
+    {"event_id": "H3", "type": "lunar, partial", "accepted": "night of 5/6 Mar AD 136", "greatest_UT_computed": "+0136-03-06 01:35 UT", "sources": ["voisey-alex", "me"]}
+   ],
+   "post_hoc_check_of_primary_options": [
+    {"clue": "PA-CAL / PA-INT", "result": "pass", "value": "532 and 502 nights [me]"},
+    {"clue": "PA-H1", "result": "pass", "value": "umag 1.07; mid-eclipse -1.07 h against -0.75 h; Sun 44.3 against 43.25"},
+    {"clue": "PA-H2", "result": "pass", "value": "umag 0.83; Moon latitude -0.50; mid-eclipse -1.02 h against -1.0 h; Sun 206.4 against 205.17"},
+    {"clue": "PA-H3-MAG / DIR / SUN", "result": "pass", "value": "umag 0.44 (inside 0.40-0.60); Moon latitude -0.79; Sun 344.8 against 344.08"},
+    {"clue": "PA-H3-TIME (+/-0.5 h)", "result": "FAIL", "value": "mid-eclipse +3.36 h after LAT midnight against Ptolemy's +4 h (0.64 h off). The +/-1 h option passes"}
+   ]
+  },
+  {
+   "set_id": "R-PTOL-CHAIN",
+   "events": "E1-E3 and H1-H3 as above",
+   "post_hoc_check_of_primary_options": [
+    {"clue": "PC-LINK", "result": "pass", "value": "JD(134 Oct 20) - JD(-719 Mar 8) = 311,784 nights, exactly as stated [me]"}
+   ]
+  },
+  {
+   "set_id": "R-THUC",
+   "events": [
+    {"event_id": "T1", "type": "solar, partial at Athens (whether it was central elsewhere was not checked)", "accepted": "3 Aug 431 BC (-430), afternoon", "sources": ["gautschy (431 BC August 3)", "thuc-search", "me: magnitude 0.878 at Athens, maximum 17:31 LAT"]},
+    {"event_id": "T2", "type": "solar, partial", "accepted": "21 Mar 424 BC (-423), morning", "sources": ["thuc-search (21 March 424 BC)", "me: conjunction -0423-03-21; magnitude 0.70 at Athens, maximum 08:34 LAT"], "note": "Gautschy's list prints '424 BC May 21' for Thuc. 4.52. No eclipse is possible two lunations after the 21 March one, and there is a conjunction with an eclipse at Athens on 21 March [me], so the 'May' is taken to be a slip in that list."},
+    {"event_id": "T3", "type": "lunar, total", "accepted": "evening of 27 Aug 413 BC (-412)", "greatest_UT_computed": "-0412-08-27 20:56 UT (21:56 LAT at Syracuse)", "sources": ["nasa-lehist (-0412 Aug 28, the TD date of greatest eclipse; the TT date runs past midnight, the local date does not)", "thuc-search", "me"]}
+   ],
+   "post_hoc_check_of_primary_options": [
+    {"clue": "T1 (all primaries: end seen, after noon, crescent-max, X4, half-year season, Aegean box)", "result": "pass", "value": "magnitude 0.878 at Athens (not total); maximum 17.52 LAT; Sun 6 deg up at last contact; Sun longitude 124.7 deg. The X3 alternative (>= 0.95) fails"},
+    {"clue": "T2-ECL, T2-SEASON (early)", "result": "pass", "value": "magnitude 0.70 at Athens; Sun longitude 355.3 deg. The 'half-year' alternative fails"},
+    {"clue": "T3-ECL, T3-SEASON", "result": "pass", "value": "umag 1.08; Moon 17.6 deg up at first umbral contact at Syracuse; Sun 149.0 deg"},
+    {"clue": "T-INT-12 (7 +/- 0.5 yr)", "result": "pass, near the edge", "value": "6.63 years"},
+    {"clue": "T-INT-13 (18 +/- 0.5 yr)", "result": "pass", "value": "18.07 years"}
+   ]
+  },
+  {
+   "set_id": "R-XEN",
+   "events": [
+    {"event_id": "X1", "type": "lunar, total", "accepted": "evening of 15 Apr 406 BC (-405)", "sources": ["nasa-lehist (-0405 Apr 15, listed with the fire in the temple of Athena)", "me: umag 1.27; first umbral contact 0.67 h after sunset at Athens"]},
+    {"event_id": "X2", "type": "solar, partial", "accepted": "3 Sep 404 BC (-403), morning", "sources": ["gautschy (404 BC September 3)", "me: magnitude 0.73 at Athens and 0.77 at Pherae, maximum about 08:35 LAT"]},
+    {"event_id": "X3", "type": "solar, partial", "accepted": "14 Aug 394 BC (-393), morning", "sources": ["gautschy (394 BC August 14)", "me: magnitude 0.91 on the Boeotian frontier, maximum 09:31 LAT"]}
+   ],
+   "post_hoc_check_of_primary_options": [
+    {"clue": "X1-ECL, X1-TIME (early night), X1-SITE (box)", "result": "pass", "value": "umbral phase from 0.67 h after sunset at Athens"},
+    {"clue": "X2-ECL (any), X2-SITE (box)", "result": "pass", "value": "0.73 to 0.77"},
+    {"clue": "X-INT-12 (1-3 yr)", "result": "pass", "value": "2.39 years"},
+    {"clue": "X3-ECL (crescent, 0.5-1)", "result": "pass", "value": "0.914"}
+   ]
+  },
+  {
+   "set_id": "R-ARBELA",
+   "events": [
+    {"event_id": "A1", "type": "lunar, total", "accepted": "evening of 20 Sep 331 BC (-330)", "greatest_UT_computed": "-0330-09-20 18:24 UT", "sources": ["nasa-lehist (-0330 Sep 20)", "me"]}
+   ],
+   "post_hoc_check_of_primary_options": [
+    {"clue": "A-MAG (gt-half)", "result": "pass", "value": "umag 1.21: total, so Curtius is right and Arrian's 'τὸ πολύ' understates it. The 'partial-gt-half' alternative fails"},
+    {"clue": "A-TIME-PLINY (in progress during the 2nd seasonal hour at Arbela)", "result": "pass", "value": "first umbral contact at seasonal hour 2.61, i.e. inside the 2nd hour; the 'onset' alternative also passes"},
+    {"clue": "A-TIME-CURTIUS (first watch)", "result": "pass", "value": "first umbral contact 1.49 h after sunset; the first watch ends 2.89 h after sunset"},
+    {"clue": "A-SICILY (moonrise in Sicily during the umbral phase)", "result": "pass", "value": "at Syracuse the Moon is 3.7 deg below the horizon at first umbral contact and 15 deg up at mid-eclipse"},
+    {"clue": "A-MONTH (Attic month 3 or 4, offset +/-1)", "result": "pass", "value": "summer solstice 27 Jun 331 BC; conjunctions 8 Jul, 7 Aug, 6 Sep; so 20 Sep is the full moon of the 3rd month (Boedromion) at offset 0 [me]. Plutarch's month is right; Arrian's Pyanepsion needs offset -1"}
+   ]
+  },
+  {
+   "set_id": "R-PYDNA",
+   "events": [
+    {"event_id": "P1", "type": "lunar, total", "accepted": "evening of 21 Jun 168 BC (-167)", "greatest_UT_computed": "-0167-06-21 18:39 UT", "sources": ["nasa-lehist (-0167 Jun 21)", "me"], "note": "Critique-design issue 2 gives the same date."}
+   ],
+   "post_hoc_check_of_primary_options": [
+    {"clue": "P-MAG (total)", "result": "pass", "value": "umag 1.25"},
+    {"clue": "P-TIME (overlap with seasonal night hours 2-4)", "result": "pass", "value": "the umbral phase runs from before sunset (Moon below the horizon) to seasonal hour 4.42. The 'within' alternative fails"},
+    {"clue": "P-ALT (Moon >= 10 deg at first umbral contact)", "result": "FAIL", "value": "the Moon was 11.5 deg below the horizon at first umbral contact and only 6 deg up at mid-eclipse: it rose already eclipsed. Plutarch's 'μετέωρος' is wrong for the accepted date; the 'up' alternative fails too"},
+    {"clue": "P-END", "result": "pass", "value": "Moon 19 deg up at last umbral contact"},
+    {"clue": "P-SEASON (Sun 90-180 deg)", "result": "FAIL", "value": "Sun longitude 85.7 deg. The summer solstice of 168 BC fell on 26 Jun [me], so the eclipse came about 5 days BEFORE it. Livy's 'post circumactum solstitium' and Plutarch's 'θέρους ... φθίνοντος' are both contradicted, and every option except 'none' fails"},
+    {"clue": "P-DATE (free offset)", "result": "pass (vacuous)", "value": "Julian date minus Roman-date-as-Julian = -74 days, so 'bounded90' would pass and 'naive' fails"}
+   ]
+  },
+  {
+   "set_id": "R-DIOD",
+   "events": [
+    {"event_id": "D1", "type": "solar, magnitude 0.997 at Syracuse (the central track passes close; not mapped)", "accepted": "15 Aug 310 BC (-309), morning", "sources": ["gautschy (310 BC August 15)", "me: magnitude 0.997 at Syracuse (not total there), maximum 07:35 LAT"], "note": "Critique-design issue 2 gives the same date."}
+   ],
+   "post_hoc_check_of_primary_options": [
+    {"clue": "D-ECL (X3, >= 0.95)", "result": "pass", "value": "0.997 at Syracuse. The 'total' alternative fails at Syracuse itself and may pass elsewhere in the day-out disc (not checked)"},
+    {"clue": "D-SITE (day-out disc)", "result": "pass", "value": "Syracuse lies inside it"}
+   ]
+  },
+  {
+   "set_id": "H-LIVY",
+   "events": [
+    {"event_id": "L1", "type": "solar, partial", "accepted": "11 Feb 217 BC (-216)", "sources": ["gautschy (217 BC February 11)", "me: 0.65 at Rome, 0.69 at Carales; maximum about 16:00 LAT"]},
+    {"event_id": "L1b", "type": "no separate accepted event", "accepted": null, "sources": [], "note": "Arpi's 'sun fighting with the moon' has no accepted separate eclipse in the sources consulted"},
+    {"event_id": "L2", "type": "solar, partial", "accepted": "6 May 203 BC (-202)", "sources": ["gautschy (203 BC May 6)", "me: 0.48 at Cumae"], "note": "This identification is itself the product of eclipse matching (critique issue 2)."},
+    {"event_id": "L3", "type": "solar, partial", "accepted": "14 Mar 190 BC (-189), early morning", "sources": ["gautschy (190 BC March 14)", "me: 0.92 at Rome, maximum 07:07 LAT"]},
+    {"event_id": "L4", "type": "solar, near-total at Rome", "accepted": "17 Jul 188 BC (-187), early morning", "sources": ["gautschy (188 BC July 17)", "me: 0.998 at Rome, maximum 06:14 LAT"]}
+   ],
+   "post_hoc_check_of_primary_options": [
+    {"clue": "L1-ECL (any), L1-SITE (box)", "result": "pass", "value": "0.65 to 0.69"},
+    {"clue": "L2-ECL (any)", "result": "pass", "value": "0.48 at Cumae; the 'noticed' alternative (>= 0.5) fails"},
+    {"clue": "L3-ECL (X4)", "result": "pass", "value": "0.92 at Rome; the X3 alternative fails"},
+    {"clue": "L3-DATE (free)", "result": "pass (vacuous)", "value": "offset -119 days, so 'bounded90' fails"},
+    {"clue": "L4-DARK (eclipse, maximum in seasonal day hours 3-4 +/- 1 h)", "result": "pass ONLY through the +/-1 h tolerance", "value": "maximum 1.77 h after sunrise, in the 2nd seasonal hour (2.41). Hours 3-4 begin 2.5 h after sunrise"}
+   ]
+  }
+ ],
+ "would_have_written_differently_had_I_known": [
+  "Overall: under 'every primary clue must pass', the accepted date would be rejected in R-PTOL-BAB (E2 and E3 magnitudes), R-PTOL-ALEX (H3 time), R-PTOL-CHAIN (which inherits both) and R-PYDNA (season and Moon altitude). The text-only rules give accurate records tolerances that are too tight (Babylonian digits, Ptolemy's computed hours), and the narrative sources contain plain errors (Livy's 'after the solstice', Plutarch's 'μετέωρος'). I did NOT change the clue file. The bench should read these as real failure modes of ancient sky reports and score controls with a tolerance for k failed clues, or across the fork garden, rather than all-must-pass.",
+  "PB-E2-MAG and PB-E3-MAG: knowing the answer I would have set the Babylonian magnitude tolerance at about +/-2 digits (+/-0.17) and read 'more than half' as > 0.4. That would be fitting to the answer, so I record it instead of making it.",
+  "PA-H3-TIME: I would have made +/-1 h primary for Ptolemy's computed mid-times, since his reductions are off by up to about 0.6 h on these dates.",
+  "P-SEASON and P-ALT (Pydna): I would still write them as the words say. The texts are wrong about the date by about five days and about the Moon's height. Knowing this, I would have added an explicit 'season +/- 10 days' option, so that the bench can show how much a small textual error costs.",
+  "CHOICES POSSIBLY STEERED BY EXPOSURE (see docs/controls-real-drafting.md section 1). Before drafting I had seen three of these answers. In each case the result depends on the option chosen, and the primary I chose passes: (1) T1-DARK primary X4 (>= 0.60) rather than X3; I had seen 'Thuc. 2.28 0.877' in DESIGN 4.1 I2b, and X3 fails. (2) D-ECL primary X3 rather than 'total'; I had seen 'Diod. 20.5 0.995', and 'total' fails at Syracuse. (3) the +/-1 h 'ferme' tolerance in L4-DARK; I had seen '06:16 LMT' in critique issue 2, and without the tolerance L4 fails. I believe each choice follows the stated policy, but the bench owner should have them re-drafted by an unexposed agent, or report both options.",
+  "Choices that went against the answer I had seen: P-SEASON (I knew the Julian date was 21 June and wrote 'after the solstice' as primary, which fails) and the Babylonian magnitude tolerances (no exposure). This is weak evidence that the rules, not the answers, drove the drafting.",
+  "Nothing in the site, interval or calendar clues would change: every textual interval (Ptolemy's day counts, Thucydides' war-years, Xenophon's headings) holds exactly or inside its tolerance for the accepted dates, and Plutarch's Boedromion is right at offset 0."
+ ]
+}

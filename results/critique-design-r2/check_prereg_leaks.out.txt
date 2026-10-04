@@ -1,0 +1,9 @@
+data/prereg/controls_real.json: licence strings found verbatim 125, not found 0
+  year-like or month-name strings outside licence words: 5
+    .sets[6].clues[6].statement | September | ight followed by the day 'pridie Nonas Septembres' (Roman 4 September), i.e. the evening of Roman 3 September
+    .sets[6].clues[6].statement | September | eptembres' (Roman 4 September), i.e. the evening of Roman 3 September.
+    .sets[8].clues[2].statement | March | orted when the consul entered office at Rome on the Ides of March, as spring was approaching; the eclipse
+    .sets[8].clues[11].statement | March | ir provinces; the consuls had entered office on the Ides of March (38.35.7).
+    .sets[8].clues[11].fork_options[1].reading | March | the darkness lies within 120 days before the Roman Ides of March of the consular year, Roman offset free
+data/prereg/controls_almagest.json: licence strings found verbatim 54, not found 0
+  year-like or month-name strings outside licence words: 0

@@ -1,0 +1,415 @@
+#### SET R-PYDNA
+-- observer_place {"events": ["P1"], "place": "the Roman and Macedonian camps before Pydna", "licence_words": ["πρὸ τῆς Πύδνης", "qui Pydnam ex acie perfugerant"], "ref": ["urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.16.5.1", "urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.42.7.1"], "text_file": ["data/text/plutarch-aemilius-grc.tsv", "data/text/livy-lat.tsv"], "search_coordinates": {"lat": 40.37, "lon": 22.6}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+   CHECK exact | πρὸ τῆς Πύδνης | urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.16.5.1
+   CHECK exact | qui Pydnam ex acie perfugerant | urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.42.7.1
+
+====================================================================================================
+{
+ "set": "R-PYDNA",
+ "clue_id": "P-ECL",
+ "event": "P1",
+ "kind": "eclipse-lunar",
+ "feature": "occurrence",
+ "statement": "P1: a lunar eclipse on the night before the battle, foretold by C. Sulpicius Gallus and seen from both camps; the Moon was full and high.",
+ "licence_words": [
+  "edita hora luna cum defecisset",
+  "ἡ σελήνη πλήρης οὖσα καὶ μετέωρος ἐμελαίνετο"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.8.1",
+  "urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.7.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv",
+  "data/text/plutarch-aemilius-grc.tsv"
+ ],
+ "fork_options": [],
+ "narrative_level": "narrator (Livy reports Gallus' forecast, a character's speech in indirect form, then confirms it in narrative; Plutarch narrator)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | edita hora luna cum defecisset | urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.8.1
+   CHECK exact | ἡ σελήνη πλήρης οὖσα καὶ μετέωρος ἐμελαίνετο | urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.7.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.8.1 :: nocte, quam pridie nonas Septembres insecuta est dies, edita hora luna cum defecisset, Romanis militibus Galli sapientia prope divina videri;
+   ROW [data/text/plutarch-aemilius-grc.tsv] urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.7.1 :: ἐπεὶ δὲ νὺξ γεγόνει καὶ μετὰ δεῖπνον ἐτράποντο πρὸς ὕπνον καὶ ἀνάπαυσιν, αἰφνίδιον ἡ σελήνη πλήρης οὖσα καὶ μετέωρος ἐμελαίνετο καὶ τοῦ φωτὸς ἀπολιπόντος αὐτὴν χρόας ἀμείψασα παντοδαπὰς ἠφανίσθη.
+
+====================================================================================================
+{
+ "set": "R-PYDNA",
+ "clue_id": "P-MAG",
+ "event": "P1",
+ "kind": "eclipse-lunar",
+ "feature": "magnitude",
+ "statement": "Plutarch: with its light gone, after changing all sorts of colours, the Moon vanished. Livy gives no magnitude.",
+ "licence_words": [
+  "τοῦ φωτὸς ἀπολιπόντος αὐτὴν χρόας ἀμείψασα παντοδαπὰς ἠφανίσθη"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.7.1"
+ ],
+ "text_file": [
+  "data/text/plutarch-aemilius-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "total",
+   "reading": "umbral magnitude >= 1.0",
+   "justification": "Plutarch's 'vanished' after colour changes; Livy is silent, not contrary",
+   "operational": {
+    "umag": [
+     1.0,
+     null
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "deep",
+   "reading": "umbral magnitude >= 0.8",
+   "justification": "allows a deep partial eclipse to be described as vanishing",
+   "operational": {
+    "umag": [
+     0.8,
+     null
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "umbral",
+   "reading": "any umbral eclipse",
+   "justification": "Livy alone",
+   "operational": {
+    "umag": [
+     0.0,
+     null
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Plutarch)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | τοῦ φωτὸς ἀπολιπόντος αὐτὴν χρόας ἀμείψασα παντοδαπὰς ἠφανίσθη | urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.7.1
+   ROW [data/text/plutarch-aemilius-grc.tsv] urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.7.1 :: ἐπεὶ δὲ νὺξ γεγόνει καὶ μετὰ δεῖπνον ἐτράποντο πρὸς ὕπνον καὶ ἀνάπαυσιν, αἰφνίδιον ἡ σελήνη πλήρης οὖσα καὶ μετέωρος ἐμελαίνετο καὶ τοῦ φωτὸς ἀπολιπόντος αὐτὴν χρόας ἀμείψασα παντοδαπὰς ἠφανίσθη.
+
+====================================================================================================
+{
+ "set": "R-PYDNA",
+ "clue_id": "P-TIME",
+ "event": "P1",
+ "kind": "time-of-day",
+ "feature": "eclipse-timing",
+ "statement": "Gallus foretold the eclipse from the second to the fourth hour of the night, and it happened at the hour announced. Plutarch: after nightfall and dinner, as they turned to sleep.",
+ "licence_words": [
+  "ab hora secunda usque ad quartam horam noctis lunam defecturam esse",
+  "edita hora",
+  "ἐπεὶ δὲ νὺξ γεγόνει καὶ μετὰ δεῖπνον ἐτράποντο πρὸς ὕπνον"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.5.1",
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.8.1",
+  "urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.7.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv",
+  "data/text/livy-lat.tsv",
+  "data/text/plutarch-aemilius-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "overlap",
+   "reading": "the umbral phase overlaps the 2nd-4th seasonal hours of the night (night = sunset to sunrise in 12 equal hours) at the camp",
+   "justification": "'edita hora': the eclipse came at the announced hours",
+   "operational": {
+    "seasonal_night_hours": [
+     2,
+     4
+    ],
+    "relation": "umbral phase overlaps",
+    "site": "Pydna"
+   },
+   "primary": true
+  },
+  {
+   "option": "within",
+   "reading": "first umbral contact in hour 2 or later and last umbral contact by the end of hour 4",
+   "justification": "'ab ... usque ad' read as the whole eclipse",
+   "operational": {
+    "seasonal_night_hours": [
+     2,
+     4
+    ],
+    "relation": "umbral phase within",
+    "site": "Pydna"
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "sensitivity",
+   "operational": {
+    "timing": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "Livy: character's forecast (indirect speech) confirmed by the narrator; Plutarch: narrator",
+ "notes": "The hours are seasonal: Gallus speaks to soldiers, not astronomers (drafter's choice).",
+ "license_check": "ok"
+}
+   CHECK exact | ab hora secunda usque ad quartam horam noctis lunam defecturam esse | urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.5.1
+   CHECK exact | edita hora | urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.8.1
+   CHECK exact | ἐπεὶ δὲ νὺξ γεγόνει καὶ μετὰ δεῖπνον ἐτράποντο πρὸς ὕπνον | urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.7.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.5.1 :: castris permunitis C. Sulpicius Gallus, tribunus militum secundae legionis, qui praetor superiore anno fuerat, consulis permissu ad contionem militibus vocatis pronuntiavit, nocte proxima, ne quis id pro portento acciperet, ab hora secunda usque ad quartam horam noctis lunam defecturam esse.
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.8.1 :: nocte, quam pridie nonas Septembres insecuta est dies, edita hora luna cum defecisset, Romanis militibus Galli sapientia prope divina videri;
+   ROW [data/text/plutarch-aemilius-grc.tsv] urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.7.1 :: ἐπεὶ δὲ νὺξ γεγόνει καὶ μετὰ δεῖπνον ἐτράποντο πρὸς ὕπνον καὶ ἀνάπαυσιν, αἰφνίδιον ἡ σελήνη πλήρης οὖσα καὶ μετέωρος ἐμελαίνετο καὶ τοῦ φωτὸς ἀπολιπόντος αὐτὴν χρόας ἀμείψασα παντοδαπὰς ἠφανίσθη.
+
+====================================================================================================
+{
+ "set": "R-PYDNA",
+ "clue_id": "P-ALT",
+ "event": "P1",
+ "kind": "other",
+ "feature": "moon-altitude",
+ "statement": "Plutarch: the Moon was full and high ('μετέωρος') when it darkened.",
+ "licence_words": [
+  "πλήρης οὖσα καὶ μετέωρος"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.7.1"
+ ],
+ "text_file": [
+  "data/text/plutarch-aemilius-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "aloft",
+   "reading": "Moon's altitude >= 10 deg at the onset of the umbral phase",
+   "justification": "'μετέωρος' = aloft, off the horizon; 10 deg is the drafter's threshold",
+   "operational": {
+    "moon_alt_deg_at_first_umbral_contact": [
+     10.0,
+     null
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "up",
+   "reading": "Moon above the horizon at first umbral contact",
+   "justification": "weaker",
+   "operational": {
+    "moon_alt_deg_at_first_umbral_contact": [
+     0.0,
+     null
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "sensitivity",
+   "operational": {
+    "moon_alt": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Plutarch)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | πλήρης οὖσα καὶ μετέωρος | urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.7.1
+   ROW [data/text/plutarch-aemilius-grc.tsv] urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.7.1 :: ἐπεὶ δὲ νὺξ γεγόνει καὶ μετὰ δεῖπνον ἐτράποντο πρὸς ὕπνον καὶ ἀνάπαυσιν, αἰφνίδιον ἡ σελήνη πλήρης οὖσα καὶ μετέωρος ἐμελαίνετο καὶ τοῦ φωτὸς ἀπολιπόντος αὐτὴν χρόας ἀμείψασα παντοδαπὰς ἠφανίσθη.
+
+====================================================================================================
+{
+ "set": "R-PYDNA",
+ "clue_id": "P-END",
+ "event": "P1",
+ "kind": "eclipse-lunar",
+ "feature": "emergence-seen",
+ "statement": "Both sources say the emergence was seen: the Macedonian uproar lasted until the Moon came out into its light (Livy); Aemilius sacrificed when he first saw the Moon clearing (Plutarch).",
+ "licence_words": [
+  "donec luna in suam lucem emersit",
+  "ὡς εἶδε πρῶτον τὴν σελήνην ἀποκαθαιρομένην"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.9.1",
+  "urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.10.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv",
+  "data/text/plutarch-aemilius-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "emergence",
+   "reading": "Moon above the horizon at the end of the umbral phase",
+   "justification": "both sources",
+   "operational": {
+    "moon_up_at_last_umbral_contact": true
+   },
+   "primary": true
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "sensitivity",
+   "operational": {
+    "moon_up_at_last_umbral_contact": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | donec luna in suam lucem emersit | urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.9.1
+   CHECK exact | ὡς εἶδε πρῶτον τὴν σελήνην ἀποκαθαιρομένην | urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.10.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.9.1 :: Macedonas ut triste prodigium, occasum regni perniciemque gentis portendens, movit nec aliter vates. clamor ululatusque in castris Macedonum fuit, donec luna in suam lucem emersit.
+   ROW [data/text/plutarch-aemilius-grc.tsv] urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.17.10.1 :: οὐ μὴν ἀλλὰ τῷ θείῳ πολὺ νέμων καὶ φιλοθύτης ὢν καὶ μαντικός, ὡς εἶδε πρῶτον τὴν σελήνην ἀποκαθαιρομένην, ἕνδεκα μόσχους αὐτῇ κατέθυσεν.
+
+====================================================================================================
+{
+ "set": "R-PYDNA",
+ "clue_id": "P-SEASON",
+ "event": "P1",
+ "kind": "season",
+ "feature": "after-solstice",
+ "statement": "Livy (that day): the time of year was after the solstice had come round, the Sun growing hot. Plutarch: it was the season of waning summer, the rivers low.",
+ "licence_words": [
+  "Tempus anni post circumactum solstitium erat",
+  "θέρους γὰρ ἦν ὥρα φθίνοντοσ"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.36.1.1",
+  "urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.16.9.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv",
+  "data/text/plutarch-aemilius-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "summer-after-solstice",
+   "reading": "Sun's tropical longitude in [90, 180] deg",
+   "justification": "the union of Livy (after the summer solstice) and Plutarch (waning summer)",
+   "operational": {
+    "sun_lon_deg": [
+     90.0,
+     180.0
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "livy-just-after",
+   "reading": "Sun's tropical longitude in [90, 120] deg",
+   "justification": "Livy alone, 'circumactum' read as 'just turned'; the 30-deg width is the drafter's",
+   "operational": {
+    "sun_lon_deg": [
+     90.0,
+     120.0
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "plutarch",
+   "reading": "Sun's tropical longitude in [120, 180] deg",
+   "justification": "Plutarch alone",
+   "operational": {
+    "sun_lon_deg": [
+     120.0,
+     180.0
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "no season constraint",
+   "justification": "sensitivity",
+   "operational": {
+    "season": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "'solstitium' alone is the summer solstice in Latin (the winter one is 'bruma'); the heat words in 44.36.1-2 agree. Note for the record: critique-design issue 2 says the earlier draft's 'summer' for this set had no textual source; it has one, in 44.36.1, one chapter before the eclipse sentence.",
+ "license_check": "ok"
+}
+   CHECK exact | Tempus anni post circumactum solstitium erat | urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.36.1.1
+   CHECK exact | θέρους γὰρ ἦν ὥρα φθίνοντοσ | urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.16.9.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.36.1.1 :: Tempus anni post circumactum solstitium erat; hora diei iam ad meridiem vergebat; iter multo pulvere et incalescente sole factum erat.
+   ROW [data/text/plutarch-aemilius-grc.tsv] urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.16.9.1 :: διὰ μέσου δὲ ποταμοὶ ῥέοντες Αἴσων καὶ Λεῦκος οὐ μάλα βαθεῖς τότε ʽθέρους γὰρ ἦν ὥρα φθίνοντοσʼ ἐδόκουν τινὰ δυσεργίαν ὅμως τοῖς Ῥωμαίοις παρέξειν.
+
+====================================================================================================
+{
+ "set": "R-PYDNA",
+ "clue_id": "P-DATE",
+ "event": "P1",
+ "kind": "other",
+ "feature": "calendar-date",
+ "statement": "Livy: the eclipse was in the night followed by the day 'pridie Nonas Septembres' (Roman 4 September), i.e. the evening of Roman 3 September.",
+ "licence_words": [
+  "nocte, quam pridie nonas Septembres insecuta est dies"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.8.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "free",
+   "reading": "JD = JD(proleptic Julian 3/4 Sep of year y, night) + delta, delta an unknown integer number of days, unbounded",
+   "justification": "the Roman calendar before 45 BC had an unknown, varying offset from the Julian; the rule for this bench is a free offset",
+   "operational": {
+    "roman_date": "a.d. III Non. Sept. (night before pridie Non. Sept.)",
+    "offset_days": null
+   },
+   "primary": true
+  },
+  {
+   "option": "bounded90",
+   "reading": "same with |delta| <= 90 days",
+   "justification": "assumes the calendar was within a season of the Sun (drafter's assumption, not in the text)",
+   "operational": {
+    "roman_date": "a.d. III Non. Sept.",
+    "offset_days": [
+     -90,
+     90
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "naive",
+   "reading": "delta = 0 (Roman date read as Julian)",
+   "justification": "sensitivity only; not a licensed reading",
+   "operational": {
+    "roman_date": "a.d. III Non. Sept.",
+    "offset_days": [
+     0,
+     0
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Livy)",
+ "notes": "With the primary (free) offset this row constrains nothing; it is entered so that the bench can report what the date would have added under each bound.",
+ "license_check": "ok"
+}
+   CHECK exact | nocte, quam pridie nonas Septembres insecuta est dies | urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.8.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.37.8.1 :: nocte, quam pridie nonas Septembres insecuta est dies, edita hora luna cum defecisset, Romanis militibus Galli sapientia prope divina videri;

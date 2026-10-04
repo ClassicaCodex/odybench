@@ -1,0 +1,6 @@
+1178 BC totality window: exact 0.3044  41-pt 0.2849  201-pt 0.3027  |41-exact| 0.0195
+half-line rows over c in 26,500..31,000 s: max |P41 - P201| = 0.0218 at c = 29010 (P41 0.2766, P201 0.2984, exact 0.3005)
+flag mismatches with BOTH sides outside the 0.02 tie band: 0 values of c (first: [])
+interval rows (width 200-3000 s): max |P41 - exact| = 0.0431; cases with |P41-0.5|<0.1: 895
+  I16 flag mismatches outside the tie band, band read on either side: 0; band read on the bench side only: 0; examples []
+single Gaussian, 41 points over +-4 sigma: largest weight 0.0798; step error at a node up to about half to one weight

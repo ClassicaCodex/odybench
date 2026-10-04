@@ -1,0 +1,28 @@
+# Hashed in data/SHA256SUMS, not published (DESIGN 12.2): ephemerides,
+# catalogues, texts exported from the library, and copies of publications.
+data/ephem/
+data/jsex/
+data/text/
+data/refs/
+data/ref/
+data/sources/
+data/bm2008-a/
+data/cache/
+build/public/
+
+# Large binaries and copies of publications kept as working files in results/
+results/**/*.bsp
+results/**/*.npz
+results/**/*.pdf
+results/**/*.htm
+results/**/*.html
+results/**/hzcache/
+results/unread-primaries/
+results/window/jsex/
+results/controls-real-drafting/gautschy-eclipsecitations.txt
+results/data-acquisition/bond2017.txt
+
+# Orchestration scratch
+.workflows/
+__pycache__/
+*.pyc

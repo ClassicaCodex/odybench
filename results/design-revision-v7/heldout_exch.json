@@ -1,0 +1,84 @@
+{
+ "n_rows": 2285,
+ "P_BM,E": {
+  "n": [
+   25,
+   24
+  ],
+  "H3": [
+   7,
+   3
+  ],
+  "H4": [
+   0,
+   2
+  ],
+  "fisher_H3": 0.289,
+  "fisher_H4": 0.2347
+ },
+ "P_MWRA,E": {
+  "n": [
+   15,
+   13
+  ],
+  "H3": [
+   5,
+   1
+  ],
+  "H4": [
+   0,
+   1
+  ],
+  "fisher_H3": 0.1727,
+  "fisher_H4": 0.4643
+ },
+ "P10 any solar eclipse (NASA catalogue, anywhere on Earth)": {
+  "n": [
+   442,
+   1843
+  ],
+  "H3": [
+   67,
+   240
+  ],
+  "H4": [
+   22,
+   84
+  ],
+  "fisher_H3": 0.2442,
+  "fisher_H4": 0.7059
+ },
+ "P10 total-possible (anyTotal2s, any of 5 sites)": {
+  "n": [
+   3,
+   2282
+  ],
+  "H3": [
+   0,
+   307
+  ],
+  "H4": [
+   0,
+   106
+  ],
+  "fisher_H3": 1.0,
+  "fisher_H4": 1.0
+ },
+ "P10 visible (maxMag2s > 0, any of 5 sites)": {
+  "n": [
+   80,
+   2205
+  ],
+  "H3": [
+   15,
+   292
+  ],
+  "H4": [
+   4,
+   102
+  ],
+  "fisher_H3": 0.1793,
+  "fisher_H4": 0.7859
+ },
+ "note": "rough rows of r2; predicates as revision 4's heldout_attain.py via revision 5's heldout_strata.py; target removed before computation; null side only; eclipse status is a catalogue proxy for h_tot > 0"
+}

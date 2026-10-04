@@ -1,0 +1,3 @@
+Bond 2017:  v_A = (+315.5 E, +340.2 N) mas/yr, |v| 464.0; offset of A from barycentre (+228, -1175) mas
+Hipparcos DMSA/O: T = 1894.131, P = 50.090 yr; v_photocentre = (+318.7 E, +359.0 N) mas/yr, |v| 480.1; offset (+278, -1114) mas
+difference between the two orbits' velocities: 19.0 mas/yr

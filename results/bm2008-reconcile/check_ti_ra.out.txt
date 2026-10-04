@@ -1,0 +1,141 @@
+conjunctions found 1892
+conjunctions 1 Jan 1250 BC - 31 Dec 1115 BC (UT+2 dates): 1683
+Ti == conjunction civil date, by zone: {'UT': 134, 'LMT20.7E': 138, 'UT+2': 136, 'UT+3': 132} of 152
+rows not matching UT+2 date: (yearBC, Ti printed, UT+2 (m,d), UT+2 hour, matchesUT?, UT hour)
+   (1248, '9-Apr', (4, 10), 4.52, False, 2.52)
+   (1246, '17-Apr', (4, 18), 5.72, False, 3.72)
+   (1245, '5-Apr', (4, 6), 6.31, False, 4.31)
+   (1243, '13-Mar', (3, 15), 20.82, False, 18.82)
+   (1205, '13-Apr', (4, 14), 5.06, False, 3.06)
+   (1187, '26-Mar', (3, 27), 4.46, False, 2.46)
+   (1177, '4-Apr', (4, 5), 1.77, True, 23.77)
+   (1154, '21-Mar', (3, 22), 2.77, False, 0.77)
+   (1147, '2-Apr', (4, 3), 4.32, False, 2.32)
+   (1135, '21-Mar', (3, 22), 3.1, False, 1.1)
+   (1134, '9-Apr', (4, 10), 3.18, False, 1.18)
+   (1125, '30-Mar', (3, 31), 2.93, False, 0.93)
+   (1115, '9-Apr', (4, 10), 0.07, True, 22.07)
+   (1112, '5-Apr', (4, 6), 0.14, True, 22.14)
+   (1105, '19-Mar', (3, 20), 2.24, False, 0.24)
+   (1101, '3-Apr', (4, 4), 2.1, False, 0.1)
+years with two new moons satisfying Ti-29 >= 17 Feb and Ti-12 <= 4 Apr (UT+2 dates):
+   (1208, ['18-Mar', '16-Apr'])
+   (1197, ['17-Mar', '15-Apr'])
+   (1189, ['18-Mar', '16-Apr'])
+   (1178, ['18-Mar', '16-Apr'])
+   (1113, ['18-Mar', '16-Apr'])
+
+All rows with conjunction between 00:00 and 08:00 UT+2 (DE441, dT 27602.7 s): yearBC, Ti printed, conj UT+2 date/hour, S2 = same day?
+   (0.07, 1115, '9-Apr', (4, 10), False)
+   (0.14, 1112, '5-Apr', (4, 6), False)
+   (0.68, 1175, '13-Apr', (4, 13), True)
+   (0.83, 1230, '23-Mar', (3, 23), True)
+   (1.08, 1138, '25-Mar', (3, 25), True)
+   (1.33, 1174, '2-Apr', (4, 2), True)
+   (1.39, 1237, '8-Apr', (4, 8), True)
+   (1.77, 1177, '4-Apr', (4, 5), False)
+   (2.02, 1200, '20-Mar', (3, 20), True)
+   (2.04, 1236, '28-Mar', (3, 28), True)
+   (2.1, 1101, '3-Apr', (4, 4), False)
+   (2.24, 1105, '19-Mar', (3, 20), False)
+   (2.27, 1116, '22-Mar', (3, 22), True)
+   (2.61, 1153, '9-Apr', (4, 9), True)
+   (2.62, 1148, '14-Apr', (4, 14), True)
+   (2.77, 1154, '21-Mar', (3, 22), False)
+   (2.85, 1144, '31-Mar', (3, 31), True)
+   (2.92, 1110, '14-Apr', (4, 14), True)
+   (2.93, 1125, '30-Mar', (3, 31), False)
+   (3.02, 1239, '1-Apr', (4, 1), True)
+   (3.1, 1135, '21-Mar', (3, 22), False)
+   (3.15, 1163, '31-Mar', (3, 31), True)
+   (3.18, 1134, '9-Apr', (4, 10), False)
+   (3.39, 1186, '15-Apr', (4, 15), True)
+   (3.4, 1141, '28-Mar', (3, 28), True)
+   (3.4, 1210, '10-Apr', (4, 10), True)
+   (3.9, 1172, '9-Apr', (4, 9), True)
+   (4.27, 1215, '5-Apr', (4, 5), True)
+   (4.29, 1206, '27-Mar', (3, 27), True)
+   (4.3, 1224, '14-Apr', (4, 14), True)
+   (4.32, 1147, '2-Apr', (4, 3), False)
+   (4.36, 1225, '26-Mar', (3, 26), True)
+   (4.46, 1187, '26-Mar', (3, 27), False)
+   (4.51, 1121, '15-Apr', (4, 15), True)
+   (4.52, 1248, '9-Apr', (4, 10), False)
+   (4.89, 1203, '24-Mar', (3, 24), True)
+   (4.95, 1196, '5-Apr', (4, 5), True)
+   (5.06, 1205, '13-Apr', (4, 14), False)
+   (5.12, 1209, '29-Mar', (3, 29), True)
+   (5.31, 1234, '5-Apr', (4, 5), True)
+   (5.49, 1183, '11-Apr', (4, 11), True)
+   (5.5, 1111, '26-Mar', (3, 26), True)
+   (5.72, 1246, '17-Apr', (4, 18), False)
+   (6.12, 1249, '22-Mar', (3, 22), True)
+   (6.31, 1245, '5-Apr', (4, 6), False)
+   (6.48, 1150, '7-Apr', (4, 7), True)
+   (6.51, 1114, '30-Mar', (3, 30), True)
+   (6.75, 1173, '21-Mar', (3, 21), True)
+   (7.91, 1212, '2-Apr', (4, 2), True)
+   (7.98, 1156, '12-Apr', (4, 12), True)
+
+Per year: new moons (DE441, UT+2 date) satisfying Ti-29 >= 17 Feb and Ti-12 <= 4 Apr, vs S2 Ti
+   1248 S2 Ti 9-Apr S2 Ti in window | in-window NMs: ['10-Apr']
+   1246 S2 Ti 17-Apr S2 Ti OUTSIDE window | in-window NMs: ['19-Mar']
+   1245 S2 Ti 5-Apr S2 Ti in window | in-window NMs: ['6-Apr']
+   1243 S2 Ti 13-Mar S2 Ti OUTSIDE window | in-window NMs: ['14-Apr']
+   1227 S2 Ti 17-Apr S2 Ti OUTSIDE window | in-window NMs: ['18-Mar']
+   1208 S2 Ti 16-Apr S2 Ti in window | in-window NMs: ['18-Mar', '16-Apr']
+   1205 S2 Ti 13-Apr S2 Ti in window | in-window NMs: ['14-Apr']
+   1197 S2 Ti 15-Apr S2 Ti in window | in-window NMs: ['17-Mar', '15-Apr']
+   1189 S2 Ti 18-Mar S2 Ti in window | in-window NMs: ['18-Mar', '16-Apr']
+   1187 S2 Ti 26-Mar S2 Ti in window | in-window NMs: ['27-Mar']
+   1178 S2 Ti 16-Apr S2 Ti in window | in-window NMs: ['18-Mar', '16-Apr']
+   1177 S2 Ti 4-Apr S2 Ti in window | in-window NMs: ['5-Apr']
+   1154 S2 Ti 21-Mar S2 Ti in window | in-window NMs: ['22-Mar']
+   1147 S2 Ti 2-Apr S2 Ti in window | in-window NMs: ['3-Apr']
+   1135 S2 Ti 21-Mar S2 Ti in window | in-window NMs: ['22-Mar']
+   1134 S2 Ti 9-Apr S2 Ti in window | in-window NMs: ['10-Apr']
+   1125 S2 Ti 30-Mar S2 Ti in window | in-window NMs: ['31-Mar']
+   1115 S2 Ti 9-Apr S2 Ti in window | in-window NMs: ['10-Apr']
+   1113 S2 Ti 16-Apr S2 Ti in window | in-window NMs: ['18-Mar', '16-Apr']
+   1112 S2 Ti 5-Apr S2 Ti in window | in-window NMs: ['6-Apr']
+   1105 S2 Ti 19-Mar S2 Ti in window | in-window NMs: ['20-Mar']
+   1101 S2 Ti 3-Apr S2 Ti in window | in-window NMs: ['4-Apr']
+lon     UT    matches 134/152
+lon     LMT   matches 138/152
+lon     UT+2  matches 136/152
+ra      UT    matches 128/152
+ra      LMT   matches 127/152
+ra      UT+2  matches 124/152
+minsep  UT    matches 135/152
+minsep  LMT   matches 135/152
+minsep  UT+2  matches 135/152
+
+rows where RA conjunction (UT+2) still mismatches:
+   1248 (4, 9) (4, 10) 8.59 lon-conj hr 4.52
+   1246 (4, 17) (4, 18) 9.06 lon-conj hr 5.72
+   1245 (4, 5) (4, 6) 9.31 lon-conj hr 6.31
+   1243 (3, 13) (3, 15) 22.29 lon-conj hr 20.82
+   1239 (4, 1) (3, 31) 23.06 lon-conj hr 3.02
+   1237 (4, 8) (4, 7) 21.0 lon-conj hr 1.39
+   1236 (3, 28) (3, 27) 22.05 lon-conj hr 2.04
+   1229 (4, 9) (4, 10) 0.0 lon-conj hr 19.45
+   1228 (3, 29) (3, 30) 1.6 lon-conj hr 20.87
+   1208 (4, 16) (4, 17) 2.25 lon-conj hr 23.99
+   1205 (4, 13) (4, 14) 3.74 lon-conj hr 5.06
+   1200 (3, 20) (3, 19) 21.66 lon-conj hr 2.02
+   1190 (3, 29) (3, 30) 0.17 lon-conj hr 20.57
+   1187 (3, 26) (3, 27) 5.02 lon-conj hr 4.46
+   1177 (4, 4) (4, 5) 2.89 lon-conj hr 1.77
+   1163 (3, 31) (3, 30) 23.26 lon-conj hr 3.15
+   1154 (3, 21) (3, 22) 6.55 lon-conj hr 2.77
+   1148 (4, 14) (4, 13) 23.38 lon-conj hr 2.62
+   1147 (4, 2) (4, 3) 0.75 lon-conj hr 4.32
+   1144 (3, 31) (3, 30) 23.29 lon-conj hr 2.85
+   1139 (4, 4) (4, 5) 0.47 lon-conj hr 22.0
+   1137 (4, 11) (4, 12) 1.15 lon-conj hr 21.08
+   1135 (3, 21) (3, 22) 6.74 lon-conj hr 3.1
+   1134 (4, 9) (4, 10) 5.94 lon-conj hr 3.18
+   1132 (3, 18) (3, 19) 2.02 lon-conj hr 23.66
+   1115 (4, 9) (4, 10) 2.75 lon-conj hr 0.07
+   1110 (4, 14) (4, 13) 23.57 lon-conj hr 2.92
+   1101 (4, 3) (4, 4) 4.95 lon-conj hr 2.1

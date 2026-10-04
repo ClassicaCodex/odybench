@@ -1,0 +1,3665 @@
+{
+ "file": "data/prereg/negatives.json",
+ "written": "2026-10-04",
+ "purpose": "Clean negative-control clue sets (fiction or legend composed long after the events it tells) and the Iliad as a same-tradition comparison, built under the Odyssey's selection rules: narrator or character statements only; no similes, no lying tales; a feature the words do not state enters only as a fork with an explicit 'none'. There is no truth file: these texts have no true date.",
+ "drafting_notes": "docs/negatives-drafting.md",
+ "builder": "results/negatives/build_negatives.py (verifies every licence_words fragment against the cited rows of data/text)",
+ "conventions": {
+  "day_labels": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+  "time_scales": "LMT and LAT at the set's site; local midnight is LAT 00:00; nautical twilight = Sun centre at -12 deg.",
+  "windows": "window_width_years gives widths only; the bench places each window at a pre-drawn random position (DESIGN 4.3). No set carries a position.",
+  "eclipse_classes": "X1-X4 as defined in DESIGN 3.1 (to be revised under critique-design issue 10); computed at the set's site.",
+  "arcus_visionis": "Venus 5 deg / 7 deg, Mercury 10 deg, Jupiter 10 deg, Mars 11.5 deg, Saturn 11 deg [vis 1.2]; stars by the bench's star-phase routine.",
+  "fork_menus": "F4 (morning star) and F5 (Hermes = Mercury) reproduce DESIGN 3.4 so that each set's garden uses the same fork types as the Odyssey's.",
+  "licence_words": "exact characters of the cited rows; ' … ' separates discontinuous fragments.",
+  "ref": "list of exact row keys in text_file (data/text/)."
+ },
+ "sets": [
+  {
+   "set": "AEN-TROY",
+   "role": "negative",
+   "searchable": true,
+   "text": "Virgil, Aeneid 2 (Latin; Aeneas narrates the last night of Troy to Dido)",
+   "text_file": "virgil-aeneid-lat.tsv",
+   "edition_id": 1827,
+   "day0": "Day 0 is the Trojans' festal day at whose end the Greek fleet sails back from Tenedos; Night 0 is the night of the sack; Dawn +1 is Lucifer's rising.",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "Troy (Ilium), the city and the mound of ancient Ceres outside it",
+     "words": "tumulum antiquae Cereris sedemque sacratam venimus",
+     "ref": [
+      "2.742",
+      "2.743"
+     ],
+     "text_file": "virgil-aeneid-lat.tsv",
+     "lat": 39.9575,
+     "lon": 26.2389,
+     "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+    },
+    {
+     "place": "Tenedos (the Greek fleet's departure point)",
+     "words": "a Tenedo",
+     "ref": [
+      "2.255"
+     ],
+     "text_file": "virgil-aeneid-lat.tsv",
+     "lat": 39.8219,
+     "lon": 26.0289,
+     "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+    },
+    {
+     "place": "Mount Ida (the ridge over which Lucifer rises, as seen from Troy)",
+     "words": "iugis summae … Idae",
+     "ref": [
+      "2.801"
+     ],
+     "text_file": "virgil-aeneid-lat.tsv",
+     "lat": 39.7,
+     "lon": 26.8333,
+     "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "R-i (moon up)": {
+     "AEN-TROY-02": "i-b",
+     "AEN-TROY-04": "a",
+     "AEN-TROY-05": "none",
+     "AEN-TROY-07": "vis7"
+    },
+    "R-ii (silent moon = conjunction; 2.340 read figuratively)": {
+     "AEN-TROY-02": "ii-a",
+     "AEN-TROY-04": "none",
+     "AEN-TROY-05": "none",
+     "AEN-TROY-07": "vis7"
+    },
+    "R-ii-literal (conjunction, and 2.340 kept: contradictory)": {
+     "AEN-TROY-02": "ii-a",
+     "AEN-TROY-04": "a",
+     "AEN-TROY-05": "none",
+     "AEN-TROY-07": "vis7"
+    },
+    "BM-analogue": {
+     "AEN-TROY-02": "ii-a",
+     "AEN-TROY-04": "none",
+     "AEN-TROY-05": "conj",
+     "AEN-TROY-07": "lead90"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "fork",
+     "clue_ids": [
+      "AEN-TROY-02"
+     ],
+     "note": "only reading ii of 2.255 (silens luna = conjunction) gives the Odyssey's Day-0 conjunction; reading i puts a lit moon in the sky instead"
+    },
+    "season_stars": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": "no star or season statement in the night of the sack"
+    },
+    "morning_star": {
+     "status": "text",
+     "clue_ids": [
+      "AEN-TROY-07"
+     ],
+     "note": "Lucifer at Dawn +1, after the anchor (the Odyssey's is five days before it)"
+    },
+    "mercury_turning_point": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": "no Hermes/Mercury in book 2"
+    },
+    "darkness_eclipse": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": "'nox atra' (2.360) and 'caecam noctem' (2.397) describe the night, not a darkening; no eclipse-compatible darkness statement"
+    },
+    "other": {
+     "status": "fork",
+     "clue_ids": [
+      "AEN-TROY-05"
+     ],
+     "note": "Day 0 is a day of public celebration, like Apollo's feast on the Odyssey's Day 0 (Od. 20.156)"
+    }
+   },
+   "notes": "Both readings of 2.255 are pinned, as critique-design issue 15 requires. Under reading ii the moonlight of 2.340 contradicts the conjunction; R-ii drops 2.340, R-ii-literal keeps it.",
+   "eclipse_compatible_options": [
+    "AEN-TROY-02:ii-a",
+    "AEN-TROY-02:ii-b",
+    "AEN-TROY-05:conj"
+   ],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  },
+  {
+   "set": "AEN-CRETE",
+   "role": "negative",
+   "searchable": true,
+   "text": "Virgil, Aeneid 3.121-3.152 (the settlement on Crete; Aeneas narrating)",
+   "text_file": "virgil-aeneid-lat.tsv",
+   "edition_id": 1827,
+   "day0": "Night 0 is the night of the Penates' vision by full moonlight; the Sirius season precedes it by an unstated interval.",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "Crete, the town Aeneas founds and calls Pergamea (its location is not given)",
+     "words": "antiquis Curetum adlabimur oris … Pergameamque voco",
+     "ref": [
+      "3.131",
+      "3.132",
+      "3.133"
+     ],
+     "text_file": "virgil-aeneid-lat.tsv",
+     "lat": 35.21,
+     "lon": 24.91,
+     "coord_source": "central Crete chosen by the drafter as a representative point; the text names the island and the town only"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "literal": {
+     "AEN-CRETE-01": "a60",
+     "AEN-CRETE-02": "a"
+    },
+    "BM-analogue": {
+     "AEN-CRETE-01": "a60",
+     "AEN-CRETE-02": "a"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "text",
+     "clue_ids": [
+      "AEN-CRETE-02"
+     ],
+     "note": "full moon on Night 0: the opposite phase to the Odyssey's anchor"
+    },
+    "season_stars": {
+     "status": "text",
+     "clue_ids": [
+      "AEN-CRETE-01"
+     ],
+     "note": "Sirius' scorching season, interval to Night 0 unstated"
+    },
+    "morning_star": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "mercury_turning_point": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "darkness_eclipse": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    }
+   },
+   "notes": "Two clues only; a season plus a phase. Expected to have many survivors.",
+   "eclipse_compatible_options": [],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  },
+  {
+   "set": "AEN-ITALY",
+   "role": "negative",
+   "searchable": true,
+   "text": "Virgil, Aeneid 3.506-3.524 (Palinurus reads the stars before the crossing to Italy)",
+   "text_file": "virgil-aeneid-lat.tsv",
+   "edition_id": 1827,
+   "day0": "Day 0 is the day the fleet beaches near the Ceraunian mountains; Night 0 is Palinurus' night; Dawn +1 shows Italy.",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "the shore by the Ceraunian mountains (Epirus)",
+     "words": "vicina Ceraunia iuxta … sternimur optatae gremio telluris ad undam",
+     "ref": [
+      "3.506",
+      "3.507",
+      "3.508",
+      "3.509"
+     ],
+     "text_file": "virgil-aeneid-lat.tsv",
+     "lat": 40.1986,
+     "lon": 19.5917,
+     "coord_source": "Llogara Pass (Wikipedia, fetched 2026-10-04) taken by the drafter as a point on the Ceraunian range"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "literal": {
+     "AEN-ITALY-02": "a5"
+    },
+    "BM-analogue": {
+     "AEN-ITALY-02": "a2"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "season_stars": {
+     "status": "text",
+     "clue_ids": [
+      "AEN-ITALY-02"
+     ],
+     "note": "the closest analogue of Od. 5.270-275: a steersman's star list, itself a repeated formula (3.516 = 1.744, as Od. 5.273-275 = Il. 18.487-489)"
+    },
+    "morning_star": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": "3.521 is dawn with the stars put to flight; no morning star"
+    },
+    "mercury_turning_point": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "darkness_eclipse": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    }
+   },
+   "notes": "A season-only set: it can date a season, not a year.",
+   "eclipse_compatible_options": [],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  },
+  {
+   "set": "AEN-ETNA",
+   "role": "negative",
+   "searchable": true,
+   "text": "Virgil, Aeneid 3.568-3.654 (the night under Etna and Achaemenides)",
+   "text_file": "virgil-aeneid-lat.tsv",
+   "edition_id": 1827,
+   "day0": "Day 0 is the day the fleet reaches the Cyclopes' shore at sunset; Night 0 is the cloudy night; Dawn +1 rises 'with the first Eous'; Achaemenides speaks on Day +1.",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "the Cyclopes' harbour under Etna (Sicily)",
+     "words": "Cyclopum adlabimur oris … iuxta tonat Aetna",
+     "ref": [
+      "3.569",
+      "3.570",
+      "3.571"
+     ],
+     "text_file": "virgil-aeneid-lat.tsv",
+     "lat": 37.5636,
+     "lon": 15.1614,
+     "coord_source": "Aci Trezza (Wikipedia, fetched 2026-10-04), the drafter's point on the Etna coast"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "literal": {
+     "AEN-ETNA-02": "a",
+     "AEN-ETNA-03": "vis7",
+     "AEN-ETNA-04": "a"
+    },
+    "BM-analogue": {
+     "AEN-ETNA-02": "a",
+     "AEN-ETNA-03": "lead90",
+     "AEN-ETNA-04": "a"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "text",
+     "clue_ids": [
+      "AEN-ETNA-02",
+      "AEN-ETNA-04"
+     ],
+     "note": "a Moon up at midnight and waxing on Day +1: a phase constraint, not a conjunction"
+    },
+    "season_stars": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "morning_star": {
+     "status": "fork",
+     "clue_ids": [
+      "AEN-ETNA-03"
+     ],
+     "note": "'primo Eoo' at Dawn +1, if Eous is the morning star"
+    },
+    "mercury_turning_point": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "darkness_eclipse": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": "Night 0 is starless, but the text gives cloud as the cause"
+    }
+   },
+   "notes": "The richest Odyssey-shaped Aeneid set: a night with a lunar statement, a morning star next dawn and a phase statement the next day.",
+   "eclipse_compatible_options": [],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  },
+  {
+   "set": "AEN-CARTHAGE",
+   "role": "negative",
+   "searchable": true,
+   "text": "Virgil, Aeneid 4 (Mercury's descent and Aeneas' night departure from Carthage), with the year count of 1.755-1.756",
+   "text_file": "virgil-aeneid-lat.tsv",
+   "edition_id": 1827,
+   "day0": "Night 0 is the night Mercury appears to Aeneas in sleep and the fleet leaves; Dawn +1 shows Dido the empty harbour. Day M1, Mercury's descent, lies an unstated number of days before Day 0.",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "Carthage",
+     "words": "Tu nunc Karthaginis altae",
+     "ref": [
+      "4.265"
+     ],
+     "text_file": "virgil-aeneid-lat.tsv",
+     "lat": 36.8528,
+     "lon": 10.3233,
+     "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "literal": {
+     "AEN-CARTHAGE-01": "none",
+     "AEN-CARTHAGE-02": "free30",
+     "AEN-CARTHAGE-03": "a",
+     "AEN-CARTHAGE-05": "none",
+     "AEN-CARTHAGE-07": "a"
+    },
+    "BM-analogue": {
+     "AEN-CARTHAGE-01": "mwra",
+     "AEN-CARTHAGE-02": "free30",
+     "AEN-CARTHAGE-03": "a",
+     "AEN-CARTHAGE-05": "none",
+     "AEN-CARTHAGE-07": "a"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "season_stars": {
+     "status": "text",
+     "clue_ids": [
+      "AEN-CARTHAGE-03"
+     ],
+     "note": "'hiberno sidere': a season named by a star, without the star's name"
+    },
+    "morning_star": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "mercury_turning_point": {
+     "status": "text",
+     "clue_ids": [
+      "AEN-CARTHAGE-01",
+      "AEN-CARTHAGE-05"
+     ],
+     "note": "Virgil's rewriting of Od. 5.43-54 (sandals, wand, a seabird skimming the waves); the only clean negative with a Hermes slot. Its interval to Day 0 is unstated"
+    },
+    "darkness_eclipse": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    }
+   },
+   "notes": "Outside the books the task named (2-3). Added because it is the one clean negative where B&M's Hermes = Mercury rule can be applied to a Hermes journey written in imitation of the Odyssey's. Row 07 links it to AEN-TROY by a year count the text states.",
+   "eclipse_compatible_options": [],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  },
+  {
+   "set": "ARG-CIUS",
+   "role": "negative",
+   "searchable": true,
+   "text": "Apollonius, Argonautica 1.1012-1.1283 (from the night battle at Cyzicus to the loss of Hylas and Heracles at Cius)",
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "edition_id": 1,
+   "day0": "Day 0 is the day the Argo reaches Cius at supper-time; Night 0 is the full-moon night of Hylas; Dawn +1 is the morning star and the departure.",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "Cius, by Mount Arganthonios and the mouth of the Cius river",
+     "words": "Κιανίδος ἤθεα γαίης … Ἀργανθώνειον ὄρος προχοάς τε Κίοιο",
+     "ref": [
+      "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1177",
+      "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1178"
+     ],
+     "text_file": "apollonius-argonautica-grc.tsv",
+     "lat": 40.4325,
+     "lon": 29.1564,
+     "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+    },
+    {
+     "place": "Cyzicus, land of the Doliones (Night -17)",
+     "words": "ἐυξείνοισι Δολίοσιν",
+     "ref": [
+      "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1018"
+     ],
+     "text_file": "apollonius-argonautica-grc.tsv",
+     "lat": 40.3878,
+     "lon": 27.8706,
+     "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "literal": {
+     "ARG-CIUS-02": "a",
+     "ARG-CIUS-03": "vis7",
+     "ARG-CIUS-05": "none",
+     "ARG-CIUS-06": "n17",
+     "ARG-CIUS-07": "none"
+    },
+    "BM-analogue": {
+     "ARG-CIUS-02": "a",
+     "ARG-CIUS-03": "lead90",
+     "ARG-CIUS-05": "a",
+     "ARG-CIUS-06": "n17",
+     "ARG-CIUS-07": "b"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "text",
+     "clue_ids": [
+      "ARG-CIUS-02"
+     ],
+     "note": "full moon on Night 0: the opposite phase to the Odyssey's anchor"
+    },
+    "season_stars": {
+     "status": "fork",
+     "clue_ids": [
+      "ARG-CIUS-07"
+     ],
+     "note": "only through the halcyon (a bird, not a star) on Night -2"
+    },
+    "morning_star": {
+     "status": "text",
+     "clue_ids": [
+      "ARG-CIUS-03"
+     ],
+     "note": "Dawn +1; the verb echoes Od. 13.93 (ὑπερέσχε)"
+    },
+    "mercury_turning_point": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "darkness_eclipse": {
+     "status": "fork",
+     "clue_ids": [
+      "ARG-CIUS-05"
+     ],
+     "note": "a dark night at Cyzicus on Night -17, if non-recognition is read as moonlessness"
+    }
+   },
+   "notes": "DESIGN's NC3 season clue (1.1202, Orion's wintry setting) is inside a simile and is excluded here.",
+   "eclipse_compatible_options": [],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  },
+  {
+   "set": "ARG-COLCHIS",
+   "role": "negative",
+   "searchable": true,
+   "text": "Apollonius, Argonautica 2.1097-4.183 (from the storm at the Island of Ares to the flight with the fleece)",
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "edition_id": 1,
+   "day0": "Day 0 is the day of Jason's ordeal; Night 0 is Medea's flight with the Moon rising; Dawn +1 is the flight with the fleece.",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "Colchis: the Phasis and Aia",
+     "words": "ἐννύχιοι … ἵκοντο Φᾶσίν τʼ εὐρὺ ῥέοντα",
+     "ref": [
+      "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1260",
+      "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1261"
+     ],
+     "text_file": "apollonius-argonautica-grc.tsv",
+     "lat": 42.15,
+     "lon": 41.6667,
+     "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+    },
+    {
+     "place": "the Island of Ares (Night -7)",
+     "words": "νῆσον ἀποπροέλειπον Ἄρηος",
+     "ref": [
+      "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1230"
+     ],
+     "text_file": "apollonius-argonautica-grc.tsv",
+     "lat": 40.9289,
+     "lon": 38.4361,
+     "coord_source": "Giresun Island (Wikipedia, fetched 2026-10-04); the identification with the Island of Ares is modern, not the text's"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "literal": {
+     "ARG-COLCHIS-01": "none",
+     "ARG-COLCHIS-02": "a3",
+     "ARG-COLCHIS-04": "b",
+     "ARG-COLCHIS-05": "none",
+     "ARG-COLCHIS-06": "a"
+    },
+    "BM-analogue": {
+     "ARG-COLCHIS-01": "a",
+     "ARG-COLCHIS-02": "a3",
+     "ARG-COLCHIS-04": "a",
+     "ARG-COLCHIS-05": "a",
+     "ARG-COLCHIS-06": "a"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "text",
+     "clue_ids": [
+      "ARG-COLCHIS-06"
+     ],
+     "note": "moonrise in the dark hours of Night 0: a waning Moon, not a conjunction"
+    },
+    "season_stars": {
+     "status": "text",
+     "clue_ids": [
+      "ARG-COLCHIS-01",
+      "ARG-COLCHIS-04"
+     ],
+     "note": "Arcturus' rainy season on Night -7 (phase unnamed); Orion seen by sailors on Night -3 (fork)"
+    },
+    "morning_star": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "mercury_turning_point": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "darkness_eclipse": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": "the starless night of 2.1103-1105 is storm cloud by the text's own words"
+    }
+   },
+   "notes": "",
+   "eclipse_compatible_options": [],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  },
+  {
+   "set": "ARG-RETURN",
+   "role": "negative",
+   "searchable": true,
+   "text": "Apollonius, Argonautica 4.1620-4.1718 (from Triton's harbour by Carpathos and Crete to Anaphe)",
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "edition_id": 1,
+   "day0": "Day 0 is the day the Argo leaves Crete; Night 0 is the 'pall' night with neither stars nor moon; Dawn +1 shows Anaphe. The evening star is on Day E = Day -(3 + x).",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "the Cretan sea beyond Cape Salmonis (Night 0)",
+     "words": "ὑπὲρ Σαλμωνίδος ἄκρης … Κρηταῖον ὑπὲρ μέγα λαῖτμα",
+     "ref": [
+      "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1693",
+      "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1694"
+     ],
+     "text_file": "apollonius-argonautica-grc.tsv",
+     "lat": 35.3128,
+     "lon": 26.3076,
+     "coord_source": "Cape Sideros (Wikipedia, fetched 2026-10-04); identifying Salmonis with Sideros is modern, not the text's"
+    },
+    {
+     "place": "Anaphe (Dawn +1)",
+     "words": "Ἀνάφην δέ τε λισσάδα νῆσον",
+     "ref": [
+      "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1717"
+     ],
+     "text_file": "apollonius-argonautica-grc.tsv",
+     "lat": 36.3719,
+     "lon": 25.7953,
+     "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+    },
+    {
+     "place": "at sea off the Libyan desert coast, east of Triton's harbour (Day E); no place named",
+     "words": "αὐτὴν ἐπὶ δεξίʼ ἔχοντες γαῖαν ἐρημαίην",
+     "ref": [
+      "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1623",
+      "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1624"
+     ],
+     "text_file": "apollonius-argonautica-grc.tsv",
+     "lat": 32.8225,
+     "lon": 21.8625,
+     "coord_source": "Cyrene (Wikipedia) chosen by the drafter as a representative point; the text names no place"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "literal": {
+     "ARG-RETURN-01": "vis7",
+     "ARG-RETURN-03": "x0",
+     "ARG-RETURN-04": "a"
+    },
+    "BM-analogue": {
+     "ARG-RETURN-01": "lag90",
+     "ARG-RETURN-03": "x0",
+     "ARG-RETURN-04": "b"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "text",
+     "clue_ids": [
+      "ARG-RETURN-04"
+     ],
+     "note": "a moonless night on Night 0, the analogue of the Odyssey's σκοτομήνιος (14.457) rather than of its Day-0 conjunction; option b turns it into a conjunction anchor"
+    },
+    "season_stars": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "morning_star": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": "an evening star instead, on Day E"
+    },
+    "mercury_turning_point": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "darkness_eclipse": {
+     "status": "fork",
+     "clue_ids": [
+      "ARG-RETURN-04"
+     ],
+     "note": "a night darkness; eclipse-compatible only as a lunar eclipse (option c)"
+    }
+   },
+   "notes": "",
+   "eclipse_compatible_options": [
+    "ARG-RETURN-04:b",
+    "ARG-RETURN-04:c"
+   ],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  },
+  {
+   "set": "QS-SACK",
+   "role": "negative",
+   "searchable": true,
+   "text": "Quintus Smyrnaeus, Posthomerica 12.340-14.470 (the horse brought in, the sack, the departure and Athena's storm)",
+   "text_file": "quintus-smyrnaeus-grc.tsv",
+   "edition_id": 1600,
+   "day0": "Day 0 is the day the Trojans find the horse; Night 0 is the night of the portents and the sack; Dawn +1 is 14.1.",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "Troy, the god-built city",
+     "words": "θεοδμήτοιο πόληος",
+     "ref": [
+      "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.514"
+     ],
+     "text_file": "quintus-smyrnaeus-grc.tsv",
+     "lat": 39.9575,
+     "lon": 26.2389,
+     "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+    },
+    {
+     "place": "Tenedos (the fleet)",
+     "words": "πρὸς ἠιόνας Τενέδοιο",
+     "ref": [
+      "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.345"
+     ],
+     "text_file": "quintus-smyrnaeus-grc.tsv",
+     "lat": 39.8219,
+     "lon": 26.0289,
+     "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+    },
+    {
+     "place": "Cape Caphereus, Euboea (the storm)",
+     "words": "Καφηρέος",
+     "ref": [
+      "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.469"
+     ],
+     "text_file": "quintus-smyrnaeus-grc.tsv",
+     "lat": 38.1167,
+     "lon": 24.5667,
+     "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "literal": {
+     "QS-SACK-02": "none",
+     "QS-SACK-03": "none",
+     "QS-SACK-06": "none"
+    },
+    "BM-analogue": {
+     "QS-SACK-02": "c",
+     "QS-SACK-03": "b",
+     "QS-SACK-06": "none"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": "no lunar statement in books 12-14"
+    },
+    "season_stars": {
+     "status": "fork",
+     "clue_ids": [
+      "QS-SACK-03"
+     ],
+     "note": "only through the lost-Pleiad aetiology"
+    },
+    "morning_star": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "mercury_turning_point": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "darkness_eclipse": {
+     "status": "fork",
+     "clue_ids": [
+      "QS-SACK-02",
+      "QS-SACK-06"
+     ],
+     "note": "stars hidden under a cloudless sky on Night 0 (a prodigy); storm darkness at sea later"
+    }
+   },
+   "notes": "The thinnest set: Quintus has no Moon, morning star or Hermes in the sack. Expected to have many survivors under every reading.",
+   "eclipse_compatible_options": [
+    "QS-SACK-02:a",
+    "QS-SACK-02:c",
+    "QS-SACK-06:a"
+   ],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  },
+  {
+   "set": "VF-LEMNOS",
+   "role": "negative",
+   "searchable": true,
+   "text": "Valerius Flaccus, Argonautica 1.309-2.79 and 2.350-2.372 (the first night at sea, landfall at Lemnos, the delay there)",
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "edition_id": 2081,
+   "day0": "Day 0 is the first day of the voyage; Night 0 is the first night at sea (Tiphys' speech); Dawn +1 brings Lemnos in sight. Day L, the storm at Lemnos, is an unstated number of days later.",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "at sea between Pallene, Athos and Lemnos (Night 0 and Dawn +1)",
+     "words": "Phoebus Athon … Vulcania surgit Lemnos aquis",
+     "ref": [
+      "2.75",
+      "2.76",
+      "2.77",
+      "2.78",
+      "2.79"
+     ],
+     "text_file": "valerius-flaccus-argonautica-lat.tsv",
+     "lat": 40.0,
+     "lon": 24.7,
+     "coord_source": "the drafter's point between Mount Athos (40.158 N 24.327 E) and Lemnos (39.917 N 25.25 E), Wikipedia; the text names the landmarks, not the ship's position"
+    },
+    {
+     "place": "Lemnos (Day L)",
+     "words": "Lemnos",
+     "ref": [
+      "2.79"
+     ],
+     "text_file": "valerius-flaccus-argonautica-lat.tsv",
+     "lat": 39.8833,
+     "lon": 25.0667,
+     "coord_source": "Myrina, Lemnos (Wikipedia, fetched 2026-10-04)"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "literal": {
+     "VF-LEMNOS-01": "a",
+     "VF-LEMNOS-02": "b",
+     "VF-LEMNOS-03": "a",
+     "VF-LEMNOS-04": "c",
+     "VF-LEMNOS-05": "a",
+     "VF-LEMNOS-06": "a",
+     "VF-LEMNOS-07": "w60"
+    },
+    "BM-analogue": {
+     "VF-LEMNOS-01": "a",
+     "VF-LEMNOS-02": "a",
+     "VF-LEMNOS-03": "a",
+     "VF-LEMNOS-04": "a",
+     "VF-LEMNOS-05": "none",
+     "VF-LEMNOS-06": "none",
+     "VF-LEMNOS-07": "w60"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "text",
+     "clue_ids": [
+      "VF-LEMNOS-02",
+      "VF-LEMNOS-06"
+     ],
+     "note": "a clear horned Moon at nightfall of Night 0 (a young crescent under option a: a few days after conjunction); a fourth-day Moon during the Lemnos stay"
+    },
+    "season_stars": {
+     "status": "text",
+     "clue_ids": [
+      "VF-LEMNOS-03",
+      "VF-LEMNOS-04",
+      "VF-LEMNOS-05"
+     ],
+     "note": "Orion and Perseus setting on Night 0, a Pleiad at Dawn +1, the Pleiad's stormy setting at Lemnos"
+    },
+    "morning_star": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": "the dawn star of 2.72 is a Pleiad, not Venus"
+    },
+    "mercury_turning_point": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "darkness_eclipse": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    }
+   },
+   "notes": "Both lunar statements render Aratus' weather signs (Phaenomena 783-787): the clear thin third-day moon means fair weather, the thick fourth-day moon means rain.",
+   "eclipse_compatible_options": [],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  },
+  {
+   "set": "VF-CYZICUS",
+   "role": "negative",
+   "searchable": true,
+   "text": "Valerius Flaccus, Argonautica 3.1-3.258 (the night battle at Cyzicus)",
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "edition_id": 2081,
+   "day0": "Day 0 is the day the Argo leaves Cyzicus (the third dawn there); Night 0 is the night it is driven back and the battle; Dawn +1 shows the dead.",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "Cyzicus",
+     "words": "portuque refertur amico",
+     "ref": [
+      "3.42"
+     ],
+     "text_file": "valerius-flaccus-argonautica-lat.tsv",
+     "lat": 40.3878,
+     "lon": 27.8706,
+     "coord_source": "Cyzicus (Wikipedia, fetched 2026-10-04); the port is the text's 'friendly harbour' of the Doliones"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "literal": {
+     "VF-CYZICUS-02": "a"
+    },
+    "BM-analogue": {
+     "VF-CYZICUS-02": "a"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "text",
+     "clue_ids": [
+      "VF-CYZICUS-02"
+     ],
+     "note": "a Moon up in the second half of Night 0"
+    },
+    "season_stars": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "morning_star": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "mercury_turning_point": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "darkness_eclipse": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": "the long night of 3.210-211 is divine (the stars stand still)"
+    }
+   },
+   "notes": "One lunar clue: many survivors expected. Compare Apollonius' version of the same night (ARG-CIUS-05), where no Moon is named.",
+   "eclipse_compatible_options": [],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  },
+  {
+   "set": "VF-COLCHIS",
+   "role": "negative",
+   "searchable": true,
+   "text": "Valerius Flaccus, Argonautica 7.1-7.24 (Medea's sleepless night)",
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "edition_id": 2081,
+   "day0": "Day 0 is the day Medea parts from her Thessalian guest at evening; Night 0 is her sleepless night; Dawn +1 whitens her threshold.",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "Colchis at the mouth of the Phasis (Aeetes' city)",
+     "words": "optatos iam lux ostendere Colchos … Phasis in aequor ore ruit",
+     "ref": [
+      "5.178",
+      "5.179",
+      "5.180"
+     ],
+     "text_file": "valerius-flaccus-argonautica-lat.tsv",
+     "lat": 42.15,
+     "lon": 41.6667,
+     "coord_source": "Phasis (Wikipedia, fetched 2026-10-04)"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "literal": {
+     "VF-COLCHIS-01": "vis7",
+     "VF-COLCHIS-02": "vis7"
+    },
+    "BM-analogue": {
+     "VF-COLCHIS-01": "none",
+     "VF-COLCHIS-02": "lead90"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "season_stars": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "morning_star": {
+     "status": "fork",
+     "clue_ids": [
+      "VF-COLCHIS-02"
+     ],
+     "note": "'eoo' at Dawn +1"
+    },
+    "mercury_turning_point": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    },
+    "darkness_eclipse": {
+     "status": "empty",
+     "clue_ids": [],
+     "note": ""
+    }
+   },
+   "notes": "Read literally, Venus is both the evening star on Day 0 and the morning star at Dawn +1, which happens only near inferior conjunction; the literal pinned reading may therefore have no survivors.",
+   "eclipse_compatible_options": [],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  },
+  {
+   "set": "IL-PATROCLUS",
+   "role": "same-tradition comparison (not a negative: same tradition and diction as the Odyssey; critique-design issue 15)",
+   "searchable": true,
+   "text": "Homer, Iliad 11.1-24.695 (the day Patroclus dies through Priam's night journey)",
+   "text_file": "iliad-grc.tsv",
+   "edition_id": 488,
+   "day0": "Day 0 is the day of Patroclus' death (dawn at 11.1, early sunset at 18.241). Hector dies on Day +1; the pyre burns in Night +2; Heosphoros rises at Dawn +3; Hermes guides Priam on Day H, the twelfth dawn after Hector's death.",
+   "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+   "observer_places": [
+    {
+     "place": "the plain of Troy and the Achaean camp on the shore",
+     "words": "Τροίην τε καὶ Ἑλλήσποντον",
+     "ref": [
+      "24.346"
+     ],
+     "text_file": "iliad-grc.tsv",
+     "lat": 39.9575,
+     "lon": 26.2389,
+     "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+    },
+    {
+     "place": "the shore by the ships (Achilles, Nights +1 to +2)",
+     "words": "ἐπὶ θινὶ πολυφλοίσβοιο θαλάσσης",
+     "ref": [
+      "23.59"
+     ],
+     "text_file": "iliad-grc.tsv",
+     "lat": 39.9575,
+     "lon": 26.2389,
+     "coord_source": "Troy (Wikipedia, fetched 2026-10-04); the camp lies a few km from the citadel"
+    }
+   ],
+   "window_width_years": [
+    136,
+    251
+   ],
+   "pinned_readings": {
+    "literal": {
+     "IL-PATROCLUS-02": "none",
+     "IL-PATROCLUS-04": "none",
+     "IL-PATROCLUS-05": "none",
+     "IL-PATROCLUS-06": "none",
+     "IL-PATROCLUS-08": "vis7",
+     "IL-PATROCLUS-09": "h13",
+     "IL-PATROCLUS-10": "none"
+    },
+    "BM-analogue": {
+     "IL-PATROCLUS-02": "conj",
+     "IL-PATROCLUS-04": "none",
+     "IL-PATROCLUS-05": "none",
+     "IL-PATROCLUS-06": "a",
+     "IL-PATROCLUS-08": "lead90",
+     "IL-PATROCLUS-09": "h13",
+     "IL-PATROCLUS-10": "mwra"
+    },
+    "eclipse-reading": {
+     "IL-PATROCLUS-02": "conj",
+     "IL-PATROCLUS-04": "a",
+     "IL-PATROCLUS-05": "none",
+     "IL-PATROCLUS-06": "none",
+     "IL-PATROCLUS-08": "lead90",
+     "IL-PATROCLUS-09": "h13",
+     "IL-PATROCLUS-10": "mwra"
+    }
+   },
+   "odyssey_slots": {
+    "day0_phase": {
+     "status": "fork",
+     "clue_ids": [
+      "IL-PATROCLUS-02"
+     ],
+     "note": "a conjunction anchor exists only through the darkness forks"
+    },
+    "season_stars": {
+     "status": "fork",
+     "clue_ids": [
+      "IL-PATROCLUS-06"
+     ],
+     "note": "the Shield's stars, the very lines Od. 5.273-275 repeat"
+    },
+    "morning_star": {
+     "status": "text",
+     "clue_ids": [
+      "IL-PATROCLUS-08"
+     ],
+     "note": "Heosphoros at Dawn +3, the same device as Od. 13.93-95"
+    },
+    "mercury_turning_point": {
+     "status": "fork",
+     "clue_ids": [
+      "IL-PATROCLUS-10"
+     ],
+     "note": "Hermes' journey on Day H, told in the seven lines Od. 5.43-49 repeat"
+    },
+    "darkness_eclipse": {
+     "status": "text",
+     "clue_ids": [
+      "IL-PATROCLUS-02",
+      "IL-PATROCLUS-04",
+      "IL-PATROCLUS-05"
+     ],
+     "note": "three darkness statements on Day 0; the text itself localises the darkness of book 17 as mist"
+    }
+   },
+   "notes": "Rebuilt NC1. Every Odyssey slot has an Iliad counterpart in the same diction, so this set measures what B&M's reading does to the Odyssey's own tradition. Cross-text link for DESIGN 4.4's consistency check: the Iliad is set in the ninth-to-tenth year (2.295, 2.328-329); no position is given here.",
+   "eclipse_compatible_options": [
+    "IL-PATROCLUS-02:conj",
+    "IL-PATROCLUS-02:solar_am",
+    "IL-PATROCLUS-04:a",
+    "IL-PATROCLUS-05:a"
+   ],
+   "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+  }
+ ],
+ "clues": [
+  {
+   "set": "AEN-TROY",
+   "clue_id": "AEN-TROY-01",
+   "kind": "time-of-day",
+   "statement": "Nightfall ends Day 0; the Trojans fall asleep on the walls. Night 0 begins.",
+   "licence_words": "Vertitur interea caelum et ruit oceano nox … fusi per moenia Teucri conticuere, sopor fessos complectitur artus",
+   "ref": [
+    "2.250",
+    "2.251",
+    "2.252",
+    "2.253"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [],
+   "narrative_level": "character speech",
+   "notes": "Aeneas' narrative to Dido (true within the fiction; the Odyssey's level E). Fixes the sailing of row 02 in Night 0."
+  },
+  {
+   "set": "AEN-TROY",
+   "clue_id": "AEN-TROY-02",
+   "kind": "moon-phase",
+   "statement": "In the first part of Night 0 the Greek fleet sails from Tenedos 'through the friendly silences of the silent moon'.",
+   "licence_words": "et iam Argiva phalanx instructis navibus ibat … a Tenedo tacitae per amica silentia lunae",
+   "ref": [
+    "2.254",
+    "2.255",
+    "2.256"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "i-a",
+     "operational": "the Moon is above the horizon at some instant between the end of evening nautical twilight and local midnight of Night 0, with illuminated fraction >= 0.5",
+     "justification": "reading i: 'amica' lunar light guides the fleet; the >= 0.5 threshold is DESIGN NC2's addition, not in the words"
+    },
+    {
+     "option": "i-b",
+     "operational": "the Moon is above the horizon at some instant between the end of evening nautical twilight and local midnight of Night 0 (any phase)",
+     "justification": "reading i without the phase threshold the words do not give"
+    },
+    {
+     "option": "ii-a",
+     "operational": "Day 0 is the date of conjunction (LMT at Troy)",
+     "justification": "reading ii: 'silens luna' is the Moon at conjunction; Pliny NH 16.190 says the day of coitus is called by some interlunium, by others the day of the silent moon [pliny-nh-lat.tsv 16.39.2]; Pliny contrasts 'silente luna' with 'plena' [local key 18.31.3] and pairs it with eclipses [local key 28.7.3]"
+    },
+    {
+     "option": "ii-b",
+     "operational": "conjunction falls within +-1.5 days of local midnight of Night 0 (the Moon invisible: interlunium)",
+     "justification": "reading ii taken as the days of invisibility round conjunction rather than one date"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "'silentia' read as the stillness of night and the Moon as an attribute; the line states no phase"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": "The fork that decides whether this negative has the Odyssey's Day-0 anchor. The ancient commentary on the line (Servius) is not in the library and was not read."
+  },
+  {
+   "set": "AEN-TROY",
+   "clue_id": "AEN-TROY-03",
+   "kind": "time-of-day",
+   "statement": "The royal ship raises the fire signal and the men in the horse come out; Hector's ghost appears to Aeneas at the hour of first sleep. The sack fills the rest of Night 0.",
+   "licence_words": "flammas cum regia puppis extulerat … Tempus erat, quo prima quies mortalibus aegris incipit",
+   "ref": [
+    "2.256",
+    "2.257",
+    "2.268",
+    "2.269",
+    "2.270"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [],
+   "narrative_level": "character speech",
+   "notes": "Time-of-night only; orders rows 02 and 04 within Night 0."
+  },
+  {
+   "set": "AEN-TROY",
+   "clue_id": "AEN-TROY-04",
+   "kind": "moon-phase",
+   "statement": "During the fighting of Night 0 Rhipeus, Epytus, Hypanis and Dymas join Aeneas, 'met by the moon'.",
+   "licence_words": "Addunt se socios Rhipeus et maximus armis … Epytus oblati per lunam",
+   "ref": [
+    "2.339",
+    "2.340"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "the Moon is above the horizon at some instant between the end of evening nautical twilight and the start of morning nautical twilight of Night 0",
+     "justification": "'per lunam': they appear by moonlight"
+    },
+    {
+     "option": "b",
+     "operational": "as a, with illuminated fraction >= 0.5 at that instant",
+     "justification": "they are recognised by the light, which a thin crescent would not give; the threshold is the drafter's"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "'per lunam' read as 'by night'; the same night is 'nox atra' (2.360) and 'caeca' (2.397)"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": "Incompatible with reading ii of row 02 (a Moon at conjunction is not up at night). See pinned readings."
+  },
+  {
+   "set": "AEN-TROY",
+   "clue_id": "AEN-TROY-05",
+   "kind": "other",
+   "statement": "Day 0, the last day of Troy, is a day of public celebration: the Trojans deck the shrines with festal foliage.",
+   "licence_words": "quibus ultimus esset ille dies, festa velamus fronde per urbem",
+   "ref": [
+    "2.248",
+    "2.249"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "conj",
+     "operational": "Day 0 is a conjunction date (LMT at Troy)",
+     "justification": "analogy only: B&M read Apollo's feast on the Odyssey's Day 0 as a new-moon feast through a scholion citing Philochorus [txt 5.3]; no source ties this celebration to the Moon"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the text gives the celebration a cause (the Greeks' apparent departure), not a calendar date"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": ""
+  },
+  {
+   "set": "AEN-TROY",
+   "clue_id": "AEN-TROY-06",
+   "kind": "interval",
+   "statement": "Lucifer's rising (row 07) comes at the end of Night 0, after the night is spent: it is Dawn +1.",
+   "licence_words": "Sic demum socios consumpta nocte reviso … Iamque",
+   "ref": [
+    "2.795",
+    "2.801"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [],
+   "narrative_level": "character speech",
+   "notes": ""
+  },
+  {
+   "set": "AEN-TROY",
+   "clue_id": "AEN-TROY-07",
+   "kind": "planet",
+   "statement": "At Dawn +1 Lucifer was rising over the ridges of highest Ida and leading in the day, seen by Aeneas at the mound of Ceres outside Troy.",
+   "licence_words": "Iamque iugis summae surgebat Lucifer Idae ducebatque diem",
+   "ref": [
+    "2.801",
+    "2.802"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "lead60",
+     "operational": "Venus rises at least 60 min before the Sun on Dawn +1 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)",
+     "justification": "the morning star taken as Venus; lowest lead threshold of the Odyssey's F4 menu [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "lead90",
+     "operational": "Venus rises at least 90 min before the Sun on Dawn +1",
+     "justification": "B&M's own threshold for Od. 13.93-95 [DESIGN 1.1, criterion V]"
+    },
+    {
+     "option": "lead120",
+     "operational": "Venus rises at least 120 min before the Sun on Dawn +1",
+     "justification": "strict end of the F4 menu [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "vis7",
+     "operational": "Venus visible as a morning object on Dawn +1 (arcus visionis 7 deg)",
+     "justification": "the words name a morning star, not a lead; visibility is the least-inference reading [vis 1.2]"
+    },
+    {
+     "option": "herald",
+     "operational": "some bright dawn herald visible before sunrise on Dawn +1: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)",
+     "justification": "the text does not say which star; the Odyssey's F4 menu allows any bright herald [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the dawn star is a traditional time-marker for the last hour of night (Od. 13.93-95 and Il. 23.226-228 use the same device) [txt 5.7]"
+    },
+    {
+     "option": "ida",
+     "operational": "Venus's rising azimuth on Dawn +1, seen from Troy, lies within +-15 deg (variant +-30 deg) of the bearing of the Ida summit, 119 deg [me: great-circle bearing from the coordinates in observer_places]",
+     "justification": "'iugis ... Idae' puts the rising over Ida; the bearing and its tolerance are the drafter's geography, not the text. At 40 deg N an azimuth of 119 deg needs a declination near -22 deg"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": "'ida' is a rider that can be combined with any non-none F4 option. Latin Lucifer is the planet Venus as morning star, so 'vis7' is the least-inference reading."
+  },
+  {
+   "set": "AEN-CRETE",
+   "clue_id": "AEN-CRETE-01",
+   "kind": "season",
+   "statement": "Some time before Night 0 (interval unstated) a plague year strikes the new settlement: Sirius scorches the barren fields and the grass dries up.",
+   "licence_words": "letifer annus … tum sterilis exurere Sirius agros … arebant herbae",
+   "ref": [
+    "3.137",
+    "3.138",
+    "3.139",
+    "3.140",
+    "3.141",
+    "3.142"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a60",
+     "operational": "Night 0 lies between Sirius' heliacal rising (first morning visibility at the site) and 60 days after it",
+     "justification": "'Sirius exurere agros' names the dog-star season; the interval to the vision night is unstated ('tum' ... 'Nox erat'), so the window width is the drafter's"
+    },
+    {
+     "option": "a30",
+     "operational": "as a60 with 30 days",
+     "justification": "narrower variant of the same reading"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the plague-year topos; no stated interval ties it to Night 0"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": ""
+  },
+  {
+   "set": "AEN-CRETE",
+   "clue_id": "AEN-CRETE-02",
+   "kind": "moon-phase",
+   "statement": "On Night 0 the Penates appear to the sleeping Aeneas, clear in the light the full moon pours through the windows.",
+   "licence_words": "Nox erat … visi ante oculos adstare iacentis in somnis, multo manifesti lumine, qua se plena per insertas fundebat luna fenestras",
+   "ref": [
+    "3.147",
+    "3.150",
+    "3.151",
+    "3.152"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "opposition falls within +-1 day of local midnight of Night 0 and the Moon is above the horizon at some instant of Night 0",
+     "justification": "'plena luna'"
+    },
+    {
+     "option": "b",
+     "operational": "illuminated fraction >= 0.9 at local midnight of Night 0 and the Moon above the horizon at some instant of Night 0",
+     "justification": "a looser 'full' that does not require opposition to the day"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the light belongs to the dream ('in somnis'), not to the night's sky"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": ""
+  },
+  {
+   "set": "AEN-ITALY",
+   "clue_id": "AEN-ITALY-01",
+   "kind": "time-of-day",
+   "statement": "The Sun sets at the end of Day 0 as the fleet beaches; the crews sleep.",
+   "licence_words": "Sol ruit interea et montes umbrantur opaci … fessos sopor inrigat artus",
+   "ref": [
+    "3.508",
+    "3.509",
+    "3.510",
+    "3.511"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [],
+   "narrative_level": "character speech",
+   "notes": ""
+  },
+  {
+   "set": "AEN-ITALY",
+   "clue_id": "AEN-ITALY-02",
+   "kind": "star",
+   "statement": "Before local midnight of Night 0 Palinurus rises and notes all the gliding stars: Arcturus, the rainy Hyades, the twin Triones and Orion armed with gold; the sky is clear.",
+   "licence_words": "Necdum orbem medium Nox horis acta subibat … sidera cuncta notat tacito labentia caelo, Arcturum pluviasque Hyadas geminosque Triones, armatumque auro circumspicit Oriona … caelo constare sereno",
+   "ref": [
+    "3.512",
+    "3.513",
+    "3.514",
+    "3.515",
+    "3.516",
+    "3.517",
+    "3.518"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a5",
+     "operational": "each of Arcturus, Aldebaran (Hyades), Betelgeuse and Rigel (Orion) is >= 5 deg above the horizon at some instant between the end of evening nautical twilight and local midnight of Night 0 (the Triones, the Bears, are circumpolar)",
+     "justification": "'necdum orbem medium' sets the before-midnight window; 'notat ... circumspicit' means he sees each star"
+    },
+    {
+     "option": "a2",
+     "operational": "as a5 with >= 2 deg",
+     "justification": "the Odyssey's F3 altitude [DESIGN 3.4 F3]"
+    },
+    {
+     "option": "b5",
+     "operational": "all four >= 5 deg at one and the same instant in that window",
+     "justification": "one survey of the sky"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "3.516 repeats 1.744 word for word (Iopas' song of the sky at Carthage): a formula, not a night's observation"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": ""
+  },
+  {
+   "set": "AEN-ITALY",
+   "clue_id": "AEN-ITALY-03",
+   "kind": "time-of-day",
+   "statement": "At Dawn +1, as the stars flee, they sight the low hills of Italy.",
+   "licence_words": "Iamque rubescebat stellis Aurora fugatis … humilemque videmus Italiam",
+   "ref": [
+    "3.521",
+    "3.522",
+    "3.523"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [],
+   "narrative_level": "character speech",
+   "notes": ""
+  },
+  {
+   "set": "AEN-ETNA",
+   "clue_id": "AEN-ETNA-01",
+   "kind": "time-of-day",
+   "statement": "The wind drops with the Sun at the end of Day 0 and the fleet drifts onto the Cyclopes' shore.",
+   "licence_words": "Interea fessos ventus cum sole reliquit … Cyclopum adlabimur oris",
+   "ref": [
+    "3.568",
+    "3.569"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [],
+   "narrative_level": "character speech",
+   "notes": ""
+  },
+  {
+   "set": "AEN-ETNA",
+   "clue_id": "AEN-ETNA-02",
+   "kind": "moon-phase",
+   "statement": "On Night 0 no stars were visible and cloud covered the sky; 'the dead of night held the Moon in a cloud'.",
+   "licence_words": "Noctem illam … neque erant astrorum ignes … obscuro sed nubila caelo, et lunam in nimbo nox intempesta tenebat",
+   "ref": [
+    "3.583",
+    "3.585",
+    "3.586",
+    "3.587"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "the Moon is above the horizon at local midnight of Night 0",
+     "justification": "'nox intempesta' is the dead of night; the Moon is there, behind cloud"
+    },
+    {
+     "option": "b",
+     "operational": "the Moon is above the horizon at some instant of Night 0",
+     "justification": "looser timing"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the passage describes a lightless night; the Moon is named only as hidden"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": ""
+  },
+  {
+   "set": "AEN-ETNA",
+   "clue_id": "AEN-ETNA-03",
+   "kind": "planet",
+   "statement": "Dawn +1 was rising 'with the first Eous', and Aurora had driven the damp shadow from the sky.",
+   "licence_words": "Postera iamque dies primo surgebat Eoo … umentemque Aurora polo dimoverat umbram",
+   "ref": [
+    "3.588",
+    "3.589"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "lead60",
+     "operational": "Venus rises at least 60 min before the Sun on Dawn +1 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)",
+     "justification": "the morning star taken as Venus; lowest lead threshold of the Odyssey's F4 menu [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "lead90",
+     "operational": "Venus rises at least 90 min before the Sun on Dawn +1",
+     "justification": "B&M's own threshold for Od. 13.93-95 [DESIGN 1.1, criterion V]"
+    },
+    {
+     "option": "lead120",
+     "operational": "Venus rises at least 120 min before the Sun on Dawn +1",
+     "justification": "strict end of the F4 menu [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "vis7",
+     "operational": "Venus visible as a morning object on Dawn +1 (arcus visionis 7 deg)",
+     "justification": "the words name a morning star, not a lead; visibility is the least-inference reading [vis 1.2]"
+    },
+    {
+     "option": "herald",
+     "operational": "some bright dawn herald visible before sunrise on Dawn +1: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)",
+     "justification": "the text does not say which star; the Odyssey's F4 menu allows any bright herald [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "'Eous' read as the dawn or the east; 3.589 repeats 4.7, a dawn formula"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": "Eous can name the morning star or the dawn; the fork carries both."
+  },
+  {
+   "set": "AEN-ETNA",
+   "clue_id": "AEN-ETNA-04",
+   "kind": "moon-phase",
+   "statement": "On Day +1 Achaemenides, a Greek left behind, says that the horns of the third moon are now filling with light since he began living in the woods.",
+   "licence_words": "Tertia iam lunae se cornua lumine complent, cum vitam in silvis inter deserta ferarum lustra domosque traho",
+   "ref": [
+    "3.645",
+    "3.646",
+    "3.647"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "the Moon is waxing on Day +1 (between conjunction and opposition)",
+     "justification": "'se cornua lumine complent' in the present: the horns are filling now"
+    },
+    {
+     "option": "b",
+     "operational": "opposition falls within +-2 days of Day +1",
+     "justification": "'filling the horns with light' read as the disc closing to full"
+    },
+    {
+     "option": "c",
+     "operational": "no phase constraint on Day +1 (the line counts about three lunations since an event in another story)",
+     "justification": "'tertia' counts months; the start event is not in this set"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "dropped"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": "Achaemenides' speech within Aeneas' narrative. He is a Greek suppliant like Sinon, but the poem presents his account as true."
+  },
+  {
+   "set": "AEN-CARTHAGE",
+   "clue_id": "AEN-CARTHAGE-01",
+   "kind": "planet",
+   "statement": "On Day M1 Mercury binds on his golden sandals, takes his wand, flies past Atlas and drops to the sea like a bird skimming low over the water, to Carthage.",
+   "licence_words": "pedibus talaria nectit aurea … tum virgam capit … Hic primum paribus nitens Cyllenius alis constitit … misit, avi similis, quae circum litora, circum piscosos scopulos humilis volat aequora iuxta",
+   "ref": [
+    "4.239",
+    "4.240",
+    "4.241",
+    "4.242",
+    "4.252",
+    "4.253",
+    "4.254",
+    "4.255"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "mwra",
+     "operational": "Mercury's maximum western rise azimuth within +-t days of Day M1; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; B&M's own event"
+    },
+    {
+     "option": "gwe",
+     "operational": "Mercury's greatest western elongation within +-t days of Day M1; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; one of the three events B&M name [DESIGN 3.4 F5]"
+    },
+    {
+     "option": "station",
+     "operational": "a Mercury station that ends retrograde motion (morning station) within +-t days of Day M1; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; one of the three events B&M name"
+    },
+    {
+     "option": "any3",
+     "operational": "any of the three events above within +-t days of Day M1; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]"
+    },
+    {
+     "option": "firstvis",
+     "operational": "Mercury's first morning visibility (arcus visionis 10 deg) within +-t days of Day M1; t in {1, 2, 3} days",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; B&M also speak of Mercury's heliacal rising [txt 2.1]"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the passage has no light, star, rising or turning vocabulary; Hermes is the messenger god [txt 5.9 for the Odyssey's version]"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": "The model is Od. 5.43-54 (Hermes ties on his sandals, takes his wand, skims the waves like a gull)."
+  },
+  {
+   "set": "AEN-CARTHAGE",
+   "clue_id": "AEN-CARTHAGE-02",
+   "kind": "interval",
+   "statement": "Between Day M1 and Night 0 Aeneas has the fleet readied in secret, Dido confronts him, the Trojans work on the ships and Dido prepares her rites: the number of days is not stated.",
+   "licence_words": "Mnesthea Sergestumque vocat … classem aptent taciti … Tum vero Teucri incumbunt, et litore celsas deducunt toto naves",
+   "ref": [
+    "4.288",
+    "4.289",
+    "4.290",
+    "4.291",
+    "4.397",
+    "4.398"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "free30",
+     "operational": "Day M1 lies 1 to 30 days before Day 0 (the upper bound is the drafter's)",
+     "justification": "the text gives no count; the events need at least a day"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "no interval: row 01 is unlinked"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "AEN-CARTHAGE",
+   "clue_id": "AEN-CARTHAGE-03",
+   "kind": "season",
+   "statement": "Between Day M1 and Night 0 Dido says Aeneas is readying his fleet under the wintry star, hurrying to sea in the midst of the north winds.",
+   "licence_words": "Quin etiam hiberno moliris sidere classem, et mediis properas aquilonibus ire per altum",
+   "ref": [
+    "4.309",
+    "4.310"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "Night 0 falls when the Sun's ecliptic longitude is between 225 and 315 deg (winter solstice +-45 days)",
+     "justification": "'hiberno sidere': winter; the width is the drafter's"
+    },
+    {
+     "option": "b",
+     "operational": "Night 0 falls between the autumn equinox and the vernal equinox",
+     "justification": "the whole closed sailing season"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "Dido's reproach; 'hiberno sidere' as rhetoric"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": ""
+  },
+  {
+   "set": "AEN-CARTHAGE",
+   "clue_id": "AEN-CARTHAGE-04",
+   "kind": "time-of-day",
+   "statement": "Night 0: midnight, the stars in mid-course; all creatures sleep except Dido.",
+   "licence_words": "Nox erat … cum medio volvuntur sidera lapsu",
+   "ref": [
+    "4.522",
+    "4.523",
+    "4.524"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "AEN-CARTHAGE",
+   "clue_id": "AEN-CARTHAGE-05",
+   "kind": "planet",
+   "statement": "Later in Night 0 Mercury appears again to the sleeping Aeneas on his ship, urges him to flee before dawn, and vanishes into the black night.",
+   "licence_words": "Aeneas celsa in puppi … carpebat somnos … Huic se forma dei voltu redeuntis eodem obtulit in somnis … omnia Mercurio similis … nocti se immiscuit atrae",
+   "ref": [
+    "4.554",
+    "4.555",
+    "4.556",
+    "4.557",
+    "4.558",
+    "4.570"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "mwra",
+     "operational": "Mercury's maximum western rise azimuth within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; B&M's own event"
+    },
+    {
+     "option": "gwe",
+     "operational": "Mercury's greatest western elongation within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; one of the three events B&M name [DESIGN 3.4 F5]"
+    },
+    {
+     "option": "station",
+     "operational": "a Mercury station that ends retrograde motion (morning station) within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; one of the three events B&M name"
+    },
+    {
+     "option": "any3",
+     "operational": "any of the three events above within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]"
+    },
+    {
+     "option": "firstvis",
+     "operational": "Mercury's first morning visibility (arcus visionis 10 deg) within +-t days of Night 0 (the date of Day 0); t in {1, 2, 3} days",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; B&M also speak of Mercury's heliacal rising [txt 2.1]"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "a dream apparition, not a journey"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "AEN-CARTHAGE",
+   "clue_id": "AEN-CARTHAGE-06",
+   "kind": "time-of-day",
+   "statement": "The fleet leaves at once; at Dawn +1 Dido sees the harbour empty.",
+   "licence_words": "Et iam prima novo spargebat lumine terras Tithoni croceum linquens Aurora cubile … classem procedere velis",
+   "ref": [
+    "4.584",
+    "4.585",
+    "4.586",
+    "4.587"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "AEN-CARTHAGE",
+   "clue_id": "AEN-CARTHAGE-07",
+   "kind": "interval",
+   "statement": "When Aeneas reaches Carthage (in the summer before Night 0), Dido says the seventh summer is carrying him in his wandering since Troy.",
+   "licence_words": "nam te iam septima portat omnibus errantem terris et fluctibus aestas",
+   "ref": [
+    "1.755",
+    "1.756"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "Night 0 of AEN-CARTHAGE falls 6 to 8 years after Night 0 of AEN-TROY",
+     "justification": "'septima aestas' gives the count; +-1 year covers inclusive or exclusive counting and the half-year from that summer to the winter departure"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "a round number; Iris, disguised, repeats 'the seventh summer' a year later (5.626), so the poem's count is not exact"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": "The only stated year interval between two Aeneid sets. It allows AEN-TROY and AEN-CARTHAGE to be run as one linked set."
+  },
+  {
+   "set": "ARG-CIUS",
+   "clue_id": "ARG-CIUS-01",
+   "kind": "time-of-day",
+   "statement": "The Argo reaches Cius at the hour when a digger or ploughman goes home hungry for supper, at the end of Day 0.",
+   "licence_words": "ἦμος δʼ ἀγρόθεν εἶσι φυτοσκάφος ἤ τις ἀροτρεὺς … δόρποιο χατίζων … τῆμος ἄρʼ οἵγʼ ἀφίκοντο Κιανίδος ἤθεα γαίης",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1172",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1173",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1174",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1175",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1176",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1177"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": "An ἦμος/τῆμος time-marker, not a simile (no ὡς)."
+  },
+  {
+   "set": "ARG-CIUS",
+   "clue_id": "ARG-CIUS-02",
+   "kind": "moon-phase",
+   "statement": "Early in Night 0, while Hylas draws water for supper, the full (mid-month) moon shines on him from the sky and the nymph of the spring sees him.",
+   "licence_words": "ποτιδόρπιον … τὸν δὲ σχεδὸν εἰσενόησεν … πρὸς γάρ οἱ διχόμηνις ἀπʼ αἰθέρος αὐγάζουσα βάλλε σεληναίη",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1209",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1229",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1230",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1231",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1232"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "opposition falls within +-1 day of local midnight of Night 0 and the Moon is above the horizon at some instant in the 3 hours after sunset of Day 0",
+     "justification": "διχόμηνις is the month-halving (full) moon; water 'for supper' puts the scene early in the night"
+    },
+    {
+     "option": "b",
+     "operational": "opposition within +-2 days of local midnight of Night 0 and the Moon above the horizon at some instant of Night 0",
+     "justification": "looser"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "διχόμηνις as an ornamental epithet of the bright moon"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "ARG-CIUS",
+   "clue_id": "ARG-CIUS-03",
+   "kind": "planet",
+   "statement": "At Dawn +1 the dawn star rose over the highest peaks and the breezes came down; Tiphys urges them aboard and they sail, leaving Heracles.",
+   "licence_words": "αὐτίκα δʼ ἀκροτάτας ὑπερέσχεθεν ἄκριας ἀστὴρ ἠῷος, πνοιαὶ δὲ κατήλυθον",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1273",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1274",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1275"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "lead60",
+     "operational": "Venus rises at least 60 min before the Sun on Dawn +1 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)",
+     "justification": "the morning star taken as Venus; lowest lead threshold of the Odyssey's F4 menu [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "lead90",
+     "operational": "Venus rises at least 90 min before the Sun on Dawn +1",
+     "justification": "B&M's own threshold for Od. 13.93-95 [DESIGN 1.1, criterion V]"
+    },
+    {
+     "option": "lead120",
+     "operational": "Venus rises at least 120 min before the Sun on Dawn +1",
+     "justification": "strict end of the F4 menu [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "vis7",
+     "operational": "Venus visible as a morning object on Dawn +1 (arcus visionis 7 deg)",
+     "justification": "the words name a morning star, not a lead; visibility is the least-inference reading [vis 1.2]"
+    },
+    {
+     "option": "herald",
+     "operational": "some bright dawn herald visible before sunrise on Dawn +1: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)",
+     "justification": "the text does not say which star; the Odyssey's F4 menu allows any bright herald [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the dawn star is a traditional time-marker for the last hour of night (Od. 13.93-95 and Il. 23.226-228 use the same device) [txt 5.7]"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": "The peaks are not named, so no azimuth rider. Dawn proper follows at 1.1280-1.1283."
+  },
+  {
+   "set": "ARG-CIUS",
+   "clue_id": "ARG-CIUS-04",
+   "kind": "time-of-day",
+   "statement": "Dawn +1 breaks after the sailing; only then do they see they have left Heracles behind.",
+   "licence_words": "ἦμος δʼ οὐρανόθεν χαροπὴ ὑπολάμπεται ἠὼς … τῆμος τούσγʼ ἐνόησαν ἀιδρείῃσι λιπόντες",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1280",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1281",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1282",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1283"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "ARG-CIUS",
+   "clue_id": "ARG-CIUS-05",
+   "kind": "darkness",
+   "statement": "On Night -17 (row 06) the Argo, after a full day's sail, is driven back to Cyzicus in the night; in the night the Doliones do not recognise the returning heroes and the two sides fight.",
+   "licence_words": "ἡ δʼ ἔθεεν λαίφεσσι πανήμερος … αὐτονυχί … οὐδʼ ὑπὸ νυκτὶ Δολίονες ἂψ ἀνιόντας ἥρωας νημερτὲς ἐπήισαν",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1015",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1016",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1017",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1018",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1019",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1020",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1021",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1022",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1023"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "the Moon is below the horizon for at least 75% of the dark hours of that night",
+     "justification": "non-recognition read as a moonless night; the predicate is DESIGN H2's, used for the Odyssey's σκοτομήνιος"
+    },
+    {
+     "option": "b",
+     "operational": "the Moon is below the horizon at local midnight of that night",
+     "justification": "a weaker form"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the text says only that it was night; it does not blame the Moon"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "ARG-CIUS",
+   "clue_id": "ARG-CIUS-06",
+   "kind": "interval",
+   "statement": "From the battle night to Night 0: three whole days of mourning; from then on storms for twelve days and nights; the halcyon on the following night (row 07); next day the sacrifice on Dindymon and a night feast; at dawn they leave and reach Cius that evening.",
+   "licence_words": "ἤματα δὲ τρία πάντα γόων … ἐκ δὲ τόθεν τρηχεῖαι ἀνηέρθησαν ἄελλαι ἤμαθʼ ὁμοῦ νύκτας τε δυώδεκα … ἐπιπλομένῃ δʼ ἐνὶ νυκτὶ … Δινδύμου … αὐτὰρ ἐς ἠὼ ληξάντων ἀνέμων νῆσον λίπον εἰρεσίῃσιν",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1057",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1078",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1079",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1080",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1092",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1093",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1150",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1151",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1152"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "n17",
+     "operational": "the battle night is Night -17 and the halcyon night is Night -2",
+     "justification": "mourning Days -16 to -14, storms Days -13 to -2, halcyon on the following night (Night -2), sacrifice Day -1, departure and Cius Day 0 [me: count]"
+    },
+    {
+     "option": "n18",
+     "operational": "battle night Night -18; halcyon Night -2",
+     "justification": "the funeral takes a fourth day before the storms start"
+    },
+    {
+     "option": "n16",
+     "operational": "battle night Night -16; halcyon Night -2",
+     "justification": "the halcyon night counted as the twelfth night of storm"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "ARG-CIUS",
+   "clue_id": "ARG-CIUS-07",
+   "kind": "season",
+   "statement": "On Night -2 a halcyon flies over the sleeping Jason, prophesying the end of the winds.",
+   "licence_words": "πωτᾶτʼ ἀλκυονὶς λιγυρῇ ὀπὶ θεσπίζουσα λῆξιν ὀρινομένων ἀνέμων",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1084",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1085",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1086",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1087"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "Night -2 within +-7 days of the winter solstice",
+     "justification": "the halcyon days: halcyons breed at midwinter, seven days before and seven after, with calm seas [pliny-nh-lat.tsv 10.32.1; also 18.26.1]"
+    },
+    {
+     "option": "b",
+     "operational": "Night -2 within +-15 days of the Pleiades' morning setting or of either solstice",
+     "justification": "Pliny says the halcyon is seen only at the setting of the Vergiliae and about the solstices [pliny-nh-lat.tsv 10.32.1]"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "a bird-omen of calm; the text names no season"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": "Not a star clue: the season enters only through ancient bird lore, as the Odyssey's new moon enters Apollo's feast only through a scholion."
+  },
+  {
+   "set": "ARG-COLCHIS",
+   "clue_id": "ARG-COLCHIS-01",
+   "kind": "season",
+   "statement": "On Night -7, the day the sons of Phrixus near the Island of Ares, Zeus stirs the north wind, 'marking with rain the wet path of Arcturus'; by night a storm wrecks their ship.",
+   "licence_words": "καὶ δὴ ἔσαν νήσοιο μάλα σχεδὸν ἤματι κείνῳ … ὕδατι σημαίνων διερὴν ὁδὸν Ἀρκτούροιο",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1097",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1098",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1099"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "Night -7 within +-15 days of Arcturus' morning setting (setting at dawn)",
+     "justification": "the wet season of Arcturus read as its setting; the text does not name the phase"
+    },
+    {
+     "option": "b",
+     "operational": "Night -7 within +-15 days of Arcturus' heliacal rising (first morning visibility)",
+     "justification": "Arcturus' rising was also a stormy sign; same caveat"
+    },
+    {
+     "option": "c",
+     "operational": "Night -7 within +-15 days of Arcturus' evening setting (last evening visibility)",
+     "justification": "same caveat"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "a learned periphrasis for rain; no phase is named"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": "The storm itself is cloud: 'κελαινὴ δʼ οὐρανὸν ἀχλὺς ἄμπεχεν ... ἐκ νεφέων' (2.1103-1105); it is not entered as darkness."
+  },
+  {
+   "set": "ARG-COLCHIS",
+   "clue_id": "ARG-COLCHIS-02",
+   "kind": "interval",
+   "statement": "From Night -7: the rain stops at sunrise (Day -6); they sleep that night; early next morning (Day -5) they leave the island; on the following night they pass Philyra; they sail on past the peoples of the coast, see Prometheus' eagle at evening and reach the Phasis by night (Night -4); dawn comes soon after (Day -3).",
+   "licence_words": "τὸ δὲ μυρίον ἐκ Διὸς ὕδωρ λῆξεν ἅμʼ ἠελίῳ … κατέδαρθεν … ἦρι δʼ ἀνεγρομένοισιν … νυκτὶ δʼ ἐπιπλομένῃ Φιλυρηίδα νῆσον ἄμειβον … ἐπιπρὸ γὰρ αἰὲν ἔτεμνον … ἴδον ἕσπερον … ἐννύχιοι … ἠὼς δʼ οὐ μετὰ δηρὸν ἐελδομένοις ἐφαάνθη",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1120",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1121",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1227",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1228",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1231",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1244",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1251",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1260",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1285"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a3",
+     "operational": "arrival at the Phasis on Night -4, so the Ares storm is Night -7",
+     "justification": "one day's sail between the Philyra night and the arrival night [me: count]"
+    },
+    {
+     "option": "a4",
+     "operational": "arrival on Night -4 but the Ares storm on Night -8",
+     "justification": "more than one day passes along the coast ('ἐπιπρὸ γὰρ αἰὲν ἔτεμνον' gives no count)"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "ARG-COLCHIS",
+   "clue_id": "ARG-COLCHIS-03",
+   "kind": "interval",
+   "statement": "In Colchis: Day -3 Jason visits Aeetes; Night -3 Medea lies sleepless; Day -2 she meets Jason at Hecate's temple; at dawn of Day -1 the heroes ask Aeetes for the teeth; Night -1 Jason sacrifices; Day 0 is the ordeal, ending at sunset.",
+   "licence_words": "φέγγος Ἠριγενής … αὐτὰρ ἅμʼ ἠοῖ … Ἠέλιος μὲν ἄπωθεν ἐρεμνὴν δύετο γαῖαν … ἠριγενὴς Ἠὼς βάλεν ἀντέλλουσα … ἦμαρ ἔδυ, καὶ τῷ τετελεσμένος ἦεν ἄεθλος",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.823",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.824",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1171",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1172",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1191",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1223",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1224",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1407"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "ARG-COLCHIS",
+   "clue_id": "ARG-COLCHIS-04",
+   "kind": "star",
+   "statement": "At nightfall of Night -3, 'sailors at sea looked to Helice and the stars of Orion from their ships' (part of a nocturne of the whole sleeping world).",
+   "licence_words": "νὺξ μὲν ἔπειτʼ ἐπὶ γαῖαν ἄγεν κνέφας … οἱ δʼ ἐνὶ πόντῳ ναῦται εἰς Ἑλίκην τε καὶ ἀστέρας Ὠρίωνος ἔδρακον ἐκ νηῶν",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.744",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.745",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.746"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "Betelgeuse and Rigel >= 5 deg above the horizon at the end of evening nautical twilight of Night -3",
+     "justification": "the nocturne is set at nightfall ('νὺξ ... ἄγεν κνέφας')"
+    },
+    {
+     "option": "b",
+     "operational": "Betelgeuse and Rigel >= 5 deg at some instant of the dark hours of Night -3",
+     "justification": "sailors watch through the night"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "a generic nocturne: the sailors are not the Argonauts and Helice (the Bear) is circumpolar"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "ARG-COLCHIS",
+   "clue_id": "ARG-COLCHIS-05",
+   "kind": "time-of-day",
+   "statement": "Night -1: after sunset, once the stars of Helice the Bear had leaned over and the air was still, Jason goes to his midnight sacrifice, as Medea told him to wait for the night halved in two.",
+   "licence_words": "μέσσην νύκτα διαμμοιρηδὰ φυλάξας … αὐτίκʼ ἐπεί ῥʼ Ἑλίκης εὐφεγγέος ἀστέρες Ἄρκτου ἔκλιθεν",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1029",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1195",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1196",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1197"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "Dubhe (alpha UMa) is past its upper culmination (west of the meridian) at local midnight of Night -1",
+     "justification": "the leaning Bear read as a midnight star-clock, which depends on the season"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "a time-of-night marker only (after midnight, as instructed)"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": "3.1029 is Medea's speech (character speech); 3.1195-1197 is narrator."
+  },
+  {
+   "set": "ARG-COLCHIS",
+   "clue_id": "ARG-COLCHIS-06",
+   "kind": "moon-phase",
+   "statement": "In Night 0, as Medea runs from the palace, the Titan goddess Moon, newly rising from the horizon, sees her and exults.",
+   "licence_words": "τὴν δὲ νέον Τιτηνὶς ἀνερχομένη περάτηθεν φοιταλέην ἐσιδοῦσα θεὰ ἐπεχήρατο Μήνη",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.54",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.55"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "moonrise falls in the dark hours of Night 0 (between the end of evening nautical twilight and the start of morning nautical twilight)",
+     "justification": "'νέον ... ἀνερχομένη περάτηθεν': the Moon is just rising during the flight"
+    },
+    {
+     "option": "b",
+     "operational": "moonrise falls between local midnight and 2 hours before the start of morning nautical twilight",
+     "justification": "the drafter's inference that the flight is late: the rowing to the grove, the hunters' pre-dawn hour (4.109-113) and the taking of the fleece all follow before dawn"
+    },
+    {
+     "option": "c",
+     "operational": "the Moon is above the horizon at some instant of Night 0",
+     "justification": "Selene only sees her"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "Selene as a speaking goddess-witness (4.57-65)"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "ARG-COLCHIS",
+   "clue_id": "ARG-COLCHIS-07",
+   "kind": "time-of-day",
+   "statement": "Before dawn, at the hour hunters wake to beat the daylight, Jason and Medea go for the fleece; Dawn +1 spreads as they return to the ship.",
+   "licence_words": "ἦμος δʼ ἀνέρες ὕπνον ἀπʼ ὀφθαλμῶν ἐβάλοντο ἀγρόται … τῆμος ἄρʼ Αἰσονίδης κούρη τʼ ἀπὸ νηὸς ἔβησαν … Ἠὼς μέν ῥʼ ἐπὶ γαῖαν ἐκίδνατο",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.109",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.110",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.111",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.112",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.113",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.114",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.183"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "ARG-RETURN",
+   "clue_id": "ARG-RETURN-01",
+   "kind": "planet",
+   "statement": "On Day E, when the Sun set, the 'star of the fold' that brings rest to weary ploughmen came up; the wind then dropped in the black night.",
+   "licence_words": "ἦμος δʼ ἠέλιος μὲν ἔδυ, ἀνὰ δʼ ἤλυθεν ἀστὴρ αὔλιος, ὅς τʼ ἀνέπαυσεν ὀιζυροὺς ἀροτῆρας … κελαινῇ νυκτὶ",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1629",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1630",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1631"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "lag60",
+     "operational": "Venus sets at least 60 min after the Sun on Day E",
+     "justification": "the evening star taken as Venus; mirror of the F4 lead thresholds"
+    },
+    {
+     "option": "lag90",
+     "operational": "Venus sets at least 90 min after the Sun on Day E",
+     "justification": "mirror of B&M's 90-min threshold"
+    },
+    {
+     "option": "lag120",
+     "operational": "Venus sets at least 120 min after the Sun on Day E",
+     "justification": "strict end of the mirrored menu"
+    },
+    {
+     "option": "vis7",
+     "operational": "Venus visible as an evening object on Day E (arcus visionis 7 deg)",
+     "justification": "the words name an evening star; visibility is the least-inference reading"
+    },
+    {
+     "option": "herald",
+     "operational": "some bright evening object visible in the evening twilight of Day E: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter",
+     "justification": "the text does not say which star"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the evening star is a stock marker of nightfall (the star of the fold / of evening)"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": "A literal 'rising at sunset' of an unnamed bright star constrains nothing (some bright star always rises near sunset) and is folded into 'none'."
+  },
+  {
+   "set": "ARG-RETURN",
+   "clue_id": "ARG-RETURN-02",
+   "kind": "interval",
+   "statement": "From the evening of Day E they row all night, the next day and the following night; Carpathos receives them on Day E+2.",
+   "licence_words": "παννύχιοι καὶ ἐπʼ ἦμαρ, ἐπʼ ἤματι δʼ αὖτις ἰοῦσαν νύχθʼ ἑτέρην … ὑπέδεκτο δʼ ἀπόπροθι παιπαλόεσσα Κάρπαθος",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1633",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1634",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1635",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1636"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "ARG-RETURN",
+   "clue_id": "ARG-RETURN-03",
+   "kind": "interval",
+   "statement": "From Carpathos they cross to Crete (no day count), where Talos bars them; they spend Night -1 on Crete and at the new dawn of Day 0 found a shrine, take water and embark.",
+   "licence_words": "ἔνθεν δʼ οἵγε περαιώσεσθαι ἔμελλον Κρήτην … κεῖνο μὲν οὖν Κρήτῃ ἐνὶ δὴ κνέφας ηὐλίζοντο ἥρωες … νέον φαέθουσαν ἐς ἠῶ",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1636",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1637",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1689",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1690",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1691",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1692"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "x0",
+     "operational": "the crossing to Crete is on Day E+2, so Day E = Day -3",
+     "justification": "the shortest reading the text allows"
+    },
+    {
+     "option": "xfree",
+     "operational": "the crossing takes x = 0 to 10 further days, so Day E is between Day -13 and Day -3 (the upper bound is the drafter's)",
+     "justification": "no count is given for Carpathos and the crossing"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "ARG-RETURN",
+   "clue_id": "ARG-RETURN-04",
+   "kind": "darkness",
+   "statement": "On Night 0, as they run over the Cretan sea, the night they call 'the pall' terrifies them: neither stars nor moonbeams pierce it; black chaos from heaven, or darkness risen from the depths.",
+   "licence_words": "νὺξ ἐφόβει, τήνπερ τε κατουλάδα κικλήσκουσιν … νύκτʼ ὀλοὴν οὐκ ἄστρα διίσχανεν, οὐκ ἀμαρυγαὶ μήνης … οὐρανόθεν δὲ μέλαν χάος",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1694",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1695",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1696",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1697",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1698"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "the Moon is below the horizon for at least 75% of the dark hours of Night 0",
+     "justification": "'no moonbeams'; the predicate is DESIGN H2's for the Odyssey's σκοτομήνιος"
+    },
+    {
+     "option": "b",
+     "operational": "conjunction falls within +-2 days of local midnight of Night 0",
+     "justification": "the moonless night read as the dark of the moon"
+    },
+    {
+     "option": "c",
+     "operational": "an umbral lunar eclipse is in progress while the Moon is above the horizon during Night 0",
+     "justification": "the darkness slot read as an eclipse; the drafter's inference, not the text"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "a supernatural darkness: the stars are hidden too, so the Moon's absence is not the cause the text gives"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "ARG-RETURN",
+   "clue_id": "ARG-RETURN-05",
+   "kind": "time-of-day",
+   "statement": "After Apollo's bow flashes, an islet appears; they anchor, and Dawn +1 rises at once: they name the island Anaphe.",
+   "licence_words": "αὐτίκα δʼ Ἠὼς φέγγεν ἀνερχομένη … Ἀνάφην",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1713",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1714",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1717"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "QS-SACK",
+   "clue_id": "QS-SACK-01",
+   "kind": "time-of-day",
+   "statement": "The fleet waits at Tenedos through Night -1 for the torch; Dawn of Day 0 comes; the Trojans see smoke over the Hellespont shore and the horse.",
+   "licence_words": "πρὸς ἠιόνας Τενέδοιο … ὁππότε πυρσὸς ἐελδομένοισι φανείη … ἐπήλυθεν Ἠριγένεια … Τρῶες εἰσενόησαν ἐπʼ ᾐόσιν Ἑλλησπόντου",
+   "ref": [
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.345",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.349",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.352",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.353"
+   ],
+   "text_file": "quintus-smyrnaeus-grc.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "QS-SACK",
+   "clue_id": "QS-SACK-02",
+   "kind": "darkness",
+   "statement": "Among the portents at the Trojans' sacrifices in the evening of Night 0, night-birds cry and a mist covers all the stars above the city, although the shining sky is cloudless.",
+   "licence_words": "ἐπεστενάχοντο δὲ λυγρὸν ἐννύχιοι ὄρνιθες … ἄστρα δὲ πάντʼ ἐφύπερθε θεοδμήτοιο πόληος ἀχλὺς ἀμφεκάλυψε καὶ ἀννεφέλου περ ἐόντος οὐρανοῦ αἰγλήεντος",
+   "ref": [
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.512",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.513",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.514",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.515",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.516"
+   ],
+   "text_file": "quintus-smyrnaeus-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "an umbral lunar eclipse is in progress while the Moon is above the horizon at Troy in the evening of Night 0 (before local midnight)",
+     "justification": "the darkness slot read as an eclipse; the drafter's inference"
+    },
+    {
+     "option": "b",
+     "operational": "the Moon is above the horizon with illuminated fraction >= 0.9 at the end of evening nautical twilight of Night 0",
+     "justification": "a 'gleaming' cloudless sky that hides the stars read as bright moonlight; a weak reading"
+    },
+    {
+     "option": "c",
+     "operational": "Day 0 is a conjunction date (LMT at Troy)",
+     "justification": "a starless, moonless-seeming night read as the dark of the moon; eclipse-compatible anchor; the drafter's inference"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "a prodigy among others (bleeding altars, weeping statues, self-opening gates); the text rules out cloud and names no Moon"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "QS-SACK",
+   "clue_id": "QS-SACK-03",
+   "kind": "star",
+   "statement": "During the sack (Night 0) they say Electra, mother of Dardanus, wrapped herself in mist and cloud and left the dance of her sister Pleiades; the others rise in a crowd, she alone is hidden for ever.",
+   "licence_words": "Ἠλέκτρην βαθύπεπλον ἑὸν δέμας ἀμφικαλύψαι ἀχλύϊ καὶ νεφέεσσιν ἀποιχομένην χοροῦ ἄλλων πληιάδων … ἡ δʼ ἄρα μούνη κεύθεται αἰὲν ἄϊστος",
+   "ref": [
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.551",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.552",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.553",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.554",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.555",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.556",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.557"
+   ],
+   "text_file": "quintus-smyrnaeus-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "the Pleiades (Alcyone) are above the horizon at some instant of the dark hours of Night 0",
+     "justification": "the withdrawal read as an event seen that night"
+    },
+    {
+     "option": "b",
+     "operational": "Alcyone >= 5 deg above the horizon at the end of evening nautical twilight of Night 0",
+     "justification": "seen at nightfall"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "an aetiology of the lost Pleiad told as hearsay ('φασι', 13.551) and made permanent ('αἰέν'); schol. Il. 18.486 tells the same story and assigns it to the Cyclic poets [scholia-iliad-grc.tsv key 2.18.198.1]"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "QS-SACK",
+   "clue_id": "QS-SACK-04",
+   "kind": "time-of-day",
+   "statement": "When sleep holds the drunken city, Sinon raises the torch and the fleet sails from Tenedos: the sack is in Night 0.",
+   "licence_words": "εὖτε γὰρ ὕπνος ἔρυκεν ἀνὰ πτόλιν … Σίνων ἀνὰ πυρσὸν ἄειρε … ἐκ Τενέδου νήεσσιν ἐπὶ πλόον ἐντύνοντο",
+   "ref": [
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.21",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.22",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.23",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.29"
+   ],
+   "text_file": "quintus-smyrnaeus-grc.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "QS-SACK",
+   "clue_id": "QS-SACK-05",
+   "kind": "time-of-day",
+   "statement": "Dawn +1 rises from Ocean; the victors feast until midnight of Night +1; Dawn +2 scatters the night and the Greeks prepare to sail home.",
+   "licence_words": "καὶ τότʼ ἀπʼ Ὠκεανοῖο θεὰ χρυσόθρονος Ἠὼς οὐρανὸν εἰσανόρουσε … μέσον περιτέλλετο νυκτός … ἀνήιεν Ἠριγένεια νύκτα διασκεδάσασα",
+   "ref": [
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.1",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.2",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.143",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.228",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.229"
+   ],
+   "text_file": "quintus-smyrnaeus-grc.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "QS-SACK",
+   "clue_id": "QS-SACK-06",
+   "kind": "darkness",
+   "statement": "On the voyage home (day not stated, at least Day +2), near Euboea, Athena gathers clouds: night pours round the earth and the sea darkens.",
+   "licence_words": "ὁπότʼ Εὐβοίης σχεδὸν ἤλυθον … σὺν δʼ ἔχεεν νεφέλας τε καὶ ἠέρα πᾶσαν ὕπερθε· νὺξ δʼ ἐχύθη περὶ γαῖαν",
+   "ref": [
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.422",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.461",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.462"
+   ],
+   "text_file": "quintus-smyrnaeus-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "a solar eclipse of class X1-X4 (DESIGN 3.1) visible near Cape Caphereus, Sun above the horizon, on some day from Day +2 to Day +12 (the bound is the drafter's)",
+     "justification": "the darkness slot read as an eclipse; the day is unstated"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "storm darkness: the text names the clouds that make it"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "VF-LEMNOS",
+   "clue_id": "VF-LEMNOS-01",
+   "kind": "interval",
+   "statement": "The Argo sails at the dawn of 1.311; after a day's coasting past Pelion, Sciathos, Sepias and Pallene the Sun sets (2.34-37): Night 0 follows.",
+   "licence_words": "Minyas simul optulit omnis alma novo crispans pelagus Tithonia Phoebo … Iamque Hyperionius metas maris urget Hiberi currus",
+   "ref": [
+    "1.310",
+    "1.311",
+    "2.34",
+    "2.35"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "the departure day is Day 0",
+     "justification": "the coasting of 2.6-33 reads as one day"
+    },
+    {
+     "option": "b",
+     "operational": "the departure day is Day -3 to Day 0",
+     "justification": "no count is given for the coasting; the bound is the drafter's"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "VF-LEMNOS",
+   "clue_id": "VF-LEMNOS-02",
+   "kind": "moon-phase",
+   "statement": "At nightfall of Night 0 Tiphys tells the frightened crew the sky is steady and the Moon has risen clear, her horn not swollen, with no redness on her face.",
+   "licence_words": "micat immutabile caelum puraque nec gravido surrexit Cynthia cornu, nullus in ore rubor",
+   "ref": [
+    "2.55",
+    "2.56",
+    "2.57"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "the Moon is above the horizon in the evening twilight of Night 0 with illuminated fraction <= 0.25",
+     "justification": "a horned Moon at nightfall is a young crescent; Aratus' clear, thin third-day moon means fair weather [aratus-phaenomena-grc.tsv 783-784]"
+    },
+    {
+     "option": "b",
+     "operational": "the Moon is above the horizon at some instant between sunset and local midnight of Night 0 (any phase)",
+     "justification": "'surrexit': the Moon is up; 'cornu' as a stock attribute"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "Aratean weather-sign diction in a speech meant to reassure"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": ""
+  },
+  {
+   "set": "VF-LEMNOS",
+   "clue_id": "VF-LEMNOS-03",
+   "kind": "star",
+   "statement": "Tiphys: he does not steer by the stars that slip from the pole into the sea, 'great Orion already sets, already Perseus hisses in the angry sea', but by the never-setting Serpent.",
+   "licence_words": "non illa sequi mihi sidera monstrat, quae delapsa polo reficit mare: tantus Orion iam cadit, irato iam stridet in aequore Perseus … axe nitet serpens",
+   "ref": [
+    "2.61",
+    "2.62",
+    "2.63",
+    "2.64",
+    "2.65"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "Betelgeuse, Rigel and Mirfak (alpha Persei) are above the horizon at the end of evening nautical twilight of Night 0 and each sets before local midnight",
+     "justification": "'iam cadit ... iam stridet': setting now, at nightfall"
+    },
+    {
+     "option": "b",
+     "operational": "Night 0 within +-15 days of Orion's morning setting (setting at dawn)",
+     "justification": "'iam cadit' read as the season of Orion's setting"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "a general contrast between setting stars and the circumpolar Serpent"
+    }
+   ],
+   "narrative_level": "character speech",
+   "notes": ""
+  },
+  {
+   "set": "VF-LEMNOS",
+   "clue_id": "VF-LEMNOS-04",
+   "kind": "star",
+   "statement": "At Dawn +1 the fields whiten 'under the dim fires of the dawn Atlantid', the Sun first strikes Athos, and Lemnos rises from the sea.",
+   "licence_words": "Iamque sub Eoae dubios Atlantidis ignes albet ager … Phoebus Athon … Vulcania surgit Lemnos aquis",
+   "ref": [
+    "2.72",
+    "2.73",
+    "2.75",
+    "2.76",
+    "2.77",
+    "2.78",
+    "2.79"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "Dawn +1 within +-7 days of the Pleiades' heliacal rising (first morning visibility of Alcyone at the site)",
+     "justification": "an Atlantid (a Pleiad) seen dimly at dawn: the first dawn appearance"
+    },
+    {
+     "option": "b",
+     "operational": "Dawn +1 within +-7 days of the Pleiades' morning setting (setting at dawn)",
+     "justification": "Virgil uses 'Eoae Atlantides' for the Pleiades' dawn setting [virgil-georgics-lat.tsv 1.221]"
+    },
+    {
+     "option": "c",
+     "operational": "Alcyone above the horizon at the start of morning nautical twilight of Dawn +1",
+     "justification": "the Pleiad is visible at dawn, phase unspecified"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "an elaborate dawn periphrasis"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "VF-LEMNOS",
+   "clue_id": "VF-LEMNOS-05",
+   "kind": "season",
+   "statement": "On Day L, during the stay at Lemnos, Jupiter by the law of the sky had set the Pleiad moving with her stormy star, and storms burst on land and sea.",
+   "licence_words": "Pliada lege poli nimboso moverat astro Iuppiter … simul undis cuncta ruunt",
+   "ref": [
+    "2.357",
+    "2.358",
+    "2.359"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "Day L within +-15 days of the Pleiades' morning setting",
+     "justification": "the Pleiad's stormy setting that closed the sailing season"
+    },
+    {
+     "option": "b",
+     "operational": "Day L between the Pleiades' morning setting and the vernal equinox",
+     "justification": "the winter storm season"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "Jupiter's storm told in astronomical periphrasis; no phase or day is named"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "VF-LEMNOS",
+   "clue_id": "VF-LEMNOS-06",
+   "kind": "moon-phase",
+   "statement": "On a day of the Lemnos stay Tiphys sees the Moon thick with rain at her fourth rising.",
+   "licence_words": "et lunam quarto densam videt imbribus ortu Thespiades",
+   "ref": [
+    "2.367",
+    "2.368"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "some day of the Lemnos stay (row 07) has a Moon 2.5 to 4.5 days past conjunction at sunset, visible in the evening",
+     "justification": "'quarto ortu': the fourth day of the Moon; Aratus' thick fourth-day moon presages rain [aratus-phaenomena-grc.tsv 785-787]"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "an Aratean weather sign; the day is not fixed"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "VF-LEMNOS",
+   "clue_id": "VF-LEMNOS-07",
+   "kind": "interval",
+   "statement": "The Argonauts stay at Lemnos an unstated time, kept by the storms and by love, until Heracles rouses them.",
+   "licence_words": "urbe sedent laeti Minyae … nec iam velle vias",
+   "ref": [
+    "2.369",
+    "2.370",
+    "2.371",
+    "2.372"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "fork_options": [
+    {
+     "option": "w60",
+     "operational": "Day L (rows 05 and 06) lies 1 to 60 days after Dawn +1 (the bound is the drafter's)",
+     "justification": "the text gives no count"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "rows 05 and 06 are unlinked"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "VF-CYZICUS",
+   "clue_id": "VF-CYZICUS-01",
+   "kind": "time-of-day",
+   "statement": "The third dawn at Cyzicus begins Day 0 and the Argo sails; in Night 0, as the stars incline and bring sleep, Tiphys dozes and the ship is carried back to the Doliones' harbour.",
+   "licence_words": "Tertia iam gelidas Tithonia solverat umbras … Nox erat et leni canebant aequora sulco, et iam prona leves spargebant sidera somnos … portuque refertur amico",
+   "ref": [
+    "3.1",
+    "3.2",
+    "3.32",
+    "3.33",
+    "3.40",
+    "3.41",
+    "3.42"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "VF-CYZICUS",
+   "clue_id": "VF-CYZICUS-02",
+   "kind": "moon-phase",
+   "statement": "In the battle of Night 0 the Moon, pitying, shines out from the pitch-black sky and turns a spear from Erymus.",
+   "licence_words": "venatori Erymo … piceo comitem miserata refulsit Luna polo",
+   "ref": [
+    "3.194",
+    "3.195",
+    "3.196"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "the Moon is above the horizon at some instant between local midnight and the start of morning nautical twilight of Night 0",
+     "justification": "the battle follows the return late in the night ('prona sidera', 3.33)"
+    },
+    {
+     "option": "b",
+     "operational": "the Moon is above the horizon at some instant of Night 0",
+     "justification": "looser timing"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the Moon as a goddess intervening; a divine act, not a sky state"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "VF-CYZICUS",
+   "clue_id": "VF-CYZICUS-03",
+   "kind": "time-of-day",
+   "statement": "Dawn +1 lights the harbour and the towers they know.",
+   "licence_words": "primo iam spargere lumine portus orta dies notaeque … albescere turres",
+   "ref": [
+    "3.257",
+    "3.258"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "VF-COLCHIS",
+   "clue_id": "VF-COLCHIS-01",
+   "kind": "planet",
+   "statement": "On Day 0 the late evening star parts Medea from her Thessalian guest, and night falls.",
+   "licence_words": "Te quoque Thessalico iam serus ab hospite vesper dividit … noxque ruit",
+   "ref": [
+    "7.1",
+    "7.2",
+    "7.3"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "fork_options": [
+    {
+     "option": "lag60",
+     "operational": "Venus sets at least 60 min after the Sun on Day 0",
+     "justification": "the evening star taken as Venus; mirror of the F4 lead thresholds"
+    },
+    {
+     "option": "lag90",
+     "operational": "Venus sets at least 90 min after the Sun on Day 0",
+     "justification": "mirror of B&M's 90-min threshold"
+    },
+    {
+     "option": "lag120",
+     "operational": "Venus sets at least 120 min after the Sun on Day 0",
+     "justification": "strict end of the mirrored menu"
+    },
+    {
+     "option": "vis7",
+     "operational": "Venus visible as an evening object on Day 0 (arcus visionis 7 deg)",
+     "justification": "the words name an evening star; visibility is the least-inference reading"
+    },
+    {
+     "option": "herald",
+     "operational": "some bright evening object visible in the evening twilight of Day 0: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter",
+     "justification": "the text does not say which star"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the evening star is a stock marker of nightfall (the star of the fold / of evening)"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "VF-COLCHIS",
+   "clue_id": "VF-COLCHIS-02",
+   "kind": "planet",
+   "statement": "After a sleepless Night 0 Medea sees her threshold whiten with the thin light of Eous: Dawn +1.",
+   "licence_words": "ecce videt tenui candescere limen eoo … lux orta",
+   "ref": [
+    "7.21",
+    "7.22",
+    "7.23"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "fork_options": [
+    {
+     "option": "lead60",
+     "operational": "Venus rises at least 60 min before the Sun on Dawn +1 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)",
+     "justification": "the morning star taken as Venus; lowest lead threshold of the Odyssey's F4 menu [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "lead90",
+     "operational": "Venus rises at least 90 min before the Sun on Dawn +1",
+     "justification": "B&M's own threshold for Od. 13.93-95 [DESIGN 1.1, criterion V]"
+    },
+    {
+     "option": "lead120",
+     "operational": "Venus rises at least 120 min before the Sun on Dawn +1",
+     "justification": "strict end of the F4 menu [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "vis7",
+     "operational": "Venus visible as a morning object on Dawn +1 (arcus visionis 7 deg)",
+     "justification": "the words name a morning star, not a lead; visibility is the least-inference reading [vis 1.2]"
+    },
+    {
+     "option": "herald",
+     "operational": "some bright dawn herald visible before sunrise on Dawn +1: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)",
+     "justification": "the text does not say which star; the Odyssey's F4 menu allows any bright herald [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "'eous' read as the dawn light"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "IL-PATROCLUS",
+   "clue_id": "IL-PATROCLUS-01",
+   "kind": "time-of-day",
+   "statement": "Dawn of Day 0 (11.1); Hera sends the unwilling Sun down to Ocean and it sets, ending Day 0 (18.239-241); Dawn +1 (19.1).",
+   "licence_words": "Ἠὼς δʼ ἐκ λεχέων … ἠέλιος μὲν ἔδυ … Ἠὼς μὲν κροκόπεπλος ἀπʼ Ὠκεανοῖο ῥοάων",
+   "ref": [
+    "11.1",
+    "18.239",
+    "18.240",
+    "18.241",
+    "19.1"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": "Books 11-18 are one day."
+  },
+  {
+   "set": "IL-PATROCLUS",
+   "clue_id": "IL-PATROCLUS-02",
+   "kind": "darkness",
+   "statement": "Before noon of Day 0, in the fight over Sarpedon's body, Zeus stretches deadly night over the battle.",
+   "licence_words": "Ζεὺς δʼ ἐπὶ νύκτʼ ὀλοὴν τάνυσε κρατερῇ ὑσμίνῃ",
+   "ref": [
+    "16.567"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "fork_options": [
+    {
+     "option": "conj",
+     "operational": "Day 0 is a conjunction date (LMT at Troy)",
+     "justification": "the eclipse-compatible anchor (DESIGN NC1's 'Day D a new moon'), without requiring an eclipse; not in the text"
+    },
+    {
+     "option": "solar_am",
+     "operational": "a solar eclipse of class X1-X4 (DESIGN 3.1) visible at Troy on Day 0 with maximum before local apparent noon",
+     "justification": "the narrative puts this darkness before the noon line 16.777"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the scholia gloss 'deadly night' as murk, citing Od. 5.294 [scholia-iliad-grc.tsv key 6.16.341.1]"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "IL-PATROCLUS",
+   "clue_id": "IL-PATROCLUS-03",
+   "kind": "time-of-day",
+   "statement": "While the Sun bestrode mid-heaven the two sides were even; when it passed to the hour of unyoking oxen the Achaeans prevailed: noon, then afternoon of Day 0.",
+   "licence_words": "ὄφρα μὲν Ἠέλιος μέσον οὐρανὸν ἀμφιβεβήκει … ἦμος δʼ Ἠέλιος μετενίσετο βουλυτὸν δέ",
+   "ref": [
+    "16.777",
+    "16.778",
+    "16.779",
+    "16.780"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "IL-PATROCLUS",
+   "clue_id": "IL-PATROCLUS-04",
+   "kind": "darkness",
+   "statement": "In the afternoon of Day 0, over Patroclus' body, 'you would not have said the Sun or the Moon was safe', for mist held the best fighters; the rest fought under a clear sky in bright sun with no cloud anywhere; later Zeus scatters the mist and the Sun shines out.",
+   "licence_words": "οὐδέ κε φαίης οὔτέ ποτʼ ἠέλιον σῶν ἔμμεναι οὔτε σελήνην … ἠέρι γὰρ κατέχοντο … πέπτατο δʼ αὐγὴ ἠελίου ὀξεῖα, νέφος δʼ οὐ φαίνετο πάσης γαίης οὐδʼ ὀρέων … ἠέρα μὲν σκέδασεν καὶ ἀπῶσεν ὀμίχλην, ἠέλιος δʼ ἐπέλαμψε",
+   "ref": [
+    "17.366",
+    "17.367",
+    "17.368",
+    "17.369",
+    "17.370",
+    "17.371",
+    "17.372",
+    "17.373",
+    "17.649",
+    "17.650"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "a solar eclipse of class X1-X4 visible at Troy on Day 0 with maximum after local apparent noon and last contact before sunset",
+     "justification": "an ancient scholiast already says one would have taken it for an eclipse [scholia-iliad-grc.tsv key 6.17.183.1]; the order of 16.777-780 puts it after noon; the Sun shines again (17.650)"
+    },
+    {
+     "option": "b",
+     "operational": "the Moon is above the horizon at some instant of the afternoon of Day 0",
+     "justification": "'neither Sun nor Moon' read as both lights being in the sky"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the text localises the darkness: mist over the best fighters while the rest fought in bright sun (17.370-373; schol. Il. 17.368, key 2.17.136.1, 'not over the whole battle')"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "IL-PATROCLUS",
+   "clue_id": "IL-PATROCLUS-05",
+   "kind": "darkness",
+   "statement": "At the end of Day 0 Hera sends the tireless Sun, unwilling, to the streams of Ocean, and it sets.",
+   "licence_words": "Ἠέλιον δʼ ἀκάμαντα βοῶπις πότνια Ἥρη πέμψεν ἐπʼ Ὠκεανοῖο ῥοὰς ἀέκοντα νέεσθαι",
+   "ref": [
+    "18.239",
+    "18.240",
+    "18.241"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "a solar eclipse of class X1-X4 visible at Troy on Day 0 with maximum within the last 2 hours before sunset",
+     "justification": "a premature 'sunset' read as an eclipse; the drafter's inference"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "divine machinery shortening the day; the scholia call it wholly mythical and compare Od. 23.243 [scholia-iliad-grc.tsv keys 4.18.84.1, 6.18.109.1]"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "IL-PATROCLUS",
+   "clue_id": "IL-PATROCLUS-06",
+   "kind": "star",
+   "statement": "In Night 0 Hephaestus makes the Shield: earth, sky and sea, the tireless Sun and the full Moon, and all the constellations: Pleiades, Hyades, Orion's strength and the Bear that alone never bathes in Ocean.",
+   "licence_words": "ἠέλιόν τʼ ἀκάμαντα σελήνην τε πλήθουσαν … Πληϊάδας θʼ Ὑάδας τε τό τε σθένος Ὠρίωνος … Ἄρκτόν θʼ",
+   "ref": [
+    "18.483",
+    "18.484",
+    "18.485",
+    "18.486",
+    "18.487",
+    "18.488",
+    "18.489"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "fork_options": [
+    {
+     "option": "a",
+     "operational": "Alcyone, Aldebaran, Betelgeuse and Rigel are each >= 2 deg above the horizon at some instant of the dark hours of Night 0",
+     "justification": "the Shield read as the sky of the night it was made, as B&M read the same lines in Od. 5"
+    },
+    {
+     "option": "b",
+     "operational": "Day 0 within +-15 days of the Pleiades' morning setting",
+     "justification": "18.486 is the verse of Hes. WD 615, where the setting of the Pleiades, Hyades and Orion (WD 616 'δύνωσιν') marks the ploughing season [hesiod-worksdays-grc.tsv 615-616; txt 5.8]"
+    },
+    {
+     "option": "c",
+     "operational": "opposition within +-1 day of local midnight of Night 0",
+     "justification": "'σελήνην τε πλήθουσαν': the full Moon on the Shield, which the scholia gloss as πανσέληνον [scholia-iliad-grc.tsv key 2.18.196.1]"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "decoration of an artefact; 18.487-489 = Od. 5.273-275 [txt 5.8]"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": "Option c contradicts the conjunction options of row 02; the garden carries both."
+  },
+  {
+   "set": "IL-PATROCLUS",
+   "clue_id": "IL-PATROCLUS-07",
+   "kind": "interval",
+   "statement": "Hector dies on Day +1; Achilles sleeps on the shore in Night +1; at Dawn +2 they gather wood and build the pyre; the winds fan it all through Night +2; Heosphoros rises at its end, Dawn +3.",
+   "licence_words": "Πηλεΐδης δʼ ἐπὶ θινὶ πολυφλοίσβοιο θαλάσσης … μυρομένοισι δὲ τοῖσι φάνη ῥοδοδάκτυλος Ἠὼς … παννύχιοι δʼ ἄρα τοί γε πυρῆς ἄμυδις φλόγʼ ἔβαλλον",
+   "ref": [
+    "23.58",
+    "23.59",
+    "23.60",
+    "23.61",
+    "23.62",
+    "23.109",
+    "23.217",
+    "23.218"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "fork_options": [],
+   "narrative_level": "narrator",
+   "notes": ""
+  },
+  {
+   "set": "IL-PATROCLUS",
+   "clue_id": "IL-PATROCLUS-08",
+   "kind": "planet",
+   "statement": "At Dawn +3, when the light-bringer goes forth to announce light on the earth and saffron Dawn spreads over the sea after it, the pyre dies down.",
+   "licence_words": "ἦμος δʼ ἑωσφόρος εἶσι φόως ἐρέων ἐπὶ γαῖαν, ὅν τε μέτα κροκόπεπλος ὑπεὶρ ἅλα κίδναται ἠώς, τῆμος πυρκαϊὴ ἐμαραίνετο",
+   "ref": [
+    "23.226",
+    "23.227",
+    "23.228"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "fork_options": [
+    {
+     "option": "lead60",
+     "operational": "Venus rises at least 60 min before the Sun on Dawn +3 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)",
+     "justification": "the morning star taken as Venus; lowest lead threshold of the Odyssey's F4 menu [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "lead90",
+     "operational": "Venus rises at least 90 min before the Sun on Dawn +3",
+     "justification": "B&M's own threshold for Od. 13.93-95 [DESIGN 1.1, criterion V]"
+    },
+    {
+     "option": "lead120",
+     "operational": "Venus rises at least 120 min before the Sun on Dawn +3",
+     "justification": "strict end of the F4 menu [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "vis7",
+     "operational": "Venus visible as a morning object on Dawn +3 (arcus visionis 7 deg)",
+     "justification": "the words name a morning star, not a lead; visibility is the least-inference reading [vis 1.2]"
+    },
+    {
+     "option": "herald",
+     "operational": "some bright dawn herald visible before sunrise on Dawn +3: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)",
+     "justification": "the text does not say which star; the Odyssey's F4 menu allows any bright herald [DESIGN 3.4 F4]"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "the dawn star is a traditional time-marker for the last hour of night (Od. 13.93-95 and Il. 23.226-228 use the same device) [txt 5.7]"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": "The scholia gloss φόως ἐρέων as foretelling the light by its rising [scholia-iliad-grc.tsv key 2.23.90.1]."
+  },
+  {
+   "set": "IL-PATROCLUS",
+   "clue_id": "IL-PATROCLUS-09",
+   "kind": "interval",
+   "statement": "Day H, when Priam goes to Achilles, is the twelfth dawn after Hector's death.",
+   "licence_words": "ἀλλʼ ὅτε δή ῥʼ ἐκ τοῖο δυωδεκάτη γένετʼ ἠώς … δυωδεκάτη δέ οἱ ἠὼς κειμένῳ",
+   "ref": [
+    "24.31",
+    "24.413",
+    "24.414"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "fork_options": [
+    {
+     "option": "h13",
+     "operational": "Day H = Day +13",
+     "justification": "twelve dawns after the death on Day +1"
+    },
+    {
+     "option": "h12",
+     "operational": "Day H = Day +12",
+     "justification": "the death day counted as the first, as the scholion counts (wood-cutting, the games as the third day, then nine) [scholia-iliad-grc.tsv key 4.24.22.1]"
+    },
+    {
+     "option": "h15",
+     "operational": "Day H = Day +15",
+     "justification": "'ἐκ τοῖο' counted from the end of the games (Day +3); the scholion's 'from when Hector died' is against it"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": "24.413-414 is Hermes speaking in disguise (character speech within a deception); it is cited only as agreeing with the narrator's 24.31."
+  },
+  {
+   "set": "IL-PATROCLUS",
+   "clue_id": "IL-PATROCLUS-10",
+   "kind": "planet",
+   "statement": "On the evening of Day H Hermes ties on his sandals, takes his wand and flies to Troy and the Hellespont (the seven lines that Od. 5.43-49 repeat); he meets Priam at dusk and leaves for Olympus as Dawn H+1 spreads over the earth.",
+   "licence_words": "οὐδʼ ἀπίθησε διάκτορος ἀργεϊφόντης … ὑπὸ ποσσὶν ἐδήσατο καλὰ πέδιλα … εἵλετο δὲ ῥάβδον … αἶψα δʼ ἄρα Τροίην τε καὶ Ἑλλήσποντον ἵκανε … ἐπὶ κνέφας ἤλυθε γαῖαν … Ἑρμείας μὲν ἔπειτʼ ἀπέβη πρὸς μακρὸν Ὄλυμπον, Ἠὼς δὲ κροκόπεπλος ἐκίδνατο πᾶσαν ἐπʼ αἶαν",
+   "ref": [
+    "24.339",
+    "24.340",
+    "24.341",
+    "24.342",
+    "24.343",
+    "24.344",
+    "24.345",
+    "24.346",
+    "24.351",
+    "24.694",
+    "24.695"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "fork_options": [
+    {
+     "option": "mwra",
+     "operational": "Mercury's maximum western rise azimuth within +-t days of Day H; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; B&M's own event"
+    },
+    {
+     "option": "gwe",
+     "operational": "Mercury's greatest western elongation within +-t days of Day H; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; one of the three events B&M name [DESIGN 3.4 F5]"
+    },
+    {
+     "option": "station",
+     "operational": "a Mercury station that ends retrograde motion (morning station) within +-t days of Day H; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; one of the three events B&M name"
+    },
+    {
+     "option": "any3",
+     "operational": "any of the three events above within +-t days of Day H; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]"
+    },
+    {
+     "option": "firstvis",
+     "operational": "Mercury's first morning visibility (arcus visionis 10 deg) within +-t days of Day H; t in {1, 2, 3} days",
+     "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; B&M also speak of Mercury's heliacal rising [txt 2.1]"
+    },
+    {
+     "option": "dawnvis",
+     "operational": "Mercury visible as a morning object at Dawn H+1 (arcus visionis 10 deg)",
+     "justification": "Hermes leaves as dawn spreads; B&M's rule read as a morning appearance"
+    },
+    {
+     "option": "none",
+     "operational": "clue dropped",
+     "justification": "Hermes is the messenger god; the journey is a type-scene shared with Od. 5.43-49 [txt 5.9]"
+    }
+   ],
+   "narrative_level": "narrator",
+   "notes": "The Mercury slot of the Odyssey's grammar, in the Odyssey's own words. In the Odyssey it falls 34 days before the anchor; here 12-15 days after."
+  }
+ ],
+ "excluded_rows": [
+  {
+   "ref": [
+    "2.8",
+    "2.9"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "narrative_level": "character speech",
+   "reason": "frame time at Carthage (setting stars at Dido's banquet), not the night of Troy; 2.9's second half repeats 4.81"
+  },
+  {
+   "ref": [
+    "2.108",
+    "2.109",
+    "2.110",
+    "2.111",
+    "2.112",
+    "2.113"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "narrative_level": "lying tale",
+   "reason": "Sinon's lying tale (winter storms kept the Greeks from sailing)"
+  },
+  {
+   "ref": [
+    "2.135"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "narrative_level": "lying tale",
+   "reason": "Sinon's lying tale (hid in a marsh through the night)"
+  },
+  {
+   "ref": [
+    "2.355",
+    "2.356",
+    "2.357",
+    "2.358"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (wolves in a black mist)"
+  },
+  {
+   "ref": [
+    "2.692",
+    "2.693",
+    "2.694",
+    "2.695",
+    "2.696",
+    "2.697",
+    "2.698"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "narrative_level": "character speech",
+   "reason": "a falling star with a trail (portent): not computable"
+  },
+  {
+   "ref": [
+    "3.195",
+    "3.196",
+    "3.197",
+    "3.198",
+    "3.199",
+    "3.200",
+    "3.201",
+    "3.202",
+    "3.203",
+    "3.204"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "narrative_level": "character speech",
+   "reason": "darkness of three days and three starless nights at sea, from storm cloud ('involvere diem nimbi', 'caeca caligine'); weather, kept out of the darkness slot"
+  },
+  {
+   "ref": [
+    "3.284",
+    "3.285"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "narrative_level": "character speech",
+   "reason": "the year comes round and winter roughens the sea at Actium; season only, no stated interval to any other sky clue"
+  },
+  {
+   "ref": [
+    "3.8",
+    "3.9"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "narrative_level": "character speech",
+   "reason": "the departure 'as summer had scarcely begun'; no stated interval to the night of Troy, so it constrains nothing"
+  },
+  {
+   "ref": [
+    "4.52"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "narrative_level": "character speech",
+   "reason": "Anna: 'while winter and watery Orion rage at sea'; season on a day with no stated interval to Day M1 or Day 0"
+  },
+  {
+   "ref": [
+    "4.80",
+    "4.81"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "narrative_level": "narrator",
+   "reason": "habitual nights (iterative), not one night; 4.81's second half repeats 2.9"
+  },
+  {
+   "ref": [
+    "4.193"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "narrative_level": "lying tale",
+   "reason": "Fama's report, true and false mixed (4.190)"
+  },
+  {
+   "ref": [
+    "5.626"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "narrative_level": "lying tale",
+   "reason": "Iris disguised as Beroe"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1201",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1202",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1203",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1204"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile: a squall strikes a mast at Orion's wintry setting (DESIGN NC3 took its season from here; critique-design issue 15)"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1265",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1266",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1267",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1268",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1269"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (gadfly-stung bull)"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.756",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.757",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.758",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.759"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (a sunbeam dancing off water)"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.957"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (Jason like Sirius)"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1359",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1360",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1361",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1362"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (stars after a winter storm)"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1377"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (a fiery star or meteor)"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.167",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.168",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.169",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.170"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (a girl catching the full moon's light on her dress)"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.226",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.227"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "narrative_level": "narrator",
+   "reason": "ekphrasis of Aeetes' springs (warm at the Pleiades' setting): a permanent property, not a date"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1280",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1281",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1282",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1283",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1284",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1285",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1286",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1287"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile that describes an eclipse (the Sun brings night at midday and the stars shine): excluded as a simile, though it is the poem's only eclipse"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1479",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1480"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (seeing the new moon through mist)"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1616"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "comparison (Triton's fins like the horns of the moon)"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.961"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "narrative_level": "narrator",
+   "reason": "a measure of duration ('as long as a spring day lengthens'), not the season of the day"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.104",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.105"
+   ],
+   "text_file": "quintus-smyrnaeus-grc.tsv",
+   "narrative_level": "narrator",
+   "reason": "starry night of Athena's dream to Epeius; separated from Day 0 by the three days of building (12.147) and an unstated gap; time of night only"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.68",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.69"
+   ],
+   "text_file": "quintus-smyrnaeus-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (sheep on an autumn night)"
+  },
+  {
+   "ref": [
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.480",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.481",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.482",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.483",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.484",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.485",
+    "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.486"
+   ],
+   "text_file": "quintus-smyrnaeus-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (gales when the Altar rises opposite Arcturus)"
+  },
+  {
+   "ref": [
+    "1.283",
+    "1.284",
+    "1.285"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "narrative_level": "narrator",
+   "reason": "Orpheus' song of Phrixus' flight (seven dawns and as many moon-shadows): an embedded myth, not the voyage"
+  },
+  {
+   "ref": [
+    "3.210",
+    "3.211"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "narrative_level": "narrator",
+   "reason": "the stars stand still and the night lingers: divine lengthening of the night (cf. Od. 23.243)"
+  },
+  {
+   "ref": [
+    "3.359",
+    "3.360",
+    "3.361"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (birds returning in mid-spring)"
+  },
+  {
+   "ref": [
+    "3.558",
+    "3.559"
+   ],
+   "text_file": "valerius-flaccus-argonautica-lat.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (moon and sun reflected in a pool)"
+  },
+  {
+   "ref": [
+    "22.26",
+    "22.27",
+    "22.28",
+    "22.29",
+    "22.30",
+    "22.31"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (Achilles like the late-summer star, Orion's dog), Day +1"
+  },
+  {
+   "ref": [
+    "22.317",
+    "22.318"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (Hesperos), Day +1"
+  },
+  {
+   "ref": [
+    "11.62",
+    "11.63"
+   ],
+   "text_file": "iliad-grc.tsv",
+   "narrative_level": "simile",
+   "reason": "simile (the baneful star among clouds), Day 0"
+  }
+ ]
+}

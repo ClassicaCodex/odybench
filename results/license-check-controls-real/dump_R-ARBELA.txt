@@ -1,0 +1,396 @@
+#### SET R-ARBELA
+-- observer_place {"events": ["A1"], "place": "Arbela (Pliny's report)", "licence_words": ["apud Arbilam"], "ref": ["2.70.3"], "text_file": ["data/text/pliny-nh-lat.tsv"], "search_coordinates": {"lat": 36.19, "lon": 44.01}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+   CHECK exact | apud Arbilam | 2.70.3
+-- observer_place {"events": ["A1"], "place": "the Macedonian camp just across the Tigris (Arrian, Curtius)", "licence_words": ["διαβαίνει τὸν πόρον", "ἐνταῦθα ἀναπαύει τὸν στρατόν"], "ref": ["urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.7.5.1", "urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.7.5.1"], "text_file": ["data/text/arrian-anabasis-grc.tsv", "data/text/arrian-anabasis-grc.tsv"], "search_coordinates": {"lat": 36.5, "lon": 43.0}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name; the crossing point is not known and this placement is rough (+/- 0.5 deg)"}
+   CHECK exact | διαβαίνει τὸν πόρον | urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.7.5.1
+   CHECK exact | ἐνταῦθα ἀναπαύει τὸν στρατόν | urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.7.5.1
+-- observer_place {"events": ["A1"], "place": "Sicily (Pliny: Moon rising)", "licence_words": ["in Sicilia"], "ref": ["2.70.3"], "text_file": ["data/text/pliny-nh-lat.tsv"], "search_coordinates": {"lat": [36.6, 38.3], "lon": [12.4, 15.7]}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+   CHECK exact | in Sicilia | 2.70.3
+
+====================================================================================================
+{
+ "set": "R-ARBELA",
+ "clue_id": "A-ECL",
+ "event": "A1",
+ "kind": "eclipse-lunar",
+ "feature": "occurrence",
+ "statement": "A1: a lunar eclipse seen by Alexander's army in the days before the great battle with Darius (four sources, one event).",
+ "licence_words": [
+  "ἡ μὲν οὖν σελήνη τοῦ Βοηδρομιῶνος ἐξέλιπε",
+  "καὶ τῆς σελήνης τὸ πολὺ ἐκλιπὲς ἐγένετο",
+  "luna deficiens",
+  "luna defecisse"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0007.tlg047.perseus-grc2.31.4.1",
+  "urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.7.5.1",
+  "4.10.2.1",
+  "2.70.3"
+ ],
+ "text_file": [
+  "data/text/plutarch-alexander-grc.tsv",
+  "data/text/arrian-anabasis-grc.tsv",
+  "data/text/curtius-lat.tsv",
+  "data/text/pliny-nh-lat.tsv"
+ ],
+ "fork_options": [],
+ "narrative_level": "narrator (all four)",
+ "notes": "Arrian's eclipse sentence is 3.7.6 in the standard numbering; the local row key is 3.7.5.1. Pliny NH 2.180 is local key 2.70.3.",
+ "license_check": "ok"
+}
+   CHECK exact | ἡ μὲν οὖν σελήνη τοῦ Βοηδρομιῶνος ἐξέλιπε | urn:cts:greekLit:tlg0007.tlg047.perseus-grc2.31.4.1
+   CHECK exact | καὶ τῆς σελήνης τὸ πολὺ ἐκλιπὲς ἐγένετο | urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.7.5.1
+   CHECK exact | luna deficiens | 4.10.2.1
+   CHECK exact | luna defecisse | 2.70.3
+   ROW [data/text/plutarch-alexander-grc.tsv] urn:cts:greekLit:tlg0007.tlg047.perseus-grc2.31.4.1 :: ἡ μὲν οὖν σελήνη τοῦ Βοηδρομιῶνος ἐξέλιπε περὶ τὴν τῶν μυστηρίων τῶν Ἀθήνησιν ἀρχήν, ἑνδεκάτῃ δὲ ἀπὸ τῆς ἐκλείψεως νυκτὶ τῶν στρατοπέδων ἐν ὄψει γεγονότων, Δαρεῖος μὲν ἐν ὅπλοις συνεῖχε τὴν δύναμιν, ὑπὸ λαμπάδων ἐπιπορευόμενος τὰς τάξεις, Ἀλέξανδρος δὲ τῶν Μακεδόνων ἀναπαυομένων αὐτὸς πρὸ τῆς σκηνῆς μετὰ τοῦ μάντεως Ἀριστάνδρου διέτριβεν, ἱερουργίας τινὰς ἀπορρήτους ἱερουργούμενος καὶ τῷ Φόβῳ σφαγιαζόμενος.
+   ROW [data/text/arrian-anabasis-grc.tsv] urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.7.5.1 :: ταῦτα ἀκούσας Ἀλέξανδρος ᾔει σπουδῇ ὡς ἐπὶ τὸν Τίγρητα. ὡς δὲ ἀφίκετο, οὔτε αὐτὸν Δαρεῖον καταλαμβάνει οὔτε τὴν φυλακήν, ἥντινα ἀπολελοίπει Δαρεῖος, ἀλλὰ διαβαίνει τὸν πόρον, χαλεπῶς μὲν διʼ ὀξύτητα τοῦ ῥοῦ, οὐδενὸς δὲ εἴργοντος. ἐνταῦθα ἀναπαύει τὸν στρατόν· καὶ τῆς σελήνης τὸ πολὺ ἐκλιπὲς ἐγένετο·
+   ROW [data/text/curtius-lat.tsv] 4.10.2.1 :: Sed prima fere vigilia luna deficiens primum nitorem sideris sui condidit, deinde sanguinis colore suffuso lumen omne foedavit, sollicitisque sub ipsum tanti discriminis casum ingens religio et ex ea formido quaedam incussa est.
+   ROW [data/text/pliny-nh-lat.tsv] 2.70.3 :: Ideo defectus solis ac lunae vespertinos orientis incolae non sentiunt nec matutinos ad occasum habitantes, meridianos vero serius nobis illi. apud Arbilam Magni Alexandri victoria luna defecisse noctis secunda hora est prodita eademque in Sicilia exoriens. solis defectum Vipstano et Fonteio cos., qui fuere ante paucos annos, factum pridie kalendas Maias Campania hora diei inter septimam et octavam sensit, Corbulo dux in Armenia inter horam diei decimam et undecimam prodidit visum, circuitu globi alia aliis detegente et occultante. quod si plana esset terra, simul omnia apparerent cunctis noctesque non fierent inaequales; nam aeque aliis quam in medio sitis paria duodecim horarum intervalla cernerentur, quae nunc non in omni parte simili modo congruunt.
+
+====================================================================================================
+{
+ "set": "R-ARBELA",
+ "clue_id": "A-MAG",
+ "event": "A1",
+ "kind": "eclipse-lunar",
+ "feature": "magnitude",
+ "statement": "Arrian: the greater part of the Moon was eclipsed. Curtius: the Moon first hid its brightness, then, suffused with a blood colour, fouled all its light.",
+ "licence_words": [
+  "τῆς σελήνης τὸ πολὺ ἐκλιπὲς",
+  "deinde sanguinis colore suffuso lumen omne foedavit"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.7.5.1",
+  "4.10.2.1"
+ ],
+ "text_file": [
+  "data/text/arrian-anabasis-grc.tsv",
+  "data/text/curtius-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "gt-half",
+   "reading": "umbral magnitude > 0.5",
+   "justification": "the weakest reading compatible with both sources (total satisfies 'the greater part')",
+   "operational": {
+    "umag": [
+     0.5,
+     null
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "total",
+   "reading": "umbral magnitude >= 1.0",
+   "justification": "Curtius: blood colour, all light fouled",
+   "operational": {
+    "umag": [
+     1.0,
+     null
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "partial-gt-half",
+   "reading": "0.5 < umag < 1.0",
+   "justification": "Arrian alone, 'τὸ πολύ' read as 'most, not all'",
+   "operational": {
+    "umag": [
+     0.5,
+     1.0
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "magnitude unconstrained",
+   "justification": "sensitivity",
+   "operational": {
+    "umag": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | τῆς σελήνης τὸ πολὺ ἐκλιπὲς | urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.7.5.1
+   CHECK exact | deinde sanguinis colore suffuso lumen omne foedavit | 4.10.2.1
+   ROW [data/text/arrian-anabasis-grc.tsv] urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.7.5.1 :: ταῦτα ἀκούσας Ἀλέξανδρος ᾔει σπουδῇ ὡς ἐπὶ τὸν Τίγρητα. ὡς δὲ ἀφίκετο, οὔτε αὐτὸν Δαρεῖον καταλαμβάνει οὔτε τὴν φυλακήν, ἥντινα ἀπολελοίπει Δαρεῖος, ἀλλὰ διαβαίνει τὸν πόρον, χαλεπῶς μὲν διʼ ὀξύτητα τοῦ ῥοῦ, οὐδενὸς δὲ εἴργοντος. ἐνταῦθα ἀναπαύει τὸν στρατόν· καὶ τῆς σελήνης τὸ πολὺ ἐκλιπὲς ἐγένετο·
+   ROW [data/text/curtius-lat.tsv] 4.10.2.1 :: Sed prima fere vigilia luna deficiens primum nitorem sideris sui condidit, deinde sanguinis colore suffuso lumen omne foedavit, sollicitisque sub ipsum tanti discriminis casum ingens religio et ex ea formido quaedam incussa est.
+
+====================================================================================================
+{
+ "set": "R-ARBELA",
+ "clue_id": "A-TIME-PLINY",
+ "event": "A1",
+ "kind": "time-of-day",
+ "feature": "eclipse-timing",
+ "statement": "Pliny: at Arbela the Moon was reported eclipsed in the second hour of the night.",
+ "licence_words": [
+  "apud Arbilam Magni Alexandri victoria luna defecisse noctis secunda hora est prodita"
+ ],
+ "ref": [
+  "2.70.3"
+ ],
+ "text_file": [
+  "data/text/pliny-nh-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "in-progress",
+   "reading": "umbral phase in progress at some time during the 2nd seasonal hour of the night at Arbela (night = sunset to sunrise in 12 equal hours)",
+   "justification": "the hour is given for the eclipse, not for a contact",
+   "operational": {
+    "seasonal_night_hour": 2,
+    "site": "Arbela",
+    "relation": "umbral phase overlaps hour"
+   },
+   "primary": true
+  },
+  {
+   "option": "onset",
+   "reading": "first umbral contact within the 2nd seasonal hour of the night",
+   "justification": "'defecisse' read as the start",
+   "operational": {
+    "seasonal_night_hour": 2,
+    "site": "Arbela",
+    "relation": "first contact in hour"
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "sensitivity",
+   "operational": {
+    "timing": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Pliny, reporting a tradition: 'est prodita')",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | apud Arbilam Magni Alexandri victoria luna defecisse noctis secunda hora est prodita | 2.70.3
+   ROW [data/text/pliny-nh-lat.tsv] 2.70.3 :: Ideo defectus solis ac lunae vespertinos orientis incolae non sentiunt nec matutinos ad occasum habitantes, meridianos vero serius nobis illi. apud Arbilam Magni Alexandri victoria luna defecisse noctis secunda hora est prodita eademque in Sicilia exoriens. solis defectum Vipstano et Fonteio cos., qui fuere ante paucos annos, factum pridie kalendas Maias Campania hora diei inter septimam et octavam sensit, Corbulo dux in Armenia inter horam diei decimam et undecimam prodidit visum, circuitu globi alia aliis detegente et occultante. quod si plana esset terra, simul omnia apparerent cunctis noctesque non fierent inaequales; nam aeque aliis quam in medio sitis paria duodecim horarum intervalla cernerentur, quae nunc non in omni parte simili modo congruunt.
+
+====================================================================================================
+{
+ "set": "R-ARBELA",
+ "clue_id": "A-TIME-CURTIUS",
+ "event": "A1",
+ "kind": "time-of-day",
+ "feature": "eclipse-timing",
+ "statement": "Curtius: about the first watch ('prima fere vigilia'), at the camp by the Tigris where the king had kept a standing camp ('ibi', 4.10.1). The 'two days' of 4.10.1 are how long the camp stood; they are narrative context, date nothing, and are not used.",
+ "licence_words": [
+  "Sed prima fere vigilia",
+  "Biduo ibi stafiva rex habuit"
+ ],
+ "ref": [
+  "4.10.2.1",
+  "4.10.1.1"
+ ],
+ "text_file": [
+  "data/text/curtius-lat.tsv",
+  "data/text/curtius-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "first-watch",
+   "reading": "umbral phase in progress at some time during the first watch (the first quarter of the night, sunset to sunset + night/4) at the camp, +/- 1 h for 'fere'",
+   "justification": "Roman watches are quarters of the night",
+   "operational": {
+    "night_quarter": 1,
+    "tol_h": 1.0,
+    "site": "Tigris camp"
+   },
+   "primary": true
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "sensitivity",
+   "operational": {
+    "timing": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "The local text has the OCR slip 'stafiva' for 'stativa'.",
+ "license_check": "edited: statement said 'two days after crossing the Tigris', a day interval the words do not give: 4.10.1 says the king kept a standing camp there for two days and ordered the march for the next day, and the eclipse sentence follows with 'Sed'. Reworded; the operational option never used the interval and is unchanged."
+}
+   CHECK exact | Sed prima fere vigilia | 4.10.2.1
+   CHECK exact | Biduo ibi stafiva rex habuit | 4.10.1.1
+   ROW [data/text/curtius-lat.tsv] 4.10.2.1 :: Sed prima fere vigilia luna deficiens primum nitorem sideris sui condidit, deinde sanguinis colore suffuso lumen omne foedavit, sollicitisque sub ipsum tanti discriminis casum ingens religio et ex ea formido quaedam incussa est.
+   ROW [data/text/curtius-lat.tsv] 4.10.1.1 :: Biduo ibi stafiva rex habuit: in proximum deinde pronuntiari iter iussit.
+
+====================================================================================================
+{
+ "set": "R-ARBELA",
+ "clue_id": "A-SICILY",
+ "event": "A1",
+ "kind": "other",
+ "feature": "moonrise-elsewhere",
+ "statement": "Pliny: the same eclipse was seen in Sicily as the Moon was rising.",
+ "licence_words": [
+  "eademque in Sicilia exoriens"
+ ],
+ "ref": [
+  "2.70.3"
+ ],
+ "text_file": [
+  "data/text/pliny-nh-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "sicily-box",
+   "reading": "the Moon rises at some site in Sicily while the umbral eclipse is in progress",
+   "justification": "as written; Sicily is named as a whole",
+   "operational": {
+    "moonrise_during_umbral": true,
+    "site_box": {
+     "lat": [
+      36.6,
+      38.3
+     ],
+     "lon": [
+      12.4,
+      15.7
+     ]
+    }
+   },
+   "primary": true
+  },
+  {
+   "option": "syracuse",
+   "reading": "the Moon rises at Syracuse while the umbral eclipse is in progress",
+   "justification": "a single Sicilian city",
+   "operational": {
+    "moonrise_during_umbral": true,
+    "site": {
+     "lat": 37.07,
+     "lon": 15.29
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "Pliny's sentence illustrates longitude and may be a computed illustration rather than a report",
+   "operational": {
+    "moonrise_during_umbral": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Pliny)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | eademque in Sicilia exoriens | 2.70.3
+   ROW [data/text/pliny-nh-lat.tsv] 2.70.3 :: Ideo defectus solis ac lunae vespertinos orientis incolae non sentiunt nec matutinos ad occasum habitantes, meridianos vero serius nobis illi. apud Arbilam Magni Alexandri victoria luna defecisse noctis secunda hora est prodita eademque in Sicilia exoriens. solis defectum Vipstano et Fonteio cos., qui fuere ante paucos annos, factum pridie kalendas Maias Campania hora diei inter septimam et octavam sensit, Corbulo dux in Armenia inter horam diei decimam et undecimam prodidit visum, circuitu globi alia aliis detegente et occultante. quod si plana esset terra, simul omnia apparerent cunctis noctesque non fierent inaequales; nam aeque aliis quam in medio sitis paria duodecim horarum intervalla cernerentur, quae nunc non in omni parte simili modo congruunt.
+
+====================================================================================================
+{
+ "set": "R-ARBELA",
+ "clue_id": "A-MONTH",
+ "event": "A1",
+ "kind": "other",
+ "feature": "calendar-date",
+ "statement": "Plutarch: the eclipse was in Boedromion, about the beginning of the Mysteries at Athens. Arrian: the battle was in Pyanepsion, in the same month in which the Moon was seen eclipsed.",
+ "licence_words": [
+  "τοῦ Βοηδρομιῶνος",
+  "περὶ τὴν τῶν μυστηρίων τῶν Ἀθήνησιν ἀρχήν",
+  "μηνὸς Πυανεψιῶνος",
+  "ἐν τῷ αὐτῷ μηνί, ἐν ὅτῳ ἡ σελήνη ἐκλιπὴς ἐφάνη"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0007.tlg047.perseus-grc2.31.4.1",
+  "urn:cts:greekLit:tlg0007.tlg047.perseus-grc2.31.4.1",
+  "urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.15.7.1",
+  "urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.15.7.1"
+ ],
+ "text_file": [
+  "data/text/plutarch-alexander-grc.tsv",
+  "data/text/plutarch-alexander-grc.tsv",
+  "data/text/arrian-anabasis-grc.tsv",
+  "data/text/arrian-anabasis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "either",
+   "reading": "the full moon of Attic month 3 or 4, with a free offset of -1, 0 or +1 lunation",
+   "justification": "the two sources disagree; the union is the weakest reading",
+   "operational": {
+    "attic_month": [
+     3,
+     4
+    ],
+    "lunation_offset": [
+     -1,
+     0,
+     1
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "boedromion",
+   "reading": "Attic month 3, offset -1..+1",
+   "justification": "Plutarch",
+   "operational": {
+    "attic_month": [
+     3
+    ],
+    "lunation_offset": [
+     -1,
+     0,
+     1
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "pyanepsion",
+   "reading": "Attic month 4, offset -1..+1",
+   "justification": "Arrian",
+   "operational": {
+    "attic_month": [
+     4
+    ],
+    "lunation_offset": [
+     -1,
+     0,
+     1
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "month not used",
+   "justification": "the Attic calendar's alignment is not given in these texts",
+   "operational": {
+    "attic_month": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "Operational Attic month: month 1 (Hekatombaion) begins at the first new moon after the summer solstice; month m is the m-th lunation from there. This rule is a modern reconstruction of the Athenian calendar [secondary: standard handbooks, e.g. Samuel, Greek and Roman Chronology, 1972], not in these texts; the free offset absorbs intercalation. Arrian's archon name ('ἐπὶ ἄρχοντος Ἀθηναίοις Ἀριστοφάνους') would need a modern archon list and is not used. Plutarch's 'eleventh night after the eclipse' dates the battle, not the sky, and is not used.",
+ "license_check": "ok"
+}
+   CHECK exact | τοῦ Βοηδρομιῶνος | urn:cts:greekLit:tlg0007.tlg047.perseus-grc2.31.4.1
+   CHECK exact | περὶ τὴν τῶν μυστηρίων τῶν Ἀθήνησιν ἀρχήν | urn:cts:greekLit:tlg0007.tlg047.perseus-grc2.31.4.1
+   CHECK exact | μηνὸς Πυανεψιῶνος | urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.15.7.1
+   CHECK exact | ἐν τῷ αὐτῷ μηνί, ἐν ὅτῳ ἡ σελήνη ἐκλιπὴς ἐφάνη | urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.15.7.1
+   ROW [data/text/plutarch-alexander-grc.tsv] urn:cts:greekLit:tlg0007.tlg047.perseus-grc2.31.4.1 :: ἡ μὲν οὖν σελήνη τοῦ Βοηδρομιῶνος ἐξέλιπε περὶ τὴν τῶν μυστηρίων τῶν Ἀθήνησιν ἀρχήν, ἑνδεκάτῃ δὲ ἀπὸ τῆς ἐκλείψεως νυκτὶ τῶν στρατοπέδων ἐν ὄψει γεγονότων, Δαρεῖος μὲν ἐν ὅπλοις συνεῖχε τὴν δύναμιν, ὑπὸ λαμπάδων ἐπιπορευόμενος τὰς τάξεις, Ἀλέξανδρος δὲ τῶν Μακεδόνων ἀναπαυομένων αὐτὸς πρὸ τῆς σκηνῆς μετὰ τοῦ μάντεως Ἀριστάνδρου διέτριβεν, ἱερουργίας τινὰς ἀπορρήτους ἱερουργούμενος καὶ τῷ Φόβῳ σφαγιαζόμενος.
+   ROW [data/text/arrian-anabasis-grc.tsv] urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.15.7.1 :: τοῦτο τὸ τέλος τῇ μάχῃ ταύτῃ ἐγένετο ἐπὶ ἄρχοντος Ἀθηναίοις Ἀριστοφάνους μηνὸς Πυανεψιῶνος· καὶ Ἀριστάνδρῳ ξυνέβη ἡ μαντεία ἐν τῷ αὐτῷ μηνί, ἐν ὅτῳ ἡ σελήνη ἐκλιπὴς ἐφάνη, τήν τε μάχην Ἀλεξάνδρῳ καὶ τὴν νίκην γενέσθαι.

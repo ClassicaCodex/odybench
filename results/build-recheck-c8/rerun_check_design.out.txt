@@ -1,0 +1,10 @@
+Appendix T items: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+qualifiers in 9.2: ['Q_BM', 'Q_H', 'Q_attain', 'Q_attain3a', 'Q_attain3b', 'Q_attain4', 'Q_contra', 'Q_dT', 'Q_exch', 'Q_exposure', 'Q_record', 'Q_score3a', 'Q_score3b', 'Q_slot', 'Q_tol']
+synthetic sets: 31 in 9.5, 31 in the trace
+section 13 rows: 1..68 (68)
+6732 lines; 86 numbered headings
+no problems found
+revision-7 checks: no problems found
+revision-8 checks: no problems found
+9.5 rows against the trace: every label and qualifier agrees
+check-of-revision-8 checks (12 Appendix T hits kept): no problems found

@@ -1,0 +1,123 @@
+{
+ "P_BM": {
+  "halves": {
+   "n": [
+    41,
+    35
+   ],
+   "H3": [
+    12,
+    3
+   ],
+   "H4": [
+    2,
+    0
+   ],
+   "fisher_H3": 0.0408,
+   "fisher_H4": 0.4965
+  },
+  "near_vs_far": {
+   "n": [
+    49,
+    27
+   ],
+   "H3": [
+    10,
+    5
+   ],
+   "H4": [
+    2,
+    0
+   ],
+   "fisher_H3": 1.0,
+   "fisher_H4": 0.5358
+  },
+  "pool_all": {
+   "n": 76,
+   "x3": 15,
+   "x4": 2,
+   "both": 1,
+   "p_both": 0.026,
+   "p_h4_only": 0.039,
+   "p_h3_only": 0.2208,
+   "p_min_h3_alone": 0.2078
+  },
+  "pool_pm700": {
+   "n": 49,
+   "x3": 10,
+   "x4": 2,
+   "both": 1,
+   "p_both": 0.04,
+   "p_h4_only": 0.06,
+   "p_h3_only": 0.24,
+   "p_min_h3_alone": 0.22
+  }
+ },
+ "P_MWRA": {
+  "halves": {
+   "n": [
+    25,
+    18
+   ],
+   "H3": [
+    8,
+    0
+   ],
+   "H4": [
+    1,
+    0
+   ],
+   "fisher_H3": 0.0132,
+   "fisher_H4": 1.0
+  },
+  "near_vs_far": {
+   "n": [
+    28,
+    15
+   ],
+   "H3": [
+    6,
+    2
+   ],
+   "H4": [
+    1,
+    0
+   ],
+   "fisher_H3": 0.6916,
+   "fisher_H4": 1.0
+  },
+  "pool_all": {
+   "n": 43,
+   "x3": 8,
+   "x4": 1,
+   "both": 0,
+   "p_both": 0.0227,
+   "p_h4_only": 0.0455,
+   "p_h3_only": 0.2273,
+   "p_min_h3_alone": 0.2045
+  },
+  "pool_pm700": {
+   "n": 28,
+   "x3": 6,
+   "x4": 1,
+   "both": 0,
+   "p_both": 0.0345,
+   "p_h4_only": 0.069,
+   "p_h3_only": 0.2759,
+   "p_min_h3_alone": 0.2414
+  }
+ },
+ "rule_pool_all": {
+  "p_H_min": 0.026,
+  "p_h4_only": 0.0455,
+  "p_h3_only": 0.2273,
+  "floor_without_H4": 0.2078
+ },
+ "rule_pool_pm700": {
+  "p_H_min": 0.04,
+  "p_h4_only": 0.069,
+  "p_h3_only": 0.2759,
+  "floor_without_H4": 0.2414
+ },
+ "note": "rough rows of r2; predicates as revision 4's heldout_attain.py via revision 5's heldout_strata.py; target removed before computation; null side only"
+}

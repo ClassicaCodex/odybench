@@ -1,0 +1,169 @@
+
+==============================================================================
+1. Coverage (kernel() preference order: shortest span first)
+==============================================================================
+data\ephem:
+  de441_m0135_eclipse.bsp      JD  1671793.5.. 1671913.5  -0135-02-14..-0135-06-14 (Julian)      0.3 yr  targets [3, 10, 301, 399]
+  de441_m0584_eclipse.bsp      JD  1507839.5.. 1507959.5  -0584-03-29..-0584-07-27 (Julian)      0.3 yr  targets [3, 10, 301, 399]
+  de441_m0708_eclipse.bsp      JD  1462598.5.. 1462718.5  -0708-05-18..-0708-09-15 (Julian)      0.3 yr  targets [3, 10, 301, 399]
+  de441_m0762_eclipse.bsp      JD  1442842.5.. 1442962.5  -0762-04-16..-0762-08-14 (Julian)      0.3 yr  targets [3, 10, 301, 399]
+  de441_m1320_m1030.bsp        JD  1238939.5.. 1344860.5  -1320-01-13..-1030-01-11 (Julian)    290.0 yr  targets [1, 2, 3, 4, 5, 6, 10, 199, 299, 301, 399]
+  de441_m2060_p0241.bsp        JD   968642.5.. 1809083.5  -2060-01-01..+0241-01-01 (Julian)   2301.0 yr  targets [1, 2, 3, 4, 5, 6, 10, 199, 299, 301, 399]
+data\ephem\de431:
+  de431_m0135_eclipse.bsp      JD  1671793.5.. 1671913.5  -0135-02-14..-0135-06-14 (Julian)      0.3 yr  targets [3, 10, 301, 399]
+  de431_m0647_eclipse.bsp      JD  1484776.5.. 1484896.5  -0647-02-05..-0647-06-05 (Julian)      0.3 yr  targets [3, 10, 301, 399]
+  de431_m0708_eclipse.bsp      JD  1462598.5.. 1462718.5  -0708-05-18..-0708-09-15 (Julian)      0.3 yr  targets [3, 10, 301, 399]
+  de431_m0762_eclipse.bsp      JD  1442842.5.. 1442962.5  -0762-04-16..-0762-08-14 (Julian)      0.3 yr  targets [3, 10, 301, 399]
+  de431_m1339_eclipse.bsp      JD  1231935.5.. 1232055.5  -1340-11-09..-1339-03-09 (Julian)      0.3 yr  targets [3, 10, 301, 399]
+  de431_p0001_p0241.bsp        JD  1721425.5.. 1809083.5  +0001-01-03..+0241-01-01 (Julian)    240.0 yr  targets [3, 10, 301, 399]
+  de431_m1320_m1030.bsp        JD  1238939.5.. 1344860.5  -1320-01-13..-1030-01-11 (Julian)    290.0 yr  targets [1, 2, 3, 10, 199, 299, 301, 399]
+  de431_m2060_p0001.bsp        JD   968642.5.. 1721425.5  -2060-01-01..+0001-01-03 (Julian)   2061.0 yr  targets [3, 10, 301, 399]
+
+==============================================================================
+2. kernel() choice, new rule vs old rule
+==============================================================================
+requests inside the old excerpts: 4500; same file chosen by both rules: 4500
+random 1-day requests in -2050..+230 that only the new excerpts can serve: 883 of 1000 (DE441 and DE431)
+
+==============================================================================
+3. Chebyshev records: narrow excerpts vs the long excerpt of the same ephemeris
+==============================================================================
+  de441_m1320_m1030.bsp      vs de441_m2060_p0241.bsp    1:same(13241) 2:same(6621) 3:same(6621) 4:same(3311) 5:same(3311) 6:same(3311) 10:same(6621) 301:same(26482) 399:same(26482) 199:same(1) 299:same(1)
+  de441_m0762_eclipse.bsp    vs de441_m2060_p0241.bsp    3:same(9) 10:same(9) 301:same(31) 399:same(31)
+  de441_m0584_eclipse.bsp    vs de441_m2060_p0241.bsp    3:same(9) 10:same(9) 301:same(31) 399:same(31)
+  de441_m0708_eclipse.bsp    vs de441_m2060_p0241.bsp    3:same(8) 10:same(8) 301:same(31) 399:same(31)
+  de441_m0135_eclipse.bsp    vs de441_m2060_p0241.bsp    3:same(8) 10:same(8) 301:same(31) 399:same(31)
+  de431_m1320_m1030.bsp      vs de431_m2060_p0001.bsp    299:absent 199:absent 399:same(26482) 301:same(26482) 10:same(6621) 3:same(6621) 2:absent 1:absent
+  de431_m0762_eclipse.bsp    vs de431_m2060_p0001.bsp    399:same(31) 301:same(31) 10:same(9) 3:same(9)
+  de431_m0708_eclipse.bsp    vs de431_m2060_p0001.bsp    399:same(31) 301:same(31) 10:same(8) 3:same(8)
+  de431_m0135_eclipse.bsp    vs de431_m2060_p0001.bsp    399:same(31) 301:same(31) 10:same(8) 3:same(8)
+  de431_m1339_eclipse.bsp    vs de431_m2060_p0001.bsp    399:same(31) 301:same(31) 10:same(9) 3:same(9)
+  de431_m0647_eclipse.bsp    vs de431_m2060_p0001.bsp    399:same(31) 301:same(31) 10:same(9) 3:same(9)
+
+==============================================================================
+4. Segment evaluation at random instants: narrow vs long excerpt
+==============================================================================
+  de441_m1320_m1030.bsp      max |difference| over all segments and 2,000 instants: 0.000e+00 km
+  de441_m0762_eclipse.bsp    max |difference| over all segments and 2,000 instants: 0.000e+00 km
+  de441_m0584_eclipse.bsp    max |difference| over all segments and 2,000 instants: 0.000e+00 km
+  de441_m0708_eclipse.bsp    max |difference| over all segments and 2,000 instants: 0.000e+00 km
+  de441_m0135_eclipse.bsp    max |difference| over all segments and 2,000 instants: 0.000e+00 km
+  de431_m1320_m1030.bsp      max |difference| over all segments and 2,000 instants: 0.000e+00 km
+  de431_m0762_eclipse.bsp    max |difference| over all segments and 2,000 instants: 0.000e+00 km
+  de431_m0708_eclipse.bsp    max |difference| over all segments and 2,000 instants: 0.000e+00 km
+  de431_m0135_eclipse.bsp    max |difference| over all segments and 2,000 instants: 0.000e+00 km
+  de431_m1339_eclipse.bsp    max |difference| over all segments and 2,000 instants: 0.000e+00 km
+  de431_m0647_eclipse.bsp    max |difference| over all segments and 2,000 instants: 0.000e+00 km
+
+==============================================================================
+5. Before/after: odybench.ephem results with the pre-task module vs now
+==============================================================================
+68/68 results identical to the last bit (e.g. altaz venus -1177-4-10 3.0h dt=smh2020 vondrak: (np.float64(2.905727086863252), np.float64(111.28357878544467)); local circumstances Ithaki -1177 DE431: (np.float64(1291264.2626132644), 1291263.932254468, 28543.0, 0.9837985283499402, 1.0598223190869358, 0.9879645805934824, False, False, 0.0, 1291264.209372053, 1291264.3168952442, 57.15894297928547, 172.80621796873874, np.float64(11.739096969856078), 87.98864146114788, -31.408737766309198))
+
+==============================================================================
+6. DE441 - DE431 Moon over the new span (expected +0.00335" T^3 in elongation, sect. 5.3)
+==============================================================================
+   epoch      T(cy)  conj. DE441-DE431 (s)  along-track (")  0.00335 T^3 (")  ratio | separation at +7 d (")
+   -1999    -39.99       +373.6             -218.9           -214.2       1.02 |    -197.2
+   -1500    -35.00       +276.6             -126.0           -143.6       0.88 |    -129.9
+   -1000    -30.00       +156.1              -93.3            -90.4       1.03 |     -81.5
+   -0500    -24.99        +99.2              -45.2            -52.3       0.86 |     -46.7
+   -0100    -21.00        +55.9              -27.6            -31.0       0.89 |     -27.0
+   +0100    -18.99        +40.6              -20.8            -23.0       0.90 |     -20.5
+   +0200    -17.99        +36.1              -16.6            -19.5       0.85 |     -16.7
+
+==============================================================================
+7. JPL Horizons spot checks over -1999..+200 (topocentric Ithaki, airless)
+==============================================================================
+body                       UT    dT_HZ |  astrom |  appRA*  appDec |      dAz      dEl |    elong d elong | GMST82-ours
+sun       -1999-06-12 02:30:0  46065.2 |   0.001 |   -1.45   -1.88 |   -51.40   -51.81 |   0.0000   +0.00 |       +79.5
+sun       -1999-06-12 03:00:0  46065.2 |   0.001 |   -1.45   -1.88 |   -48.49   -54.55 |   0.0000   +0.00 |       +79.5
+sun       -1999-06-12 03:30:0  46065.2 |   0.001 |   -1.45   -1.88 |   -45.86   -56.77 |   0.0000   +0.00 |       +79.5
+moon      -1999-06-12 02:30:0  46065.2 |   0.524 |   -1.99   -2.14 |   -53.99   -47.62 |   7.5779   -0.57 |       +79.5
+moon      -1999-06-12 03:00:0  46065.2 |   0.478 |   -1.93   -2.16 |   -50.97   -50.86 |   7.9296   -0.23 |       +79.5
+moon      -1999-06-12 03:30:0  46065.2 |   0.431 |   -1.86   -2.17 |   -48.13   -53.56 |   8.2716   -0.33 |       +79.5
+venus     -1999-06-12 02:30:0  46065.2 |   0.001 |   -1.50   -1.30 |   -47.69   -61.83 |  45.4644   +0.06 |       +79.5
+venus     -1999-06-12 03:00:0  46065.2 |   0.001 |   -1.50   -1.30 |   -48.65   -61.08 |  45.4664   +0.02 |       +79.5
+venus     -1999-06-12 03:30:0  46065.2 |   0.001 |   -1.50   -1.30 |   -50.21   -59.80 |  45.4684   +0.01 |       +79.5
+mercury   -1999-06-12 02:30:0  46065.2 |   0.002 |   -1.70   -1.80 |   -60.41   -40.67 |  19.3589   -0.01 |       +79.5
+mercury   -1999-06-12 03:00:0  46065.2 |   0.002 |   -1.70   -1.80 |   -57.01   -45.32 |  19.3381   +0.09 |       +79.5
+mercury   -1999-06-12 03:30:0  46065.2 |   0.002 |   -1.70   -1.80 |   -53.71   -49.19 |  19.3173   +0.03 |       +79.5
+sun       -1450-03-20 04:00:0  33810.0 |   0.000 |   +0.59   +0.30 |   -27.15   -34.06 |   0.0000   +0.00 |       +42.9
+sun       -1450-03-20 04:30:0  33810.0 |   0.000 |   +0.59   +0.30 |   -27.08   -34.12 |   0.0000   +0.00 |       +42.9
+sun       -1450-03-20 05:00:0  33810.0 |   0.000 |   +0.59   +0.30 |   -27.30   -33.94 |   0.0000   +0.00 |       +42.9
+moon      -1450-03-20 04:00:0  33810.0 |   0.061 |   +0.70   -0.35 |   -27.64   +34.07 | 173.8644   -0.11 |       +42.9
+moon      -1450-03-20 04:30:0  33810.0 |   0.029 |   +0.66   -0.35 |   -27.48   +34.15 | 173.9379   -0.05 |       +42.9
+moon      -1450-03-20 05:00:0  33810.0 |   0.027 |   +0.63   -0.36 |   -27.58   +34.02 | 174.0077   +0.06 |       +42.9
+venus     -1450-03-20 04:00:0  33810.0 |   0.000 |   +0.50   +0.48 |   -26.80   -32.68 |  20.9869   -0.07 |       +42.9
+venus     -1450-03-20 04:30:0  33810.0 |   0.000 |   +0.50   +0.48 |   -27.83   -31.82 |  20.9817   +0.07 |       +42.9
+venus     -1450-03-20 05:00:0  33810.0 |   0.000 |   +0.50   +0.48 |   -29.06   -30.69 |  20.9765   +0.18 |       +42.9
+mercury   -1450-03-20 04:00:0  33810.0 |   0.000 |   +0.68   +0.14 |   -29.57   -32.32 |  16.4652   +0.10 |       +42.9
+mercury   -1450-03-20 04:30:0  33810.0 |   0.000 |   +0.68   +0.14 |   -28.55   -33.22 |  16.4821   +0.12 |       +42.9
+mercury   -1450-03-20 05:00:0  33810.0 |   0.000 |   +0.68   +0.14 |   -27.83   -33.82 |  16.4990   +0.07 |       +42.9
+sun       -0600-09-22 16:00:0  18526.1 |   0.000 |   +2.45   -0.97 |    -9.75   +10.75 |   0.0000   +0.00 |       +11.8
+sun       -0600-09-22 16:30:0  18526.1 |   0.000 |   +2.45   -0.97 |    -9.73   +10.76 |   0.0000   +0.00 |       +11.8
+sun       -0600-09-22 17:00:0  18526.1 |   0.000 |   +2.45   -0.97 |    -9.81   +10.69 |   0.0000   +0.00 |       +11.8
+moon      -0600-09-22 16:00:0  18526.1 |   0.056 |   +2.48   -1.01 |   -11.32    +8.64 |  32.6225   +0.00 |       +11.8
+moon      -0600-09-22 16:30:0  18526.1 |   0.051 |   +2.47   -1.01 |   -10.82    +9.23 |  32.8465   -0.11 |       +11.8
+moon      -0600-09-22 17:00:0  18526.1 |   0.046 |   +2.46   -1.01 |   -10.38    +9.71 |  33.0793   -0.02 |       +11.8
+venus     -0600-09-22 16:00:0  18526.1 |   0.000 |   +2.50   -0.85 |    -9.68   +10.57 |  18.3611   -0.16 |       +11.8
+venus     -0600-09-22 16:30:0  18526.1 |   0.000 |   +2.50   -0.85 |    -9.98   +10.28 |  18.3558   +0.08 |       +11.8
+venus     -0600-09-22 17:00:0  18526.1 |   0.000 |   +2.50   -0.85 |   -10.36    +9.91 |  18.3506   +0.01 |       +11.8
+mercury   -0600-09-22 16:00:0  18526.1 |   0.000 |   +2.44   -0.99 |    -9.94   +10.57 |   7.0860   -0.02 |       +11.8
+mercury   -0600-09-22 16:30:0  18526.1 |   0.000 |   +2.44   -0.99 |    -9.81   +10.70 |   7.0983   -0.01 |       +11.8
+mercury   -0600-09-22 17:00:0  18526.1 |   0.000 |   +2.44   -0.99 |    -9.77   +10.73 |   7.1106   -0.06 |       +11.8
+sun       +0200-01-15 05:00:0   8456.9 |   0.000 |   +3.02   +0.19 |    -2.39    -2.85 |   0.0000   +0.00 |        +0.5
+sun       +0200-01-15 05:30:0   8456.9 |   0.000 |   +3.02   +0.20 |    -2.49    -2.76 |   0.0000   +0.00 |        +0.5
+sun       +0200-01-15 06:00:0   8456.9 |   0.000 |   +3.02   +0.20 |    -2.61    -2.65 |   0.0000   +0.00 |        +0.5
+moon      +0200-01-15 05:00:0   8456.9 |   0.004 |   +2.91   +0.75 |    -2.63    +2.55 | 137.3732   +0.14 |        +0.5
+moon      +0200-01-15 05:30:0   8456.9 |   0.005 |   +2.91   +0.74 |    -2.84    +2.31 | 137.6684   +0.08 |        +0.5
+moon      +0200-01-15 06:00:0   8456.9 |   0.006 |   +2.92   +0.74 |    -3.04    +2.04 | 137.9702   -0.13 |        +0.5
+venus     +0200-01-15 05:00:0   8456.9 |   0.000 |   +3.01   -0.33 |    -2.40    -2.83 |  22.8436   -0.17 |        +0.5
+venus     +0200-01-15 05:30:0   8456.9 |   0.000 |   +3.01   -0.33 |    -2.58    -2.67 |  22.8388   -0.12 |        +0.5
+venus     +0200-01-15 06:00:0   8456.9 |   0.000 |   +3.01   -0.33 |    -2.76    -2.48 |  22.8340   -0.12 |        +0.5
+mercury   +0200-01-15 05:00:0   8456.9 |   0.000 |   +3.02   -0.03 |    -2.38    -2.87 |   9.9243   +0.08 |        +0.5
+mercury   +0200-01-15 05:30:0   8456.9 |   0.000 |   +3.02   -0.03 |    -2.50    -2.76 |   9.9629   -0.08 |        +0.5
+mercury   +0200-01-15 06:00:0   8456.9 |   0.000 |   +3.02   -0.03 |    -2.64    -2.63 |  10.0014   +0.11 |        +0.5
+columns: Horizons TDB-UT used as our Delta-T (s); |ours - HZ| astrometric ICRF ("); apparent RA*/Dec of date ours(Vondrak) - HZ ("); az*/el ours - HZ ("); HZ S-O-T elongation (deg) and ours - HZ ("); IAU 1982 GMST minus our Vondrak-consistent GMST (").
+worst: astrometric 0.0022", Moon 0.524", apparent of date 3.03", elongation 0.57"
+
+==============================================================================
+8. Calendar: JPL Horizons' calendar dates vs odybench.calendar
+==============================================================================
+306/306 Horizons calendar dates reproduced (Julian calendar, astronomical years; Horizons prints 'b' + historical BC year); mismatches: []
+   Horizons 0452-Nov-14 06:00:00.000 = JD 1886468.750000000  ->  odybench.calendar +0452-11-14 06:00:00 UT (14 Nov AD 452, proleptic Julian)
+   Horizons 0467-Jan-01 06:00:00.000 = JD 1891629.750000000  ->  odybench.calendar +0467-01-01 06:00:00 UT (1 Jan AD 467, proleptic Julian)
+   Horizons 0467-Dec-19 06:00:00.000 = JD 1891981.750000000  ->  odybench.calendar +0467-12-19 06:00:00 UT (19 Dec AD 467, proleptic Julian)
+   Horizons 0471-Oct-21 06:00:00.000 = JD 1893383.750000000  ->  odybench.calendar +0471-10-21 06:00:00 UT (21 Oct AD 471, proleptic Julian)
+   Horizons 0488-Dec-05 06:00:00.000 = JD 1899638.750000000  ->  odybench.calendar +0488-12-05 06:00:00 UT (5 Dec AD 488, proleptic Julian)
+   Horizons 0492-Jun-28 06:00:00.000 = JD 1900939.750000000  ->  odybench.calendar +0492-06-28 06:00:00 UT (28 Jun AD 492, proleptic Julian)
+
+==============================================================================
+9. Stars: data/stars.json
+==============================================================================
+stars.json keys: ['alcyone', 'aldebaran', 'alnilam', 'alnitak', 'arcturus', 'bellatrix', 'bet_boo', 'betelgeuse', 'del01_tau', 'del_boo', 'dubhe', 'eps_boo', 'eps_tau', 'eta_boo', 'gam_boo', 'gam_tau', 'mintaka', 'rigel', 'saiph', 'sirius', 'tet02_tau']
+legacy HIP_STARS reproduced by stars.json (HIP, ra, dec, plx, pm, rv): True
+altitudes at Ithaki, -1177 Apr 10 03:00 UT: alcyone -16.8, aldebaran -29.0, alnilam -51.4, alnitak -52.5, arcturus +32.5, bellatrix -43.4, bet_boo +48.5, betelgeuse -44.4, del01_tau -26.8, del_boo +49.0, dubhe +22.5, eps_boo +40.5, eps_tau -26.0, eta_boo +26.3, gam_boo +42.4, gam_tau -28.0, mintaka -50.2, rigel -55.5, saiph -60.4, sirius -68.5, tet02_tau -28.9
+
+==============================================================================
+10. Summary
+==============================================================================
+  [PASS] DE441 long excerpt covers -2060-01-01..+241-01-01 (Julian), 11 targets  
+  [PASS] kernel(): new rule picks the old file for every request the old files serve  4500/4500
+  [PASS] kernel() implements the shortest-span rule  
+  [PASS] records of every narrow excerpt are bit-identical to the long excerpt's  
+  [PASS] positions from narrow and long excerpts are bit-identical  
+  [PASS] pre-task and current odybench.ephem give identical results  68/68
+  [PASS] DE441-DE431 Moon matches the dossier's 0.00335 T^3 law at conjunctions (ratio 0.8-1.2, -1999..+200)  ratios 1.02 0.88 1.03 0.86 0.89 0.90 0.85
+  [PASS] Horizons spot checks: astrometric Sun/Venus/Mercury < 0.01"  0.0022"
+  [PASS] Horizons spot checks: Moon astrometric < 3"  0.524"
+  [PASS] Horizons spot checks: elongation < 1"  0.57"
+  [PASS] Horizons spot checks spot_m1999_06_12: az/el within |GMST82 - ours| + 20"  78.1" vs |dGMST| 79.5"
+  [PASS] Horizons spot checks spot_m1450_03_20: az/el within |GMST82 - ours| + 20"  43.9" vs |dGMST| 42.9"
+  [PASS] Horizons spot checks spot_m0600_09_22: az/el within |GMST82 - ours| + 20"  14.5" vs |dGMST| 11.8"
+  [PASS] Horizons spot checks spot_p0200_01_15: az/el within |GMST82 - ours| + 20"  3.7" vs |dGMST| 0.5"
+  [PASS] calendar: Horizons dates reproduced  306/306
+  [PASS] stars.json reproduces ephem.HIP_STARS  
+  [PASS] every star key can be observed  
+
+17/17 passed; run time 5 s

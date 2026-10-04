@@ -1,0 +1,142 @@
+ALM-A.1 planet IX.10.3 | Mercury is an evening star on this day (4.5 equinoctial hours before midnight) and has NOT
+     * ge_after_within_j {"j_days": [7, 15, 30]}
+       ge_after_same_apparition {"bound": "same_apparition"}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+ALM-A.2 moon-phase IX.10.3 | The Moon stands close to Mercury (Mercury 1 1/6 deg to the east of the Moon's centre) at 4
+     * phase_class {"class": "young_crescent"}
+       positional {"tolerance_deg": [0.5, 1.0, 2.0]}
+       none null
+ALM-A.4 planet X.8.2 | Mars was at opposition (to the mean Sun, Ptolemy's 'ἀκρώνυκτος') about three days before t
+       opp_true_k {"k_days": [1, 2, 3]}
+     * opp_mean_k {"k_days": [1, 2, 3]}
+       none null
+ALM-A.5 moon-phase X.8.2 | At 3 equinoctial hours before midnight the Moon stands close to Mars (Mars 1 3/5 deg to th
+     * phase_class {"class": "near_full"}
+       positional {"tolerance_deg": [0.5, 1.0, 2.0]}
+       none null
+ALM-A.7 planet IX.9.4 | Mercury is a morning star at its greatest western (morning) elongation on this day (before
+     * ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       bm_mwra_k {"k_days": [1, 2, 3]}
+ALM-A.9 planet XI.2.2 | Jupiter is seen (sighted with the astrolabe) before sunrise, about 5 equinoctial hours aft
+     * visible_before_sunrise {"min_altitude_deg": [5]}
+       none null
+ALM-A.10 moon-phase XI.2.2 | Before sunrise (about 5 equinoctial hours after midnight) the Moon's centre has the same l
+     * phase_class {"class": "waning_crescent"}
+       positional {"tolerance_deg": [0.5, 1.0, 2.0]}
+       none null
+ALM-B.1 planet X.4.3 | Venus is a morning star on this day (4.75 equinoctial hours after midnight) and is already
+     * ge_before_within_j {"j_days": [7, 15, 30, 60]}
+       ge_before_same_apparition {"bound": "same_apparition"}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       bm_venus_lead {"lead_min": [60, 90, 120]}
+ALM-B.2 moon-phase X.4.3 | At 4 3/4 equinoctial hours after midnight the Moon's apparent centre, Venus and beta Sco s
+     * phase_class {"class": "waning_crescent"}
+       positional {"tolerance_deg": [0.5, 1.0, 2.0]}
+       none null
+ALM-B.5 moon-phase XI.6.2 | At 4 equinoctial hours before midnight Saturn stands about 1/2 deg to the east of the Moon
+     * phase_class {"class": "waxing_crescent"}
+       positional {"tolerance_deg": [0.5, 1.0, 2.0]}
+       none null
+ALM-B.7 moon-phase V.3.2 | The apparent Moon is about 99 deg west of the Sun (5.25 equinoctial hours before noon (aft
+       elongation_tol {"tolerance_deg": [3, 6, 12]}
+     * phase_class {"class": "last_quarter", "tolerance_days": [1, 2]}
+ALM-B.9 moon-phase VII.2.4 | The apparent Moon is about 92 deg east of the Sun (5.5 equinoctial hours after noon): firs
+       elongation_tol {"tolerance_deg": [3, 6, 12]}
+     * phase_class {"class": "first_quarter", "tolerance_days": [1, 2]}
+ALM-C.1 planet IX.8.3 | Mercury is a morning star (ἑῷος) at about its greatest western (morning) elongation on thi
+     * ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       bm_mwra_k {"k_days": [1, 2, 3]}
+ALM-C.3 eclipse-lunar IV.6.14 | A partial lunar eclipse in the night of this day: 1/2 + 1/3 of the diameter eclipsed, from
+       any_visible null
+     * magnitude {"umbral_mag_range": [[0.7, 0.95], [0.6, 1.0]]}
+       magnitude_and_time {"time_tol_h": [1, 2]}
+ALM-D.1 planet IX.7.4 | Mercury is an evening star at its greatest eastern (evening) elongation on this day (eveni
+     * ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+ALM-D.3 planet X.1.3 | Venus is an evening star at its greatest eastern (evening) elongation on this day (evening
+     * ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+ALM-E.1 planet X.3.2b | Venus is an evening star at its greatest eastern (evening) elongation on this day (evening
+     * ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+ALM-E.3 season III.1.10 | The spring equinox occurred on this day, about 1 equinoctial hour after noon.
+     * equinox_tol {"tolerance_days": [0.5, 1, 2]}
+       spring_broad {"tolerance_days": [10]}
+ALM-F.1 planet X.2.4 | Venus is an evening star at its greatest eastern (evening) elongation on this day (evening
+     * ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+ALM-F.3 planet X.1.6 | Venus is an evening star at its greatest eastern (evening) elongation on this day (evening
+     * ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+ALM-G.1 planet X.3.2a | Venus is a morning star (ἑῷος) at its greatest western (morning) elongation on this day; n
+     * ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       bm_venus_lead {"lead_min": [60, 90, 120]}
+ALM-G.3 planet IX.7.5 | Mercury is a morning star at its greatest western (morning) elongation on this day (before
+     * ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       bm_mwra_k {"k_days": [1, 2, 3]}
+ALM-H.1 planet IX.7.9 | Mercury is a morning star on this day (before dawn); Ptolemy files the record among observ
+     * visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       bm_mwra_k {"k_days": [1, 2, 3]}
+ALM-H.4 planet IX.7.11 | Mercury is an evening star on this day (evening); Ptolemy files the record among observati
+     * visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+ALM-H.8 planet IX.7.14 | Mercury is an evening star on this day (evening); Ptolemy files the record among observati
+     * visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+ALM-I.1 planet IX.10.6a | Mercury is a morning star on this day (before dawn) and has NOT yet reached its greatest w
+     * ge_after_within_j {"j_days": [7, 15, 30]}
+       ge_after_same_apparition {"bound": "same_apparition"}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+ALM-J.1 planet X.9.2 | Mars is a morning object (ἑῷος) on this day.
+     * visible_before_sunrise {"min_altitude_deg": [5]}
+ALM-J.4 planet X.4.6a | Venus is seen as a morning star at the twelfth (last) hour of the night; Ptolemy adds that
+     * ge_before_within_j {"j_days": [15, 30, 60]}
+       ge_before_same_apparition {"bound": "same_apparition"}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       bm_venus_lead {"lead_min": [60, 90, 120]}
+ALM-J.7 planet X.4.6b | Venus, four days after its conjunction with the star (previous row), stands about 4 2/3 de
+     * positional {"tolerance_deg": [0.5, 1.0, 2.0]}
+       none null
+ALM-K.1 planet IX.7.16 | Mercury is a morning star on this day (before dawn); Ptolemy files the record among observ
+     * visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       bm_mwra_k {"k_days": [1, 2, 3]}
+ALM-K.4 planet XI.3.2 | Jupiter is a morning object (ἑῷος) on this day.
+     * visible_before_sunrise {"min_altitude_deg": [5]}
+ALM-K.7 planet IX.7.15 | Mercury is a morning star on this day (before dawn); Ptolemy files the record among observ
+     * visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       bm_mwra_k {"k_days": [1, 2, 3]}
+ALM-L.1 planet X.1.5 | Venus is a morning star (ἑῷος) at its greatest western (morning) elongation on this day; n
+     * ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       bm_venus_lead {"lead_min": [60, 90, 120]}
+ALM-L.4 planet X.2.3 | Venus is a morning star (ἑῷος) at its greatest western (morning) elongation on this day; n
+     * ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+       bm_venus_lead {"lead_min": [60, 90, 120]}
+ALM-L.6 planet IX.9.3 | Mercury is an evening star at its greatest eastern (evening) elongation on this day (eveni
+     * ge_true_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       ge_mean_k {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+       visible_only {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}

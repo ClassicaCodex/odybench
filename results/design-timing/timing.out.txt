@@ -1,0 +1,5 @@
+# py results/design-timing/timing.py, run 2026-10-03 for DESIGN.md section 7.5
+new_moons 136 yr: 1682 23.0s
+venus altaz on 49673 times: 1.7s
+sun altaz on 49673 times: 1.7s
+venus altaz on 480000 times: 17.3s

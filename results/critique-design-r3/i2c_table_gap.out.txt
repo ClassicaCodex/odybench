@@ -1,0 +1,14 @@
+elements: C:\Projects\odybench\data\jsex\SEm1199.js
+continuous totality window (canon frame): 28801.02 - 29584.91 s; the 2.3 table used 28805 - 29580 s
+smh2020            mu  28576.9 sigma  720.0  P(grid window) 0.2939 (table 0.294)  P(continuous) 0.2971  difference +0.0031  vs table +0.0031
+smh2020_parabola   mu  28315.5 sigma  540.6  P(grid window) 0.1730 (table 0.173)  P(continuous) 0.1751  difference +0.0022  vs table +0.0021
+smh2016_parabola   mu  28996.6 sigma  540.6  P(grid window) 0.4982 (table 0.498)  P(continuous) 0.5030  difference +0.0048  vs table +0.0050
+em2006_canon       mu  28589.4 sigma 1007.7  P(grid window) 0.2525 (table 0.252)  P(continuous) 0.2552  difference +0.0027  vs table +0.0032
+mixture: grid 0.3044  continuous 0.3076  difference +0.0032
+
+1131 BC continuous totality window: 27049.07 - 28038.49 s; the 2.3 table used 27050 - 28035 s
+smh2020            P(grid window) 0.4938 (table 0.494)  P(continuous) 0.4959  vs table +0.0019
+smh2020_parabola   P(grid window) 0.6414 (table 0.641)  P(continuous) 0.6433  vs table +0.0023
+smh2016_parabola   P(grid window) 0.4431 (table 0.443)  P(continuous) 0.4459  vs table +0.0029
+em2006_canon       P(grid window) 0.4120 (table 0.412)  P(continuous) 0.4138  vs table +0.0018
+mixture: grid 0.4976  continuous 0.4997  difference +0.0021

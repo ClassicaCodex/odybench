@@ -1,0 +1,140 @@
+ALM-A.1 option ge_after_within_j justification:
+   OLD 'not yet at greatest elongation': the next greatest elongation on that side falls 0..j days later
+   NEW 'not yet at greatest elongation': the next greatest elongation on that side falls 0..j days later. The words ('μηδέπω … ἐληλυθότα') give no number of days: j (7/15/30) is the drafter's bound, an inference, not a stated interval; the unbounded literal reading is 'ge_after_same_apparition'
+ALM-I.1 option ge_after_within_j justification:
+   OLD 'not yet at greatest elongation': the next greatest elongation on that side falls 0..j days later
+   NEW 'not yet at greatest elongation': the next greatest elongation on that side falls 0..j days later. The words ('οὐδέπω … ἐληλύθει') give no number of days: j (7/15/30) is the drafter's bound, an inference, not a stated interval; the unbounded literal reading is 'ge_after_same_apparition'
+ALM-B.1 option ge_before_within_j justification:
+   OLD 'after greatest elongation': the last greatest elongation on that side fell 0..j days earlier
+   NEW 'after greatest elongation': the last greatest elongation on that side fell 0..j days earlier. The words ('μετὰ τὴν μεγίστην ἑῴαν ἀπόστασιν') give no number of days: j (7/15/30/60) is the drafter's bound, an inference, not a stated interval; the unbounded literal reading is 'ge_before_same_apparition'
+ALM-J.4 option ge_before_within_j justification:
+   OLD Ptolemy's 'παρεληλύθει ... τὴν μεγίστην ἑῴαν ἀπόστασιν' (his inference from the record four days later, not the observer's words)
+   NEW Ptolemy's 'παρεληλύθει ... τὴν μεγίστην ἑῴαν ἀπόστασιν' (his inference from the record four days later, not the observer's words), read as: the greatest morning elongation fell 0..j days earlier. The words ('παρεληλύθει … τὴν μεγίστην ἑῴαν ἀπόστασιν') give no number of days: j (15/30/60) is the drafter's bound, an inference, not a stated interval; the unbounded literal reading is 'ge_before_same_apparition'
+ALM-A.10 licence_words:
+   OLD μετὰ ε ὥρας ἔγγιστα ἰσημερινὰς τοῦ μεσονυκτίου … τῷ δὲ κέντρῳ τῆς σελήνης νοτιωτέρας οὔσης ἐξ ἴσου ἐφαίνετο
+   NEW πρὸ τῆς τοῦ ἡλίου ἀνατολῆς, τουτέστιν μετὰ ε ὥρας ἔγγιστα ἰσημερινὰς τοῦ μεσονυκτίου, ἐπειδήπερ ἡ μὲν μέση τοῦ ἡλίου πάροδος ἐπεῖχεν Καρκίνου μοίρας ῑϚ ῑᾱ … ὁ τοῦ Διὸς ἐπέχων ἐφαίνετο Διδύμων μοίρας ῑε U+2220 δ΄, τῷ δὲ κέντρῳ τῆς σελήνης νοτιωτέρας οὔσης ἐξ ἴσου ἐφαίνετο
+ALM-A.2 licence_words:
+   OLD τότε δὲ καὶ τοῦ κέντρου τῆς σελήνης ὑπελείπετο μοῖραν α καὶ ϛʹ … πρὸ δ U+2220ʹ ὡρῶν ἰσημερινῶν … μεσονυκτίου
+   NEW μηδέπω ἐπὶ τὴν μεγίστην ἑσπερίαν ἀπόστασιν ἐληλυθότα … τότε δὲ καὶ τοῦ κέντρου τῆς σελήνης ὑπελείπετο μοῖραν α καὶ ϛʹ … πρὸ δ U+2220ʹ ὡρῶν ἰσημερινῶν … μεσονυκτίου
+ALM-A.5 licence_words:
+   OLD πρὸ τριῶν ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου … καὶ τοῦ κέντρου τῆς σελήνης ἀπ- έχων ἐφαίνετο εἰς τὰ ἑπόμενα τὴν αὐτὴν μίαν μοῖραν καὶ γ πεμπτημόρια
+   NEW μετὰ γ ἔγγιστα ἡμέρας τῆς γ΄ ἀκρωνύκτου … πρὸ τριῶν ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου … καὶ τοῦ κέντρου τῆς σελήνης ἀπ- έχων ἐφαίνετο εἰς τὰ ἑπόμενα τὴν αὐτὴν μίαν μοῖραν καὶ γ πεμπτημόρια
+ALM-B.5 licence_words:
+   OLD πρὸ δ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου … καὶ τοῦ κέντρου δὲ τῆς σελήνης ὑπελείπετο ἥμισυ ἔγγιστα α μοίρας· τοσοῦτον γὰρ αὐτῆς ἀπεῖχεν τοῦ βορείου κέρατος
+   NEW πρὸ δ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου … τοῦ μέσου ἡλίου ἐπέχοντος Τοξότου μοίρας κη μα … καὶ τοῦ κέντρου δὲ τῆς σελήνης ὑπελείπετο ἥμισυ ἔγγιστα α μοίρας· τοσοῦτον γὰρ αὐτῆς ἀπεῖχεν τοῦ βορείου κέρατος … ὤφειλεν ἐπέχειν Ὑδροχόου μοίρας θ μ, ἡ δὲ ἐν Ἀλεξανδρείᾳ φαινομένη μοίρας η λδ
+ALM-B.5 option phase_class justification:
+   OLD a Moon still up at that hour and seen with a 'northern horn' is a crescent; with the Moon's and the mean Sun's longitudes Ptolemy states in the same sentence it is about 40 deg east of the Sun, a waxing crescent (inference)
+   NEW a Moon still up at that hour and seen with a 'northern horn' is a crescent; with the Moon's and the mean Sun's longitudes Ptolemy states in this row it is about 40 deg east of the Sun, a waxing crescent (inference)
+ALM-A.4 notes:
+   OLD 'ἔγγιστα' (about): the three days are approximate in the words
+   NEW 'ἔγγιστα' (about): the three days are approximate in the words. 'To the mean Sun' is Ptolemy's definition of his acronychal observations at 10.7.2: 'τριῶν ἀκρωνύκτων τῶν πρὸς τὴν μέσην τοῦ ἡλίου πάροδον διαμέτρων'
+ALM-J.2 licence_words:
+   OLD τῷ βορείῳ μετώπῳ τοῦ Σκορπίου ἐδόκει ἐπιπροσθετηκέναι
+   NEW ἑῷος ὁ τοῦ Ἄρεως τῷ βορείῳ μετώπῳ τοῦ Σκορπίου ἐδόκει ἐπιπροσθετηκέναι
+ALM-K.5 licence_words:
+   OLD ἐπεκάλυψεν τὸν νότιον Ὄνον
+   NEW ἑῷος ἐπεκάλυψεν τὸν νότιον Ὄνον
+ALM-J.5 licence_words:
+   OLD κατειληφὼς τὸν ἀντικείμενον τῷ Προτρυγητῆρι ἀκριβῶς
+   NEW κατειληφὼς τὸν ἀντικείμενον τῷ Προτρυγητῆρι ἀκριβῶς … ὁ καθʼ ἡμιᾶς μετὰ τὸν ἐπʼ ἄκρας τῆς νοτίου πτέρυγος τῆς Παρθένου … Παρθένου μοίρας η δ΄
+ALM-D.4 licence_words:
+   OLD προηγούμενος τοῦ μέσου τῆς Πλειάδος τὸ τῆς Πλειάδος μῆκος· ἐδόκει δὲ καὶ μικρῷ νοτιώτερος αὐτὴν παραπορεύεσθαι
+   NEW προηγούμενος τοῦ μέσου τῆς Πλειάδος τὸ τῆς Πλειάδος μῆκος· ἐδόκει δὲ καὶ μικρῷ νοτιώτερος αὐτὴν παραπορεύεσθαι … τὸ δὲ μῆκος αὐτῆς α U+2220΄ ἐστιν ἔγγιστα μοίρας
+ALM-D.4 option positional justification:
+   OLD the stated offsets in longitude/latitude hold within the tolerance (unit conventions in notes)
+   NEW the stated offset in longitude holds within the tolerance: west of the middle of the Pleiades by one Pleiad length, 1 1/2 deg by Ptolemy's value in this row. Latitude: the words give only the side ('μικρῷ νοτιώτερος', a little to the south) and no amount, so only 'south of' is tested
+ALM-B.2 licence_words:
+   OLD τοῦ δὲ κέντρου τῆς σελήνης προηγεῖτο ἡμιόλιον, οὗ ὑπελείπετο τοῦ βορειοτάτου τῶν ἐν τῷ μετώπῳ … ὁ δὲ χρόνος ἦν μετὰ δ U+2220΄ δ΄ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου
+   NEW τὸν τῆς Ἀφροδίτης ἀστέρα μετὰ τὴν μεγίστην ἑῴαν ἀπόστασιν … μεταξὺ καὶ ἐπʼ εὐθείας ἦν τῷ τε βορειοτάτῳ τῶν ἐν τῷ μετώπῳ τοῦ Σκορπίου καὶ τῷ φαινομένῳ κέντρῳ τῆς σελήνης, τοῦ δὲ κέντρου τῆς σελήνης προηγεῖτο ἡμιόλιον, οὗ ὑπελείπετο τοῦ βορειοτάτου τῶν ἐν τῷ μετώπῳ … ὁ δὲ χρόνος ἦν μετὰ δ U+2220΄ δ΄ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου
+ALM-B.2 statement:
+   OLD At 4 3/4 equinoctial hours after midnight the Moon's apparent centre, Venus and beta Sco stand in one line, Venus just west of the Moon.
+   NEW At 4 3/4 equinoctial hours after midnight Venus stands between beta Sco and the Moon's apparent centre, in line with them, and west of the Moon's centre by 1 1/2 times the amount by which it is east of beta Sco (the words give this ratio, not a distance).
+ALM-B.2 option phase_class justification:
+   OLD Venus is a morning star past greatest elongation, so a Moon beside it before dawn is waning, roughly a crescent 40-50 deg west of the Sun (my inference)
+   NEW Venus is a morning star past its greatest elongation, which never exceeds about 47 deg, so a Moon beside it lies west of the Sun by less than about 47 deg: a waning crescent (drafter's inference; it needs no time of day)
+ALM-B.2 option positional operational:
+   OLD {"tolerance_deg": [0.5, 1.0, 2.0]}
+   NEW {"relation": "moon_app_lon - venus_lon = 1.5 * (venus_lon - star_lon), with venus_lon between star_lon and moon_app_lon", "star": "beta Sco", "tolerance_deg": [0.5, 1.0, 2.0]}
+ALM-B.2 option positional justification:
+   OLD the stated body-Moon offset in longitude holds within the tolerance (topocentric)
+   NEW the words state no Venus-Moon distance, only a ratio ('τοῦ δὲ κέντρου τῆς σελήνης προηγεῖτο ἡμιόλιον, οὗ ὑπελείπετο τοῦ βορειοτάτου'): in longitude, (Moon's apparent centre - Venus) = 1 1/2 x (Venus - beta Sco), Venus between them; the relation holds within the tolerance (topocentric Moon)
+ALM-B.2 notes:
+   OLD Venus preceded (was west of) the Moon's centre by 1 1/2 times its distance east of beta Sco; with Ptolemy's own longitudes (Venus Scorpius 6;30, beta Sco 6;20 in 10.9.2, Moon 6;45) that is about 1/4 deg
+   NEW Venus preceded (was west of) the Moon's centre by 1 1/2 times its distance east of beta Sco; with Ptolemy's own longitudes (Venus Scorpius 6;30, beta Sco 6;20 in 10.9.2, Moon 6;45) that is about 1/4 deg. That 1/4 deg is derived from Ptolemy's computed lunar longitude: it is not a stated offset and no option uses it
+ALM-C.3 licence_words:
+   OLD ἐξέλειπεν ἀπʼ ἄρκτων τὸ U+2220ʹ καὶ γʹ τῆς διαμέτρου … τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι πρὸ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου
+   NEW τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι πρὸ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου· καὶ ἐξέλειπεν ἀπʼ ἄρκτων τὸ U+2220ʹ καὶ γʹ τῆς διαμέτρου
+ALM-C.3 option magnitude justification:
+   OLD 5/6 of the diameter, from the north
+   NEW 5/6 (1/2 + 1/3) of the diameter eclipsed; this option tests the magnitude only (the side, 'ἀπʼ ἄρκτων', is tested by 'magnitude_and_side')
+ALM-C.3 option magnitude_and_time operational:
+   OLD {"time_tol_h": [1, 2]}
+   NEW {"umbral_mag_range": [[0.7, 0.95], [0.6, 1.0]], "time_tol_h": [1, 2]}
+ALM-C.3 option magnitude_and_time justification:
+   OLD plus the stated mid-eclipse time
+   NEW the magnitude ranges of 'magnitude' plus the stated mid-eclipse time (Ptolemy's computed time, 'ἐπελογισάμεθα')
+ALM-C.3 option magnitude_and_side: ADDED (non-primary)
+ALM-D.3 statement:
+   OLD Venus is an evening star at its greatest eastern (evening) elongation on this day (evening).
+   NEW Venus is an evening star (ἑσπέριος) at its greatest eastern (evening) elongation on this day; no hour is stated.
+ALM-D.3 notes:
+   OLD the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates)
+   NEW the text also gives a zodiacal longitude and an elongation in degrees; they are NOT used (B&M's clue grammar has no coordinates). The record has no hour or time word: 'ἑσπέριος' (as an evening star) places the sighting in the evening part of the night it is dated to, which fixes its civil day (the set's +35; a pre-dawn placement would give +36)
+ALM-E.3 statement:
+   OLD The spring equinox occurred on this day, about 1 equinoctial hour after noon.
+   NEW The spring equinox occurred on this day, about one hour after noon (the words do not say 'equinoctial'; on an equinox day seasonal and equinoctial hours are equal).
+ALM-H.6 statement:
+   OLD Mercury relative to a named star on this day: seemed, as it passed, to stand more than 3 moons (>1.5 deg) south of the common star (beta Tau).
+   NEW Mercury relative to a named star: it seemed that, in passing the common star (beta Tau), it would stand more than 3 moons (>1.5 deg) south of it ('ἀφέξειν' is future: the observer's expectation for the passage, not a separation measured on this day).
+ALM-H.6 option positional justification:
+   OLD the stated offsets in longitude/latitude hold within the tolerance (unit conventions in notes)
+   NEW Mercury's ecliptic latitude is more than 1.5 deg (3 moons) south of beta Tau's, within the tolerance, tested on this day: a stand-in for the separation at passing that the words describe (drafter's approximation)
+ALM-H.6 notes:
+   OLD seemed, as it passed, to stand more than 3 moons (>1.5 deg) south of the common star (beta Tau). The planet is not named in this row: the chapter heading 'τοῦ τοῦ Ἑρμοῦ ἀστέρος' (9.7.1) names it.
+   NEW it seemed that, in passing the common star (beta Tau), it would stand more than 3 moons (>1.5 deg) south of it ('ἀφέξειν', future). The planet is not named in this row: the chapter heading 'τοῦ τοῦ Ἑρμοῦ ἀστέρος' (9.7.1) names it.
+ALM-B.9 notes:
+   OLD the licence words also give the Sun's zodiacal longitude, a season statement that is NOT used here (no coordinates in the B&M grammar)
+   NEW the licence words also give the Sun's zodiacal longitude, a season statement that is NOT used here (no coordinates in the B&M grammar). '9β' in the licence is the numeral ϙβ (92), the export printing the koppa as the digit 9; Ptolemy's own reduction in the row confirms it (the Moon's longitude he derives exceeds the Sun's by 92 1/8 deg)
+ALM-C.2 notes:
+   OLD interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+   NEW interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters. The anchor record IX.8.3 has no hour word: 'ἑῷος' (morning star) places it in the pre-dawn part of the night it is dated to, giving +17 (an evening placement would give +18). Ptolemy's mean-Sun figure for IX.8.3 and true-Sun figure for the eclipse imply 17.72 days between the two instants against 17.75 from the dates (results/license-check-almagest/r2/interval_check.txt)
+ALM-D.2 notes:
+   OLD interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+   NEW interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters. X.1.3 has no hour word: 'ἑσπέριος' (evening star) places it in the evening part of its dated night, giving +35 (a pre-dawn placement would give +36); Ptolemy's mean-Sun figures in the two rows imply 35.00 days (results/license-check-almagest/r2/interval_check.txt)
+ALM-G.2 notes:
+   OLD interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+   NEW interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters. The anchor X.3.2a has no hour word: 'ἑῷος' places it in the pre-dawn part of its dated night, giving +106 (an evening placement would give +107); Ptolemy's mean-Sun figures imply 106.02 days (results/license-check-almagest/r2/interval_check.txt)
+ALM-L.3 notes:
+   OLD interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+   NEW interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters. Neither record has an hour word: 'ἑῷος' places each in the pre-dawn part of its dated night; Ptolemy's mean-Sun figures imply 585.95 days (results/license-check-almagest/r2/interval_check.txt)
+ALM-L.5 notes:
+   OLD interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters
+   NEW interval computed by exact Egyptian-calendar arithmetic (365-day year, 30-day months, 5 epagomenal days) from the dates the text states; no modern date enters. The anchor X.1.5 has no hour word: 'ἑῷος' places it in the pre-dawn part of its dated night; to the evening record IX.9.3 Ptolemy's mean-Sun figures imply 996.53 days against 996.58 from the dates (results/license-check-almagest/r2/interval_check.txt)
+rules_applied[1] amended (exceptions listed)
+conventions.licence_words: note on the two spellings of the half sign
+
+rows edited this round: 24 of 72
+  ALM-A.1 | edited: the j-day option (primary) did not say that its bound is not in the words; 'μηδέπω … ἐληλυθότα' gives 
+  ALM-A.2 | edited: the statement's 'while Mercury is an evening star', on which the primary phase_class inference (young 
+  ALM-A.4 | edited: notes only: the statement's 'to the mean Sun' rests on a definition in another row; quoted it (10.7.2 
+  ALM-A.5 | edited: the statement's 'about three days after Mars' opposition', a day interval on which the primary phase_c
+  ALM-A.10 | edited: (1) the statement's 'Before sunrise' had no quoted words (the licence began at 'μετὰ ε ὥρας'); the lic
+  ALM-B.1 | edited: the j-day option (primary) did not say that its bound is not in the words; 'μετὰ τὴν μεγίστην ἑῴαν ἀπό
+  ALM-B.2 | edited: (1) the 'positional' option tested 'the stated body-Moon offset', but the words state no Venus-Moon di
+  ALM-B.5 | edited: the primary phase_class (waxing crescent) rests on the Moon's apparent longitude and the mean Sun's, b
+  ALM-B.9 | edited: notes only: the licence's '9β' is the numeral ϙβ = 92 with the koppa printed as the digit 9; recorded,
+  ALM-C.2 | edited: notes only: recorded that the civil day of the hourless anchor IX.8.3 comes from 'ἑῷος' (pre-dawn part
+  ALM-C.3 | edited: (1) the licence's two fragments were out of text order (the time clause precedes the magnitude clause)
+  ALM-D.2 | edited: notes only: recorded that the civil day of the hourless record X.1.3 comes from 'ἑσπέριος' and that Pt
+  ALM-D.3 | edited: the statement's '(evening)' as the time of the sighting: the row has no hour or time word, only 'ἑσπέρ
+  ALM-D.4 | edited: the statement's '(Ptolemy: about 1 1/2 deg)' had no quoted words; added 'τὸ δὲ μῆκος αὐτῆς α U+2220΄ ἐ
+  ALM-E.3 | edited: the statement said '1 equinoctial hour'; the words are 'μετὰ μίαν ὥραν ἔγγιστα τῆς μεσημβρίας' (about 
+  ALM-G.2 | edited: notes only: recorded that the civil day of the hourless anchor X.3.2a comes from 'ἑῷος' and that Ptole
+  ALM-H.6 | edited: the statement read the future infinitive 'ἀφέξειν' as a separation measured on the day; the words give
+  ALM-I.1 | edited: the j-day option (primary) did not say that its bound is not in the words; 'οὐδέπω … ἐληλύθει' gives n
+  ALM-J.2 | edited: the statement's '(morning)' had no quoted words; the licence now starts at 'ἑῷος ὁ τοῦ Ἄρεως' (same ro
+  ALM-J.4 | edited: the j-day option (primary) did not say that its bound is not in the words; 'παρεληλύθει … τὴν μεγίστην
+  ALM-J.5 | edited: the statement's identification (Ptolemy: the star after the tip of Virgo's southern wing, at Virgo 8 1
+  ALM-K.5 | edited: the statement's 'morning' had no quoted words; the licence now starts at 'ἑῷος' (same row, contiguous)
+  ALM-L.3 | edited: notes only: recorded that the civil days of the two hourless records come from 'ἑῷος' and that Ptolemy
+  ALM-L.5 | edited: notes only: recorded that the civil day of the hourless anchor X.1.5 comes from 'ἑῷος' and that Ptolem

@@ -1,0 +1,809 @@
+#### SET R-THUC
+-- observer_place {"events": ["T1"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "unstated; site forks in clue T1-SITE"}
+-- observer_place {"events": ["T2"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "unstated; site forks in clue T2-SITE"}
+-- observer_place {"events": ["T3"], "place": "the Athenian camp at Syracuse", "licence_words": ["ἐς τὰς Συρακούσας", "ἐκ τοῦ στρατοπέδου"], "ref": ["urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.50.1.1", "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.50.3.1"], "text_file": ["data/text/thucydides-grc.tsv", "data/text/thucydides-grc.tsv"], "search_coordinates": {"lat": 37.07, "lon": 15.29}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+   CHECK exact | ἐς τὰς Συρακούσας | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.50.1.1
+   CHECK exact | ἐκ τοῦ στρατοπέδου | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.50.3.1
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T1-ECL",
+ "event": "T1",
+ "kind": "eclipse-solar",
+ "feature": "occurrence",
+ "statement": "T1: a solar eclipse that ended in view ('filled out again'): last contact before sunset at the observer, Sun above the horizon during the eclipse.",
+ "licence_words": [
+  "ὁ ἥλιος ἐξέλιπε",
+  "καὶ πάλιν ἀνεπληρώθη"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1",
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv",
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "end-seen",
+   "reading": "Sun above the horizon at last contact",
+   "justification": "'πάλιν ἀνεπληρώθη': the refilling was seen",
+   "operational": {
+    "last_contact_sun_up": true
+   },
+   "primary": true
+  },
+  {
+   "option": "none",
+   "reading": "only some phase visible",
+   "justification": "sensitivity",
+   "operational": {
+    "last_contact_sun_up": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ὁ ἥλιος ἐξέλιπε | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1
+   CHECK exact | καὶ πάλιν ἀνεπληρώθη | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1 :: τοῦ δ’ αὐτοῦ θέρους νουμηνίᾳ κατὰ σελήνην, ὥσπερ καὶ μόνον δοκεῖ εἶναι γίγνεσθαι δυνατόν, ὁ ἥλιος ἐξέλιπε μετὰ μεσημβρίαν καὶ πάλιν ἀνεπληρώθη, γενόμενος μηνοειδὴς καὶ ἀστέρων τινῶν ἐκφανέντων.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T1-PHASE",
+ "event": "T1",
+ "kind": "moon-phase",
+ "feature": "new-moon",
+ "statement": "T1 on the new-moon day by the Moon ('νουμηνίᾳ κατὰ σελήνην'); Thucydides adds that this is the only time an eclipse seems possible.",
+ "licence_words": [
+  "νουμηνίᾳ κατὰ σελήνην, ὥσπερ καὶ μόνον δοκεῖ εἶναι γίγνεσθαι δυνατόν"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "Automatically true of any solar eclipse; recorded for completeness, adds no constraint.",
+ "license_check": "ok"
+}
+   CHECK exact | νουμηνίᾳ κατὰ σελήνην, ὥσπερ καὶ μόνον δοκεῖ εἶναι γίγνεσθαι δυνατόν | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1 :: τοῦ δ’ αὐτοῦ θέρους νουμηνίᾳ κατὰ σελήνην, ὥσπερ καὶ μόνον δοκεῖ εἶναι γίγνεσθαι δυνατόν, ὁ ἥλιος ἐξέλιπε μετὰ μεσημβρίαν καὶ πάλιν ἀνεπληρώθη, γενόμενος μηνοειδὴς καὶ ἀστέρων τινῶν ἐκφανέντων.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T1-TIME",
+ "event": "T1",
+ "kind": "time-of-day",
+ "feature": "eclipse-timing",
+ "statement": "T1 'after midday'.",
+ "licence_words": [
+  "μετὰ μεσημβρίαν"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "max-pm",
+   "reading": "maximum eclipse after local apparent noon (LAT > 12 h) at the observer",
+   "justification": "the eclipse as a whole is placed after midday",
+   "operational": {
+    "max_LAT_h": [
+     12.0,
+     null
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "start-pm",
+   "reading": "first contact after local apparent noon",
+   "justification": "stricter: the whole eclipse after midday",
+   "operational": {
+    "first_contact_LAT_h": [
+     12.0,
+     null
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "no timing",
+   "justification": "sensitivity",
+   "operational": {
+    "timing": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | μετὰ μεσημβρίαν | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1 :: τοῦ δ’ αὐτοῦ θέρους νουμηνίᾳ κατὰ σελήνην, ὥσπερ καὶ μόνον δοκεῖ εἶναι γίγνεσθαι δυνατόν, ὁ ἥλιος ἐξέλιπε μετὰ μεσημβρίαν καὶ πάλιν ἀνεπληρώθη, γενόμενος μηνοειδὴς καὶ ἀστέρων τινῶν ἐκφανέντων.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T1-SHAPE",
+ "event": "T1",
+ "kind": "eclipse-solar",
+ "feature": "magnitude",
+ "statement": "T1 'became crescent-shaped'.",
+ "licence_words": [
+  "γενόμενος μηνοειδὴς"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "crescent-max",
+   "reading": "the greatest phase was a crescent: 0.5 <= magnitude < 1.0 at the observer (magnitude = fraction of the solar diameter covered)",
+   "justification": "a crescent needs more than half the diameter covered (drafter's geometry); a total eclipse would have been described as such",
+   "operational": {
+    "smag": [
+     0.5,
+     1.0
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "crescent-passed",
+   "reading": "magnitude >= 0.5; totality not excluded",
+   "justification": "a crescent is also passed through on the way to totality",
+   "operational": {
+    "smag": [
+     0.5,
+     null
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "magnitude unconstrained",
+   "justification": "sensitivity",
+   "operational": {
+    "smag": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | γενόμενος μηνοειδὴς | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1 :: τοῦ δ’ αὐτοῦ θέρους νουμηνίᾳ κατὰ σελήνην, ὥσπερ καὶ μόνον δοκεῖ εἶναι γίγνεσθαι δυνατόν, ὁ ἥλιος ἐξέλιπε μετὰ μεσημβρίαν καὶ πάλιν ἀνεπληρώθη, γενόμενος μηνοειδὴς καὶ ἀστέρων τινῶν ἐκφανέντων.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T1-DARK",
+ "event": "T1",
+ "kind": "darkness",
+ "feature": "stars-visible",
+ "statement": "'some stars having appeared'.",
+ "licence_words": [
+  "ἀστέρων τινῶν ἐκφανέντων"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "X4",
+   "reading": "magnitude >= 0.60 at the observer",
+   "justification": "the design's darkness-wording threshold (DESIGN 3.1 class X4, set from Hdt. 9.10 and Plut. Pel. 31)",
+   "operational": {
+    "smag": [
+     0.6,
+     null
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "X3",
+   "reading": "magnitude >= 0.95",
+   "justification": "the design's near-total class (DESIGN 3.1 X3)",
+   "operational": {
+    "smag": [
+     0.95,
+     null
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "sensitivity",
+   "operational": {
+    "smag": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "Only 'some' stars, so the drafter takes the weaker threshold as primary.",
+ "license_check": "ok"
+}
+   CHECK exact | ἀστέρων τινῶν ἐκφανέντων | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1 :: τοῦ δ’ αὐτοῦ θέρους νουμηνίᾳ κατὰ σελήνην, ὥσπερ καὶ μόνον δοκεῖ εἶναι γίγνεσθαι δυνατόν, ὁ ἥλιος ἐξέλιπε μετὰ μεσημβρίαν καὶ πάλιν ἀνεπληρώθη, γενόμενος μηνοειδὴς καὶ ἀστέρων τινῶν ἐκφανέντων.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T1-SEASON",
+ "event": "T1",
+ "kind": "season",
+ "feature": "half-year",
+ "statement": "T1 in the same summer as the events of 2.19-2.27 (the first summer of the war).",
+ "licence_words": [
+  "τοῦ δ’ αὐτοῦ θέρους"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "half-year",
+   "reading": "Sun's tropical longitude in [0, 180] deg (between the equinoxes)",
+   "justification": "Thucydides counts by summers and winters, each half the year (5.20.3 'ἐξ ἡμισείας ἑκατέρου τοῦ ἐνιαυτοῦ'); the drafter centres the summer half on the summer solstice",
+   "operational": {
+    "sun_lon_deg": [
+     0.0,
+     180.0
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "campaign",
+   "reading": "Sun's tropical longitude in [330, 225] deg (wrapping through 0)",
+   "justification": "the summer begins 'ἅμα ἦρι ἀρχομένῳ' (2.2.1) and runs to the onset of winter; this allows a summer longer than half the year (drafter's inference)",
+   "operational": {
+    "sun_lon_deg": [
+     330.0,
+     225.0
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "no season constraint",
+   "justification": "sensitivity: drop the season",
+   "operational": {
+    "season": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "Narrative order (after the invasion of 2.19, which came about 80 days after the attack on Plataea at the start of spring) is not used; it would be an inference from order, not a statement about the eclipse.",
+ "license_check": "ok"
+}
+   CHECK exact | τοῦ δ’ αὐτοῦ θέρους | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.28.1.1 :: τοῦ δ’ αὐτοῦ θέρους νουμηνίᾳ κατὰ σελήνην, ὥσπερ καὶ μόνον δοκεῖ εἶναι γίγνεσθαι δυνατόν, ὁ ἥλιος ἐξέλιπε μετὰ μεσημβρίαν καὶ πάλιν ἀνεπληρώθη, γενόμενος μηνοειδὴς καὶ ἀστέρων τινῶν ἐκφανέντων.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T2-ECL",
+ "event": "T2",
+ "kind": "eclipse-solar",
+ "feature": "magnitude",
+ "statement": "T2: 'some eclipse of the Sun' (ἐκλιπές τι), about the new moon. The magnitude is not stated: the primary option reads 'τι' as 'partial', the alternative leaves the magnitude open.",
+ "licence_words": [
+  "τοῦ τε ἡλίου ἐκλιπές τι ἐγένετο περὶ νουμηνίαν"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.4.52.1.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "partial",
+   "reading": "0 < magnitude < 1.0 at the observer",
+   "justification": "'ἐκλιπές τι', some eclipsing: not described as total or dark",
+   "operational": {
+    "smag": [
+     0.0,
+     1.0
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "any",
+   "reading": "any magnitude > 0",
+   "justification": "'τι' read as indefinite, not as 'small'",
+   "operational": {
+    "smag": [
+     0.0,
+     null
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "'περὶ νουμηνίαν' is automatically true of a solar eclipse. The earthquake 'τοῦ αὐτοῦ μηνὸς ἱσταμένου' is not an astronomical clue and is not used.",
+ "license_check": "edited: statement asserted 'partial' as though the text said so; the words give only 'ἐκλιπές τι'. Reworded so that the upper bound shows as a reading (options 'partial' and 'any', both unchanged)."
+}
+   CHECK exact | τοῦ τε ἡλίου ἐκλιπές τι ἐγένετο περὶ νουμηνίαν | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.4.52.1.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.4.52.1.1 :: τοῦ δ’ ἐπιγιγνομένου θέρους εὐθὺς τοῦ τε ἡλίου ἐκλιπές τι ἐγένετο περὶ νουμηνίαν καὶ τοῦ αὐτοῦ μηνὸς ἱσταμένου ἔσεισεν.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T2-SEASON",
+ "event": "T2",
+ "kind": "season",
+ "feature": "early-summer",
+ "statement": "T2 'right at the start of the following summer'.",
+ "licence_words": [
+  "τοῦ δ’ ἐπιγιγνομένου θέρους εὐθὺς"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.4.52.1.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "early",
+   "reading": "Sun's tropical longitude in [330, 60] deg (wrapping): the first two months or so of a summer that begins with spring",
+   "justification": "'εὐθύς' at the head of the summer, and the summer begins 'ἅμα ἦρι ἀρχομένῳ' (2.2.1). The 330 deg start (about a month before the equinox) is the drafter's placement of 'the beginning of spring', as in the 'campaign' option; the text gives no longitude. The two-month width is also the drafter's.",
+   "operational": {
+    "sun_lon_deg": [
+     330.0,
+     60.0
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "half-year",
+   "reading": "Sun's tropical longitude in [0, 180] deg (between the equinoxes)",
+   "justification": "Thucydides counts by summers and winters, each half the year (5.20.3 'ἐξ ἡμισείας ἑκατέρου τοῦ ἐνιαυτοῦ'); the drafter centres the summer half on the summer solstice",
+   "operational": {
+    "sun_lon_deg": [
+     0.0,
+     180.0
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "campaign",
+   "reading": "Sun's tropical longitude in [330, 225] deg (wrapping through 0)",
+   "justification": "the summer begins 'ἅμα ἦρι ἀρχομένῳ' (2.2.1) and runs to the onset of winter; this allows a summer longer than half the year (drafter's inference)",
+   "operational": {
+    "sun_lon_deg": [
+     330.0,
+     225.0
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "no season constraint",
+   "justification": "sensitivity",
+   "operational": {
+    "season": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: the primary option's justification did not say that its 330 deg start is the drafter's placement of 'the beginning of spring' (the 'half-year' option of the same row starts at 0 deg); added. Bounds unchanged."
+}
+   CHECK exact | τοῦ δ’ ἐπιγιγνομένου θέρους εὐθὺς | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.4.52.1.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.4.52.1.1 :: τοῦ δ’ ἐπιγιγνομένου θέρους εὐθὺς τοῦ τε ἡλίου ἐκλιπές τι ἐγένετο περὶ νουμηνίαν καὶ τοῦ αὐτοῦ μηνὸς ἱσταμένου ἔσεισεν.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T3-ECL",
+ "event": "T3",
+ "kind": "eclipse-lunar",
+ "feature": "occurrence",
+ "statement": "T3: a lunar eclipse at full moon, seen by the Athenians at Syracuse as they were about to sail; magnitude not stated.",
+ "licence_words": [
+  "ἡ σελήνη ἐκλείπει· ἐτύγχανε γὰρ πασσέληνος οὖσα"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.50.4.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "umbral",
+   "reading": "umbral eclipse (umag > 0) with the Moon above the horizon at the observer during some part of the umbral phase",
+   "justification": "an eclipse noticed by an army",
+   "operational": {
+    "umag": [
+     0.0,
+     null
+    ],
+    "moon_up_during_umbral": true
+   },
+   "primary": true
+  },
+  {
+   "option": "penumbral-deep",
+   "reading": "umbral, or penumbral with penumbral magnitude >= 0.7, Moon up",
+   "justification": "a deep penumbral eclipse can be noticed by eye (drafter's rough threshold, general knowledge)",
+   "operational": {
+    "umag": null,
+    "pmag": [
+     0.7,
+     null
+    ],
+    "moon_up": true
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "'πασσέληνος' (full moon) is automatically true of a lunar eclipse. Nicias' 'τρὶς ἐννέα ἡμέρας' is a waiting period, not a date clue, and is not used. Totality is not stated anywhere in 7.50.",
+ "license_check": "ok"
+}
+   CHECK exact | ἡ σελήνη ἐκλείπει· ἐτύγχανε γὰρ πασσέληνος οὖσα | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.50.4.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.50.4.1 :: καὶ μελλόντων αὐτῶν, ἐπειδὴ ἑτοῖμα ἦν, ἀποπλεῖν ἡ σελήνη ἐκλείπει· ἐτύγχανε γὰρ πασσέληνος οὖσα. καὶ οἱ Ἀθηναῖοι οἵ τε πλείους ἐπισχεῖν ἐκέλευον τοὺς στρατηγοὺς ἐνθύμιον ποιούμενοι, καὶ ὁ Νικίας (ἦν γάρ τι καὶ ἄγαν θειασμῷ τε καὶ τῷ τοιούτῳ προσκείμενος) οὐδ’ ἂν διαβουλεύσασθαι ἔτι ἔφη πρίν, ὡς οἱ μάντεις ἐξηγοῦντο, τρὶς ἐννέα ἡμέρας μεῖναι, ὅπως ἂν πρότερον κινηθείη. καὶ τοῖς μὲν Ἀθηναίοις μελλήσασι διὰ τοῦτο ἡ μονὴ ἐγεγένητο.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T3-SEASON",
+ "event": "T3",
+ "kind": "season",
+ "feature": "half-year",
+ "statement": "T3 falls in the summer of the 19th war-year: that summer opens at 7.19.1 ('τοῦ δ’ ἐπιγιγνομένου ἦρος εὐθὺς ἀρχομένου') and ends at 8.1.4 ('καὶ τὸ θέρος ἐτελεύτα'); no winter is named between.",
+ "licence_words": [
+  "τοῦ δ’ ἐπιγιγνομένου ἦρος εὐθὺς ἀρχομένου",
+  "καὶ τὸ θέρος ἐτελεύτα"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.19.1.1",
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.8.1.4.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv",
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "half-year",
+   "reading": "Sun's tropical longitude in [0, 180] deg (between the equinoxes)",
+   "justification": "Thucydides counts by summers and winters, each half the year (5.20.3 'ἐξ ἡμισείας ἑκατέρου τοῦ ἐνιαυτοῦ'); the drafter centres the summer half on the summer solstice",
+   "operational": {
+    "sun_lon_deg": [
+     0.0,
+     180.0
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "campaign",
+   "reading": "Sun's tropical longitude in [330, 225] deg (wrapping through 0)",
+   "justification": "the summer begins 'ἅμα ἦρι ἀρχομένῳ' (2.2.1) and runs to the onset of winter; this allows a summer longer than half the year (drafter's inference)",
+   "operational": {
+    "sun_lon_deg": [
+     330.0,
+     225.0
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "no season constraint",
+   "justification": "sensitivity: drop the season",
+   "operational": {
+    "season": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "The season is not stated at 7.50 itself; it follows from Thucydides' explicit summer/winter frame, which the text gives at both ends.",
+ "license_check": "ok"
+}
+   CHECK exact | τοῦ δ’ ἐπιγιγνομένου ἦρος εὐθὺς ἀρχομένου | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.19.1.1
+   CHECK exact | καὶ τὸ θέρος ἐτελεύτα | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.8.1.4.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.19.1.1 :: τοῦ δ’ ἐπιγιγνομένου ἦρος εὐθὺς ἀρχομένου πρωίτατα δὴ οἱ Λακεδαιμόνιοι καὶ οἱ ξύμμαχοι ἐς τὴν Ἀττικὴν ἐσέβαλον· ἡγεῖτο δὲ Ἆγις ὁ Ἀρχιδάμου Λακεδαιμονίων βασιλεύς. καὶ πρῶτον μὲν τῆς χώρας τὰ περὶ τὸ πεδίον ἐδῄωσαν, ἔπειτα Δεκέλειαν ἐτείχιζον, κατὰ πόλεις διελόμενοι τὸ ἔργον.
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.8.1.4.1 :: πάντα τε πρὸς τὸ παραχρῆμα περιδεές, ὅπερ φιλεῖ δῆμος ποιεῖν, ἑτοῖμοι ἦσαν εὐτακτεῖν. καὶ ὡς ἔδοξεν αὐτοῖς, καὶ ἐποίουν ταῦτα, καὶ τὸ θέρος ἐτελεύτα.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T-INT-12",
+ "event": [
+  "T1",
+  "T2"
+ ],
+ "kind": "interval",
+ "feature": "war-years",
+ "statement": "T1 lies in war-year 1 (year 1 ends at 2.47.1, after 2.28); T2 in war-year 8 (year 7 ends at 4.51.1, immediately before 4.52). T2 is 7 war-years after T1. A war-year is one natural year (5.20.3) beginning with spring (2.2.1).",
+ "licence_words": [
+  "πρῶτον ἔτος τοῦ πολέμου τοῦδε ἐτελεύτα",
+  "καὶ ἕβδομον ἔτος τῷ πολέμῳ ἐτελεύτα"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.47.1.1",
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.4.51.1.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv",
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm0.5",
+   "reading": "t(T2) - t(T1) = 7 years +/- 0.5 year",
+   "justification": "both events lie in summer halves of their war-years, so the difference is 7 years give or take less than half a year",
+   "operational": {
+    "delta_years": 7,
+    "tol_years": 0.5
+   },
+   "primary": true
+  },
+  {
+   "option": "pm1",
+   "reading": "7 +/- 1 year",
+   "justification": "allows uncertainty in where the war-year boundary falls",
+   "operational": {
+    "delta_years": 7,
+    "tol_years": 1.0
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "unlinked",
+   "justification": "sensitivity",
+   "operational": {
+    "delta_years": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "Intermediate year-ends, all in the text: 2.70.4 (2nd), 2.103.2 (3rd), 3.25.2 (4th), 3.88.4 (5th), 3.116.3 (6th).",
+ "license_check": "ok"
+}
+   CHECK exact | πρῶτον ἔτος τοῦ πολέμου τοῦδε ἐτελεύτα | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.47.1.1
+   CHECK exact | καὶ ἕβδομον ἔτος τῷ πολέμῳ ἐτελεύτα | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.4.51.1.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.2.47.1.1 :: τοιόσδε μὲν ὁ τάφος ἐγένετο ἐν τῷ χειμῶνι τούτῳ· καὶ διελθόντος αὐτοῦ πρῶτον ἔτος τοῦ πολέμου τοῦδε ἐτελεύτα.
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.4.51.1.1 :: τοῦ δ’ αὐτοῦ χειμῶνος καὶ Χῖοι τὸ τεῖχος περιεῖλον τὸ καινὸν κελευσάντων Ἀθηναίων καὶ ὑποπτευσάντων ἐς αὐτούς τι νεωτεριεῖν, ποιησάμενοι μέντοι πρὸς Ἀθηναίους πίστεις καὶ βεβαιότητα ἐκ τῶν δυνατῶν μηδὲν περὶ σφᾶς νεώτερον βουλεύσειν. καὶ ὁ χειμὼν ἐτελεύτα, καὶ ἕβδομον ἔτος τῷ πολέμῳ ἐτελεύτα τῷδε ὃν Θουκυδίδης ξυνέγραψεν.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T-INT-13",
+ "event": [
+  "T1",
+  "T3"
+ ],
+ "kind": "interval",
+ "feature": "war-years",
+ "statement": "T3 lies in war-year 19 (year 18 ends at 7.18.4; year 19 ends at 8.6.5): 18 war-years after T1.",
+ "licence_words": [
+  "καὶ ὄγδοον καὶ δέκατον ἔτος τῷ πολέμῳ ἐτελεύτα",
+  "καὶ ἑνὸς δέον εἰκοστὸν ἔτος τῷ πολέμῳ ἐτελεύτα"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.18.4.1",
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.8.6.5.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv",
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm0.5",
+   "reading": "t(T3) - t(T1) = 18 years +/- 0.5 year",
+   "justification": "as T-INT-12",
+   "operational": {
+    "delta_years": 18,
+    "tol_years": 0.5
+   },
+   "primary": true
+  },
+  {
+   "option": "pm1",
+   "reading": "18 +/- 1 year",
+   "justification": "as T-INT-12",
+   "operational": {
+    "delta_years": 18,
+    "tol_years": 1.0
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "unlinked",
+   "justification": "sensitivity",
+   "operational": {
+    "delta_years": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "T2 to T3 (11 war-years) follows from T-INT-12 and T-INT-13 and is not a separate clue.",
+ "license_check": "ok"
+}
+   CHECK exact | καὶ ὄγδοον καὶ δέκατον ἔτος τῷ πολέμῳ ἐτελεύτα | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.18.4.1
+   CHECK exact | καὶ ἑνὸς δέον εἰκοστὸν ἔτος τῷ πολέμῳ ἐτελεύτα | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.8.6.5.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.18.4.1 :: καὶ ἐν τῷ χειμῶνι τούτῳ σίδηρόν τε περιήγγελλον κατὰ τοὺς ξυμμάχους καὶ τἆλλα ἐργαλεῖα ἡτοίμαζον ἐς τὸν ἐπιτειχισμόν, καὶ τοῖς ἐν τῇ Σικελίᾳ ἅμα ὡς ἀποπέμψοντες ἐν ταῖς ὁλκάσιν ἐπικουρίαν αὐτοί τε ἐπόριζον καὶ τοὺς ἄλλους Πελοποννησίους προσηνάγκαζον. καὶ ὁ χειμὼν ἐτελεύτα, καὶ ὄγδοον καὶ δέκατον ἔτος τῷ πολέμῳ ἐτελεύτα τῷδε ὃν Θουκυδίδης ξυνέγραψεν.
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.8.6.5.1 :: καὶ τὸ μὲν πρῶτον δέκα τούτων αὐτοὶ ἔμελλον πέμψειν, καὶ Μελαγχρίδαν, ὃς αὐτοῖς ναύαρχος ἦν· ἔπειτα σεισμοῦ γενομένου ἀντὶ τοῦ Μελαγχρίδου Χαλκιδέα ἔπεμπον καὶ ἀντὶ τῶν δέκα νεῶν πέντε παρεσκευάζοντο ἐν τῇ Λακωνικῇ. καὶ ὁ χειμὼν ἐτελεύτα καὶ ἑνὸς δέον εἰκοστὸν ἔτος τῷ πολέμῳ ἐτελεύτα τῷδε ὃν Θουκυδίδης ξυνέγραψεν.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T1-SITE",
+ "event": "T1",
+ "kind": "site",
+ "feature": "observer",
+ "statement": "Where T1 was seen: unstated.",
+ "licence_words": [
+  "Θουκυδίδης Ἀθηναῖος"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.1.1.1.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "point",
+   "reading": "observer at Athens",
+   "justification": "inference: the narrator is an Athenian (1.1.1) and the neighbouring narrative (2.27) concerns Athens and Aegina",
+   "operational": {
+    "site": {
+     "lat": 37.97,
+     "lon": 23.72
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "box",
+   "reading": "observer anywhere inside the box; the clue holds if it holds at some site in the box",
+   "justification": "the Greek mainland and Aegean, where the war was being fought (an inference from context; kept as an alternative, no longer primary)",
+   "operational": {
+    "site_box": {
+     "lat": [
+      35.0,
+      41.5
+     ],
+     "lon": [
+      19.5,
+      28.5
+     ]
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "no site: the eclipse need only satisfy the other clues somewhere on Earth",
+   "justification": "the text names no place from which this sky event was seen, and the set records the observer as 'unstated'; by policy 2 the primary option takes no site from narrative context or outside knowledge (licence check, 2026-10-04)",
+   "operational": {
+    "site": null
+   },
+   "primary": true
+  }
+ ],
+ "narrative_level": "narrator (self-identification)",
+ "notes": "The licence words identify the narrator only; they do not place the eclipse.",
+ "license_check": "edited: primary moved from 'box' (the Greek mainland and Aegean, 'where the war was being fought') to 'none'. The text does not say where the event was seen; the set itself records the observer place as 'unstated', and policy 2 bars inference from narrative context or outside knowledge in the primary option. The drafter applied that rule to the narrative-order seasons (X2-SEASON, X3-SEASON, L1-, L2-, L4-DATE: primary 'none') but not to sites. 'box' and the other site options stay as alternatives."
+}
+   CHECK exact | Θουκυδίδης Ἀθηναῖος | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.1.1.1.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.1.1.1.1 :: Θουκυδίδης Ἀθηναῖος ξυνέγραψε τὸν πόλεμον τῶν Πελοποννησίων καὶ Ἀθηναίων, ὡς ἐπολέμησαν πρὸς ἀλλήλους, ἀρξάμενος εὐθὺς καθισταμένου καὶ ἐλπίσας μέγαν τε ἔσεσθαι καὶ ἀξιολογώτατον τῶν προγεγενημένων, τεκμαιρόμενος ὅτι ἀκμάζοντές τε ᾖσαν ἐς αὐτὸν ἀμφότεροι παρασκευῇ τῇ πάσῃ καὶ τὸ ἄλλο Ἑλληνικὸν ὁρῶν ξυνιστάμενον πρὸς ἑκατέρους, τὸ μὲν εὐθύς, τὸ δὲ καὶ διανοούμενον.
+
+====================================================================================================
+{
+ "set": "R-THUC",
+ "clue_id": "T2-SITE",
+ "event": "T2",
+ "kind": "site",
+ "feature": "observer",
+ "statement": "Where T2 was seen: unstated.",
+ "licence_words": [
+  "Θουκυδίδης Ἀθηναῖος"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.1.1.1.1"
+ ],
+ "text_file": [
+  "data/text/thucydides-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "point",
+   "reading": "observer at Athens",
+   "justification": "inference from the narrator, as T1-SITE",
+   "operational": {
+    "site": {
+     "lat": 37.97,
+     "lon": 23.72
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "box",
+   "reading": "observer anywhere inside the box; the clue holds if it holds at some site in the box",
+   "justification": "as T1-SITE; the next sentence (4.52.2) is set in the Troad, inside the box (an inference from context; kept as an alternative, no longer primary)",
+   "operational": {
+    "site_box": {
+     "lat": [
+      35.0,
+      41.5
+     ],
+     "lon": [
+      19.5,
+      28.5
+     ]
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "no site: the eclipse need only satisfy the other clues somewhere on Earth",
+   "justification": "the text names no place from which this sky event was seen, and the set records the observer as 'unstated'; by policy 2 the primary option takes no site from narrative context or outside knowledge (licence check, 2026-10-04)",
+   "operational": {
+    "site": null
+   },
+   "primary": true
+  }
+ ],
+ "narrative_level": "narrator (self-identification)",
+ "notes": "",
+ "license_check": "edited: primary moved from 'box' (the Greek mainland and Aegean, as T1-SITE) to 'none'. The text does not say where the event was seen; the set itself records the observer place as 'unstated', and policy 2 bars inference from narrative context or outside knowledge in the primary option. The drafter applied that rule to the narrative-order seasons (X2-SEASON, X3-SEASON, L1-, L2-, L4-DATE: primary 'none') but not to sites. 'box' and the other site options stay as alternatives."
+}
+   CHECK exact | Θουκυδίδης Ἀθηναῖος | urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.1.1.1.1
+   ROW [data/text/thucydides-grc.tsv] urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.1.1.1.1 :: Θουκυδίδης Ἀθηναῖος ξυνέγραψε τὸν πόλεμον τῶν Πελοποννησίων καὶ Ἀθηναίων, ὡς ἐπολέμησαν πρὸς ἀλλήλους, ἀρξάμενος εὐθὺς καθισταμένου καὶ ἐλπίσας μέγαν τε ἔσεσθαι καὶ ἀξιολογώτατον τῶν προγεγενημένων, τεκμαιρόμενος ὅτι ἀκμάζοντές τε ᾖσαν ἐς αὐτὸν ἀμφότεροι παρασκευῇ τῇ πάσῃ καὶ τὸ ἄλλο Ἑλληνικὸν ὁρῶν ξυνιστάμενον πρὸς ἑκατέρους, τὸ μὲν εὐθύς, τὸ δὲ καὶ διανοούμενον.

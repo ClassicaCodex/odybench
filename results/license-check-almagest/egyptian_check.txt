@@ -1,0 +1,21 @@
+ALM-A.3  IX.10.3  -> X.8.2     file    13  recomputed    13  OK
+ALM-A.6  IX.10.3  -> IX.9.4    file    52  recomputed    52  OK
+ALM-A.8  IX.10.3  -> XI.2.2    file    55  recomputed    55  OK
+ALM-B.4  X.4.3    -> XI.6.2    file     6  recomputed     6  OK
+ALM-B.6  X.4.3    -> V.3.2     file    55  recomputed    55  OK
+ALM-B.8  X.4.3    -> VII.2.4   file    69  recomputed    69  OK
+ALM-C.2  IX.8.3   -> IV.6.14   file    17  recomputed    17  OK
+ALM-D.2  IX.7.4   -> X.1.3     file    35  recomputed    35  OK
+ALM-E.2  X.3.2b   -> III.1.10  file    33  recomputed    33  OK
+ALM-F.2  X.2.4    -> X.1.6     file    37  recomputed    37  OK
+ALM-G.2  X.3.2a   -> IX.7.5    file   106  recomputed   106  OK
+ALM-H.3  IX.7.9   -> IX.7.11   file   102  recomputed   102  OK
+ALM-H.7  IX.7.9   -> IX.7.14   file   192  recomputed   192  OK
+ALM-J.3  X.9.2    -> X.4.6a    file   267  recomputed   267  OK
+ALM-J.6  X.9.2    -> X.4.6b    file   271  recomputed   271  OK
+ALM-K.3  IX.7.16  -> XI.3.2    file  1385  recomputed  1385  OK
+ALM-K.6  IX.7.16  -> IX.7.15   file  2902  recomputed  2902  OK
+ALM-L.3  X.1.5    -> X.2.3     file   586  recomputed   586  OK
+ALM-L.5  X.1.5    -> IX.9.3    file   996  recomputed   996  OK
+mismatches: 0
+ALM-I.4: stated in words, "μετὰ δ ἡμέρας" (9.10.6) -> +4; file 4

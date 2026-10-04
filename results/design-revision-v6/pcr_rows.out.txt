@@ -1,0 +1,10 @@
+R-PTOL-BAB    PB-E1-SUN: pm5 -> none; PB-E2-SUN: pm5 -> none; PB-E3-SUN: pm5 -> none
+R-PTOL-ALEX   PA-H1-TIME: pm0.5 -> pm1; PA-H1-SUN: pm3 -> none; PA-H2-TIME: pm0.5 -> pm1; PA-H2-SUN: pm3 -> none; PA-H3-TIME: pm0.5 -> pm1; PA-H3-SUN: pm3 -> none
+R-PTOL-CHAIN  (no change)
+R-THUC        (no change)
+R-XEN         (no change)
+R-ARBELA      (no change)
+R-PYDNA       (no change)
+R-DIOD        (no change)
+H-LIVY        (no change)
+rows changed by the words-only projection: 9

@@ -1,0 +1,11 @@
+one day shift in -500 Mar           -> failing tests: ['test_every_day_against_day_counting', 'test_scalar_and_vector_paths_agree', 'test_against_ephem_meeus_formulas', 'test_leap_rule', 'test_round_trips_of_instants']
+leap rule y%4==1                    -> failing tests: ['test_leap_rule']
+inverse off by one day for BC       -> failing tests: ['test_every_day_against_day_counting', 'test_scalar_and_vector_paths_agree', 'test_against_ephem_meeus_formulas', 'test_identity_1178_bc', 'test_round_trips_of_instants', 'test_zones_and_day_bounds', 'test_horizons_calendar_output']
+instant truncated not rounded       -> failing tests: ['test_identity_1178_bc', 'test_round_trips_of_instants', 'test_zones_and_day_bounds']
+Gregorian used instead of Julian    -> failing tests: ['test_every_day_against_day_counting', 'test_scalar_and_vector_paths_agree', 'test_against_ephem_meeus_formulas', 'test_leap_rule', 'test_identity_1178_bc', 'test_meeus_examples', 'test_round_trips_of_instants', 'test_zones_and_day_bounds', 'test_time_scales_and_epochs']
+unmutated -> []
+'import datetime' True
+'from datetime import date' True
+"x = np.datetime64('2000')" True
+"a.astype('M8[D]')" True
+'# no date-time here' False

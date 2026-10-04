@@ -1,0 +1,7 @@
+4094 lines; 82 numbered headings
+l. 725: section (16.1) not found
+l. 1725: section (17.24) not found
+l. 1831: section (1.5) not found
+l. 1839: section (1.5) not found
+l. 2359: section (5.20.3) not found
+undefined prediction/expectation P33: ...   of number, so revision 3's P33 is droppe...

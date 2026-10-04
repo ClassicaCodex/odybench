@@ -1,0 +1,311 @@
+----------------------------------------------------------------------------------------------------
+{"ref": ["2.8", "2.9"], "text_file": "virgil-aeneid-lat.tsv", "narrative_level": "character speech", "reason": "frame time at Carthage (setting stars at Dido's banquet), not the night of Troy; 2.9's second half repeats 4.81"}
+      2.6	et quorum pars magna fui. Quis talia fando
+      2.7	Myrmidonum Dolopumve aut duri miles Ulixi
+   >> 2.8	temperet a lacrimis? Et iam nox umida caelo
+   >> 2.9	praecipitat, suadentque cadentia sidera somnos.
+      2.10	Sed si tantus amor casus cognoscere nostros
+      2.11	et breviter Troiae supremum audire laborem,
+----------------------------------------------------------------------------------------------------
+{"ref": ["2.108", "2.109", "2.110", "2.111", "2.112", "2.113"], "text_file": "virgil-aeneid-lat.tsv", "narrative_level": "lying tale", "reason": "Sinon's lying tale (winter storms kept the Greeks from sailing)"}
+      2.106	ignari scelerum tantorum artisque Pelasgae.
+      2.107	Prosequitur pavitans, et ficto pectore fatur:
+   >> 2.108	Saepe fugam Danai Troia cupiere relicta
+   >> 2.109	moliri, et longo fessi discedere bello;
+   >> 2.110	fecissentque utinam! Saepe illos aspera ponti
+   >> 2.111	interclusit hiemps, et terruit Auster euntis.
+   >> 2.112	Praecipue, cum iam hic trabibus contextus acernis
+   >> 2.113	staret equus, toto sonuerunt aethere nimbi.
+      2.114	Suspensi Eurypylum scitantem oracula Phoebi
+      2.115	mittimus, isque adytis haec tristia dicta reportat:
+----------------------------------------------------------------------------------------------------
+{"ref": ["2.135"], "text_file": "virgil-aeneid-lat.tsv", "narrative_level": "lying tale", "reason": "Sinon's lying tale (hid in a marsh through the night)"}
+      2.133	et salsae fruges, et circum tempora vittae:
+      2.134	eripui, fateor, leto me, et vincula rupi,
+   >> 2.135	limosoque lacu per noctem obscurus in ulva
+      2.136	delitui, dum vela darent, si forte dedissent.
+      2.137	Nec mihi iam patriam antiquam spes ulla videndi,
+----------------------------------------------------------------------------------------------------
+{"ref": ["2.355", "2.356", "2.357", "2.358"], "text_file": "virgil-aeneid-lat.tsv", "narrative_level": "simile", "reason": "simile (wolves in a black mist)"}
+      2.353	incensae; moriamur et in media arma ruamus.
+      2.354	Una salus victis, nullam sperare salutem.
+   >> 2.355	Sic animis iuvenum furor additus: inde, lupi ceu
+   >> 2.356	raptores atra in nebula, quos improba ventris
+   >> 2.357	exegit caecos rabies, catulique relicti
+   >> 2.358	faucibus exspectant siccis, per tela, per hostis
+      2.359	vadimus haud dubiam in mortem, mediaeque tenemus
+      2.360	urbis iter; nox atra cava circumvolat umbra.
+----------------------------------------------------------------------------------------------------
+{"ref": ["2.692", "2.693", "2.694", "2.695", "2.696", "2.697", "2.698"], "text_file": "virgil-aeneid-lat.tsv", "narrative_level": "character speech", "reason": "a falling star with a trail (portent): not computable"}
+      2.690	aspice nos; hoc tantum, et, si pietate meremur,
+      2.691	da deinde auxilium, pater, atque haec omina firma.
+   >> 2.692	Vix ea fatus erat senior, subitoque fragore
+   >> 2.693	intonuit laevum, et de caelo lapsa per umbras
+   >> 2.694	stella facem ducens multa cum luce cucurrit.
+   >> 2.695	Illam, summa super labentem culmina tecti,
+   >> 2.696	cernimus Idaea claram se condere silva
+   >> 2.697	signantemque vias; tum longo limite sulcus
+   >> 2.698	dat lucem, et late circum loca sulphure fumant.
+      2.699	Hic vero victus genitor se tollit ad auras,
+      2.700	adfaturque deos et sanctum sidus adorat.
+----------------------------------------------------------------------------------------------------
+{"ref": ["3.195", "3.196", "3.197", "3.198", "3.199", "3.200", "3.201", "3.202", "3.203", "3.204"], "text_file": "virgil-aeneid-lat.tsv", "narrative_level": "character speech", "reason": "darkness of three days and three starless nights at sea, from storm cloud ('involvere diem nimbi', 'caeca caligine'); weather, kept out of the darkness slot"}
+      3.193	adparent terrae, caelum undique et undique pontus,
+      3.194	tum mihi caeruleus supra caput adstitit imber,
+   >> 3.195	noctem hiememque ferens, et inhorruit unda tenebris.
+   >> 3.196	Continuo venti volvunt mare, magnaque surgunt
+   >> 3.197	aequora; dispersi iactamur gurgite vasto;
+   >> 3.198	involvere diem nimbi, et nox umida caelum
+   >> 3.199	abstulit; ingeminant abruptis nubibus ignes.
+   >> 3.200	Excutimur cursu, et caecis erramus in undis.
+   >> 3.201	Ipse diem noctemque negat discernere caelo,
+   >> 3.202	nec meminisse viae media Palinurus in unda.
+   >> 3.203	Tris adeo incertos caeca caligine soles
+   >> 3.204	erramus pelago, totidem sine sidere noctes.
+      3.205	Quarto terra die primum se attollere tandem
+      3.206	visa, aperire procul montis, ac volvere fumum.
+----------------------------------------------------------------------------------------------------
+{"ref": ["3.284", "3.285"], "text_file": "virgil-aeneid-lat.tsv", "narrative_level": "character speech", "reason": "the year comes round and winter roughens the sea at Actium; season only, no stated interval to any other sky clue"}
+      3.282	nudati socii; iuvat evasisse tot urbes
+      3.283	Argolicas, mediosque fugam tenuisse per hostis.
+   >> 3.284	Interea magnum sol circumvolvitur annum,
+   >> 3.285	et glacialis hiemps aquilonibus asperat undas.
+      3.286	Aere cavo clipeum. magni gestamen Abantis,
+      3.287	postibus adversis figo, et rem carmine signo:
+----------------------------------------------------------------------------------------------------
+{"ref": ["3.8", "3.9"], "text_file": "virgil-aeneid-lat.tsv", "narrative_level": "character speech", "reason": "the departure 'as summer had scarcely begun'; no stated interval to the night of Troy, so it constrains nothing"}
+      3.6	Antandro et Phrygiae molimur montibus Idae,
+      3.7	incerti, quo fata ferant, ubi sistere detur,
+   >> 3.8	contrahimusque viros. Vix prima inceperat aestas,
+   >> 3.9	et pater Anchises dare fatis vela iubebat;
+      3.10	litora cum patriae lacrimans portusque relinquo
+      3.11	et campos, ubi Troia fuit: feror exsul in altum
+----------------------------------------------------------------------------------------------------
+{"ref": ["4.52"], "text_file": "virgil-aeneid-lat.tsv", "narrative_level": "character speech", "reason": "Anna: 'while winter and watery Orion rage at sea'; season on a day with no stated interval to Day M1 or Day 0"}
+      4.50	Tu modo posce deos veniam, sacrisque litatis
+      4.51	indulge hospitio, causasque innecte morandi,
+   >> 4.52	dum pelago desaevit hiemps et aquosus Orion,
+      4.53	quassataeque rates, dum non tractabile caelum.
+      4.54	His dictis incensum animum inflammavit amore,
+----------------------------------------------------------------------------------------------------
+{"ref": ["4.80", "4.81"], "text_file": "virgil-aeneid-lat.tsv", "narrative_level": "narrator", "reason": "habitual nights (iterative), not one night; 4.81's second half repeats 2.9"}
+      4.78	Iliacosque iterum demens audire labores
+      4.79	exposcit, pendetque iterum narrantis ab ore.
+   >> 4.80	Post, ubi digressi, lumenque obscura vicissim
+   >> 4.81	luna premit suadentque cadentia sidera somnos,
+      4.82	sola domo maeret vacua, stratisque relictis
+      4.83	incubat, illum absens absentem auditque videtque;
+----------------------------------------------------------------------------------------------------
+{"ref": ["4.193"], "text_file": "virgil-aeneid-lat.tsv", "narrative_level": "lying tale", "reason": "Fama's report, true and false mixed (4.190)"}
+      4.191	venisse Aenean, Troiano sanguine cretum,
+      4.192	cui se pulchra viro dignetur iungere Dido;
+   >> 4.193	nunc hiemem inter se luxu, quam longa, fovere
+      4.194	regnorum immemores turpique cupidine captos.
+      4.195	Haec passim dea foeda virum diffundit in ora.
+----------------------------------------------------------------------------------------------------
+{"ref": ["5.626"], "text_file": "virgil-aeneid-lat.tsv", "narrative_level": "lying tale", "reason": "Iris disguised as Beroe"}
+      5.624	traxerit ad letum patriae sub moenibus! O gens
+      5.625	infelix, cui te exitio Fortuna reservat?
+   >> 5.626	Septuma post Troiae exscidium iam vertitur aestas,
+      5.627	cum freta, cum terras omnes, tot inhospita saxa
+      5.628	sideraque emensae ferimur, dum per mare magnum
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1201", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1202", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1203", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1204"], "text_file": "apollonius-argonautica-grc.tsv", "narrative_level": "simile", "reason": "simile: a squall strikes a mast at Orion's wintry setting (DESIGN NC3 took its season from here; critique-design issue 15)"}
+      1.1199	εὖ διαβάς· πεδόθεν δὲ βαθύρριζόν περ ἐοῦσαν
+      1.1200	προσφὺς ἐξήειρε σὺν αὐτοῖς ἔχμασι γαίης.
+   >> 1.1201	ὡς δʼ ὅταν ἀπροφάτως ἱστὸν νεός, εὖτε μάλιστα
+   >> 1.1202	χειμερίη ὀλοοῖο δύσις πέλει Ὠρίωνος,
+   >> 1.1203	ὑψόθεν ἐμπλήξασα θοὴ ἀνέμοιο κατάιξ
+   >> 1.1204	αὐτοῖσι σφήνεσσιν ὑπὲκ προτόνων ἐρύσηται·
+      1.1205	ὧς ὅγε τὴν ἤειρεν. ὁμοῦ δʼ ἀνὰ τόξα καὶ ἰοὺς
+      1.1206	δέρμα θʼ ἑλὼν ῥόπαλόν τε παλίσσυτος ὦρτο νέεσθαι.
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1265", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1266", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1267", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1268", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1269"], "text_file": "apollonius-argonautica-grc.tsv", "narrative_level": "simile", "reason": "simile (gadfly-stung bull)"}
+      1.1263	χωόμενος δʼ ἐλάτην χαμάδις βάλεν, ἐς δὲ κέλευθον
+      1.1264	τὴν θέεν, ᾗ πόδες αὐτὸν ὑπέκφερον ἀίσσοντα.
+   >> 1.1265	ὡς δʼ ὅτε τίς τε μύωπι τετυμμένος ἔσσυτο ταῦρος
+   >> 1.1266	πίσεά τε προλιπὼν καὶ ἑλεσπίδας, οὐδὲ νομήων
+   >> 1.1267	οὐδʼ ἀγέλης ὄθεται, πρήσσει δʼ ὁδόν, ἄλλοτʼ ἄπαυστος,
+   >> 1.1268	ἄλλοτε δʼ ἱστάμενος, καὶ ἀνὰ πλατὺν αὐχένʼ ἀείρων
+   >> 1.1269	ἵησιν μύκημα, κακῷ βεβολημένος οἴστρῳ·
+      1.1270	ὧς ὅγε μαιμώων ὁτὲ μὲν θοὰ γούνατʼ ἔπαλλεν
+      1.1271	συνεχέως, ὁτὲ δʼ αὖτε μεταλλήγων καμάτοιο
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.756", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.757", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.758", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.759"], "text_file": "apollonius-argonautica-grc.tsv", "narrative_level": "simile", "reason": "simile (a sunbeam dancing off water)"}
+      3.754	φθίσθαι ἀεικελίῃ μοίρῃ κατὰ νειὸν Ἄρηος.
+      3.755	πυκνὰ δέ οἱ κραδίη στηθέων ἔντοσθεν ἔθυιεν,
+   >> 3.756	ἠελίου ὥς τίς τε δόμοις ἐνιπάλλεται αἴγλη
+   >> 3.757	ὕδατος ἐξανιοῦσα, τὸ δὴ νέον ἠὲ λέβητι
+   >> 3.758	ἠέ που ἐν γαυλῷ κέχυται· ἡ δʼ ἔνθα καὶ ἔνθα
+   >> 3.759	ὠκείῃ στροφάλιγγι τινάσσεται ἀίσσουσα·
+      3.760	ὧς δὲ καὶ ἐν στήθεσσι κέαρ ἐλελίζετο κούρης.
+      3.761	δάκρυ δʼ ἀπʼ ὀφθαλμῶν ἐλέῳ ῥέεν· ἔνδοθι δʼ αἰεὶ
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.957"], "text_file": "apollonius-argonautica-grc.tsv", "narrative_level": "simile", "reason": "simile (Jason like Sirius)"}
+      3.955	ἢ ποδὸς ἢ ἀνέμοιο παραθρέξαντα δοάσσαι.
+      3.956	αὐτὰρ ὅγʼ οὐ μετὰ δηρὸν ἐελδομένῃ ἐφαάνθη
+   >> 3.957	ὑψόσʼ ἀναθρώσκων ἅ τε Σείριος Ὠκεανοῖο,
+      3.958	ὃς δή τοι καλὸς μὲν ἀρίζηλός τʼ ἐσιδέσθαι
+      3.959	ἀντέλλει, μήλοισι δʼ ἐν ἄσπετον ἧκεν ὀιζύν·
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1359", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1360", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1361", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1362"], "text_file": "apollonius-argonautica-grc.tsv", "narrative_level": "simile", "reason": "simile (stars after a winter storm)"}
+      3.1357	Ἄρηος τέμενος φθισιμβρότου· ἵκετο δʼ αἴγλη
+      3.1358	νειόθεν Οὔλυμπόνδε διʼ ἠέρος ἀστράπτουσα.
+   >> 3.1359	ὡς δʼ ὁπότʼ ἐς γαῖαν πολέος νιφετοῖο πεσόντος
+   >> 3.1360	ἂψ ἀπὸ χειμερίας νεφέλας ἐκέδασσαν ἄελλαι
+   >> 3.1361	λυγαίῃ ὑπὸ νυκτί, τὰ δʼ ἀθρόα πάντʼ ἐφαάνθη
+   >> 3.1362	τείρεα λαμπετόωντα διὰ κνέφας· ὧς ἄρα τοίγε
+      3.1363	λάμπον ἀναλδήσκοντες ὑπὲρ χθονός. αὐτὰρ Ἰήσων
+      3.1364	μνήσατο Μηδείης πολυκερδέος ἐννεσιάων,
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1377"], "text_file": "apollonius-argonautica-grc.tsv", "narrative_level": "simile", "reason": "simile (a fiery star or meteor)"}
+      3.1375	μητέρα πῖπτον ἑοῖς ὑπὸ δούρασιν, ἠύτε πεῦκαι
+      3.1376	ἢ δρύες, ἅς τʼ ἀνέμοιο κατάικες δονέουσιν.
+   >> 3.1377	οἷος δʼ οὐρανόθεν πυρόεις ἀναπάλλεται ἀστὴρ
+      3.1378	ὁλκὸν ὑπαυγάζων, τέρας ἀνδράσιν, οἵ μιν ἴδωντοι
+      3.1379	μαρμαρυγῇ σκοτίοιο διʼ ἠέρος ἀίξαντα·
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.167", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.168", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.169", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.170"], "text_file": "apollonius-argonautica-grc.tsv", "narrative_level": "simile", "reason": "simile (a girl catching the full moon's light on her dress)"}
+      4.165	αὐτὸς ἑὴν ἐπὶ νῆα παλιντροπάασθαι Ἰήσων
+      4.166	ἤνωγεν, λεῖπεν δὲ πολύσκιον ἄλσος Ἄρηος.
+   >> 4.167	ὡς δὲ σεληναίην διχομήνιδα παρθένος αἴγλην
+   >> 4.168	ὑψόθεν ἐξανέχουσαν ὑπωροφίου θαλάμοιο
+   >> 4.169	λεπταλέῳ ἑανῷ ὑποΐσχεται· ἐν δέ οἱ ἦτορ
+   >> 4.170	χαίρει δερκομένης καλὸν σέλας· ὧς τότʼ Ἰήσων
+      4.171	γηθόσυνος μέγα κῶας ἑαῖς ἐναείρατο χερσίν·
+      4.172	καί οἱ ἐπὶ ξανθῇσι παρηίσιν ἠδὲ μετώπῳ
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.226", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.227"], "text_file": "apollonius-argonautica-grc.tsv", "narrative_level": "narrator", "reason": "ekphrasis of Aeetes' springs (warm at the Pleiades' setting): a permanent property, not a date"}
+      3.224	ἡ δʼ οἴνῳ, τριτάτη δὲ θυώδεϊ νᾶεν ἀλοιφῇ·
+      3.225	ἡ δʼ ἄρʼ ὕδωρ προρέεσκε, τὸ μέν ποθι δυομένῃσιν
+   >> 3.226	θέρμετο Πληιάδεσσιν, ἀμοιβηδὶς δʼ ἀνιούσαις
+   >> 3.227	κρυστάλλῳ ἴκελον κοίλης ἀνεκήκιε πέτρης.
+      3.228	τοῖʼ ἄρʼ ἐνὶ μεγάροισι Κυταιέος Αἰήταο
+      3.229	τεχνήεις Ἥφαιστος ἐμήσατο θέσκελα ἔργα.
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1280", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1281", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1282", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1283", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1284", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1285", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1286", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1287"], "text_file": "apollonius-argonautica-grc.tsv", "narrative_level": "simile", "reason": "simile that describes an eclipse (the Sun brings night at midday and the stars shine): excluded as a simile, though it is the poem's only eclipse"}
+      4.1278	ὅσσοι ἔσαν νηῶν δεδαημένοι· ἐν δʼ ἄρα πᾶσιν
+      4.1279	παχνώθη κραδίη, χύτο δὲ χλόος ἀμφὶ παρειάς.
+   >> 4.1280	οἷον δʼ ἀψύχοισιν ἐοικότες εἰδώλοισιν
+   >> 4.1281	ἀνέρες εἱλίσσονται ἀνὰ πτόλιν, ἢ πολέμοιο
+   >> 4.1282	ἢ λοιμοῖο τέλος ποτιδέγμενοι, ἠέ τινʼ ὄμβρον
+   >> 4.1283	ἄσπετον, ὅς τε βοῶν κατὰ μυρία ἔκλυσεν ἔργα,
+   >> 4.1284	ἢ ὅταν αὐτόματα ξόανα ῥέῃ ἱδρώοντα
+   >> 4.1285	αἵματι, καὶ μυκαὶ σηκοῖς ἔνι φαντάζωνται,
+   >> 4.1286	ἠὲ καὶ ἠέλιος μέσῳ ἤματι νύκτʼ ἐπάγῃσιν
+   >> 4.1287	οὐρανόθεν, τὰ δὲ λαμπρὰ διʼ ἠέρος ἄστρα φαείνοι·
+      4.1288	ὧς τότʼ ἀριστῆες δολιχοῦ πρόπαρ αἰγιαλοῖο
+      4.1289	ἤλυον ἑρπύζοντες. ἐπήλυθε δʼ αὐτίκʼ ἐρεμνὴ
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1479", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1480"], "text_file": "apollonius-argonautica-grc.tsv", "narrative_level": "simile", "reason": "simile (seeing the new moon through mist)"}
+      4.1477	τυτθὸν ἁλὸς προπάροιθεν. ἀτὰρ τότε γʼ Ἡρακλῆα
+      4.1478	μοῦνον ἀπειρεσίης τηλοῦ χθονὸς εἴσατο Λυγκεὺς
+   >> 4.1479	τὼς ἰδέειν, ὥς τίς τε νέῳ ἐνὶ ἤματι μήνην
+   >> 4.1480	ἢ ἴδεν, ἢ ἐδόκησεν ἐπαχλύουσαν ἰδέσθαι.
+      4.1481	ἐς δʼ ἑτάρους ἀνιὼν μυθήσατο, μή μιν ἔτʼ ἄλλον
+      4.1482	μαστῆρα στείχοντα κιχησέμεν· οἱ δὲ καὶ αὐτοὶ
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1616"], "text_file": "apollonius-argonautica-grc.tsv", "narrative_level": "simile", "reason": "comparison (Triton's fins like the horns of the moon)"}
+      4.1614	κήτεος ὁλκαίη μηκύνετο· κόπτε δʼ ἀκάνθαις
+      4.1615	ἄκρον ὕδωρ, αἵ τε σκολιοῖς ἐπινειόθι κέντροις
+   >> 4.1616	μήνης ὡς κεράεσσιν ἐειδόμεναι διχόωντο.
+      4.1617	τόφρα δʼ ἄγεν, τείως μιν ἐπιπροέηκε θαλάσσῃ
+      4.1618	νισσομένην· δῦ δʼ αἶψα μέγαν βυθόν· οἱ δʼ ὁμάδησαν
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.961"], "text_file": "apollonius-argonautica-grc.tsv", "narrative_level": "narrator", "reason": "a measure of duration ('as long as a spring day lengthens'), not the season of the day"}
+      4.959	οὐρανοῦ ἑστηυῖα Διὸς δάμαρ· ἀμφὶ δʼ Ἀθήνῃ
+      4.960	βάλλε χέρας, τοῖόν μιν ἔχεν δέος εἰσορόωσαν.
+   >> 4.961	ὅσση δʼ εἰαρινοῦ μηκύνεται ἤματος αἶσα,
+      4.962	τοσσάτιον μογέεσκον ἐπὶ χρόνον, ὀχλίζουσαι
+      4.963	νῆα διὲκ πέτρας πολυηχέας· οἱ δʼ ἀνέμοιο
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.104", "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.105"], "text_file": "quintus-smyrnaeus-grc.tsv", "narrative_level": "narrator", "reason": "starry night of Athena's dream to Epeius; separated from Day 0 by the three days of building (12.147) and an unstated gap; time of night only"}
+      12.102	μάντιν ἀγασσάμενοι, τὸν ἄρʼ ἐκ Διὸς ἔμμεν ἔφαντο,
+      12.103	ἐκ Διὸς ἢ Φοίβοιο· πίθοντο δέ οἱ μάλα πάντα.
+   >> 12.104	ἦμος δʼ αἰγλήεντα περιστρέφετʼ οὐρανὸν ἄστρα
+   >> 12.105	πάντοθε μαρμαίροντα, πόνου δʼ ἐπιλήθεται ἀνήρ,
+      12.106	δὴ τότʼ Ἀθηναίη μακάρων ἕδος αἰπὺ λιποῦσα
+      12.107	ἤλυθε παρθενικῇ ἁπαλόχροϊ πάντʼ εἰκυῖα
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.68", "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.69"], "text_file": "quintus-smyrnaeus-grc.tsv", "narrative_level": "simile", "reason": "simile (sheep on an autumn night)"}
+      13.66	εἷλον ἐπισταμένως, ὅσα νήεσιν αἰὲν ἕπονται.
+      13.67	αὐτοὶ δʼ αἶψʼ ἐκβάντες ἐς Ἴλιον ἐσσεύοντο
+   >> 13.68	ἄβρομοι, ἠΰτε μῆλα ποτὶ σταθμὸν ἀΐσσοντα
+   >> 13.69	ἐκ νομοῦ ὑλήεντος ὀπωρινὴν ὑπὸ νύκτα·
+      13.70	ὣς οἵ γʼ αὐίαχοι Τρώων ποτὶ ἄστυ νέοντο
+      13.71	πάντες ἀριστήεσσιν ἀρηγέμεναι μεμαῶτες.
+----------------------------------------------------------------------------------------------------
+{"ref": ["urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.480", "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.481", "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.482", "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.483", "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.484", "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.485", "urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.486"], "text_file": "quintus-smyrnaeus-grc.tsv", "narrative_level": "simile", "reason": "simile (gales when the Altar rises opposite Arcturus)"}
+      13.478	ὣς ἂρʼ ἔφη μερόπων τις ἀπόπροθεν ἄσπετον αἴγλην
+      13.479	εἰσορόων. στονόεσσα δʼ ἔτʼ ἄμφεχε Τρῶας ὀϊζύς·
+   >> 13.480	Ἀργεῖοι δʼ ἀνὰ ἄστυ κυδοίμεον, ἠΰτʼ ἀῆται
+   >> 13.481	λάβροι ἀπείρονα πόντον ὀρινόμενοι κλονέουσιν,
+   >> 13.482	ὁππότʼ ἄρʼ ἀντιπέρηθε δυσαέος Ἀρκτούροιο
+   >> 13.483	βηλὸν ἐς ἀστερόεντα Θυτήριον ἀντέλλῃσιν
+   >> 13.484	ἐς νότον ἠερόεντα τετραμμένον, ἀμφὶ δʼ ἄρʼ αὐτῷ
+   >> 13.485	πολλαὶ ὑπόβρυχα νῆες ἀμαλδύνοντʼ ἐνὶ πόντῳ
+   >> 13.486	ὀρνυμένων ἀνέμων· τοῖς εἴκελοι υἷες Ἀχαιῶν
+      13.487	πόρθεον Ἴλιον αἰπύ· τὸ δʼ ἐν πυρὶ καίετο πολλῷ.
+      13.488	ἠΰτʼ ὄρος λασίῃσιν ἄδην καταείμενον ὕλῃς
+----------------------------------------------------------------------------------------------------
+{"ref": ["1.283", "1.284", "1.285"], "text_file": "valerius-flaccus-argonautica-lat.tsv", "narrative_level": "narrator", "reason": "Orpheus' song of Phrixus' flight (seven dawns and as many moon-shadows): an embedded myth, not the voyage"}
+      1.281	aureus ut iuvenem miserantibus intulit undis
+      1.282	vector et adstrictis ut sedit cornibus Helle.
+   >> 1.283	septem Aurora vias totidemque peregerat umbras
+   >> 1.284	Luna polo, dirimique procul non aequore visa
+   >> 1.285	coeperat a gemina discedere Sestos Abydo.
+      1.286	hic soror Aeoliden aevum mansura per omne
+      1.287	deserit, heu saevae nequiquam erepta novercae.
+----------------------------------------------------------------------------------------------------
+{"ref": ["3.210", "3.211"], "text_file": "valerius-flaccus-argonautica-lat.tsv", "narrative_level": "narrator", "reason": "the stars stand still and the night lingers: divine lengthening of the night (cf. Od. 23.243)"}
+      3.208	ut magis Inarime, magis ut mugitor anhelat
+      3.209	Vesvius, attonitas acer cum suscitat urbes ...
+   >> 3.210	sic pugnae crebrescit opus; neque enim ignea cedunt
+   >> 3.211	astra loco, lentis haeret nox conscia bigis.
+      3.212	Perge age Tartareae mecum semel omnia noctis,
+      3.213	Musa, sequi. trepidam Phaethon adflavit ab alto
+----------------------------------------------------------------------------------------------------
+{"ref": ["3.359", "3.360", "3.361"], "text_file": "valerius-flaccus-argonautica-lat.tsv", "narrative_level": "simile", "reason": "simile (birds returning in mid-spring)"}
+      3.357	iamque solutus honos cineri, iam passibus aegris
+      3.358	dilapsae cum prole nurus, tandemque quiescunt
+   >> 3.359	dissona pervigili planctu vada, qualiter arctos
+   >> 3.360	ad patrias avibus medio iam vere revectis
+   >> 3.361	Memphis et aprici statio silet annua Nili.
+      3.362	At non inde dies nec quae magis aspera curis
+      3.363	nox Minyas tanta caesorum ab imagine solvit.
+----------------------------------------------------------------------------------------------------
+{"ref": ["3.558", "3.559"], "text_file": "valerius-flaccus-argonautica-lat.tsv", "narrative_level": "simile", "reason": "simile (moon and sun reflected in a pool)"}
+      3.556	amplius; utque artus et concita pectora sudor
+      3.557	diluerat, gratos avidus procumbit ad amnes.
+   >> 3.558	stagna vaga sic luce micant, ubi Cynthia caelo
+   >> 3.559	prospicit aut medii transit rota candida Phoebi:
+      3.560	tale iubar diffundit aquis; nil umbra comaeque
+      3.561	turbavitque sonus surgentis ad oscula Nymphae.
+----------------------------------------------------------------------------------------------------
+{"ref": ["22.26", "22.27", "22.28", "22.29", "22.30", "22.31"], "text_file": "iliad-grc.tsv", "narrative_level": "simile", "reason": "simile (Achilles like the late-summer star, Orion's dog), Day +1"}
+      22.24	ὣς Ἀχιλεὺς λαιψηρὰ πόδας καὶ γούνατʼ ἐνώμα.
+      22.25	τὸν δʼ ὃ γέρων Πρίαμος πρῶτος ἴδεν ὀφθαλμοῖσι
+   >> 22.26	παμφαίνονθʼ ὥς τʼ ἀστέρʼ ἐπεσσύμενον πεδίοιο,
+   >> 22.27	ὅς ῥά τʼ ὀπώρης εἶσιν, ἀρίζηλοι δέ οἱ αὐγαὶ
+   >> 22.28	φαίνονται πολλοῖσι μετʼ ἀστράσι νυκτὸς ἀμολγῷ,
+   >> 22.29	ὅν τε κύνʼ Ὠρίωνος ἐπίκλησιν καλέουσι.
+   >> 22.30	λαμπρότατος μὲν ὅ γʼ ἐστί, κακὸν δέ τε σῆμα τέτυκται,
+   >> 22.31	καί τε φέρει πολλὸν πυρετὸν δειλοῖσι βροτοῖσιν·
+      22.32	ὣς τοῦ χαλκὸς ἔλαμπε περὶ στήθεσσι θέοντος.
+      22.33	ᾤμωξεν δʼ ὃ γέρων, κεφαλὴν δʼ ὅ γε κόψατο χερσὶν
+----------------------------------------------------------------------------------------------------
+{"ref": ["22.317", "22.318"], "text_file": "iliad-grc.tsv", "narrative_level": "simile", "reason": "simile (Hesperos), Day +1"}
+      22.315	τετραφάλῳ· καλαὶ δὲ περισσείοντο ἔθειραι
+      22.316	χρύσεαι, ἃς Ἥφαιστος ἵει λόφον ἀμφὶ θαμειάς.
+   >> 22.317	οἷος δʼ ἀστὴρ εἶσι μετʼ ἀστράσι νυκτὸς ἀμολγῷ
+   >> 22.318	ἕσπερος, ὃς κάλλιστος ἐν οὐρανῷ ἵσταται ἀστήρ,
+      22.319	ὣς αἰχμῆς ἀπέλαμπʼ εὐήκεος, ἣν ἄρʼ Ἀχιλλεὺς
+      22.320	πάλλεν δεξιτερῇ φρονέων κακὸν Ἕκτορι δίῳ,
+----------------------------------------------------------------------------------------------------
+{"ref": ["11.62", "11.63"], "text_file": "iliad-grc.tsv", "narrative_level": "simile", "reason": "simile (the baneful star among clouds), Day 0"}
+      11.60	ἠΐθεόν τʼ Ἀκάμαντʼ ἐπιείκελον ἀθανάτοισιν.
+      11.61	Ἕκτωρ δʼ ἐν πρώτοισι φέρʼ ἀσπίδα πάντοσʼ ἐΐσην,
+   >> 11.62	οἷος δʼ ἐκ νεφέων ἀναφαίνεται οὔλιος ἀστὴρ
+   >> 11.63	παμφαίνων, τοτὲ δʼ αὖτις ἔδυ νέφεα σκιόεντα,
+      11.64	ὣς Ἕκτωρ ὁτὲ μέν τε μετὰ πρώτοισι φάνεσκεν,
+      11.65	ἄλλοτε δʼ ἐν πυμάτοισι κελεύων· πᾶς δʼ ἄρα χαλκῷ

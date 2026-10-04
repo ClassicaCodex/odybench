@@ -1,0 +1,63 @@
+51 accepted dates
+total date hits 0
+
+--- year-only mentions of control years (allowlist: [(-720, "SMH2020's spline epoch, or the HMNAO lod integral before it; not a control")] ) ---
+YEAR -720 [-720] allowlisted DESIGN.md (public part):185: ...']:\n  SMH2020 (S15 spline plus the HMNAO lod integral before -720), the Addendum\n  2020 parabola, the SMH'...
+YEAR -720 [-720] allowlisted DESIGN.md (public part):2566: ..."s are listed for review against a frozen allowlist, such as -720 for SMH's spline epoch [r1v5 N15c]; the"...
+YEAR -720 [-720] allowlisted DESIGN.md (public part):5593: ..."177 | SMH's own formulations span 681 s; every value before -720 is extrapolation [eph §8] | four models"...
+year-only mentions: 3
+
+--- revision 5's per-set truth-side patterns (scan_truthside.py) ---
+l.185 [-72[01]\b] SMH2020 (S15 spline plus the HMNAO lod integral before -720), the Addendum
+l.256 [-2[2-7]\d\b] | [lca1 …] | round 1 of the *Almagest* licence check. Its report was moved when round 2 replaced it, and is now `results/license-check-almagest/r2/license-check-almagest.
+l.257 [-2[2-7]\d\b] | [lca2 …] | round 2 of the *Almagest* licence check: `docs/license-check-almagest.md` (SHA-256 `3254d63f…c6afd`; byte copy `results/design-revision-v5/license-check-alma
+l.262 [-2[2-7]\d\b] | [r1 Nn], [r1 §n] | the recheck of revision 2 (new issue Nn or section n), written 2026-10-04 as `docs/critique-design-r1.md`, SHA-256 `82308707…71b`. A byte copy is kep
+l.264 [-2[2-7]\d\b] | [r2 R2-n], [r2 §n] | the recheck of revision 3 (new issue R2-n or section n), written as `docs/critique-design-r2.md`, SHA-256 `8db84b10…865c493`; byte copy `results/de
+l.266 [-2[2-7]\d\b] | [r1v5 Nn], [r1v5 #n], [r1v5 Cn], [r1v5 §n] | the recheck of revision 5 (new issue Nn, old issue #n, passed check Cn, or section n), written 2026-10-04 by the re-run of 
+l.268 [-2[2-7]\d\b] | [r2v6 Nn], [r2v6 #n], [r2v6 Cn], [r2v6 §n] | the recheck of revision 6 (new issue Nn, old issue #n, passed check Cn, or section n), written 2026-10-04 by the re-run of 
+l.270 [-2[2-7]\d\b] | [v1 §n] … [v6 §n] | `docs/DESIGN-v1.md` … `docs/DESIGN-v6.md` (revision 4: SHA-256 `bd828f14…f5db`; revision 5: `dc082ae1…c85d`; revision 6: `c386efda…49b1`) |
+l.327 [-2[2-7]\d\b] | N, New Moon | Od. 14.161-162 = 19.306-307; 14.457; Apollo's feast 20.156, 20.276-278, 21.258-259 | Ti is the date of a New Moon (search unit) | 0 / 0 |
+l.328 [-2[2-7]\d\b] | C, Pleiades and late-setting Boötes | Od. 5.270-277 | Ti-29 ≥ 17 Feb and Ti-12 ≤ 4 Apr, so Ti in 18 Mar-16 Apr of a common year | -29 / -28 (all sailing nights to -12 /
+l.766 [-2[2-7]\d\b] §2]. He argues for **March** for the voyage, from Od. 5.270-277 ("late"
+l.804 [-2[2-7]\d\b] 17-days-then-18th pair of Od. 5.278-279 recurs at 24.63-65; the
+l.810 [-2[2-7]\d\b] and in Virgil's imitation of Od. 5 (*Aen.* 4.238-258); the morning star in
+l.851 [B.5] - A.10 and B.5 choose their phase class from longitudes stated in the
+l.856 [B.5] - The gate's projection sets A.10, B.5 and B.9 to "none" (6.4).
+l.897 [-2[2-7]\d\b] date was looked up (SHA-256 `eb1f0401…9256`, 2026-10-04 05:19 UTC). An
+l.900 [-2[2-7]\d\b] (SHA-256 `135fba67…83f8`) [lcr]. Neither re-run of the workflow touched
+l.1212 [2[4-7]\d BC] - 20 Dec 1247 BC;
+l.1520 [0.001°] margin is below 0.001° or the curvature below 0.002°/d² [rev #12 fix 3].
+l.1543 [\+1[2-4]\d\b] | clock | UT+2 | S2 sunrise - DE441 UT sunrise = +120.0 min, sd 1.6, n = 75 [bm §3.2] |
+l.1709 [5\.5 d] | v0, documented | Venus rises before the Sun, with the Sun at or below -7° at Venus' rising (a visible morning star, AV 7°) | Mercury within 6.0 d (continuous) of a morn
+l.1943 [-2[2-7]\d\b] | | every offset that depends on a typical-number joint (H→D "fourth/fifth", D→Σ "seventeen/eighteenth", Σ→L "two nights … third", "twentieth") uncertain by ±2 d; or by ±
+l.1955 [5\.5 d] | | event "any of the three"; tolerance 6 d (the slack of Ptolemy's Mercury records, 14/14 within 5.5 d [alm §4]); morning first visibility (AV 10°) at 1.5, 2.5, 3.5 or 6
+l.2325 [-2[2-7]\d\b] (-1182); with at least 8 years of wandering [Od. 7.259-261, 10.467-470] the
+l.2329 [2[4-7]\d BC] - **Gainsford's 1350-1250 BC extension**, which the primary window includes,
+l.2566 [-72[01]\b] | I13 | prereg I/O | (a) every licence string present in its cited row, comparing raw characters without Unicode normalisation (the Ptolemy export mixes tonos and oxia, a
+l.2568 [0.001°] | I15 | the held-out predicates H3 and H4, `heldout.py` [r2 R2-1 fix 4; r1v5 N4 fix 1] | (a) `tests/heldout_reference.py` (A7), written from 7.1's text, using only `ephem
+l.2674 [-2[2-7]\d\b] (SHA-256 `135fba67…83f8` [lcr]). The file is never edited. The searcher reads
+l.2789 [-2[2-7]\d\b] A total path 100-250 km wide can fall between 1° grid points, which is
+l.3078 [-2[2-7]\d\b] twice (SHA-256 `18b3ff01…b458`) [lca1; lca2]. It holds 12 sets of dated
+l.3132 [B.5] - moon-phase rows, at their phase-class option, **except A.10, B.5 and
+l.3134 [B.5] - A.10 and B.5 choose their phase class from longitudes Ptolemy states in
+l.3143 [B.5] - The projection with A.10, B.5 and B.9 at their phase class is reported
+l.3232 [-2[2-7]\d\b] - The licence-checked clue file stays byte for byte as it is; its SHA-256
+l.3258 [B.5] | option | the row's primary, with the projection's exceptions (A.10, B.5 and B.9 none; A.1, I.1, B.1 and J.4 at `ge_*_same_apparition`) | B&M's own proxy where the row o
+l.3345 [B.5] B.2 and B.5, and `elongation_tol` (the measured Sun-Moon distance) for
+l.3348 [B.5] Per counted set: ALM-A A.2, A.4, A.5, A.10; ALM-B B.2, B.3, B.5, B.7, B.9;
+l.3374 [B.5] | planet-Moon | A.2, A.5, A.10, B.2, B.5 | \|computed - stated\| in longitude |
+l.3434 [-2[2-7]\d\b] (SHA-256 `be4f511e…9c82`) [lcn; lcn2]. It holds 12 clean negatives (Virgil,
+l.3680 [-2[2-7]\d\b] | H12 | Laertes digging round a plant (24.226-231; Day +1) | — | qualitative |
+l.4017 [B.5] | R10 | In regime SL, with the ceiling tolerances at every rounding step, the word-only projection of 6.4 and the frozen meaning of `same_apparition`, the truth is in the
+l.4669 [-2[2-7]\d\b] `build/public/` from the current DESIGN.md. It records their SHA-256 in
+l.5094 [B.5] storm-darkness options (6.5). The *Almagest* projection sets A.10, B.5 and
+l.5126 [0.001°] | `heldout.py` (H3, H4) | `tests/heldout_reference.py` (A7) on `ephem` positions; Horizons geocentric tables for every member | every member of P_BM, which contains the o
+l.5223 [-2[2-7]\d\b] access beyond `py -m odybench.ccx`. Every new file's SHA-256 goes into
+l.5465 [-2[2-7]\d\b] - a git-independent **code tree hash**: the SHA-256 of the sorted lines
+l.5499 [-2[2-7]\d\b] hash and the SHA-256 of `attain.json`;
+l.5593 [-72[01]\b] | 7 | ΔT at -1177 | SMH's own formulations span 681 s; every value before -720 is extrapolation [eph §8] | four models and their mixture, each σ taken as Gaussian (an ass
+l.5619 [Gautschy] | 33 | The accepted dates of the PC-R controls | taken from secondary sources: summaries of Toomer and Pedersen, Gautschy's citation list, NASA's historical-eclipse page.
+l.5638 [B.5] | 52 | Lunar phases computed from Ptolemy's coordinates | A.10 and B.5 choose their phase class from stated longitudes [lca2 item 4]; B.9's class is read off a measured 9
+l.5692 [-2[2-7]\d\b] | 2 | blocker | **Resolved.** `controls_real.json` is used exactly as licensed (SHA-256 `135fba67…83f8`, verified by the recheck); the searcher never reads a truth file; 
+l.5780 [-2[2-7]\d\b] | 58 | minor | Provenance tags that no longer resolve. Revision 4's "[lca]" meant round 1's report, and round 2 has replaced that file. The re-run of the review loop writ
+l.5781 [B.5] | 59 | major | The second *Almagest* licence check changed the file and raised four design points: a new hash; A.10 and B.5 phase classes computed from Ptolemy's coordina

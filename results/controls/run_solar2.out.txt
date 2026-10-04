@@ -1,0 +1,8 @@
+Xen Anab 3.4.8 -556 May 19     | Larisa=Nimrud      | dT_H=17849s max=0.882 sunUp=0.882 -556 05 19 14:30UT LMT 17:24 sunEl=16.2 | dT_NASA=17958s max=0.885 sunUp=0.885 LMT 17:22
+Xen Hell 2.3.4 -403 Sep 03     | Pherae (Thessaly)  | dT_H=15566s max=0.770 sunUp=0.770 -403 09 03 07:01UT LMT 08:32 sunEl=35.2 | dT_NASA=15495s max=0.771 sunUp=0.771 LMT 08:34
+Xen Hell 4.3.10 -393 Aug 14    | Coronea (Boeotia)  | dT_H=15423s max=0.908 sunUp=0.908 -393 08 14 08:00UT LMT 09:32 sunEl=50.4 | dT_NASA=15342s max=0.910 sunUp=0.910 LMT 09:34
+Plut Dion 19.4 -360 May 12     | Syracuse           | dT_H=14959s max=0.960 sunUp=0.960 -360 05 12 16:36UT LMT 17:37 sunEl=13.2 | dT_NASA=14852s max=0.962 sunUp=0.962 LMT 17:39
+Livy 22.1.9 -216 Feb 11        | Rome               | dT_H=13024s max=0.649 sunUp=0.649 -216 02 11 15:28UT LMT 16:18 sunEl=10.6 | dT_NASA=12926s max=0.653 sunUp=0.653 LMT 16:20
+Livy 30.38.8 -202 May 06       | Cumae              | dT_H=12843s max=0.482 sunUp=0.482 -202 05 06 14:35UT LMT 15:31 sunEl=36.8 | dT_NASA=12752s max=0.483 sunUp=0.483 LMT 15:33
+Pindar alt -487 Sep 01         | Thebes             | dT_H=16798s max=0.961 sunUp=0.961 -487 09 01 04:14UT LMT 05:48 sunEl=4.1 | dT_NASA=16882s max=0.964 sunUp=0.964 LMT 05:46
+Thales at Miletus -584 May 28  | Miletus            | dT_H=18282s max=0.976 sunUp=0.976 -584 05 28 16:00UT LMT 17:50 sunEl=12.6 | dT_NASA=18384s max=0.972 sunUp=0.972 LMT 17:50

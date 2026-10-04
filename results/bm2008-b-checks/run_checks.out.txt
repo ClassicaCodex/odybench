@@ -1,0 +1,106 @@
+== 1. Clock convention: Venus rise / sunrise on Ti-5 vs B&M Table 2 ==
+  1178 BC 4/11 LMT   Venus 04:03:21 Sun 05:47:01 diff 01:43:40   paper 4:39:45 / 6:22:41 / 1:42:56
+  1178 BC 4/11 UT+2  Venus 04:40:33 Sun 06:24:13 diff 01:43:40   paper 4:39:45 / 6:22:41 / 1:42:56
+  1250 BC 3/28 LMT   Venus 04:07:44 Sun 06:10:56 diff 02:03:12   paper 4:45:55 / 6:49:20 / 2:03:25
+  1250 BC 3/28 UT+2  Venus 04:44:56 Sun 06:48:08 diff 02:03:12   paper 4:45:55 / 6:49:20 / 2:03:25
+  1170 BC 3/14 LMT   Venus 04:14:45 Sun 06:32:25 diff 02:17:39   paper 4:51:24 / 7:08:31 / 2:17:07
+  1170 BC 3/14 UT+2  Venus 04:51:57 Sun 07:09:37 diff 02:17:39   paper 4:51:24 / 7:08:31 / 2:17:07
+
+== 2. MWRA = local maximum of Mercury rising azimuth (from N through E)? ==
+  1250 S2 MWRA 7-Mar   rise-az max 7-Mar   (+0 d)  | max W elongation 12-Mar  (+5 d, -27.3 deg)
+  1247 S2 MWRA 1-Feb   rise-az max 1-Feb   (+0 d)  | max W elongation 17-Jan  (-15 d, -26.8 deg)
+  1236 S2 MWRA 23-Feb  rise-az max 23-Feb  (+0 d)  | max W elongation 25-Feb  (+2 d, -27.7 deg)
+  1233 S2 MWRA 21-Apr  rise-az max 21-Apr  (+0 d)  | max W elongation 1-May   (+10 d, -23.5 deg)
+  1224 S2 MWRA 11-Mar  rise-az max 11-Mar  (+0 d)  | max W elongation 17-Mar  (+6 d, -27.0 deg)
+  1223 S2 MWRA 25-Feb  rise-az max 25-Feb  (+0 d)  | max W elongation 28-Feb  (+3 d, -27.7 deg)
+  1203 S2 MWRA 21-Feb  rise-az max 21-Feb  (+0 d)  | max W elongation 23-Feb  (+2 d, -27.7 deg)
+  1191 S2 MWRA 9-Mar   rise-az max 10-Mar  (+1 d)  | max W elongation 16-Mar  (+7 d, -27.2 deg)
+  1190 S2 MWRA 20-Feb  rise-az max 24-Feb  (+4 d)  | max W elongation 26-Feb  (+6 d, -27.7 deg)
+  1189 S2 MWRA 5-Feb   rise-az max 13-Feb  (+8 d)  | max W elongation 8-Feb   (+3 d, -27.6 deg)
+  1178 S2 MWRA 13-Mar  rise-az max 12-Mar  (-1 d)  | max W elongation 19-Mar  (+6 d, -27.0 deg)
+  1177 S2 MWRA 26-Feb  rise-az max 26-Feb  (+0 d)  | max W elongation 29-Feb  (+3 d, -27.7 deg)
+  1170 S2 MWRA 20-Feb  rise-az max 20-Feb  (+0 d)  | max W elongation 21-Feb  (+1 d, -27.8 deg)
+  1157 S2 MWRA 19-Feb  rise-az max 22-Feb  (+3 d)  | max W elongation 24-Feb  (+5 d, -27.7 deg)
+  1145 S2 MWRA 10-Mar  rise-az max 10-Mar  (+0 d)  | max W elongation 16-Mar  (+6 d, -27.1 deg)
+  1144 S2 MWRA 23-Feb  rise-az max 24-Feb  (+1 d)  | max W elongation 26-Feb  (+3 d, -27.7 deg)
+  1143 S2 MWRA 12-Feb  rise-az max 12-Feb  (+0 d)  | max W elongation 8-Feb   (-4 d, -27.6 deg)
+  1132 S2 MWRA 12-Mar  rise-az max 12-Mar  (+0 d)  | max W elongation 19-Mar  (+7 d, -27.0 deg)
+  1111 S2 MWRA 22-Feb  rise-az max 22-Feb  (+0 d)  | max W elongation 24-Feb  (+2 d, -27.7 deg)
+  1100 S2 MWRA 27-Mar  rise-az max 27-Mar  (+0 d)  | max W elongation 4-Apr   (+8 d, -25.9 deg)
+
+== 3. Mercury around 1178 BC (daily, local mean noon) ==
+  15-Feb  elong    6.85  dlon/dt -0.657  rise-az  102.99  rises  -4.7 min before Sun
+  16-Feb  elong    5.17  dlon/dt -0.729  rise-az  103.28  rises   0.0 min before Sun
+  17-Feb  elong    3.42  dlon/dt -0.785  rise-az  103.63  rises   4.8 min before Sun
+  18-Feb  elong    1.63  dlon/dt -0.824  rise-az  104.03  rises   9.5 min before Sun
+  19-Feb  elong   -0.20  dlon/dt -0.846  rise-az  104.48  rises  14.2 min before Sun
+  20-Feb  elong   -2.03  dlon/dt -0.850  rise-az  104.97  rises  18.9 min before Sun
+  21-Feb  elong   -3.86  dlon/dt -0.838  rise-az  105.48  rises  23.4 min before Sun
+  22-Feb  elong   -5.67  dlon/dt -0.810  rise-az  106.02  rises  27.7 min before Sun
+  23-Feb  elong   -7.44  dlon/dt -0.768  rise-az  106.57  rises  31.8 min before Sun
+  24-Feb  elong   -9.17  dlon/dt -0.713  rise-az  107.12  rises  35.7 min before Sun
+  25-Feb  elong  -10.83  dlon/dt -0.648  rise-az  107.66  rises  39.4 min before Sun
+  26-Feb  elong  -12.43  dlon/dt -0.575  rise-az  108.20  rises  42.8 min before Sun
+  27-Feb  elong  -13.94  dlon/dt -0.494  rise-az  108.71  rises  46.0 min before Sun
+  28-Feb  elong  -15.38  dlon/dt -0.409  rise-az  109.20  rises  48.8 min before Sun
+  1-Mar   elong  -16.72  dlon/dt -0.321  rise-az  109.67  rises  51.4 min before Sun
+  2-Mar   elong  -17.98  dlon/dt -0.231  rise-az  110.10  rises  53.7 min before Sun
+  3-Mar   elong  -19.14  dlon/dt -0.141  rise-az  110.50  rises  55.7 min before Sun
+  4-Mar   elong  -20.21  dlon/dt -0.051  rise-az  110.86  rises  57.4 min before Sun
+  5-Mar   elong  -21.20  dlon/dt  0.037  rise-az  111.18  rises  58.9 min before Sun
+  6-Mar   elong  -22.10  dlon/dt  0.123  rise-az  111.46  rises  60.1 min before Sun
+  7-Mar   elong  -22.91  dlon/dt  0.207  rise-az  111.71  rises  61.1 min before Sun
+  8-Mar   elong  -23.63  dlon/dt  0.288  rise-az  111.91  rises  61.8 min before Sun
+  9-Mar   elong  -24.28  dlon/dt  0.366  rise-az  112.07  rises  62.4 min before Sun
+  10-Mar  elong  -24.85  dlon/dt  0.441  rise-az  112.18  rises  62.7 min before Sun
+  11-Mar  elong  -25.35  dlon/dt  0.513  rise-az  112.26  rises  62.8 min before Sun
+  12-Mar  elong  -25.77  dlon/dt  0.582  rise-az  112.29  rises  62.8 min before Sun
+  13-Mar  elong  -26.13  dlon/dt  0.647  rise-az  112.29  rises  62.6 min before Sun
+  14-Mar  elong  -26.42  dlon/dt  0.710  rise-az  112.24  rises  62.3 min before Sun
+  15-Mar  elong  -26.66  dlon/dt  0.769  rise-az  112.15  rises  61.9 min before Sun
+  16-Mar  elong  -26.83  dlon/dt  0.827  rise-az  112.02  rises  61.3 min before Sun
+  17-Mar  elong  -26.95  dlon/dt  0.881  rise-az  111.85  rises  60.6 min before Sun
+  18-Mar  elong  -27.01  dlon/dt  0.933  rise-az  111.63  rises  59.8 min before Sun
+  19-Mar  elong  -27.02  dlon/dt  0.983  rise-az  111.38  rises  59.0 min before Sun
+  20-Mar  elong  -26.98  dlon/dt  1.031  rise-az  111.09  rises  58.0 min before Sun
+  21-Mar  elong  -26.89  dlon/dt  1.077  rise-az  110.76  rises  57.0 min before Sun
+  22-Mar  elong  -26.76  dlon/dt  1.122  rise-az  110.39  rises  55.9 min before Sun
+  23-Mar  elong  -26.59  dlon/dt  1.165  rise-az  109.99  rises  54.8 min before Sun
+  24-Mar  elong  -26.37  dlon/dt  1.207  rise-az  109.54  rises  53.7 min before Sun
+  25-Mar  elong  -26.11  dlon/dt  1.247  rise-az  109.06  rises  52.5 min before Sun
+  26-Mar  elong  -25.81  dlon/dt  1.286  rise-az  108.54  rises  51.2 min before Sun
+  27-Mar  elong  -25.47  dlon/dt  1.324  rise-az  107.99  rises  49.9 min before Sun
+  28-Mar  elong  -25.09  dlon/dt  1.362  rise-az  107.39  rises  48.6 min before Sun
+  29-Mar  elong  -24.67  dlon/dt  1.399  rise-az  106.77  rises  47.3 min before Sun
+  30-Mar  elong  -24.22  dlon/dt  1.435  rise-az  106.10  rises  46.0 min before Sun
+  31-Mar  elong  -23.73  dlon/dt  1.471  rise-az  105.40  rises  44.6 min before Sun
+
+== 4. Ti in Table S2 vs Meeus ch.49 conjunction date (LMT 20.7E) ==
+  1248 S2 Ti 9-Apr    Meeus LMT: 11/3 16.9h, 10/4 3.8h
+  1246 S2 Ti 17-Apr   Meeus LMT: 19/3 13.5h, 18/4 5.0h
+  1245 S2 Ti 5-Apr    Meeus LMT: 7/3 14.5h, 6/4 5.6h
+  1243 S2 Ti 13-Mar   Meeus LMT: 15/3 20.1h, 14/4 6.0h
+  1205 S2 Ti 13-Apr   Meeus LMT: 15/3 20.1h, 14/4 4.4h
+  1187 S2 Ti 26-Mar   Meeus LMT: 27/3 3.8h, 25/4 11.8h
+  1177 S2 Ti 4-Apr    Meeus LMT: 6/3 12.5h, 5/4 1.1h
+  1175 S2 Ti 13-Apr   Meeus LMT: 14/3 8.0h, 12/4 24.0h
+  1154 S2 Ti 21-Mar   Meeus LMT: 22/3 2.1h, 20/4 10.4h
+  1147 S2 Ti 2-Apr    Meeus LMT: 4/3 14.2h, 3/4 3.6h
+  1135 S2 Ti 21-Mar   Meeus LMT: 22/3 2.4h, 20/4 9.4h
+  1134 S2 Ti 9-Apr    Meeus LMT: 11/3 18.0h, 10/4 2.5h
+  1125 S2 Ti 30-Mar   Meeus LMT: 1/3 16.8h, 31/3 2.2h, 29/4 9.9h
+  1105 S2 Ti 19-Mar   Meeus LMT: 20/3 1.5h, 18/4 16.3h
+  1101 S2 Ti 3-Apr    Meeus LMT: 5/3 16.7h, 4/4 1.4h
+  15 of 152 rows differ
+
+== 5. Table S2 survivor counts ==
+  1250-1115 BC: rows 136; Venus morning 67; Venus>=90min 21; |d|<=1 4; |d|<=3 12; equinox flag 22
+    Venus>=90 & |d|<=1: ['1178']   Venus>=60 & |d|<=3: ['1191', '1178', '1157']
+  all S2 rows 1251-1100 BC: rows 152; Venus morning 75; Venus>=90min 25; |d|<=1 4; |d|<=3 13; equinox flag 26
+    Venus>=90 & |d|<=1: ['1178']   Venus>=60 & |d|<=3: ['1191', '1178', '1157', '1111']
+
+== 6. 1178 BC spot checks ==
+  vernal equinox: 1/4 15:11:41 UT+2   (paper: 1 April 3:24 p.m.)
+  new moon 18/3 03:26:04 UT+2
+  new moon 16/4 12:20:06 UT+2
+  Sun at -12 deg, evening 18 Mar: 19:35 UT+2   (paper Fig. 2: 7:38 p.m.)

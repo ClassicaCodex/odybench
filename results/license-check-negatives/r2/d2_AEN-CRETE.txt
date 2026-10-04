@@ -1,0 +1,197 @@
+====================================================================================================
+SET AEN-CRETE
+{
+ "set": "AEN-CRETE",
+ "role": "negative",
+ "searchable": true,
+ "text": "Virgil, Aeneid 3.121-3.152 (the settlement on Crete; Aeneas narrating)",
+ "text_file": "virgil-aeneid-lat.tsv",
+ "edition_id": 1827,
+ "day0": "Night 0 is the night of the Penates' vision by full moonlight; the Sirius season precedes it by an unstated interval.",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "observer_places": [
+  {
+   "place": "Crete, the town Aeneas founds and calls Pergamea (its location is not given)",
+   "words": "antiquis Curetum adlabimur oris … Pergameamque voco",
+   "ref": [
+    "3.131",
+    "3.132",
+    "3.133"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "lat": 35.21,
+   "lon": 24.91,
+   "coord_source": "central Crete chosen by the drafter as a representative point; the text names the island and the town only"
+  }
+ ],
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "AEN-CRETE-01": "a60",
+   "AEN-CRETE-02": "a"
+  },
+  "BM-analogue": {
+   "AEN-CRETE-01": "a60",
+   "AEN-CRETE-02": "a"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "text",
+   "clue_ids": [
+    "AEN-CRETE-02"
+   ],
+   "note": "full moon on Night 0: the opposite phase to the Odyssey's anchor"
+  },
+  "season_stars": {
+   "status": "text",
+   "clue_ids": [
+    "AEN-CRETE-01"
+   ],
+   "note": "Sirius' scorching season, interval to Night 0 unstated"
+  },
+  "morning_star": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "mercury_turning_point": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "darkness_eclipse": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  }
+ },
+ "notes": "Two clues only; a season plus a phase. Expected to have many survivors.",
+ "eclipse_compatible_options": [],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness",
+ "license_check": "ok"
+}
+ PLACE Crete, the town Aeneas founds and calls Pergamea (its location is not given): missing refs []
+   frag exact=True nfc=True where=['3.131']: antiquis Curetum adlabimur oris
+   frag exact=True nfc=True where=['3.133']: Pergameamque voco
+      3.129	hortantur socii: Cretam proavosque petamus!
+      3.130	Prosequitur surgens a puppi ventus euntis
+   >> 3.131	et tandem antiquis Curetum adlabimur oris.
+   >> 3.132	Ergo avidus muros optatae molior urbis,
+   >> 3.133	Pergameamque voco, et laetam cognomine gentem
+      3.134	hortor amare focos arcemque attollere tectis.
+      3.135	Iamque fere sicco subductae litore puppes;
+----------------------------------------------------------------------------------------------------
+CLUE AEN-CRETE-01  kind=season  level=character speech
+{
+ "set": "AEN-CRETE",
+ "clue_id": "AEN-CRETE-01",
+ "kind": "season",
+ "statement": "Some time before Night 0 (interval unstated) a plague year strikes the new settlement: Sirius scorches the barren fields and the grass dries up.",
+ "licence_words": "letifer annus … tum sterilis exurere Sirius agros … arebant herbae",
+ "ref": [
+  "3.137",
+  "3.138",
+  "3.139",
+  "3.140",
+  "3.141",
+  "3.142"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a60",
+   "operational": "Night 0 lies between Sirius' heliacal rising (first morning visibility at the site) and 60 days after it",
+   "justification": "'Sirius exurere agros' names the dog-star season; the interval to the vision night is unstated ('tum' ... 'Nox erat'), so the window width is the drafter's"
+  },
+  {
+   "option": "a30",
+   "operational": "as a60 with 30 days",
+   "justification": "narrower variant of the same reading"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the plague-year topos; no stated interval ties it to Night 0"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['3.139']: letifer annus
+   frag exact=True nfc=True where=['3.141']: tum sterilis exurere Sirius agros
+   frag exact=True nfc=True where=['3.142']: arebant herbae
+ TEXT:
+      3.133	Pergameamque voco, et laetam cognomine gentem
+      3.134	hortor amare focos arcemque attollere tectis.
+      3.135	Iamque fere sicco subductae litore puppes;
+      3.136	conubiis arvisque novis operata iuventus;
+   >> 3.137	iura domosque dabam: subito cum tabida membris,
+   >> 3.138	corrupto caeli tractu, miserandaque venit
+   >> 3.139	arboribusque satisque lues et letifer annus.
+   >> 3.140	Linquebant dulcis animas, aut aegra trahebant
+   >> 3.141	corpora; tum sterilis exurere Sirius agros;
+   >> 3.142	arebant herbae, et victum seges aegra negabat.
+      3.143	Rursus ad oraclum Ortygiae Phoebumque remenso
+      3.144	hortatur pater ire mari, veniamque precari:
+      3.145	quam fessis finem rebus ferat; unde laborum
+----------------------------------------------------------------------------------------------------
+CLUE AEN-CRETE-02  kind=moon-phase  level=character speech
+{
+ "set": "AEN-CRETE",
+ "clue_id": "AEN-CRETE-02",
+ "kind": "moon-phase",
+ "statement": "On Night 0 the Penates appear to the sleeping Aeneas, clear in the light the full moon pours through the windows.",
+ "licence_words": "Nox erat … visi ante oculos adstare iacentis in somnis, multo manifesti lumine, qua se plena per insertas fundebat luna fenestras",
+ "ref": [
+  "3.147",
+  "3.150",
+  "3.151",
+  "3.152"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "opposition falls within +-1 day of local midnight of Night 0 and the Moon is above the horizon at some instant of Night 0",
+   "justification": "'plena luna'"
+  },
+  {
+   "option": "b",
+   "operational": "illuminated fraction >= 0.9 at local midnight of Night 0 and the Moon above the horizon at some instant of Night 0",
+   "justification": "a looser 'full' that does not require opposition to the day"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the light belongs to the dream ('in somnis'), not to the night's sky"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['3.147']: Nox erat
+   frag exact=True nfc=True where=['(spans rows)']: visi ante oculos adstare iacentis in somnis, multo manifesti lumine, qua se plena per insertas fundebat luna fenestras
+ TEXT:
+      3.143	Rursus ad oraclum Ortygiae Phoebumque remenso
+      3.144	hortatur pater ire mari, veniamque precari:
+      3.145	quam fessis finem rebus ferat; unde laborum
+      3.146	temptare auxilium iubeat; quo vertere cursus.
+   >> 3.147	Nox erat, et terris animalia somnus habebat:
+      3.148	effigies sacrae divom Phrygiique Penates,
+      3.149	quos mecum a Troia mediisque ex ignibus urbis
+   >> 3.150	extuleram, visi ante oculos adstare iacentis
+   >> 3.151	in somnis, multo manifesti lumine, qua se
+   >> 3.152	plena per insertas fundebat luna fenestras;
+      3.153	tum sic adfari et curas his demere dictis:
+      3.154	Quod tibi delato Ortygiam dicturus Apollo est,
+      3.155	hic canit, et tua nos en ultro ad limina mittit.

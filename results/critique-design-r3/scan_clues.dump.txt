@@ -1,0 +1,783 @@
+controls_real.json
+
+######## R-PTOL-BAB  positive control (pass/fail)  window 136  anchor E1
+  PLACE {"events": ["E1", "E2", "E3"], "place": "Babylon", "licence_words": ["ἐκ τῶν ἐν Βαβυλῶνι τετηρημένων"], "ref": ["urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3"], "text_file": ["data/text/ptolemy-syntaxis-grc.tsv"], "search_coordinates": {"lat": 32.54, "lon": 44.42}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+  EVENT {"event_id": "E1", "kind": "eclipse-lunar", "ref": "4.6.3"}
+  EVENT {"event_id": "E2", "kind": "eclipse-lunar", "ref": "4.6.4"}
+  EVENT {"event_id": "E3", "kind": "eclipse-lunar", "ref": "4.6.5"}
+   - PB-CAL [calendar-date] Mid-eclipse nights in Ptolemy's Egyptian reckoning by regnal years of Mardokempados: E1 = year 1 Thoth 29 into 30; E2 = year 2 Thoth 18 into 19; E3 = year 2 Phamenoth 15 into 16. night_index: E1 = 29, E2 = 383, E3 = 560. One free integer J_free (shared by E1-E3) maps night_index to Julian Day; it is
+       licence: τῷ πρώτῳ ἔτει Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ κθʹ εἰς τὴν λ΄ | τῷ δευτέρῳ ἔτει τοῦ αὐτοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Θὼθ ιη΄ εἰς τὴν ιθ΄ | τῷ αὐτῷ δευτέρῳ ἔτει τοῦ Μαρδοκεμπάδου κατʼ Αἰγυπτίους Φαμενὼθ ιεʹ εἰς τὴν ιϛ΄
+   - PB-INT-12 [day-interval] From E1 to E2: 354 days and 2 1/2 equinoctial hours (apparent), 2 1/2 + 1/15 h in mean days, mid-eclipse to mid-eclipse.
+       licence: ἡμέρας περιέχει τνδ καὶ ὥρας ἰσημερινὰς ἁπλῶς μὲν οὕτως θεωροῦσιν δύο ἥμισυ
+       * calendar-exact: {"delta_nights": 354}
+         ptolemy-hours: {"delta_days": 354.104, "tol_hours": 1.0}
+         none: {"delta_nights": null}
+   - PB-INT-23 [day-interval] From E2 to E3: 176 days and 20 1/2 equinoctial hours (apparent), 20 1/5 h in mean days; equivalently the night of E3 is 177 civil nights after the night of E2.
+       licence: ἡμέρας ρος καὶ ὥρας ἰσημερινὰς ἀπλῶς μὲν πάλιν κ U+2220΄
+       * calendar-exact: {"delta_nights": 177}
+         ptolemy-hours: {"delta_days": 176.854, "tol_hours": 1.0}
+         none: {"delta_nights": null}
+   - PB-E1-MAG [magnitude] E1 is a lunar eclipse seen from Babylon and was total: umbral magnitude >= 1.0.
+       licence: καὶ ἐξέλειπεν ὅλη
+   - PB-E1-TIME [eclipse-timing] Timing of E1 at Babylon. The record: it began to be eclipsed after the rising, a full hour having passed. Ptolemy's reduction: night of 12 equinoctial hours, first contact 4 1/2 h and mid-eclipse 2 1/2 h before local midnight at Babylon (3 1/3 h before midnight at Alexandria, using his 5/6 h longitu
+       licence: ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν μιᾶς ὥρας ἱκανῶς παρελθούσης | ὁ δὲ μέσος χρόνος, ἐπειδήπερ τελεία ἦν ἡ ἔκλειψις, πρὸ β U+2220΄ ὡρῶν
+       * record: {"first_contact_after_moonrise_h": [1.0, 2.0], "site": "Babylon"}
+         reduction: {"mid_minus_midnight_LAT_h": -2.5, "tol_h": 1.0, "site": "Babylon"}
+         none: {"timing": null}
+   - PB-E1-SUN [solar-longitude] Ptolemy computes the Sun at mid-eclipse E1 at Pisces 24 1/2 deg, i.e. tropical longitude 354.5 deg ('about the end of Pisces'; night of about 12 equinoctial hours).
+       licence: ὁ ἥλιος περὶ τὰ ἔσχατα τῶν Ἰχθύων ἦν | ἐπεῖχεν ἀκριβῶς τῶν Ἰχθύων μοίρας κδ U+2220΄ ἔγγιστα
+       * pm5: {"sun_lon_deg": 354.5, "tol_deg": 5.0}
+         pm15: {"sun_lon_deg": 354.5, "tol_deg": 15.0}
+         none: {"sun_lon_deg": null}
+   - PB-E2-MAG [magnitude] E2 is a partial lunar eclipse of 3 digits (1 digit = 1/12 of the lunar diameter): umbral magnitude about 0.25.
+       licence: ἐξέλειπε δέ, φησίν, ἀπὸ νότου δακτύλους γ
+       * pm0.10: {"umag": [0.15, 0.35]}
+         pm0.20: {"umag": [0.05, 0.45]}
+         partial: {"umag": [0.0, 1.0]}
+   - PB-E2-DIR [direction] E2 was eclipsed 'from the south': the southern part of the disk was darkened, so the Moon passed north of the shadow axis (ecliptic latitude of the Moon > 0 at mid-eclipse).
+       licence: ἀπὸ νότου
+       * north-of-axis: {"moon_lat_sign": 1}
+         none: {"moon_lat_sign": null}
+   - PB-E2-TIME [eclipse-timing] The record: 3 digits eclipsed at midnight itself. Ptolemy: mid-eclipse at local midnight at Babylon (5/6 h before midnight at Alexandria).
+       licence: αὐτοῦ τοῦ μεσονυκτίου | ἐπεὶ οὖν ὁ μέσος χρόνος ἐν Βαβυλῶνι φαίνεται γεγονὼς κατʼ αὐτὸ τὸ μεσονύκτιον
+       * mid-at-midnight: {"mid_minus_midnight_LAT_h": 0.0, "tol_h": 1.0, "site": "Babylon"}
+         in-progress: {"umbral_phase_contains_LAT_h": 0.0, "site": "Babylon"}
+         none: {"timing": null}
+   - PB-E2-SUN [solar-longitude] Ptolemy computes the Sun at Pisces 13 3/4 deg: tropical longitude 343.75 deg.
+       licence: τῶν Ἰχθύων μοίρας ιγ U+2220΄ δ΄
+       * pm5: {"sun_lon_deg": 343.75, "tol_deg": 5.0}
+         pm15: {"sun_lon_deg": 343.75, "tol_deg": 15.0}
+         none: {"sun_lon_deg": null}
+   - PB-E3-MAG [magnitude] E3: eclipsed from the north by 'more than half' (πλεῖον τοῦ ἡμίσους); not said to be total. The words do not say half of what. The options read it as a fraction of the diameter, as Ptolemy's own records state it (IV.6.14-15 'τῆς διαμέτρου'); umbral magnitude > 0.5 is the weaker of the diameter and a
+       licence: ἐξέλειπεν ἀπʼ ἄρκτων πλεῖον τοῦ ἡμίσους
+       * partial-gt-half: {"umag": [0.5, 1.0]}
+         gt-half: {"umag": [0.5, null]}
+         loose: {"umag": [0.4, null]}
+   - PB-E3-DIR [direction] E3 eclipsed 'from the north': Moon south of the shadow axis (ecliptic latitude < 0).
+       licence: ἀπʼ ἄρκτων
+       * south-of-axis: {"moon_lat_sign": -1}
+         none: {"moon_lat_sign": null}
+   - PB-E3-TIME [eclipse-timing] The record: it began to be eclipsed after the rising. Ptolemy: night of 11 equinoctial hours, first contact about 5 h and mid-eclipse 3 1/2 h before local midnight at Babylon, assuming a 3-hour eclipse.
+       licence: ἤρξατο δέ, φησίν, ἐκλείπειν μετὰ τὴν ἀνατολὴν | ὁ δὲ μέσος χρόνος πρὸ γ U+2220΄ ὡρῶν
+       * record: {"first_contact_after_moonrise_h": [0.0, null], "site": "Babylon"}
+         record-soon: {"first_contact_after_moonrise_h": [0.0, 1.0], "site": "Babylon"}
+         reduction: {"mid_minus_midnight_LAT_h": -3.5, "tol_h": 1.0, "site": "Babylon"}
+         none: {"timing": null}
+   - PB-E3-SUN [solar-longitude] Ptolemy computes the Sun at Virgo 3 1/4 deg ('about the beginning of Virgo'): tropical longitude 153.25 deg.
+       licence: ὁ ἥλιος περὶ τὴν ἀρχὴν ἦν τῆς Παρθένου | τῆς Παρθένου μοίρας γ δ΄ ἔγγιστα
+       * pm5: {"sun_lon_deg": 153.25, "tol_deg": 5.0}
+         pm15: {"sun_lon_deg": 153.25, "tol_deg": 15.0}
+         none: {"sun_lon_deg": null}
+
+######## R-PTOL-ALEX  positive control (pass/fail)  window 136  anchor H1
+  PLACE {"events": ["H1", "H2", "H3"], "place": "Alexandria", "licence_words": ["ἐκ τῶν ἐπιμελέστατα ἡμῖν ἐν Ἀλεξανδρείᾳ τετηρημένων"], "ref": ["urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13"], "text_file": ["data/text/ptolemy-syntaxis-grc.tsv"], "search_coordinates": {"lat": 31.2, "lon": 29.92}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+  EVENT {"event_id": "H1", "kind": "eclipse-lunar", "ref": "4.6.13"}
+  EVENT {"event_id": "H2", "kind": "eclipse-lunar", "ref": "4.6.14"}
+  EVENT {"event_id": "H3", "kind": "eclipse-lunar", "ref": "4.6.15"}
+   - PA-CAL [calendar-date] Mid-eclipse nights in the Egyptian calendar by regnal years of Hadrian: H1 = year 17 Payni 20 into 21; H2 = year 19 Choiak 2 into 3; H3 = year 20 Pharmouthi 19 into 20. night_index: H1 = 6130, H2 = 6662, H3 = 7164 (formula in notes). One free integer J_free (shared by H1-H3) maps to Julian Day.
+       licence: τῷ ιζʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Παϋνὶ κʹ εἰς τὴν καʹ | τῷ ιθʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Χοϊὰκ βʹ εἰς τὴν γʹ | τῷ κʹ ἔτει Αδριανοῦ κατʼ Αἰγυπτίους Φαρμουθὶ ιθʹ εἰς τὴν κʹ
+   - PA-INT [day-interval] H1 to H2: 1 Egyptian year, 166 days, 23 3/4 equinoctial hours (apparent; 23 5/8 h mean). H2 to H3: 1 Egyptian year, 137 days, 5 h (apparent; 5 1/2 h mean).
+       licence: ἐνιαυτοῦ Αἰγυπτιακοῦ ἑνὸς καὶ ἡμερῶν ρξς καὶ ὡρῶν ἰσημερινῶν ἀπλῶς μὲν κγ U+2220΄ δʹ, ἀκριβῶς δὲ κγ U+2220ʹ ηʹ | ἐνιαυτοῦ πάλιν Αἰγυπτιακοῦ ἑνὸς καὶ ἡμερῶν ρλζ καὶ ὡρῶν ἰσημερινῶν ἁπλῶς μὲν ε, ἀκριβῶς δὲ ε U+2220΄
+       * calendar-exact: {"delta_nights": {"H1->H2": 532, "H2->H3": 502}}
+         none: {"delta_nights": null}
+   - PA-H1-MAG [magnitude] H1 total: umbral magnitude >= 1.0.
+       licence: καὶ ἐξέλειπεν ὅλη
+   - PA-H1-TIME [eclipse-timing] Ptolemy computed mid-eclipse 3/4 equinoctial hour before midnight (Alexandria).
+       licence: πρὸ ἡμίσους καὶ τετάρτου μιᾶς ὥρας ἰσημερινῆς τοῦ μεσονυκτίου | ἐπελογισάμεθα
+       * pm0.5: {"mid_minus_midnight_LAT_h": -0.75, "tol_h": 0.5, "site": "Alexandria"}
+         pm1: {"mid_minus_midnight_LAT_h": -0.75, "tol_h": 1.0, "site": "Alexandria"}
+         none: {"timing": null}
+   - PA-H1-SUN [solar-longitude] Ptolemy computes the Sun at Taurus 13 1/4 deg: tropical longitude 43.25 deg.
+       licence: τοῦ Ταύρου μοίρας ιγ δʹ ἔγγιστα
+       * pm3: {"sun_lon_deg": 43.25, "tol_deg": 3.0}
+         pm15: {"sun_lon_deg": 43.25, "tol_deg": 15.0}
+         none: {"sun_lon_deg": null}
+   - PA-H2-MAG [magnitude] H2 partial, 1/2 + 1/3 = 5/6 of the diameter (10 digits) from the north: umag about 0.83.
+       licence: ἐξέλειπεν ἀπʼ ἄρκτων τὸ U+2220ʹ καὶ γʹ τῆς διαμέτρου
+       * pm0.10: {"umag": [0.73, 0.93]}
+         pm0.20: {"umag": [0.63, 1.0]}
+         partial: {"umag": [0.0, 1.0]}
+   - PA-H2-DIR [direction] H2 eclipsed from the north: Moon south of the shadow axis (latitude < 0).
+       licence: ἀπʼ ἄρκτων
+       * south-of-axis: {"moon_lat_sign": -1}
+         none: {"moon_lat_sign": null}
+   - PA-H2-TIME [eclipse-timing] Ptolemy computed mid-eclipse 1 equinoctial hour before midnight (Alexandria).
+       licence: πρὸ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου | ἐπελογισάμεθα
+       * pm0.5: {"mid_minus_midnight_LAT_h": -1.0, "tol_h": 0.5, "site": "Alexandria"}
+         pm1: {"mid_minus_midnight_LAT_h": -1.0, "tol_h": 1.0, "site": "Alexandria"}
+         none: {"timing": null}
+   - PA-H2-SUN [solar-longitude] Ptolemy computes the Sun at Chelae (Libra) 25 1/6 deg: tropical longitude 205.17 deg.
+       licence: τῶν Χηλῶν μοίρας κε ςʹ ἔγγιστα
+       * pm3: {"sun_lon_deg": 205.17, "tol_deg": 3.0}
+         pm15: {"sun_lon_deg": 205.17, "tol_deg": 15.0}
+         none: {"sun_lon_deg": null}
+   - PA-H3-MAG [magnitude] H3 partial, half the diameter from the north: umag about 0.5.
+       licence: ἐξέλειπε τὸ ἥμισυ τῆς διαμέτρου ἀπʼ ἄρκτων
+       * pm0.10: {"umag": [0.4, 0.6]}
+         pm0.20: {"umag": [0.3, 0.7]}
+         partial: {"umag": [0.0, 1.0]}
+   - PA-H3-DIR [direction] H3 eclipsed from the north: Moon south of the shadow axis (latitude < 0).
+       licence: ἀπʼ ἄρκτων
+       * south-of-axis: {"moon_lat_sign": -1}
+         none: {"moon_lat_sign": null}
+   - PA-H3-TIME [eclipse-timing] Ptolemy computed mid-eclipse 4 equinoctial hours after midnight (Alexandria).
+       licence: μετὰ δ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου | ἐπελογισάμεθα
+       * pm0.5: {"mid_minus_midnight_LAT_h": 4.0, "tol_h": 0.5, "site": "Alexandria"}
+         pm1: {"mid_minus_midnight_LAT_h": 4.0, "tol_h": 1.0, "site": "Alexandria"}
+         none: {"timing": null}
+   - PA-H3-SUN [solar-longitude] Ptolemy computes the Sun at Pisces 14 1/12 deg: tropical longitude 344.08 deg.
+       licence: τῶν Ἰχθύων μοίρας ιδ ιβ΄ ἔγγιστα
+       * pm3: {"sun_lon_deg": 344.08, "tol_deg": 3.0}
+         pm15: {"sun_lon_deg": 344.08, "tol_deg": 15.0}
+         none: {"sun_lon_deg": null}
+
+######## R-PTOL-CHAIN  positive control (pass/fail); the strongest of the Ptolemy sets  window 136  anchor E1
+  PLACE {"events": ["E1", "E2", "E3"], "place": "Babylon", "licence_words": ["ἐκ τῶν ἐν Βαβυλῶνι τετηρημένων"], "ref": ["urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.3"], "text_file": ["data/text/ptolemy-syntaxis-grc.tsv"], "search_coordinates": {"lat": 32.54, "lon": 44.42}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+  PLACE {"events": ["H1", "H2", "H3"], "place": "Alexandria", "licence_words": ["ἐκ τῶν ἐπιμελέστατα ἡμῖν ἐν Ἀλεξανδρείᾳ τετηρημένων"], "ref": ["urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13"], "text_file": ["data/text/ptolemy-syntaxis-grc.tsv"], "search_coordinates": {"lat": 31.2, "lon": 29.92}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+  EVENT {"event_id": "E1", "kind": "eclipse-lunar"}
+  EVENT {"event_id": "E2", "kind": "eclipse-lunar"}
+  EVENT {"event_id": "E3", "kind": "eclipse-lunar"}
+  EVENT {"event_id": "H1", "kind": "eclipse-lunar"}
+  EVENT {"event_id": "H2", "kind": "eclipse-lunar"}
+  EVENT {"event_id": "H3", "kind": "eclipse-lunar"}
+   - PC-LINK [day-interval] From E2 (Mardokempados year 2, Thoth 18 into 19, 5/6 h before midnight at Alexandria) to H2 (Hadrian year 19, Choiak 2 into 3, 1 h before midnight): 854 Egyptian years, 73 days and 23 1/2 + 1/3 equinoctial hours (apparent; 23 1/3 h in mean days); in all 311,783 days and 23 1/3 h. Equivalently the ni
+       licence: τοῦ τε δευτέρου ἔτους Μαρδοκεμπάδου Θὼθ ιηʹ εἰς τὴν ιθʹ πρὸ U+2220΄ καὶ γʹ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου | τοῦ ιθʹ ἔτους Ἀδρια Χοϊὰκ βʹ εἰς τὴν γʹ πρὸ μιᾶς ὥρας ἰσημρινῆς τοῦ μεσονυκτίου | περιέχει Αἰγυπτιακὰ ἔτη ωνδ καὶ ἡμέρας ογ καὶ ὥρας ἰσημερινὰς ἀπλῶς μὲν πάλιν κγ U+2220΄ γʹ | πάσας δὲ ἡμέρ
+       * calendar-exact: {"delta_nights": 311784}
+         none: {"delta_nights": null}
+
+######## R-THUC  positive control (pass/fail)  window 136  anchor T1
+  PLACE {"events": ["T1"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "unstated; site forks in clue T1-SITE"}
+  PLACE {"events": ["T2"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "unstated; site forks in clue T2-SITE"}
+  PLACE {"events": ["T3"], "place": "the Athenian camp at Syracuse", "licence_words": ["ἐς τὰς Συρακούσας", "ἐκ τοῦ στρατοπέδου"], "ref": ["urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.50.1.1", "urn:cts:greekLit:tlg0003.tlg001.perseus-grc2.7.50.3.1"], "text_file": ["data/text/thucydides-grc.tsv", "data/text/thucydides-grc.tsv"], "search_coordinates": {"lat": 37.07, "lon": 15.29}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text give
+  EVENT {"event_id": "T1", "kind": "eclipse-solar", "ref": "2.28.1.1"}
+  EVENT {"event_id": "T2", "kind": "eclipse-solar", "ref": "4.52.1.1"}
+  EVENT {"event_id": "T3", "kind": "eclipse-lunar", "ref": "7.50.4.1"}
+   - T1-ECL [occurrence] T1: a solar eclipse that ended in view ('filled out again'): last contact before sunset at the observer, Sun above the horizon during the eclipse.
+       licence: ὁ ἥλιος ἐξέλιπε | καὶ πάλιν ἀνεπληρώθη
+       * end-seen: {"last_contact_sun_up": true}
+         none: {"last_contact_sun_up": null}
+   - T1-PHASE [new-moon] T1 on the new-moon day by the Moon ('νουμηνίᾳ κατὰ σελήνην'); Thucydides adds that this is the only time an eclipse seems possible.
+       licence: νουμηνίᾳ κατὰ σελήνην, ὥσπερ καὶ μόνον δοκεῖ εἶναι γίγνεσθαι δυνατόν
+   - T1-TIME [eclipse-timing] T1 'after midday'.
+       licence: μετὰ μεσημβρίαν
+       * max-pm: {"max_LAT_h": [12.0, null]}
+         start-pm: {"first_contact_LAT_h": [12.0, null]}
+         none: {"timing": null}
+   - T1-SHAPE [magnitude] T1 'became crescent-shaped'.
+       licence: γενόμενος μηνοειδὴς
+       * crescent-max: {"smag": [0.5, 1.0]}
+         crescent-passed: {"smag": [0.5, null]}
+         none: {"smag": null}
+   - T1-DARK [stars-visible] 'some stars having appeared'.
+       licence: ἀστέρων τινῶν ἐκφανέντων
+       * X4: {"smag": [0.6, null]}
+         X3: {"smag": [0.95, null]}
+         none: {"smag": null}
+   - T1-SEASON [half-year] T1 in the same summer as the events of 2.19-2.27 (the first summer of the war).
+       licence: τοῦ δ’ αὐτοῦ θέρους
+       * half-year: {"sun_lon_deg": [0.0, 180.0]}
+         campaign: {"sun_lon_deg": [330.0, 225.0]}
+         none: {"season": null}
+   - T2-ECL [magnitude] T2: 'some eclipse of the Sun' (ἐκλιπές τι), about the new moon. The magnitude is not stated: the primary option reads 'τι' as 'partial', the alternative leaves the magnitude open.
+       licence: τοῦ τε ἡλίου ἐκλιπές τι ἐγένετο περὶ νουμηνίαν
+       * partial: {"smag": [0.0, 1.0]}
+         any: {"smag": [0.0, null]}
+   - T2-SEASON [early-summer] T2 'right at the start of the following summer'.
+       licence: τοῦ δ’ ἐπιγιγνομένου θέρους εὐθὺς
+       * early: {"sun_lon_deg": [330.0, 60.0]}
+         half-year: {"sun_lon_deg": [0.0, 180.0]}
+         campaign: {"sun_lon_deg": [330.0, 225.0]}
+         none: {"season": null}
+   - T3-ECL [occurrence] T3: a lunar eclipse at full moon, seen by the Athenians at Syracuse as they were about to sail; magnitude not stated.
+       licence: ἡ σελήνη ἐκλείπει· ἐτύγχανε γὰρ πασσέληνος οὖσα
+       * umbral: {"umag": [0.0, null], "moon_up_during_umbral": true}
+         penumbral-deep: {"umag": null, "pmag": [0.7, null], "moon_up": true}
+   - T3-SEASON [half-year] T3 falls in the summer of the 19th war-year: that summer opens at 7.19.1 ('τοῦ δ’ ἐπιγιγνομένου ἦρος εὐθὺς ἀρχομένου') and ends at 8.1.4 ('καὶ τὸ θέρος ἐτελεύτα'); no winter is named between.
+       licence: τοῦ δ’ ἐπιγιγνομένου ἦρος εὐθὺς ἀρχομένου | καὶ τὸ θέρος ἐτελεύτα
+       * half-year: {"sun_lon_deg": [0.0, 180.0]}
+         campaign: {"sun_lon_deg": [330.0, 225.0]}
+         none: {"season": null}
+   - T-INT-12 [war-years] T1 lies in war-year 1 (year 1 ends at 2.47.1, after 2.28); T2 in war-year 8 (year 7 ends at 4.51.1, immediately before 4.52). T2 is 7 war-years after T1. A war-year is one natural year (5.20.3) beginning with spring (2.2.1).
+       licence: πρῶτον ἔτος τοῦ πολέμου τοῦδε ἐτελεύτα | καὶ ἕβδομον ἔτος τῷ πολέμῳ ἐτελεύτα
+       * pm0.5: {"delta_years": 7, "tol_years": 0.5}
+         pm1: {"delta_years": 7, "tol_years": 1.0}
+         none: {"delta_years": null}
+   - T-INT-13 [war-years] T3 lies in war-year 19 (year 18 ends at 7.18.4; year 19 ends at 8.6.5): 18 war-years after T1.
+       licence: καὶ ὄγδοον καὶ δέκατον ἔτος τῷ πολέμῳ ἐτελεύτα | καὶ ἑνὸς δέον εἰκοστὸν ἔτος τῷ πολέμῳ ἐτελεύτα
+       * pm0.5: {"delta_years": 18, "tol_years": 0.5}
+         pm1: {"delta_years": 18, "tol_years": 1.0}
+         none: {"delta_years": null}
+   - T1-SITE [observer] Where T1 was seen: unstated.
+       licence: Θουκυδίδης Ἀθηναῖος
+         point: {"site": {"lat": 37.97, "lon": 23.72}}
+         box: {"site_box": {"lat": [35.0, 41.5], "lon": [19.5, 28.5]}}
+       * none: {"site": null}
+   - T2-SITE [observer] Where T2 was seen: unstated.
+       licence: Θουκυδίδης Ἀθηναῖος
+         point: {"site": {"lat": 37.97, "lon": 23.72}}
+         box: {"site_box": {"lat": [35.0, 41.5], "lon": [19.5, 28.5]}}
+       * none: {"site": null}
+
+######## R-XEN  positive control (pass/fail)  window 136  anchor X1
+  PLACE {"events": ["X1"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "unstated; forks in X1-SITE"}
+  PLACE {"events": ["X2"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "unstated; forks in X2-SITE"}
+  PLACE {"events": ["X3"], "place": "Agesilaus' army at the entry into Boeotia, coming from Phthiotis", "licence_words": ["ὄντος δʼ αὐτοῦ ἐπὶ τῇ ἐμβολῇ", "μέχρι πρὸς τὰ Βοιωτῶν ὅρια"], "ref": ["urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.4.3.10.1", "urn:cts:greekLit:tlg0032.tlg001.perseus-grc2.4.3.9.1"], "text_file": ["data/text/xenophon-hellenica-grc.tsv", "data/text/xenophon-hellenica-grc.tsv"], "search_coordinates": {"lat": 38.5, "lon": 22.85}, "coordinates_source": "modern approximate placement wri
+  EVENT {"event_id": "X1", "kind": "eclipse-lunar", "ref": "1.6.1.1"}
+  EVENT {"event_id": "X2", "kind": "eclipse-solar", "ref": "2.3.4.1"}
+  EVENT {"event_id": "X3", "kind": "eclipse-solar", "ref": "4.3.10.1", "linked": false}
+   - X1-ECL [occurrence] X1: the Moon was eclipsed in the evening, in the same year as the burning of the old temple of Athena at Athens.
+       licence: ἥ τε σελήνη ἐξέλιπεν ἑσπέρας
+       * use: {"umag": [0.0, null]}
+         penumbral-deep: {"umag": null, "pmag": [0.7, null], "moon_up": true}
+         exclude: {"exclude": true}
+   - X1-TIME [evening] X1 'in the evening'.
+       licence: ἑσπέρας
+       * early-night: {"umbral_visible_between_h_after_sunset": [0.0, 3.0]}
+         before-midnight: {"umbral_visible_before_LAT_h": 24.0}
+         none: {"timing": null}
+   - X1-SITE [observer] Where X1 was seen: unstated. The same clause names Athens for the temple fire only.
+       licence: ὁ παλαιὸς τῆς Ἀθηνᾶς νεὼς ἐν Ἀθήναις ἐνεπρήσθη
+         point: {"site": {"lat": 37.97, "lon": 23.72}}
+         box: {"site_box": {"lat": [35.0, 41.5], "lon": [19.5, 28.5]}}
+       * none: {"site": null}
+   - X2-ECL [occurrence] X2: 'about the time of an eclipse of the Sun'; no magnitude, no hour.
+       licence: κατὰ δὲ τοῦτον τὸν καιρὸν περὶ ἡλίου ἔκλειψιν
+       * any: {"smag": [0.0, null]}
+         noticed: {"smag": [0.5, null]}
+   - X2-SITE [observer] Where X2 was seen: unstated. The clause dates a battle in Thessaly fought by Lycophron of Pherae against the Larisaeans.
+       licence: Λυκόφρων ὁ Φεραῖος | Λαρισαίους
+         box: {"site_box": {"lat": [35.0, 41.5], "lon": [19.5, 28.5]}}
+         thessaly: {"site": {"lat": 39.5, "lon": 22.6}}
+         athens: {"site": {"lat": 37.97, "lon": 23.72}}
+       * none: {"site": null}
+   - X-INT-12 [year-headings] X1 is in the year opened at 1.6.1 ('τῷ δ’ ἐπιόντι ἔτει'); the next year opens at 2.1.10 and ends at 2.2.24 ('καὶ ὁ ἐνιαυτὸς ἔληγεν'); the year after opens at 2.3.1, and X2 falls 'at this time' within it. X2 is two Xenophontic years after X1.
+       licence: τῷ δʼ ἐπιόντι ἔτει | τῷ δʼ ἐπιόντι ἔτει | καὶ ὁ ἐνιαυτὸς ἔληγεν | τῷ δʼ ἐπιόντι ἔτει
+       * 1to3: {"delta_years": [1.0, 3.0]}
+         none: {"delta_years": null}
+   - X2-SEASON [narrative-order] Not stated. 2.3.9 has Lysander back at Sparta 'τελευτῶντος τοῦ θέρους' after the events of 2.3.3-4.
+       licence: τελευτῶντος τοῦ θέρους
+       * none: {"season": null}
+         before-autumn: {"sun_lon_deg": [330.0, 210.0]}
+   - X3-ECL [magnitude] X3: 'the Sun seemed to appear crescent-shaped' while Agesilaus was at the entry into Boeotia.
+       licence: ὁ ἥλιος μηνοειδὴς ἔδοξε φανῆναι
+       * crescent: {"smag": [0.5, 1.0]}
+         any: {"smag": [0.0, null]}
+   - X3-SEASON [narrative-order] Not stated. 4.1.41 says spring was just showing when Agesilaus left Pharnabazus' country; the recall (4.2.1-3), the march (4.2.8-4.3.9) and X3 follow.
+       licence: σχεδὸν δὲ καὶ ἔαρ ἤδη ὑπέφαινεν
+       * none: {"season": null}
+         after-spring: {"sun_lon_deg": [330.0, 225.0]}
+
+######## R-ARBELA  positive control (pass/fail)  window 136  anchor A1
+  PLACE {"events": ["A1"], "place": "Arbela (Pliny's report)", "licence_words": ["apud Arbilam"], "ref": ["2.70.3"], "text_file": ["data/text/pliny-nh-lat.tsv"], "search_coordinates": {"lat": 36.19, "lon": 44.01}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+  PLACE {"events": ["A1"], "place": "the Macedonian camp just across the Tigris (Arrian, Curtius)", "licence_words": ["διαβαίνει τὸν πόρον", "ἐνταῦθα ἀναπαύει τὸν στρατόν"], "ref": ["urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.7.5.1", "urn:cts:greekLit:tlg0074.tlg001.perseus-grc2.3.7.5.1"], "text_file": ["data/text/arrian-anabasis-grc.tsv", "data/text/arrian-anabasis-grc.tsv"], "search_coordinates": {"lat": 36.5, "lon": 43.0}, "coordinates_source": "modern approximate placement written by the drafter
+  PLACE {"events": ["A1"], "place": "Sicily (Pliny: Moon rising)", "licence_words": ["in Sicilia"], "ref": ["2.70.3"], "text_file": ["data/text/pliny-nh-lat.tsv"], "search_coordinates": {"lat": [36.6, 38.3], "lon": [12.4, 15.7]}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+  EVENT {"event_id": "A1", "kind": "eclipse-lunar"}
+   - A-ECL [occurrence] A1: a lunar eclipse seen by Alexander's army in the days before the great battle with Darius (four sources, one event).
+       licence: ἡ μὲν οὖν σελήνη τοῦ Βοηδρομιῶνος ἐξέλιπε | καὶ τῆς σελήνης τὸ πολὺ ἐκλιπὲς ἐγένετο | luna deficiens | luna defecisse
+   - A-MAG [magnitude] Arrian: the greater part of the Moon was eclipsed. Curtius: the Moon first hid its brightness, then, suffused with a blood colour, fouled all its light.
+       licence: τῆς σελήνης τὸ πολὺ ἐκλιπὲς | deinde sanguinis colore suffuso lumen omne foedavit
+       * gt-half: {"umag": [0.5, null]}
+         total: {"umag": [1.0, null]}
+         partial-gt-half: {"umag": [0.5, 1.0]}
+         none: {"umag": null}
+   - A-TIME-PLINY [eclipse-timing] Pliny: at Arbela the Moon was reported eclipsed in the second hour of the night.
+       licence: apud Arbilam Magni Alexandri victoria luna defecisse noctis secunda hora est prodita
+       * in-progress: {"seasonal_night_hour": 2, "site": "Arbela", "relation": "umbral phase overlaps hour"}
+         onset: {"seasonal_night_hour": 2, "site": "Arbela", "relation": "first contact in hour"}
+         none: {"timing": null}
+   - A-TIME-CURTIUS [eclipse-timing] Curtius: about the first watch ('prima fere vigilia'), at the camp by the Tigris where the king had kept a standing camp ('ibi', 4.10.1). The 'two days' of 4.10.1 are how long the camp stood; they are narrative context, date nothing, and are not used.
+       licence: Sed prima fere vigilia | Biduo ibi stafiva rex habuit
+       * first-watch: {"night_quarter": 1, "tol_h": 1.0, "site": "Tigris camp"}
+         none: {"timing": null}
+   - A-SICILY [moonrise-elsewhere] Pliny: the same eclipse was seen in Sicily as the Moon was rising.
+       licence: eademque in Sicilia exoriens
+       * sicily-box: {"moonrise_during_umbral": true, "site_box": {"lat": [36.6, 38.3], "lon": [12.4, 15.7]}}
+         syracuse: {"moonrise_during_umbral": true, "site": {"lat": 37.07, "lon": 15.29}}
+         none: {"moonrise_during_umbral": null}
+   - A-MONTH [calendar-date] Plutarch: the eclipse was in Boedromion, about the beginning of the Mysteries at Athens. Arrian: the battle was in Pyanepsion, in the same month in which the Moon was seen eclipsed.
+       licence: τοῦ Βοηδρομιῶνος | περὶ τὴν τῶν μυστηρίων τῶν Ἀθήνησιν ἀρχήν | μηνὸς Πυανεψιῶνος | ἐν τῷ αὐτῷ μηνί, ἐν ὅτῳ ἡ σελήνη ἐκλιπὴς ἐφάνη
+       * either: {"attic_month": [3, 4], "lunation_offset": [-1, 0, 1]}
+         boedromion: {"attic_month": [3], "lunation_offset": [-1, 0, 1]}
+         pyanepsion: {"attic_month": [4], "lunation_offset": [-1, 0, 1]}
+         none: {"attic_month": null}
+
+######## R-PYDNA  positive control (pass/fail)  window 136  anchor P1
+  PLACE {"events": ["P1"], "place": "the Roman and Macedonian camps before Pydna", "licence_words": ["πρὸ τῆς Πύδνης", "qui Pydnam ex acie perfugerant"], "ref": ["urn:cts:greekLit:tlg0007.tlg019.perseus-grc2.16.5.1", "urn:cts:latinLit:phi0914.phi001.perseus-lat2.4.44.42.7.1"], "text_file": ["data/text/plutarch-aemilius-grc.tsv", "data/text/livy-lat.tsv"], "search_coordinates": {"lat": 40.37, "lon": 22.6}, "coordinates_source": "modern approximate placement written by the drafter from general geographic 
+  EVENT {"event_id": "P1", "kind": "eclipse-lunar"}
+   - P-ECL [occurrence] P1: a lunar eclipse on the night before the battle, foretold by C. Sulpicius Gallus and seen from both camps; the Moon was full and high.
+       licence: edita hora luna cum defecisset | ἡ σελήνη πλήρης οὖσα καὶ μετέωρος ἐμελαίνετο
+   - P-MAG [magnitude] Plutarch: with its light gone, after changing all sorts of colours, the Moon vanished. Livy gives no magnitude.
+       licence: τοῦ φωτὸς ἀπολιπόντος αὐτὴν χρόας ἀμείψασα παντοδαπὰς ἠφανίσθη
+       * total: {"umag": [1.0, null]}
+         deep: {"umag": [0.8, null]}
+         umbral: {"umag": [0.0, null]}
+   - P-TIME [eclipse-timing] Gallus foretold the eclipse from the second to the fourth hour of the night, and it happened at the hour announced. Plutarch: after nightfall and dinner, as they turned to sleep.
+       licence: ab hora secunda usque ad quartam horam noctis lunam defecturam esse | edita hora | ἐπεὶ δὲ νὺξ γεγόνει καὶ μετὰ δεῖπνον ἐτράποντο πρὸς ὕπνον
+       * overlap: {"seasonal_night_hours": [2, 4], "relation": "umbral phase overlaps", "site": "Pydna"}
+         within: {"seasonal_night_hours": [2, 4], "relation": "umbral phase within", "site": "Pydna"}
+         none: {"timing": null}
+   - P-ALT [moon-altitude] Plutarch: the Moon was full and high ('μετέωρος') when it darkened.
+       licence: πλήρης οὖσα καὶ μετέωρος
+       * aloft: {"moon_alt_deg_at_first_umbral_contact": [10.0, null]}
+         up: {"moon_alt_deg_at_first_umbral_contact": [0.0, null]}
+         none: {"moon_alt": null}
+   - P-END [emergence-seen] Both sources say the emergence was seen: the Macedonian uproar lasted until the Moon came out into its light (Livy); Aemilius sacrificed when he first saw the Moon clearing (Plutarch).
+       licence: donec luna in suam lucem emersit | ὡς εἶδε πρῶτον τὴν σελήνην ἀποκαθαιρομένην
+       * emergence: {"moon_up_at_last_umbral_contact": true}
+         none: {"moon_up_at_last_umbral_contact": null}
+   - P-SEASON [after-solstice] Livy (that day): the time of year was after the solstice had come round, the Sun growing hot. Plutarch: it was the season of waning summer, the rivers low.
+       licence: Tempus anni post circumactum solstitium erat | θέρους γὰρ ἦν ὥρα φθίνοντοσ
+       * summer-after-solstice: {"sun_lon_deg": [90.0, 180.0]}
+         livy-just-after: {"sun_lon_deg": [90.0, 120.0]}
+         plutarch: {"sun_lon_deg": [120.0, 180.0]}
+         none: {"season": null}
+   - P-DATE [calendar-date] Livy: the eclipse was in the night followed by the day 'pridie Nonas Septembres' (Roman 4 September), i.e. the evening of Roman 3 September.
+       licence: nocte, quam pridie nonas Septembres insecuta est dies
+       * free: {"roman_date": "a.d. III Non. Sept. (night before pridie Non. Sept.)", "offset_days": null}
+         bounded90: {"roman_date": "a.d. III Non. Sept.", "offset_days": [-90, 90]}
+         naive: {"roman_date": "a.d. III Non. Sept.", "offset_days": [0, 0]}
+
+######## R-DIOD  positive control (pass/fail)  window 136  anchor D1
+  PLACE {"events": ["D1"], "place": "Agathocles' fleet at sea, the day after leaving Syracuse", "licence_words": ["ὡς ἴδεν τὸ στόμα τοῦ λιμένος ἔρημον τῶν ἐφορμούντων, ἐξέπλευσεν"], "ref": ["urn:cts:greekLit:tlg0060.tlg001.perseus-grc6.20.5.2.1"], "text_file": ["data/text/diodorus-bk18-20-grc.tsv"], "search_coordinates": {"lat": 37.07, "lon": 15.29, "radius_km": 150}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the nam
+  EVENT {"event_id": "D1", "kind": "eclipse-solar"}
+   - D-ECL [magnitude] D1: on the day after Agathocles' fleet escaped from Syracuse (at nightfall), an eclipse of the Sun so great that it seemed fully night, with stars seen everywhere.
+       licence: τῇ δʼ ὑστεραίᾳ τηλικαύτην ἔκλειψιν ἡλίου συνέβη γενέσθαι ὥστε ὁλοσχερῶς φανῆναι νύκτα, θεωρουμένων τῶν ἀστέρων πανταχοῦ
+       * X3: {"smag": [0.95, null]}
+         total: {"smag": [1.0, null]}
+         X4: {"smag": [0.6, null]}
+   - D-SITE [observer] The observers are Agathocles' men at sea, one day out of Syracuse, bound for Libya (six days and nights of sailing, 20.6.1).
+       licence: ἐξέπλευσεν | οἱ περὶ τὸν Ἀγαθοκλέα | ἓξ δʼ ἡμέρας καὶ τὰς ἴσας νύκτας αὐτῶν πλευσάντων
+       * day-out: {"site_disc": {"lat": 37.07, "lon": 15.29, "radius_km": 150}}
+         syracuse: {"site": {"lat": 37.07, "lon": 15.29}}
+         route-box: {"site_box": {"lat": [35.5, 38.5], "lon": [10.0, 16.0]}}
+
+######## H-LIVY  HARD CASE (reported, not pass/fail)  window 136  anchor None
+  PLACE {"events": ["L1", "L1b"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "unstated for the item; forks in L1-SITE (Arpi for L1b)"}
+  PLACE {"events": ["L2"], "place": "Cumae", "licence_words": ["Cumis"], "ref": ["urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.30.38.8.1"], "text_file": ["data/text/livy-lat.tsv"], "search_coordinates": {"lat": 40.85, "lon": 14.05}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+  PLACE {"events": ["L3"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "Rome by inference only; forks in L3-SITE"}
+  PLACE {"events": ["L4"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "Rome by inference only; forks in L4-SITE"}
+  EVENT {"event_id": "L1", "kind": "eclipse-solar", "ref": "22.1.9", "linked": false}
+  EVENT {"event_id": "L1b", "kind": "other", "ref": "22.1.9", "linked": false}
+  EVENT {"event_id": "L2", "kind": "eclipse-solar", "ref": "30.38.8", "linked": false}
+  EVENT {"event_id": "L3", "kind": "eclipse-solar", "ref": "37.4.4", "linked": false}
+  EVENT {"event_id": "L4", "kind": "darkness", "ref": "38.36.4", "linked": false}
+   - L1-ECL [magnitude] L1: among prodigies reported from several places at once, 'the Sun's disk seemed to be diminished'.
+       licence: solis orbem minui visum
+       * any: {"smag": [0.0, null]}
+         noticed: {"smag": [0.5, null]}
+   - L1-SITE [observer] Not stated for this item. The list opens 'in Sicilia ...', then 'in Sardinia autem ...', and runs on in accusative-infinitive items until 'Praeneste' names a new place.
+       licence: prodigia ex pluribus simul locis nuntiata | in Sicilia | in Sardinia autem | et Praeneste
+         italy-box: {"site_box": {"lat": [36.6, 44.0], "lon": [8.0, 18.6]}}
+         sardinia: {"site_box": {"lat": [38.9, 41.3], "lon": [8.1, 9.9]}}
+         rome: {"site": {"lat": 41.89, "lon": 12.49}}
+       * none: {"site": null}
+   - L1-DATE [report-time] The prodigies were reported when the consul entered office at Rome on the Ides of March, as spring was approaching; the eclipse came before the report, by an unstated time.
+       licence: iam ver adpetebat | Cn. Servilius consul Romae idibus Martiis magistratum iniit
+       * none: {"season": null}
+         within-12mo: {"before_report_months": [0, 12], "report_sun_lon_deg": [315.0, 15.0]}
+   - L1b-ARPI [possible-eclipse] Same list: at Arpi shields were seen in the sky and 'the Sun fighting with the Moon'.
+       licence: Arpis parmas in caelo visas pugnantemque cum luna solem
+       * not-eclipse: {"exclude": true}
+         eclipse-arpi: {"smag": [0.0, null], "site": {"lat": 41.5, "lon": 15.56}}
+   - L2-ECL [magnitude] L2: at Cumae the Sun's disk seemed to be diminished.
+       licence: Cumis solis orbis minui visus
+       * any: {"smag": [0.0, null]}
+         noticed: {"smag": [0.5, null]}
+   - L2-DATE [narrative-order] The prodigies were reported just as news of the Carthaginian breach came; the text goes on to the Ludi Apollinares of the same year (flooded circus).
+       licence: prodigia quoque nuntiata sub ipsam famam rebellionis | ludi Apollinares
+       * none: {"season": null}
+         before-ludi: {"before_roman_date": "a.d. V Id. Quint.", "offset_days": null}
+   - L3-ECL [magnitude] L3: during the Ludi Apollinares, on a.d. V Id. Quint., in a clear sky, the daylight was darkened in daytime because the Moon had passed under the Sun's disk.
+       licence: caelo sereno interdiu obscurata lux est, cum luna sub orbem solis subisset
+       * X4: {"smag": [0.6, null]}
+         any: {"smag": [0.0, null]}
+         X3: {"smag": [0.95, null]}
+   - L3-DATE [calendar-date] Roman date a.d. V Id. Quint. (Roman 11 Quinctilis), during the Ludi Apollinares, when the consul set out for the war.
+       licence: ludis Apollinaribus, a. d. quintum idus Quinctiles
+       * free: {"roman_date": "a.d. V Id. Quint. (11 Quinctilis)", "offset_days": null}
+         bounded90: {"roman_date": "a.d. V Id. Quint. (11 Quinctilis)", "offset_days": [-90, 90]}
+         naive: {"roman_date": "a.d. V Id. Quint. (11 Quinctilis)", "offset_days": [0, 0]}
+   - L3-SITE [observer] Not stated as such; the games and the consul's departure ('ab urbe est profectus', 37.4.2) put the narrative at Rome.
+       licence: ab urbe est profectus | ludis Apollinaribus
+         rome: {"site": {"lat": 41.89, "lon": 12.49}}
+         italy-box: {"site_box": {"lat": [36.6, 44.0], "lon": [8.0, 18.6]}}
+       * none: {"site": null}
+   - L4-DARK [daytime-darkness] L4: a three-day supplication was decreed because darkness had come on in daylight between about the third and fourth hour. The text does not say eclipse.
+       licence: quod luce inter horam tertiam ferme et quartam tenebrae obortae fuerant
+       * eclipse-hours: {"smag": [0.6, null], "seasonal_day_hours": [3, 4], "tol_h": 1.0, "relation": "maximum in window"}
+         eclipse-any-hour: {"smag": [0.6, null]}
+         not-eclipse: {"exclude": true}
+   - L4-SITE [observer] Not stated. The expiation was at all the crossroads (of Rome) and the other prodigy in the same sentence is on the Aventine.
+       licence: in omnibus compitis | in Aventino
+         rome: {"site": {"lat": 41.89, "lon": 12.49}}
+         italy-box: {"site_box": {"lat": [36.6, 44.0], "lon": [8.0, 18.6]}}
+       * none: {"site": null}
+   - L4-DATE [report-time] The supplication was decreed before the new magistrates left for their provinces; the consuls had entered office on the Ides of March (38.35.7).
+       licence: priusquam in provincias novi magistratus proficiscerentur | consulatum idibus Martiis cum inissent
+       * none: {"season": null}
+         near-ides-march: {"before_roman_date": "Id. Mart.", "within_days": 120, "offset_days": null}
+
+
+controls_almagest.json
+
+   - ALM-A.1 [planet] off 0 rec IX.10.3: Mercury is an evening star on this day (4.5 equinoctial hours before midnight) and has NOT yet reached its greatest eastern (evening) elongation.
+       licence: μηδέπω ἐπὶ τὴν μεγίστην ἑσπερίαν ἀπόστασιν ἐληλυθότα … πρὸ δ U+2220ʹ ὡρῶν ἰσημερινῶν … μεσονυκτίου
+       * ge_after_within_j: {"j_days": [7, 15, 30]}
+         ge_after_same_apparition: {"bound": "same_apparition"}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+
+   - ALM-A.2 [moon-phase] off 0 rec IX.10.3: The Moon stands close to Mercury (Mercury 1 1/6 deg to the east of the Moon's centre) at 4 1/2 equinoctial hours before midnight, while Mercury is an evening star.
+       licence: μηδέπω ἐπὶ τὴν μεγίστην ἑσπερίαν ἀπόστασιν ἐληλυθότα … τότε δὲ καὶ τοῦ κέντρου τῆς σελήνης ὑπελείπετο μοῖραν α καὶ ϛʹ … πρὸ δ U+2220ʹ ὡρῶν ἰσημερινῶν … μεσονυκτίου
+       * phase_class: {"class": "young_crescent"}
+         positional: {"tolerance_deg": [0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-A.3 [interval] off 13 rec X.8.2: Record X.8.2 falls on civil day +13 relative to Day 0 (record IX.10.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 9.10.3 and 10.8.2 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-A.4 [planet] off 13 rec X.8.2: Mars was at opposition (to the mean Sun, Ptolemy's 'ἀκρώνυκτος') about three days before this day.
+       licence: μετὰ γ ἔγγιστα ἡμέρας τῆς γ΄ ἀκρωνύκτου
+         opp_true_k: {"k_days": [1, 2, 3]}
+       * opp_mean_k: {"k_days": [1, 2, 3]}
+         none: null
+
+   - ALM-A.5 [moon-phase] off 13 rec X.8.2: At 3 equinoctial hours before midnight the Moon stands close to Mars (Mars 1 3/5 deg to the east of the Moon's centre), about three days after Mars' opposition.
+       licence: μετὰ γ ἔγγιστα ἡμέρας τῆς γ΄ ἀκρωνύκτου … πρὸ τριῶν ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου … καὶ τοῦ κέντρου τῆς σελήνης ἀπ- έχων ἐφαίνετο εἰς τὰ ἑπόμενα τὴν αὐτὴν μίαν μοῖραν καὶ γ πεμπτημόρια
+       * phase_class: {"class": "near_full"}
+         positional: {"tolerance_deg": [0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-A.6 [interval] off 52 rec IX.9.4: Record IX.9.4 falls on civil day +52 relative to Day 0 (record IX.10.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 9.10.3 and 9.9.4 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+       * as_printed: {"day_offset": 52}
+         mean_sun_emended: {"day_offset": 49}
+
+   - ALM-A.7 [planet] off 52 rec IX.9.4: Mercury is a morning star at its greatest western (morning) elongation on this day (before dawn).
+       licence: ὄρθρου … τηροῦντες τὴν μεγίστην αὐτοῦ διάστασιν … ὥστε γεγονέναι καὶ τὴν ἑῴαν μεγίστην ἀπόστασιν
+       * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         bm_mwra_k: {"k_days": [1, 2, 3]}
+
+   - ALM-A.8 [interval] off 55 rec XI.2.2: Record XI.2.2 falls on civil day +55 relative to Day 0 (record IX.10.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 9.10.3 and 11.2.2 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-A.9 [planet] off 55 rec XI.2.2: Jupiter is seen (sighted with the astrolabe) before sunrise, about 5 equinoctial hours after midnight.
+       licence: πρὸ τῆς τοῦ ἡλίου ἀνατολῆς, τουτέστιν μετὰ ε ὥρας ἔγγιστα ἰσημερινὰς τοῦ μεσονυκτίου … ὁ τοῦ Διὸς ἐπέχων ἐφαίνετο
+       * visible_before_sunrise: {"min_altitude_deg": [5]}
+         none: null
+
+   - ALM-A.10 [moon-phase] off 55 rec XI.2.2: Before sunrise (about 5 equinoctial hours after midnight) the Moon's centre has the same longitude as Jupiter, the Moon lying further south.
+       licence: πρὸ τῆς τοῦ ἡλίου ἀνατολῆς, τουτέστιν μετὰ ε ὥρας ἔγγιστα ἰσημερινὰς τοῦ μεσονυκτίου, ἐπειδήπερ ἡ μὲν μέση τοῦ ἡλίου πάροδος ἐπεῖχεν Καρκίνου μοίρας ῑϚ ῑᾱ … ὁ τοῦ Διὸς ἐπέχων ἐφαίνετο Διδύμων μοίρας ῑε U+2220 δ΄, τῷ δὲ κέντρῳ τῆς σελήνης νοτιωτέρας οὔσης ἐξ ἴσου ἐφαίνετο
+       * phase_class: {"class": "waning_crescent"}
+         positional: {"tolerance_deg": [0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-B.1 [planet] off 0 rec X.4.3: Venus is a morning star on this day (4.75 equinoctial hours after midnight) and is already PAST its greatest western (morning) elongation.
+       licence: τὸν τῆς Ἀφροδίτης ἀστέρα μετὰ τὴν μεγίστην ἑῴαν ἀπόστασιν … ὁ δὲ χρόνος ἦν μετὰ δ U+2220΄ δ΄ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου
+       * ge_before_within_j: {"j_days": [7, 15, 30, 60]}
+         ge_before_same_apparition: {"bound": "same_apparition"}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         bm_venus_lead: {"lead_min": [60, 90, 120]}
+
+   - ALM-B.2 [moon-phase] off 0 rec X.4.3: At 4 3/4 equinoctial hours after midnight Venus stands between beta Sco and the Moon's apparent centre, in line with them, and west of the Moon's centre by 1 1/2 times the amount by which it is east of beta Sco (the words give this ratio, not a distance).
+       licence: τὸν τῆς Ἀφροδίτης ἀστέρα μετὰ τὴν μεγίστην ἑῴαν ἀπόστασιν … μεταξὺ καὶ ἐπʼ εὐθείας ἦν τῷ τε βορειοτάτῳ τῶν ἐν τῷ μετώπῳ τοῦ Σκορπίου καὶ τῷ φαινομένῳ κέντρῳ τῆς σελήνης, τοῦ δὲ κέντρου τῆς σελήνης προηγεῖτο ἡμιόλιον, οὗ ὑπελείπετο τοῦ βορειοτάτου τῶν ἐν τῷ μετώπῳ … ὁ δὲ χρόνος ἦν μετὰ δ U+2220΄ δ΄ ὥ
+       * phase_class: {"class": "waning_crescent"}
+         positional: {"relation": "moon_app_lon - venus_lon = 1.5 * (venus_lon - star_lon), with venus_lon between star_lon and moon_app_lon", "star": "beta Sco", "tolerance_deg": [0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-B.3 [star] off 0 rec X.4.3: Venus relative to a named star on this day: between and in line with beta Sco and the Moon's apparent centre.
+       licence: μεταξὺ καὶ ἐπʼ εὐθείας ἦν τῷ τε βορειοτάτῳ τῶν ἐν τῷ μετώπῳ τοῦ Σκορπίου καὶ τῷ φαινομένῳ κέντρῳ τῆς σελήνης
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-B.4 [interval] off 6 rec XI.6.2: Record XI.6.2 falls on civil day +6 relative to Day 0 (record X.4.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 10.4.3 and 11.6.2 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-B.5 [moon-phase] off 6 rec XI.6.2: At 4 equinoctial hours before midnight Saturn stands about 1/2 deg to the east of the Moon's centre (and as far from its northern horn).
+       licence: πρὸ δ ὡρῶν ἰσημερινῶν τοῦ μεσονυκτίου … τοῦ μέσου ἡλίου ἐπέχοντος Τοξότου μοίρας κη μα … καὶ τοῦ κέντρου δὲ τῆς σελήνης ὑπελείπετο ἥμισυ ἔγγιστα α μοίρας· τοσοῦτον γὰρ αὐτῆς ἀπεῖχεν τοῦ βορείου κέρατος … ὤφειλεν ἐπέχειν Ὑδροχόου μοίρας θ μ, ἡ δὲ ἐν Ἀλεξανδρείᾳ φαινομένη μοίρας η λδ
+       * phase_class: {"class": "waxing_crescent"}
+         positional: {"tolerance_deg": [0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-B.6 [interval] off 55 rec V.3.2: Record V.3.2 falls on civil day +55 relative to Day 0 (record X.4.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 10.4.3 and 5.3.2 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-B.7 [moon-phase] off 55 rec V.3.2: The apparent Moon is about 99 deg west of the Sun (5.25 equinoctial hours before noon (after sunrise)): last quarter (Moon west of the Sun, seen after sunrise).
+       licence: μετὰ μὲν τὴν ἀνατολὴν τὴν τοῦ ἡλίου, πρὸ πέντε δὲ καὶ δʼ ὡρῶν ἰσημερινῶν τῆς μεσημβρίας … τοῦ γὰρ ἡλίου διοπτευομένου κατὰ Ὑδροχόου μοίρας ιη U+2220΄ γʹ καὶ μέσουρανούσης Τοξότου μοίρας δ΄ ἡ σελήνη ἐφαίνετο ἐπέχουσα Σκορπίου μοίρας θ … ὡς τεταρτημορίου τυγχάνειν ἔγγιστα τὴν μέσην ἀποχὴν τοῦ ἡλίου
+         elongation_tol: {"tolerance_deg": [3, 6, 12]}
+       * phase_class: {"class": "last_quarter", "tolerance_days": [1, 2]}
+
+   - ALM-B.8 [interval] off 69 rec VII.2.4: Record VII.2.4 falls on civil day +69 relative to Day 0 (record X.4.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 10.4.3 and 7.2.4 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-B.9 [moon-phase] off 69 rec VII.2.4: The apparent Moon is about 92 deg east of the Sun (5.5 equinoctial hours after noon): first quarter (Moon east of the Sun at sunset).
+       licence: μέλλοντος μὲν δύνειν ἐν Ἀλεξανδρείᾳ τοῦ ἡλίου … μετὰ ἐ U+2220ʹ ὥρας ἴσημερινὰς … τὴν φαινομένην σελήνην ἀπέχουσαν τοῦ ἡλίου περὶ τὰς τρεῖς μοίρας τῶν Ἰχθύων διοπτευομένου τμήματα 9β καὶ η΄ … μοιρῶν εἰς τὰ ἑπόμενα διάστασιν
+         elongation_tol: {"tolerance_deg": [3, 6, 12]}
+       * phase_class: {"class": "first_quarter", "tolerance_days": [1, 2]}
+
+   - ALM-C.1 [planet] off 0 rec IX.8.3: Mercury is a morning star (ἑῷος) at about its greatest western (morning) elongation on this day; no hour is stated.
+       licence: ἑῷος ὁ τοῦ Ἑρμοῦ περὶ τὴν μεγίστην τυγχάνων ἀπόστασιν
+       * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         bm_mwra_k: {"k_days": [1, 2, 3]}
+
+   - ALM-C.2 [interval] off 17 rec IV.6.14: Record IV.6.14 falls on civil day +17 relative to Day 0 (record IX.8.3); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 9.8.3 and 4.6.14 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-C.3 [eclipse-lunar] off 17 rec IV.6.14: A partial lunar eclipse in the night of this day: 1/2 + 1/3 of the diameter eclipsed, from the north; mid-eclipse 1 equinoctial hour before midnight (Ptolemy's computed time).
+       licence: τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι πρὸ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου· καὶ ἐξέλειπεν ἀπʼ ἄρκτων τὸ U+2220ʹ καὶ γʹ τῆς διαμέτρου
+         any_visible: null
+       * magnitude: {"umbral_mag_range": [[0.7, 0.95], [0.6, 1.0]]}
+         magnitude_and_side: {"umbral_mag_range": [[0.7, 0.95], [0.6, 1.0]], "eclipsed_limb": "north"}
+         magnitude_and_time: {"umbral_mag_range": [[0.7, 0.95], [0.6, 1.0]], "time_tol_h": [1, 2]}
+
+   - ALM-D.1 [planet] off 0 rec IX.7.4: Mercury is an evening star at its greatest eastern (evening) elongation on this day (evening).
+       licence: ἑσπέρας τὸν τοῦ Ἑρμοῦ ἀστέρα … τὸ πλεῖστον ἀποστάντα τῆς μέσης τοῦ ἡλίου παρόδου … ἡ μεγίστη ἄρα τῆς μέσης ἀπόστασις ἑσπερία
+       * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+
+   - ALM-D.2 [interval] off 35 rec X.1.3: Record X.1.3 falls on civil day +35 relative to Day 0 (record IX.7.4); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 9.7.4 and 10.1.3 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-D.3 [planet] off 35 rec X.1.3: Venus is an evening star (ἑσπέριος) at its greatest eastern (evening) elongation on this day; no hour is stated.
+       licence: ὁ τῆς Ἀφροδίτης ἑσπέριος τὸ πλεῖστον ἀπέστη τοῦ ἡλίου
+       * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+
+   - ALM-D.4 [star] off 35 rec X.1.3: Venus relative to a named star on this day: west of the middle of the Pleiades by the Pleiades' length (Ptolemy: about 1 1/2 deg), a little to the south.
+       licence: προηγούμενος τοῦ μέσου τῆς Πλειάδος τὸ τῆς Πλειάδος μῆκος· ἐδόκει δὲ καὶ μικρῷ νοτιώτερος αὐτὴν παραπορεύεσθαι … τὸ δὲ μῆκος αὐτῆς α U+2220΄ ἐστιν ἔγγιστα μοίρας
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-E.1 [planet] off 0 rec X.3.2b: Venus is an evening star at its greatest eastern (evening) elongation on this day (evening).
+       licence: ἐσπέρας, καθʼ ἣν τὸ πλεῖστον ὁ τῆς Ἀφροδίτης ἀπέσχεν τοῦ ἡλίου … τὴν ἑσπερίαν τῆς μέσης μεγίστην ἀπόστασιν
+       * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+
+   - ALM-E.2 [interval] off 33 rec III.1.10: Record III.1.10 falls on civil day +33 relative to Day 0 (record X.3.2b); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 10.3.2 and 3.1.10 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-E.3 [season] off 33 rec III.1.10: The spring equinox occurred on this day, about one hour after noon (the words do not say 'equinoctial'; on an equinox day seasonal and equinoctial hours are equal).
+       licence: ἐαρινὴν ἰσημερίαν εὑρίσκομεν γεγενημένην … μετὰ μίαν ὥραν ἔγγιστα τῆς μεσημβρίας
+       * equinox_tol: {"tolerance_days": [0.5, 1, 2]}
+         spring_broad: {"tolerance_days": [10]}
+
+   - ALM-F.1 [planet] off 0 rec X.2.4: Venus is an evening star at its greatest eastern (evening) elongation on this day (evening).
+       licence: ἑσπέρας τὸν τῆς Ἀφροδίτης τὸ πλεῖστον ἀποστάντα τοῦ ἡλίου
+       * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+
+   - ALM-F.2 [interval] off 37 rec X.1.6: Record X.1.6 falls on civil day +37 relative to Day 0 (record X.2.4); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 10.2.4 and 10.1.6 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-F.3 [planet] off 37 rec X.1.6: Venus is an evening star at its greatest eastern (evening) elongation on this day (evening).
+       licence: ἐσπέρας ἐτηρήσαμεν τὸν τῆς Ἀφροδίτης τὸ πλεῖστον ἀποστάντα τοῦ ἡλίου … ἡ ἑσπερία μεγίστη διάστασις
+       * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+
+   - ALM-F.4 [star] off 37 rec X.1.6: Venus relative to a named star on this day: west of the northernmost of an Aquarius quadrilateral by about 2/3 of a full moon (1/3 deg), seeming to outshine it (star identification uncertain: drafter's candidates lambda, phi, psi1-3 Aqr, each a separate branch).
+       licence: προηγεῖτο τοῦ βορειοτάτου τῶν ὡς ἐν τετραπλεύρῳ δ μετὰ τὸν ἑπόμενον καὶ ἐπʼ εὐθείας τοῖς βουβῶσι τοῦ Ὑδροχόου δύο μέρη ἔγγιστα σελήνης διχομήνου καὶ ἐδόκει καταλάμπειν τὸν ἀστέρα
+         positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0], "star_candidates": ["lambda Aqr", "phi Aqr", "psi1 Aqr", "psi2 Aqr", "psi3 Aqr"], "candidate_rule": "each candidate is a separate garden branch (the identification is the drafter's, not the text's); do not pick the best-fitting one silently"}
+       * none: null
+
+   - ALM-G.1 [planet] off 0 rec X.3.2a: Venus is a morning star (ἑῷος) at its greatest western (morning) elongation on this day; no hour is stated.
+       licence: καθʼ ἣν ἑῷος ὁ τῆς Ἀφροδίτης τὸ πλεῖστον ἀπέστη τοῦ ἡλίου
+       * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         bm_venus_lead: {"lead_min": [60, 90, 120]}
+
+   - ALM-G.2 [interval] off 106 rec IX.7.5: Record IX.7.5 falls on civil day +106 relative to Day 0 (record X.3.2a); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 10.3.2 and 9.7.5 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-G.3 [planet] off 106 rec IX.7.5: Mercury is a morning star at its greatest western (morning) elongation on this day (before dawn).
+       licence: ὄρθρου ἐπὶ τῆς μεγίστης ὢν ἀποστάσεως ὁ τοῦ Ἑρμοῦ καὶ σφόδρα λεπτὸς καὶ ἀμαυρὸς φαινόμενος … ἡ μεγίστη τῆς μέσης ἀπόστασις ἑῴα
+       * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         bm_mwra_k: {"k_days": [1, 2, 3]}
+
+   - ALM-H.1 [planet] off 0 rec IX.7.9: Mercury is a morning star on this day (before dawn); Ptolemy files the record among observations made about the greatest elongations.
+       licence: ἑῷος ὁ Στίλβων … ὄρθρου. γέγονεν ἄρα ἡ μεγίστη τῆς μέσης ἀπόστασις ἑῴα
+       * visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         bm_mwra_k: {"k_days": [1, 2, 3]}
+
+   - ALM-H.2 [star] off 0 rec IX.7.9: Mercury relative to a named star on this day: 3 'moons' (1 moon taken as 0.5 deg) north of delta Cap; Ptolemy then gives Mercury the star's own longitude.
+       licence: τοῦ λαμπροτάτου οὐραίου ἐν Αἱγοκέρῳ διεῖχεν εἰς τὰ πρὸς ἄρκτους σελήνας γ
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-H.3 [interval] off 102 rec IX.7.11: Record IX.7.11 falls on civil day +102 relative to Day 0 (record IX.7.9); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 9.7.9 and 9.7.11 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+       * as_printed: {"day_offset": 102}
+         mean_sun_emended: {"day_offset": 72}
+
+   - ALM-H.4 [planet] off 102 rec IX.7.11: Mercury is an evening star on this day (evening); Ptolemy files the record among observations made about the greatest elongations.
+       licence: ἑσπέρας … γέγονεν ἄρα ἡ μεγίστη τῆς μέσης ἀπόστασις ἑσπερία
+       * visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+
+   - ALM-H.5 [star] off 102 rec IX.7.11: Mercury relative to a named star on this day: 1.5 deg (3 moons) to the rear (east) of the line through the horns of Taurus (beta Tau - zeta Tau).
+       licence: τῆς διὰ τῶν τοῦ Ταύρου κεράτων εὐθείας ὑπελείπετο τρεῖς σελήνας
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-H.6 [star] off 102 rec IX.7.11: Mercury relative to a named star: it seemed that, in passing the common star (beta Tau), it would stand more than 3 moons (>1.5 deg) south of it ('ἀφέξειν' is future: the observer's expectation for the passage, not a separation measured on this day).
+       licence: ἐδόκει δὲ παραπορευόμενος τοῦ κοινοῦ ἀφέξειν πρὸς μεσημβρίαν πλεῖον τριῶν σεληνῶν
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-H.7 [interval] off 192 rec IX.7.14: Record IX.7.14 falls on civil day +192 relative to Day 0 (record IX.7.9); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 9.7.9 and 9.7.14 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-H.8 [planet] off 192 rec IX.7.14: Mercury is an evening star on this day (evening); Ptolemy files the record among observations made about the greatest elongations.
+       licence: ἑσπέρας … γέγονεν ἄρα ἡ μεγίστη τῆς μέσης ἀπόστασις ἑσπερία
+       * visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+
+   - ALM-H.9 [star] off 192 rec IX.7.14: Mercury relative to a named star on this day: preceded (west of) Spica by a little more than 3 deg (as reckoned by the astronomer the text names).
+       licence: προηγεῖτο τοῦ Στάχυος, … μικρῷ πλεῖον γ μοιρῶν
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-I.1 [planet] off 0 rec IX.10.6a: Mercury is a morning star on this day (before dawn) and has NOT yet reached its greatest western (morning) elongation.
+       licence: ἑῷος ὁ Στίλβων … ὅτι οὐδέπω ἐπὶ τὴν μεγίστην ἑῴαν ἀπόστασιν ἐληλύθει … ὄρθρου
+       * ge_after_within_j: {"j_days": [7, 15, 30]}
+         ge_after_same_apparition: {"bound": "same_apparition"}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+
+   - ALM-I.2 [star] off 0 rec IX.10.6a: Mercury relative to a named star on this day: one moon (0.5 deg) to the rear (east) of the line through beta Sco and delta Sco.
+       licence: τῆς διὰ τοῦ βορείου μετώπου τοῦ Σκορπίου καὶ μέσου εὐθείας ἀπεῖχεν εἰς τὰ ὑπολειπόμενα σελήνην
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-I.3 [star] off 0 rec IX.10.6a: Mercury relative to a named star on this day: two moons (1 deg) north of beta Sco.
+       licence: πρὸς ἄρκτους δὲ τοῦ βορείου μετώπου διεῖχεν β σελήνας
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-I.4 [interval] off 4 rec IX.10.6b: Record IX.10.6b falls on civil day +4 relative to Day 0 (record IX.10.6a); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: μετὰ δ ἡμέρας
+
+   - ALM-I.5 [star] off 4 rec IX.10.6b: Mercury relative to a named star on this day: 1 1/2 moons (0.75 deg) east of the same line.
+       licence: τῆς αὐτῆς εὐθείας διεῖχεν εἰς τὰ ἑπόμενα ὅλην καὶ ἡμίσειαν σελήνην
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-J.1 [planet] off 0 rec X.9.2: Mars is a morning object (ἑῷος) on this day.
+       licence: ἑῷος ὁ τοῦ Ἄρεως τῷ βορείῳ μετώπῳ τοῦ Σκορπίου ἐδόκει ἐπιπροσθετηκέναι
+       * visible_before_sunrise: {"min_altitude_deg": [5]}
+
+   - ALM-J.2 [star] off 0 rec X.9.2: Mars relative to a named star on this day: Mars seemed to have occulted beta Sco (morning).
+       licence: ἑῷος ὁ τοῦ Ἄρεως τῷ βορείῳ μετώπῳ τοῦ Σκορπίου ἐδόκει ἐπιπροσθετηκέναι
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-J.3 [interval] off 267 rec X.4.6a: Record X.4.6a falls on civil day +267 relative to Day 0 (record X.9.2); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 10.9.2 and 10.4.6 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-J.4 [planet] off 267 rec X.4.6a: Venus is seen as a morning star at the twelfth (last) hour of the night; Ptolemy adds that it had already passed its greatest morning elongation.
+       licence: ὥρᾳ ιβ΄ … ὁ τῆς Ἀφροδίτης ἐφαίνετο … παρεληλύθει δὲ καὶ ἐνταῦθα ὁ τῆς Ἀφροδίτης τὴν μεγίστην ἑῴαν ἀπόστασιν
+       * ge_before_within_j: {"j_days": [15, 30, 60]}
+         ge_before_same_apparition: {"bound": "same_apparition"}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         bm_venus_lead: {"lead_min": [60, 90, 120]}
+
+   - ALM-J.5 [star] off 267 rec X.4.6a: Venus relative to a named star on this day: Venus exactly overtook the star 'opposite Vindemiatrix' (Ptolemy: the star after the tip of the southern wing of Virgo, at Virgo 8 1/4 in his catalogue = eta Vir).
+       licence: κατειληφὼς τὸν ἀντικείμενον τῷ Προτρυγητῆρι ἀκριβῶς … ὁ καθʼ ἡμιᾶς μετὰ τὸν ἐπʼ ἄκρας τῆς νοτίου πτέρυγος τῆς Παρθένου … Παρθένου μοίρας η δ΄
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-J.6 [interval] off 271 rec X.4.6b: Record X.4.6b falls on civil day +271 relative to Day 0 (record X.9.2); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: μετὰ γὰρ δ ἡμέρας τῆς προκειμένης τηρήσεως
+
+   - ALM-J.7 [planet] off 271 rec X.4.6b: Venus, four days after its conjunction with the star (previous row), stands about 4 2/3 deg further east (difference of the two longitudes Ptolemy gives for the two reports).
+       licence: ὁ μὲν τῆς Ἀφροδίτης ἀστὴρ ἐπεῖχεν Παρθένου μοίρας δ ς΄ … ἐπεῖχεν κατὰ τὰς ἡμετέρας ἀρχὰς Παρθένου μοίρας η U+2220΄γ΄
+       * positional: {"tolerance_deg": [0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-K.1 [planet] off 0 rec IX.7.16: Mercury is a morning star on this day (before dawn); Ptolemy files the record among observations made about the greatest elongations.
+       licence: ἑῷος ἐπάνω ἦν τοῦ βορείου μετώπου τοῦ Σκορπίου πήχεως ἥμισυ … ὄρθρου … γέγονεν ἄρα καὶ αὕτη ἡ διάστασις
+       * visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         bm_mwra_k: {"k_days": [1, 2, 3]}
+
+   - ALM-K.2 [star] off 0 rec IX.7.16: Mercury relative to a named star on this day: half a cubit above beta Sco (as IX.7.15).
+       licence: ἐπάνω ἦν τοῦ βορείου μετώπου τοῦ Σκορπίου πήχεως ἥμισυ
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-K.3 [interval] off 1385 rec XI.3.2: Record XI.3.2 falls on civil day +1385 relative to Day 0 (record IX.7.16); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 9.7.16 and 11.3.2 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-K.4 [planet] off 1385 rec XI.3.2: Jupiter is a morning object (ἑῷος) on this day.
+       licence: ὁ τοῦ Διὸς ἀστὴρ ἑῷος ἐπεκάλυψεν τὸν νότιον Ὄνον
+       * visible_before_sunrise: {"min_altitude_deg": [5]}
+
+   - ALM-K.5 [star] off 1385 rec XI.3.2: Jupiter relative to a named star on this day: Jupiter occulted the southern Ass (delta Cnc), morning.
+       licence: ἑῷος ἐπεκάλυψεν τὸν νότιον Ὄνον
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-K.6 [interval] off 2902 rec IX.7.15: Record IX.7.15 falls on civil day +2902 relative to Day 0 (record IX.7.16); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 9.7.16 and 9.7.15 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-K.7 [planet] off 2902 rec IX.7.15: Mercury is a morning star on this day (before dawn); Ptolemy files the record among observations made about the greatest elongations.
+       licence: ἑῷος ἐπάνω ἦν τοῦ νοτίου Ζυγοῦ πήχεως ἥμισυ … ὄρθρου … γέγονεν ἄρα ἡ ἑῴα μεγίστη διάστασις
+       * visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         bm_mwra_k: {"k_days": [1, 2, 3]}
+
+   - ALM-K.8 [star] off 2902 rec IX.7.15: Mercury relative to a named star on this day: half a cubit 'above' the southern pan (alpha Lib); a cubit is about 2-2.5 deg in Babylonian usage (my gloss), taken here as 'north by about 1 deg'.
+       licence: ἐπάνω ἦν τοῦ νοτίου Ζυγοῦ πήχεως ἥμισυ
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-L.1 [planet] off 0 rec X.1.5: Venus is a morning star (ἑῷος) at its greatest western (morning) elongation on this day; no hour is stated.
+       licence: ὁ τῆς Ἀφροδίτης ἑῷος τὸ πλεῖστον ἀπέστη τοῦ ἡλίου
+       * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         bm_venus_lead: {"lead_min": [60, 90, 120]}
+
+   - ALM-L.2 [star] off 0 rec X.1.5: Venus relative to a named star on this day: east of the star at the tip of Virgo's southern wing (beta Vir) by a Pleiad-length (1 1/2 deg) less the planet's own size ('ἢ ἔλασσον τῷ ἑαυτοῦ μεγέθει'); passing it one moon (0.5 deg) to the north.
+       licence: ὑπολειπόμενος τοῦ ἐπʼ ἄκρας τῆς νοτίου πτέρυγος τῆς Παρθένου Πλειάδος μῆκος ἢ ἔλασσον τῷ ἑαυτοῦ μεγέθει· ἐδόκει δὲ βορειότερος παραπορεύεσθαι τὸν ἀστέρα σελήνῃ μιᾷ
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null
+
+   - ALM-L.3 [interval] off 586 rec X.2.3: Record X.2.3 falls on civil day +586 relative to Day 0 (record X.1.5); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 10.1.5 and 10.2.3 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-L.4 [planet] off 586 rec X.2.3: Venus is a morning star (ἑῷος) at its greatest western (morning) elongation on this day; no hour is stated.
+       licence: ἑῷος ὁ τῆς Ἀφροδίτης τὸ πλεῖστον ἀπέστη τοῦ ἡλίου
+       * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+         bm_venus_lead: {"lead_min": [60, 90, 120]}
+
+   - ALM-L.5 [interval] off 996 rec IX.9.3: Record IX.9.3 falls on civil day +996 relative to Day 0 (record X.1.5); civil days run midnight to midnight, so an evening observation and the following pre-dawn one belong to consecutive civil days.
+       licence: [Egyptian civil dates at 10.1.5 and 9.9.3 (regnal or era year, month, day): withheld from this file because, with any season clue, a wandering-calendar date fixes the absolute year; quoted in full in controls_almagest_truth.json]
+
+   - ALM-L.6 [planet] off 996 rec IX.9.3: Mercury is an evening star at its greatest eastern (evening) elongation on this day (evening).
+       licence: ἑσπέρας … τὸ πλεῖστον, φησίν, ἀπέστη τοῦ ἡλίου … τὴν ἑσπερίαν μεγίστην ἀπόστασιν
+       * ge_true_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         ge_mean_k: {"k_days": [1, 2, 3, 5, 7, 10, 16, 21]}
+         visible_only: {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}
+
+   - ALM-L.7 [star] off 996 rec IX.9.3: Mercury relative to a named star on this day: to the rear (east) of Regulus by 3 1/2 1/3 = 3 5/6 deg.
+       licence: ὑπολειπόμενος τοῦ ἐπὶ τῆς καρδίας τοῦ Λέοντος μοίρας γ ∠ʹ γʹ
+       * positional: {"tolerance_deg": [0.25, 0.5, 1.0, 2.0]}
+         none: null

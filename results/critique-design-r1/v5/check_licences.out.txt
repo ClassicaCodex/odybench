@@ -1,0 +1,13 @@
+ALM: 54/54 licence strings verified; 18 placeholder rows: ['ALM-A.3', 'ALM-A.6', 'ALM-A.8', 'ALM-B.4', 'ALM-B.6', 'ALM-B.8', 'ALM-C.2', 'ALM-D.2', 'ALM-E.2', 'ALM-F.2', 'ALM-G.2', 'ALM-H.3', 'ALM-H.7', 'ALM-J.3', 'ALM-K.3', 'ALM-K.6', 'ALM-L.3', 'ALM-L.5']
+REAL: 125/125 licence strings verified; 0 placeholder rows: []
+REAL PB-CAL statement: date-like 'Thoth': Mid-eclipse nights in Ptolemy's Egyptian reckoning by regnal years of Mardokempados: E1 = year 1 Thoth 29 into 30; E2 = year 2 Thoth 18 into 19; E3 = year 2 Pha
+REAL PB-CAL statement: date-like 'Thoth': Mid-eclipse nights in Ptolemy's Egyptian reckoning by regnal years of Mardokempados: E1 = year 1 Thoth 29 into 30; E2 = year 2 Thoth 18 into 19; E3 = year 2 Pha
+REAL PB-CAL statement: date-like 'Phamenoth': Mid-eclipse nights in Ptolemy's Egyptian reckoning by regnal years of Mardokempados: E1 = year 1 Thoth 29 into 30; E2 = year 2 Thoth 18 into 19; E3 = year 2 Pha
+REAL PA-CAL statement: date-like 'Payni': Mid-eclipse nights in the Egyptian calendar by regnal years of Hadrian: H1 = year 17 Payni 20 into 21; H2 = year 19 Choiak 2 into 3; H3 = year 20 Pharmouthi 19 
+REAL PA-CAL statement: date-like 'Choiak': Mid-eclipse nights in the Egyptian calendar by regnal years of Hadrian: H1 = year 17 Payni 20 into 21; H2 = year 19 Choiak 2 into 3; H3 = year 20 Pharmouthi 19 
+REAL PC-LINK statement: date-like 'Thoth': From E2 (Mardokempados year 2, Thoth 18 into 19, 5/6 h before midnight at Alexandria) to H2 (Hadrian year 19, Choiak 2 into 3, 1 h before midnight): 854 Egyptia
+REAL PC-LINK statement: date-like 'Choiak': From E2 (Mardokempados year 2, Thoth 18 into 19, 5/6 h before midnight at Alexandria) to H2 (Hadrian year 19, Choiak 2 into 3, 1 h before midnight): 854 Egyptia
+REAL P-DATE statement: date-like 'September': Livy: the eclipse was in the night followed by the day 'pridie Nonas Septembres' (Roman 4 September), i.e. the evening of Roman 3 September.
+REAL P-DATE statement: date-like 'September': Livy: the eclipse was in the night followed by the day 'pridie Nonas Septembres' (Roman 4 September), i.e. the evening of Roman 3 September.
+REAL L1-DATE statement: date-like 'March': The prodigies were reported when the consul entered office at Rome on the Ides of March, as spring was approaching; the eclipse came before the report, by an un
+REAL L4-DATE statement: date-like 'March': The supplication was decreed before the new magistrates left for their provinces; the consuls had entered office on the Ides of March (38.35.7).

@@ -1,0 +1,209 @@
+AEN-TROY | observer:Troy (Ilium), the city and the mound of  | exact | tumulum antiquae Cereris sedemque sacratam venimus |  | 
+AEN-TROY | observer:Tenedos (the Greek fleet's departure poi | exact | a Tenedo | 2.255 | 
+AEN-TROY | observer:Mount Ida (the ridge over which Lucifer  | exact | iugis summae | 2.801 | 
+AEN-TROY | observer:Mount Ida (the ridge over which Lucifer  | exact | Idae | 2.801 | 
+AEN-TROY | AEN-TROY-01 | exact | Vertitur interea caelum et ruit oceano nox | 2.250 | 
+AEN-TROY | AEN-TROY-01 | exact | fusi per moenia Teucri conticuere, sopor fessos complectitur artus |  | 
+AEN-TROY | AEN-TROY-02 | exact | et iam Argiva phalanx instructis navibus ibat | 2.254 | 
+AEN-TROY | AEN-TROY-02 | exact | a Tenedo tacitae per amica silentia lunae | 2.255 | 
+AEN-TROY | AEN-TROY-03 | exact | flammas cum regia puppis extulerat |  | 
+AEN-TROY | AEN-TROY-03 | exact | Tempus erat, quo prima quies mortalibus aegris incipit |  | 
+AEN-TROY | AEN-TROY-04 | exact | Addunt se socios Rhipeus et maximus armis | 2.339 | 
+AEN-TROY | AEN-TROY-04 | exact | Epytus oblati per lunam | 2.340 | 
+AEN-TROY | AEN-TROY-05 | exact | quibus ultimus esset ille dies, festa velamus fronde per urbem |  | 
+AEN-TROY | AEN-TROY-06 | exact | Sic demum socios consumpta nocte reviso | 2.795 | 
+AEN-TROY | AEN-TROY-06 | exact | Iamque | 2.801 | 
+AEN-TROY | AEN-TROY-07 | exact | Iamque iugis summae surgebat Lucifer Idae ducebatque diem |  | 
+AEN-CRETE | observer:Crete, the town Aeneas founds and calls  | exact | antiquis Curetum adlabimur oris | 3.131 | 
+AEN-CRETE | observer:Crete, the town Aeneas founds and calls  | exact | Pergameamque voco | 3.133 | 
+AEN-CRETE | AEN-CRETE-01 | exact | letifer annus | 3.139 | 
+AEN-CRETE | AEN-CRETE-01 | exact | tum sterilis exurere Sirius agros | 3.141 | 
+AEN-CRETE | AEN-CRETE-01 | exact | arebant herbae | 3.142 | 
+AEN-CRETE | AEN-CRETE-02 | exact | Nox erat | 3.147 | 
+AEN-CRETE | AEN-CRETE-02 | exact | visi ante oculos adstare iacentis in somnis, multo manifesti lumine, qua se plena per insertas fundebat luna fenestras |  | 
+AEN-ITALY | observer:the shore by the Ceraunian mountains (Ep | exact | vicina Ceraunia iuxta | 3.506 | 
+AEN-ITALY | observer:the shore by the Ceraunian mountains (Ep | exact | sternimur optatae gremio telluris ad undam | 3.509 | 
+AEN-ITALY | AEN-ITALY-01 | exact | Sol ruit interea et montes umbrantur opaci | 3.508 | 
+AEN-ITALY | AEN-ITALY-01 | exact | fessos sopor inrigat artus | 3.511 | 
+AEN-ITALY | AEN-ITALY-02 | exact | Necdum orbem medium Nox horis acta subibat | 3.512 | 
+AEN-ITALY | AEN-ITALY-02 | exact | sidera cuncta notat tacito labentia caelo, Arcturum pluviasque Hyadas geminosque Triones, armatumque auro circumspicit Oriona |  | 
+AEN-ITALY | AEN-ITALY-02 | exact | caelo constare sereno | 3.518 | 
+AEN-ITALY | AEN-ITALY-03 | exact | Iamque rubescebat stellis Aurora fugatis | 3.521 | 
+AEN-ITALY | AEN-ITALY-03 | exact | humilemque videmus Italiam |  | 
+AEN-ETNA | observer:the Cyclopes' harbour under Etna (Sicily | exact | Cyclopum adlabimur oris | 3.569 | 
+AEN-ETNA | observer:the Cyclopes' harbour under Etna (Sicily | exact | iuxta tonat Aetna | 3.571 | 
+AEN-ETNA | AEN-ETNA-01 | exact | Interea fessos ventus cum sole reliquit | 3.568 | 
+AEN-ETNA | AEN-ETNA-01 | exact | Cyclopum adlabimur oris | 3.569 | 
+AEN-ETNA | AEN-ETNA-02 | exact | Noctem illam | 3.583 | 
+AEN-ETNA | AEN-ETNA-02 | exact | neque erant astrorum ignes | 3.585 | 
+AEN-ETNA | AEN-ETNA-02 | exact | obscuro sed nubila caelo, et lunam in nimbo nox intempesta tenebat |  | 
+AEN-ETNA | AEN-ETNA-03 | exact | Postera iamque dies primo surgebat Eoo | 3.588 | 
+AEN-ETNA | AEN-ETNA-03 | exact | umentemque Aurora polo dimoverat umbram | 3.589 | 
+AEN-ETNA | AEN-ETNA-04 | exact | Tertia iam lunae se cornua lumine complent, cum vitam in silvis inter deserta ferarum lustra domosque traho |  | 
+AEN-CARTHAGE | observer:Carthage | exact | Tu nunc Karthaginis altae | 4.265 | 
+AEN-CARTHAGE | AEN-CARTHAGE-01 | exact | pedibus talaria nectit aurea |  | 
+AEN-CARTHAGE | AEN-CARTHAGE-01 | exact | tum virgam capit | 4.242 | 
+AEN-CARTHAGE | AEN-CARTHAGE-01 | exact | iamque volans apicem et latera ardua cernit Atlantis |  | 
+AEN-CARTHAGE | AEN-CARTHAGE-01 | exact | Hic primum paribus nitens Cyllenius alis constitit; hinc toto praeceps se corpore ad undas misit |  | 
+AEN-CARTHAGE | AEN-CARTHAGE-01 | exact | Ut primum alatis tetigit magalia plantis, Aenean fundantem arces ac tecta novantem conspicit |  | 
+AEN-CARTHAGE | AEN-CARTHAGE-02 | exact | Mnesthea Sergestumque vocat | 4.288 | 
+AEN-CARTHAGE | AEN-CARTHAGE-02 | exact | classem aptent taciti | 4.289 | 
+AEN-CARTHAGE | AEN-CARTHAGE-02 | exact | Tum vero Teucri incumbunt, et litore celsas deducunt toto naves |  | 
+AEN-CARTHAGE | AEN-CARTHAGE-03 | exact | Quin etiam hiberno moliris sidere classem, et mediis properas aquilonibus ire per altum |  | 
+AEN-CARTHAGE | AEN-CARTHAGE-04 | exact | Nox erat | 4.522 | 
+AEN-CARTHAGE | AEN-CARTHAGE-04 | exact | cum medio volvuntur sidera lapsu | 4.524 | 
+AEN-CARTHAGE | AEN-CARTHAGE-05 | exact | Aeneas celsa in puppi | 4.554 | 
+AEN-CARTHAGE | AEN-CARTHAGE-05 | exact | carpebat somnos | 4.555 | 
+AEN-CARTHAGE | AEN-CARTHAGE-05 | exact | Huic se forma dei voltu redeuntis eodem obtulit in somnis |  | 
+AEN-CARTHAGE | AEN-CARTHAGE-05 | exact | omnia Mercurio similis | 4.558 | 
+AEN-CARTHAGE | AEN-CARTHAGE-05 | exact | Non fugis hinc praeceps | 4.565 | 
+AEN-CARTHAGE | AEN-CARTHAGE-05 | exact | si te his attigerit terris Aurora morantem | 4.568 | 
+AEN-CARTHAGE | AEN-CARTHAGE-05 | exact | nocti se immiscuit atrae | 4.570 | 
+AEN-CARTHAGE | AEN-CARTHAGE-06 | exact | litora deseruere | 4.582 | 
+AEN-CARTHAGE | AEN-CARTHAGE-06 | exact | Et iam prima novo spargebat lumine terras Tithoni croceum linquens Aurora cubile |  | 
+AEN-CARTHAGE | AEN-CARTHAGE-06 | exact | classem procedere velis | 4.587 | 
+AEN-CARTHAGE | AEN-CARTHAGE-07 | exact | nam te iam septima portat omnibus errantem terris et fluctibus aestas |  | 
+ARG-CIUS | observer:Cius, by Mount Arganthonios and the mout | exact | Κιανίδος ἤθεα γαίης | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1177 | 
+ARG-CIUS | observer:Cius, by Mount Arganthonios and the mout | exact | Ἀργανθώνειον ὄρος προχοάς τε Κίοιο | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1178 | 
+ARG-CIUS | observer:Cyzicus, land of the Doliones (Night -17 | exact | ἐυξείνοισι Δολίοσιν | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1018 | 
+ARG-CIUS | ARG-CIUS-01 | exact | ἦμος δʼ ἀγρόθεν εἶσι φυτοσκάφος ἤ τις ἀροτρεὺς | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1172 | 
+ARG-CIUS | ARG-CIUS-01 | exact | δόρποιο χατίζων | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1173 | 
+ARG-CIUS | ARG-CIUS-01 | exact | τῆμος ἄρʼ οἵγʼ ἀφίκοντο Κιανίδος ἤθεα γαίης | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1177 | 
+ARG-CIUS | ARG-CIUS-02 | exact | ποτιδόρπιον | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1209 | 
+ARG-CIUS | ARG-CIUS-02 | exact | τὸν δὲ σχεδὸν εἰσενόησεν | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1229 | 
+ARG-CIUS | ARG-CIUS-02 | exact | πρὸς γάρ οἱ διχόμηνις ἀπʼ αἰθέρος αὐγάζουσα βάλλε σεληναίη |  | 
+ARG-CIUS | ARG-CIUS-03 | exact | αὐτίκα δʼ ἀκροτάτας ὑπερέσχεθεν ἄκριας ἀστὴρ ἠῷος, πνοιαὶ δὲ κατήλυθον |  | 
+ARG-CIUS | ARG-CIUS-04 | exact | ἦμος δʼ οὐρανόθεν χαροπὴ ὑπολάμπεται ἠὼς | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1280 | 
+ARG-CIUS | ARG-CIUS-04 | exact | τῆμος τούσγʼ ἐνόησαν ἀιδρείῃσι λιπόντες | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1283 | 
+ARG-CIUS | ARG-CIUS-05 | exact | ἡ δʼ ἔθεεν λαίφεσσι πανήμερος | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1015 | 
+ARG-CIUS | ARG-CIUS-05 | exact | αὐτονυχί | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1019 | 
+ARG-CIUS | ARG-CIUS-05 | exact | οὐδʼ ὑπὸ νυκτὶ Δολίονες ἂψ ἀνιόντας ἥρωας νημερτὲς ἐπήισαν |  | 
+ARG-CIUS | ARG-CIUS-06 | exact | ἤματα δὲ τρία πάντα γόων | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1057 | 
+ARG-CIUS | ARG-CIUS-06 | exact | ἐκ δὲ τόθεν τρηχεῖαι ἀνηέρθησαν ἄελλαι ἤμαθʼ ὁμοῦ νύκτας τε δυώδεκα |  | 
+ARG-CIUS | ARG-CIUS-06 | exact | ἐπιπλομένῃ δʼ ἐνὶ νυκτὶ | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1080 | 
+ARG-CIUS | ARG-CIUS-06 | exact | Δινδύμου | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1093 | 
+ARG-CIUS | ARG-CIUS-06 | exact | Μακριάδες σκοπιαὶ καὶ πᾶσα περαίη Θρηικίης ἐνὶ χερσὶν ἑαῖς προυφαίνετʼ ἰδέσθαι |  | 
+ARG-CIUS | ARG-CIUS-06 | exact | αὐτὰρ ἐς ἠὼ ληξάντων ἀνέμων νῆσον λίπον εἰρεσίῃσιν |  | 
+ARG-CIUS | ARG-CIUS-07 | exact | πωτᾶτʼ ἀλκυονὶς λιγυρῇ ὀπὶ θεσπίζουσα λῆξιν ὀρινομένων ἀνέμων |  | 
+ARG-COLCHIS | observer:Colchis: the Phasis and Aia | exact | ἐννύχιοι | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1260 | 
+ARG-COLCHIS | observer:Colchis: the Phasis and Aia | exact | ἵκοντο Φᾶσίν τʼ εὐρὺ ῥέοντα |  | 
+ARG-COLCHIS | observer:the Island of Ares (Night -7) | exact | νῆσον ἀποπροέλειπον Ἄρηος | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1230 | 
+ARG-COLCHIS | ARG-COLCHIS-01 | exact | καὶ δὴ ἔσαν νήσοιο μάλα σχεδὸν ἤματι κείνῳ | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1097 | 
+ARG-COLCHIS | ARG-COLCHIS-01 | exact | ὕδατι σημαίνων διερὴν ὁδὸν Ἀρκτούροιο | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1099 | 
+ARG-COLCHIS | ARG-COLCHIS-02 | exact | τὸ δὲ μυρίον ἐκ Διὸς ὕδωρ λῆξεν ἅμʼ ἠελίῳ |  | 
+ARG-COLCHIS | ARG-COLCHIS-02 | exact | κατέδαρθεν | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1227 | 
+ARG-COLCHIS | ARG-COLCHIS-02 | exact | ἦρι δʼ ἀνεγρομένοισιν | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1228 | 
+ARG-COLCHIS | ARG-COLCHIS-02 | exact | νυκτὶ δʼ ἐπιπλομένῃ Φιλυρηίδα νῆσον ἄμειβον | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1231 | 
+ARG-COLCHIS | ARG-COLCHIS-02 | exact | ἐπιπρὸ γὰρ αἰὲν ἔτεμνον | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1244 | 
+ARG-COLCHIS | ARG-COLCHIS-02 | exact | ἴδον ἕσπερον | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1251 | 
+ARG-COLCHIS | ARG-COLCHIS-02 | exact | ἐννύχιοι | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1260 | 
+ARG-COLCHIS | ARG-COLCHIS-02 | exact | ἠὼς δʼ οὐ μετὰ δηρὸν ἐελδομένοις ἐφαάνθη | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.2.1285 | 
+ARG-COLCHIS | ARG-COLCHIS-03 | exact | νὺξ μὲν ἔπειτʼ ἐπὶ γαῖαν ἄγεν κνέφας | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.744 | 
+ARG-COLCHIS | ARG-COLCHIS-03 | exact | ἀλλὰ μάλʼ οὐ Μήδειαν ἐπὶ γλυκερὸς λάβεν ὕπνος | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.751 | 
+ARG-COLCHIS | ARG-COLCHIS-03 | exact | φέγγος Ἠριγενής |  | 
+ARG-COLCHIS | ARG-COLCHIS-03 | exact | αὐτὰρ ἅμʼ ἠοῖ | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1172 | 
+ARG-COLCHIS | ARG-COLCHIS-03 | exact | Ἠέλιος μὲν ἄπωθεν ἐρεμνὴν δύετο γαῖαν | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1191 | 
+ARG-COLCHIS | ARG-COLCHIS-03 | exact | ἠριγενὴς Ἠὼς βάλεν ἀντέλλουσα | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1224 | 
+ARG-COLCHIS | ARG-COLCHIS-03 | exact | ἦμαρ ἔδυ, καὶ τῷ τετελεσμένος ἦεν ἄεθλος | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1407 | 
+ARG-COLCHIS | ARG-COLCHIS-04 | exact | νὺξ μὲν ἔπειτʼ ἐπὶ γαῖαν ἄγεν κνέφας | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.744 | 
+ARG-COLCHIS | ARG-COLCHIS-04 | exact | οἱ δʼ ἐνὶ πόντῳ ναῦται εἰς Ἑλίκην τε καὶ ἀστέρας Ὠρίωνος ἔδρακον ἐκ νηῶν |  | 
+ARG-COLCHIS | ARG-COLCHIS-05 | exact | μέσσην νύκτα διαμμοιρηδὰ φυλάξας | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.3.1029 | 
+ARG-COLCHIS | ARG-COLCHIS-05 | exact | αὐτίκʼ ἐπεί ῥʼ Ἑλίκης εὐφεγγέος ἀστέρες Ἄρκτου ἔκλιθεν |  | 
+ARG-COLCHIS | ARG-COLCHIS-06 | exact | τὴν δὲ νέον Τιτηνὶς ἀνερχομένη περάτηθεν φοιταλέην ἐσιδοῦσα θεὰ ἐπεχήρατο Μήνη |  | 
+ARG-COLCHIS | ARG-COLCHIS-07 | exact | ἦμος δʼ ἀνέρες ὕπνον ἀπʼ ὀφθαλμῶν ἐβάλοντο ἀγρόται |  | 
+ARG-COLCHIS | ARG-COLCHIS-07 | exact | τῆμος ἄρʼ Αἰσονίδης κούρη τʼ ἀπὸ νηὸς ἔβησαν | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.114 | 
+ARG-COLCHIS | ARG-COLCHIS-07 | exact | Ἠὼς μέν ῥʼ ἐπὶ γαῖαν ἐκίδνατο | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.183 | 
+ARG-RETURN | observer:the Cretan sea beyond Cape Salmonis (Nig | exact | ὑπὲρ Σαλμωνίδος ἄκρης | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1693 | 
+ARG-RETURN | observer:the Cretan sea beyond Cape Salmonis (Nig | exact | Κρηταῖον ὑπὲρ μέγα λαῖτμα | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1694 | 
+ARG-RETURN | observer:Anaphe (Dawn +1) | exact | Ἀνάφην δέ τε λισσάδα νῆσον | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1717 | 
+ARG-RETURN | observer:at sea off the Libyan desert coast, east | exact | αὐτὴν ἐπὶ δεξίʼ ἔχοντες γαῖαν ἐρημαίην |  | 
+ARG-RETURN | ARG-RETURN-01 | exact | ἦμος δʼ ἠέλιος μὲν ἔδυ, ἀνὰ δʼ ἤλυθεν ἀστὴρ αὔλιος, ὅς τʼ ἀνέπαυσεν ὀιζυροὺς ἀροτῆρας |  | 
+ARG-RETURN | ARG-RETURN-01 | exact | κελαινῇ νυκτὶ | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1631 | 
+ARG-RETURN | ARG-RETURN-02 | exact | παννύχιοι καὶ ἐπʼ ἦμαρ, ἐπʼ ἤματι δʼ αὖτις ἰοῦσαν νύχθʼ ἑτέρην |  | 
+ARG-RETURN | ARG-RETURN-02 | exact | ὑπέδεκτο δʼ ἀπόπροθι παιπαλόεσσα Κάρπαθος |  | 
+ARG-RETURN | ARG-RETURN-03 | exact | ἔνθεν δʼ οἵγε περαιώσεσθαι ἔμελλον Κρήτην |  | 
+ARG-RETURN | ARG-RETURN-03 | exact | κεῖνο μὲν οὖν Κρήτῃ ἐνὶ δὴ κνέφας ηὐλίζοντο ἥρωες |  | 
+ARG-RETURN | ARG-RETURN-03 | exact | νέον φαέθουσαν ἐς ἠῶ | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1690 | 
+ARG-RETURN | ARG-RETURN-04 | exact | νὺξ ἐφόβει, τήνπερ τε κατουλάδα κικλήσκουσιν | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1695 | 
+ARG-RETURN | ARG-RETURN-04 | exact | νύκτʼ ὀλοὴν οὐκ ἄστρα διίσχανεν, οὐκ ἀμαρυγαὶ μήνης |  | 
+ARG-RETURN | ARG-RETURN-04 | exact | οὐρανόθεν δὲ μέλαν χάος | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1697 | 
+ARG-RETURN | ARG-RETURN-05 | exact | αὐτίκα δʼ Ἠὼς φέγγεν ἀνερχομένη |  | 
+ARG-RETURN | ARG-RETURN-05 | exact | Ἀνάφην | urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1717 | 
+QS-SACK | observer:Troy, the god-built city | exact | θεοδμήτοιο πόληος | urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.514 | 
+QS-SACK | observer:Tenedos (the fleet) | exact | πρὸς ἠιόνας Τενέδοιο | urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.345 | 
+QS-SACK | observer:Cape Caphereus, Euboea (the storm) | exact | Καφηρέος | urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.469 | 
+QS-SACK | QS-SACK-01 | exact | πρὸς ἠιόνας Τενέδοιο | urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.345 | 
+QS-SACK | QS-SACK-01 | exact | ὁππότε πυρσὸς ἐελδομένοισι φανείη | urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.349 | 
+QS-SACK | QS-SACK-01 | exact | ἐπήλυθεν Ἠριγένεια | urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.352 | 
+QS-SACK | QS-SACK-01 | exact | Τρῶες εἰσενόησαν ἐπʼ ᾐόσιν Ἑλλησπόντου | urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.12.353 | 
+QS-SACK | QS-SACK-02 | exact | ἐπεστενάχοντο δὲ λυγρὸν ἐννύχιοι ὄρνιθες |  | 
+QS-SACK | QS-SACK-02 | exact | ἄστρα δὲ πάντʼ ἐφύπερθε θεοδμήτοιο πόληος ἀχλὺς ἀμφεκάλυψε καὶ ἀννεφέλου περ ἐόντος οὐρανοῦ αἰγλήεντος |  | 
+QS-SACK | QS-SACK-03 | exact | Ἠλέκτρην βαθύπεπλον ἑὸν δέμας ἀμφικαλύψαι ἀχλύϊ καὶ νεφέεσσιν ἀποιχομένην χοροῦ ἄλλων πληιάδων |  | 
+QS-SACK | QS-SACK-03 | exact | ἡ δʼ ἄρα μούνη κεύθεται αἰὲν ἄϊστος |  | 
+QS-SACK | QS-SACK-04 | exact | εὖτε γὰρ ὕπνος ἔρυκεν ἀνὰ πτόλιν | urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.21 | 
+QS-SACK | QS-SACK-04 | exact | Σίνων ἀνὰ πυρσὸν ἄειρε | urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.23 | 
+QS-SACK | QS-SACK-04 | exact | ἐκ Τενέδου νήεσσιν ἐπὶ πλόον ἐντύνοντο | urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.13.29 | 
+QS-SACK | QS-SACK-05 | exact | καὶ τότʼ ἀπʼ Ὠκεανοῖο θεὰ χρυσόθρονος Ἠὼς οὐρανὸν εἰσανόρουσε |  | 
+QS-SACK | QS-SACK-05 | exact | μέσον περιτέλλετο νυκτός | urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.143 | 
+QS-SACK | QS-SACK-05 | exact | ἀνήιεν Ἠριγένεια νύκτα διασκεδάσασα |  | 
+QS-SACK | QS-SACK-06 | exact | ὁπότʼ Εὐβοίης σχεδὸν ἤλυθον | urn:cts:greekLit:tlg2046.tlg001.perseus-grc2.14.422 | 
+QS-SACK | QS-SACK-06 | exact | σὺν δʼ ἔχεεν νεφέλας τε καὶ ἠέρα πᾶσαν ὕπερθε· νὺξ δʼ ἐχύθη περὶ γαῖαν |  | 
+VF-LEMNOS | observer:at sea between Pallene, Athos and Lemnos | exact | Phoebus Athon | 2.76 | 
+VF-LEMNOS | observer:at sea between Pallene, Athos and Lemnos | exact | Vulcania surgit Lemnos aquis |  | 
+VF-LEMNOS | observer:Lemnos (Day L) | exact | Lemnos | 2.79 | 
+VF-LEMNOS | VF-LEMNOS-01 | exact | Minyas simul optulit omnis alma novo crispans pelagus Tithonia Phoebo |  | 
+VF-LEMNOS | VF-LEMNOS-01 | exact | piceoque premit nox omnia caelo | 1.617 | 
+VF-LEMNOS | VF-LEMNOS-01 | exact | emicuit reserata dies | 1.655 | 
+VF-LEMNOS | VF-LEMNOS-01 | exact | Iamque Hyperionius metas maris urget Hiberi currus |  | 
+VF-LEMNOS | VF-LEMNOS-02 | exact | micat immutabile caelum puraque nec gravido surrexit Cynthia cornu, nullus in ore rubor |  | 
+VF-LEMNOS | VF-LEMNOS-03 | exact | non illa sequi mihi sidera monstrat, quae delapsa polo reficit mare: tantus Orion iam cadit, irato iam stridet in aequore Perseus |  | 
+VF-LEMNOS | VF-LEMNOS-03 | exact | axe nitet serpens | 2.65 | 
+VF-LEMNOS | VF-LEMNOS-04 | exact | Iamque sub Eoae dubios Atlantidis ignes albet ager |  | 
+VF-LEMNOS | VF-LEMNOS-04 | exact | Phoebus Athon | 2.76 | 
+VF-LEMNOS | VF-LEMNOS-04 | exact | Vulcania surgit Lemnos aquis |  | 
+VF-LEMNOS | VF-LEMNOS-05 | exact | Pliada lege poli nimboso moverat astro Iuppiter |  | 
+VF-LEMNOS | VF-LEMNOS-05 | exact | simul undis cuncta ruunt |  | 
+VF-LEMNOS | VF-LEMNOS-06 | exact | et lunam quarto densam videt imbribus ortu Thespiades |  | 
+VF-LEMNOS | VF-LEMNOS-07 | exact | urbe sedent laeti Minyae | 2.370 | 
+VF-LEMNOS | VF-LEMNOS-07 | exact | nec iam velle vias | 2.372 | 
+VF-CYZICUS | observer:Cyzicus | exact | portuque refertur amico | 3.42 | 
+VF-CYZICUS | VF-CYZICUS-01 | exact | Tertia iam gelidas Tithonia solverat umbras | 3.1 | 
+VF-CYZICUS | VF-CYZICUS-01 | exact | Nox erat et leni canebant aequora sulco, et iam prona leves spargebant sidera somnos |  | 
+VF-CYZICUS | VF-CYZICUS-01 | exact | portuque refertur amico | 3.42 | 
+VF-CYZICUS | VF-CYZICUS-02 | exact | venatori Erymo | 3.194 | 
+VF-CYZICUS | VF-CYZICUS-02 | exact | piceo comitem miserata refulsit Luna polo |  | 
+VF-CYZICUS | VF-CYZICUS-03 | exact | primo iam spargere lumine portus orta dies notaeque |  | 
+VF-CYZICUS | VF-CYZICUS-03 | exact | albescere turres | 3.258 | 
+VF-COLCHIS | observer:Colchis at the mouth of the Phasis (Aeet | exact | optatos iam lux ostendere Colchos | 5.178 | 
+VF-COLCHIS | observer:Colchis at the mouth of the Phasis (Aeet | exact | Phasis in aequor ore ruit |  | 
+VF-COLCHIS | VF-COLCHIS-01 | exact | Te quoque Thessalico iam serus ab hospite vesper dividit |  | 
+VF-COLCHIS | VF-COLCHIS-01 | exact | noxque ruit | 7.3 | 
+VF-COLCHIS | VF-COLCHIS-02 | exact | ecce videt tenui candescere limen eoo | 7.22 | 
+VF-COLCHIS | VF-COLCHIS-02 | exact | lux orta | 7.23 | 
+IL-PATROCLUS | observer:the plain of Troy and the Achaean camp o | exact | Τροίην τε καὶ Ἑλλήσποντον | 24.346 | 
+IL-PATROCLUS | observer:the shore by the ships (Achilles, Nights | exact | ἐπὶ θινὶ πολυφλοίσβοιο θαλάσσης | 23.59 | 
+IL-PATROCLUS | IL-PATROCLUS-01 | exact | Ἠὼς δʼ ἐκ λεχέων | 11.1 | 
+IL-PATROCLUS | IL-PATROCLUS-01 | exact | ἠέλιος μὲν ἔδυ | 18.241 | 
+IL-PATROCLUS | IL-PATROCLUS-01 | exact | Ἠὼς μὲν κροκόπεπλος ἀπʼ Ὠκεανοῖο ῥοάων | 19.1 | 
+IL-PATROCLUS | IL-PATROCLUS-02 | exact | Ζεὺς δʼ ἐπὶ νύκτʼ ὀλοὴν τάνυσε κρατερῇ ὑσμίνῃ | 16.567 | 
+IL-PATROCLUS | IL-PATROCLUS-03 | exact | ὄφρα μὲν Ἠέλιος μέσον οὐρανὸν ἀμφιβεβήκει | 16.777 | 
+IL-PATROCLUS | IL-PATROCLUS-03 | exact | ἦμος δʼ Ἠέλιος μετενίσετο βουλυτὸν δέ | 16.779 | 
+IL-PATROCLUS | IL-PATROCLUS-04 | exact | οὐδέ κε φαίης οὔτέ ποτʼ ἠέλιον σῶν ἔμμεναι οὔτε σελήνην |  | 
+IL-PATROCLUS | IL-PATROCLUS-04 | exact | ἠέρι γὰρ κατέχοντο | 17.368 | 
+IL-PATROCLUS | IL-PATROCLUS-04 | exact | πέπτατο δʼ αὐγὴ ἠελίου ὀξεῖα, νέφος δʼ οὐ φαίνετο πάσης γαίης οὐδʼ ὀρέων |  | 
+IL-PATROCLUS | IL-PATROCLUS-04 | exact | ἠέρα μὲν σκέδασεν καὶ ἀπῶσεν ὀμίχλην, ἠέλιος δʼ ἐπέλαμψε |  | 
+IL-PATROCLUS | IL-PATROCLUS-05 | exact | Ἠέλιον δʼ ἀκάμαντα βοῶπις πότνια Ἥρη πέμψεν ἐπʼ Ὠκεανοῖο ῥοὰς ἀέκοντα νέεσθαι |  | 
+IL-PATROCLUS | IL-PATROCLUS-06 | exact | ἠέλιόν τʼ ἀκάμαντα σελήνην τε πλήθουσαν | 18.484 | 
+IL-PATROCLUS | IL-PATROCLUS-06 | exact | Πληϊάδας θʼ Ὑάδας τε τό τε σθένος Ὠρίωνος | 18.486 | 
+IL-PATROCLUS | IL-PATROCLUS-06 | exact | Ἄρκτόν θʼ | 18.487 | 
+IL-PATROCLUS | IL-PATROCLUS-07 | exact | Πηλεΐδης δʼ ἐπὶ θινὶ πολυφλοίσβοιο θαλάσσης | 23.59 | 
+IL-PATROCLUS | IL-PATROCLUS-07 | exact | μυρομένοισι δὲ τοῖσι φάνη ῥοδοδάκτυλος Ἠὼς | 23.109 | 
+IL-PATROCLUS | IL-PATROCLUS-07 | exact | παννύχιοι δʼ ἄρα τοί γε πυρῆς ἄμυδις φλόγʼ ἔβαλλον | 23.217 | 
+IL-PATROCLUS | IL-PATROCLUS-08 | exact | ἦμος δʼ ἑωσφόρος εἶσι φόως ἐρέων ἐπὶ γαῖαν, ὅν τε μέτα κροκόπεπλος ὑπεὶρ ἅλα κίδναται ἠώς, τῆμος πυρκαϊὴ ἐμαραίνετο |  | 
+IL-PATROCLUS | IL-PATROCLUS-09 | exact | ἀλλʼ ὅτε δή ῥʼ ἐκ τοῖο δυωδεκάτη γένετʼ ἠώς | 24.31 | 
+IL-PATROCLUS | IL-PATROCLUS-10 | exact | οὐδʼ ἀπίθησε διάκτορος ἀργεϊφόντης | 24.339 | 
+IL-PATROCLUS | IL-PATROCLUS-10 | exact | ὑπὸ ποσσὶν ἐδήσατο καλὰ πέδιλα | 24.340 | 
+IL-PATROCLUS | IL-PATROCLUS-10 | exact | εἵλετο δὲ ῥάβδον | 24.343 | 
+IL-PATROCLUS | IL-PATROCLUS-10 | exact | αἶψα δʼ ἄρα Τροίην τε καὶ Ἑλλήσποντον ἵκανε | 24.346 | 
+IL-PATROCLUS | IL-PATROCLUS-10 | exact | ἐπὶ κνέφας ἤλυθε γαῖαν | 24.351 | 
+IL-PATROCLUS | IL-PATROCLUS-10 | exact | Ἑρμείας μὲν ἔπειτʼ ἀπέβη πρὸς μακρὸν Ὄλυμπον, Ἠὼς δὲ κροκόπεπλος ἐκίδνατο πᾶσαν ἐπʼ αἶαν |  | 

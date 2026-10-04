@@ -1,0 +1,4 @@
++-350 years: P_BM 24, P_MWRA 14; floor if no member passes both: 0.040, 0.067
++-500 years: P_BM 35, P_MWRA 20; floor if no member passes both: 0.028, 0.048
++-700 years: P_BM 49, P_MWRA 28; floor if no member passes both: 0.020, 0.034
++-900 years: P_BM 62, P_MWRA 35; floor if no member passes both: 0.016, 0.028

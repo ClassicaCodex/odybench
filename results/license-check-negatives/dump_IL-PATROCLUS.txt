@@ -1,0 +1,795 @@
+#### SET IL-PATROCLUS
+{
+ "set": "IL-PATROCLUS",
+ "role": "same-tradition comparison (not a negative: same tradition and diction as the Odyssey; critique-design issue 15)",
+ "searchable": true,
+ "text": "Homer, Iliad 11.1-24.695 (the day Patroclus dies through Priam's night journey)",
+ "text_file": "iliad-grc.tsv",
+ "edition_id": 488,
+ "day0": "Day 0 is the day of Patroclus' death (dawn at 11.1, early sunset at 18.241). Hector dies on Day +1; the pyre burns in Night +2; Heosphoros rises at Dawn +3; Hermes guides Priam on Day H, the twelfth dawn after Hector's death.",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "IL-PATROCLUS-02": "none",
+   "IL-PATROCLUS-04": "none",
+   "IL-PATROCLUS-05": "none",
+   "IL-PATROCLUS-06": "none",
+   "IL-PATROCLUS-08": "vis7",
+   "IL-PATROCLUS-09": "h13",
+   "IL-PATROCLUS-10": "none"
+  },
+  "BM-analogue": {
+   "IL-PATROCLUS-02": "conj",
+   "IL-PATROCLUS-04": "none",
+   "IL-PATROCLUS-05": "none",
+   "IL-PATROCLUS-06": "a",
+   "IL-PATROCLUS-08": "lead90",
+   "IL-PATROCLUS-09": "h13",
+   "IL-PATROCLUS-10": "mwra"
+  },
+  "eclipse-reading": {
+   "IL-PATROCLUS-02": "conj",
+   "IL-PATROCLUS-04": "a",
+   "IL-PATROCLUS-05": "none",
+   "IL-PATROCLUS-06": "none",
+   "IL-PATROCLUS-08": "lead90",
+   "IL-PATROCLUS-09": "h13",
+   "IL-PATROCLUS-10": "mwra"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "fork",
+   "clue_ids": [
+    "IL-PATROCLUS-02"
+   ],
+   "note": "a conjunction anchor exists only through the darkness forks"
+  },
+  "season_stars": {
+   "status": "fork",
+   "clue_ids": [
+    "IL-PATROCLUS-06"
+   ],
+   "note": "the Shield's stars, the very lines Od. 5.273-275 repeat"
+  },
+  "morning_star": {
+   "status": "text",
+   "clue_ids": [
+    "IL-PATROCLUS-08"
+   ],
+   "note": "Heosphoros at Dawn +3, the same device as Od. 13.93-95"
+  },
+  "mercury_turning_point": {
+   "status": "fork",
+   "clue_ids": [
+    "IL-PATROCLUS-10"
+   ],
+   "note": "Hermes' journey on Day H, told in the seven lines Od. 5.43-49 repeat"
+  },
+  "darkness_eclipse": {
+   "status": "text",
+   "clue_ids": [
+    "IL-PATROCLUS-02",
+    "IL-PATROCLUS-04",
+    "IL-PATROCLUS-05"
+   ],
+   "note": "three darkness statements on Day 0; the text itself localises the darkness of book 17 as mist"
+  }
+ },
+ "notes": "Rebuilt NC1. Every Odyssey slot has an Iliad counterpart in the same diction, so this set measures what B&M's reading does to the Odyssey's own tradition. Cross-text link for DESIGN 4.4's consistency check: the Iliad is set in the ninth-to-tenth year (2.295, 2.328-329); no position is given here.",
+ "eclipse_compatible_options": [
+  "IL-PATROCLUS-02:conj",
+  "IL-PATROCLUS-02:solar_am",
+  "IL-PATROCLUS-02:solar_any",
+  "IL-PATROCLUS-04:a",
+  "IL-PATROCLUS-05:a"
+ ],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+}
+-- observer_place {"place": "the plain of Troy and the Achaean camp on the shore", "words": "Τροίην τε καὶ Ἑλλήσποντον", "ref": ["24.346"], "text_file": "iliad-grc.tsv", "lat": 39.9575, "lon": 26.2389, "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"}
+   CHECK exact | Τροίην τε καὶ Ἑλλήσποντον | in ['24.346']
+   24.338     τῶν ἄλλων Δαναῶν, πρὶν Πηλεΐωνα δʼ ἱκέσθαι.
+   24.339     ὣς ἔφατʼ, οὐδʼ ἀπίθησε διάκτορος ἀργεϊφόντης.
+   24.340     αὐτίκʼ ἔπειθʼ ὑπὸ ποσσὶν ἐδήσατο καλὰ πέδιλα
+   24.341     ἀμβρόσια χρύσεια, τά μιν φέρον ἠμὲν ἐφʼ ὑγρὴν
+   24.342     ἠδʼ ἐπʼ ἀπείρονα γαῖαν ἅμα πνοιῇς ἀνέμοιο·
+   24.343     εἵλετο δὲ ῥάβδον, τῇ τʼ ἀνδρῶν ὄμματα θέλγει
+   24.344     ὧν ἐθέλει, τοὺς δʼ αὖτε καὶ ὑπνώοντας ἐγείρει·
+   24.345     τὴν μετὰ χερσὶν ἔχων πέτετο κρατὺς ἀργεϊφόντης.
+>> 24.346     αἶψα δʼ ἄρα Τροίην τε καὶ Ἑλλήσποντον ἵκανε,
+   24.347     βῆ δʼ ἰέναι κούρῳ αἰσυμνητῆρι ἐοικὼς
+   24.348     πρῶτον ὑπηνήτῃ, τοῦ περ χαριεστάτη ἥβη.
+   24.349     οἳ δʼ ἐπεὶ οὖν μέγα σῆμα παρὲξ Ἴλοιο ἔλασσαν,
+   24.350     στῆσαν ἄρʼ ἡμιόνους τε καὶ ἵππους ὄφρα πίοιεν
+   24.351     ἐν ποταμῷ· δὴ γὰρ καὶ ἐπὶ κνέφας ἤλυθε γαῖαν.
+-- observer_place {"place": "the shore by the ships (Achilles, Nights +1 to +2)", "words": "ἐπὶ θινὶ πολυφλοίσβοιο θαλάσσης", "ref": ["23.59"], "text_file": "iliad-grc.tsv", "lat": 39.9575, "lon": 26.2389, "coord_source": "Troy (Wikipedia, fetched 2026-10-04); the camp lies a few km from the citadel"}
+   CHECK exact | ἐπὶ θινὶ πολυφλοίσβοιο θαλάσσης | in ['23.59']
+   23.51      νεκρὸν ἔχοντα νέεσθαι ὑπὸ ζόφον ἠερόεντα,
+   23.52      ὄφρʼ ἤτοι τοῦτον μὲν ἐπιφλέγῃ ἀκάματον πῦρ
+   23.53      θᾶσσον ἀπʼ ὀφθαλμῶν, λαοὶ δʼ ἐπὶ ἔργα τράπωνται.
+   23.54      ὣς ἔφαθʼ, οἳ δʼ ἄρα τοῦ μάλα μὲν κλύον ἠδὲ πίθοντο.
+   23.55      ἐσσυμένως δʼ ἄρα δόρπον ἐφοπλίσσαντες ἕκαστοι
+   23.56      δαίνυντʼ, οὐδέ τι θυμὸς ἐδεύετο δαιτὸς ἐΐσης.
+   23.57      αὐτὰρ ἐπεὶ πόσιος καὶ ἐδητύος ἐξ ἔρον ἕντο,
+   23.58      οἳ μὲν κακκείοντες ἔβαν κλισίην δὲ ἕκαστος,
+>> 23.59      Πηλεΐδης δʼ ἐπὶ θινὶ πολυφλοίσβοιο θαλάσσης
+   23.60      κεῖτο βαρὺ στενάχων πολέσιν μετὰ Μυρμιδόνεσσιν
+   23.61      ἐν καθαρῷ, ὅθι κύματʼ ἐπʼ ἠϊόνος κλύζεσκον·
+   23.62      εὖτε τὸν ὕπνος ἔμαρπτε λύων μελεδήματα θυμοῦ
+   23.63      νήδυμος ἀμφιχυθείς· μάλα γὰρ κάμε φαίδιμα γυῖα
+   23.64      Ἕκτορʼ ἐπαΐσσων προτὶ Ἴλιον ἠνεμόεσσαν·
+
+==============================================================================================================
+{
+ "set": "IL-PATROCLUS",
+ "clue_id": "IL-PATROCLUS-01",
+ "kind": "time-of-day",
+ "statement": "Dawn of Day 0 (11.1); Hera sends the unwilling Sun down to Ocean and it sets, ending Day 0 (18.239-241); Dawn +1 (19.1).",
+ "licence_words": "Ἠὼς δʼ ἐκ λεχέων … ἠέλιος μὲν ἔδυ … Ἠὼς μὲν κροκόπεπλος ἀπʼ Ὠκεανοῖο ῥοάων",
+ "ref": [
+  "11.1",
+  "18.239",
+  "18.240",
+  "18.241",
+  "19.1"
+ ],
+ "text_file": "iliad-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "Books 11-18 are one day.",
+ "license_check": "ok"
+}
+   CHECK exact | Ἠὼς δʼ ἐκ λεχέων | in ['11.1']
+   CHECK exact | ἠέλιος μὲν ἔδυ | in ['18.241']
+   CHECK exact | Ἠὼς μὲν κροκόπεπλος ἀπʼ Ὠκεανοῖο ῥοάων | in ['19.1']
+   --- context (iliad-grc.tsv) ---
+   10.572     αὐτοὶ δʼ ἱδρῶ πολλὸν ἀπενίζοντο θαλάσσῃ
+   10.573     ἐσβάντες κνήμας τε ἰδὲ λόφον ἀμφί τε μηρούς.
+   10.574     αὐτὰρ ἐπεί σφιν κῦμα θαλάσσης ἱδρῶ πολλὸν
+   10.575     νίψεν ἀπὸ χρωτὸς καὶ ἀνέψυχθεν φίλον ἦτορ,
+   10.576     ἔς ῥʼ ἀσαμίνθους βάντες ἐϋξέστας λούσαντο.
+   10.577     τὼ δὲ λοεσσαμένω καὶ ἀλειψαμένω λίπʼ ἐλαίῳ
+   10.578     δείπνῳ ἐφιζανέτην, ἀπὸ δὲ κρητῆρος Ἀθήνῃ
+   10.579     πλείου ἀφυσσόμενοι λεῖβον μελιηδέα οἶνον.
+>> 11.1       Ἠὼς δʼ ἐκ λεχέων παρʼ ἀγαυοῦ Τιθωνοῖο
+   11.2       ὄρνυθʼ, ἵνʼ ἀθανάτοισι φόως φέροι ἠδὲ βροτοῖσι·
+   11.3       Ζεὺς δʼ Ἔριδα προΐαλλε θοὰς ἐπὶ νῆας Ἀχαιῶν
+   11.4       ἀργαλέην, πολέμοιο τέρας μετὰ χερσὶν ἔχουσαν.
+   11.5       στῆ δʼ ἐπʼ Ὀδυσσῆος μεγακήτεϊ νηῒ μελαίνῃ,
+   11.6       ἥ ῥʼ ἐν μεσσάτῳ ἔσκε γεγωνέμεν ἀμφοτέρωσε,
+   ...
+   18.231     ἀμφὶ σφοῖς ὀχέεσσι καὶ ἔγχεσιν. αὐτὰρ Ἀχαιοὶ
+   18.232     ἀσπασίως Πάτροκλον ὑπʼ ἐκ βελέων ἐρύσαντες
+   18.233     κάτθεσαν ἐν λεχέεσσι· φίλοι δʼ ἀμφέσταν ἑταῖροι
+   18.234     μυρόμενοι· μετὰ δέ σφι ποδώκης εἵπετʼ Ἀχιλλεὺς
+   18.235     δάκρυα θερμὰ χέων, ἐπεὶ εἴσιδε πιστὸν ἑταῖρον
+   18.236     κείμενον ἐν φέρτρῳ δεδαϊγμένον ὀξέϊ χαλκῷ,
+   18.237     τόν ῥʼ ἤτοι μὲν ἔπεμπε σὺν ἵπποισιν καὶ ὄχεσφιν
+   18.238     ἐς πόλεμον, οὐδʼ αὖτις ἐδέξατο νοστήσαντα.
+>> 18.239     Ἠέλιον δʼ ἀκάμαντα βοῶπις πότνια Ἥρη
+>> 18.240     πέμψεν ἐπʼ Ὠκεανοῖο ῥοὰς ἀέκοντα νέεσθαι·
+>> 18.241     ἠέλιος μὲν ἔδυ, παύσαντο δὲ δῖοι Ἀχαιοὶ
+   18.242     φυλόπιδος κρατερῆς καὶ ὁμοιΐου πολέμοιο.
+   18.243     Τρῶες δʼ αὖθʼ ἑτέρωθεν ἀπὸ κρατερῆς ὑσμίνης
+   18.244     χωρήσαντες ἔλυσαν ὑφʼ ἅρμασιν ὠκέας ἵππους,
+   18.245     ἐς δʼ ἀγορὴν ἀγέροντο πάρος δόρποιο μέδεσθαι.
+   18.246     ὀρθῶν δʼ ἑσταότων ἀγορὴ γένετʼ, οὐδέ τις ἔτλη
+   ...
+   18.610     τεῦξʼ ἄρα οἱ θώρηκα φαεινότερον πυρὸς αὐγῆς,
+   18.611     τεῦξε δέ οἱ κόρυθα βριαρὴν κροτάφοις ἀραρυῖαν
+   18.612     καλὴν δαιδαλέην, ἐπὶ δὲ χρύσεον λόφον ἧκε,
+   18.613     τεῦξε δέ οἱ κνημῖδας ἑανοῦ κασσιτέροιο.
+   18.614     αὐτὰρ ἐπεὶ πάνθʼ ὅπλα κάμε κλυτὸς ἀμφιγυήεις,
+   18.615     μητρὸς Ἀχιλλῆος θῆκε προπάροιθεν ἀείρας.
+   18.616     ἣ δʼ ἴρηξ ὣς ἆλτο κατʼ Οὐλύμπου νιφόεντος
+   18.617     τεύχεα μαρμαίροντα παρʼ Ἡφαίστοιο φέρουσα.
+>> 19.1       Ἠὼς μὲν κροκόπεπλος ἀπʼ Ὠκεανοῖο ῥοάων
+   19.2       ὄρνυθʼ, ἵνʼ ἀθανάτοισι φόως φέροι ἠδὲ βροτοῖσιν·
+   19.3       ἣ δʼ ἐς νῆας ἵκανε θεοῦ πάρα δῶρα φέρουσα.
+   19.4       εὗρε δὲ Πατρόκλῳ περικείμενον ὃν φίλον υἱὸν
+   19.5       κλαίοντα λιγέως· πολέες δʼ ἀμφʼ αὐτὸν ἑταῖροι
+   19.6       μύρονθʼ· ἣ δʼ ἐν τοῖσι παρίστατο δῖα θεάων,
+
+==============================================================================================================
+{
+ "set": "IL-PATROCLUS",
+ "clue_id": "IL-PATROCLUS-02",
+ "kind": "darkness",
+ "statement": "Earlier on Day 0 than the noon and afternoon markers of 16.777-780, in the fight over Sarpedon's body, Zeus stretches deadly night over the battle.",
+ "licence_words": "Ζεὺς δʼ ἐπὶ νύκτʼ ὀλοὴν τάνυσε κρατερῇ ὑσμίνῃ",
+ "ref": [
+  "16.567"
+ ],
+ "text_file": "iliad-grc.tsv",
+ "fork_options": [
+  {
+   "option": "conj",
+   "operational": "Day 0 is a conjunction date (LMT at Troy)",
+   "justification": "the eclipse-compatible anchor (DESIGN NC1's 'Day D a new moon'), without requiring an eclipse; not in the text"
+  },
+  {
+   "option": "solar_am",
+   "operational": "a solar eclipse of class X1-X4 (DESIGN 3.1) visible at Troy on Day 0 with maximum before local apparent noon",
+   "justification": "the drafter's reading of the narrative order (16.567 comes before 16.777, 'while the Sun bestrode mid-heaven') as 'before noon'; that line describes a span round noon, so the order does not fix the hour"
+  },
+  {
+   "option": "solar_any",
+   "operational": "a solar eclipse of class X1-X4 (DESIGN 3.1) visible at Troy on Day 0, maximum at any time the Sun is above the horizon",
+   "justification": "the darkness read as an eclipse without the before-noon bound: the words state no hour"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the scholia gloss 'deadly night' as murk, citing Od. 5.294 [scholia-iliad-grc.tsv key 6.16.341.1]"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: the statement said 'before noon' and option solar_am required a maximum before local apparent noon, but the words state no hour (16.567 only precedes 16.777, which describes a span round noon); the statement is reworded, solar_am's justification states the inference, and option solar_any (any daylight hour) is added and listed in eclipse_compatible_options"
+}
+   CHECK exact | Ζεὺς δʼ ἐπὶ νύκτʼ ὀλοὴν τάνυσε κρατερῇ ὑσμίνῃ | in ['16.567']
+   --- context (iliad-grc.tsv) ---
+   16.559     Σαρπηδών· ἀλλʼ εἴ μιν ἀεικισσαίμεθʼ ἑλόντες,
+   16.560     τεύχεά τʼ ὤμοιιν ἀφελοίμεθα, καί τινʼ ἑταίρων
+   16.561     αὐτοῦ ἀμυνομένων δαμασαίμεθα νηλέϊ χαλκῷ.
+   16.562     ὣς ἔφαθʼ, οἳ δὲ καὶ αὐτοὶ ἀλέξασθαι μενέαινον.
+   16.563     οἳ δʼ ἐπεὶ ἀμφοτέρωθεν ἐκαρτύναντο φάλαγγας
+   16.564     Τρῶες καὶ Λύκιοι καὶ Μυρμιδόνες καὶ Ἀχαιοί,
+   16.565     σύμβαλον ἀμφὶ νέκυι κατατεθνηῶτι μάχεσθαι
+   16.566     δεινὸν ἀΰσαντες· μέγα δʼ ἔβραχε τεύχεα φωτῶν.
+>> 16.567     Ζεὺς δʼ ἐπὶ νύκτʼ ὀλοὴν τάνυσε κρατερῇ ὑσμίνῃ,
+   16.568     ὄφρα φίλῳ περὶ παιδὶ μάχης ὀλοὸς πόνος εἴη.
+   16.569     ὦσαν δὲ πρότεροι Τρῶες ἑλίκωπας Ἀχαιούς·
+   16.570     βλῆτο γὰρ οὔ τι κάκιστος ἀνὴρ μετὰ Μυρμιδόνεσσιν
+   16.571     υἱὸς Ἀγακλῆος μεγαθύμου δῖος Ἐπειγεύς,
+   16.572     ὅς ῥʼ ἐν Βουδείῳ εὖ ναιομένῳ ἤνασσε
+
+==============================================================================================================
+{
+ "set": "IL-PATROCLUS",
+ "clue_id": "IL-PATROCLUS-03",
+ "kind": "time-of-day",
+ "statement": "While the Sun bestrode mid-heaven the two sides were even; when it passed to the hour of unyoking oxen the Achaeans prevailed: noon, then afternoon of Day 0.",
+ "licence_words": "ὄφρα μὲν Ἠέλιος μέσον οὐρανὸν ἀμφιβεβήκει … ἦμος δʼ Ἠέλιος μετενίσετο βουλυτὸν δέ",
+ "ref": [
+  "16.777",
+  "16.778",
+  "16.779",
+  "16.780"
+ ],
+ "text_file": "iliad-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ὄφρα μὲν Ἠέλιος μέσον οὐρανὸν ἀμφιβεβήκει | in ['16.777']
+   CHECK exact | ἦμος δʼ Ἠέλιος μετενίσετο βουλυτὸν δέ | in ['16.779']
+   --- context (iliad-grc.tsv) ---
+   16.769     ἠχῇ θεσπεσίῃ, πάταγος δέ τε ἀγνυμενάων,
+   16.770     ὣς Τρῶες καὶ Ἀχαιοὶ ἐπʼ ἀλλήλοισι θορόντες
+   16.771     δῄουν, οὐδʼ ἕτεροι μνώοντʼ ὀλοοῖο φόβοιο.
+   16.772     πολλὰ δὲ Κεβριόνην ἀμφʼ ὀξέα δοῦρα πεπήγει
+   16.773     ἰοί τε πτερόεντες ἀπὸ νευρῆφι θορόντες,
+   16.774     πολλὰ δὲ χερμάδια μεγάλʼ ἀσπίδας ἐστυφέλιξαν
+   16.775     μαρναμένων ἀμφʼ αὐτόν· ὃ δʼ ἐν στροφάλιγγι κονίης
+   16.776     κεῖτο μέγας μεγαλωστί, λελασμένος ἱπποσυνάων.
+>> 16.777     ὄφρα μὲν Ἠέλιος μέσον οὐρανὸν ἀμφιβεβήκει,
+>> 16.778     τόφρα μάλʼ ἀμφοτέρων βέλεʼ ἥπτετο, πῖπτε δὲ λαός·
+>> 16.779     ἦμος δʼ Ἠέλιος μετενίσετο βουλυτὸν δέ,
+>> 16.780     καὶ τότε δή ῥʼ ὑπὲρ αἶσαν Ἀχαιοὶ φέρτεροι ἦσαν.
+   16.781     ἐκ μὲν Κεβριόνην βελέων ἥρωα ἔρυσσαν
+   16.782     Τρώων ἐξ ἐνοπῆς, καὶ ἀπʼ ὤμων τεύχεʼ ἕλοντο,
+   16.783     Πάτροκλος δὲ Τρωσὶ κακὰ φρονέων ἐνόρουσε.
+   16.784     τρὶς μὲν ἔπειτʼ ἐπόρουσε θοῷ ἀτάλαντος Ἄρηϊ
+   16.785     σμερδαλέα ἰάχων, τρὶς δʼ ἐννέα φῶτας ἔπεφνεν.
+
+==============================================================================================================
+{
+ "set": "IL-PATROCLUS",
+ "clue_id": "IL-PATROCLUS-04",
+ "kind": "darkness",
+ "statement": "In the afternoon of Day 0, over Patroclus' body, 'you would not have said the Sun or the Moon was safe', for mist held the best fighters; the rest fought under a clear sky in bright sun with no cloud anywhere; later Zeus scatters the mist and the Sun shines out.",
+ "licence_words": "οὐδέ κε φαίης οὔτέ ποτʼ ἠέλιον σῶν ἔμμεναι οὔτε σελήνην … ἠέρι γὰρ κατέχοντο … πέπτατο δʼ αὐγὴ ἠελίου ὀξεῖα, νέφος δʼ οὐ φαίνετο πάσης γαίης οὐδʼ ὀρέων … ἠέρα μὲν σκέδασεν καὶ ἀπῶσεν ὀμίχλην, ἠέλιος δʼ ἐπέλαμψε",
+ "ref": [
+  "17.366",
+  "17.367",
+  "17.368",
+  "17.369",
+  "17.370",
+  "17.371",
+  "17.372",
+  "17.373",
+  "17.649",
+  "17.650"
+ ],
+ "text_file": "iliad-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "a solar eclipse of class X1-X4 visible at Troy on Day 0 with maximum after local apparent noon and last contact before sunset",
+   "justification": "an ancient scholiast already says one would have taken it for an eclipse [scholia-iliad-grc.tsv key 6.17.183.1]; the order of 16.777-780 puts it after noon; the Sun shines again (17.650)"
+  },
+  {
+   "option": "b",
+   "operational": "the Moon is above the horizon at some instant of the afternoon of Day 0",
+   "justification": "'neither Sun nor Moon' read as both lights being in the sky"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the text localises the darkness: mist over the best fighters while the rest fought in bright sun (17.370-373; schol. Il. 17.368, key 2.17.136.1, 'not over the whole battle')"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | οὐδέ κε φαίης οὔτέ ποτʼ ἠέλιον σῶν ἔμμεναι οὔτε σελήνην | in []
+   CHECK exact | ἠέρι γὰρ κατέχοντο | in ['17.368']
+   CHECK exact | πέπτατο δʼ αὐγὴ ἠελίου ὀξεῖα, νέφος δʼ οὐ φαίνετο πάσης γαίης οὐδʼ ὀρέων | in []
+   CHECK exact | ἠέρα μὲν σκέδασεν καὶ ἀπῶσεν ὀμίχλην, ἠέλιος δʼ ἐπέλαμψε | in []
+   --- context (iliad-grc.tsv) ---
+   17.358     οὔτέ τινα προμάχεσθαι Ἀχαιῶν ἔξοχον ἄλλων,
+   17.359     ἀλλὰ μάλʼ ἀμφʼ αὐτῷ βεβάμεν, σχεδόθεν δὲ μάχεσθαι.
+   17.360     ὣς Αἴας ἐπέτελλε πελώριος, αἵματι δὲ χθὼν
+   17.361     δεύετο πορφυρέῳ, τοὶ δʼ ἀγχιστῖνοι ἔπιπτον
+   17.362     νεκροὶ ὁμοῦ Τρώων καὶ ὑπερμενέων ἐπικούρων
+   17.363     καὶ Δαναῶν· οὐδʼ οἳ γὰρ ἀναιμωτί γε μάχοντο,
+   17.364     παυρότεροι δὲ πολὺ φθίνυθον· μέμνηντο γὰρ αἰεὶ
+   17.365     ἀλλήλοις ἀνʼ ὅμιλον ἀλεξέμεναι φόνον αἰπύν.
+>> 17.366     ὣς οἳ μὲν μάρναντο δέμας πυρός, οὐδέ κε φαίης
+>> 17.367     οὔτέ ποτʼ ἠέλιον σῶν ἔμμεναι οὔτε σελήνην·
+>> 17.368     ἠέρι γὰρ κατέχοντο μάχης ἐπί θʼ ὅσσον ἄριστοι
+>> 17.369     ἕστασαν ἀμφὶ Μενοιτιάδῃ κατατεθνηῶτι.
+>> 17.370     οἳ δʼ ἄλλοι Τρῶες καὶ ἐϋκνήμιδες Ἀχαιοὶ
+>> 17.371     εὔκηλοι πολέμιζον ὑπʼ αἰθέρι, πέπτατο δʼ αὐγὴ
+>> 17.372     ἠελίου ὀξεῖα, νέφος δʼ οὐ φαίνετο πάσης
+>> 17.373     γαίης οὐδʼ ὀρέων· μεταπαυόμενοι δὲ μάχοντο
+   17.374     ἀλλήλων ἀλεείνοντες βέλεα στονόεντα
+   17.375     πολλὸν ἀφεσταότες. τοὶ δʼ ἐν μέσῳ ἄλγεʼ ἔπασχον
+   17.376     ἠέρι καὶ πολέμῳ, τείροντο δὲ νηλέϊ χαλκῷ
+   17.377     ὅσσοι ἄριστοι ἔσαν· δύο δʼ οὔ πω φῶτε πεπύσθην
+   17.378     ἀνέρε κυδαλίμω Θρασυμήδης Ἀντίλοχός τε
+   ...
+   17.641     Πηλεΐδῃ, ἐπεὶ οὔ μιν ὀΐομαι οὐδὲ πεπύσθαι
+   17.642     λυγρῆς ἀγγελίης, ὅτι οἱ φίλος ὤλεθʼ ἑταῖρος.
+   17.643     ἀλλʼ οὔ πῃ δύναμαι ἰδέειν τοιοῦτον Ἀχαιῶν·
+   17.644     ἠέρι γὰρ κατέχονται ὁμῶς αὐτοί τε καὶ ἵπποι.
+   17.645     Ζεῦ πάτερ ἀλλὰ σὺ ῥῦσαι ὑπʼ ἠέρος υἷας Ἀχαιῶν,
+   17.646     ποίησον δʼ αἴθρην, δὸς δʼ ὀφθαλμοῖσιν ἰδέσθαι·
+   17.647     ἐν δὲ φάει καὶ ὄλεσσον, ἐπεί νύ τοι εὔαδεν οὕτως.
+   17.648     ὣς φάτο, τὸν δὲ πατὴρ ὀλοφύρατο δάκρυ χέοντα·
+>> 17.649     αὐτίκα δʼ ἠέρα μὲν σκέδασεν καὶ ἀπῶσεν ὀμίχλην,
+>> 17.650     ἠέλιος δʼ ἐπέλαμψε, μάχη δʼ ἐπὶ πᾶσα φαάνθη·
+   17.651     καὶ τότʼ ἄρʼ Αἴας εἶπε βοὴν ἀγαθὸν Μενέλαον·
+   17.652     σκέπτεο νῦν Μενέλαε διοτρεφὲς αἴ κεν ἴδηαι
+   17.653     ζωὸν ἔτʼ Ἀντίλοχον μεγαθύμου Νέστορος υἱόν,
+   17.654     ὄτρυνον δʼ Ἀχιλῆϊ δαΐφρονι θᾶσσον ἰόντα
+   17.655     εἰπεῖν ὅττι ῥά οἱ πολὺ φίλτατος ὤλεθʼ ἑταῖρος.
+
+==============================================================================================================
+{
+ "set": "IL-PATROCLUS",
+ "clue_id": "IL-PATROCLUS-05",
+ "kind": "darkness",
+ "statement": "At the end of Day 0 Hera sends the tireless Sun, unwilling, to the streams of Ocean, and it sets.",
+ "licence_words": "Ἠέλιον δʼ ἀκάμαντα βοῶπις πότνια Ἥρη πέμψεν ἐπʼ Ὠκεανοῖο ῥοὰς ἀέκοντα νέεσθαι",
+ "ref": [
+  "18.239",
+  "18.240",
+  "18.241"
+ ],
+ "text_file": "iliad-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "a solar eclipse of class X1-X4 visible at Troy on Day 0 with maximum within the last 2 hours before sunset",
+   "justification": "a premature 'sunset' read as an eclipse; the drafter's inference"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "divine machinery shortening the day; the scholia call it wholly mythical and compare Od. 23.243 [scholia-iliad-grc.tsv keys 4.18.84.1, 6.18.109.1]"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | Ἠέλιον δʼ ἀκάμαντα βοῶπις πότνια Ἥρη πέμψεν ἐπʼ Ὠκεανοῖο ῥοὰς ἀέκοντα νέεσθαι | in []
+   --- context (iliad-grc.tsv) ---
+   18.231     ἀμφὶ σφοῖς ὀχέεσσι καὶ ἔγχεσιν. αὐτὰρ Ἀχαιοὶ
+   18.232     ἀσπασίως Πάτροκλον ὑπʼ ἐκ βελέων ἐρύσαντες
+   18.233     κάτθεσαν ἐν λεχέεσσι· φίλοι δʼ ἀμφέσταν ἑταῖροι
+   18.234     μυρόμενοι· μετὰ δέ σφι ποδώκης εἵπετʼ Ἀχιλλεὺς
+   18.235     δάκρυα θερμὰ χέων, ἐπεὶ εἴσιδε πιστὸν ἑταῖρον
+   18.236     κείμενον ἐν φέρτρῳ δεδαϊγμένον ὀξέϊ χαλκῷ,
+   18.237     τόν ῥʼ ἤτοι μὲν ἔπεμπε σὺν ἵπποισιν καὶ ὄχεσφιν
+   18.238     ἐς πόλεμον, οὐδʼ αὖτις ἐδέξατο νοστήσαντα.
+>> 18.239     Ἠέλιον δʼ ἀκάμαντα βοῶπις πότνια Ἥρη
+>> 18.240     πέμψεν ἐπʼ Ὠκεανοῖο ῥοὰς ἀέκοντα νέεσθαι·
+>> 18.241     ἠέλιος μὲν ἔδυ, παύσαντο δὲ δῖοι Ἀχαιοὶ
+   18.242     φυλόπιδος κρατερῆς καὶ ὁμοιΐου πολέμοιο.
+   18.243     Τρῶες δʼ αὖθʼ ἑτέρωθεν ἀπὸ κρατερῆς ὑσμίνης
+   18.244     χωρήσαντες ἔλυσαν ὑφʼ ἅρμασιν ὠκέας ἵππους,
+   18.245     ἐς δʼ ἀγορὴν ἀγέροντο πάρος δόρποιο μέδεσθαι.
+   18.246     ὀρθῶν δʼ ἑσταότων ἀγορὴ γένετʼ, οὐδέ τις ἔτλη
+
+==============================================================================================================
+{
+ "set": "IL-PATROCLUS",
+ "clue_id": "IL-PATROCLUS-06",
+ "kind": "star",
+ "statement": "In Night 0 Hephaestus makes the Shield: earth, sky and sea, the tireless Sun and the full Moon, and all the constellations: Pleiades, Hyades, Orion's strength and the Bear that alone never bathes in Ocean.",
+ "licence_words": "ἠέλιόν τʼ ἀκάμαντα σελήνην τε πλήθουσαν … Πληϊάδας θʼ Ὑάδας τε τό τε σθένος Ὠρίωνος … Ἄρκτόν θʼ",
+ "ref": [
+  "18.483",
+  "18.484",
+  "18.485",
+  "18.486",
+  "18.487",
+  "18.488",
+  "18.489"
+ ],
+ "text_file": "iliad-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "Alcyone, Aldebaran, Betelgeuse and Rigel are each >= 2 deg above the horizon at some instant of the dark hours of Night 0",
+   "justification": "the Shield read as the sky of the night it was made, as B&M read the same lines in Od. 5"
+  },
+  {
+   "option": "b",
+   "operational": "Day 0 within +-15 days of the Pleiades' morning setting",
+   "justification": "18.486 is the verse of Hes. WD 615, where the setting of the Pleiades, Hyades and Orion (WD 616 'δύνωσιν') marks the ploughing season [hesiod-worksdays-grc.tsv 615-616; txt 5.8]"
+  },
+  {
+   "option": "c",
+   "operational": "opposition within +-1 day of local midnight of Night 0",
+   "justification": "'σελήνην τε πλήθουσαν': the full Moon on the Shield, which the scholia gloss as πανσέληνον [scholia-iliad-grc.tsv key 2.18.196.1]"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "decoration of an artefact; 18.487-489 = Od. 5.273-275 [txt 5.8]"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "Option c contradicts the conjunction options of row 02; the garden carries both.",
+ "license_check": "ok"
+}
+   CHECK exact | ἠέλιόν τʼ ἀκάμαντα σελήνην τε πλήθουσαν | in ['18.484']
+   CHECK exact | Πληϊάδας θʼ Ὑάδας τε τό τε σθένος Ὠρίωνος | in ['18.486']
+   CHECK exact | Ἄρκτόν θʼ | in ['18.487']
+   --- context (iliad-grc.tsv) ---
+   18.475     καὶ χρυσὸν τιμῆντα καὶ ἄργυρον· αὐτὰρ ἔπειτα
+   18.476     θῆκεν ἐν ἀκμοθέτῳ μέγαν ἄκμονα, γέντο δὲ χειρὶ
+   18.477     ῥαιστῆρα κρατερήν, ἑτέρηφι δὲ γέντο πυράγρην.
+   18.478     ποίει δὲ πρώτιστα σάκος μέγα τε στιβαρόν τε
+   18.479     πάντοσε δαιδάλλων, περὶ δʼ ἄντυγα βάλλε φαεινὴν
+   18.480     τρίπλακα μαρμαρέην, ἐκ δʼ ἀργύρεον τελαμῶνα.
+   18.481     πέντε δʼ ἄρʼ αὐτοῦ ἔσαν σάκεος πτύχες· αὐτὰρ ἐν αὐτῷ
+   18.482     ποίει δαίδαλα πολλὰ ἰδυίῃσι πραπίδεσσιν.
+>> 18.483     ἐν μὲν γαῖαν ἔτευξʼ, ἐν δʼ οὐρανόν, ἐν δὲ θάλασσαν,
+>> 18.484     ἠέλιόν τʼ ἀκάμαντα σελήνην τε πλήθουσαν,
+>> 18.485     ἐν δὲ τὰ τείρεα πάντα, τά τʼ οὐρανὸς ἐστεφάνωται,
+>> 18.486     Πληϊάδας θʼ Ὑάδας τε τό τε σθένος Ὠρίωνος
+>> 18.487     Ἄρκτόν θʼ, ἣν καὶ Ἄμαξαν ἐπίκλησιν καλέουσιν,
+>> 18.488     ἥ τʼ αὐτοῦ στρέφεται καί τʼ Ὠρίωνα δοκεύει,
+>> 18.489     οἴη δʼ ἄμμορός ἐστι λοετρῶν Ὠκεανοῖο.
+   18.490     ἐν δὲ δύω ποίησε πόλεις μερόπων ἀνθρώπων
+   18.491     καλάς. ἐν τῇ μέν ῥα γάμοι τʼ ἔσαν εἰλαπίναι τε,
+   18.492     νύμφας δʼ ἐκ θαλάμων δαΐδων ὕπο λαμπομενάων
+   18.493     ἠγίνεον ἀνὰ ἄστυ, πολὺς δʼ ὑμέναιος ὀρώρει·
+   18.494     κοῦροι δʼ ὀρχηστῆρες ἐδίνεον, ἐν δʼ ἄρα τοῖσιν
+
+==============================================================================================================
+{
+ "set": "IL-PATROCLUS",
+ "clue_id": "IL-PATROCLUS-07",
+ "kind": "interval",
+ "statement": "Hector dies on Day +1; Achilles sleeps on the shore in Night +1; at Dawn +2 they gather wood and build the pyre; the winds fan it all through Night +2; Heosphoros rises at its end, Dawn +3.",
+ "licence_words": "Πηλεΐδης δʼ ἐπὶ θινὶ πολυφλοίσβοιο θαλάσσης … μυρομένοισι δὲ τοῖσι φάνη ῥοδοδάκτυλος Ἠὼς … παννύχιοι δʼ ἄρα τοί γε πυρῆς ἄμυδις φλόγʼ ἔβαλλον",
+ "ref": [
+  "23.58",
+  "23.59",
+  "23.60",
+  "23.61",
+  "23.62",
+  "23.109",
+  "23.217",
+  "23.218"
+ ],
+ "text_file": "iliad-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "Hector's death on Day +1 rests on the dawn of 19.1 (row 01) and on the absence of any narrated sunset or dawn between 19.2 and 23.58 [me: search of the Greek for time words; only speeches and the excluded similes 22.26-31 and 22.317-318 mention night or stars].",
+ "license_check": "edited: 'Hector dies on Day +1' was not supported by the quoted words; the note now gives its basis (the dawn of 19.1 and no time marker until 23.58)"
+}
+   CHECK exact | Πηλεΐδης δʼ ἐπὶ θινὶ πολυφλοίσβοιο θαλάσσης | in ['23.59']
+   CHECK exact | μυρομένοισι δὲ τοῖσι φάνη ῥοδοδάκτυλος Ἠὼς | in ['23.109']
+   CHECK exact | παννύχιοι δʼ ἄρα τοί γε πυρῆς ἄμυδις φλόγʼ ἔβαλλον | in ['23.217']
+   --- context (iliad-grc.tsv) ---
+   23.50      ὕλην τʼ ἀξέμεναι παρά τε σχεῖν ὅσσʼ ἐπιεικὲς
+   23.51      νεκρὸν ἔχοντα νέεσθαι ὑπὸ ζόφον ἠερόεντα,
+   23.52      ὄφρʼ ἤτοι τοῦτον μὲν ἐπιφλέγῃ ἀκάματον πῦρ
+   23.53      θᾶσσον ἀπʼ ὀφθαλμῶν, λαοὶ δʼ ἐπὶ ἔργα τράπωνται.
+   23.54      ὣς ἔφαθʼ, οἳ δʼ ἄρα τοῦ μάλα μὲν κλύον ἠδὲ πίθοντο.
+   23.55      ἐσσυμένως δʼ ἄρα δόρπον ἐφοπλίσσαντες ἕκαστοι
+   23.56      δαίνυντʼ, οὐδέ τι θυμὸς ἐδεύετο δαιτὸς ἐΐσης.
+   23.57      αὐτὰρ ἐπεὶ πόσιος καὶ ἐδητύος ἐξ ἔρον ἕντο,
+>> 23.58      οἳ μὲν κακκείοντες ἔβαν κλισίην δὲ ἕκαστος,
+>> 23.59      Πηλεΐδης δʼ ἐπὶ θινὶ πολυφλοίσβοιο θαλάσσης
+>> 23.60      κεῖτο βαρὺ στενάχων πολέσιν μετὰ Μυρμιδόνεσσιν
+>> 23.61      ἐν καθαρῷ, ὅθι κύματʼ ἐπʼ ἠϊόνος κλύζεσκον·
+>> 23.62      εὖτε τὸν ὕπνος ἔμαρπτε λύων μελεδήματα θυμοῦ
+   23.63      νήδυμος ἀμφιχυθείς· μάλα γὰρ κάμε φαίδιμα γυῖα
+   23.64      Ἕκτορʼ ἐπαΐσσων προτὶ Ἴλιον ἠνεμόεσσαν·
+   23.65      ἦλθε δʼ ἐπὶ ψυχὴ Πατροκλῆος δειλοῖο
+   23.66      πάντʼ αὐτῷ μέγεθός τε καὶ ὄμματα κάλʼ ἐϊκυῖα
+   23.67      καὶ φωνήν, καὶ τοῖα περὶ χροῒ εἵματα ἕστο·
+   ...
+   23.101     ᾤχετο τετριγυῖα· ταφὼν δʼ ἀνόρουσεν Ἀχιλλεὺς
+   23.102     χερσί τε συμπλατάγησεν, ἔπος δʼ ὀλοφυδνὸν ἔειπεν·
+   23.103     ὢ πόποι ἦ ῥά τίς ἐστι καὶ εἰν Ἀΐδαο δόμοισι
+   23.104     ψυχὴ καὶ εἴδωλον, ἀτὰρ φρένες οὐκ ἔνι πάμπαν·
+   23.105     παννυχίη γάρ μοι Πατροκλῆος δειλοῖο
+   23.106     ψυχὴ ἐφεστήκει γοόωσά τε μυρομένη τε,
+   23.107     καί μοι ἕκαστʼ ἐπέτελλεν, ἔϊκτο δὲ θέσκελον αὐτῷ.
+   23.108     ὣς φάτο, τοῖσι δὲ πᾶσιν ὑφʼ ἵμερον ὦρσε γόοιο·
+>> 23.109     μυρομένοισι δὲ τοῖσι φάνη ῥοδοδάκτυλος Ἠὼς
+   23.110     ἀμφὶ νέκυν ἐλεεινόν. ἀτὰρ κρείων Ἀγαμέμνων
+   23.111     οὐρῆάς τʼ ὄτρυνε καὶ ἀνέρας ἀξέμεν ὕλην
+   23.112     πάντοθεν ἐκ κλισιῶν· ἐπὶ δʼ ἀνὴρ ἐσθλὸς ὀρώρει
+   23.113     Μηριόνης θεράπων ἀγαπήνορος Ἰδομενῆος.
+   23.114     οἳ δʼ ἴσαν ὑλοτόμους πελέκεας ἐν χερσὶν ἔχοντες
+   ...
+   23.209     ἐλθεῖν ἀρᾶται, καὶ ὑπίσχεται ἱερὰ καλά,
+   23.210     ὄφρα πυρὴν ὄρσητε καήμεναι, ᾗ ἔνι κεῖται
+   23.211     Πάτροκλος, τὸν πάντες ἀναστενάχουσιν Ἀχαιοί.
+   23.212     ἣ μὲν ἄρʼ ὣς εἰποῦσʼ ἀπεβήσετο, τοὶ δʼ ὀρέοντο
+   23.213     ἠχῇ θεσπεσίῃ νέφεα κλονέοντε πάροιθεν.
+   23.214     αἶψα δὲ πόντον ἵκανον ἀήμεναι, ὦρτο δὲ κῦμα
+   23.215     πνοιῇ ὕπο λιγυρῇ· Τροίην δʼ ἐρίβωλον ἱκέσθην,
+   23.216     ἐν δὲ πυρῇ πεσέτην, μέγα δʼ ἴαχε θεσπιδαὲς πῦρ.
+>> 23.217     παννύχιοι δʼ ἄρα τοί γε πυρῆς ἄμυδις φλόγʼ ἔβαλλον
+>> 23.218     φυσῶντες λιγέως· ὃ δὲ πάννυχος ὠκὺς Ἀχιλλεὺς
+   23.219     χρυσέου ἐκ κρητῆρος ἑλὼν δέπας ἀμφικύπελλον
+   23.220     οἶνον ἀφυσσόμενος χαμάδις χέε, δεῦε δὲ γαῖαν
+   23.221     ψυχὴν κικλήσκων Πατροκλῆος δειλοῖο.
+   23.222     ὡς δὲ πατὴρ οὗ παιδὸς ὀδύρεται ὀστέα καίων
+   23.223     νυμφίου, ὅς τε θανὼν δειλοὺς ἀκάχησε τοκῆας,
+
+==============================================================================================================
+{
+ "set": "IL-PATROCLUS",
+ "clue_id": "IL-PATROCLUS-08",
+ "kind": "planet",
+ "statement": "At Dawn +3, when the light-bringer goes forth to announce light on the earth and saffron Dawn spreads over the sea after it, the pyre dies down.",
+ "licence_words": "ἦμος δʼ ἑωσφόρος εἶσι φόως ἐρέων ἐπὶ γαῖαν, ὅν τε μέτα κροκόπεπλος ὑπεὶρ ἅλα κίδναται ἠώς, τῆμος πυρκαϊὴ ἐμαραίνετο",
+ "ref": [
+  "23.226",
+  "23.227",
+  "23.228"
+ ],
+ "text_file": "iliad-grc.tsv",
+ "fork_options": [
+  {
+   "option": "lead60",
+   "operational": "Venus rises at least 60 min before the Sun on Dawn +3 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)",
+   "justification": "the morning star taken as Venus; lowest lead threshold of the Odyssey's F4 menu [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "lead90",
+   "operational": "Venus rises at least 90 min before the Sun on Dawn +3",
+   "justification": "B&M's own threshold for Od. 13.93-95 [DESIGN 1.1, criterion V]"
+  },
+  {
+   "option": "lead120",
+   "operational": "Venus rises at least 120 min before the Sun on Dawn +3",
+   "justification": "strict end of the F4 menu [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "vis7",
+   "operational": "Venus visible as a morning object on Dawn +3 (arcus visionis 7 deg)",
+   "justification": "the words name a morning star, not a lead; visibility is the least-inference reading [vis 1.2]"
+  },
+  {
+   "option": "herald",
+   "operational": "some bright dawn herald visible before sunrise on Dawn +3: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)",
+   "justification": "the text does not say which star; the Odyssey's F4 menu allows any bright herald [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the dawn star is a traditional time-marker for the last hour of night (Od. 13.93-95 and Il. 23.226-228 use the same device) [txt 5.7]"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "The scholia gloss φόως ἐρέων as foretelling the light by its rising [scholia-iliad-grc.tsv key 2.23.90.1].",
+ "license_check": "ok"
+}
+   CHECK exact | ἦμος δʼ ἑωσφόρος εἶσι φόως ἐρέων ἐπὶ γαῖαν, ὅν τε μέτα κροκόπεπλος ὑπεὶρ ἅλα κίδναται ἠώς, τῆμος πυρκαϊὴ ἐμαραίνετο | in []
+   --- context (iliad-grc.tsv) ---
+   23.218     φυσῶντες λιγέως· ὃ δὲ πάννυχος ὠκὺς Ἀχιλλεὺς
+   23.219     χρυσέου ἐκ κρητῆρος ἑλὼν δέπας ἀμφικύπελλον
+   23.220     οἶνον ἀφυσσόμενος χαμάδις χέε, δεῦε δὲ γαῖαν
+   23.221     ψυχὴν κικλήσκων Πατροκλῆος δειλοῖο.
+   23.222     ὡς δὲ πατὴρ οὗ παιδὸς ὀδύρεται ὀστέα καίων
+   23.223     νυμφίου, ὅς τε θανὼν δειλοὺς ἀκάχησε τοκῆας,
+   23.224     ὣς Ἀχιλεὺς ἑτάροιο ὀδύρετο ὀστέα καίων,
+   23.225     ἑρπύζων παρὰ πυρκαϊὴν ἁδινὰ στεναχίζων.
+>> 23.226     ἦμος δʼ ἑωσφόρος εἶσι φόως ἐρέων ἐπὶ γαῖαν,
+>> 23.227     ὅν τε μέτα κροκόπεπλος ὑπεὶρ ἅλα κίδναται ἠώς,
+>> 23.228     τῆμος πυρκαϊὴ ἐμαραίνετο, παύσατο δὲ φλόξ.
+   23.229     οἳ δʼ ἄνεμοι πάλιν αὖτις ἔβαν οἶκον δὲ νέεσθαι
+   23.230     Θρηΐκιον κατὰ πόντον· ὃ δʼ ἔστενεν οἴδματι θύων.
+   23.231     Πηλεΐδης δʼ ἀπὸ πυρκαϊῆς ἑτέρωσε λιασθεὶς
+   23.232     κλίνθη κεκμηώς, ἐπὶ δὲ γλυκὺς ὕπνος ὄρουσεν·
+   23.233     οἳ δʼ ἀμφʼ Ἀτρεΐωνα ἀολλέες ἠγερέθοντο·
+
+==============================================================================================================
+{
+ "set": "IL-PATROCLUS",
+ "clue_id": "IL-PATROCLUS-09",
+ "kind": "interval",
+ "statement": "Day H, when Priam goes to Achilles, is the twelfth dawn after Hector's death.",
+ "licence_words": "ἀλλʼ ὅτε δή ῥʼ ἐκ τοῖο δυωδεκάτη γένετʼ ἠώς",
+ "ref": [
+  "24.31"
+ ],
+ "text_file": "iliad-grc.tsv",
+ "fork_options": [
+  {
+   "option": "h13",
+   "operational": "Day H = Day +13",
+   "justification": "twelve dawns after the death on Day +1"
+  },
+  {
+   "option": "h12",
+   "operational": "Day H = Day +12",
+   "justification": "the death day counted as the first, as the scholion counts (wood-cutting, the games as the third day, then nine) [scholia-iliad-grc.tsv key 4.24.22.1]"
+  },
+  {
+   "option": "h15",
+   "operational": "Day H = Day +15",
+   "justification": "'ἐκ τοῖο' counted from the end of the games (Day +3); the scholion's 'from when Hector died' is against it"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "Hermes, disguised as a Myrmidon squire, also says the twelfth dawn has come (24.413-414); that speech is a deception and is not used as a date carrier. It agrees with the narrator's 24.31.",
+ "license_check": "edited: the licence quoted 24.413-414, which Hermes speaks in disguise (a lying persona); it is removed from the licence and refs and kept only in the notes; the narrator's 24.31 alone carries the interval"
+}
+   CHECK exact | ἀλλʼ ὅτε δή ῥʼ ἐκ τοῖο δυωδεκάτη γένετʼ ἠώς | in ['24.31']
+   --- context (iliad-grc.tsv) ---
+   24.23      τὸν δʼ ἐλεαίρεσκον μάκαρες θεοὶ εἰσορόωντες,
+   24.24      κλέψαι δʼ ὀτρύνεσκον ἐΰσκοπον ἀργεϊφόντην.
+   24.25      ἔνθʼ ἄλλοις μὲν πᾶσιν ἑήνδανεν, οὐδέ ποθʼ Ἥρῃ
+   24.26      οὐδὲ Ποσειδάωνʼ οὐδὲ γλαυκώπιδι κούρῃ,
+   24.27      ἀλλʼ ἔχον ὥς σφιν πρῶτον ἀπήχθετο Ἴλιος ἱρὴ
+   24.28      καὶ Πρίαμος καὶ λαὸς Ἀλεξάνδρου ἕνεκʼ ἄτης,
+   24.29      ὃς νείκεσσε θεὰς ὅτε οἱ μέσσαυλον ἵκοντο,
+   24.30      τὴν δʼ ᾔνησʼ ἥ οἱ πόρε μαχλοσύνην ἀλεγεινήν.
+>> 24.31      ἀλλʼ ὅτε δή ῥʼ ἐκ τοῖο δυωδεκάτη γένετʼ ἠώς,
+   24.32      καὶ τότʼ ἄρʼ ἀθανάτοισι μετηύδα Φοῖβος Ἀπόλλων·
+   24.33      σχέτλιοί ἐστε θεοί, δηλήμονες· οὔ νύ ποθʼ ὑμῖν
+   24.34      Ἕκτωρ μηρίʼ ἔκηε βοῶν αἰγῶν τε τελείων;
+   24.35      τὸν νῦν οὐκ ἔτλητε νέκυν περ ἐόντα σαῶσαι
+   24.36      ᾗ τʼ ἀλόχῳ ἰδέειν καὶ μητέρι καὶ τέκεϊ ᾧ
+
+==============================================================================================================
+{
+ "set": "IL-PATROCLUS",
+ "clue_id": "IL-PATROCLUS-10",
+ "kind": "planet",
+ "statement": "On the evening of Day H Hermes ties on his sandals, takes his wand and flies to Troy and the Hellespont (the seven lines that Od. 5.43-49 repeat); he meets Priam at dusk and leaves for Olympus as Dawn H+1 spreads over the earth.",
+ "licence_words": "οὐδʼ ἀπίθησε διάκτορος ἀργεϊφόντης … ὑπὸ ποσσὶν ἐδήσατο καλὰ πέδιλα … εἵλετο δὲ ῥάβδον … αἶψα δʼ ἄρα Τροίην τε καὶ Ἑλλήσποντον ἵκανε … ἐπὶ κνέφας ἤλυθε γαῖαν … Ἑρμείας μὲν ἔπειτʼ ἀπέβη πρὸς μακρὸν Ὄλυμπον, Ἠὼς δὲ κροκόπεπλος ἐκίδνατο πᾶσαν ἐπʼ αἶαν",
+ "ref": [
+  "24.339",
+  "24.340",
+  "24.341",
+  "24.342",
+  "24.343",
+  "24.344",
+  "24.345",
+  "24.346",
+  "24.351",
+  "24.694",
+  "24.695"
+ ],
+ "text_file": "iliad-grc.tsv",
+ "fork_options": [
+  {
+   "option": "mwra",
+   "operational": "Mercury's maximum western rise azimuth within +-t days of Day H; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; B&M's own event"
+  },
+  {
+   "option": "gwe",
+   "operational": "Mercury's greatest western elongation within +-t days of Day H; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; one of the three events B&M name [DESIGN 3.4 F5]"
+  },
+  {
+   "option": "station",
+   "operational": "a Mercury station that ends retrograde motion (morning station) within +-t days of Day H; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; one of the three events B&M name"
+  },
+  {
+   "option": "any3",
+   "operational": "any of the three events above within +-t days of Day H; t in {1, 2, 3} days; with or without Mercury visible that morning (arcus visionis 10 deg)",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]"
+  },
+  {
+   "option": "firstvis",
+   "operational": "Mercury's first morning visibility (arcus visionis 10 deg) within +-t days of Day H; t in {1, 2, 3} days",
+   "justification": "B&M's rule (Hermes' journey = the motion of Mercury) applied unchanged to this Hermes passage [DESIGN 1.1, criterion M; B&M call it conjectural]; B&M also speak of Mercury's heliacal rising [txt 2.1]"
+  },
+  {
+   "option": "dawnvis",
+   "operational": "Mercury visible as a morning object at Dawn H+1 (arcus visionis 10 deg)",
+   "justification": "Hermes leaves as dawn spreads; B&M's rule read as a morning appearance"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "Hermes is the messenger god; the journey is a type-scene shared with Od. 5.43-49 [txt 5.9]"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "The Mercury slot of the Odyssey's grammar, in the Odyssey's own words. In the Odyssey it falls 34 days before the anchor; here 12-15 days after.",
+ "license_check": "ok"
+}
+   CHECK exact | οὐδʼ ἀπίθησε διάκτορος ἀργεϊφόντης | in ['24.339']
+   CHECK exact | ὑπὸ ποσσὶν ἐδήσατο καλὰ πέδιλα | in ['24.340']
+   CHECK exact | εἵλετο δὲ ῥάβδον | in ['24.343']
+   CHECK exact | αἶψα δʼ ἄρα Τροίην τε καὶ Ἑλλήσποντον ἵκανε | in ['24.346']
+   CHECK exact | ἐπὶ κνέφας ἤλυθε γαῖαν | in ['24.351']
+   CHECK exact | Ἑρμείας μὲν ἔπειτʼ ἀπέβη πρὸς μακρὸν Ὄλυμπον, Ἠὼς δὲ κροκόπεπλος ἐκίδνατο πᾶσαν ἐπʼ αἶαν | in []
+   --- context (iliad-grc.tsv) ---
+   24.331     παῖδες καὶ γαμβροί, τὼ δʼ οὐ λάθον εὐρύοπα Ζῆν
+   24.332     ἐς πεδίον προφανέντε· ἰδὼν δʼ ἐλέησε γέροντα,
+   24.333     αἶψα δʼ ἄρʼ Ἑρμείαν υἱὸν φίλον ἀντίον ηὔδα·
+   24.334     Ἑρμεία, σοὶ γάρ τε μάλιστά γε φίλτατόν ἐστιν
+   24.335     ἀνδρὶ ἑταιρίσσαι, καί τʼ ἔκλυες ᾧ κʼ ἐθέλῃσθα,
+   24.336     βάσκʼ ἴθι καὶ Πρίαμον κοίλας ἐπὶ νῆας Ἀχαιῶν
+   24.337     ὣς ἄγαγʼ, ὡς μήτʼ ἄρ τις ἴδῃ μήτʼ ἄρ τε νοήσῃ
+   24.338     τῶν ἄλλων Δαναῶν, πρὶν Πηλεΐωνα δʼ ἱκέσθαι.
+>> 24.339     ὣς ἔφατʼ, οὐδʼ ἀπίθησε διάκτορος ἀργεϊφόντης.
+>> 24.340     αὐτίκʼ ἔπειθʼ ὑπὸ ποσσὶν ἐδήσατο καλὰ πέδιλα
+>> 24.341     ἀμβρόσια χρύσεια, τά μιν φέρον ἠμὲν ἐφʼ ὑγρὴν
+>> 24.342     ἠδʼ ἐπʼ ἀπείρονα γαῖαν ἅμα πνοιῇς ἀνέμοιο·
+>> 24.343     εἵλετο δὲ ῥάβδον, τῇ τʼ ἀνδρῶν ὄμματα θέλγει
+>> 24.344     ὧν ἐθέλει, τοὺς δʼ αὖτε καὶ ὑπνώοντας ἐγείρει·
+>> 24.345     τὴν μετὰ χερσὶν ἔχων πέτετο κρατὺς ἀργεϊφόντης.
+>> 24.346     αἶψα δʼ ἄρα Τροίην τε καὶ Ἑλλήσποντον ἵκανε,
+   24.347     βῆ δʼ ἰέναι κούρῳ αἰσυμνητῆρι ἐοικὼς
+   24.348     πρῶτον ὑπηνήτῃ, τοῦ περ χαριεστάτη ἥβη.
+   24.349     οἳ δʼ ἐπεὶ οὖν μέγα σῆμα παρὲξ Ἴλοιο ἔλασσαν,
+   24.350     στῆσαν ἄρʼ ἡμιόνους τε καὶ ἵππους ὄφρα πίοιεν
+>> 24.351     ἐν ποταμῷ· δὴ γὰρ καὶ ἐπὶ κνέφας ἤλυθε γαῖαν.
+   24.352     τὸν δʼ ἐξ ἀγχιμόλοιο ἰδὼν ἐφράσσατο κῆρυξ
+   24.353     Ἑρμείαν, ποτὶ δὲ Πρίαμον φάτο φώνησέν τε·
+   24.354     φράζεο Δαρδανίδη· φραδέος νόου ἔργα τέτυκται.
+   24.355     ἄνδρʼ ὁρόω, τάχα δʼ ἄμμε διαρραίσεσθαι ὀΐω.
+   24.356     ἀλλʼ ἄγε δὴ φεύγωμεν ἐφʼ ἵππων, ἤ μιν ἔπειτα
+   ...
+   24.686     σεῖο δέ κε ζωοῦ καὶ τρὶς τόσα δοῖεν ἄποινα
+   24.687     παῖδες τοὶ μετόπισθε λελειμμένοι, αἴ κʼ Ἀγαμέμνων
+   24.688     γνώῃ σʼ Ἀτρεΐδης, γνώωσι δὲ πάντες Ἀχαιοί.
+   24.689     ὣς ἔφατʼ, ἔδεισεν δʼ ὃ γέρων, κήρυκα δʼ ἀνίστη.
+   24.690     τοῖσιν δʼ Ἑρμείας ζεῦξʼ ἵππους ἡμιόνους τε,
+   24.691     ῥίμφα δʼ ἄρʼ αὐτὸς ἔλαυνε κατὰ στρατόν, οὐδέ τις ἔγνω.
+   24.692     ἀλλʼ ὅτε δὴ πόρον ἷξον ἐϋρρεῖος ποταμοῖο
+   24.693     Ξάνθου δινήεντος, ὃν ἀθάνατος τέκετο Ζεύς,
+>> 24.694     Ἑρμείας μὲν ἔπειτʼ ἀπέβη πρὸς μακρὸν Ὄλυμπον,
+>> 24.695     Ἠὼς δὲ κροκόπεπλος ἐκίδνατο πᾶσαν ἐπʼ αἶαν,
+   24.696     οἳ δʼ εἰς ἄστυ ἔλων οἰμωγῇ τε στοναχῇ τε
+   24.697     ἵππους, ἡμίονοι δὲ νέκυν φέρον. οὐδέ τις ἄλλος
+   24.698     ἔγνω πρόσθʼ ἀνδρῶν καλλιζώνων τε γυναικῶν,
+   24.699     ἀλλʼ ἄρα Κασσάνδρη ἰκέλη χρυσῇ Ἀφροδίτῃ
+   24.700     Πέργαμον εἰσαναβᾶσα φίλον πατέρʼ εἰσενόησεν

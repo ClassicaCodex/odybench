@@ -1,0 +1,32 @@
+windows: w1 from -1500 (N_cand 49674, 5% = 2484 days), w2 from -1100 (N_cand 49674, 5% = 2484 days), w3 from -700 (N_cand 49674, 5% = 2484 days)
+
+share of a window's days passing each counted set's projection (revision 8), and margin to the line:
+  ALM-A:  4.88- 4.89%  days 2422-2430  narrows  margin +0.11 to +0.12 points   (revision 7's projection: 0.54-0.60%)
+  ALM-B:  4.40- 4.45%  days 2187-2209  narrows  margin +0.55 to +0.60 points   (revision 7's projection: 4.40-4.45%)
+  ALM-D:  0.76- 0.94%  days 380-467  narrows  margin +4.06 to +4.24 points
+  ALM-E:  0.07- 0.12%  days 35-60  narrows  margin +4.88 to +4.93 points
+  ALM-F:  1.03- 1.03%  days 510-510  narrows  margin +3.97 to +3.97 points
+  ALM-G:  0.67- 0.78%  days 333-387  narrows  margin +4.22 to +4.33 points
+  ALM-H:  4.37- 4.59%  days 2171-2282  narrows  margin +0.41 to +0.63 points
+  ALM-I: 14.78-14.97%  days 7343-7438  does not narrow  margin -9.97 to -9.78 points
+  ALM-J: 13.62-13.93%  days 6764-6919  does not narrow  margin -8.93 to -8.62 points
+  ALM-K: 14.87-14.99%  days 7388-7445  does not narrow  margin -9.99 to -9.87 points
+  ALM-L:  0.76- 0.92%  days 380-458  narrows  margin +4.08 to +4.24 points
+  w1: 8 sets narrow: ALM-A, ALM-B, ALM-D, ALM-E, ALM-F, ALM-G, ALM-H, ALM-L
+  w2: 8 sets narrow: ALM-A, ALM-B, ALM-D, ALM-E, ALM-F, ALM-G, ALM-H, ALM-L
+  w3: 8 sets narrow: ALM-A, ALM-B, ALM-D, ALM-E, ALM-F, ALM-G, ALM-H, ALM-L
+sets within 0.65 percentage points under the line in every window: ALM-A, ALM-B, ALM-H
+
+variants of ALM-A (the recheck's rows; reported, not revision 8's projection):
+  ALM-A (A.2 only none) [frozen, inferred phases none]: 0.75-0.85%
+  ALM-A (A.5 only none) [frozen, inferred phases none]: 0.56-0.63%
+  ALM-A (civil dawn for A.9) [frozen, inferred phases none]: 4.90-4.90%
+  ALM-A with A.9 at its stated hour (about 5 equinoctial hours after midnight, LAT), the instant revision 8 freezes (6.4, 10.3): NOT ESTIMATED (no new sky search before the freeze)
+
+the other meaning of same_apparition (side of the Sun only), as recorded:
+  ALM-A, with its phase rows at their class: 0.55-0.60%
+  ALM-B, with its phase rows at their class: 5.19-5.25%
+  ALM-I, with its phase rows at their class: 19.08-19.12%
+  ALM-J, with its phase rows at their class: 15.68-16.53%
+  (B.2 at none under the side-only meaning was not estimated; under the frozen meaning B.7 implies B.2's class, so B.2 changes nothing there [r3v7 C7])
+  ALM-B, frozen meaning: identical day counts with and without B.2: True

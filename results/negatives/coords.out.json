@@ -1,0 +1,83 @@
+{
+ "Cape Caphireus": null,
+ "Anafi": null,
+ "Catania": [
+  37.5,
+  15.09027778
+ ],
+ "Ceraunian Mountains": null,
+ "Cius": null,
+ "Cyzicus": [
+  40.3878,
+  27.8706
+ ],
+ "Gemlik": null,
+ "Giresun Island": null,
+ "Kapıdağ Peninsula": null,
+ "Karpathos": [
+  35.58333333,
+  27.13333333
+ ],
+ "Lemnos": [
+  39.91666667,
+  25.25
+ ],
+ "Mount Athos": [
+  40.15833333,
+  24.32722222
+ ],
+ "Mount Etna": [
+  37.755,
+  14.995
+ ],
+ "Mount Ida (Turkey)": [
+  39.7,
+  26.83333333
+ ],
+ "Poti": [
+  42.15,
+  41.66666667
+ ],
+ "Troy": [
+  39.9575,
+  26.23888889
+ ],
+ "Cape Sideros": null,
+ "Myrina, Greece": null,
+ "Strofades": null,
+ "Tenedos": [
+  39.82194444,
+  26.02888889
+ ],
+ "_redirects_0": {
+  "Strophades": "Strofades",
+  "Bozcaada": "Tenedos",
+  "Salmonion": "Cape Sideros",
+  "Myrina, Lemnos": "Myrina, Greece"
+ },
+ "Mount Dindymon (Cyzicus)": null,
+ "Actium": [
+  38.953,
+  20.768
+ ],
+ "Cyrene": null,
+ "Kydonia": [
+  35.51666667,
+  24.01666667
+ ],
+ "Lake Tritonis": null,
+ "Leucas": null,
+ "Pagasae": [
+  39.312923,
+  22.930713
+ ],
+ "Pergamea": null,
+ "Phasis (town)": [
+  42.15,
+  41.6667
+ ],
+ "History of Benghazi": null,
+ "_redirects_20": {
+  "Euesperides": "History of Benghazi"
+ }
+}

@@ -1,0 +1,578 @@
+#### SET ARG-CIUS
+{
+ "set": "ARG-CIUS",
+ "role": "negative",
+ "searchable": true,
+ "text": "Apollonius, Argonautica 1.1012-1.1283 (from the night battle at Cyzicus to the loss of Hylas and Heracles at Cius)",
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "edition_id": 1,
+ "day0": "Day 0 is the day the Argo reaches Cius at supper-time; Night 0 is the full-moon night of Hylas; Dawn +1 is the morning star and the departure.",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "ARG-CIUS-02": "a",
+   "ARG-CIUS-03": "vis7",
+   "ARG-CIUS-05": "none",
+   "ARG-CIUS-06": "n17",
+   "ARG-CIUS-07": "none"
+  },
+  "BM-analogue": {
+   "ARG-CIUS-02": "a",
+   "ARG-CIUS-03": "lead90",
+   "ARG-CIUS-05": "a",
+   "ARG-CIUS-06": "n17",
+   "ARG-CIUS-07": "b"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "text",
+   "clue_ids": [
+    "ARG-CIUS-02"
+   ],
+   "note": "full moon on Night 0: the opposite phase to the Odyssey's anchor"
+  },
+  "season_stars": {
+   "status": "fork",
+   "clue_ids": [
+    "ARG-CIUS-07"
+   ],
+   "note": "only through the halcyon (a bird, not a star) on Night -2"
+  },
+  "morning_star": {
+   "status": "text",
+   "clue_ids": [
+    "ARG-CIUS-03"
+   ],
+   "note": "Dawn +1; the verb echoes Od. 13.93 (ὑπερέσχε)"
+  },
+  "mercury_turning_point": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "darkness_eclipse": {
+   "status": "fork",
+   "clue_ids": [
+    "ARG-CIUS-05"
+   ],
+   "note": "a dark night at Cyzicus on Night -17, if non-recognition is read as moonlessness"
+  }
+ },
+ "notes": "DESIGN's NC3 season clue (1.1202, Orion's wintry setting) is inside a simile and is excluded here.",
+ "eclipse_compatible_options": [],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+}
+-- observer_place {"place": "Cius, by Mount Arganthonios and the mouth of the Cius river", "words": "Κιανίδος ἤθεα γαίης … Ἀργανθώνειον ὄρος προχοάς τε Κίοιο", "ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1177", "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1178"], "text_file": "apollonius-argonautica-grc.tsv", "lat": 40.4325, "lon": 29.1564, "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"}
+   CHECK exact | Κιανίδος ἤθεα γαίης | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1177']
+   CHECK exact | Ἀργανθώνειον ὄρος προχοάς τε Κίοιο | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1178']
+   1.1169     ἄμφω χερσὶν ἔχων πέσε δόχμιος, ἄλλο δὲ πόντος
+   1.1170     κλύζε παλιρροθίοισι φέρων. ἀνὰ δʼ ἕζετο σιγῇ
+   1.1171     παπταίνων· χεῖρες γὰρ ἀήθεον ἠρεμέουσαι.
+   1.1172     ἦμος δʼ ἀγρόθεν εἶσι φυτοσκάφος ἤ τις ἀροτρεὺς
+   1.1173     ἀσπασίως εἰς αὖλιν ἑήν, δόρποιο χατίζων,
+   1.1174     αὐτοῦ δʼ ἐν προμολῇ τετρυμένα γούνατʼ ἔκαμψεν
+   1.1175     αὐσταλέος κονίῃσι, περιτριβέας δέ τε χεῖρας
+   1.1176     εἰσορόων κακὰ πολλὰ ἑῇ ἠρήσατο γαστρί·
+>> 1.1177     τῆμος ἄρʼ οἵγʼ ἀφίκοντο Κιανίδος ἤθεα γαίης
+>> 1.1178     ἀμφʼ Ἀργανθώνειον ὄρος προχοάς τε Κίοιο.
+   1.1179     τοὺς μὲν ἐυξείνως Μυσοὶ φιλότητι κιόντας
+   1.1180     δειδέχατʼ, ἐνναέται κείνης χθονός, ἤιά τέ σφιν
+   1.1181     μῆλά τε δευομένοις μέθυ τʼ ἄσπετον ἐγγυάλιξαν.
+   1.1182     ἔνθα δʼ ἔπειθʼ οἱ μὲν ξύλα κάγκανα, τοὶ δὲ λεχαίην
+   1.1183     φυλλάδα λειμώνων φέρον ἄσπετον ἀμήσαντες,
+-- observer_place {"place": "Cyzicus, land of the Doliones (Night -17)", "words": "ἐυξείνοισι Δολίοσιν", "ref": ["urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1018"], "text_file": "apollonius-argonautica-grc.tsv", "lat": 40.3878, "lon": 27.8706, "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"}
+   CHECK exact | ἐυξείνοισι Δολίοσιν | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1018']
+   1.1010     κράατα μὲν ψαμάθοισι, πόδας δʼ εἰς βένθος ἔρειδον,
+   1.1011     ἄμφω ἅμʼ οἰωνοῖσι καὶ ἰχθύσι κύρμα γενέσθαι.
+   1.1012     ἥρωες δʼ, ὅτε δή σφιν ἀταρβὴς ἔπλετʼ ἄεθλος,
+   1.1013     δὴ τότε πείσματα νηὸς ἐπὶ πνοιῇς ἀνέμοιο
+   1.1014     λυσάμενοι προτέρωσε διὲξ ἁλὸς οἶδμα νέοντο.
+   1.1015     ἡ δʼ ἔθεεν λαίφεσσι πανήμερος· οὐ μὲν ἰούσης
+   1.1016     νυκτὸς ἔτι ῥιπὴ μένεν ἔμπεδον, ἀλλὰ θύελλαι
+   1.1017     ἀντίαι ἁρπάγδην ὀπίσω φέρον, ὄφρʼ ἐπέλασσαν
+>> 1.1018     αὖτις ἐυξείνοισι Δολίοσιν ἐκ δʼ ἄρʼ ἔβησαν
+   1.1019     αὐτονυχί· ἱερὴ δὲ φατίζεται ἥδʼ ἔτι πέτρη,
+   1.1020     ᾗ πέρι πείσματα νηὸς ἐπεσσύμενοι ἐβάλοντο.
+   1.1021     οὐδέ τις αὐτὴν νῆσον ἐπιφραδέως ἐνόησεν
+   1.1022     ἔμμεναι· οὐδʼ ὑπὸ νυκτὶ Δολίονες ἂψ ἀνιόντας
+   1.1023     ἥρωας νημερτὲς ἐπήισαν· ἀλλά που ἀνδρῶν
+
+==============================================================================================================
+{
+ "set": "ARG-CIUS",
+ "clue_id": "ARG-CIUS-01",
+ "kind": "time-of-day",
+ "statement": "The Argo reaches Cius at the hour when a digger or ploughman goes home hungry for supper, at the end of Day 0.",
+ "licence_words": "ἦμος δʼ ἀγρόθεν εἶσι φυτοσκάφος ἤ τις ἀροτρεὺς … δόρποιο χατίζων … τῆμος ἄρʼ οἵγʼ ἀφίκοντο Κιανίδος ἤθεα γαίης",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1172",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1173",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1174",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1175",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1176",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1177"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "An ἦμος/τῆμος time-marker, not a simile (no ὡς).",
+ "license_check": "ok"
+}
+   CHECK exact | ἦμος δʼ ἀγρόθεν εἶσι φυτοσκάφος ἤ τις ἀροτρεὺς | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1172']
+   CHECK exact | δόρποιο χατίζων | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1173']
+   CHECK exact | τῆμος ἄρʼ οἵγʼ ἀφίκοντο Κιανίδος ἤθεα γαίης | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1177']
+   --- context (apollonius-argonautica-grc.tsv) ---
+   1.1164     ἀλλʼ ὅτε δὴ Μυσῶν λελιημένοι ἠπείροιο
+   1.1165     Ῥυνδακίδας προχοὰς μέγα τʼ ἠρίον Αἰγαίωνος
+   1.1166     τυτθὸν ὑπὲκ Φρυγίης παρεμέτρεον εἰσορόωντες,
+   1.1167     δὴ τότʼ ἀνοχλίζων τετρηχότος οἴδματος ὁλκοὺς
+   1.1168     μεσσόθεν ἆξεν ἐρετμόν. ἀτὰρ τρύφος ἄλλο μὲν αὐτὸς
+   1.1169     ἄμφω χερσὶν ἔχων πέσε δόχμιος, ἄλλο δὲ πόντος
+   1.1170     κλύζε παλιρροθίοισι φέρων. ἀνὰ δʼ ἕζετο σιγῇ
+   1.1171     παπταίνων· χεῖρες γὰρ ἀήθεον ἠρεμέουσαι.
+>> 1.1172     ἦμος δʼ ἀγρόθεν εἶσι φυτοσκάφος ἤ τις ἀροτρεὺς
+>> 1.1173     ἀσπασίως εἰς αὖλιν ἑήν, δόρποιο χατίζων,
+>> 1.1174     αὐτοῦ δʼ ἐν προμολῇ τετρυμένα γούνατʼ ἔκαμψεν
+>> 1.1175     αὐσταλέος κονίῃσι, περιτριβέας δέ τε χεῖρας
+>> 1.1176     εἰσορόων κακὰ πολλὰ ἑῇ ἠρήσατο γαστρί·
+>> 1.1177     τῆμος ἄρʼ οἵγʼ ἀφίκοντο Κιανίδος ἤθεα γαίης
+   1.1178     ἀμφʼ Ἀργανθώνειον ὄρος προχοάς τε Κίοιο.
+   1.1179     τοὺς μὲν ἐυξείνως Μυσοὶ φιλότητι κιόντας
+   1.1180     δειδέχατʼ, ἐνναέται κείνης χθονός, ἤιά τέ σφιν
+   1.1181     μῆλά τε δευομένοις μέθυ τʼ ἄσπετον ἐγγυάλιξαν.
+   1.1182     ἔνθα δʼ ἔπειθʼ οἱ μὲν ξύλα κάγκανα, τοὶ δὲ λεχαίην
+
+==============================================================================================================
+{
+ "set": "ARG-CIUS",
+ "clue_id": "ARG-CIUS-02",
+ "kind": "moon-phase",
+ "statement": "Early in Night 0, while Hylas draws water for supper, the full (mid-month) moon shines on him from the sky and the nymph of the spring sees him.",
+ "licence_words": "ποτιδόρπιον … τὸν δὲ σχεδὸν εἰσενόησεν … πρὸς γάρ οἱ διχόμηνις ἀπʼ αἰθέρος αὐγάζουσα βάλλε σεληναίη",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1209",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1229",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1230",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1231",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1232"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "opposition falls within +-1 day of local midnight of Night 0 and the Moon is above the horizon at some instant in the 3 hours after sunset of Day 0",
+   "justification": "διχόμηνις is the month-halving (full) moon; water 'for supper' puts the scene early in the night"
+  },
+  {
+   "option": "b",
+   "operational": "opposition within +-2 days of local midnight of Night 0 and the Moon above the horizon at some instant of Night 0",
+   "justification": "looser"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "διχόμηνις as an ornamental epithet of the bright moon"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ποτιδόρπιον | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1209']
+   CHECK exact | τὸν δὲ σχεδὸν εἰσενόησεν | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1229']
+   CHECK exact | πρὸς γάρ οἱ διχόμηνις ἀπʼ αἰθέρος αὐγάζουσα βάλλε σεληναίη | in []
+   --- context (apollonius-argonautica-grc.tsv) ---
+   1.1201     ὡς δʼ ὅταν ἀπροφάτως ἱστὸν νεός, εὖτε μάλιστα
+   1.1202     χειμερίη ὀλοοῖο δύσις πέλει Ὠρίωνος,
+   1.1203     ὑψόθεν ἐμπλήξασα θοὴ ἀνέμοιο κατάιξ
+   1.1204     αὐτοῖσι σφήνεσσιν ὑπὲκ προτόνων ἐρύσηται·
+   1.1205     ὧς ὅγε τὴν ἤειρεν. ὁμοῦ δʼ ἀνὰ τόξα καὶ ἰοὺς
+   1.1206     δέρμα θʼ ἑλὼν ῥόπαλόν τε παλίσσυτος ὦρτο νέεσθαι.
+   1.1207     τόφρα δʼ Ὕλας χαλκέῃ σὺν κάλπιδι νόσφιν ὁμίλου
+   1.1208     δίζητο κρήνης ἱερὸν ῥόον, ὥς κέ οἱ ὕδωρ
+>> 1.1209     φθαίη ἀφυσσάμενος ποτιδόρπιον, ἄλλα τε πάντα
+   1.1210     ὀτραλέως κατὰ κόσμον ἐπαρτίσσειεν ἰόντι.
+   1.1211     δὴ γάρ μιν τοίοισιν ἐν ἤθεσιν αὐτὸς ἔφερβεν,
+   1.1212     νηπίαχον τὰ πρῶτα δόμων ἐκ πατρὸς ἀπούρας,
+   1.1213     δίου Θειοδάμαντος, ὃν ἐν Δρυόπεσσιν ἔπεφνεν
+   1.1214     νηλειῶς, βοὸς ἀμφὶ γεωμόρου ἀντιόωντα.
+   ...
+   1.1221     αἶψα δʼ ὅγε κρήνην μετεκίαθεν, ἣν καλέουσιν
+   1.1222     Πηγὰς ἀγχίγυοι περιναιέται. οἱ δέ που ἄρτι
+   1.1223     νυμφάων ἵσταντο χοροί· μέλε γάρ σφισι πάσαις,
+   1.1224     ὅσσαι κεῖσʼ ἐρατὸν νύμφαι ῥίον ἀμφενέμοντο,
+   1.1225     Ἄρτεμιν ἐννυχίῃσιν ἀεὶ μέλπεσθαι ἀοιδαῖς.
+   1.1226     αἱ μέν, ὅσαι σκοπιὰς ὀρέων λάχον ἢ καὶ ἐναύλους,
+   1.1227     αἵγε μὲν ὑλήωροι ἀπόπροθεν ἐστιχόωντο,
+   1.1228     ἡ δὲ νέον κρήνης ἀνεδύετο καλλινάοιο
+>> 1.1229     νύμφη ἐφυδατίη· τὸν δὲ σχεδὸν εἰσενόησεν
+>> 1.1230     κάλλεϊ καὶ γλυκερῇσιν ἐρευθόμενον χαρίτεσσιν.
+>> 1.1231     πρὸς γάρ οἱ διχόμηνις ἀπʼ αἰθέρος αὐγάζουσα
+>> 1.1232     βάλλε σεληναίη. τὴν δὲ φρένας ἐπτοίησεν
+   1.1233     Κύπρις, ἀμηχανίῃ δὲ μόλις συναγείρατο θυμόν.
+   1.1234     αὐτὰρ ὅγʼ ὡς τὰ πρῶτα ῥόῳ ἔνι κάλπιν ἔρεισεν
+   1.1235     λέχρις ἐπιχριμφθείς, περὶ δʼ ἄσπετον ἔβραχεν ὕδωρ
+   1.1236     χαλκὸν ἐς ἠχήεντα φορεύμενον, αὐτίκα δʼ ἥγε
+   1.1237     λαιὸν μὲν καθύπερθεν ἐπʼ αὐχένος ἄνθετο πῆχυν
+
+==============================================================================================================
+{
+ "set": "ARG-CIUS",
+ "clue_id": "ARG-CIUS-03",
+ "kind": "planet",
+ "statement": "At Dawn +1 the dawn star rose over the highest peaks and the breezes came down; Tiphys urges them aboard and they sail, leaving Heracles.",
+ "licence_words": "αὐτίκα δʼ ἀκροτάτας ὑπερέσχεθεν ἄκριας ἀστὴρ ἠῷος, πνοιαὶ δὲ κατήλυθον",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1273",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1274",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1275"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "lead60",
+   "operational": "Venus rises at least 60 min before the Sun on Dawn +1 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)",
+   "justification": "the morning star taken as Venus; lowest lead threshold of the Odyssey's F4 menu [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "lead90",
+   "operational": "Venus rises at least 90 min before the Sun on Dawn +1",
+   "justification": "B&M's own threshold for Od. 13.93-95 [DESIGN 1.1, criterion V]"
+  },
+  {
+   "option": "lead120",
+   "operational": "Venus rises at least 120 min before the Sun on Dawn +1",
+   "justification": "strict end of the F4 menu [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "vis7",
+   "operational": "Venus visible as a morning object on Dawn +1 (arcus visionis 7 deg)",
+   "justification": "the words name a morning star, not a lead; visibility is the least-inference reading [vis 1.2]"
+  },
+  {
+   "option": "herald",
+   "operational": "some bright dawn herald visible before sunrise on Dawn +1: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)",
+   "justification": "the text does not say which star; the Odyssey's F4 menu allows any bright herald [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the dawn star is a traditional time-marker for the last hour of night (Od. 13.93-95 and Il. 23.226-228 use the same device) [txt 5.7]"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "The peaks are not named, so no azimuth rider. Dawn proper follows at 1.1280-1.1283.",
+ "license_check": "ok"
+}
+   CHECK exact | αὐτίκα δʼ ἀκροτάτας ὑπερέσχεθεν ἄκριας ἀστὴρ ἠῷος, πνοιαὶ δὲ κατήλυθον | in []
+   --- context (apollonius-argonautica-grc.tsv) ---
+   1.1265     ὡς δʼ ὅτε τίς τε μύωπι τετυμμένος ἔσσυτο ταῦρος
+   1.1266     πίσεά τε προλιπὼν καὶ ἑλεσπίδας, οὐδὲ νομήων
+   1.1267     οὐδʼ ἀγέλης ὄθεται, πρήσσει δʼ ὁδόν, ἄλλοτʼ ἄπαυστος,
+   1.1268     ἄλλοτε δʼ ἱστάμενος, καὶ ἀνὰ πλατὺν αὐχένʼ ἀείρων
+   1.1269     ἵησιν μύκημα, κακῷ βεβολημένος οἴστρῳ·
+   1.1270     ὧς ὅγε μαιμώων ὁτὲ μὲν θοὰ γούνατʼ ἔπαλλεν
+   1.1271     συνεχέως, ὁτὲ δʼ αὖτε μεταλλήγων καμάτοιο
+   1.1272     τῆλε διαπρύσιον μεγάλῃ βοάασκεν ἀυτῇ.
+>> 1.1273     αὐτίκα δʼ ἀκροτάτας ὑπερέσχεθεν ἄκριας ἀστὴρ
+>> 1.1274     ἠῷος, πνοιαὶ δὲ κατήλυθον· ὦκα δὲ Τῖφυς
+>> 1.1275     ἐσβαίνειν ὀρόθυνεν, ἐπαύρεσθαί τʼ ἀνέμοιο.
+   1.1276     οἱ δʼ εἴσβαινον ἄφαρ λελιημένοι· ὕψι δὲ νηὸς
+   1.1277     εὐναίας ἐρύσαντες ἀνεκρούσαντο κάλωας.
+   1.1278     κυρτώθη δʼ ἀνέμῳ λίνα μεσσόθι, τῆλε δʼ ἀπʼ ἀκτῆς
+   1.1279     γηθόσυνοι φορέοντο παραὶ Ποσιδήιον ἄκρην.
+   1.1280     ἦμος δʼ οὐρανόθεν χαροπὴ ὑπολάμπεται ἠὼς
+
+==============================================================================================================
+{
+ "set": "ARG-CIUS",
+ "clue_id": "ARG-CIUS-04",
+ "kind": "time-of-day",
+ "statement": "Dawn +1 breaks after the sailing; only then do they see they have left Heracles behind.",
+ "licence_words": "ἦμος δʼ οὐρανόθεν χαροπὴ ὑπολάμπεται ἠὼς … τῆμος τούσγʼ ἐνόησαν ἀιδρείῃσι λιπόντες",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1280",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1281",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1282",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1283"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ἦμος δʼ οὐρανόθεν χαροπὴ ὑπολάμπεται ἠὼς | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1280']
+   CHECK exact | τῆμος τούσγʼ ἐνόησαν ἀιδρείῃσι λιπόντες | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1283']
+   --- context (apollonius-argonautica-grc.tsv) ---
+   1.1272     τῆλε διαπρύσιον μεγάλῃ βοάασκεν ἀυτῇ.
+   1.1273     αὐτίκα δʼ ἀκροτάτας ὑπερέσχεθεν ἄκριας ἀστὴρ
+   1.1274     ἠῷος, πνοιαὶ δὲ κατήλυθον· ὦκα δὲ Τῖφυς
+   1.1275     ἐσβαίνειν ὀρόθυνεν, ἐπαύρεσθαί τʼ ἀνέμοιο.
+   1.1276     οἱ δʼ εἴσβαινον ἄφαρ λελιημένοι· ὕψι δὲ νηὸς
+   1.1277     εὐναίας ἐρύσαντες ἀνεκρούσαντο κάλωας.
+   1.1278     κυρτώθη δʼ ἀνέμῳ λίνα μεσσόθι, τῆλε δʼ ἀπʼ ἀκτῆς
+   1.1279     γηθόσυνοι φορέοντο παραὶ Ποσιδήιον ἄκρην.
+>> 1.1280     ἦμος δʼ οὐρανόθεν χαροπὴ ὑπολάμπεται ἠὼς
+>> 1.1281     ἐκ περάτης ἀνιοῦσα, διαγλαύσσουσι δʼ ἀταρποί,
+>> 1.1282     καὶ πεδία δροσόεντα φαεινῇ λάμπεται αἴγλῃ,
+>> 1.1283     τῆμος τούσγʼ ἐνόησαν ἀιδρείῃσι λιπόντες.
+   1.1284     ἐν δέ σφιν κρατερὸν νεῖκος πέσεν, ἐν δὲ κολῳὸς
+   1.1285     ἄσπετος, εἰ τὸν ἄριστον ἀποπρολιπόντες ἔβησαν
+   1.1286     σφωιτέρων ἑτάρων. ὁ δʼ ἀμηχανίῃσιν ἀτυχθεὶς
+   1.1287     οὔτε τι τοῖον ἔπος μετεφώνεεν, οὔτε τι τοῖον
+   1.1288     Αἰσονίδης· ἀλλʼ ἧστο βαρείῃ νειόθεν ἄτῃ
+
+==============================================================================================================
+{
+ "set": "ARG-CIUS",
+ "clue_id": "ARG-CIUS-05",
+ "kind": "darkness",
+ "statement": "On Night -17 (row 06) the Argo, after a full day's sail, is driven back to Cyzicus in the night; in the night the Doliones do not recognise the returning heroes and the two sides fight.",
+ "licence_words": "ἡ δʼ ἔθεεν λαίφεσσι πανήμερος … αὐτονυχί … οὐδʼ ὑπὸ νυκτὶ Δολίονες ἂψ ἀνιόντας ἥρωας νημερτὲς ἐπήισαν",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1015",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1016",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1017",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1018",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1019",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1020",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1021",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1022",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1023"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "the Moon is below the horizon for at least 75% of the dark hours of that night",
+   "justification": "non-recognition read as a moonless night; the predicate is DESIGN H2's, used for the Odyssey's σκοτομήνιος"
+  },
+  {
+   "option": "b",
+   "operational": "the Moon is below the horizon at local midnight of that night",
+   "justification": "a weaker form"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the text says only that it was night; it does not blame the Moon"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ἡ δʼ ἔθεεν λαίφεσσι πανήμερος | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1015']
+   CHECK exact | αὐτονυχί | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1019']
+   CHECK exact | οὐδʼ ὑπὸ νυκτὶ Δολίονες ἂψ ἀνιόντας ἥρωας νημερτὲς ἐπήισαν | in []
+   --- context (apollonius-argonautica-grc.tsv) ---
+   1.1007     ἑξείης, ἄλλοι μὲν ἐς ἁλμυρὸν ἀθρόοι ὕδωρ
+   1.1008     δύπτοντες κεφαλὰς καὶ στήθεα, γυῖα δʼ ὕπερθεν
+   1.1009     χέρσῳ τεινάμενοι· τοὶ δʼ ἔμπαλιν, αἰγιαλοῖο
+   1.1010     κράατα μὲν ψαμάθοισι, πόδας δʼ εἰς βένθος ἔρειδον,
+   1.1011     ἄμφω ἅμʼ οἰωνοῖσι καὶ ἰχθύσι κύρμα γενέσθαι.
+   1.1012     ἥρωες δʼ, ὅτε δή σφιν ἀταρβὴς ἔπλετʼ ἄεθλος,
+   1.1013     δὴ τότε πείσματα νηὸς ἐπὶ πνοιῇς ἀνέμοιο
+   1.1014     λυσάμενοι προτέρωσε διὲξ ἁλὸς οἶδμα νέοντο.
+>> 1.1015     ἡ δʼ ἔθεεν λαίφεσσι πανήμερος· οὐ μὲν ἰούσης
+>> 1.1016     νυκτὸς ἔτι ῥιπὴ μένεν ἔμπεδον, ἀλλὰ θύελλαι
+>> 1.1017     ἀντίαι ἁρπάγδην ὀπίσω φέρον, ὄφρʼ ἐπέλασσαν
+>> 1.1018     αὖτις ἐυξείνοισι Δολίοσιν ἐκ δʼ ἄρʼ ἔβησαν
+>> 1.1019     αὐτονυχί· ἱερὴ δὲ φατίζεται ἥδʼ ἔτι πέτρη,
+>> 1.1020     ᾗ πέρι πείσματα νηὸς ἐπεσσύμενοι ἐβάλοντο.
+>> 1.1021     οὐδέ τις αὐτὴν νῆσον ἐπιφραδέως ἐνόησεν
+>> 1.1022     ἔμμεναι· οὐδʼ ὑπὸ νυκτὶ Δολίονες ἂψ ἀνιόντας
+>> 1.1023     ἥρωας νημερτὲς ἐπήισαν· ἀλλά που ἀνδρῶν
+   1.1024     Μακριέων εἴσαντο Πελασγικὸν ἄρεα κέλσαι.
+   1.1025     τῶ καὶ τεύχεα δύντες ἐπὶ σφίσι χεῖρας ἄειραν.
+   1.1026     σὺν δʼ ἔλασαν μελίας τε καὶ ἀσπίδας ἀλλήλοισιν
+   1.1027     ὀξείῃ ἴκελοι ῥιπῇ πυρός, ἥ τʼ ἐνὶ θάμνοις
+   1.1028     αὐαλέοισι πεσοῦσα κορύσσεται· ἐν δὲ κυδοιμὸς
+
+==============================================================================================================
+{
+ "set": "ARG-CIUS",
+ "clue_id": "ARG-CIUS-06",
+ "kind": "interval",
+ "statement": "From the battle night to Night 0: three whole days of mourning; from then on storms for twelve days and nights; the halcyon on the night then coming on (row 07); Jason rouses the crew and they drive cattle up Dindymon, where a daylight view is described (1.1112-1113: no dawn is named, so putting the sacrifice on the next day is an inference from that daylight); a feast; at dawn they leave, and reach Cius that evening (row 01).",
+ "licence_words": "ἤματα δὲ τρία πάντα γόων … ἐκ δὲ τόθεν τρηχεῖαι ἀνηέρθησαν ἄελλαι ἤμαθʼ ὁμοῦ νύκτας τε δυώδεκα … ἐπιπλομένῃ δʼ ἐνὶ νυκτὶ … Δινδύμου … Μακριάδες σκοπιαὶ καὶ πᾶσα περαίη Θρηικίης ἐνὶ χερσὶν ἑαῖς προυφαίνετʼ ἰδέσθαι … αὐτὰρ ἐς ἠὼ ληξάντων ἀνέμων νῆσον λίπον εἰρεσίῃσιν",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1057",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1078",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1079",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1080",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1092",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1093",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1112",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1113",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1150",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1151",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1152"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "n17",
+   "operational": "the battle night is Night -17 and the halcyon night is Night -2",
+   "justification": "mourning Days -16 to -14, storms Days -13 to -2, halcyon on the following night (Night -2), sacrifice Day -1, departure and Cius Day 0 [me: count]"
+  },
+  {
+   "option": "n18",
+   "operational": "battle night Night -18; halcyon Night -2",
+   "justification": "the funeral takes a fourth day before the storms start"
+  },
+  {
+   "option": "n16",
+   "operational": "battle night Night -16; halcyon Night -2",
+   "justification": "the twelve storm nights counted from the night after the third mourning day (Nights -13 to -2), so the halcyon night (-2) is the twelfth and the storm days run to Day -1; mourning Days -15 to -13"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: the statement gave 'next day the sacrifice' as if stated; the text names no dawn between the halcyon night and the sacrifice, only a daylight view (1.1112-1113, now quoted); the inference is spelled out. Option n16's justification did not distinguish it from n17 and is restated"
+}
+   CHECK exact | ἤματα δὲ τρία πάντα γόων | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1057']
+   CHECK exact | ἐκ δὲ τόθεν τρηχεῖαι ἀνηέρθησαν ἄελλαι ἤμαθʼ ὁμοῦ νύκτας τε δυώδεκα | in []
+   CHECK exact | ἐπιπλομένῃ δʼ ἐνὶ νυκτὶ | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1080']
+   CHECK exact | Δινδύμου | in ['urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1093']
+   CHECK exact | Μακριάδες σκοπιαὶ καὶ πᾶσα περαίη Θρηικίης ἐνὶ χερσὶν ἑαῖς προυφαίνετʼ ἰδέσθαι | in []
+   CHECK exact | αὐτὰρ ἐς ἠὼ ληξάντων ἀνέμων νῆσον λίπον εἰρεσίῃσιν | in []
+   --- context (apollonius-argonautica-grc.tsv) ---
+   1.1049     οἱ δʼ ἄλλοι εἴξαντες ὑπέτρεσαν, ἠύτε κίρκους
+   1.1050     ὠκυπέτας ἀγεληδὸν ὑποτρέσσωσι πέλειαι.
+   1.1051     ἐς δὲ πύλας ὁμάδῳ πέσον ἀθρόοι· αἶψα δʼ ἀυτῆς
+   1.1052     πλῆτο πόλις στονόεντος ὑποτροπίῃ πολέμοιο.
+   1.1053     ἠῶθεν δʼ ὀλοὴν καὶ ἀμήχανον εἰσενόησαν
+   1.1054     ἀμπλακίην ἄμφω· στυγερὸν δʼ ἄχος εἷλεν ἰδόντας
+   1.1055     ἥρωας Μινύας Αἰνήιον υἷα πάροιθεν
+   1.1056     Κύζικον ἐν κονίῃσι καὶ αἵματι πεπτηῶτα.
+>> 1.1057     ἤματα δὲ τρία πάντα γόων, τίλλοντό τε χαίτας
+   1.1058     αὐτοὶ ὁμῶς λαοί τε Δολίονες. αὐτὰρ ἔπειτα
+   1.1059     τρὶς περὶ χαλκείοις σὺν τεύχεσι δινηθέντες
+   1.1060     τύμβῳ ἐνεκτερέιξαν, ἐπειρήσαντό τʼ ἀέθλων,
+   1.1061     ἣ θέμις, ἂμ πεδίον λειμώνιον, ἔνθʼ ἔτι νῦν περ
+   1.1062     ἀγκέχυται τόδε σῆμα καὶ ὀψιγόνοισιν ἰδέσθαι.
+   ...
+   1.1070     αἰνότατον δὴ κεῖνο Δολιονίῃσι γυναιξὶν
+   1.1071     ἀνδράσι τʼ ἐκ Διὸς ἦμαρ ἐπήλυθεν· οὐδὲ γὰρ αὐτῶν
+   1.1072     ἔτλη τις πάσσασθαι ἐδητύος, οὐδʼ ἐπὶ δηρὸν
+   1.1073     ἐξ ἀχέων ἔργοιο μυληφάτου ἐμνώοντο·
+   1.1074     ἀλλʼ αὔτως ἄφλεκτα διαζώεσκον ἔδοντες.
+   1.1075     ἔνθʼ ἔτι νῦν, εὖτʼ ἄν σφιν ἐτήσια χύτλα χέωνται
+   1.1076     Κύζικον ἐνναίοντες Ἰάονες, ἔμπεδον αἰεὶ
+   1.1077     πανδήμοιο μύλης πελάνους ἐπαλετρεύουσιν.
+>> 1.1078     ἐκ δὲ τόθεν τρηχεῖαι ἀνηέρθησαν ἄελλαι
+>> 1.1079     ἤμαθʼ ὁμοῦ νύκτας τε δυώδεκα, τοὺς δὲ καταῦθι
+>> 1.1080     ναυτίλλεσθαι ἔρυκον. ἐπιπλομένῃ δʼ ἐνὶ νυκτὶ
+   1.1081     ὧλλοι μέν ῥα πάρος δεδμημένοι εὐνάζοντο
+   1.1082     ὕπνῳ ἀριστῆες πύματον λάχος· αὐτὰρ Ἄκαστος
+   1.1083     Μόψος τʼ Ἀμπυκίδης ἀδινὰ κνώσσοντας ἔρυντο.
+   1.1084     ἡ δʼ ἄρʼ ὑπὲρ ξανθοῖο καρήατος Αἰσονίδαο
+   1.1085     πωτᾶτʼ ἀλκυονὶς λιγυρῇ ὀπὶ θεσπίζουσα
+   1.1086     λῆξιν ὀρινομένων ἀνέμων· συνέηκε δὲ Μόψος
+   1.1087     ἀκταίης ὄρνιθος ἐναίσιμον ὄσσαν ἀκούσας.
+   1.1088     καὶ τὴν μὲν θεὸς αὖτις ἀπέτραπεν, ἷζε δʼ ὕπερθεν
+   1.1089     νηίου ἀφλάστοιο μετήορος ἀίξασα.
+   1.1090     τὸν δʼ ὅγε κεκλιμένον μαλακοῖς ἐνὶ κώεσιν οἰῶν.
+   1.1091     κινήσας ἀνέγειρε παρασχεδόν, ὧδέ τʼ ἔειπεν·
+>> 1.1092     Αἰσονίδη, χρειώ σε τόδʼ ἱερὸν εἰσανιόντα
+>> 1.1093     Δινδύμου ὀκριόεντος ἐύθρονον ἱλάξασθαι
+   1.1094     μητέρα συμπάντων μακάρων· λήξουσι δʼ ἄελλαι
+   1.1095     ζαχρηεῖς· τοίην γὰρ ἐγὼ νέον ὄσσαν ἄκουσα
+   1.1096     ἀλκυόνος ἁλίης, ἥ τε κνώσσοντος ὕπερθεν
+   1.1097     σεῖο πέριξ τὰ ἕκαστα πιφαυσκομένη πεπότηται.
+   1.1098     ἐκ γὰρ τῆς ἄνεμοί τε θάλασσά τε νειόθι τε χθὼν
+   ...
+   1.1104     ὤρνυτο δʼ ἐξ εὐνῆς κεχαρημένος· ὦρσε δʼ ἑταίρους
+   1.1105     πάντας ἐπισπέρχων, καί τέ σφισιν ἐγρομένοισιν
+   1.1106     Ἀμπυκίδεω Μόψοιο θεοπροπίας ἀγόρευεν.
+   1.1107     αἶψα δὲ κουρότεροι μὲν ἀπὸ σταθμῶν ἐλάσαντες
+   1.1108     ἔνθεν ἐς αἰπεινὴν ἄναγον βόας οὔρεος ἄκρην.
+   1.1109     οἱ δʼ ἄρα λυσάμενοι Ἱερῆς ἐκ πείσματα πέτρης
+   1.1110     ἤρεσαν ἐς λιμένα Θρηίκιον· ἂν δὲ καὶ αὐτοὶ
+   1.1111     βαῖνον, παυροτέρους ἑτάρων ἐν νηὶ λιπόντες.
+>> 1.1112     τοῖσι δὲ Μακριάδες σκοπιαὶ καὶ πᾶσα περαίη
+>> 1.1113     Θρηικίης ἐνὶ χερσὶν ἑαῖς προυφαίνετʼ ἰδέσθαι·
+   1.1114     φαίνετο δʼ ἠερόεν στόμα Βοσπόρου ἠδὲ κολῶναι
+   1.1115     Μυσίαι· ἐκ δʼ ἑτέρης ποταμοῦ ῥόος Αἰσήποιο
+   1.1116     ἄστυ τε καὶ πεδίον Νηπήιον Ἀδρηστείης.
+   1.1117     ἔσκε δέ τι στιβαρὸν στύπος ἀμπέλου ἔντροφον ὕλῃ,
+   1.1118     πρόχνυ γεράνδρυον· τὸ μὲν ἔκταμον, ὄφρα πέλοιτο
+   ...
+   1.1142     δένδρεα μὲν καρπὸν χέον ἄσπετον, ἀμφὶ δὲ ποσσὶν
+   1.1143     αὐτομάτη φύε γαῖα τερείνης ἄνθεα ποίης.
+   1.1144     θῆρες δʼ εἰλυούς τε κατὰ ξυλόχους τε λιπόντες
+   1.1145     οὐρῇσιν σαίνοντες ἐπήλυθον. ἡ δὲ καὶ ἄλλο
+   1.1146     θῆκε τέρας· ἐπεὶ οὔτι παροίτερον ὕδατι νᾶεν
+   1.1147     Δίνδυμον· ἀλλά σφιν τότʼ ἀνέβραχε διψάδος αὔτως
+   1.1148     ἐκ κορυφῆς ἄλληκτον· Ἰησονίην δʼ ἐνέπουσιν
+   1.1149     κεῖνο ποτὸν κρήνην περιναιέται ἄνδρες ὀπίσσω.
+>> 1.1150     καὶ τότε μὲν δαῖτʼ ἀμφὶ θεᾶς θέσαν οὔρεσιν Ἄρκτων,
+>> 1.1151     μέλποντες Ῥείην πολυπότνιαν· αὐτὰρ ἐς ἠὼ
+>> 1.1152     ληξάντων ἀνέμων νῆσον λίπον εἰρεσίῃσιν.
+   1.1153     ἔνθʼ ἔρις ἄνδρα ἕκαστον ἀριστήων ὀρόθυνεν,
+   1.1154     ὅστις ἀπολλήξειε πανύστατος. ἀμφὶ γὰρ αἰθὴρ
+   1.1155     νήνεμος ἐστόρεσεν δίνας, κατὰ δʼ εὔνασε πόντον.
+   1.1156     οἱ δὲ γαληναίῃ πίσυνοι ἐλάασκον ἐπιπρὸ
+   1.1157     νῆα βίῃ· τὴν δʼ οὔ κε διὲξ ἁλὸς ἀίσσουσαν
+
+==============================================================================================================
+{
+ "set": "ARG-CIUS",
+ "clue_id": "ARG-CIUS-07",
+ "kind": "season",
+ "statement": "On Night -2 a halcyon flies over the sleeping Jason, prophesying the end of the winds.",
+ "licence_words": "πωτᾶτʼ ἀλκυονὶς λιγυρῇ ὀπὶ θεσπίζουσα λῆξιν ὀρινομένων ἀνέμων",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1084",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1085",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1086",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.1.1087"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "Night -2 within +-7 days of the winter solstice",
+   "justification": "the halcyon days: halcyons breed at midwinter, seven days before and seven after, with calm seas [pliny-nh-lat.tsv 10.32.1; also 18.26.1]"
+  },
+  {
+   "option": "b",
+   "operational": "Night -2 within +-15 days of the Pleiades' morning setting or of either solstice",
+   "justification": "Pliny says the halcyon is seen only at the setting of the Vergiliae and about the solstices [pliny-nh-lat.tsv 10.32.1]; the +-15-day width is the drafter's (Pliny gives none)"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "a bird-omen of calm; the text names no season"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "Not a star clue: the season enters only through ancient bird lore, as the Odyssey's new moon enters Apollo's feast only through a scholion.",
+ "license_check": "edited: option b's +-15-day width around the Pleiades' setting and the solstices is not in Pliny ('circa solstitia'); now marked as the drafter's. The season itself enters only through Pliny's bird lore, as the row already says, with a 'none' option"
+}
+   CHECK exact | πωτᾶτʼ ἀλκυονὶς λιγυρῇ ὀπὶ θεσπίζουσα λῆξιν ὀρινομένων ἀνέμων | in []
+   --- context (apollonius-argonautica-grc.tsv) ---
+   1.1076     Κύζικον ἐνναίοντες Ἰάονες, ἔμπεδον αἰεὶ
+   1.1077     πανδήμοιο μύλης πελάνους ἐπαλετρεύουσιν.
+   1.1078     ἐκ δὲ τόθεν τρηχεῖαι ἀνηέρθησαν ἄελλαι
+   1.1079     ἤμαθʼ ὁμοῦ νύκτας τε δυώδεκα, τοὺς δὲ καταῦθι
+   1.1080     ναυτίλλεσθαι ἔρυκον. ἐπιπλομένῃ δʼ ἐνὶ νυκτὶ
+   1.1081     ὧλλοι μέν ῥα πάρος δεδμημένοι εὐνάζοντο
+   1.1082     ὕπνῳ ἀριστῆες πύματον λάχος· αὐτὰρ Ἄκαστος
+   1.1083     Μόψος τʼ Ἀμπυκίδης ἀδινὰ κνώσσοντας ἔρυντο.
+>> 1.1084     ἡ δʼ ἄρʼ ὑπὲρ ξανθοῖο καρήατος Αἰσονίδαο
+>> 1.1085     πωτᾶτʼ ἀλκυονὶς λιγυρῇ ὀπὶ θεσπίζουσα
+>> 1.1086     λῆξιν ὀρινομένων ἀνέμων· συνέηκε δὲ Μόψος
+>> 1.1087     ἀκταίης ὄρνιθος ἐναίσιμον ὄσσαν ἀκούσας.
+   1.1088     καὶ τὴν μὲν θεὸς αὖτις ἀπέτραπεν, ἷζε δʼ ὕπερθεν
+   1.1089     νηίου ἀφλάστοιο μετήορος ἀίξασα.
+   1.1090     τὸν δʼ ὅγε κεκλιμένον μαλακοῖς ἐνὶ κώεσιν οἰῶν.
+   1.1091     κινήσας ἀνέγειρε παρασχεδόν, ὧδέ τʼ ἔειπεν·
+   1.1092     Αἰσονίδη, χρειώ σε τόδʼ ἱερὸν εἰσανιόντα

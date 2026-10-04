@@ -1,0 +1,6 @@
+year -1177  AV  8: Arcturus morning first (-1177, 9, 9, -8.088166340717796)
+year -1177  AV 10: Arcturus morning first (-1177, 9, 12, -10.934223991382007)
+year -1177  AV 12: Arcturus morning first (-1177, 9, 14, -12.832059510423719)
+year -1130  AV  8: Arcturus morning first (-1130, 9, 10, -8.78120335257159)
+year -1130  AV 10: Arcturus morning first (-1130, 9, 12, -10.680516166817618)
+year -1130  AV 12: Arcturus morning first (-1130, 9, 14, -12.580167849124537)

@@ -1,0 +1,7 @@
+ithaca      38.370  20.720: rows 2138 vs 2138; rows differing 0; identical=True
+kefalonia   38.180  20.490: rows 2138 vs 2138; rows differing 0; identical=True
+lefkada     38.830  20.710: rows 2138 vs 2138; rows differing 1984; identical=False
+lefkada     38.707  20.712: rows 2138 vs 2138; rows differing 2138; identical=False
+lefkada     38.830  20.700: rows 2138 vs 2138; rows differing 0; identical=True
+corfu       39.620  19.920: rows 2138 vs 2138; rows differing 0; identical=True
+zakynthos   37.780  20.900: rows 2138 vs 2138; rows differing 0; identical=True

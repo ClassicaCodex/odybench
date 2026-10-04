@@ -1,0 +1,158 @@
+  0 region  '# odybench — design (revision 6)' .. '**Status.**': 5865 -> 5878 chars
+  1 region  '**Status.**' .. 'Section 2 lists what is alread': 942 -> 1196 chars
+  2 sub     '  the mixture**, each model converted to the frame of the elements or\n'
+  3 sub     'section 14 numbers its own R2-1 to R2-12 as 43–54 |'
+  4 sub     '| [r1v5: script] | a script of that recheck in `results/critique-desig'
+  5 sub     '| [v1 §n] … [v5 §n] | `docs/DESIGN-v1.md` … `docs/DESIGN-v5.md` (revis'
+  6 sub     "revision 5's in `results/design-revision-v5/` and revision 6's in `res"
+  7 sub     "`results/design-revision-v5/preserved_sha256.txt` and, for revision 6'"
+  8 region  '3. **The method cannot see**, split by component [' .. '**Inconclusive** is reported w': 1682 -> 2603 chars
+  9 region  '| qualifier | meaning | inputs | section |' .. '**Standing findings** are prin': 2216 -> 3284 chars
+ 10 sub     '- the legs of both gates, and the star-season component that gate 3b d'
+ 11 region  '- **At the true dates** (truth-side; the tables ar' .. '**The real eclipse records** (': 680 -> 1837 chars
+ 12 sub     '- **On the known numbers gate 3a fires.** Both all-must-pass legs are\n'
+ 13 sub     '- **G_j has no estimate yet.** Nobody has computed how often a negativ'
+ 14 sub     '| v5 P27 ({inconclusive}, with Q_BM, Q_tol and Q_slot) | **no longer t'
+ 15 region  "- **Why ±700 years.** It is the band of P8's stati" .. '**The order of these choices i': 478 -> 2810 chars
+ 16 sub     '- **The other pools.** G over T_C is 0.0206, and G_BM,u = (n_A/n_T) G_'
+ 17 sub     '    - Venus stood 44.3° west of the Sun on Day −5 [unread §2.5], and V'
+ 18 sub     '  - The best-fit leg on the as-licensed primaries is expected at 4, ex'
+ 19 region  '- **Gate 3b** retains the truth in 9 of 11 sets (2' .. '  This expectation is not a pr': 1194 -> 2358 chars
+ 20 sub     'hit_j included, is target-side and is computed after the second freeze'
+ 21 sub     '   pool is spring new moons. N2 tests this: V and M pass rates on\n   e'
+ 22 sub     "  | **G_BM,u** | 𝒢_BM* | T | 136 | outcome 4: the Odyssey's coincidenc"
+ 23 sub     '  G_BM,u = (n_A(v)/n_T) G_BM(v) exactly, for v1–v5 (4.2). Each G_BM(v)'
+ 24 sub     '  I6(b), I10 and I15 now use Horizons and an independent implementatio'
+ 25 region  '| I1 | ephemeris |' .. '| I2b | language-to-magnitude': 1446 -> 2305 chars
+ 26 region  '| I15 | the held-out predicates H3 and H4, `heldou' .. "Revision 1's NC4 (the Hymn to ": 3084 -> 5111 chars
+ 27 sub     "  - The Babylonian records' own times (PB-E1, E2 and E3-TIME, primary\n"
+ 28 sub     'The rule covers all nine sets. Only R-PTOL-BAB and R-PTOL-ALEX contain'
+ 29 sub     '  war-years ± tolerance, year headings 1–3. For each anchor candidate,'
+ 30 sub     '- **ΔT**: the four-model mixture for every other ΔT-dependent row (6.3'
+ 31 sub     '**Why the gate is taken against the claim across all four legs.** Revi'
+ 32 sub     '- **The thresholds stay.** The 5% narrowing and the threshold of 4 are'
+ 33 region  '**What the expected firing does not say.** On the ' .. '**Reported for every set**, un': 612 -> 953 chars
+ 34 sub     '- **Pass rule.** A row passes for a candidate if\n  P_mix(row passes) ≥'
+ 35 sub     '     field. I13(e) checks this.\n'
+ 36 sub     '   - **Who decides.** A3 drafts the pair list from the clue file and t'
+ 37 sub     '  (`ge_after_same_apparition`, `ge_before_same_apparition`): their pri'
+ 38 sub     '**Two regimes, frozen in `data/prereg/almagest_regimes.json`** [r1 N2 '
+ 39 sub     '(records in no set included), rounded up to the next whole day [r1 N2 '
+ 40 sub     '| opposition k (full run only) | leave-one-set-out ceiling over the op'
+ 41 region  '**The gate** [r1v5 N1].' .. '**The held-out calibration (Q_': 1023 -> 3483 chars
+ 42 sub     '    in no set included). Degrees are rounded up to the next 0.1°, and '
+ 43 sub     "  - So A.4's opposition tolerance is regime SL's 1 d, not the 3 d that"
+ 44 sub     '- **The count.** held_ALM is the number of the 11 counted sets whose t'
+ 45 region  '**What is already known** (2.6; the per-set facts ' .. '**New vocabulary the harness m': 427 -> 758 chars
+ 46 sub     '- the bound `same_apparition` (A.1, B.1, I.1, J.4);'
+ 47 region  '- **Outcome 4 fires if some clean negative has hit' .. 'Also reported per set:': 1195 -> 2198 chars
+ 48 sub     '| D2 | Venus a morning star far west of the Sun around Day −5: lead 1:'
+ 49 sub     '  - It prints file names, dates and quantity codes, never values.'
+ 50 sub     '  - A0 drafts the table from that list and from the published sources,'
+ 51 sub     "  - **Why ±700 years.** It is the band of P8's stationarity test and o"
+ 52 sub     '    should not change their rates. P10 tests that on P_spring. R20 tes'
+ 53 sub     '- **Attainability, a null-side quantity** [r2 R2-1 fix 4].\n'
+ 54 sub     '  - the same within ±700 years of the target against the rest;\n'
+ 55 sub     '- **P21, P24, P25 and P27 are restated**: P21 for both legs of gate 3b'
+ 56 sub     '| R10 | In regime SL, with the ceiling tolerances and the word-only pr'
+ 57 sub     '| R27 | Q_record holds at the null-side stage: with H4 = fail in the d'
+ 58 sub     '- **P10.** V and M, and the held-out predicates H3 and H4, pass at the'
+ 59 sub     '- **P21.** seen_ALM_SL ≥ 6 on both legs: at least 6 of the 9 sets that'
+ 60 sub     '- **P24.** Q_H does not hold: at least 6 of the 11 counted *Almagest* '
+ 61 sub     '- **P25.** Outcome 4 is attainable and does not fire. At the null-side'
+ 62 sub     "- **P27.** The verdict's labels are exactly {3a}. Its qualifiers inclu"
+ 63 sub     '| Q_record | no pass pattern consistent with the `determined` values o'
+ 64 sub     '| G_BM,u; n_T | G(𝒢_BM*; T; W = 136); equal to (n_A(v)/n_T) G_BM(v) fo'
+ 65 sub     '| G_j, G_j,lo, G_j,hi; n_j | for each of the 12 clean negatives: G of '
+ 66 sub     '| seen_ALM_SL[leg], for leg ∈ {bf, st}; rec_ALM_BM | of the 11 counted'
+ 67 sub     '| held_ALM | of the 11 counted *Almagest* sets, the number whose true '
+ 68 region  '```\nif not INSTR:' .. '### 9.3 How to read it': 2889 -> 3609 chars
+ 69 sub     '  veto is gone, and label 4, which concerns the eclipse match, never b'
+ 70 sub     "  - outcome 4 uses the negative's upper bound, and Q_attain4 says when"
+ 71 sub     '  - **the gates take the decision against "the method can see"** acros'
+ 72 region  "- **The gates' thresholds** (4 of 7 and 6 of 11) a" .. '- **Label combinations.**': 221 -> 1338 chars
+ 73 sub     '  2. label 1;'
+ 74 sub     '  the return by an exact test; separately, the eclipse component, or t'
+ 75 sub     'and the verdict says so beside 3a; nothing is relaxed to avoid it (6.3'
+ 76 sub     '  6. then Q_attain, Q_record and Q_attain4, which say which outcomes c'
+ 77 region  'I14(b) checks every set against C1–C11.' .. 'A realisable set may contradic': 3094 -> 3812 chars
+ 78 region  '`data/prereg/verdict_synthetic/*.json` holds these' .. '---\n\n## 10. Software': 7814 -> 10597 chars
+ 79 sub     '  - `data/prereg/*.json` except `*truth*`, and `data/jsex/`, `data/eph'
+ 80 sub     '    - for every other file it holds only the rows that `negatives.json'
+ 81 sub     '  - these notes: `docs/research-bm2008*.md`, `research-chronology.md`,'
+ 82 sub     '  `data/ref*/`, and the rest of `results/`.'
+ 83 sub     '1. **Before any public-tier agent starts**, A0 writes `access.json`. A'
+ 84 sub     '  - a script the agent wrote or ran that names such a path.\n'
+ 85 sub     '`odybench/model.py`; `data/prereg/access.json` (first, step 1 above); '
+ 86 sub     '(6.4: options, parameters, held-out rows and their ceiling tolerances,'
+ 87 sub     '`tools/make_redraft_brief.py`, `tests/test_clues.py`'
+ 88 sub     '| A6 harness and verdict | truth | `tools/public_design.py`, `tools/ex'
+ 89 sub     '`tests/control_reference.py` (I16) |'
+ 90 region  '**`odybench/deltat_mix.py`** (the four-model mixtu' .. '**`odybench/eclipses.py`**': 276 -> 1328 chars
+ 91 sub     'local(ecl, lat, lon, dt_s, elev_m=0.0) -> dict(smag, obsc, central, du'
+ 92 sub     'local(lecl, lat, lon, dt_s) -> dict(moon_alt at each contact, moonrise'
+ 93 sub     'load_controls_almagest(regime="SL"|"BM"|"held_out") / load_negatives()'
+ 94 sub     '      # scorings; site-"none" rows use the shortcut of 6.3.1'
+ 95 region  'reference_fails(clueset_json: dict, projection: di' .. '**`odybench/pools.py`, `readin': 430 -> 1378 chars
+ 96 sub     '      -> dict(seen_bf, seen_st, strict_recall, f_truth, rank, resoluti'
+ 97 sub     'heldout.stationarity(flags_null: dict, years: dict) -> dict(table, fis'
+ 98 sub     'attain.run() -> writes results/attain/attain.json            # n_T, n_'
+ 99 sub     '`attain.json` is the only file the second freeze commits besides its t'
+100 sub     '| `ge_relation` | body, side, before or after, j days or `same_apparit'
+101 sub     '- **ΔT-dependent predicates** pass when P_mix ≥ 0.5 (`dt_rule="mixture'
+102 sub     "- **Linked rows** (6.5). A row whose day another row's option sets is "
+103 sub     '  "none" and his three computed Alexandrian mid-times to ±1 h (6.3). E'
+104 sub     '| `deltat_mix.py` | `ephem.delta_t` and `ephem.delta_t_sigma` evaluate'
+105 sub     '| the control searches: `search.py` and `harness.score` | `tests/contr'
+106 sub     '| `coincidence.py` | N2 | `results/n2/` |'
+107 sub     '| `controls.py` | I16(b) first, then PC-R on both projections and both'
+108 sub     '| `almagest.py` | I16(b) first, then the *Almagest* control on both sc'
+109 sub     '| `attain.py` | the null-side stage: pools with the target masked; G_B'
+110 sub     '  and `tools/run_i2b.py` (6.1, 12.1).'
+111 sub     '| `control_reference.py` | I16 |'
+112 sub     '| **Horizons geocentric tables** (QUANTITIES 31 and 23, TT): 200 rando'
+113 sub     'the disclosure scan and `heldout_disclosure.json` (7.1);'
+114 region  '| 6 | null side | I7(a), I9(b, c), I11, I15(a, b) ' .. '| 7 | | **second freeze**': 697 -> 1026 chars
+115 sub     '| 16 | target and controls | PC-R and the *Almagest* control, with its'
+116 sub     'After the first freeze, about 8–14 hours of computation remain.'
+117 sub     '2. The pre-freeze instrument checks pass: I1, I2, I4 (after its conven'
+118 sub     '   values of both regimes for every projected row, and the ceiling\n   '
+119 sub     '   - A9 has checked it;\n   - nobody has read a value that the table ma'
+120 sub     '    - I13(h) has passed on both the copy and the text export;'
+121 sub     '  - after the null-side stage, `results/attain/`.'
+122 sub     '- **The checks.** It runs I7(a), I9(b, c), I11, I15(a, b) and I16(a) f'
+123 sub     '  - whether S4 is realisable, which is Q_attain4 [r1v5 N5];'
+124 sub     '  - is outcome 4 attainable (Q_attain4)?'
+125 sub     '| 62 | Whether the held-out rates are stationary over the background |'
+126 sub     'Five tables follow:'
+127 sub     '- **14.5 gives the 15 issues N1–N15 of the recheck of revision 5 [r1v5'
+128 sub     "marked **Departure**. Rows 26–66 keep revision 5's text, and where rev"
+129 sub     'The recheck of revision 5 found 22 of these resolved, and #11, #13 and'
+130 sub     'Every set marked realisable uses the design-stage null side (C7), and '
+131 sub     'pct_N4 stays in label 2 | 1.3, 2.9, 2.10, 3.5, 4.2, 5.4, 6.5, 7, 9, 12'
+132 sub     "which is this issue's fix 4 [N13] | 1.3, 2.6, 6.3, 6.4, 9 |"
+133 sub     "Every INSTR row now states its reference's measured accuracy (6.1) | 6"
+134 sub     'Section 8 counts only quantities that need new runs | 2.7, 2.10, 8 |'
+135 sub     'P25 now predicts attainability as well as the absence of label 4 | 1.3'
+136 sub     '---\n\n## Sources'
+137 sub     '  `scan_public_leaks.py`, `neg_garden_sizes.py`, `real_rows.py`,\n  `du'
+138 sub     '- `DESIGN-v1.md` to `DESIGN-v5.md`, revisions 1–5 of this design.'
+139 sub     'Each script has its `.out.txt` beside it.'
+140 sub     '| 55 | Whether any clean negative could fire outcome 4 | it needs a ga'
+141 sub     '**`tests/control_reference.py`** (I16, A7) exposes one function, so th'
+142 sub     '  Revisions 4–6 keep them unchanged, and the order is recorded here [r'
+143 sub     'Revisions 5 and 6 keep the numbering. A withdrawn prediction keeps its'
+144 sub     '  revision 1, with their resolution as of revision 6;'
+145 sub     '| # | severity | resolution, as of revision 6 | sections |'
+146 sub     '`results/design-revision-v6/verdict_trace.py`, an independent transcri'
+147 sub     '    port), and `design-revision-v6/alm_rows.py`, `pcr_rows.py` and\n   '
+148 sub     "`results/design-revision-v6/verdict_trace.py`'s `p_pool`, an independe"
+149 sub     '| `pcr_projection.json` | `results/design-revision-v6/pcr_rows.py`, a '
+150 sub     '| `verdict_rule.py` | the synthetic sets as traced by `results/design-'
+151 sub     '   it must equal `results/design-revision-v6/pcr_rows.out.txt` (I13(f)'
+152 sub     '      # violated constraints C1-C11 of 9.4; [] if realisable, "pending'
+153 sub     '### T2b. The held-out tolerances under the ceiling rule of 6.4'
+154 sub     '### T3. The real eclipse records at the accepted dates'
+155 sub     "### T4. The controls in the data behind SMH's ΔT fits"
+156 sub     '### T7. The data coverage of the control windows'
+157 operations; 406738 -> 469534 characters; 6311 lines written to DESIGN.md

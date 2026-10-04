@@ -1,0 +1,6 @@
+Appendix T items: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+qualifiers in 9.2: ['Q_BM', 'Q_H', 'Q_attain', 'Q_attain4', 'Q_contra', 'Q_dT', 'Q_exposure', 'Q_record', 'Q_score', 'Q_slot', 'Q_tol']
+synthetic sets: 21 in 9.5, 21 in the trace
+section 13 rows: 1..62 (62)
+5650 lines; 84 numbered headings
+no problems found

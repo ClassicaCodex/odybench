@@ -1,0 +1,6 @@
+00-header.md: 469534 -> 469071 chars; start 'Revision 7, written 2026-10-04. Revisions 1–6 are '; end '- **Freezing:** everything in sections 3'; keep_end True
+02-table23.md: 470526 -> 471290 chars; start "**P(total at Ithaki) per ΔT model**, each model's "; end '(0.252) the mixture is 0.309 [me]. The 1'; keep_end False
+06-outcome4.md: 483297 -> 485163 chars; start '- **Whether outcome 4 could fire at all** is known'; end '    label 4" then means nothing, and the'; keep_end False
+09-rule.md: 487872 -> 488133 chars; start '# gate 3a: four legs, the decision taken against "'; end 'if any(hit_j[j] and G_j_hi[j] <= G_BM_u_'; keep_end False
+09-sets-text.md: 490365 -> 491389 chars; start '**What each set shows:**'; end '- All of this is recorded at the second '; keep_end False
+14-review-r3v7.md: 494934 -> 505276 chars; start 'unless one negative meets both conditions, against'; end '8, 9.\n'; keep_end False

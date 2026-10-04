@@ -1,0 +1,201 @@
+docs/critique-design-r1.md                                                     text        2  H3-other:2
+docs/critique-design.md                                                        text       11  D2:3 OTHER:8
+docs/data-acquisition.md                                                       text        5  OTHER:5
+docs/DESIGN-v1.md                                                              text       16  D2:1 ECL:1 OTHER:14
+docs/DESIGN-v2.md                                                              text       33  D2:2 ECL:4 OTHER:27
+docs/DESIGN-v3.md                                                              text       36  D2:2 ECL:5 OTHER:29
+docs/DESIGN-v4.md                                                              text       52  D2:2 ECL:5 H4-other:2 OTHER:43
+docs/DESIGN-v5.md                                                              text       52  D2:2 ECL:5 H4-other:2 OTHER:43
+docs/DESIGN-v6.md                                                              text       57  D2:2 D4:1 ECL:7 H3-other:1 H4-other:1 OTHER:45
+docs/DESIGN-v7.md                                                              text       57  D2:2 D4:1 ECL:7 H3-other:1 H4-other:1 OTHER:45
+docs/research-bm2008-a.md                                                      text       11  ECL:4 H3-other:1 OTHER:6
+docs/research-bm2008-b.md                                                      text       12  D2:1 ECL:2 OTHER:9
+docs/research-bm2008.md                                                        text       14  D4:1 ECL:3 H3-other:1 OTHER:9
+docs/research-chronology.md                                                    text        3  OTHER:3
+docs/research-controls.md                                                      text        1  ECL:1
+docs/research-critiques.md                                                     text       13  ECL:7 OTHER:6
+docs/research-ephemeris.md                                                     text       36  ECL:7 H3-other:5 H4-other:3 OTHER:21
+docs/research-textclues.md                                                     text        8  H2:2 OTHER:6
+docs/research-unread-primaries.md                                              text       18  ECL:3 H4-other:1 OTHER:14
+docs/research-visibility.md                                                    text        9  D2:1 D4:1 OTHER:7
+docs/research-window.md                                                        text        6  ECL:4 OTHER:2
+docs/research_visibility_calc.py                                               text        3  D4:1 OTHER:2
+docs/textclues-scripts/moon.py                                                 text        2  OTHER:2
+results/bm2008-reconcile/check_extras.out.txt                                  text        4  OTHER:4
+results/bm2008-reconcile/check_extras.py                                       text        1  OTHER:1
+results/controls/hzcache/0a3544099a35090dcd07ff06d0ab93ee.txt                  horizons    1  OTHER:1
+results/controls/hzcache/0b55dcebced6bdd7dd53bb53f4cbbaa8.txt                  horizons    1  OTHER:1
+results/controls/hzcache/0d771dc1bd4c84e30b9e9bf8cbabffcd.txt                  horizons    1  OTHER:1
+results/controls/hzcache/13f9e12d26b84660307fa918c91ed0d1.txt                  horizons    1  OTHER:1
+results/controls/hzcache/14ea6ec31e818eda4762c725bdc5bf6f.txt                  horizons    1  OTHER:1
+results/controls/hzcache/16b5da9fe6cdc842d0ec1f8ab5b31371.txt                  horizons    1  OTHER:1
+results/controls/hzcache/19a459b7f10a4add62c4445e73946272.txt                  horizons    1  OTHER:1
+results/controls/hzcache/1cd79a50309175a508754f905be2fa56.txt                  horizons    1  OTHER:1
+results/controls/hzcache/228b852851efaf8325c3fafb050a628e.txt                  horizons    1  OTHER:1
+results/controls/hzcache/2d2ecbc7c6ebd36fd75dbb5e9c031923.txt                  horizons    1  OTHER:1
+results/controls/hzcache/2dce4b7d9d2c6de1b95df7ae42d98acd.txt                  horizons    1  OTHER:1
+results/controls/hzcache/2e9b979d979103bd2a30175d848b5f4f.txt                  horizons    1  OTHER:1
+results/controls/hzcache/2f44a069633777131bfb0e6e00ccc56f.txt                  horizons    1  OTHER:1
+results/controls/hzcache/323ea4ba1e1af70c714bf5d71d1bd802.txt                  horizons    1  OTHER:1
+results/controls/hzcache/338f3407dee7242921e9aaada2bd3ff1.txt                  horizons    1  OTHER:1
+results/controls/hzcache/36e60c3a1fde4adcd9615a7a9482eddf.txt                  horizons    1  OTHER:1
+results/controls/hzcache/3807630a9311987a76d80694d9e6bbb8.txt                  horizons    1  OTHER:1
+results/controls/hzcache/3a60444b862e93284752a6ca06515b51.txt                  horizons    1  OTHER:1
+results/controls/hzcache/40148e610a0e26446a969780112056c3.txt                  horizons    1  OTHER:1
+results/controls/hzcache/450198cbdd9155b1aa7cf64c864399f9.txt                  horizons    1  OTHER:1
+results/controls/hzcache/4542405441675c99f1301123edb850e6.txt                  horizons    1  OTHER:1
+results/controls/hzcache/4f3a59f308b7216bc5330cefc4927bca.txt                  horizons    1  OTHER:1
+results/controls/hzcache/5393730f60818131ae7264d56618014a.txt                  horizons    1  OTHER:1
+results/controls/hzcache/556b2e59aedb3434b60f5acfd2e9ae79.txt                  horizons    1  OTHER:1
+results/controls/hzcache/5b485523de4e4dd76ab4279fd5d23e0b.txt                  horizons    1  OTHER:1
+results/controls/hzcache/60dda44b6279f3420ffeaa7079ecc964.txt                  horizons    1  OTHER:1
+results/controls/hzcache/6438760b225f61c54e26c06668143584.txt                  horizons    1  OTHER:1
+results/controls/hzcache/64445ee6676eb65d564b531cc01a208c.txt                  horizons    1  OTHER:1
+results/controls/hzcache/6beaed4c5996942a28b83360de7a3e8d.txt                  horizons    1  OTHER:1
+results/controls/hzcache/6bff338edf6d697f2f54fea0469043cb.txt                  horizons    1  OTHER:1
+results/controls/hzcache/71149055d35b7674e6e4414d3b51770f.txt                  horizons    1  OTHER:1
+results/controls/hzcache/7698c0b974c3f146dcaedb3178dd121d.txt                  horizons    1  OTHER:1
+results/controls/hzcache/79da3eda76255417e7f33ae1c6b92f90.txt                  horizons    1  OTHER:1
+results/controls/hzcache/83c08ab4c0a63d0be77bb8e9264e9782.txt                  horizons    1  OTHER:1
+results/controls/hzcache/875d2306986cc7bf6ed4a72e9162b0c5.txt                  horizons    1  OTHER:1
+results/controls/hzcache/969040eebf20a52ecb97ad0d265e8af1.txt                  horizons    1  OTHER:1
+results/controls/hzcache/9c0a60b78e6123707430012c313bf73b.txt                  horizons    1  OTHER:1
+results/controls/hzcache/9e5bd021393169a617ce54ebc8947030.txt                  horizons    1  OTHER:1
+results/controls/hzcache/a61af287e0c31e325562598618c1f0c2.txt                  horizons    1  OTHER:1
+results/controls/hzcache/a8c5c318dd36e4dc9ccca601d85f3dd4.txt                  horizons    1  OTHER:1
+results/controls/hzcache/b15cb09238f8b2f9b22a1c40c3f51d3a.txt                  horizons    1  OTHER:1
+results/controls/hzcache/b41683bb13728e7ed6a09fc8910971a9.txt                  horizons    1  OTHER:1
+results/controls/hzcache/b4b502034553347688da308be1b7e552.txt                  horizons    1  OTHER:1
+results/controls/hzcache/b56a5c01fcb267a9e06dce86a126e2c3.txt                  horizons    1  OTHER:1
+results/controls/hzcache/b8291c813d60edebada2fad422b89b13.txt                  horizons    1  OTHER:1
+results/controls/hzcache/b8d24a009e308ad538479c6a1bb54e90.txt                  horizons    1  OTHER:1
+results/controls/hzcache/c08a9ca5027d5c1c475a6e98f8b50529.txt                  horizons    1  OTHER:1
+results/controls/hzcache/c8a0c304df95654352d90c53bfc63fa7.txt                  horizons    1  OTHER:1
+results/controls/hzcache/e4931e12c0bb390c3a75993930e0854d.txt                  horizons    1  OTHER:1
+results/controls/hzcache/e60fdf6bf296c473f6c0619b596c82ed.txt                  horizons    1  OTHER:1
+results/controls/nasa/LEcat5_LE-1199--1100.txt                                 text        1  OTHER:1
+results/controls/nasa/SEcat5_SE-1199--1100.txt                                 text        1  OTHER:1
+results/controls/run_extra.out.txt                                             text        1  OTHER:1
+results/controls/run_extra.py                                                  text        1  OTHER:1
+results/controls/run_solar.out.txt                                             text        2  OTHER:2
+results/controls/run_solar.py                                                  text        1  OTHER:1
+results/critique-design/check_mag09.py                                         text        1  OTHER:1
+results/critique-design/check_mwra.out.txt                                     text       13  OTHER:13
+results/critique-design/check_venus.out.txt                                    text        1  D2:1
+results/critique-design-r1/check_ranc_season.out.txt                           text        1  OTHER:1
+results/critique-design-r1/check_ranc_season.py                                text        1  OTHER:1
+results/critique-design-r1/v5/scan_public_leaks.out.txt                        text        1  OTHER:1
+results/critique-design-r2/check_gbm.out.txt                                   text       41  OTHER:41
+results/critique-design-r2/check_gbm.py                                        text        5  OTHER:5
+results/critique-design-r2/check_gbm.rows.json                                 json        4  OTHER:4
+results/critique-design-r2/check_gbm_full.out.txt                              text       41  OTHER:41
+results/critique-design-r2/check_gbm_full.rows.json                            json        4  OTHER:4
+results/critique-design-r2/check_ranc_p19.py                                   text        1  OTHER:1
+results/critique-design-r2/check_slot_scaling.py                               text        1  OTHER:1
+results/critique-design-r2/v6/scan_public_leaks_v6.out.txt                     text        1  OTHER:1
+results/critique-design-r3/i2c_table_gap.py                                    text        1  ECL:1
+results/data-acquisition/check_jsex.out.txt                                    text        1  OTHER:1
+results/data-acquisition/check_jsex.py                                         text        1  OTHER:1
+results/data-acquisition/debug_jsex.py                                         text        1  OTHER:1
+results/data-acquisition/ephem_orig.py                                         text        3  ECL:1 OTHER:2
+results/data-acquisition/validate_coverage.out.txt                             text        2  H4-other:1 OTHER:1
+results/data-acquisition/validate_ephem.after.txt                              text       25  D5-output:25
+results/data-acquisition/validate_ephem.after1.txt                             text       25  D5-output:25
+results/data-acquisition/validate_ephem.before.txt                             text       25  D5-output:25
+results/design-check-v8/check_v8.py                                            text        1  OTHER:1
+results/design-revision-r2/parts/p00_head.md                                   text        1  OTHER:1
+results/design-revision-r2/parts/p10_software.md                               text        1  OTHER:1
+results/design-revision-r2/parts/p13_open.md                                   text        1  OTHER:1
+results/design-revision-r2/parts/p26_known_controls.md                         text        1  OTHER:1
+results/design-revision-r2/parts/p53_garden.md                                 text        5  ECL:1 OTHER:4
+results/design-revision-r2/parts/p57_evidence.md                               text        1  OTHER:1
+results/design-revision-r2/parts/p7_heldout.md                                 text        1  OTHER:1
+results/design-revision-r2/parts/p8_predictions.md                             text        6  ECL:1 OTHER:5
+results/design-revision-r3/heldout_attain.py                                   text        1  OTHER:1
+results/design-revision-r3/parts/00_header.md                                  text        1  OTHER:1
+results/design-revision-r3/parts/12_freeze.md                                  text        1  OTHER:1
+results/design-revision-r3/parts/13_outcomes.md                                text        2  OTHER:2
+results/design-revision-r3/parts/210_imply.md                                  text        3  H4-other:1 OTHER:2
+results/design-revision-r3/parts/27_settled.md                                 text        1  OTHER:1
+results/design-revision-r3/parts/29_known.md                                   text        4  OTHER:4
+results/design-revision-r3/parts/35_t0.md                                      text        2  OTHER:2
+results/design-revision-r3/parts/42_pools.md                                   text        2  H4-other:1 OTHER:1
+results/design-revision-r3/parts/54_n4.md                                      text        1  OTHER:1
+results/design-revision-r3/parts/61_instr.md                                   text        1  OTHER:1
+results/design-revision-r3/parts/8_predictions.md                              text        4  ECL:1 OTHER:3
+results/design-revision-r3/parts/9_rule.md                                     text        2  OTHER:2
+results/design-revision-v5/critique-design-r1.recheck-of-rev2.md               text        3  OTHER:3
+results/design-revision-v5/critique-design-r2.recheck-of-rev3.md               text        8  OTHER:8
+results/design-revision-v5/heldout_strata.py                                   text        1  OTHER:1
+results/design-revision-v6/critique-design-r1.recheck-of-rev5.md               text        2  H3-other:2
+results/design-revision-v6/heldout_epochs.py                                   text        1  OTHER:1
+results/design-revision-v6/parts/00_header.md                                  text        1  OTHER:1
+results/design-revision-v6/parts/13_outcomes.md                                text        2  OTHER:2
+results/design-revision-v6/parts/210_implied.md                                text        2  OTHER:2
+results/design-revision-v6/parts/61_instr.md                                   text        1  ECL:1
+results/design-revision-v6/parts/7_heldout.md                                  text        3  D4:1 ECL:1 H3-other:1
+results/design-revision-v6/parts/8_predictions.md                              text        4  ECL:1 OTHER:3
+results/design-revision-v6/parts/9_rule.md                                     text        3  OTHER:3
+results/design-revision-v6/preserved_sha256.txt                                text        4  H3-other:2 OTHER:2
+results/design-revision-v7/heldout_exch.py                                     text        1  OTHER:1
+results/design-revision-v7/parts/00-header.md                                  text        1  OTHER:1
+results/design-revision-v8/design-v7-to-v8.diff                                text        9  ECL:5 OTHER:4
+results/design-revision-v8/DESIGN-v8-before-c8.md                              text       59  D2:2 D4:1 ECL:8 H3-other:1 H4-other:1 OTHER:46
+results/design-revision-v8/design-v8-c8.diff                                   text        1  ECL:1
+results/design-revision-v8/i2c_table.py                                        text        1  OTHER:1
+results/design-revision-v8/parts/06-outcome4.md                                text        1  OTHER:1
+results/design-revision-v8/parts/14-review-r3v7.md                             text        1  ECL:1
+results/design-revision-v8/verdict_trace.py                                    text        1  OTHER:1
+results/research-critiques/ionian_eclipses.py                                  text        1  ECL:1
+results/research-critiques/jsex_ithaki_-1399_-1000.txt                         text        1  OTHER:1
+results/research-critiques/sites_check.md                                      text        1  OTHER:1
+results/research-critiques/table_ithaki.md                                     text        1  OTHER:1
+results/research-visibility-mornings.npz                                       npz         8  OTHER:8
+results/research-visibility.json                                               json      104  D4:3 H3-other:26 OTHER:75
+results/unread-primaries/deltat_checks.py                                      text        2  OTHER:2
+results/unread-primaries/deltat_checks.txt                                     text        1  OTHER:1
+results/unread-primaries/foh.html                                              text        1  ECL:1
+results/unread-primaries/jd_checks.py                                          text        5  ECL:1 OTHER:4
+results/unread-primaries/jd_checks.txt                                         text        5  ECL:1 OTHER:4
+results/unread-primaries/pap2012.txt                                           text        5  OTHER:5
+results/unread-primaries/pap2012_foh.pdf                                       pdf         5  OTHER:5
+results/unread-primaries/venus_elongation_check.py                             text        2  OTHER:2
+results/unread-primaries/venus_elongation_check.txt                            text        2  OTHER:2
+results/validate_ephem.txt                                                     text       25  D5-output:25
+results/window/jsex/corfu.jsonl                                                text        1  OTHER:1
+results/window/jsex/ithaca.jsonl                                               text        1  OTHER:1
+results/window/jsex/kefalonia.jsonl                                            text        1  OTHER:1
+results/window/jsex/lefkada.jsonl                                              text        1  OTHER:1
+results/window/jsex/SEm1199.js                                                 text        1  OTHER:1
+results/window/jsex/windows-out.txt                                            text       20  ECL:6 OTHER:14
+results/window/jsex/zakynthos.jsonl                                            text        1  OTHER:1
+data/bm2008-a/baikouzis-magnasco-2008-pnas.pdf                                 pdf        13  ECL:6 OTHER:7
+data/bm2008-a/bm2008-pmc-fulltext.txt                                          text       13  ECL:7 OTHER:6
+data/ephem/horizons/calendar_probe_5.txt                                       horizons    1  OTHER:1
+data/ephem/horizons/sun_moon_m1177_04_16_eclipse_10.txt                        horizons    2  D6:2
+data/ephem/horizons/sun_moon_m1177_04_16_eclipse_301.txt                       horizons    2  D6:2
+data/ephem/horizons/venus_mercury_m1177_03_14_dusk_199.txt                     horizons    2  D5:2
+data/ephem/horizons/venus_mercury_m1177_03_14_dusk_299.txt                     horizons    2  D5:2
+data/ephem/horizons/venus_mercury_m1177_04_10_dawn_199.txt                     horizons    2  D5:2
+data/ephem/horizons/venus_mercury_m1177_04_10_dawn_299.txt                     horizons    2  D5:2
+data/jsex/SEm1199.js                                                           text        1  OTHER:1
+data/jsex/sites/corfu.jsonl                                                    text        1  OTHER:1
+data/jsex/sites/ithaca.jsonl                                                   text        1  OTHER:1
+data/jsex/sites/kefalonia.jsonl                                                text        1  OTHER:1
+data/jsex/sites/lefkada.jsonl                                                  text        1  OTHER:1
+data/jsex/sites/zakynthos.jsonl                                                text        1  OTHER:1
+data/ref/nasa_5mcse_catalog_lines.txt                                          text        1  OTHER:1
+data/ref/nasa_besselian_-11770416.txt                                          text        5  ECL:3 OTHER:2
+data/refs/baikouzis-magnasco-2008.pdf                                          pdf        12  ECL:5 OTHER:7
+data/refs/bm2008.txt                                                           text       13  ECL:4 H3-other:1 OTHER:8
+data/refs/nasa/JSEX-SEm1199.js                                                 text        1  OTHER:1
+data/refs/nasa/SEcat5_SE-1199--1100.html                                       text        1  OTHER:1
+data/refs/nasa/SEdata_-11770416.html                                           text        6  ECL:3 OTHER:3
+data/refs/nasa/SEhistory.html                                                  text        2  ECL:1 OTHER:1
+data/refs/nasa/SEsaros039.html                                                 text        1  OTHER:1
+data/refs/pap2012.txt                                                          text        5  OTHER:5
+data/refs/papamarinopoulos-2012-maa-12-117.pdf                                 pdf         5  OTHER:5
+data/sources/bm2008-b/baikouzis-magnasco-2008-pnas.pdf                         pdf        12  ECL:5 OTHER:7
+data/stars.json                                                                json        1  OTHER:1
+Counter({'OTHER': 842, 'ECL': 132, 'D5-output': 100, 'H3-other': 44, 'D2': 21, 'H4-other': 14, 'D4': 10, 'D5': 8, 'D6': 4, 'H2': 2})
+errors []

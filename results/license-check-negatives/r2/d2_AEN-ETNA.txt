@@ -1,0 +1,287 @@
+====================================================================================================
+SET AEN-ETNA
+{
+ "set": "AEN-ETNA",
+ "role": "negative",
+ "searchable": true,
+ "text": "Virgil, Aeneid 3.568-3.654 (the night under Etna and Achaemenides)",
+ "text_file": "virgil-aeneid-lat.tsv",
+ "edition_id": 1827,
+ "day0": "Day 0 is the day the fleet reaches the Cyclopes' shore at sunset; Night 0 is the cloudy night; Dawn +1 rises 'with the first Eous'; Achaemenides speaks on Day +1.",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "observer_places": [
+  {
+   "place": "the Cyclopes' harbour under Etna (Sicily)",
+   "words": "Cyclopum adlabimur oris … iuxta tonat Aetna",
+   "ref": [
+    "3.569",
+    "3.570",
+    "3.571"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "lat": 37.5636,
+   "lon": 15.1614,
+   "coord_source": "Aci Trezza (Wikipedia, fetched 2026-10-04), the drafter's point on the Etna coast"
+  }
+ ],
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "AEN-ETNA-02": "a",
+   "AEN-ETNA-03": "vis7",
+   "AEN-ETNA-04": "a"
+  },
+  "BM-analogue": {
+   "AEN-ETNA-02": "a",
+   "AEN-ETNA-03": "lead90",
+   "AEN-ETNA-04": "a"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "text",
+   "clue_ids": [
+    "AEN-ETNA-02",
+    "AEN-ETNA-04"
+   ],
+   "note": "a Moon up at midnight and waxing on Day +1: a phase constraint, not a conjunction"
+  },
+  "season_stars": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "morning_star": {
+   "status": "fork",
+   "clue_ids": [
+    "AEN-ETNA-03"
+   ],
+   "note": "'primo Eoo' at Dawn +1, if Eous is the morning star"
+  },
+  "mercury_turning_point": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "darkness_eclipse": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": "Night 0 is starless, but the text gives cloud as the cause"
+  }
+ },
+ "notes": "The richest Odyssey-shaped Aeneid set: a night with a lunar statement, a morning star next dawn and a phase statement the next day.",
+ "eclipse_compatible_options": [],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness",
+ "license_check": "ok"
+}
+ PLACE the Cyclopes' harbour under Etna (Sicily): missing refs []
+   frag exact=True nfc=True where=['3.569']: Cyclopum adlabimur oris
+   frag exact=True nfc=True where=['3.571']: iuxta tonat Aetna
+      3.567	ter spumam elisam et rorantia vidimus astra.
+      3.568	Interea fessos ventus cum sole reliquit,
+   >> 3.569	ignarique viae Cyclopum adlabimur oris.
+   >> 3.570	Portus ab accessu ventorum immotus et ingens
+   >> 3.571	ipse; sed horrificis iuxta tonat Aetna ruinis;
+      3.572	interdumque atram prorumpit ad aethera nubem,
+      3.573	turbine fumantem piceo et candente favilla,
+----------------------------------------------------------------------------------------------------
+CLUE AEN-ETNA-01  kind=time-of-day  level=character speech
+{
+ "set": "AEN-ETNA",
+ "clue_id": "AEN-ETNA-01",
+ "kind": "time-of-day",
+ "statement": "The wind drops with the Sun at the end of Day 0 and the fleet drifts onto the Cyclopes' shore.",
+ "licence_words": "Interea fessos ventus cum sole reliquit … Cyclopum adlabimur oris",
+ "ref": [
+  "3.568",
+  "3.569"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [],
+ "narrative_level": "character speech",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['3.568']: Interea fessos ventus cum sole reliquit
+   frag exact=True nfc=True where=['3.569']: Cyclopum adlabimur oris
+ TEXT:
+      3.564	Tollimur in caelum curvato gurgite, et idem
+      3.565	subducta ad Manis imos desedimus unda.
+      3.566	Ter scopuli clamorem inter cava saxa dedere:
+      3.567	ter spumam elisam et rorantia vidimus astra.
+   >> 3.568	Interea fessos ventus cum sole reliquit,
+   >> 3.569	ignarique viae Cyclopum adlabimur oris.
+      3.570	Portus ab accessu ventorum immotus et ingens
+      3.571	ipse; sed horrificis iuxta tonat Aetna ruinis;
+      3.572	interdumque atram prorumpit ad aethera nubem,
+----------------------------------------------------------------------------------------------------
+CLUE AEN-ETNA-02  kind=moon-phase  level=character speech
+{
+ "set": "AEN-ETNA",
+ "clue_id": "AEN-ETNA-02",
+ "kind": "moon-phase",
+ "statement": "On Night 0 no stars were visible and cloud covered the sky; 'the dead of night held the Moon in a cloud'.",
+ "licence_words": "Noctem illam … neque erant astrorum ignes … obscuro sed nubila caelo, et lunam in nimbo nox intempesta tenebat",
+ "ref": [
+  "3.583",
+  "3.585",
+  "3.586",
+  "3.587"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "the Moon is above the horizon at local midnight of Night 0",
+   "justification": "'nox intempesta' is the dead of night; the Moon is there, behind cloud"
+  },
+  {
+   "option": "b",
+   "operational": "the Moon is above the horizon at some instant of Night 0",
+   "justification": "looser timing"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the passage describes a lightless night; the Moon is named only as hidden"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['3.583']: Noctem illam
+   frag exact=True nfc=True where=['3.585']: neque erant astrorum ignes
+   frag exact=True nfc=True where=['(spans rows)']: obscuro sed nubila caelo, et lunam in nimbo nox intempesta tenebat
+ TEXT:
+      3.579	urgueri mole hac, ingentemque insuper Aetnam
+      3.580	impositam ruptis flammam exspirare caminis;
+      3.581	et fessum quotiens mutet latus, intremere omnem
+      3.582	murmure Trinacriam, et caelum subtexere fumo.
+   >> 3.583	Noctem illam tecti silvis immania monstra
+      3.584	perferimus, nec quae sonitum det causa videmus.
+   >> 3.585	Nam neque erant astrorum ignes, nec lucidus aethra
+   >> 3.586	siderea polus, obscuro sed nubila caelo,
+   >> 3.587	et lunam in nimbo nox intempesta tenebat.
+      3.588	Postera iamque dies primo surgebat Eoo,
+      3.589	umentemque Aurora polo dimoverat umbram:
+      3.590	cum subito e silvis, macie confecta suprema,
+----------------------------------------------------------------------------------------------------
+CLUE AEN-ETNA-03  kind=planet  level=character speech
+{
+ "set": "AEN-ETNA",
+ "clue_id": "AEN-ETNA-03",
+ "kind": "planet",
+ "statement": "Dawn +1 was rising 'with the first Eous', and Aurora had driven the damp shadow from the sky.",
+ "licence_words": "Postera iamque dies primo surgebat Eoo … umentemque Aurora polo dimoverat umbram",
+ "ref": [
+  "3.588",
+  "3.589"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "lead60",
+   "operational": "Venus rises at least 60 min before the Sun on Dawn +1 (rise lead; Sun h0 -0.8333 deg, Venus h0 -0.5667 deg, as in T0b)",
+   "justification": "the morning star taken as Venus; lowest lead threshold of the Odyssey's F4 menu [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "lead90",
+   "operational": "Venus rises at least 90 min before the Sun on Dawn +1",
+   "justification": "B&M's own threshold for Od. 13.93-95 [DESIGN 1.1, criterion V]"
+  },
+  {
+   "option": "lead120",
+   "operational": "Venus rises at least 120 min before the Sun on Dawn +1",
+   "justification": "strict end of the F4 menu [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "vis7",
+   "operational": "Venus visible as a morning object on Dawn +1 (arcus visionis 7 deg)",
+   "justification": "the words name a morning star, not a lead; visibility is the least-inference reading [vis 1.2]"
+  },
+  {
+   "option": "herald",
+   "operational": "some bright dawn herald visible before sunrise on Dawn +1: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter (arcus visionis per body as in DESIGN 3.5)",
+   "justification": "the text does not say which star; the Odyssey's F4 menu allows any bright herald [DESIGN 3.4 F4]"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "'Eous' read as the dawn or the east; 3.589 repeats 4.7, a dawn formula"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "Eous can name the morning star or the dawn; the fork carries both.",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['3.588']: Postera iamque dies primo surgebat Eoo
+   frag exact=True nfc=True where=['3.589']: umentemque Aurora polo dimoverat umbram
+ TEXT:
+      3.584	perferimus, nec quae sonitum det causa videmus.
+      3.585	Nam neque erant astrorum ignes, nec lucidus aethra
+      3.586	siderea polus, obscuro sed nubila caelo,
+      3.587	et lunam in nimbo nox intempesta tenebat.
+   >> 3.588	Postera iamque dies primo surgebat Eoo,
+   >> 3.589	umentemque Aurora polo dimoverat umbram:
+      3.590	cum subito e silvis, macie confecta suprema,
+      3.591	ignoti nova forma viri miserandaque cultu
+      3.592	procedit, supplexque manus ad litora tendit.
+----------------------------------------------------------------------------------------------------
+CLUE AEN-ETNA-04  kind=moon-phase  level=character speech
+{
+ "set": "AEN-ETNA",
+ "clue_id": "AEN-ETNA-04",
+ "kind": "moon-phase",
+ "statement": "On Day +1 Achaemenides, a Greek left behind, says that the horns of the third moon are now filling with light since he began living in the woods.",
+ "licence_words": "Tertia iam lunae se cornua lumine complent, cum vitam in silvis inter deserta ferarum lustra domosque traho",
+ "ref": [
+  "3.645",
+  "3.646",
+  "3.647"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "the Moon is waxing on Day +1 (between conjunction and opposition)",
+   "justification": "'se cornua lumine complent' in the present: the horns are filling now"
+  },
+  {
+   "option": "b",
+   "operational": "opposition falls within +-2 days of Day +1",
+   "justification": "'filling the horns with light' read as the disc closing to full"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "'tertia' counts about three lunations since Achaemenides was left behind, an event outside this set; read so, the line states elapsed time, not the phase on Day +1 (this absorbs the former option c, 'no phase constraint on Day +1', which had the same operational content)"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "Achaemenides' speech within Aeneas' narrative. He is a Greek suppliant like Sinon, but the poem presents his account as true.",
+ "license_check": "ok",
+ "license_check_r1": "edited: option 'none' had no justification ('dropped'), and option c ('no phase constraint on Day +1') was operationally identical to 'none', so the garden counted one path twice; c is merged into 'none', which now carries c's justification"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: Tertia iam lunae se cornua lumine complent, cum vitam in silvis inter deserta ferarum lustra domosque traho
+ TEXT:
+      3.641	Nam qualis quantusque cavo Polyphemus in antro
+      3.642	lanigeras claudit pecudes atque ubera pressat,
+      3.643	centum alii curva haec habitant ad litora volgo
+      3.644	infandi Cyclopes, et altis montibus errant.
+   >> 3.645	Tertia iam lunae se cornua lumine complent,
+   >> 3.646	cum vitam in silvis inter deserta ferarum
+   >> 3.647	lustra domosque traho, vastosque ab rupe Cyclopas
+      3.648	prospicio, sonitumque pedum vocemque tremesco.
+      3.649	Victum infelicem, bacas lapidosaque corna,
+      3.650	dant rami et volsis pascunt radicibus herbae.

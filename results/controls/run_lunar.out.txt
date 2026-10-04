@@ -1,0 +1,17 @@
+Thuc 7.50 -412 Aug 28            | Syracuse           | greatest -412 08 27 20:55 UT (NASA dT 15636s) | LMT 21:56 | moonEl=32.4 sunEl=-32.8
+Xen Hell 1.6.1 -405 Apr 15       | Athens             | greatest -405 04 15 19:15 UT (NASA dT 15532s) | LMT 20:49 | moonEl=25.6 sunEl=-26.4
+Plut Dion 24 -356 Aug 09         | Zacynthus          | greatest -356 08 09 17:55 UT (NASA dT 14791s) | LMT 19:19 | moonEl=1.7 sunEl=-3.5
+Gaugamela -330 Sep 20            | Arbela/Gaugamela   | greatest -330 09 20 18:24 UT (NASA dT 14417s) | LMT 21:18 | moonEl=35.7 sunEl=-36.2
+Polyb 5.78 -217 Sep 01           | Mysia (approx.)    | greatest -217 09 01 16:25 UT (NASA dT 12931s) | LMT 18:17 | moonEl=-4.2 sunEl=3.0
+Livy 44.37 Pydna -167 Jun 21     | Pydna              | greatest -167 06 21 18:39 UT (NASA dT 12334s) | LMT 20:09 | moonEl=5.9 sunEl=-7.1
+Xerxes alt lunar -478 Mar 14     | Sardis             | greatest -478 03 14 02:17 UT (NASA dT 16733s) | LMT 04:09 | moonEl=26.0 sunEl=-27.0
+Alm IV.6 #1 -720 Mar 20          | Babylon            | greatest -720 03 19 18:38 UT (NASA dT 20529s) | LMT 21:36 | moonEl=42.8 sunEl=-43.4
+Alm IV.6 #2 -719 Mar 09          | Babylon            | greatest -719 03 08 20:50 UT (NASA dT 20513s) | LMT 23:48 | moonEl=64.6 sunEl=-64.3
+Alm IV.6 #3 -719 Sep 01          | Babylon            | greatest -719 09 01 17:01 UT (NASA dT 20506s) | LMT 19:59 | moonEl=16.0 sunEl=-17.6
+Alm IV.11 #1 -382 Dec 23         | Babylon            | greatest -382 12 23 05:03 UT (NASA dT 15170s) | LMT 08:00 | moonEl=-10.8 sunEl=9.3
+Alm IV.11 #2 -381 Jun 18         | Babylon            | greatest -381 06 18 18:10 UT (NASA dT 15162s) | LMT 21:08 | moonEl=21.0 sunEl=-21.4
+Alm IV.11 #3 -381 Dec 13         | Babylon            | greatest -381 12 12 20:03 UT (NASA dT 15155s) | LMT 23:01 | moonEl=73.8 sunEl=-74.3
+Alm IV.6 Ptol #1 133 May 06      | Alexandria         | greatest 133 05 06 20:47 UT (NASA dT 9234s) | LMT 22:46 | moonEl=38.8 sunEl=-39.8
+Alm IV.6 Ptol #2 134 Oct 20      | Alexandria         | greatest 134 10 20 20:43 UT (NASA dT 9220s) | LMT 22:43 | moonEl=63.5 sunEl=-64.4
+Alm IV.6 Ptol #3 136 Mar 06      | Alexandria         | greatest 136 03 06 01:32 UT (NASA dT 9207s) | LMT 03:32 | moonEl=35.8 sunEl=-37.2
+Josephus Herod -3 Mar 13         | Jerusalem          | greatest -3 03 13 00:41 UT (NASA dT 10562s) | LMT 03:02 | moonEl=39.9 sunEl=-41.3

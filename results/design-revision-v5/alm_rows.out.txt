@@ -1,0 +1,38 @@
+rows by kind: {'planet': 26, 'moon-phase': 7, 'interval': 20, 'star': 17, 'eclipse-lunar': 1, 'season': 1}
+ALM-A counted
+   projection: ALM-A.1:ge_after_same_apparition, ALM-A.2:phase_class, ALM-A.3:structural, ALM-A.5:phase_class, ALM-A.6:as_printed, ALM-A.7:ge_true_k, ALM-A.8:structural, ALM-A.9:visible_before_sunrise, ALM-A.10:none
+   held out  : ALM-A.2:positional, ALM-A.4:opp_mean_k, ALM-A.5:positional, ALM-A.10:positional
+ALM-B counted
+   projection: ALM-B.1:ge_before_same_apparition, ALM-B.2:phase_class, ALM-B.4:structural, ALM-B.5:none, ALM-B.6:structural, ALM-B.7:phase_class, ALM-B.8:structural, ALM-B.9:phase_class
+   held out  : ALM-B.2:positional, ALM-B.3:positional, ALM-B.5:positional, ALM-B.7:elongation_tol, ALM-B.9:elongation_tol
+ALM-C reported
+   projection: ALM-C.1:ge_true_k, ALM-C.2:structural
+   held out  : ALM-C.3:magnitude
+ALM-D counted
+   projection: ALM-D.1:ge_true_k, ALM-D.2:structural, ALM-D.3:ge_true_k
+   held out  : ALM-D.4:positional
+ALM-E counted
+   projection: ALM-E.1:ge_true_k, ALM-E.2:structural, ALM-E.3:equinox_tol
+   held out  : (none)
+ALM-F counted
+   projection: ALM-F.1:ge_true_k, ALM-F.2:structural, ALM-F.3:ge_true_k
+   held out  : (none)
+ALM-G counted
+   projection: ALM-G.1:ge_true_k, ALM-G.2:structural, ALM-G.3:ge_true_k
+   held out  : (none)
+ALM-H counted
+   projection: ALM-H.1:visible_only, ALM-H.3:as_printed, ALM-H.4:visible_only, ALM-H.7:structural, ALM-H.8:visible_only
+   held out  : ALM-H.2:positional, ALM-H.5:positional, ALM-H.6:positional, ALM-H.9:positional
+ALM-I counted
+   projection: ALM-I.1:ge_after_same_apparition, ALM-I.4:structural
+   held out  : ALM-I.2:positional, ALM-I.3:positional, ALM-I.5:positional
+ALM-J counted
+   projection: ALM-J.1:visible_before_sunrise, ALM-J.3:structural, ALM-J.4:ge_before_same_apparition, ALM-J.6:structural
+   held out  : ALM-J.2:positional, ALM-J.5:positional, ALM-J.7:positional
+ALM-K counted
+   projection: ALM-K.1:visible_only, ALM-K.3:structural, ALM-K.4:visible_before_sunrise, ALM-K.6:structural, ALM-K.7:visible_only
+   held out  : ALM-K.2:positional, ALM-K.5:positional, ALM-K.8:positional
+ALM-L counted
+   projection: ALM-L.1:ge_true_k, ALM-L.3:structural, ALM-L.4:ge_true_k, ALM-L.5:structural, ALM-L.6:ge_true_k
+   held out  : ALM-L.2:positional, ALM-L.7:positional
+counted sets with at least one held-out row: 8 of 11

@@ -1,0 +1,860 @@
+
+
+
+   
+Catalog of Solar Eclipses:   0101 to   0200
+   
+
+   
+   
+   
+   
+   
+   
+   
+
+   
+   <meta name="description" content="This page is part of NASA's Five Millennium Catalog of Solar Eclipses. 
+   It contains a list covering 100 years of solar eclipses.
+   Fields in the catalog link to eclipse maps, eclipse paths plotted on Google maps, Besselian elements, and tables of central eclipse path coordinates." />
+
+
+
+
+
+
+
+NASA (National Aeronautics and Space Administration)
+
+   Home
+   Solar Eclipses
+   Lunar Eclipses
+
+   Planetary Transits
+   Moon Phases
+
+Eclipse Web Site
+by Fred Espenak, GSFC Planetary Systems Laboratory
+
+
+
+
+
+
+Five Millennium Catalog of Solar Eclipses
+ 
+  0101 to   0200  (      101 CE to      200 CE )
+
+
+Introduction
+
+Eclipses of the Sun 
+can only occur when the Moon is near one of its two orbital nodes [1] during the New Moon phase.
+It is then possible for the Moon's penumbral, umbral or antumbral shadows to sweep across Earth's surface thereby producing an eclipse.
+There are four types of solar eclipses: 
+
+Partial - Moon's penumbral shadow traverses Earth (umbral and antumbral shadows completely miss Earth)
+Annular - Moon's antumbral shadow traverses Earth (Moon is too far from Earth to completely cover the Sun)
+Total - Moon's umbral shadow traverses Earth (Moon is close enough to Earth to completely cover the Sun)
+Hybrid - Moon's umbral and antumbral shadows traverse Earth (eclipse appears annular and total along different sections of its path). 
+Hybrid eclipses are also known as annular-total eclipses. [2]
+
+
+
+
+Total eclipses are visible from within the Moon&rsquo;s umbral shadow while annular eclipses are seen within the antumbral shadow . 
+These eclipses can be classified as central [3] or non-central as: 
+
+Central (two limits) - 
+The central axis of the Moon&rsquo;s shadow cone traverses Earth thereby producing a central line in the eclipse track. 
+The umbra or antumbra falls entirely upon Earth so the ground track has both a northern and southern limit.
+Central (one limit) - 
+The central axis of the Moon&rsquo;s shadow cone traverses Earth. 
+However, a portion of the umbra or antumbra misses Earth throughout the eclipse and the resulting ground track has just one limit. 
+Non-Central (one limit) - 
+The central axis of the Moon&rsquo;s shadow cone misses Earth. 
+However, one edge of the umbra or antumbra grazes Earth thereby producing a ground track with one limit and no central line. 
+
+
+The recurrence of solar eclipses is governed by the Saros cycle. 
+For more information, see  Periodicity of Solar Eclipses.
+
+
+ Statistics for Solar Eclipses:   0101 to   0200  
+During the  2nd century CE[4], Earth experienced   237 solar eclipses.
+The following table shows the number of eclipses of each type over this period. 
+
+
+
+
+Solar Eclipses:   0101 -   0200
+
+
+Eclipse Type
+Symbol
+Number
+Percent
+
+
+
+All Eclipses -    237100.0%
+
+PartialP    80 33.8%
+
+AnnularA    77 32.5%
+
+TotalT    64 27.0%
+
+HybridH    16  6.8%
+
+
+
+Annular and total eclipses can be classified as either central or non-central as follows: 
+1) Central (two limits), 2) Central (one limit) or 3) Non-Central (one limit). 
+The statistical distribution of these classes during the  2nd century CE
+appears in the following three tables (no Hybrids are included since all are central with two limits).
+
+
+
+
+Annular and Total Eclipses
+
+
+Classification
+Number
+Percent
+
+
+
+
+ All    141100.0%
+
+Central (two limits)   133 94.3%
+
+Central (one limit)     5  3.5%
+
+Non-Central (one limit)     3  2.1%
+
+
+
+
+
+
+Annular Eclipses
+
+
+Classification
+Number
+Percent
+
+
+
+
+All Annular Eclipses    77100.0%
+
+Central (two limits)    70 90.9%
+
+Central (one limit)     5  6.5%
+
+Non-Central (one limit)     2  2.6%
+
+
+
+
+
+
+Total Eclipses
+
+
+Classification
+Number
+Percent
+
+
+
+
+All Total Eclipses    64100.0%
+
+Central (two limits)    63 98.4%
+
+Central (one limit)     0  0.0%
+
+Non-Central (one limit)     1  1.6%
+
+
+
+
+There are a minimum of two and a maximum of five solar eclipses in every calendar year.
+Statistics for the number of eclipses each year during the century are listed below. 
+
+
+                      Number of Years with 2 Eclipses: 75
+                      Number of Years with 3 Eclipses: 14
+                      Number of Years with 4 Eclipses: 10
+                      Number of Years with 5 Eclipses:  1  (   148)
+
+
+The longest and shortest central eclipses of the century as well as largest and smallest partial eclipses are listed in the below. 
+
+
+
+
+Extreme Durations and Magnitudes of Solar Eclipses:   101 to   200
+
+
+Extrema Type
+Date
+Duration
+Magnitude
+
+
+
+Longest Annular Solar Eclipse  0150 Dec 0712m23s -  
+
+Shortest Annular Solar Eclipse  0140 Jan 0700m05s -  
+
+Longest Total Solar Eclipse  0132 Jun 0107m14s -  
+
+Shortest Total Solar Eclipse  0145 Sep 0400m52s -  
+
+Longest Hybrid Solar Eclipse  0190 Oct 1601m30s -  
+
+Shortest Hybrid Solar Eclipse  0121 Dec 2700m01s -  
+
+Largest Partial Solar Eclipse  0123 May 13 - 0.97724 
+
+Smallest Partial Solar Eclipse  0108 Feb 29 - 0.00816 
+
+
+During the century,  2 Saros series begin and   5 Saros Series end.
+The list below gives the year and Saros number of each of these events.
+      2 Saros Series begin [Year/Saros]:    123/ 97   188/ 98
+      5 Saros Series end   [Year/Saros]:    108/ 51   137/ 57   144/ 56   155/ 52   166/ 58
+
+
+
+ Catalog of Solar Eclipses
+
+The catalog below lists concise details and local circumstances at greatest eclipse[5] 
+for every solar eclipse during the century. 
+A description or explanation of each parameter listed in the catalog can be found in Key to Catalog of Solar Eclipses. 
+Several fields in the catalog link to web pages or files containing additional information for each eclipse. 
+The following gives a brief explanation of each link. 
+
+
+
+Catalog Number - link to a small global map showing geographic visibility of the eclipse 
+Calendar Date - link to the path of central eclipse plotted on Google maps 
+Saros Num - link to a catalog of all eclipses in the Saros cycle 
+Gamma - link to a table of Besselian elements for the eclipse
+
+
+
+
+
+
+Index for Five Millennium Catalog of Solar Eclipses
+
+
+
+
+
+
+
+
+
+
+ Catalog of Solar Eclipses:   0101 to   0200
+
+
+
+                      TD of
+Catalog  Calendar   Greatest          Luna Saros Ecl.               Ecl.            Sun Path  Central
+Number     Date      Eclipse    &#916;T     Num  Num  Type QLE  Gamma    Mag.   Lat Long Alt Width   Dur.
+                                 s                                          &#176;    &#176;    &#176;   km
+
+05023  0101 Jan 17  10:44:09   9542 -23487   52   P   -t   1.4885  0.1101  68N  47E   0             
+05024  0101 Feb 16  00:30:33   9542 -23486   90   P   t-  -1.3358  0.3853  71S  13W   0             
+05025  0101 Jul 14  03:33:01   9538 -23481   57   P   -t  -1.3982  0.2753  68S 160E   0             
+05026  0101 Aug 12  15:58:57   9537 -23480   95   P   t-   1.3610  0.3372  70N 121E   0             
+05027  0102 Jan 06  23:23:12   9533 -23475   62   T   -p   0.7490  1.0323  26N 129W  41  165  03m00s
+05028  0102 Jul 03  05:38:53   9528 -23469   67   A   -p  -0.6720  0.9439  19S 136E  48  280  07m33s
+05029  0102 Dec 27  15:06:16   9524 -23463   72   T   -n   0.0743  1.0454  19S   5W  86  152  04m15s
+05030  0103 Jun 22  06:42:09   9519 -23457   77   A   nn   0.0971  0.9654  29N 118E  84  125  04m02s
+05031  0103 Dec 17  05:12:14   9514 -23451   82   H   p-  -0.6209  1.0019  62S 131E  51    9  00m09s
+05032  0104 Jun 10  13:31:44   9510 -23445   87   H2  t-   0.8576  1.0087  78N  35W  31   59  00m33s
+
+05033  0104 Dec 05  13:20:54   9505 -23439   92   P   t-  -1.3687  0.3318  64S 131W   0             
+05034  0105 May 01  20:24:44   9501 -23434   59   T   -t  -0.9559  1.0643  51S  50W  17  716  04m21s
+05035  0105 Oct 25  19:07:56   9497 -23428   64   A   -p   0.9657  0.9114  53N  26W  14 1299  08m04s
+05036  0106 Apr 21  13:25:03   9492 -23422   69   T   -n  -0.2300  1.0623   1S  24E  77  209  05m22s
+05037  0106 Oct 14  20:48:09   9487 -23416   74   A   nn   0.2454  0.9583   5N  89W  76  156  04m29s
+05038  0107 Apr 11  02:51:12   9483 -23410   79   H   p-   0.5410  1.0069  36N 159E  57   28  00m35s
+05039  0107 Oct 04  05:45:26   9478 -23404   84   H2  p-  -0.4727  1.0149  28S 116E  62   57  01m15s
+05040  0108 Feb 29  17:15:40   9474 -23399   51   Pe  -t  -1.5625  0.0082  61S  69E   0             
+05041  0108 Mar 30  09:12:09   9473 -23398   89   P   t-   1.3438  0.3738  61N  13W   0             
+05042  0108 Aug 24  11:52:11   9469 -23393   56   P   -t   1.4473  0.1608  62N 154E   0             
+
+05043  0108 Sep 22  20:32:21   9469 -23392   94   P   t-  -1.1403  0.7476  61S 179W   0             
+05044  0109 Feb 17  17:04:01   9465 -23387   61   A   -p  -0.8523  0.9325  60S  15E  31  475  05m21s
+05045  0109 Aug 14  03:20:13   9460 -23381   66   T   -p   0.7739  1.0276  58N 153W  39  147  01m51s
+05046  0110 Feb 06  21:31:05   9456 -23375   71   A   nn  -0.1029  0.9829  21S  96W  84   61  01m43s
+05047  0110 Aug 03  13:27:32   9451 -23369   76   A   nn   0.0323  0.9812  20N  19E  88   67  02m00s
+05048  0111 Jan 27  09:03:03   9446 -23363   81   T   p-   0.6041  1.0299  16N  75E  53  126  02m47s
+05049  0111 Jul 23  16:31:55   9442 -23357   86   A   p-  -0.7415  0.9421  25S  42W  42  314  07m03s
+05050  0111 Dec 18  14:08:22   9438 -23352   53   P   -t  -1.4157  0.2285  66S 179E   0             
+05051  0112 Jan 17  00:38:49   9437 -23351   91   P   t-   1.2589  0.5217  64N 174E   0             
+05052  0112 Jun 12  03:29:03   9433 -23346   58   P   -t   1.3243  0.4048  67N  16W   0             
+
+05053  0112 Jul 11  17:00:26   9432 -23345   96   P   t-  -1.4751  0.1475  64S  66W   0             
+05054  0112 Dec 07  02:54:33   9428 -23340   63   A   -p  -0.7919  0.9825  75S 172E  37  103  01m13s
+05055  0113 Jun 01  12:24:30   9424 -23334   68   T   -p   0.5000  1.0310  52N  29E  60  121  02m29s
+05056  0113 Nov 26  08:54:28   9419 -23328   73   A   nn  -0.1122  0.9369  28S  83E  83  236  07m44s
+05057  0114 May 22  03:32:43   9414 -23322   78   T   n-  -0.2684  1.0753   5N 166E  74  253  07m06s
+05058  0114 Nov 15  08:41:03   9410 -23316   83   A   p-   0.5746  0.9149  16N  91E  55  395  11m52s
+05059  0115 May 11  20:48:54   9405 -23310   88   T-  t-  -1.0051  1.0117  70S  62W   0             
+05060  0115 Nov 04  08:59:23   9401 -23304   93   P   t-   1.2315  0.5657  70N 122E   0             
+05061  0116 Apr 01  00:47:48   9397 -23299   60   A   -t   0.8606  0.9830  59N 178E  30  118  01m19s
+05062  0116 Sep 24  04:27:28   9392 -23293   65   T   -p  -0.8950  1.0239  59S 118E  26  182  01m39s
+
+05063  0117 Mar 21  05:01:14   9387 -23287   70   A   nn   0.1263  0.9449   7N 144E  83  205  06m59s
+05064  0117 Sep 13  20:11:32   9383 -23281   75   T   -n  -0.1840  1.0612   6S  88W  79  204  05m29s
+05065  0118 Mar 10  04:59:55   9378 -23275   80   A   p-  -0.6055  0.9363  40S 161E  53  295  06m47s
+05066  0118 Sep 03  12:01:49   9374 -23269   85   T   p-   0.5298  1.0368  39N  50E  58  145  03m02s
+05067  0119 Jan 28  19:00:14   9370 -23264   52   P   -t   1.4998  0.0877  69N  90W   0             
+05068  0119 Feb 27  08:11:25   9369 -23263   90   P   t-  -1.2970  0.4527  71S 142W   0             
+05069  0119 Jul 25  10:23:34   9365 -23258   57   P   -t  -1.4729  0.1459  69S  45E   0             
+05070  0119 Aug 23  23:23:07   9364 -23257   95   P   t-   1.3133  0.4232  71N   3W   0             
+05071  0120 Jan 18  08:03:34   9360 -23252   62   T   -p   0.7574  1.0359  28N  97E  41  185  03m16s
+05072  0120 Jul 13  12:05:37   9356 -23246   67   A   -p  -0.7554  0.9407  27S  36E  41  336  07m36s
+
+
+
+
+
+ Catalog of Solar Eclipses:   0101 to   0200
+
+
+
+                      TD of
+Catalog  Calendar   Greatest          Luna Saros Ecl.               Ecl.            Sun Path  Central
+Number     Date      Eclipse    &#916;T     Num  Num  Type QLE  Gamma    Mag.   Lat Long Alt Width   Dur.
+                                 s                                          &#176;    &#176;    &#176;   km
+
+05073  0121 Jan 06  23:54:07   9351 -23240   72   T   -n   0.0802  1.0460  18S 137W  86  154  04m20s
+05074  0121 Jul 02  13:17:36   9346 -23234   77   A   nn   0.0136  0.9668  24N  19E  89  120  04m02s
+05075  0121 Dec 27  13:50:54   9342 -23228   82   H   p-  -0.6196  1.0002  62S   8E  51    1  00m01s
+05076  0122 Jun 21  20:33:47   9337 -23222   87   T   p-   0.7773  1.0136  74N 109W  39   75  00m55s
+05077  0122 Dec 16  21:38:59   9333 -23216   92   P   t-  -1.3693  0.3311  65S  94E   0             
+05078  0123 May 13  03:55:44   9329 -23211   59   P   -t  -1.0248  0.9772  62S 150W   0             
+05079  0123 Jun 11  10:40:13   9328 -23210   97   Pb  t-   1.4766  0.1028  65N  96W   0             
+05080  0123 Nov 06  03:01:20   9324 -23205   64   An  -p   0.9783  0.9098  54N 148W  11   -   08m20s
+05081  0124 May 01  20:55:09   9319 -23199   69   T   -n  -0.2990  1.0615   1S  89W  73  211  05m26s
+05082  0124 Oct 25  04:55:04   9315 -23193   74   A   -n   0.2599  0.9588   2N 148E  75  154  04m31s
+
+05083  0125 Apr 21  10:04:01   9310 -23187   79   H   p-   0.4745  1.0063  36N  52E  61   24  00m32s
+05084  0125 Oct 14  14:08:53   9306 -23181   84   H2  p-  -0.4532  1.0153  31S  11W  63   58  01m16s
+05085  0126 Apr 10  16:04:42   9301 -23175   89   P   t-   1.2800  0.4837  61N 126W   0             
+05086  0126 Sep 04  19:56:53   9297 -23170   56   P   -t   1.4882  0.0838  61N  23E   0             
+05087  0126 Oct 04  04:59:04   9296 -23169   94   P   t-  -1.1156  0.7938  61S  45E   0             
+05088  0127 Mar 01  00:25:56   9292 -23164   61   A   -p  -0.8926  0.9361  58S  92W  26  518  05m00s
+05089  0127 Aug 25  11:03:53   9288 -23158   66   T   -p   0.8252  1.0203  57N  96E  34  121  01m22s
+05090  0128 Feb 18  05:26:41   9283 -23152   71   A   nn  -0.1321  0.9890  19S 145E  82   39  01m04s
+05091  0128 Aug 13  20:36:30   9279 -23146   76   A   nn   0.0943  0.9752  20N  87W  84   89  02m35s
+05092  0129 Feb 06  17:27:01   9274 -23140   81   T   p-   0.5820  1.0354  17N  53W  54  144  03m10s
+
+05093  0129 Aug 02  23:12:37   9269 -23134   86   A   p-  -0.6694  0.9398  21S 144W  48  295  07m20s
+05094  0129 Dec 28  22:56:40   9266 -23129   53   P   -t  -1.4215  0.2179  65S  35E   0             
+05095  0130 Jan 27  09:15:57   9265 -23128   91   P   t-   1.2446  0.5488  63N  35E   0             
+05096  0130 Jun 23  10:09:31   9261 -23123   58   P   -t   1.4009  0.2693  66N 127W   0             
+05097  0130 Jul 22  23:40:13   9260 -23122   96   P   t-  -1.3977  0.2808  63S 176W   0             
+05098  0130 Dec 18  11:29:55   9256 -23117   63   A   -p  -0.7953  0.9800  76S  59E  37  118  01m22s
+05099  0131 Jun 12  19:32:12   9252 -23111   68   T   -p   0.5756  1.0335  59N  75W  55  139  02m31s
+05100  0131 Dec 07  17:06:49   9247 -23105   73   A   nn  -0.1155  0.9347  30S  39W  83  245  07m59s
+05101  0132 Jun 01  10:57:16   9242 -23099   78   T   n-  -0.1932  1.0775  11N  53E  79  255  07m14s
+05102  0132 Nov 25  16:42:02   9238 -23093   83   A   p-   0.5691  0.9144  14N  31W  55  396  12m16s
+
+05103  0133 May 22  04:13:35   9233 -23087   88   T   t-  -0.9345  1.0601  49S 164E  20  562  04m32s
+05104  0133 Nov 14  17:11:10   9229 -23081   93   P   t-   1.2227  0.5809  69N  14W   0             
+05105  0134 Apr 12  07:59:44   9225 -23076   60   A   -t   0.9262  0.9801  69N  51E  22  190  01m24s
+05106  0134 Oct 05  12:48:19   9220 -23070   65   T   -p  -0.9153  1.0226  65S  17W  23  193  01m29s
+05107  0135 Apr 01  11:56:36   9215 -23064   70   A   nn   0.1888  0.9460  14N  37E  79  202  06m43s
+05108  0135 Sep 25  04:31:21   9211 -23058   75   T   -n  -0.2133  1.0578  12S 145E  78  195  05m08s
+05109  0136 Mar 20  12:02:35   9206 -23052   80   A   p-  -0.5499  0.9411  32S  51E  56  259  06m38s
+05110  0136 Sep 13  20:03:55   9202 -23046   85   T   p-   0.4944  1.0314  32N  73W  60  121  02m43s
+05111  0137 Feb 08  03:09:58   9198 -23041   52   P   -t   1.5167  0.0546  70N 135E   0             
+05112  0137 Mar 09  15:44:51   9197 -23040   90   P   t-  -1.2511  0.5335  72S  90E   0             
+
+05113  0137 Aug 04  17:19:28   9193 -23035   57   Pe  -t  -1.5418  0.0280  69S  71W   0             
+05114  0137 Sep 03  06:54:33   9192 -23034   95   P   t-   1.2722  0.4962  71N 130W   0             
+05115  0138 Jan 28  16:36:21   9189 -23029   62   T   -p   0.7723  1.0396  32N  35W  39  209  03m28s
+05116  0138 Jul 24  18:39:58   9184 -23023   67   A   -p  -0.8320  0.9370  36S  68W  33  422  07m29s
+05117  0139 Jan 18  08:35:48   9179 -23017   72   T   -n   0.0906  1.0469  16S  92E  85  157  04m27s
+05118  0139 Jul 13  19:59:21   9175 -23011   77   A   nn  -0.0655  0.9677  19N  81W  86  116  04m02s
+05119  0140 Jan 07  22:24:43   9170 -23005   82   A   p-  -0.6151  0.9989  61S 113W  52    5  00m05s
+05120  0140 Jul 02  03:39:41   9165 -22999   87   T   p-   0.6994  1.0175  68N 159E  45   84  01m15s
+05121  0140 Dec 27  05:53:56   9161 -22993   92   P   t-  -1.3677  0.3339  66S  41W   0             
+05122  0141 May 23  11:22:17   9157 -22988   59   P   -t  -1.0973  0.8366  63S  88E   0             
+
+
+
+
+
+ Catalog of Solar Eclipses:   0101 to   0200
+
+
+
+                      TD of
+Catalog  Calendar   Greatest          Luna Saros Ecl.               Ecl.            Sun Path  Central
+Number     Date      Eclipse    &#916;T     Num  Num  Type QLE  Gamma    Mag.   Lat Long Alt Width   Dur.
+                                 s                                          &#176;    &#176;    &#176;   km
+
+05123  0141 Jun 21  18:02:55   9156 -22987   97   P   t-   1.4015  0.2470  66N 142E   0             
+05124  0141 Nov 16  11:01:39   9152 -22982   64   An  -p   0.9854  0.9089  56N  87E   9   -   08m31s
+05125  0142 May 13  04:19:27   9148 -22976   69   T   -p  -0.3722  1.0598   3S 159E  68  211  05m28s
+05126  0142 Nov 05  13:09:35   9143 -22970   74   A   -n   0.2688  0.9598   1S  24E  74  151  04m31s
+05127  0143 May 02  17:10:28   9138 -22964   79   H   p-   0.4035  1.0051  36N  53W  66   19  00m27s
+05128  0143 Oct 25  22:40:07   9134 -22958   84   H2  p-  -0.4397  1.0158  35S 139W  64   60  01m18s
+05129  0144 Apr 20  22:49:07   9129 -22952   89   P   t-   1.2098  0.6047  61N 124E   0             
+05130  0144 Sep 15  04:08:10   9125 -22947   56   Pe  -t   1.5239  0.0176  61N 109W   0             
+05131  0144 Oct 14  13:32:59   9125 -22946   94   P   t-  -1.0968  0.8287  61S  93W   0             
+05132  0145 Mar 11  07:41:10   9121 -22941   61   A   -p  -0.9387  0.9395  58S 164E  20  643  04m38s
+
+05133  0145 Sep 04  18:53:49   9116 -22935   66   T   -p   0.8709  1.0128  56N  19W  29   88  00m52s
+05134  0146 Feb 28  13:15:23   9112 -22929   71   A   nn  -0.1681  0.9953  17S  28E  80   17  00m27s
+05135  0146 Aug 25  03:52:42   9107 -22923   76   A   nn   0.1497  0.9692  19N 164E  81  112  03m11s
+05136  0147 Feb 18  01:45:03   9102 -22917   81   T   p-   0.5541  1.0409  18N 179W  56  162  03m32s
+05137  0147 Aug 14  06:00:10   9098 -22911   86   A   p-  -0.6027  0.9372  19S 114E  53  286  07m31s
+05138  0148 Jan 09  07:40:46   9094 -22906   53   P   -t  -1.4308  0.2007  64S 106W   0             
+05139  0148 Feb 07  17:46:55   9093 -22905   91   P   t-   1.2255  0.5854  62N 102W   0             
+05140  0148 Jul 03  16:55:07   9089 -22900   58   P   -t   1.4741  0.1394  65N 121E   0             
+05141  0148 Aug 02  06:27:42   9089 -22899   96   P   t-  -1.3252  0.4058  63S  72E   0             
+05142  0148 Dec 28  20:00:51   9085 -22894   63   A   -p  -0.8017  0.9780  75S  53W  36  132  01m30s
+
+05143  0149 Jun 23  02:42:52   9080 -22888   68   T   -p   0.6495  1.0352  64N 176W  49  156  02m29s
+05144  0149 Dec 18  01:16:52   9075 -22882   73   A   nn  -0.1204  0.9332  31S 161W  83  251  08m07s
+05145  0150 Jun 12  18:23:03   9071 -22876   78   T   nn  -0.1187  1.0787  17N  59W  83  256  07m13s
+05146  0150 Dec 07  00:43:01   9066 -22870   83   A   p-   0.5630  0.9147  12N 154W  56  393  12m23s
+05147  0151 Jun 02  11:36:59   9062 -22864   88   T   p-  -0.8630  1.0613  38S  46E  30  400  05m06s
+05148  0151 Nov 26  01:27:03   9057 -22858   93   P   t-   1.2161  0.5923  68N 151W   0             
+05149  0152 Apr 22  15:01:57   9053 -22853   60   A+  -t   0.9989  0.9832  71N 136W   0             
+05150  0152 Oct 15  21:18:07   9049 -22847   65   T   -p  -0.9291  1.0217  70S 155W  21  203  01m20s
+05151  0153 Apr 11  18:41:20   9044 -22841   70   A   np   0.2599  0.9470  23N  67W  75  202  06m24s
+05152  0153 Oct 05  12:59:47   9039 -22835   75   T   -n  -0.2355  1.0545  18S  16E  76  185  04m47s
+
+05153  0154 Mar 31  18:56:08   9035 -22829   80   A   p-  -0.4860  0.9460  24S  56W  61  226  06m25s
+05154  0154 Sep 25  04:14:23   9030 -22823   85   T   n-   0.4664  1.0258  26N 161E  62   99  02m20s
+05155  0155 Feb 19  11:13:58   9026 -22818   52   Pe  -t   1.5389  0.0115  71N   0W   0             
+05156  0155 Mar 20  23:12:18   9026 -22817   90   P   t-  -1.1993  0.6259  72S  37W   0             
+05157  0155 Sep 14  14:32:13   9021 -22811   95   P   t-   1.2368  0.5584  72N 101E   0             
+05158  0156 Feb 09  01:04:40   9017 -22806   62   T   -p   0.7914  1.0435  36N 167W  37  237  03m38s
+05159  0156 Aug 04  01:19:27   9013 -22800   67   A   -p  -0.9040  0.9328  46S 175W  25  588  07m11s
+05160  0157 Jan 28  17:11:51   9008 -22794   72   T   -n   0.1059  1.0482  12S  37W  84  161  04m34s
+05161  0157 Jul 24  02:47:35   9003 -22788   77   Am  nn  -0.1401  0.9682  13N 175E  82  115  04m01s
+05162  0158 Jan 18  06:53:14   8999 -22782   82   A   p-  -0.6069  0.9981  58S 125E  52    8  00m09s
+
+05163  0158 Jul 13  10:52:07   8994 -22776   87   T   p-   0.6255  1.0206  61N  58E  51   90  01m33s
+05164  0159 Jan 07  14:03:20   8989 -22770   92   P   t-  -1.3623  0.3432  67S 175W   0             
+05165  0159 Jun 03  18:49:41   8986 -22765   59   P   -t  -1.1694  0.6964  64S  34W   0             
+05166  0159 Jul 03  01:30:16   8985 -22764   97   P   t-   1.3295  0.3856  67N  19E   0             
+05167  0159 Nov 27  19:04:23   8981 -22759   64   An  -p   0.9908  0.9087  58N  39W   7   -   08m34s
+05168  0160 May 23  11:40:03   8976 -22753   69   T   -p  -0.4481  1.0573   5S  49E  63  210  05m24s
+05169  0160 Nov 15  21:29:22   8972 -22747   74   A   -n   0.2741  0.9614   4S 102W  74  145  04m27s
+05170  0161 May 13  00:10:12   8967 -22741   79   H   n-   0.3280  1.0034  36N 155W  71   12  00m18s
+05171  0161 Nov 05  07:17:14   8963 -22735   84   T   p-  -0.4303  1.0168  39S  92E  64   63  01m22s
+05172  0162 May 02  05:26:00   8958 -22729   89   P   t-   1.1337  0.7359  62N  15E   0             
+
+
+
+
+
+ Catalog of Solar Eclipses:   0101 to   0200
+
+
+
+                      TD of
+Catalog  Calendar   Greatest          Luna Saros Ecl.               Ecl.            Sun Path  Central
+Number     Date      Eclipse    &#916;T     Num  Num  Type QLE  Gamma    Mag.   Lat Long Alt Width   Dur.
+                                 s                                          &#176;    &#176;    &#176;   km
+
+05173  0162 Oct 25  22:13:52   8953 -22723   94   P   t-  -1.0839  0.8525  61S 127E   0             
+05174  0163 Mar 22  14:48:14   8950 -22718   61   As  -t  -0.9922  0.9409  60S  75E   6   -   04m11s
+05175  0163 Sep 16  02:50:40   8945 -22712   66   H   -t   0.9101  1.0053  55N 136W  24   43  00m21s
+05176  0164 Mar 10  20:56:48   8940 -22706   71   H   nn  -0.2112  1.0016  15S  88W  78    6  00m09s
+05177  0164 Sep 04  11:15:41   8936 -22700   76   A   nn   0.1987  0.9632  18N  54E  78  136  03m48s
+05178  0165 Feb 28  09:54:09   8931 -22694   81   T   p-   0.5184  1.0467  19N  57E  59  179  03m54s
+05179  0165 Aug 24  12:55:58   8927 -22688   86   A   p-  -0.5429  0.9343  18S   9E  57  286  07m42s
+05180  0166 Jan 19  16:19:33   8923 -22683   53   P   -t  -1.4443  0.1756  63S 114E   0             
+05181  0166 Feb 18  02:09:50   8922 -22682   91   P   t-   1.2001  0.6340  62N 122E   0             
+05182  0166 Jul 14  23:46:42   8918 -22677   58   Pe  -t   1.5428  0.0170  64N   7E   0             
+
+05183  0166 Aug 13  13:24:10   8917 -22676   96   P   t-  -1.2589  0.5199  62S  42W   0             
+05184  0167 Jan 09  04:27:22   8914 -22671   63   A   -p  -0.8110  0.9765  72S 168W  35  144  01m37s
+05185  0167 Jul 04  09:57:52   8909 -22665   68   T   -p   0.7207  1.0361  68N  87E  44  176  02m24s
+05186  0167 Dec 29  09:25:01   8904 -22659   73   A   nn  -0.1262  0.9324  31S  79E  83  255  08m08s
+05187  0168 Jun 23  01:48:53   8900 -22653   78   T   nn  -0.0441  1.0792  21N 171W  88  256  07m03s
+05188  0168 Dec 17  08:45:18   8895 -22647   83   A   p-   0.5579  0.9156  10N  84E  56  387  12m14s
+05189  0169 Jun 12  18:58:55   8891 -22641   88   T   p-  -0.7904  1.0610  29S  70W  38  328  05m25s
+05190  0169 Dec 06  09:45:08   8886 -22635   93   P   t-   1.2106  0.6021  67N  73E   0             
+05191  0170 May 03  21:58:07   8882 -22630   60   P   -t   1.0752  0.8467  70N 106E   0             
+05192  0170 Oct 27  05:54:29   8878 -22624   65   T   -p  -0.9382  1.0212  74S  64E  20  213  01m15s
+
+05193  0171 Apr 23  01:20:33   8873 -22618   70   A   -p   0.3349  0.9476  31N 170W  70  204  06m04s
+05194  0171 Oct 16  21:33:43   8868 -22612   75   T   -n  -0.2529  1.0514  23S 114W  75  176  04m27s
+05195  0172 Apr 11  01:44:29   8864 -22606   80   A   p-  -0.4172  0.9506  16S 162W  65  198  06m07s
+05196  0172 Oct 05  12:31:27   8859 -22600   85   T   n-   0.4449  1.0204  21N  35E  63   77  01m56s
+05197  0173 Mar 31  06:31:47   8855 -22594   90   P   t-  -1.1400  0.7329  72S 162W   0             
+05198  0173 Sep 24  22:18:14   8850 -22588   95   P   t-   1.2090  0.6067  72N  31W   0             
+05199  0174 Feb 19  09:23:59   8846 -22583   62   T   -p   0.8182  1.0472  41N  63E  35  272  03m43s
+05200  0174 Aug 15  08:08:21   8841 -22577   67   A   -t  -0.9681  0.9277  59S  71E  14 1115  06m42s
+05201  0175 Feb 09  01:39:26   8837 -22571   72   T   -n   0.1278  1.0495   8S 165W  83  165  04m41s
+05202  0175 Aug 04  09:44:59   8832 -22565   77   A   nn  -0.2079  0.9684   6N  69E  78  116  03m59s
+
+05203  0176 Jan 29  15:13:49   8828 -22559   82   A   p-  -0.5930  0.9978  54S   2E  53   10  00m11s
+05204  0176 Jul 23  18:09:39   8823 -22553   87   T   p-   0.5550  1.0228  54N  49W  56   94  01m48s
+05205  0177 Jan 17  22:06:44   8819 -22547   92   P   t-  -1.3529  0.3592  68S  52E   0             
+05206  0177 Jun 14  02:15:28   8815 -22542   59   P   -t  -1.2424  0.5543  65S 156W   0             
+05207  0177 Jul 13  09:00:47   8814 -22541   97   P   t-   1.2600  0.5196  68N 105W   0             
+05208  0177 Dec 08  03:09:25   8810 -22536   64   An  -p   0.9944  0.9093  60N 167W   4   -   08m28s
+05209  0178 Jun 03  18:57:36   8805 -22530   69   T   -p  -0.5255  1.0540   9S  62W  58  209  05m13s
+05210  0178 Nov 27  05:53:56   8801 -22524   74   A   -n   0.2758  0.9635   6S 130E  74  137  04m18s
+05211  0179 May 24  07:05:09   8796 -22518   79   H   nn   0.2493  1.0011  34N 103E  75    4  00m06s
+05212  0179 Nov 16  15:59:19   8792 -22512   84   T   p-  -0.4248  1.0180  42S  38W  65   68  01m27s
+
+05213  0180 May 12  11:57:30   8787 -22506   89   P   t-   1.0536  0.8738  62N  93W   0             
+05214  0180 Nov 05  07:00:07   8782 -22500   94   P   t-  -1.0755  0.8678  62S  14W   0             
+05215  0181 Apr 01  21:47:59   8779 -22495   61   P   -t  -1.0519  0.8780  61S  27W   0             
+05216  0181 Sep 26  10:54:43   8774 -22489   66   A   -t   0.9426  0.9978  55N 104E  19   23  00m09s
+05217  0182 Mar 22  04:32:06   8769 -22483   71   H   -n  -0.2602  1.0078  13S 158E  75   28  00m44s
+05218  0182 Sep 15  18:45:44   8765 -22477   76   A   -n   0.2409  0.9574  16N  59W  76  159  04m27s
+05219  0183 Mar 11  17:57:10   8760 -22471   81   T   p-   0.4771  1.0523  21N  64W  61  195  04m14s
+05220  0183 Sep 04  20:00:32   8756 -22465   86   A   p-  -0.4903  0.9315  18S  98W  61  289  07m51s
+05221  0184 Jan 31  00:51:23   8752 -22460   53   P   -t  -1.4631  0.1402  62S  24W   0             
+05222  0184 Feb 29  10:24:45   8751 -22459   91   P   t-   1.1684  0.6947  61N  11W   0             
+
+
+
+
+
+ Catalog of Solar Eclipses:   0101 to   0200
+
+
+
+                      TD of
+Catalog  Calendar   Greatest          Luna Saros Ecl.               Ecl.            Sun Path  Central
+Number     Date      Eclipse    &#916;T     Num  Num  Type QLE  Gamma    Mag.   Lat Long Alt Width   Dur.
+                                 s                                          &#176;    &#176;    &#176;   km
+
+05223  0184 Aug 23  20:29:42   8746 -22453   96   P   t-  -1.1989  0.6231  61S 158W   0             
+05224  0185 Jan 19  12:46:54   8743 -22448   63   A   -p  -0.8256  0.9752  69S  74E  34  157  01m42s
+05225  0185 Jul 14  17:18:39   8738 -22442   68   T   -p   0.7879  1.0362  70N   8W  38  198  02m17s
+05226  0186 Jan 08  17:26:06   8733 -22436   73   A   nn  -0.1376  0.9321  30S  40W  82  256  08m01s
+05227  0186 Jul 04  09:18:54   8729 -22430   78   Tm  nn   0.0275  1.0787  25N  77E  88  254  06m47s
+05228  0186 Dec 28  16:44:33   8724 -22424   83   A   p-   0.5496  0.9173  10N  38W  57  375  11m49s
+05229  0187 Jun 24  02:20:57   8720 -22418   88   T   p-  -0.7183  1.0595  22S 176E  44  281  05m31s
+05230  0187 Dec 17  18:03:55   8715 -22412   93   P   t-   1.2047  0.6124  66N  64W   0             
+05231  0188 May 14  04:47:09   8711 -22407   60   P   -t   1.1564  0.7019  69N   9W   0             
+05232  0188 Jun 12  15:45:40   8710 -22406   98   Pb  t-  -1.5291  0.0272  67S  24W   0             
+
+05233  0188 Nov 06  14:37:31   8707 -22401   65   T   -p  -0.9423  1.0212  78S  81W  19  222  01m13s
+05234  0189 May 03  07:50:35   8702 -22395   70   A   -p   0.4170  0.9478  40N  91E  65  211  05m43s
+05235  0189 Oct 27  06:15:28   8697 -22389   75   T   -n  -0.2636  1.0485  28S 115E  75  167  04m10s
+05236  0190 Apr 22  08:26:19   8693 -22383   80   A   p-  -0.3424  0.9551   8S  94E  70  174  05m44s
+05237  0190 Oct 16  20:54:58   8688 -22377   85   H3  n-   0.4293  1.0152  16N  93W  64   57  01m30s
+05238  0191 Apr 11  13:46:44   8684 -22371   90   P   t-  -1.0759  0.8499  72S  75E   0             
+05239  0191 Oct 06  06:10:58   8679 -22365   95   P   t-   1.1871  0.6441  72N 164W   0             
+05240  0192 Mar 01  17:37:08   8675 -22360   62   T   -p   0.8505  1.0507  48N  66W  31  318  03m44s
+05241  0192 Aug 25  15:04:06   8671 -22354   67   P   -t  -1.0264  0.9112  71S  64W   0             
+05242  0193 Feb 19  10:00:11   8666 -22348   72   T   -n   0.1552  1.0509   3S  68E  81  171  04m47s
+
+05243  0193 Aug 14  16:50:56   8661 -22342   77   A   nn  -0.2692  0.9683   0S  39W  74  118  03m56s
+05244  0194 Feb 08  23:26:02   8657 -22336   82   A   p-  -0.5730  0.9977  49S 120W  55   10  00m12s
+05245  0194 Aug 04  01:36:08   8652 -22330   87   T   p-   0.4912  1.0245  47N 160W  60   96  02m02s
+05246  0195 Jan 29  06:02:37   8648 -22324   92   P   t-  -1.3383  0.3840  69S  79W   0             
+05247  0195 Jun 25  09:43:24   8644 -22319   59   P   -t  -1.3136  0.4157  66S  82E   0             
+05248  0195 Jul 24  16:36:40   8643 -22318   97   P   t-   1.1945  0.6457  69N 129E   0             
+05249  0195 Dec 19  11:13:25   8639 -22313   64   A+  -p   0.9991  0.9519  65N  65E   0             
+05250  0196 Jun 14  02:14:22   8634 -22307   69   T   -p  -0.6028  1.0498  13S 173W  53  207  04m54s
+05251  0196 Dec 07  14:19:38   8630 -22301   74   A   -n   0.2776  0.9662   7S   3E  74  127  04m02s
+05252  0197 Jun 03  13:56:11   8625 -22295   79   Am  nn   0.1683  0.9981  32N   3E  80    7  00m11s
+
+05253  0197 Nov 27  00:44:28   8621 -22289   84   T   n-  -0.4213  1.0198  45S 167W  65   75  01m35s
+05254  0198 May 23  18:24:58   8616 -22283   89   A   t-   0.9702  0.9440  72N 172W  13  892  03m34s
+05255  0198 Nov 16  15:49:37   8612 -22277   94   P   t-  -1.0699  0.8779  63S 156W   0             
+05256  0199 Apr 13  04:41:40   8608 -22272   61   P   -t  -1.1170  0.7667  61S 140W   0             
+05257  0199 Oct 07  19:06:10   8603 -22266   66   A   -t   0.9683  0.9905  56N  18W  14  134  00m40s
+05258  0200 Apr 01  11:59:38   8598 -22260   71   H   -n  -0.3166  1.0139  12S  46E  71   50  01m17s
+05259  0200 Sep 26  02:23:46   8594 -22254   76   A   -n   0.2758  0.9517  13N 174W  74  183  05m08s
+
+
+
+
+
+
+World Atlas of Solar Eclipse Paths
+
+Detailed maps of all annular, total and hybrid eclipses during the 
+  2nd century CE can be found at the World Atlas of Solar Eclipse Paths. 
+The maps are broken down into 20 year intervals and may be accessed through the links below. 
+Each map is stored in GIF format with a typical file size of 130 kilobytes. 
+
+
+   
+    World Atlas of Solar Eclipse Paths
+   
+    
+        2nd century CE
+      0101-0120
+      0121-0140
+      0141-0160
+      0161-0180
+      0181-0200
+    
+  
+
+
+
+
+
+Index to Five Millennium Catalog of Solar Eclipses
+
+Each link below displays a web page containing 100 years of solar eclipses. 
+Every eclipse has links of global maps, central paths plotted on Google Maps, Saros series tables, 
+and Besselian elements.
+
+
+
+
+    Five Millennium Catalog of Solar Eclipses
+
+
+
+
+    Centuries 
+
+
+   -1999 - -1900 
+   -1899 - -1800 
+   -1799 - -1700 
+   -1699 - -1600 
+   -1599 - -1500 
+
+
+   -1499 - -1400 
+   -1399 - -1300 
+   -1299 - -1200 
+   -1199 - -1100 
+   -1099 - -1000 
+
+
+   -0999 - -0900 
+   -0899 - -0800 
+   -0799 - -0700 
+   -0699 - -0600 
+   -0599 - -0500 
+
+
+   -0499 - -0400 
+   -0399 - -0300 
+   -0299 - -0200 
+   -0199 - -0100 
+   -0099 - -0000 
+
+
+   0001 - 0100 
+   0101 - 0200 
+   0201 - 0300 
+   0301 - 0400 
+   0401 - 0500 
+
+
+   0501 - 0600 
+   0601 - 0700 
+   0701 - 0800 
+   0801 - 0900 
+   0901 - 1000 
+
+
+    1001-1100 
+    1101-1200 
+    1201-1300 
+    1301-1400 
+    1401-1500 
+
+
+    1501-1600 
+    1601-1700 
+    1701-1800 
+    1801-1900 
+    1901-2000 
+
+
+    2001-2100 
+    2101-2200 
+    2201-2300 
+    2301-2400 
+    2401-2500 
+
+
+    2501-2600 
+    2601-2700 
+    2701-2800 
+    2801-2900 
+    2901-3000 
+
+
+
+
+These web pages are part of the Five Millennium Catalog of Solar Eclipses: -1999 to +3000
+
+
+
+Calendar
+
+The Gregorian calendar is used for all dates from 1582 Oct 15 onwards. 
+Before that date, the Julian calendar is used. 
+For more information on this topic, see Calendar Dates. 
+The Julian calendar does not include the year 0. 
+Thus the year 1 BCE is followed by the year 1 CE (See:  BCE/CE Dating Conventions ).
+This is awkward for arithmetic calculations. 
+Years in this catalog are numbered astronomically and include the year 0. 
+Historians should note there is a difference of one year between astronomical dates and BCE dates. 
+Thus, the astronomical year 0 corresponds to 1 BCE, and astronomical year -1 corresponds to 2 BCE, etc.. 
+
+
+
+Predictions
+
+The coordinates of the Sun used in these predictions are based on the VSOP87 theory [Bretagnon and Francou, 1988].
+The Moon's coordinates are based on the ELP-2000/82 theory [Chapront-Touze and Chapront, 1983]. 
+For more information, see: Solar and Lunar Ephemerides.
+The revised value used for the Moon's  secular acceleration  is n-dot = -25.858 arc-sec/cy*cy, 
+as deduced from the Apollo lunar laser ranging experiment  (Chapront, Chapront-Touze, and Francou, 2002).
+
+The largest uncertainty in the eclipse predictions is caused by fluctuations in 
+Earth's rotation due primarily to tidal friction of the Moon. 
+The resultant drift in apparent clock time is expressed as &#916;T and is determined as follows:
+
+
+   pre-1950's: &#916;T calculated from empirical fits to historical records derived by Morrison  and Stephenson (2004)
+   1955-present: &#916;T obtained from published observations
+   future: &#916;T is extrapolated from current values weighted by the long term trend from tidal effects
+
+
+
+A series of polynomial expressions have been derived to simplify the evaluation of 
+&#916;T for any time from -1999 to +3000. 
+The uncertainty in &#916;T over this period can be estimated from scatter in the measurements.
+
+
+
+
+
+
+Footnotes
+
+[1] The Moon's orbit is inclined about 5.1&deg; to Earth's orbit around the Sun. 
+The points where the lunar orbit intersects the plane of Earth's orbit are known as the nodes. 
+The Moon moves from south to north of Earth's orbit at the ascending node, and from north to south at the descending node. 
+
+
+[2] 
+Hybrid eclipses are also known as annular/total eclipses. 
+Such an eclipse is both total and annular along different sections of its umbral path. 
+(See: Five Millennium Catalog of Hybrid Solar Eclipses)
+
+
+[3] 
+Central solar eclipses are eclipses in which the central axis of the Moon's shadow strikes the Earth's surface. 
+All partial (penumbral) eclipses are non-central eclipses since the shadow axis misses Earth. 
+However, umbral eclipses (total, annular and hybrid) may be either central (usually) or non-central (rarely).
+
+
+[4] 
+The terms BCE and CE are abbreviations for 
+"Before Common Era" and "Common Era," respectively.
+They are the secular equivalents to the BC and AD dating conventions. 
+(See:  Year Dating Conventions )
+
+
+[5] 
+Greatest eclipse is defined as the instant when the axis of the Moon's shadow passes closest to the Earth's center. 
+For total eclipses, the instant of greatest eclipse is virtually identical to the instants of greatest magnitude and greatest duration. 
+However, for annular eclipses, the instant of greatest duration may occur at either the time of greatest eclipse or near the sunrise and sunset points of the eclipse path.
+
+
+
+
+
+Acknowledgments
+
+The information presented on this web page is based on data published in 
+Five Millennium Canon of Solar Eclipses: -1999 to +3000 and 
+Five Millennium Catalog of Solar Eclipses: -1999 to +3000. 
+The individual global maps appearing in links were extracted from full page plates appearing in 
+Five Millennium Canon by Dan McGlaun. 
+The Besselian elements were provided by Jean Meeus. 
+Fred Espenak assumes full responsibility for the accuracy of all eclipse calculations. 
+
+
+Permission is freely granted to reproduce this data when accompanied by an acknowledgment:
+
+"Eclipse Predictions by Fred Espenak (NASA's GSFC)"
+
+
+
+//<![CDATA[
+   <!--
+   document.write('');
+   -->
+//]]>
+
+
+
+
+
+
+
+Eclipse Links
+
+ Five Millennium Catalog of Solar Eclipses
+
+ Ten Millennium Catalog of Long Solar Eclipses
+
+ Saros Series Catalog of Solar Eclipses 
+
+  World Atlas of Solar Eclipse Paths
+
+
+
+ 2010 Jul 21
+
+
+
+
+Go to NASA Solar Eclipse
+Page
+
+Go to NASA Lunar Eclise Page
+Go to NASA Planetary Transit Page
+Go to NASA Eclipse Resource Page
+
+
+
+
+
+Webmaster: Fred Espenak
+Email: fred.espenak@nasa.gov
+
+Official NASA Representative: Robert M. Candey
+Email: <a
+href="mailto:Robert.M.Candey@nasa.gov">Robert.M.Candey@nasa.gov
+
+Heliospheric Physics Laboratory &#8211; Code 672
+NASA's Goddard Space Flight Center, Greenbelt, Maryland 20771, USA
+
+
+
+
+
+

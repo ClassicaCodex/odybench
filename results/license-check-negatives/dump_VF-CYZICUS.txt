@@ -1,0 +1,228 @@
+#### SET VF-CYZICUS
+{
+ "set": "VF-CYZICUS",
+ "role": "negative",
+ "searchable": true,
+ "text": "Valerius Flaccus, Argonautica 3.1-3.258 (the night battle at Cyzicus)",
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "edition_id": 2081,
+ "day0": "Day 0 is the day the Argo leaves Cyzicus (the third dawn there); Night 0 is the night it is driven back and the battle; Dawn +1 shows the dead.",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "VF-CYZICUS-02": "a"
+  },
+  "BM-analogue": {
+   "VF-CYZICUS-02": "a"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "text",
+   "clue_ids": [
+    "VF-CYZICUS-02"
+   ],
+   "note": "a Moon up in the second half of Night 0"
+  },
+  "season_stars": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "morning_star": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "mercury_turning_point": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "darkness_eclipse": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": "the long night of 3.210-211 is divine (the stars stand still)"
+  }
+ },
+ "notes": "One lunar clue: many survivors expected. Compare Apollonius' version of the same night (ARG-CIUS-05), where no Moon is named.",
+ "eclipse_compatible_options": [],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness"
+}
+-- observer_place {"place": "Cyzicus", "words": "portuque refertur amico", "ref": ["3.42"], "text_file": "valerius-flaccus-argonautica-lat.tsv", "lat": 40.3878, "lon": 27.8706, "coord_source": "Cyzicus (Wikipedia, fetched 2026-10-04); the port is the text's 'friendly harbour' of the Doliones"}
+   CHECK exact | portuque refertur amico | in ['3.42']
+   3.34       aura vehit; religant tonsas veloque Procnesson
+   3.35       et te iam medio flaventem, Rhundace, ponto
+   3.36       spumosumque legunt fracta Scylaceon ab unda.
+   3.37       ipse diem longe solisque cubilia Tiphys
+   3.38       consulit, ipse ratem vento stellisque ministrat.
+   3.39       atque ilium non ante sopor luctamine tanto
+   3.40       lenit agens divum imperiis; cadit inscia clavo
+   3.41       dextera, demittitque oculos, solataque puppis
+>> 3.42       turbine flectit iter portuque refertur amico.
+   3.43       Ut notis adlapsa vadis, dant aethere longa
+   3.44       signa tubae, vox et mediis emissa tenebris:
+   3.45       'hostis habet portus, soliti rediere Pelasgi.'
+   3.46       rupta quies; deus ancipitem lymphaverat urbem
+   3.47       Mygdoniae Pan iussa ferens saevissima matris,
+
+==============================================================================================================
+{
+ "set": "VF-CYZICUS",
+ "clue_id": "VF-CYZICUS-01",
+ "kind": "time-of-day",
+ "statement": "The third dawn at Cyzicus begins Day 0 and the Argo sails; in Night 0, as the stars incline and bring sleep, Tiphys dozes and the ship is carried back to the Doliones' harbour.",
+ "licence_words": "Tertia iam gelidas Tithonia solverat umbras … Nox erat et leni canebant aequora sulco, et iam prona leves spargebant sidera somnos … portuque refertur amico",
+ "ref": [
+  "3.1",
+  "3.2",
+  "3.32",
+  "3.33",
+  "3.40",
+  "3.41",
+  "3.42"
+ ],
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | Tertia iam gelidas Tithonia solverat umbras | in ['3.1']
+   CHECK exact | Nox erat et leni canebant aequora sulco, et iam prona leves spargebant sidera somnos | in []
+   CHECK exact | portuque refertur amico | in ['3.42']
+   --- context (valerius-flaccus-argonautica-lat.tsv) ---
+   2.658      terga vides, meus hic ratibus qui pascitur ignis.'
+   2.659      subicit Aesonides: 'utinam nunc ira Pelasgos
+   2.660      adferat et solitis temptet concurrere furtis
+   2.661      cunctaque se ratibus fundat manus: arma videbis
+   2.662      hospita nec post hanc ultra tibi proelia noctem.'
+   2.663      sic ait basque inter variis nox plurima dictis
+   2.664      rapta vices nec non simili lux postera tractu.
+   3.head     C. Valeri Flacci Argonauticon Liber Tertius.
+>> 3.1        Tertia iam gelidas Tithonia solverat umbras
+>> 3.2        exueratque polum; Tiphyn placida alta vocabant.
+   3.3        it tectis Argoa manus, simul urbe profusi
+   3.4        Aenidae caris socium digressibus haerent.
+   3.5        dant Cererem lectumque pecus nec palmite Bacchum
+   3.6        Bithyno Phrygiove satum, sed quem sua noto
+   3.7        colle per angustae Lesbos freta suggerit Helles.
+   ...
+   3.24       oppressit iaculo redeuntem ad frena leonem.
+   3.25       et nunc ille iubas captivaque postibus ora
+   3.26       imposuit, spolium infelix divaeque pudendum.
+   3.27       quae postquam Haemoniam tantae non immemor irae
+   3.28       aerisono de monte ratem praefixaque regum
+   3.29       scuta videt, nova monstra viro, nova funera volvit,
+   3.30       ut socias in nocte manus utque impia bella
+   3.31       conserat et saevis erroribus implicet urbem.
+>> 3.32       Nox erat et leni canebant aequora sulco,
+>> 3.33       et iam prona leves spargebant sidera somnos.
+   3.34       aura vehit; religant tonsas veloque Procnesson
+   3.35       et te iam medio flaventem, Rhundace, ponto
+   3.36       spumosumque legunt fracta Scylaceon ab unda.
+   3.37       ipse diem longe solisque cubilia Tiphys
+   3.38       consulit, ipse ratem vento stellisque ministrat.
+   3.39       atque ilium non ante sopor luctamine tanto
+>> 3.40       lenit agens divum imperiis; cadit inscia clavo
+>> 3.41       dextera, demittitque oculos, solataque puppis
+>> 3.42       turbine flectit iter portuque refertur amico.
+   3.43       Ut notis adlapsa vadis, dant aethere longa
+   3.44       signa tubae, vox et mediis emissa tenebris:
+   3.45       'hostis habet portus, soliti rediere Pelasgi.'
+   3.46       rupta quies; deus ancipitem lymphaverat urbem
+   3.47       Mygdoniae Pan iussa ferens saevissima matris,
+
+==============================================================================================================
+{
+ "set": "VF-CYZICUS",
+ "clue_id": "VF-CYZICUS-02",
+ "kind": "moon-phase",
+ "statement": "In the battle of Night 0 the Moon, pitying, shines out from the pitch-black sky and turns a spear from Erymus.",
+ "licence_words": "venatori Erymo … piceo comitem miserata refulsit Luna polo",
+ "ref": [
+  "3.194",
+  "3.195",
+  "3.196"
+ ],
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "the Moon is above the horizon at some instant between local midnight and the start of morning nautical twilight of Night 0",
+   "justification": "the battle follows the return late in the night ('prona sidera', 3.33)"
+  },
+  {
+   "option": "b",
+   "operational": "the Moon is above the horizon at some instant of Night 0",
+   "justification": "looser timing"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the Moon as a goddess intervening; a divine act, not a sky state"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | venatori Erymo | in ['3.194']
+   CHECK exact | piceo comitem miserata refulsit Luna polo | in []
+   --- context (valerius-flaccus-argonautica-lat.tsv) ---
+   3.186      Accessere (nefas) tenebris fallacibus acti
+   3.187      Tyndaridae in sese: Castor prius ibat in ictus
+   3.188      nescius; ast illos nova lux subitusque diremit
+   3.189      frontis apex. tum Castor Ityn, qua caerulus ambit
+   3.190      balteus et gemini committunt ora dracones,
+   3.191      frater Hagen Thapsumque securigerumque Nealcen
+   3.192      transigit et Canthi pallentem vulnere Cydrum.
+   3.193      torserat hic totis conisus viribus hastam
+>> 3.194      venatori Erymo, brevis hanc sed fata ferentem
+>> 3.195      prodidit et piceo comitem miserata refulsit
+>> 3.196      Luna polo; cessere iubae, raptumque per auras
+   3.197      vulnus, et extrema sonuit cita cuspide cassis.
+   3.198      Nisaeum Telamon et Ophelten vana sonantem
+   3.199      per clipei cedentis opus cratemque trilicem,
+   3.200      qua stomachi secreta, ferit laetusque profatur:
+   3.201      'di, precor, hunc regem aut aeque delegerit alta
+
+==============================================================================================================
+{
+ "set": "VF-CYZICUS",
+ "clue_id": "VF-CYZICUS-03",
+ "kind": "time-of-day",
+ "statement": "Dawn +1 lights the harbour and the towers they know.",
+ "licence_words": "primo iam spargere lumine portus orta dies notaeque … albescere turres",
+ "ref": [
+  "3.257",
+  "3.258"
+ ],
+ "text_file": "valerius-flaccus-argonautica-lat.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | primo iam spargere lumine portus orta dies notaeque | in []
+   CHECK exact | albescere turres | in ['3.258']
+   --- context (valerius-flaccus-argonautica-lat.tsv) ---
+   3.249      Tum pater omnipotens tempus iam rege perempto
+   3.250      flectere fata ratus miserasque abrumpere pugnas,
+   3.251      supremam celeravit opem nutuque sereno
+   3.252      intonuit, quem Nocte satae, quem turbidus horret
+   3.253      Armipotens: tunc porta trucis coit infera belli.
+   3.254      continuo dant terga metu versique per agros
+   3.255      diffugiunt, quae sola salus; nec terga ruentum
+   3.256      mens Minyis conversa sequi: stetit anxia virtus.
+>> 3.257      ecce autem primo iam spargere lumine portus
+>> 3.258      orta dies notaeque (nefas) albescere turres.
+   3.259      'di maris' attonito conclamat ab agmine Tiphys,
+   3.260      'ut mea fatali damnastis pectora somno.
+   3.261      heu socii quantis complerunt litora monstris.'
+   3.262      illi autem neque adhuc gemitus neque conscia facti
+   3.263      ora levant; tenet exsangues rigor horridus artus;

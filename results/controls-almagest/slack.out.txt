@@ -1,0 +1,151 @@
+== Inner planets: offsets (record instant minus DE441 event), days; elongations in deg
+id         reading   date (UT, proleptic Julian)                   el.true  GE.true  off.GE off.GEmean  defic pl.5  pl1 side       rise/set Sun alt body alt
+IX.7.4     printed   +0132-02-02 16:13:44 UT (2 Feb AD 132, proleptic Julian)   +18.09   +18.16 +1.1       +1.1   0.07    5    8   ok   set lag   +86    -8.0      9.9
+IX.7.5     printed   +0134-06-04 02:13:46 UT (4 Jun AD 134, proleptic Julian)   -20.18   -21.32 -5.5       -6.2   1.14    7   11   ok rise lead   +55    -8.0      2.9
+IX.7.6     printed   +0138-06-04 17:35:04 UT (4 Jun AD 138, proleptic Julian)   +25.64   +26.07 -4.2       -3.6   0.43    9   13   ok   set lag  +117    -8.0     14.6
+IX.7.7     printed   +0141-02-02 04:21:26 UT (2 Feb AD 141, proleptic Julian)   -27.01   -27.02 +0.8       +1.1   0.01   10   14   ok rise lead   +96    -8.0     10.6
+IX.7.9     printed   -0261-02-12 04:17:28 UT (12 Feb 262 BC, proleptic Julian)   -27.33   -27.65 -3.6       -3.4   0.32    9   14   ok rise lead   +93    -8.0     10.2
+IX.7.11    printed   -0261-05-25 17:25:32 UT (25 May 262 BC, proleptic Julian)    -3.73   +23.05 +26.8      +27.1  19.32    7   11  BAD   set lag   -12    -8.0    -10.5
+IX.7.11    emended:  -0261-04-25 17:04:26 UT (25 Apr 262 BC, proleptic Julian)   +22.72   +23.05 -3.3       -2.9   0.34    7   11   ok   set lag  +111    -8.0     14.5
+IX.7.12    printed   -0256-05-28 17:28:11 UT (28 May 257 BC, proleptic Julian)   +25.43   +25.46 +1.1       +1.7   0.03    9   12   ok   set lag  +118    -8.0     15.1
+IX.7.14    printed   -0261-08-23 17:14:17 UT (23 Aug 262 BC, proleptic Julian)   +26.03   +26.18 -2.7       -2.3   0.15   10   14   ok   set lag   +63    -8.0      5.4
+IX.7.15    printed   -0236-10-30 02:44:06 UT (30 Oct 237 BC, proleptic Julian)   -19.79   -20.09 +2.9       +3.2   0.30    7   10   ok rise lead   +94    -8.0     11.7
+IX.7.16    printed   -0244-11-19 03:01:52 UT (19 Nov 245 BC, proleptic Julian)   -21.75   -21.86 -1.8       -1.4   0.10    8   12   ok rise lead  +105    -8.0     13.4
+IX.8.3     printed   +0134-10-03 03:21:36 UT (3 Oct AD 134, proleptic Julian)   -17.98   -18.51 +3.4       +3.6   0.54    6    8   ok rise lead   +83    -8.0     10.0
+IX.8.4     printed   +0135-04-05 16:54:14 UT (5 Apr AD 135, proleptic Julian)   +20.67   +20.78 +1.6       +1.9   0.11    7    9   ok   set lag   +98    -8.0     12.7
+IX.9.3     printed   +0130-07-04 17:44:10 UT (4 Jul AD 130, proleptic Julian)   +27.25   +27.25 -0.1       +0.6   0.00    9   13   ok   set lag   +97    -8.0     11.2
+IX.9.4     printed   +0139-07-08 02:18:07 UT (8 Jul AD 139, proleptic Julian)   -19.33   -19.33 +0.2       -0.4   0.00    7    9   ok rise lead   +78    -8.0      7.1
+IX.9.4     emended:  +0139-07-05 02:16:36 UT (5 Jul AD 139, proleptic Julian)   -18.94   -19.33 -2.8       -3.4   0.39    7    9   ok rise lead   +72    -8.0      6.0
+IX.10.3    printed   +0139-05-17 17:23:17 UT (17 May AD 139, proleptic Julian)   +24.29   +24.70 -3.9       -3.4   0.41    9   12   ok   set lag  +118    -8.1     15.0
+IX.10.6a   printed   -0264-11-15 03:54:21 UT (15 Nov 265 BC, proleptic Julian)   -17.14   -22.24 -10.5      -10.0   5.10    8   12   ok rise lead   +82    -8.0      9.1
+IX.10.6b   printed   -0264-11-19 03:57:50 UT (19 Nov 265 BC, proleptic Julian)   -20.62   -22.24 -6.5       -6.0   1.62    8   12   ok rise lead   +99    -8.0     12.4
+X.1.3      printed   +0132-03-08 16:37:56 UT (8 Mar AD 132, proleptic Julian)   +44.97   +46.04 +16.1      +15.9   1.07   25   35   ok   set lag  +212    -8.0     36.9
+X.1.4      printed   +0140-07-30 02:33:40 UT (30 Jul AD 140, proleptic Julian)   -44.59   -45.81 +20.6      +16.2   1.22   24   34   ok rise lead  +194    -8.0     31.6
+X.1.5      printed   +0127-10-12 03:27:49 UT (12 Oct AD 127, proleptic Julian)   -45.51   -46.45 +18.3      +19.5   0.93   25   34   ok rise lead  +211    -8.0     37.1
+X.1.6      printed   +0136-12-25 15:45:04 UT (25 Dec AD 136, proleptic Julian)   +46.11   +47.24 +16.7      +11.6   1.13   25   35   ok   set lag  +215    -8.0     31.9
+X.2.3      printed   +0129-05-20 02:21:36 UT (20 May AD 129, proleptic Julian)   -44.94   -45.87 +17.8      +13.6   0.93   24   34   ok rise lead  +125    -8.0     18.2
+X.2.4      printed   +0136-11-18 15:39:34 UT (18 Nov AD 136, proleptic Julian)   +46.13   +47.24 -20.3      -25.4   1.11   25   35   ok   set lag  +180    -8.0     22.6
+X.3.2a     printed   +0134-02-18 04:08:50 UT (18 Feb AD 134, proleptic Julian)   -46.55   -46.56 +1.9       +2.6   0.01   24   34   ok rise lead  +168    -8.0     23.1
+X.3.2b     printed   +0140-02-18 16:25:36 UT (18 Feb AD 140, proleptic Julian)   +46.08   +46.09 -0.6       -1.0   0.00   25   35   ok   set lag  +215    -8.0     37.7
+X.4.3      printed   +0138-12-16 02:45:02 UT (16 Dec AD 138, proleptic Julian)   -46.39   -46.94 +13.5      +18.4   0.54   24   34   ok rise lead  +220   -27.3     17.3
+X.4.6a     printed   -0271-10-12 03:26:48 UT (12 Oct 272 BC, proleptic Julian)   -41.57   -46.22 +45.6      +44.7   4.65   24   34   ok rise lead  +194    -8.0     33.3
+X.4.6b     printed   -0271-10-16 03:29:47 UT (16 Oct 272 BC, proleptic Julian)   -40.89   -46.22 +49.6      +48.7   5.34   24   34   ok rise lead  +190    -8.0     32.7
+
+== Mercury horizon-azimuth extrema: record civil day minus the vertex of the nearest local max / min of the daily azimuth (N through E) at rising (morning records) or setting (evening records), days
+IX.7.4     printed   setting  az-max -8.3  az-min +34.5
+IX.7.5     printed   rising   az-max +6.2  az-min -29.8
+IX.7.6     printed   setting  az-max +9.0  az-min -28.7
+IX.7.7     printed   rising   az-max -2.2  az-min +26.7
+IX.7.9     printed   rising   az-max -2.5  az-min +26.5
+IX.7.11    printed   setting  az-max +22.3  az-min -9.5
+IX.7.11    emended:  setting  az-max -7.7  az-min -39.5
+IX.7.12    printed   setting  az-max +7.5  az-min -28.5
+IX.7.14    printed   setting  az-max -38.5  az-min -15.3
+IX.7.15    printed   rising   az-max +31.8  az-min +9.1
+IX.7.16    printed   rising   az-max +29.5  az-min +6.8
+IX.8.3     printed   rising   az-max +31.0  az-min +7.4
+IX.8.4     printed   setting  az-max -6.1  az-min -36.0
+IX.9.3     printed   setting  az-max +25.8  az-min -18.2
+IX.9.4     printed   rising   az-max +15.7  az-min -12.0
+IX.9.4     emended:  rising   az-max +12.7  az-min -15.0
+IX.10.3    printed   setting  az-max +0.1  az-min -35.7
+IX.10.6a   printed   rising   az-max +21.5  az-min -1.3
+IX.10.6b   printed   rising   az-max +25.5  az-min +2.7
+
+== Oppositions (record instant minus DE441 opposition to the true / to the mean Sun), days
+X.7.3a     +0130-12-14 22:59:28 UT (14 Dec AD 130, proleptic Julian) true +0.60  mean +0.34
+X.7.3b     +0135-02-21 19:16:40 UT (21 Feb AD 135, proleptic Julian) true +1.10  mean -0.32
+X.7.3c     +0139-05-27 19:53:28 UT (27 May AD 139, proleptic Julian) true +0.63  mean +0.42
+XI.1.2a    +0133-05-17 20:53:14 UT (17 May AD 133, proleptic Julian) true +0.63  mean +0.11
+XI.1.2b    +0136-08-31 19:59:39 UT (31 Aug AD 136, proleptic Julian) true -1.81  mean -0.01
+XI.1.2c    +0137-10-08 02:49:28 UT (8 Oct AD 137, proleptic Julian) true -1.41  mean +0.06
+XI.5.2a    +0127-03-26 16:48:10 UT (26 Mar AD 127, proleptic Julian) true +1.54  mean -0.21
+XI.5.2b    +0133-06-03 13:54:09 UT (3 Jun AD 133, proleptic Julian) true -0.21  mean -0.21
+XI.5.2c    +0136-07-08 10:01:10 UT (8 Jul AD 136, proleptic Julian) true -1.11  mean -0.03
+
+== Planet-star relations
+IX.7.9     delta_cap  sep   2.32  dlon  +0.11 (stated 0.0)  dlat  +2.32 (stated 1.5)  rate +0.838/d  implied offset +0.1 d
+IX.7.11    line beta_tau-zeta_tau: dist east  +3.86 (stated +1.50)  rate -0.595/d  implied offset -4.0 d
+IX.7.11    beta_tau   sep  10.95  dlon  +6.53 (stated None)  dlat  -8.77 (stated -1.5)  rate -0.568/d  implied offset    -   d
+IX.7.11    line beta_tau-zeta_tau: dist east  +0.76 (stated +1.50)  rate +1.077/d  implied offset -0.7 d
+IX.7.11    beta_tau   sep   3.19  dlon  +1.58 (stated None)  dlat  -2.77 (stated -1.5)  rate +1.133/d  implied offset    -   d
+IX.7.12    Castor-Pollux line: perp  +0.01; beyond Pollux  +8.02 (stated 9.21; C-P 4.69)  rate +0.718/d  implied offset -1.7 d
+IX.7.14    spica      sep   1.24  dlon  -1.21 (stated -3.0)  dlat  -0.26 (stated None)  rate +1.059/d  implied offset +1.7 d
+IX.7.15    alpha2_lib sep   1.67  dlon  -0.11 (stated None)  dlat  +1.67 (stated 1.0)  rate +1.227/d  implied offset    -   d
+IX.7.16    beta1_sco  sep   1.23  dlon  +0.31 (stated None)  dlat  +1.19 (stated 1.0)  rate +0.924/d  implied offset    -   d
+IX.9.3     regulus    sep   3.72  dlon  +3.48 (stated 3.8333333333333335)  dlat  -1.30 (stated None)  rate +0.931/d  implied offset -0.4 d
+IX.10.6a   line beta1_sco-delta_sco: dist east  +0.77 (stated +0.50)  rate -0.100/d  implied offset -2.7 d
+IX.10.6a   beta1_sco  sep   1.85  dlon  +1.09 (stated None)  dlat  +1.49 (stated 1.0)  rate -0.095/d  implied offset    -   d
+IX.10.6b   line beta1_sco-delta_sco: dist east  +1.33 (stated +0.75)  rate +0.494/d  implied offset +1.2 d
+X.1.3      alcyone    sep   1.84  dlon  -1.84 (stated -1.5)  dlat  +0.08 (stated -0.25)  rate +0.821/d  implied offset -0.4 d
+X.1.4      zeta_gem   sep   1.45  dlon  +1.45 (stated 0.125)  dlat  -0.11 (stated 0.125)  rate +1.071/d  implied offset +1.2 d
+X.1.5      beta_vir   sep   1.07  dlon  +1.07 (stated 1.5)  dlat  -0.02 (stated 0.5)  rate +1.103/d  implied offset -0.4 d
+X.1.6      nearest phi_aqr seps {"lambda_aqr": 4.38, "phi_aqr": 1.51, "psi1_aqr": 3.85, "psi2_aqr": 4.27, "psi3_aqr": 4.76} dlon -1.22 (stated -0.33) implied offset -1.0 d
+X.4.6a     eta_vir    sep at record  0.218; closest  0.215 (record - closest +0.03 d); record - lon. conj +0.04 d
+X.9.2      beta1_sco  sep at record  0.957; closest  0.033 (record - closest +1.67 d); record - lon. conj +1.67 d
+XI.3.2     delta_cnc  sep at record  0.285; closest  0.250 (record - closest -0.87 d); record - lon. conj -0.89 d
+XI.7.2     gamma_vir  sep   0.36  dlon  +0.03 (stated 0.0)  dlat  -0.36 (stated -0.16666666666666666)  rate -0.077/d  implied offset -0.4 d
+
+== Moon relations (topocentric Alexandria)
+IX.10.3    printed   body-Moon dlon  +0.50 (stated 1.1666666666666667) dlat +4.85 sep  4.88 implied +1.3 h | Moon elong  +24.7 illum 0.05 age 1.97 d, to next conj 27.47 d
+X.4.3      printed   body-Moon dlon  +0.59 (stated -0.25) dlat -1.86 sep  1.95 implied -2.1 h | Moon elong  -48.0 illum 0.17 age 25.86 d, to next conj 3.67 d
+X.8.2      printed   body-Moon dlon  +1.04 (stated 1.6) dlat -6.58 sep  6.66 implied +1.4 h | Moon elong +172.7 illum 1.00 age 15.03 d, to next conj 14.41 d
+XI.2.2     printed   body-Moon dlon  -0.07 (stated 0.0) dlat +3.15 sep  3.15 implied +0.2 h | Moon elong  -30.4 illum 0.07 age 26.93 d, to next conj 2.60 d
+XI.6.2     printed   body-Moon dlon  -0.20 (stated 0.5) dlat +0.05 sep  0.21 implied +1.2 h | Moon elong  +40.9 illum 0.12 age 2.97 d, to next conj 26.50 d
+V.3.2      Moon-Sun stated  -99.17 computed  -98.53 implied +2.01 h | age 21.96 d, to next conj 7.46 d
+VII.2.4    Moon-Sun stated  +92.12 computed  +92.50 implied +1.32 h | age 6.99 d, to next conj 22.38 d
+
+== Eclipse / equinox
+III.1.10   DE441 equinox +0140-03-21 14:16:42 UT (21 Mar AD 140, proleptic Julian); record - DE441 +0.87 d
+IV.6.14    greatest +0134-10-20 20:46:17 UT (20 Oct AD 134, proleptic Julian) LAT 22.98 h; umbral mag 0.84; Moon lat rel. axis -0.50; record - computed +0.02 h
+
+== Instants used
+IX.7.4     printed                                  +0132-02-02 16:13:44 UT (2 Feb AD 132, proleptic Julian)  LAT 17.93  Sun   -8.0  Alexandria
+IX.7.5     printed                                  +0134-06-04 02:13:46 UT (4 Jun AD 134, proleptic Julian)  LAT  4.33  Sun   -8.0  Alexandria
+IX.7.6     printed                                  +0138-06-04 17:35:04 UT (4 Jun AD 138, proleptic Julian)  LAT 19.68  Sun   -8.0  Alexandria
+IX.7.7     printed                                  +0141-02-02 04:21:26 UT (2 Feb AD 141, proleptic Julian)  LAT  6.06  Sun   -8.0  Alexandria
+IX.7.9     printed                                  -0261-02-12 04:17:28 UT (12 Feb 262 BC, proleptic Julian)  LAT  5.98  Sun   -8.0  Alexandria
+IX.7.11    printed                                  -0261-05-25 17:25:32 UT (25 May 262 BC, proleptic Julian)  LAT 19.55  Sun   -8.0  Alexandria
+IX.7.11    emended: Nab 486 Mecheir 30/Phamenoth 1, -0261-04-25 17:04:26 UT (25 Apr 262 BC, proleptic Julian)  LAT 19.13  Sun   -8.0  Alexandria
+IX.7.12    printed                                  -0256-05-28 17:28:11 UT (28 May 257 BC, proleptic Julian)  LAT 19.59  Sun   -8.0  Alexandria
+IX.7.14    printed                                  -0261-08-23 17:14:17 UT (23 Aug 262 BC, proleptic Julian)  LAT 19.20  Sun   -8.0  Alexandria
+IX.7.15    printed                                  -0236-10-30 02:44:06 UT (30 Oct 237 BC, proleptic Julian)  LAT  5.91  Sun   -8.0  Babylon (assumed)
+IX.7.16    printed                                  -0244-11-19 03:01:52 UT (19 Nov 245 BC, proleptic Julian)  LAT  6.17  Sun   -8.0  Babylon (assumed)
+IX.8.3     printed                                  +0134-10-03 03:21:36 UT (3 Oct AD 134, proleptic Julian)  LAT  5.51  Sun   -8.0  Alexandria
+IX.8.4     printed                                  +0135-04-05 16:54:14 UT (5 Apr AD 135, proleptic Julian)  LAT 18.86  Sun   -8.0  Alexandria
+IX.9.3     printed                                  +0130-07-04 17:44:10 UT (4 Jul AD 130, proleptic Julian)  LAT 19.73  Sun   -8.0  Alexandria
+IX.9.4     printed                                  +0139-07-08 02:18:07 UT (8 Jul AD 139, proleptic Julian)  LAT  4.29  Sun   -8.0  Alexandria
+IX.9.4     emended: Nab 886 Mesore 20/21, morning   +0139-07-05 02:16:36 UT (5 Jul AD 139, proleptic Julian)  LAT  4.27  Sun   -8.0  Alexandria
+IX.10.3    printed                                  +0139-05-17 17:23:17 UT (17 May AD 139, proleptic Julian)  LAT 19.50  Sun   -8.1  Alexandria
+IX.10.6a   printed                                  -0264-11-15 03:54:21 UT (15 Nov 265 BC, proleptic Julian)  LAT  6.09  Sun   -8.0  Alexandria
+IX.10.6b   printed                                  -0264-11-19 03:57:50 UT (19 Nov 265 BC, proleptic Julian)  LAT  6.14  Sun   -8.0  Alexandria
+X.1.3      printed                                  +0132-03-08 16:37:56 UT (8 Mar AD 132, proleptic Julian)  LAT 18.42  Sun   -8.0  Alexandria
+X.1.4      printed                                  +0140-07-30 02:33:40 UT (30 Jul AD 140, proleptic Julian)  LAT  4.50  Sun   -8.0  Alexandria
+X.1.5      printed                                  +0127-10-12 03:27:49 UT (12 Oct AD 127, proleptic Julian)  LAT  5.65  Sun   -8.0  Alexandria
+X.1.6      printed                                  +0136-12-25 15:45:04 UT (25 Dec AD 136, proleptic Julian)  LAT 17.67  Sun   -8.0  Alexandria
+X.2.3      printed                                  +0129-05-20 02:21:36 UT (20 May AD 129, proleptic Julian)  LAT  4.47  Sun   -8.0  Alexandria
+X.2.4      printed                                  +0136-11-18 15:39:34 UT (18 Nov AD 136, proleptic Julian)  LAT 17.84  Sun   -8.0  Alexandria
+X.3.2a     printed                                  +0134-02-18 04:08:50 UT (18 Feb AD 134, proleptic Julian)  LAT  5.86  Sun   -8.0  Alexandria
+X.3.2b     printed                                  +0140-02-18 16:25:36 UT (18 Feb AD 140, proleptic Julian)  LAT 18.14  Sun   -8.0  Alexandria
+X.4.3      printed                                  +0138-12-16 02:45:02 UT (16 Dec AD 138, proleptic Julian)  LAT  4.75  Sun  -27.3  Alexandria
+X.4.6a     printed                                  -0271-10-12 03:26:48 UT (12 Oct 272 BC, proleptic Julian)  LAT  5.62  Sun   -8.0  Alexandria
+X.4.6b     printed                                  -0271-10-16 03:29:47 UT (16 Oct 272 BC, proleptic Julian)  LAT  5.68  Sun   -8.0  Alexandria
+X.7.3a     printed                                  +0130-12-14 22:59:28 UT (14 Dec AD 130, proleptic Julian)  LAT  1.00  Sun  -74.6  Alexandria
+X.7.3b     printed                                  +0135-02-21 19:16:40 UT (21 Feb AD 135, proleptic Julian)  LAT 21.00  Sun  -43.8  Alexandria
+X.7.3c     printed                                  +0139-05-27 19:53:28 UT (27 May AD 139, proleptic Julian)  LAT 22.00  Sun  -30.3  Alexandria
+X.8.2      printed                                  +0139-05-30 18:53:42 UT (30 May AD 139, proleptic Julian)  LAT 21.00  Sun  -21.8  Alexandria
+X.9.2      printed                                  -0271-01-18 04:29:20 UT (18 Jan 272 BC, proleptic Julian)  LAT  6.24  Sun   -8.0  Alexandria
+XI.1.2a    printed                                  +0133-05-17 20:53:14 UT (17 May AD 133, proleptic Julian)  LAT 23.00  Sun  -37.6  Alexandria
+XI.1.2b    printed                                  +0136-08-31 19:59:39 UT (31 Aug AD 136, proleptic Julian)  LAT 22.00  Sun  -40.6  Alexandria
+XI.1.2c    printed                                  +0137-10-08 02:49:28 UT (8 Oct AD 137, proleptic Julian)  LAT  5.00  Sun  -15.7  Alexandria
+XI.2.2     printed                                  +0139-07-11 03:01:34 UT (11 Jul AD 139, proleptic Julian)  LAT  5.00  Sun   -0.3  Alexandria
+XI.3.2     printed                                  -0240-09-04 02:59:34 UT (4 Sep 241 BC, proleptic Julian)  LAT  5.00  Sun   -8.0  Alexandria
+XI.5.2a    printed                                  +0127-03-26 16:48:10 UT (26 Mar AD 127, proleptic Julian)  LAT 18.69  Sun   -8.0  Alexandria
+XI.5.2b    printed                                  +0133-06-03 13:54:09 UT (3 Jun AD 133, proleptic Julian)  LAT 16.00  Sun  +36.3  Alexandria
+XI.5.2c    printed                                  +0136-07-08 10:01:10 UT (8 Jul AD 136, proleptic Julian)  LAT 12.00  Sun  +81.7  Alexandria
+XI.6.2     printed                                  +0138-12-22 18:03:24 UT (22 Dec AD 138, proleptic Julian)  LAT 20.00  Sun  -36.8  Alexandria
+XI.7.2     printed                                  -0228-03-01 15:33:24 UT (1 Mar 229 BC, proleptic Julian)  LAT 18.26  Sun   -8.0  Babylon (assumed)
+III.1.10   printed                                  +0140-03-22 11:07:53 UT (22 Mar AD 140, proleptic Julian)  LAT 13.00  Sun  +56.0  Alexandria
+IV.6.14    printed                                  +0134-10-20 20:47:14 UT (20 Oct AD 134, proleptic Julian)  LAT 23.00  Sun  -64.9  Alexandria
+V.3.2      printed                                  +0139-02-09 05:02:54 UT (9 Feb AD 139, proleptic Julian)  LAT  6.75  Sun   +1.5  Alexandria
+VII.2.4    printed                                  +0139-02-23 15:46:19 UT (23 Feb AD 139, proleptic Julian)  LAT 17.50  Sun   +1.0  Alexandria

@@ -1,0 +1,14 @@
+data/ephem/de441_m1320_m1030.bsp: exists, skipped (use --force to refetch)
+data/ephem/de431/de431_m1320_m1030.bsp: exists, skipped (use --force to refetch)
+data/ephem/de441_m0762_eclipse.bsp: exists, skipped (use --force to refetch)
+data/ephem/de431/de431_m0762_eclipse.bsp: exists, skipped (use --force to refetch)
+data/ephem/de441_m0584_eclipse.bsp: exists, skipped (use --force to refetch)
+data/ephem/de441_m0135_eclipse.bsp: exists, skipped (use --force to refetch)
+data/ephem/de431/de431_m0135_eclipse.bsp: exists, skipped (use --force to refetch)
+data/ephem/de441_m0708_eclipse.bsp: exists, skipped (use --force to refetch)
+data/ephem/de431/de431_m0708_eclipse.bsp: exists, skipped (use --force to refetch)
+data/ephem/de441_m2060_p0241.bsp: 237911792 bytes, 237.9 MB downloaded in 42 s; JD 968642.5..1809083.5; targets [1, 2, 3, 4, 5, 6, 10, 199, 299, 301, 399]; sha256 7c0028c6d24a85245e4f91167fabd1ad8d294d50343f7fd02f5e7dcc88a4861b
+data/ephem/de431/de431_m2060_p0001.bsp: 152067856 bytes, 152.1 MB downloaded in 20 s; JD 968642.5..1721425.5; targets [3, 10, 301, 399]; sha256 ee7d778ba9c5568251e4ef2f608caad8b170919b3c2bf009d3bd1f4414a714a4
+data/ephem/de431/de431_p0001_p0241.bsp: 17711696 bytes, 17.7 MB downloaded in 5 s; JD 1721425.5..1809083.5; targets [3, 10, 301, 399]; sha256 ccef82788fda2ddba14ee17269552a462a88d517e1dd2b2a65b442d6d77410ba
+data/ephem/de431/de431_m1339_eclipse.bsp: 30032 bytes, 0.0 MB downloaded in 2 s; JD 1231935.5..1232055.5; targets [3, 10, 301, 399]; sha256 b74334404f2e812e90d0a339ad5aa90037139a43c15151d2cb9ef7a14d6161a6
+data/ephem/de431/de431_m0647_eclipse.bsp: 30032 bytes, 0.0 MB downloaded in 2 s; JD 1484776.5..1484896.5; targets [3, 10, 301, 399]; sha256 d7bca73744765c63d4de38b761fb05a37abd44634e7f690f2670ae205f38885f

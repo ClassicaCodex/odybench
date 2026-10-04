@@ -1,0 +1,33 @@
+WARNING: contains date words (licence-check record; the searcher must not read this file)
+
+mean-Sun motion used: 0.98563528 deg/day (row 3.1.14: 0;59,8,17,13,12,31)
+
+ALM-A X.8.2     civil-day offset from text dates =    13 ; file day_offset = 13 ; elapsed from dates 13.06 d, from Ptolemy's mean Sun 13.07 d (diff +0.01)
+ALM-A IX.9.4    civil-day offset from text dates =    52 ; file day_offset = 52 ; elapsed from dates 51.40 d, from Ptolemy's mean Sun 48.46 d (diff -2.93)  [file forks: {'as_printed': 52, 'mean_sun_emended': 49}]
+ALM-A XI.2.2    civil-day offset from text dates =    55 ; file day_offset = 55 ; elapsed from dates 54.40 d, from Ptolemy's mean Sun 54.40 d (diff +0.00)
+ALM-B XI.6.2    civil-day offset from text dates =     6 ; file day_offset = 6 ; elapsed from dates 6.64 d, from Ptolemy's mean Sun 6.63 d (diff -0.01)
+ALM-B V.3.2     civil-day offset from text dates =    55 ; file day_offset = 55 ; elapsed from dates 55.08 d, from Ptolemy's mean Sun 55.09 d (diff +0.01)
+ALM-B VII.2.4   civil-day offset from text dates =    69 ; file day_offset = 69
+ALM-C IV.6.14   civil-day offset from text dates =    17 ; file day_offset = 17
+ALM-D X.1.3     civil-day offset from text dates =    35 ; file day_offset = 35 ; elapsed from dates 35.00 d, from Ptolemy's mean Sun 35.00 d (diff +0.00)
+ALM-E III.1.10  civil-day offset from text dates =    33 ; file day_offset = 33
+ALM-F X.1.6     civil-day offset from text dates =    37 ; file day_offset = 37 ; elapsed from dates 37.00 d, from Ptolemy's mean Sun 37.29 d (diff +0.29)
+ALM-G IX.7.5    civil-day offset from text dates =   106 ; file day_offset = 106 ; elapsed from dates 106.00 d, from Ptolemy's mean Sun 106.02 d (diff +0.02)
+ALM-H IX.7.11   civil-day offset from text dates =   102 ; file day_offset = 102 ; elapsed from dates 102.58 d, from Ptolemy's mean Sun 72.37 d (diff -30.21)  [file forks: {'as_printed': 102, 'mean_sun_emended': 72}]
+ALM-H IX.7.14   civil-day offset from text dates =   192 ; file day_offset = 192 ; elapsed from dates 192.58 d, from Ptolemy's mean Sun 192.43 d (diff -0.15)
+ALM-J X.4.6a    civil-day offset from text dates =   267 ; file day_offset = 267 ; elapsed from dates 267.00 d, from Ptolemy's mean Sun 266.99 d (diff -0.01)
+ALM-J X.4.6b    civil-day offset from text dates =   271 ; file day_offset = 271 ; elapsed from dates 271.00 d, from Ptolemy's mean Sun 270.98 d (diff -0.02)
+ALM-K XI.3.2    civil-day offset from text dates =  1385 ; file day_offset = 1385 ; elapsed from dates 1385.00 d, from Ptolemy's mean Sun 1385.00 d (diff -0.00)
+ALM-K IX.7.15   civil-day offset from text dates =  2902 ; file day_offset = 2902 ; elapsed from dates 2902.00 d, from Ptolemy's mean Sun 2902.02 d (diff +0.02)
+ALM-L X.2.3     civil-day offset from text dates =   586 ; file day_offset = 586 ; elapsed from dates 586.00 d, from Ptolemy's mean Sun 585.95 d (diff -0.05)
+ALM-L IX.9.3    civil-day offset from text dates =   996 ; file day_offset = 996 ; elapsed from dates 996.58 d, from Ptolemy's mean Sun 996.53 d (diff -0.05)
+ALM-I IX.10.6b stated in words 'μετὰ δ ἡμέρας' = 4 ; day numerals κβ -> κϚ: 22 -> 26 (+4) ; file day_offset = 4
+ALM-J X.4.6b also stated in words 'μετὰ γὰρ δ ἡμέρας' = 4 after X.4.6a
+
+rows with only the true Sun (or the equinox), via Ptolemy's solar model:
+ALM-C IV.6.14   true Sun 205.17 -> mean 206.71 ; elapsed from dates 17.75 d, from the Sun 17.72 d (diff -0.03)
+ALM-B VII.2.4   true Sun 333.05 -> mean 330.66 ; elapsed from dates 69.53 d, from the Sun 69.51 d (diff -0.02)
+ALM-E III.1.10  true Sun 0.00 -> mean 357.83 ; elapsed from dates 32.75 d, from the Sun 32.80 d (diff +0.05)
+ALM-C if IX.8.3 were an evening sighting (civil day D, not D+1): offset would be 18, elapsed 18.17 d
+
+mismatches: 0

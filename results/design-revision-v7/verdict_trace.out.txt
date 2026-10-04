@@ -1,0 +1,65 @@
+S0    P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['inconclusive']  qualifiers ['Q_BM', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+S0x   P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['3a']  qualifiers ['Q_BM', 'Q_record', 'Q_score', 'Q_slot', 'Q_tol']  [realisable]
+S0y   P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['3a', '3b']  qualifiers ['Q_BM', 'Q_record', 'Q_score', 'Q_slot', 'Q_tol']  [realisable]
+S1    P_BM 0.0260 P_MWRA 0.0227 P_BM_E 0.0400 P_MWRA_E 0.0345 -> p_H 0.0400 (p_H,min 0.0400)
+      labels ['1']  qualifiers ['Q_BM', 'Q_contra', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+S1b   P_BM 0.0390 P_MWRA 0.0455 P_BM_E 0.0600 P_MWRA_E 0.0690 -> p_H 0.0690 (p_H,min 0.0400)
+      labels ['inconclusive']  qualifiers ['Q_BM', 'Q_contra', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+S2    P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['2 (ordinary)']  qualifiers ['Q_BM', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+S2nm  P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['2 (no match)']  qualifiers ['Q_BM', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+S3a   P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['3a']  qualifiers ['Q_BM', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+S3b   P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['3b']  qualifiers ['Q_BM', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+S4    P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['4']  qualifiers ['Q_BM', 'Q_record', 'Q_slot', 'Q_tol']  [pending (G_j, E_j)]
+S4b   P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['inconclusive']  qualifiers ['Q_BM', 'Q_record', 'Q_slot', 'Q_tol']  [pending (G_j, E_j)]
+S5    P_BM 0.0649 P_MWRA 0.0227 P_BM_E 0.0400 P_MWRA_E 0.0345 -> p_H 0.0649 (p_H,min 0.0649)
+      labels ['inconclusive']  qualifiers ['Q_BM', 'Q_attain', 'Q_contra', 'Q_record', 'Q_slot', 'Q_tol']  [branch test: C7 pools]
+S6    P_BM 0.0260 P_MWRA 0.0227 P_BM_E 0.0400 P_MWRA_E 0.0345 -> p_H 0.0400 (p_H,min 0.0400)
+      labels ['1', '2 (ordinary)']  qualifiers ['Q_BM', 'Q_contra', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+S6b   P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['2 (ordinary)', '3a', '3b', '4']  qualifiers ['Q_BM', 'Q_H', 'Q_dT', 'Q_exposure', 'Q_record', 'Q_score', 'Q_slot', 'Q_tol']  [pending (G_j, E_j)]
+S7    -
+      labels BLOCKED  qualifiers []  [realisable]
+S8    P_BM 0.0260 P_MWRA 0.0227 P_BM_E 0.0400 P_MWRA_E 0.0345 -> p_H 0.0400 (p_H,min 0.0400)
+      labels ['inconclusive']  qualifiers ['Q_BM', 'Q_contra', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+S9    P_BM 0.0260 P_MWRA 0.0227 P_BM_E 0.0400 P_MWRA_E 0.0345 -> p_H 0.0400 (p_H,min 0.0400)
+      labels ['1', '3a']  qualifiers ['Q_BM', 'Q_contra', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+S10   P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['2 (ordinary)']  qualifiers ['Q_BM', 'Q_record', 'Q_tol']  [branch test: C7 G_BM]
+S11   P_BM 0.0260 P_MWRA 0.0227 P_BM_E 0.0400 P_MWRA_E 0.0345 -> p_H 0.0400 (p_H,min 0.0400)
+      labels ['1']  qualifiers ['Q_H', 'Q_contra', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+S12   P_BM 0.0260 P_MWRA 1.0000 P_BM_E 0.0400 P_MWRA_E 1.0000 -> p_H 1.0000 (p_H,min 0.0400)
+      labels ['inconclusive']  qualifiers ['Q_BM', 'Q_contra', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+S13   P_BM 0.0260 P_MWRA 0.0227 P_BM_E 0.0400 P_MWRA_E 0.1034 -> p_H 0.1034 (p_H,min 0.1034)
+      labels ['inconclusive']  qualifiers ['Q_BM', 'Q_attain', 'Q_contra', 'Q_record', 'Q_slot', 'Q_tol']  [branch test: C7 pools]
+S14   P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['inconclusive']  qualifiers ['Q_BM', 'Q_attain4', 'Q_record', 'Q_slot', 'Q_tol']  [pending (G_j, E_j)]
+S14b  P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['inconclusive']  qualifiers ['Q_BM', 'Q_attain4', 'Q_record', 'Q_slot', 'Q_tol']  [pending (G_j, E_j)]
+S15   P_BM 0.0260 P_MWRA 0.0227 P_BM_E 0.0400 P_MWRA_E 0.0345 -> p_H 0.0400 (p_H,min 0.0400)
+      labels ['1', '3b', '4']  qualifiers ['Q_BM', 'Q_contra', 'Q_record', 'Q_slot', 'Q_tol']  [pending (G_j, E_j)]
+S16   P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['3a']  qualifiers ['Q_BM', 'Q_attain3a', 'Q_record', 'Q_slot', 'Q_tol']  [branch test: C7 N_narrow_3a]
+S17   P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['3b']  qualifiers ['Q_BM', 'Q_attain3b', 'Q_record', 'Q_slot', 'Q_tol']  [branch test: C7 N_narrow_3b]
+S18   P_BM 0.0260 P_MWRA 0.0227 P_BM_E 0.0400 P_MWRA_E 0.0345 -> p_H 0.0400 (p_H,min 0.0400)
+      labels ['1']  qualifiers ['Q_BM', 'Q_contra', 'Q_exch', 'Q_record', 'Q_slot', 'Q_tol']  [branch test: C7 Q_exch]
+S19   P_BM 0.2208 P_MWRA 0.2273 P_BM_E 0.2400 P_MWRA_E 0.2759 -> p_H 0.2759 (p_H,min 0.0400)
+      labels ['inconclusive']  qualifiers ['Q_BM', 'Q_H', 'Q_record', 'Q_slot', 'Q_tol']  [realisable]
+
+Lattice at the design-stage counts (target pattern -> p per pool -> p_H):
+  both  0.0260 / 0.0227 / 0.0400 / 0.0345 -> 0.0400
+  h4    0.0390 / 0.0455 / 0.0600 / 0.0690 -> 0.0690
+  h3    0.2208 / 0.2273 / 0.2400 / 0.2759 -> 0.2759
+  none  1.0000 / 1.0000 / 1.0000 / 1.0000 -> 1.0000
+p_H,min = 0.04
+Q_record on the design-stage null side and the disclosure table: True
+G_BM,u and its lower bound (design stage, v1 scaled by n_A/n_T): 0.00172 0.00107 0.00263

@@ -1,0 +1,8 @@
+
+window -1249..-1114: 1683 conjunctions (Day 0 = LMT date at Troy)
+  Moon centre above 0 deg at end of evening nautical twilight of Day 0: 0; with Venus vis7 on Dawn +1 (R-ii-literal survivors): 0
+  Moon centre above -0.8333 deg: 0; with Venus vis7: 0
+
+window -1349..-1099: 3104 conjunctions (Day 0 = LMT date at Troy)
+  Moon centre above 0 deg at end of evening nautical twilight of Day 0: 0; with Venus vis7 on Dawn +1 (R-ii-literal survivors): 0
+  Moon centre above -0.8333 deg: 0; with Venus vis7: 0

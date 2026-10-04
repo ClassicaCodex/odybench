@@ -1,0 +1,13 @@
+design: Venus AV 7; Mercury event <= 6 d or visible  n_A  131  G_BM 0.140  (x1.00)
+Mercury event <= 6 d only (no 'or visible')          n_A   87  G_BM 0.211  (x1.51)
+Mercury event <= 4 d only                            n_A   66  G_BM 0.278  (x1.98)
+Mercury event <= 6 d and visible                     n_A   82  G_BM 0.224  (x1.60)
+Venus lead >= 60 min; Mercury as design              n_A  101  G_BM 0.182  (x1.30)
+Venus lead >= 60 min; Mercury event <= 4 d           n_A   56  G_BM 0.328  (x2.34)
+
+n_A  131: G_BM 0.140  [0.087, 0.215]   label 2 (lo >= 0.20): False
+n_A  101: G_BM 0.182  [0.112, 0.279]   label 2 (lo >= 0.20): False
+n_A   87: G_BM 0.211  [0.131, 0.324]   label 2 (lo >= 0.20): False
+n_A   82: G_BM 0.224  [0.139, 0.344]   label 2 (lo >= 0.20): False
+n_A   66: G_BM 0.278  [0.172, 0.427]   label 2 (lo >= 0.20): False
+n_A   56: G_BM 0.327  [0.203, 0.504]   label 2 (lo >= 0.20): True

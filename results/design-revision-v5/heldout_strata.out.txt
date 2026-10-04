@@ -1,0 +1,6 @@
+rows (target removed before any computation): 2285
+P_BM     n  76  H3  15 (q3 0.197)  H4  2 (q4 0.026)  both 1  p_min 0.0260  p(H4 only) 0.0390  p(H3 only) 0.2208
+P_MWRA   n  43  H3   8 (q3 0.186)  H4  1 (q4 0.023)  both 0  p_min 0.0227  p(H4 only) 0.0455  p(H3 only) 0.2273
+P_GS     n  33  H3   7 (q3 0.212)  H4  1 (q4 0.030)  both 1  p_min 0.0588  p(H4 only) 0.0588  p(H3 only) 0.2353
+H3 by class: MWRA 8/43, GWE/station-only 7/33; Fisher p 0.780
+H4 by class: MWRA 1/43, GWE/station-only 1/33

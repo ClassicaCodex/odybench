@@ -1,0 +1,6 @@
+rows (target removed before any computation): 2285
+P_BM,E    band halves (-1877..-1178 | -1177..-477): n 25/24  H3 7/25 vs 3/24 (Fisher p 0.289)  H4 0/25 vs 2/24 (Fisher p 0.2347)
+P_MWRA,E  band halves (-1877..-1178 | -1177..-477): n 15/13  H3 5/15 vs 1/13 (Fisher p 0.1727)  H4 0/15 vs 1/13 (Fisher p 0.4643)
+P10 any solar eclipse (NASA catalogue, anywhere on Earth): eclipse n 442, non-eclipse n 1843  H3 67/442 vs 240/1843 (Fisher p 0.2442)  H4 22/442 vs 84/1843 (Fisher p 0.7059)
+P10 total-possible (anyTotal2s, any of 5 sites): eclipse n 3, non-eclipse n 2282  H3 0/3 vs 307/2282 (Fisher p 1.0)  H4 0/3 vs 106/2282 (Fisher p 1.0)
+P10 visible (maxMag2s > 0, any of 5 sites): eclipse n 80, non-eclipse n 2205  H3 15/80 vs 292/2205 (Fisher p 0.1793)  H4 4/80 vs 102/2205 (Fisher p 0.7859)

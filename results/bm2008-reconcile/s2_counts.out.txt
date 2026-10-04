@@ -1,0 +1,42 @@
+rows total 152 in 1250-1115 BC 136
+Ti-11 column inconsistent with Ti (true Julian): []
+Ti-11 column inconsistent with Ti (365-day): []
+delta printed == 365-day arithmetic: 152 / 152 ; == true Julian: 131
+rows where printed delta != true Julian delta (yearBC, printed, true): [(1249, -5, -4), (1241, 10, 11), (1229, 16, 17), (1221, 32, 33), (1209, 8, 9), (1201, 22, 23), (1197, 14, 15), (1189, 7, 8), (1181, 13, 14), (1177, 3, 4), (1173, 28, 29), (1169, 21, 22), (1161, 37, 38), (1157, -1, 0), (1149, 13, 14), (1141, 27, 28), (1137, 17, 18), (1129, 33, 34), (1117, 10, 11), (1109, 25, 26), (1101, 38, 39)]
+[1250-1115] Venus morning (non-blank) 67; orange 21; yellow 21; pale 0
+   min orange lead 92.13333333333334 max non-orange lead 89.1 min yellow 66.48333333333333 max white 58.416666666666664
+   orange iff lead>=90min: True
+   Mercury |printed delta|<=1: [1236, 1224, 1178, 1157]
+   Mercury |printed delta|<=2: [1236, 1224, 1178, 1157, 1144, 1143]
+   Mercury |printed delta|<=3: [1236, 1224, 1223, 1203, 1191, 1190, 1178, 1177, 1157, 1145, 1144, 1143]
+   Mercury colours: O [1236, 1224, 1178, 1157] Y [1144, 1143] y [1223, 1203, 1191, 1190, 1177, 1145]
+   colour rule check (O<=1,Y=2,y=3): True
+   Equinox: Ti-11 in 1-5 Apr 20; 1-4 Apr 17; XXX 22; orange Ti-11 cell 22; XXX==orange True
+   max Ti-11 in table 6-Apr
+   XXX iff Ti-11>=1 Apr: True
+   V&M [1178] ; V&E(1-5) [1159, 1178, 1186, 1194] ; V&E(XXX) [1159, 1178, 1186, 1194] ; M&E(XXX) [1178, 1224] ; V&M&E [1178]
+   (V or Vyellow)&(M within 3) [1191, 1178, 1157] ; V & M within 2 [1178]
+   year-cell colours non-white: [('1191', 'y'), ('1178', 'O'), ('1157', 'Y')]
+   independence: E[V&M]=0.62, P(>=1)=0.46; E[V&M&E(XXX)]=0.100; E[V&M&E(1-5Apr)]=0.091
+[all S2] Venus morning (non-blank) 75; orange 25; yellow 23; pale 0
+   orange iff lead>=90min: True
+   Mercury |printed delta|<=1: [1236, 1224, 1178, 1157]
+   Mercury |printed delta|<=2: [1236, 1224, 1178, 1157, 1144, 1143, 1111]
+   Mercury |printed delta|<=3: [1236, 1224, 1223, 1203, 1191, 1190, 1178, 1177, 1157, 1145, 1144, 1143, 1111]
+   Mercury colours: O [1236, 1224, 1178, 1157] Y [1144, 1143, 1111] y [1223, 1203, 1191, 1190, 1177, 1145]
+   colour rule check (O<=1,Y=2,y=3): True
+   Equinox: Ti-11 in 1-5 Apr 24; 1-4 Apr 20; XXX 26; orange Ti-11 cell 26; XXX==orange True
+   max Ti-11 in table 6-Apr
+   XXX iff Ti-11>=1 Apr: True
+   V&M [1178] ; V&E(1-5) [1159, 1178, 1186, 1194] ; V&E(XXX) [1159, 1178, 1186, 1194] ; M&E(XXX) [1178, 1224] ; V&M&E [1178]
+   (V or Vyellow)&(M within 3) [1191, 1178, 1157, 1111] ; V & M within 2 [1178, 1111]
+   year-cell colours non-white: [('1191', 'y'), ('1178', 'O'), ('1157', 'Y'), ('1111', 'Y')]
+   independence: E[V&M]=0.66, P(>=1)=0.48; E[V&M&E(XXX)]=0.113; E[V&M&E(1-5Apr)]=0.104
+1178 {'Ti': '16-Apr', 'venus_rise': '4:39:45', 'sunrise': '6:22:41', 'diff': '1:42:56', 'mwra': '13-Mar', 'delta': '0', 'ti_m11': '5-Apr', 'before': 'XXX', 'c_year': 'O', 'c_diff': 'O', 'c_delta': 'O', 'c_ti_m11': 'O'} true delta 0
+1157 {'Ti': '24-Mar', 'venus_rise': '5:36:23', 'sunrise': '7:01:35', 'diff': '1:25:12', 'mwra': '19-Feb', 'delta': '-1', 'ti_m11': '13-Mar', 'before': '', 'c_year': 'Y', 'c_diff': 'Y', 'c_delta': 'O', 'c_ti_m11': ''} true delta 0
+1191 {'Ti': '9-Apr', 'venus_rise': '5:27:36', 'sunrise': '6:34:05', 'diff': '1:06:29', 'mwra': '9-Mar', 'delta': '-3', 'ti_m11': '29-Mar', 'before': '', 'c_year': 'y', 'c_diff': 'Y', 'c_delta': 'y', 'c_ti_m11': ''} true delta -3
+1111 {'Ti': '26-Mar', 'venus_rise': '5:21:08', 'sunrise': '6:58:37', 'diff': '1:37:29', 'mwra': '22-Feb', 'delta': '-2', 'ti_m11': '15-Mar', 'before': '', 'c_year': 'Y', 'c_diff': 'O', 'c_delta': 'Y', 'c_ti_m11': ''} true delta -2
+1224 {'Ti': '14-Apr', 'venus_rise': '5:55:49', 'sunrise': '6:28:27', 'diff': '0:32:38', 'mwra': '11-Mar', 'delta': '0', 'ti_m11': '3-Apr', 'before': 'XXX', 'c_year': '', 'c_diff': '', 'c_delta': 'O', 'c_ti_m11': 'O'} true delta 0
+1243 {'Ti': '13-Mar', 'venus_rise': '7:06:18', 'sunrise': '7:20:12', 'diff': '0:13:54', 'mwra': '1-Mar', 'delta': '-22', 'ti_m11': '2-Mar', 'before': '', 'c_year': '', 'c_diff': '', 'c_delta': '', 'c_ti_m11': ''} true delta -22
+1177 {'Ti': '4-Apr', 'venus_rise': '', 'sunrise': '', 'diff': '', 'mwra': '26-Feb', 'delta': '3', 'ti_m11': '24-Mar', 'before': '', 'c_year': '', 'c_diff': '', 'c_delta': 'y', 'c_ti_m11': ''} true delta 4
+1189 {'Ti': '18-Mar', 'venus_rise': '5:28:46', 'sunrise': '7:09:07', 'diff': '1:40:21', 'mwra': '5-Feb', 'delta': '7', 'ti_m11': '7-Mar', 'before': '', 'c_year': '', 'c_diff': 'O', 'c_delta': '', 'c_ti_m11': ''} true delta 8

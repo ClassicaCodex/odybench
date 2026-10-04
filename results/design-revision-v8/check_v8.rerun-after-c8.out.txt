@@ -1,0 +1,84 @@
+epochs (noon UT, as the first review's check_p19.py): -1176.676 -1129.218
+  2.3's printed model value smh2020: 28543 +- 720 reproduced: True
+  2.3's printed model value smh2020_parabola: 28282 +- 541 reproduced: True
+  2.3's printed model value smh2016_parabola: 28963 +- 541 reproduced: True
+  2.3's printed model value em2006_canon: 28589 +- 1008 reproduced: True
+  ndot shift at -1176.68: 33.94 s (2.3: +34 s)
+
+R3-3: the 2.3 table (rounded to 0.001) against revision 7 (grid) and revision 8 (continuous)
+  smh2020            grid (0.294, 0.494, 0.047) (v7 (0.294, 0.494, 0.047))   continuous (0.297, 0.496, 0.051) (v8 (0.297, 0.496, 0.051))
+  smh2020_parabola   grid (0.173, 0.641, 0.052) (v7 (0.173, 0.641, 0.052))   continuous (0.175, 0.643, 0.056) (v8 (0.175, 0.643, 0.056))
+  smh2016_parabola   grid (0.498, 0.443, 0.108) (v7 (0.498, 0.443, 0.108))   continuous (0.503, 0.446, 0.113) (v8 (0.503, 0.446, 0.113))
+  em2006_canon       grid (0.252, 0.412, 0.049) (v7 (0.252, 0.412, 0.049))   continuous (0.255, 0.414, 0.052) (v8 (0.255, 0.414, 0.052))
+  mixture            grid (0.304, 0.498, 0.064) (v7 (0.304, 0.498, 0.064))   continuous (0.308, 0.5, 0.068) (v8 (0.308, 0.5, 0.068))
+  cells differing from the printed table: revision 7 0, revision 8 0
+  mixture P78 unrounded: grid 0.3044, continuous 0.3076; continuous - 0.304 = 0.0036
+  largest gap of revision 7's printed 1178 BC values to the continuous ones: 0.0050
+  joints over the continuous windows: 0.051-0.113; all > 0.05: True
+  DE431-pairing mixture (0.299, 0.178, 0.505 with E-M 0.255): 0.309
+
+R3-3: the I2(c) budget
+  bisection to 0.1 s at sigma 540.6: 7.38e-05 per boundary; 10^-4 holds for 1 boundaries
+  bisection to 0.01 s at sigma 540.6: 7.38e-06 per boundary; 10^-4 holds for 13 boundaries
+  smallest model sigma at -1176.68: 540.6 s; at -1129.22: 523.6 s (10^-4 at 0.01 s holds for 13 boundaries there)
+  smallest model sigma at -500: 150 s -> 0.01 s bisection 2.7e-05 per boundary; 10^-4 holds for 3 boundaries
+  smallest model sigma at +0: 90 s -> 0.01 s bisection 4.4e-05 per boundary; 10^-4 holds for 2 boundaries
+  smallest model sigma at +300: 60 s -> 0.01 s bisection 6.6e-05 per boundary; 10^-4 holds for 1 boundaries
+  a missed sub-step interval (10 s) at sigma 540.6: up to 0.0074
+  window-independent bound for a 1-s error at both boundaries: 0.0015; with rounding 0.0005 and 0.1-s bisection at both: 0.0022 (tolerance 0.005)
+  the design's 'at most 0.0011' for a 1-s change at both 1178 BC boundaries holds: True
+
+R7 (joint bounds <= 0.06 for three models, >= 0.08 for SMH2016) under +-40 s
+  Addendum parabola's largest joint over the shifts rounds to 0.060 (14.7: at most 0.060)
+  three models <= 0.06 at every shift: True; SMH2016 >= 0.08 at every shift: True
+
+R3-2: what G_j,hi <= G_BM,u,lo allows (DESIGN 2.9 numbers)
+  G_BM,u 0.001716 = 18.34 units; G_BM,u,lo 0.001066 = 11.40 units
+  U0 = ff_upper([]) = 0.000345 = 3.689/n
+  k = 4 at reach 1: Fay-Feuer 0.000958, Poisson 0.000958
+  k = 5 at reach 1: Fay-Feuer 0.001092, Poisson 0.001092
+  reach 1: at most 4 targets
+  reach 0.5: at most 11 targets = 5.50 units
+  reach 0.1: at most 76 targets = 7.60 units
+  reach 0.01: at most 824 targets = 8.24 units
+  reach 0.001: at most 8328 targets = 8.33 units
+  thin-spread supremum: 8.34 units
+  shaped like G_BM* (half at reach 1, the rest 0.41; mean 0.70, 18.3/26 = 0.71): at most 4.23 units; G_BM* reaches 18.3, ratio 4.3 (reach-1 ratio 4.6)
+
+R3-1 / R3-4 / R3-7: the recheck's recorded narrowing, revision 8's projection
+  windows start [-1500, -1100, -700], 5% line [2483] days
+  ALM-A: 4.88-4.89%  days 2422-2430  margin to 5%: +0.11 to +0.12 points
+  ALM-B: 4.40-4.45%  days 2187-2209  margin to 5%: +0.55 to +0.60 points
+  ALM-D: 0.76-0.94%  days 380-467  margin to 5%: +4.06 to +4.24 points
+  ALM-E: 0.07-0.12%  days 35-60  margin to 5%: +4.88 to +4.93 points
+  ALM-F: 1.03-1.03%  days 510-510  margin to 5%: +3.97 to +3.97 points
+  ALM-G: 0.67-0.78%  days 333-387  margin to 5%: +4.22 to +4.33 points
+  ALM-H: 4.37-4.59%  days 2171-2282  margin to 5%: +0.41 to +0.63 points
+  ALM-K: 14.87-14.99%  days 7388-7445  margin to 5%: -9.99 to -9.87 points
+  ALM-L: 0.76-0.92%  days 380-458  margin to 5%: +4.08 to +4.24 points
+  ALM-I: 14.78-14.97%  days 7343-7438  margin to 5%: -9.97 to -9.78 points
+  ALM-J: 13.62-13.93%  days 6764-6919  margin to 5%: -8.93 to -8.62 points
+  ALM-A (A.2 only none) [frozen, inferred phases none]: 0.75-0.85%
+  ALM-A (A.5 only none) [frozen, inferred phases none]: 0.56-0.63%
+  ALM-A (civil dawn for A.9) [frozen, inferred phases none]: 4.90-4.90%
+  ALM-A (same_app & visible): 0.54-0.60%
+  ALM-B (same_app & visible): 4.40-4.45%
+  ALM-B: 5.19-5.25%
+  ALM-B day counts with and without B.2 identical: True
+  window -1500..-1364: before -1000 entirely: True; partly: True
+  window -1100..-964: before -1000 entirely: False; partly: True
+  window -700..-564: before -1000 entirely: False; partly: False
+
+R3-1: the moon-phase rows of the clue file
+  ALM-A.10: primary phase_class; 'inference' in its justification: True; none option: "the Moon's phase is not stated in words; do not use it"
+  ALM-A.2: primary phase_class; 'inference' in its justification: True; none option: "the Moon's phase is not stated in words; do not use it"
+  ALM-A.5: primary phase_class; 'inference' in its justification: True; none option: "the Moon's phase is not stated in words; do not use it"
+  ALM-B.2: primary phase_class; 'inference' in its justification: True; none option: "the Moon's phase is not stated in words; do not use it"
+  ALM-B.5: primary phase_class; 'inference' in its justification: True; none option: "the Moon's phase is not stated in words; do not use it"
+  ALM-B.7: primary phase_class; 'inference' in its justification: False; none option: None
+  ALM-B.9: primary phase_class; 'inference' in its justification: False; none option: None
+  rows whose own 'none' says not stated in words: ['ALM-A.10', 'ALM-A.2', 'ALM-A.5', 'ALM-B.2', 'ALM-B.5']
+
+New-blocker scan: where 'ALM-B ... knife-edge' and 'nearly determined by known numbers' sit
+  docs/DESIGN-v7.md: [(6276, 'AppT', 'ALM-B is the knife-edge')]
+  DESIGN.md: [(6517, 'AppT', 'P21 nearly determined'), (6680, 'AppT', 'nearly determined by known numbers')]

@@ -1,0 +1,8 @@
+ok   phrase scan: tiers, line numbers, a phrase across a wrap, and no hit for P8
+ok   active constraints from the synthetic public part
+ok   named exceptions parsed from the synthetic Appendix T
+ok   S0x alone leaves C(4,2) = 6 pairs, none identified
+ok   one knife-edge under revision 7 identifies ALM-Q
+ok   with the tolerance hint both are identified
+ok   near_line needs every window inside the band
+selftest: passed

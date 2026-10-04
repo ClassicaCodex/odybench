@@ -1,0 +1,4 @@
+rows (target removed before any computation): 2285
+P_BM     n   76  q3 0.197 (15)  q4 0.026 (2)  both 1  p_H,min = (1+1)/(1+76) = 0.0260  [p if only H4 passed 0.039; only H3 0.208]
+T_A      n  169  q3 0.237 (40)  q4 0.041 (7)  both 1  p_H,min = (1+1)/(1+169) = 0.0118  [p if only H4 passed 0.047; only H3 0.241]
+T_A_doc  n  108  q3 0.222 (24)  q4 0.037 (4)  both 0  p_H,min = (1+0)/(1+108) = 0.0092  [p if only H4 passed 0.046; only H3 0.229]

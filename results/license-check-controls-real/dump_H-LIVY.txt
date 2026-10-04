@@ -1,0 +1,738 @@
+#### SET H-LIVY
+-- observer_place {"events": ["L1", "L1b"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "unstated for the item; forks in L1-SITE (Arpi for L1b)"}
+-- observer_place {"events": ["L2"], "place": "Cumae", "licence_words": ["Cumis"], "ref": ["urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.30.38.8.1"], "text_file": ["data/text/livy-lat.tsv"], "search_coordinates": {"lat": 40.85, "lon": 14.05}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+   CHECK exact | Cumis | urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.30.38.8.1
+-- observer_place {"events": ["L3"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "Rome by inference only; forks in L3-SITE"}
+-- observer_place {"events": ["L4"], "place": "unstated", "licence_words": [], "ref": [], "text_file": [], "search_coordinates": null, "coordinates_source": "Rome by inference only; forks in L4-SITE"}
+
+====================================================================================================
+{
+ "set": "H-LIVY",
+ "clue_id": "L1-ECL",
+ "event": "L1",
+ "kind": "eclipse-solar",
+ "feature": "magnitude",
+ "statement": "L1: among prodigies reported from several places at once, 'the Sun's disk seemed to be diminished'.",
+ "licence_words": [
+  "solis orbem minui visum"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.9.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "any",
+   "reading": "magnitude > 0 at the observer, Sun up",
+   "justification": "'minui visum': a diminished disk, no darkness",
+   "operational": {
+    "smag": [
+     0.0,
+     null
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "noticed",
+   "reading": "magnitude >= 0.5",
+   "justification": "an unsought eclipse noticed by eye (drafter's rough threshold)",
+   "operational": {
+    "smag": [
+     0.5,
+     null
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (reported prodigy)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | solis orbem minui visum | urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.9.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.9.1 :: et milites quosdam ictos fulminibus, et solis orbem minui visum, et Praeneste ardentes lapides caelo cecidisse, et Arpis parmas in caelo visas pugnantemque cum luna solem,
+
+====================================================================================================
+{
+ "set": "H-LIVY",
+ "clue_id": "L1-SITE",
+ "event": "L1",
+ "kind": "site",
+ "feature": "observer",
+ "statement": "Not stated for this item. The list opens 'in Sicilia ...', then 'in Sardinia autem ...', and runs on in accusative-infinitive items until 'Praeneste' names a new place.",
+ "licence_words": [
+  "prodigia ex pluribus simul locis nuntiata",
+  "in Sicilia",
+  "in Sardinia autem",
+  "et Praeneste"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.8.1",
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.8.1",
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.8.1",
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.9.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv",
+  "data/text/livy-lat.tsv",
+  "data/text/livy-lat.tsv",
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "italy-box",
+   "reading": "anywhere in Italy, Sicily and Sardinia (36.6-44.0N, 8.0-18.6E)",
+   "justification": "the list covers several places; the item's own place is not named (an inference from context; kept as an alternative, no longer primary)",
+   "operational": {
+    "site_box": {
+     "lat": [
+      36.6,
+      44.0
+     ],
+     "lon": [
+      8.0,
+      18.6
+     ]
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "sardinia",
+   "reading": "Sardinia (38.9-41.3N, 8.1-9.9E)",
+   "justification": "grammatical reading: 'in Sardinia autem' governs the run of items up to 'Praeneste'",
+   "operational": {
+    "site_box": {
+     "lat": [
+      38.9,
+      41.3
+     ],
+     "lon": [
+      8.1,
+      9.9
+     ]
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "rome",
+   "reading": "Rome",
+   "justification": "the place where the prodigies were reported, not seen",
+   "operational": {
+    "site": {
+     "lat": 41.89,
+     "lon": 12.49
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "anywhere",
+   "justification": "the text names no place from which this sky event was seen, and the set records the observer as 'unstated'; by policy 2 the primary option takes no site from narrative context or outside knowledge (licence check, 2026-10-04)",
+   "operational": {
+    "site": null
+   },
+   "primary": true
+  }
+ ],
+ "narrative_level": "narrator (reported prodigy)",
+ "notes": "",
+ "license_check": "edited: primary moved from 'italy-box' (Italy, Sicily and Sardinia, the region of the places the prodigy list names) to 'none'. The text does not say where the event was seen; the set itself records the observer place as 'unstated', and policy 2 bars inference from narrative context or outside knowledge in the primary option. The drafter applied that rule to the narrative-order seasons (X2-SEASON, X3-SEASON, L1-, L2-, L4-DATE: primary 'none') but not to sites. 'italy-box' and the other site options stay as alternatives."
+}
+   CHECK exact | prodigia ex pluribus simul locis nuntiata | urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.8.1
+   CHECK exact | in Sicilia | urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.8.1
+   CHECK exact | in Sardinia autem | urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.8.1
+   CHECK exact | et Praeneste | urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.9.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.8.1 :: augebant metum prodigia ex pluribus simul locis nuntiata: in Sicilia militibus aliquot spicula, in Sardinia autem in muro circumeunti vigilias equiti scipionem, quem mann tenuerit, arsisse, et litora crebris ignibus fulsisse, et scuta duo sanguine sudasse,
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.9.1 :: et milites quosdam ictos fulminibus, et solis orbem minui visum, et Praeneste ardentes lapides caelo cecidisse, et Arpis parmas in caelo visas pugnantemque cum luna solem,
+
+====================================================================================================
+{
+ "set": "H-LIVY",
+ "clue_id": "L1-DATE",
+ "event": "L1",
+ "kind": "season",
+ "feature": "report-time",
+ "statement": "The prodigies were reported when the consul entered office at Rome on the Ides of March, as spring was approaching; the eclipse came before the report, by an unstated time.",
+ "licence_words": [
+  "iam ver adpetebat",
+  "Cn. Servilius consul Romae idibus Martiis magistratum iniit"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.1.1",
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.4.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv",
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "none",
+   "reading": "no season constraint",
+   "justification": "the text dates the report, not the eclipse",
+   "operational": {
+    "season": null
+   },
+   "primary": true
+  },
+  {
+   "option": "within-12mo",
+   "reading": "the eclipse lies within the 12 months before a time when the Sun's tropical longitude is in [315, 15] deg (late winter to early spring)",
+   "justification": "inference: prodigies were reported in the year they occurred; 'iam ver adpetebat' is a natural season, so no calendar offset is needed",
+   "operational": {
+    "before_report_months": [
+     0,
+     12
+    ],
+    "report_sun_lon_deg": [
+     315.0,
+     15.0
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | iam ver adpetebat | urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.1.1
+   CHECK exact | Cn. Servilius consul Romae idibus Martiis magistratum iniit | urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.4.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.1.1 :: iam ver adpetebat; itaque Hannibal ex hibernis movit, et nequiquam ante conatus transcendere Appenninum intolerandis frigoribus et cum ingenti periculo moratus ac metu.
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.4.1 :: ceterum hic quoque ei timor causa fuit maturius movendi ex hibernis. per idem tempus Cn. Servilius consul Romae idibus Martiis magistratum iniit.
+
+====================================================================================================
+{
+ "set": "H-LIVY",
+ "clue_id": "L1b-ARPI",
+ "event": "L1b",
+ "kind": "other",
+ "feature": "possible-eclipse",
+ "statement": "Same list: at Arpi shields were seen in the sky and 'the Sun fighting with the Moon'.",
+ "licence_words": [
+  "Arpis parmas in caelo visas pugnantemque cum luna solem"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.9.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "not-eclipse",
+   "reading": "not used as an eclipse report",
+   "justification": "the words do not say the Sun was darkened",
+   "operational": {
+    "exclude": true
+   },
+   "primary": true
+  },
+  {
+   "option": "eclipse-arpi",
+   "reading": "a solar eclipse visible at Arpi (41.50N, 15.56E), magnitude > 0",
+   "justification": "the Sun 'fighting with the Moon' may describe an eclipse",
+   "operational": {
+    "smag": [
+     0.0,
+     null
+    ],
+    "site": {
+     "lat": 41.5,
+     "lon": 15.56
+    }
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (reported prodigy)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | Arpis parmas in caelo visas pugnantemque cum luna solem | urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.9.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.22.1.9.1 :: et milites quosdam ictos fulminibus, et solis orbem minui visum, et Praeneste ardentes lapides caelo cecidisse, et Arpis parmas in caelo visas pugnantemque cum luna solem,
+
+====================================================================================================
+{
+ "set": "H-LIVY",
+ "clue_id": "L2-ECL",
+ "event": "L2",
+ "kind": "eclipse-solar",
+ "feature": "magnitude",
+ "statement": "L2: at Cumae the Sun's disk seemed to be diminished.",
+ "licence_words": [
+  "Cumis solis orbis minui visus"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.30.38.8.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "any",
+   "reading": "magnitude > 0 at Cumae, Sun up",
+   "justification": "as L1-ECL",
+   "operational": {
+    "smag": [
+     0.0,
+     null
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "noticed",
+   "reading": "magnitude >= 0.5 at Cumae",
+   "justification": "as L1-ECL",
+   "operational": {
+    "smag": [
+     0.5,
+     null
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (reported prodigy)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | Cumis solis orbis minui visus | urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.30.38.8.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.30.38.8.1 :: prodigia quoque nuntiata sub ipsam famam rebellionis terrorem adtulerant: Cumis solis orbis minui visus et pluit lapideo imbri, et in Veliterno agro terra ingentibus cavernis consedit, arboresque in profundum haustae; Ariciae forum et circa tabernae,
+
+====================================================================================================
+{
+ "set": "H-LIVY",
+ "clue_id": "L2-DATE",
+ "event": "L2",
+ "kind": "other",
+ "feature": "narrative-order",
+ "statement": "The prodigies were reported just as news of the Carthaginian breach came; the text goes on to the Ludi Apollinares of the same year (flooded circus).",
+ "licence_words": [
+  "prodigia quoque nuntiata sub ipsam famam rebellionis",
+  "ludi Apollinares"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.30.38.8.1",
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.30.38.10.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv",
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "none",
+   "reading": "no season constraint",
+   "justification": "no date for the prodigy is given",
+   "operational": {
+    "season": null
+   },
+   "primary": true
+  },
+  {
+   "option": "before-ludi",
+   "reading": "the eclipse precedes the Ludi Apollinares (Roman Quinctilis; Livy 37.4.4 puts the games at a.d. V Id. Quint.) of the same year, with the Roman offset free",
+   "justification": "inference from narrative order",
+   "operational": {
+    "before_roman_date": "a.d. V Id. Quint.",
+    "offset_days": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | prodigia quoque nuntiata sub ipsam famam rebellionis | urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.30.38.8.1
+   CHECK exact | ludi Apollinares | urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.30.38.10.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.30.38.8.1 :: prodigia quoque nuntiata sub ipsam famam rebellionis terrorem adtulerant: Cumis solis orbis minui visus et pluit lapideo imbri, et in Veliterno agro terra ingentibus cavernis consedit, arboresque in profundum haustae; Ariciae forum et circa tabernae,
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.2.30.38.10.1 :: inter quae etiam aquarum insolita magnitudo in religionem versa; nam ita abundavit Tiberis, ut ludi Apollinares circo inundato extra portam Collinam ad aedem Erycinae Veneris parati sint.
+
+====================================================================================================
+{
+ "set": "H-LIVY",
+ "clue_id": "L3-ECL",
+ "event": "L3",
+ "kind": "eclipse-solar",
+ "feature": "magnitude",
+ "statement": "L3: during the Ludi Apollinares, on a.d. V Id. Quint., in a clear sky, the daylight was darkened in daytime because the Moon had passed under the Sun's disk.",
+ "licence_words": [
+  "caelo sereno interdiu obscurata lux est, cum luna sub orbem solis subisset"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.37.4.4.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "X4",
+   "reading": "magnitude >= 0.60 at the observer, Sun up",
+   "justification": "darkened daylight: the design's darkness-wording class X4",
+   "operational": {
+    "smag": [
+     0.6,
+     null
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "any",
+   "reading": "magnitude > 0",
+   "justification": "Livy explains the cause, so it was an eclipse; the darkness may be overstated",
+   "operational": {
+    "smag": [
+     0.0,
+     null
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "X3",
+   "reading": "magnitude >= 0.95",
+   "justification": "strong reading of 'obscurata lux'",
+   "operational": {
+    "smag": [
+     0.95,
+     null
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | caelo sereno interdiu obscurata lux est, cum luna sub orbem solis subisset | urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.37.4.4.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.37.4.4.1 :: per eos dies, quibus est profectus ad bellum consul, ludis Apollinaribus, a. d. quintum idus Quinctiles caelo sereno interdiu obscurata lux est, cum luna sub orbem solis subisset.
+
+====================================================================================================
+{
+ "set": "H-LIVY",
+ "clue_id": "L3-DATE",
+ "event": "L3",
+ "kind": "other",
+ "feature": "calendar-date",
+ "statement": "Roman date a.d. V Id. Quint. (Roman 11 Quinctilis), during the Ludi Apollinares, when the consul set out for the war.",
+ "licence_words": [
+  "ludis Apollinaribus, a. d. quintum idus Quinctiles"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.37.4.4.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "free",
+   "reading": "JD = JD(proleptic Julian date of the same name in year y) + delta, delta an unknown integer, unbounded",
+   "justification": "Roman calendar of the Republic: unknown offset",
+   "operational": {
+    "roman_date": "a.d. V Id. Quint. (11 Quinctilis)",
+    "offset_days": null
+   },
+   "primary": true
+  },
+  {
+   "option": "bounded90",
+   "reading": "same with |delta| <= 90 days",
+   "justification": "drafter's assumption, not in the text",
+   "operational": {
+    "roman_date": "a.d. V Id. Quint. (11 Quinctilis)",
+    "offset_days": [
+     -90,
+     90
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "naive",
+   "reading": "delta = 0",
+   "justification": "sensitivity only; not a licensed reading",
+   "operational": {
+    "roman_date": "a.d. V Id. Quint. (11 Quinctilis)",
+    "offset_days": [
+     0,
+     0
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ludis Apollinaribus, a. d. quintum idus Quinctiles | urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.37.4.4.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.37.4.4.1 :: per eos dies, quibus est profectus ad bellum consul, ludis Apollinaribus, a. d. quintum idus Quinctiles caelo sereno interdiu obscurata lux est, cum luna sub orbem solis subisset.
+
+====================================================================================================
+{
+ "set": "H-LIVY",
+ "clue_id": "L3-SITE",
+ "event": "L3",
+ "kind": "site",
+ "feature": "observer",
+ "statement": "Not stated as such; the games and the consul's departure ('ab urbe est profectus', 37.4.2) put the narrative at Rome.",
+ "licence_words": [
+  "ab urbe est profectus",
+  "ludis Apollinaribus"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.37.4.2.1",
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.37.4.4.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv",
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "rome",
+   "reading": "Rome (41.89N, 12.49E)",
+   "justification": "the Ludi Apollinares were Roman games (an inference from context; kept as an alternative, no longer primary)",
+   "operational": {
+    "site": {
+     "lat": 41.89,
+     "lon": 12.49
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "italy-box",
+   "reading": "anywhere in the Italy box",
+   "justification": "the site is not named",
+   "operational": {
+    "site_box": {
+     "lat": [
+      36.6,
+      44.0
+     ],
+     "lon": [
+      8.0,
+      18.6
+     ]
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "anywhere",
+   "justification": "the text names no place from which this sky event was seen, and the set records the observer as 'unstated'; by policy 2 the primary option takes no site from narrative context or outside knowledge (licence check, 2026-10-04)",
+   "operational": {
+    "site": null
+   },
+   "primary": true
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: primary moved from 'rome' (Rome, where the narrative stands (the games, the consul leaving the city)) to 'none'. The text does not say where the event was seen; the set itself records the observer place as 'unstated', and policy 2 bars inference from narrative context or outside knowledge in the primary option. The drafter applied that rule to the narrative-order seasons (X2-SEASON, X3-SEASON, L1-, L2-, L4-DATE: primary 'none') but not to sites. 'rome' and the other site options stay as alternatives."
+}
+   CHECK exact | ab urbe est profectus | urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.37.4.2.1
+   CHECK exact | ludis Apollinaribus | urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.37.4.4.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.37.4.2.1 :: item tres legatos nominavit, Sex. Digitium L. Apustium C. Fabricium Luscinum, qui ex ora maritima undique navis Brundisium contraherent; et omnibus iam paratis paludatus ab urbe est profectus.
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.37.4.4.1 :: per eos dies, quibus est profectus ad bellum consul, ludis Apollinaribus, a. d. quintum idus Quinctiles caelo sereno interdiu obscurata lux est, cum luna sub orbem solis subisset.
+
+====================================================================================================
+{
+ "set": "H-LIVY",
+ "clue_id": "L4-DARK",
+ "event": "L4",
+ "kind": "darkness",
+ "feature": "daytime-darkness",
+ "statement": "L4: a three-day supplication was decreed because darkness had come on in daylight between about the third and fourth hour. The text does not say eclipse.",
+ "licence_words": [
+  "quod luce inter horam tertiam ferme et quartam tenebrae obortae fuerant"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.36.4.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "eclipse-hours",
+   "reading": "a solar eclipse of magnitude >= 0.60 whose maximum falls in the 3rd-4th seasonal hour of the day (day = sunrise to sunset in 12 equal hours), +/- 1 h for 'ferme'",
+   "justification": "darkness by day read as an eclipse; X4 for darkness wording",
+   "operational": {
+    "smag": [
+     0.6,
+     null
+    ],
+    "seasonal_day_hours": [
+     3,
+     4
+    ],
+    "tol_h": 1.0,
+    "relation": "maximum in window"
+   },
+   "primary": true
+  },
+  {
+   "option": "eclipse-any-hour",
+   "reading": "a solar eclipse of magnitude >= 0.60, any hour",
+   "justification": "keeps the eclipse reading, drops the hour",
+   "operational": {
+    "smag": [
+     0.6,
+     null
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "not-eclipse",
+   "reading": "not an eclipse (weather, smoke or dust); L4 undatable",
+   "justification": "the text names no cause",
+   "operational": {
+    "exclude": true
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (reported prodigy)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | quod luce inter horam tertiam ferme et quartam tenebrae obortae fuerant | urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.36.4.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.36.4.1 :: priusquam in provincias novi magistratus proficiscerentur, supplicatio triduum pro collegio decemvirorum imperata fuit in omnibus compitis, quod luce inter horam tertiam ferme et quartam tenebrae obortae fuerant. et novemdiale sacrificium indictum est, quod in Aventino lapidibus pluvisset.
+
+====================================================================================================
+{
+ "set": "H-LIVY",
+ "clue_id": "L4-SITE",
+ "event": "L4",
+ "kind": "site",
+ "feature": "observer",
+ "statement": "Not stated. The expiation was at all the crossroads (of Rome) and the other prodigy in the same sentence is on the Aventine.",
+ "licence_words": [
+  "in omnibus compitis",
+  "in Aventino"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.36.4.1",
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.36.4.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv",
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "rome",
+   "reading": "Rome",
+   "justification": "the expiation and the companion prodigy are Roman (an inference from context; kept as an alternative, no longer primary)",
+   "operational": {
+    "site": {
+     "lat": 41.89,
+     "lon": 12.49
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "italy-box",
+   "reading": "anywhere in the Italy box",
+   "justification": "the site is not named",
+   "operational": {
+    "site_box": {
+     "lat": [
+      36.6,
+      44.0
+     ],
+     "lon": [
+      8.0,
+      18.6
+     ]
+    }
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "anywhere",
+   "justification": "the text names no place from which this sky event was seen, and the set records the observer as 'unstated'; by policy 2 the primary option takes no site from narrative context or outside knowledge (licence check, 2026-10-04)",
+   "operational": {
+    "site": null
+   },
+   "primary": true
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: primary moved from 'rome' (Rome, where the expiation and the companion prodigy are) to 'none'. The text does not say where the event was seen; the set itself records the observer place as 'unstated', and policy 2 bars inference from narrative context or outside knowledge in the primary option. The drafter applied that rule to the narrative-order seasons (X2-SEASON, X3-SEASON, L1-, L2-, L4-DATE: primary 'none') but not to sites. 'rome' and the other site options stay as alternatives."
+}
+   CHECK exact | in omnibus compitis | urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.36.4.1
+   CHECK exact | in Aventino | urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.36.4.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.36.4.1 :: priusquam in provincias novi magistratus proficiscerentur, supplicatio triduum pro collegio decemvirorum imperata fuit in omnibus compitis, quod luce inter horam tertiam ferme et quartam tenebrae obortae fuerant. et novemdiale sacrificium indictum est, quod in Aventino lapidibus pluvisset.
+
+====================================================================================================
+{
+ "set": "H-LIVY",
+ "clue_id": "L4-DATE",
+ "event": "L4",
+ "kind": "other",
+ "feature": "report-time",
+ "statement": "The supplication was decreed before the new magistrates left for their provinces; the consuls had entered office on the Ides of March (38.35.7).",
+ "licence_words": [
+  "priusquam in provincias novi magistratus proficiscerentur",
+  "consulatum idibus Martiis cum inissent"
+ ],
+ "ref": [
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.36.4.1",
+  "urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.35.7.1"
+ ],
+ "text_file": [
+  "data/text/livy-lat.tsv",
+  "data/text/livy-lat.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "none",
+   "reading": "no season constraint",
+   "justification": "the text dates the expiation, not the darkness",
+   "operational": {
+    "season": null
+   },
+   "primary": true
+  },
+  {
+   "option": "near-ides-march",
+   "reading": "the darkness lies within 120 days before the Roman Ides of March of the consular year, Roman offset free",
+   "justification": "inference: the expiation followed the prodigy within months",
+   "operational": {
+    "before_roman_date": "Id. Mart.",
+    "within_days": 120,
+    "offset_days": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | priusquam in provincias novi magistratus proficiscerentur | urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.36.4.1
+   CHECK exact | consulatum idibus Martiis cum inissent | urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.35.7.1
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.36.4.1 :: priusquam in provincias novi magistratus proficiscerentur, supplicatio triduum pro collegio decemvirorum imperata fuit in omnibus compitis, quod luce inter horam tertiam ferme et quartam tenebrae obortae fuerant. et novemdiale sacrificium indictum est, quod in Aventino lapidibus pluvisset.
+   ROW [data/text/livy-lat.tsv] urn:cts:latinLit:phi0914.phi001.perseus-lat2.3.38.35.7.1 :: M. Valerius Messala inde et C. Livius Salinator consulatum idibus Martiis cum inissent, de re publica deque provinciis et exercitibus senatum consuluerunt.

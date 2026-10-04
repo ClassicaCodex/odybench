@@ -1,0 +1,271 @@
+{
+ "schema": "odybench verdict_rule v1 (DESIGN 9.1, 9.2)",
+ "written": "2026-10-04 by A0 (lead), from DESIGN.md revision 8",
+ "rule_text": "if not INSTR:                                         return BLOCKED (no verdict is read)\nlabels, qualifiers = {}, {}\nLEGS3A = (AL_bf, AL_st, WO_bf, WO_st)\nSTEPS  = (fine, mid, coarse)                          # the rounding family of the ceilings (6.4)\nLEGS3B = ((bf, s) for s in STEPS) + ((st, s) for s in STEPS)\nPOOLS  = (P_BM, P_MWRA, P_BM_E, P_MWRA_E)\n\n# gate 3a: four legs, the decision taken against \"the method can see\" (6.3.2)\ndef fire3a(v): return min(seen_PCR[v][leg] for leg in LEGS3A) < 4\nside = fire3a(main)\nif side:                                              labels += 3a\nif side and max(seen_PCR[main][leg] for leg in LEGS3A) >= 4:\n                                                      qualifiers += Q_score3a\n# gate 3b: six legs, under the frozen meaning of same_apparition (6.4)\nfire3b = min(seen_ALM_SL[leg] for leg in LEGS3B) < 6\nif fire3b:                                            labels += 3b\nfire3b_other = min(seen_ALM_SL_side[leg] for leg in LEGS3B) < 6   # the other meaning; no label\nif (fire3b and max(seen_ALM_SL[leg] for leg in LEGS3B) >= 6) or (fire3b_other != fire3b):\n                                                      qualifiers += Q_score3b\n# could the gates have passed? null side; printed only beside a gate that fired (6.3.2, 6.4)\nif side and min(N_narrow_3a[leg] for leg in LEGS3A) < 4:     qualifiers += Q_attain3a\nif fire3b and min(N_narrow_3b[leg] for leg in LEGS3B) < 6:   qualifiers += Q_attain3b\nif rec_ALM_BM < 6:                                    qualifiers += Q_BM\nif min(held_ALM[s] for s in STEPS) < 6:               qualifiers += Q_H\nif fire3a(redraft) != side or fire3a(sibling) != side:\n                                                      qualifiers += Q_exposure\nif fire3a(noncirc) != side:                           qualifiers += Q_dT\n\n# null-side qualifiers (known at the second freeze)\np_H_min = max((1 + x_max[P]) / (1 + n[P]) for P in POOLS)    # 7.2\nif p_H_min > 0.05:                                    qualifiers += Q_attain\nif Q_record:                                          qualifiers += Q_record   # from attain.json, 7.2\nif Q_exch:                                            qualifiers += Q_exch     # from attain.json, 7.2\ng2  = {v: G_BM_lo[v] >= 0.20 for v in SLOTS}           # SLOTS = v0..v5\ntol = {v: G_BM_lo[v] >  0.05 for v in SLOTS}\nif all(tol.values()):                                 qualifiers += Q_tol\nif len(set(g2.values())) > 1 or len(set(tol.values())) > 1:\n                                                      qualifiers += Q_slot\n\n# target-side qualifier\nif Q_contra:                                          qualifiers += Q_contra   # from heldout.json, 7.1\n\n# 4: the eclipse-matching method dates fiction\nif any(hit_j[j] and G_j_hi[j] <= G_BM_u_lo for j in clean_negatives):\n                                                      labels += 4\n# could outcome 4 have fired? null side, from attain.json (6.5); never beside a label 4\nif 4 not in labels and \\\n   not any(0 < G_j[j] and G_j_hi[j] <= G_BM_u_lo and hit_hat_j[j] for j in clean_negatives):\n                                                      qualifiers += Q_attain4   # hit_hat_j = hit_j(m̂)\n\n# 2: B&M's match carries no weight\nif r_Ody == 0:                                        labels += \"2 (no match)\"\nelif all(g2.values()) or pct_N4_lo >= 0.50:           labels += \"2 (ordinary)\"\n\n# 1: the text dates the return, by the clues nobody fitted; no gate vetoes it (1.3)\np_H = max(p[P] for P in POOLS)                        # p[P] = 1 if the target is not a member of P\nif T0_pass and p_H <= 0.05:                           labels += 1\n\nif labels is empty:                                   labels = {inconclusive}\nreturn labels, qualifiers",
+ "rule_text_source": "DESIGN 9.2, verbatim; odybench/verdict_rule.py implements exactly this",
+ "thresholds": {
+  "gate_3a": {
+   "legs": [
+    "AL_bf",
+    "AL_st",
+    "WO_bf",
+    "WO_st"
+   ],
+   "n_counted": 7,
+   "fires_if_min_below": 4,
+   "q_score3a_if_max_at_least": 4,
+   "counted_sets": [
+    "R-PTOL-BAB",
+    "R-PTOL-ALEX",
+    "R-THUC",
+    "R-XEN",
+    "R-ARBELA",
+    "R-PYDNA",
+    "R-DIOD"
+   ],
+   "variants": [
+    "main",
+    "redraft",
+    "sibling",
+    "noncirc"
+   ],
+   "source": "6.3.2, 9.2: fewer than half of 7, rounded up"
+  },
+  "gate_3b": {
+   "legs": [
+    [
+     "bf",
+     "fine"
+    ],
+    [
+     "bf",
+     "mid"
+    ],
+    [
+     "bf",
+     "coarse"
+    ],
+    [
+     "st",
+     "fine"
+    ],
+    [
+     "st",
+     "mid"
+    ],
+    [
+     "st",
+     "coarse"
+    ]
+   ],
+   "n_counted": 11,
+   "fires_if_min_below": 6,
+   "q_score3b_if_max_at_least": 6,
+   "counted_sets": [
+    "ALM-A",
+    "ALM-B",
+    "ALM-D",
+    "ALM-E",
+    "ALM-F",
+    "ALM-G",
+    "ALM-H",
+    "ALM-I",
+    "ALM-J",
+    "ALM-K",
+    "ALM-L"
+   ],
+   "reported_only": [
+    "ALM-C"
+   ],
+   "meanings": {
+    "frozen": "same_apparition",
+    "other": "same_apparition_side (no label; Q_score3b)"
+   },
+   "reported_lines": [
+    0.04,
+    0.06
+   ],
+   "source": "6.4, 9.2: fewer than half of 11, rounded up"
+  },
+  "seen": {
+   "narrowing_fraction": 0.05,
+   "rule": "seen (strict): truth in S0 and |S0| <= 0.05 N_cand; seen (best fit): truth in B and |B| <= 0.05 N_cand",
+   "cluster_days": 3,
+   "source": "6.3.2"
+  },
+  "narrowable": {
+   "min_windows": 11,
+   "of_windows": 21,
+   "fraction": 0.05,
+   "q_attain3a_if_N_narrow_below": 4,
+   "q_attain3b_if_N_narrow_below": 6,
+   "printed_only_beside_a_firing_gate": true,
+   "source": "6.3.2, 6.4, 9.2 [r3v7 R3-8]"
+  },
+  "q_bm": {
+   "rec_ALM_BM_below": 6,
+   "source": "6.4, 9.2"
+  },
+  "q_h": {
+   "held_ALM_below": 6,
+   "p_max": 0.05,
+   "steps": [
+    "fine",
+    "mid",
+    "coarse"
+   ],
+   "held_ALM_max_by_construction": 8,
+   "source": "6.4, 9.2"
+  },
+  "q_exposure": {
+   "rule": "fire3a(redraft) != fire3a(main) or fire3a(sibling) != fire3a(main)",
+   "source": "6.3.4, 9.2"
+  },
+  "q_dt": {
+   "rule": "fire3a(noncirc) != fire3a(main)",
+   "sigma_scale": 3.0,
+   "source": "6.3.3, 9.2"
+  },
+  "q_attain": {
+   "p_H_min_above": 0.05,
+   "source": "7.2, 9.2"
+  },
+  "q_exch": {
+   "fisher_two_sided_p_max": 0.05,
+   "n_tests": 6,
+   "source": "7.2, 9.1 [r2v6 N9]"
+  },
+  "label_2": {
+   "g2_G_BM_lo_at_least": 0.2,
+   "pct_N4_lo_at_least": 0.5,
+   "no_match_if_r_Ody": 0.0,
+   "source": "5.3, 5.4, 9.2"
+  },
+  "q_tol": {
+   "G_BM_lo_above": 0.05,
+   "all_variants": true,
+   "source": "5.3, 9.2"
+  },
+  "q_slot": {
+   "rule": "g2 or tol differs between slot variants",
+   "variants": [
+    "v0",
+    "v1",
+    "v2",
+    "v3",
+    "v4",
+    "v5"
+   ],
+   "source": "4.2, 9.2"
+  },
+  "label_1": {
+   "requires_T0_pass": true,
+   "p_H_max": 0.05,
+   "pools": [
+    "P_BM",
+    "P_MWRA",
+    "P_BM_E",
+    "P_MWRA_E"
+   ],
+   "p_H": "the largest of the four p_P; p_P = 1 if the target is not a member",
+   "source": "7.2, 9.2"
+  },
+  "label_4": {
+   "rule": "some clean negative j has hit_j and G_j_hi <= G_BM_u_lo",
+   "source": "6.5, 9.2"
+  },
+  "q_attain4": {
+   "m_hat": 0.304,
+   "rule": "no clean negative has 0 < G_j, G_j_hi <= G_BM_u_lo and hit_j(m_hat); never printed beside a label 4",
+   "source": "4.4, 6.5, 9.2 [r3v7 R3-2]"
+  },
+  "u0": {
+   "rule": "U0(n) = 3.69 / n",
+   "coefficient": 3.69,
+   "source": "5.3, 9.2"
+  },
+  "pass_rule_dt": {
+   "p_mix_at_least": 0.5,
+   "source": "6.3.3, 10.3"
+  }
+ },
+ "clean_negatives": [
+  "AEN-TROY",
+  "AEN-CRETE",
+  "AEN-ITALY",
+  "AEN-ETNA",
+  "AEN-CARTHAGE",
+  "ARG-CIUS",
+  "ARG-COLCHIS",
+  "ARG-RETURN",
+  "QS-SACK",
+  "VF-LEMNOS",
+  "VF-CYZICUS",
+  "VF-COLCHIS"
+ ],
+ "comparison_only": [
+  "IL-PATROCLUS"
+ ],
+ "labels": [
+  "1",
+  "2 (no match)",
+  "2 (ordinary)",
+  "3a",
+  "3b",
+  "4",
+  "inconclusive",
+  "BLOCKED"
+ ],
+ "qualifiers": [
+  "Q_contra",
+  "Q_exch",
+  "Q_score3a",
+  "Q_score3b",
+  "Q_attain3a",
+  "Q_attain3b",
+  "Q_BM",
+  "Q_H",
+  "Q_exposure",
+  "Q_dT",
+  "Q_attain",
+  "Q_record",
+  "Q_tol",
+  "Q_slot",
+  "Q_attain4"
+ ],
+ "headline_order": [
+  "Q_contra",
+  "label 1 (with Q_exch beside it)",
+  "3a and 3b",
+  "label 2",
+  "label 4",
+  "Q_attain, Q_record, Q_attain4, Q_attain3a, Q_attain3b"
+ ],
+ "headline_source": "9.3",
+ "instr": {
+  "checks": [
+   "I1",
+   "I2",
+   "I2b",
+   "I4",
+   "I5",
+   "I6",
+   "I7",
+   "I8",
+   "I9",
+   "I11",
+   "I13",
+   "I14",
+   "I15",
+   "I16"
+  ],
+  "reported_beside": [
+   "I3",
+   "I10",
+   "I10b",
+   "I12"
+  ],
+  "rule": "verdict.py refuses to run unless INSTR holds; the verdict is BLOCKED",
+  "source": "6.1, 9.1, 9.2"
+ }
+}

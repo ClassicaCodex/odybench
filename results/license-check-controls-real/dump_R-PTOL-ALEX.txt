@@ -1,0 +1,682 @@
+#### SET R-PTOL-ALEX
+-- observer_place {"events": ["H1", "H2", "H3"], "place": "Alexandria", "licence_words": ["ἐκ τῶν ἐπιμελέστατα ἡμῖν ἐν Ἀλεξανδρείᾳ τετηρημένων"], "ref": ["urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13"], "text_file": ["data/text/ptolemy-syntaxis-grc.tsv"], "search_coordinates": {"lat": 31.2, "lon": 29.92}, "coordinates_source": "modern approximate placement written by the drafter from general geographic knowledge; the text gives only the name"}
+   CHECK exact | ἐκ τῶν ἐπιμελέστατα ἡμῖν ἐν Ἀλεξανδρείᾳ τετηρημένων | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-CAL",
+ "event": [
+  "H1",
+  "H2",
+  "H3"
+ ],
+ "kind": "other",
+ "feature": "calendar-date",
+ "statement": "Mid-eclipse nights in the Egyptian calendar by regnal years of Hadrian: H1 = year 17 Payni 20 into 21; H2 = year 19 Choiak 2 into 3; H3 = year 20 Pharmouthi 19 into 20. night_index: H1 = 6130, H2 = 6662, H3 = 7164 (formula in notes). One free integer J_free (shared by H1-H3) maps to Julian Day.",
+ "licence_words": [
+  "τῷ ιζʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Παϋνὶ κʹ εἰς τὴν καʹ",
+  "τῷ ιθʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Χοϊὰκ βʹ εἰς τὴν γʹ",
+  "τῷ κʹ ἔτει Αδριανοῦ κατʼ Αἰγυπτίους Φαρμουθὶ ιθʹ εἰς τὴν κʹ"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [],
+ "narrative_level": "narrator (Ptolemy, his own observations)",
+ "notes": "Egyptian civil calendar: 12 months of 30 days (Thoth=1, Phaophi=2, Athyr=3, Choiak=4, Tybi=5, Mechir=6, Phamenoth=7, Pharmouthi=8, Pachon=9, Payni=10, Epiphi=11, Mesore=12) plus 5 epagomenal days, no leap day. 'D into D+1' (D εἰς τὴν D+1) is the night between civil days D and D+1. night_index = 365*(Y-1) + 30*(M-1) + D. JD of local midnight of that night = J_free + night_index, J_free an unknown integer: the epoch of the regnal count in Julian terms is NOT in the text, and the 365-day year wanders against the seasons, so the dates fix intervals only. Differences: H2-H1 = 532 nights, H3-H2 = 502 nights, matching IV.6.16 (1 Egyptian year + 166 d 23 3/4 h; 1 Egyptian year + 137 d 5 h).",
+ "license_check": "ok"
+}
+   CHECK exact | τῷ ιζʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Παϋνὶ κʹ εἰς τὴν καʹ | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13
+   CHECK exact | τῷ ιθʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Χοϊὰκ βʹ εἰς τὴν γʹ | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14
+   CHECK exact | τῷ κʹ ἔτει Αδριανοῦ κατʼ Αἰγυπτίους Φαρμουθὶ ιθʹ εἰς τὴν κʹ | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13 :: πάλιν, ὧν εἰλήφαμεν τριῶν ἐκλείψεων ἐκ τῶν ἐπιμελέστατα ἡμῖν ἐν Ἀλεξανδρείᾳ τετηρημένων, ἡ μὲν πρώτη γέγονε τῷ ιζʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Παϋνὶ κʹ εἰς τὴν καʹ, τὸν δὲ μέσον χρόνον ἀκριβῶς ἐπελογισάμεθα γεγονέναι πρὸ ἡμίσους καὶ τετάρτου μιᾶς ὥρας ἰσημερινῆς τοῦ μεσονυκτίου· καὶ ἐξέλειπεν ὅλη, καθʼ ἣν ὥραν ἀκριβῶς ἐπεῖχεν ὁ ἥλιος τοῦ Ταύρου μοίρας ιγ δʹ ἔγγιστα.
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14 :: ἡ δὲ δευτέρα γέγονε τῷ ιθʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Χοϊὰκ βʹ εἰς τὴν γʹ, τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι πρὸ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου· καὶ ἐξέλειπεν ἀπʼ ἄρκτων τὸ U+2220ʹ καὶ γʹ τῆς διαμέτρου, καθʼ ἣν ὥραν ἐπεῖχεν ὁ ἥλιος ἀκριβῶς τῶν Χηλῶν μοίρας κε ςʹ ἔγγιστα.
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15 :: ἡ δὲ τρίτη τῶν ἐκλείψεων γέγονεν τῷ κʹ ἔτει Αδριανοῦ κατʼ Αἰγυπτίους Φαρμουθὶ ιθʹ εἰς τὴν κʹ, τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι μετὰ δ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου· καὶ ἐξέλειπε τὸ ἥμισυ τῆς διαμέτρου ἀπʼ ἄρκτων, ἐπεῖχε δὲ καὶ κατὰ ταύτην τὴν ὥραν ὁ ἥλιος τῶν Ἰχθύων μοίρας ιδ ιβ΄ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-INT",
+ "event": [
+  "H1",
+  "H2",
+  "H3"
+ ],
+ "kind": "interval",
+ "feature": "day-interval",
+ "statement": "H1 to H2: 1 Egyptian year, 166 days, 23 3/4 equinoctial hours (apparent; 23 5/8 h mean). H2 to H3: 1 Egyptian year, 137 days, 5 h (apparent; 5 1/2 h mean).",
+ "licence_words": [
+  "ἐνιαυτοῦ Αἰγυπτιακοῦ ἑνὸς καὶ ἡμερῶν ρξς καὶ ὡρῶν ἰσημερινῶν ἀπλῶς μὲν κγ U+2220΄ δʹ, ἀκριβῶς δὲ κγ U+2220ʹ ηʹ",
+  "ἐνιαυτοῦ πάλιν Αἰγυπτιακοῦ ἑνὸς καὶ ἡμερῶν ρλζ καὶ ὡρῶν ἰσημερινῶν ἁπλῶς μὲν ε, ἀκριβῶς δὲ ε U+2220΄"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.16",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.16"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "calendar-exact",
+   "reading": "H2 is 532 civil nights after H1; H3 is 502 after H2",
+   "justification": "calendar arithmetic",
+   "operational": {
+    "delta_nights": {
+     "H1->H2": 532,
+     "H2->H3": 502
+    }
+   },
+   "primary": true
+  },
+  {
+   "option": "none",
+   "reading": "unlinked",
+   "justification": "sensitivity",
+   "operational": {
+    "delta_nights": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy)",
+ "notes": "Redundant with PA-CAL.",
+ "license_check": "edited: licence_words lengthened to take in the hour figures the statement gives (23 1/2 1/4 h apparent, 23 1/2 1/8 h mean; 5 h apparent, 5 1/2 h mean). They were in the row but not in the quotation, and the first hour figure is what makes the H1->H2 count 532 nights rather than 531. Statement and options unchanged."
+}
+   CHECK exact | ἐνιαυτοῦ Αἰγυπτιακοῦ ἑνὸς καὶ ἡμερῶν ρξς καὶ ὡρῶν ἰσημερινῶν ἀπλῶς μὲν κγ U+2220΄ δʹ, ἀκριβῶς δὲ κγ U+2220ʹ ηʹ | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.16
+   CHECK exact | ἐνιαυτοῦ πάλιν Αἰγυπτιακοῦ ἑνὸς καὶ ἡμερῶν ρλζ καὶ ὡρῶν ἰσημερινῶν ἁπλῶς μὲν ε, ἀκριβῶς δὲ ε U+2220΄ | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.16
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.16 :: Φανερὸν οὖν, ὅτι καὶ ἐνταῦθα κεκίνηται ἡ σελήνη μεθʼ ὅλους κύκλους ἀπὸ μὲν τοῦ μέσου χρόνου τῆς πρώτης ἐκλείψεως ἐπὶ τὸν μέσον χρόνον τῆς δευτέρας ἐκλείψεως, ὅσας καὶ ὁ ἥλιος, μοίρας ρξα νε, ἀπὸ δὲ τοῦ τῆς δευτέρας ἐπὶ τὸν τῆς τρίτης μοίρας ρλη νε. ἔστιν δὲ καὶ ὁ μεταξὺ χρόνος τῆς μὲν πρώτης διαστάσεως ἐνιαυτοῦ Αἰγυπτιακοῦ ἑνὸς καὶ ἡμερῶν ρξς καὶ ὡρῶν ἰσημερινῶν ἀπλῶς μὲν κγ U+2220΄ δʹ, ἀκριβῶς δὲ κγ U+2220ʹ ηʹ, τῆς δὲ δευτέρας διαστάσεως ἐνιαυτοῦ πάλιν Αἰγυπτιακοῦ ἑνὸς καὶ ἡμερῶν ρλζ καὶ ὡρῶν ἰσημερινῶν ἁπλῶς μὲν ε, ἀκριβῶς δὲ ε U+2220΄. κινεῖται δὲ πάλιν ἡ σελήνη μέσως μεθʼ ὅλους κύκλους ἐν μὲν τῷ ἑνὶ ἔτει καὶ ἡμέραις ρξς καὶ ὥραις ἰσημεριναῖς κγ U+2220΄ ηʹ ἀνωμαλίας μὲν μοίρας ρι κα, μήκους δὲ μοίρας ρξθ λζ ἔγγιστα, ἐν δὲ τῷ ἑνὶ ἔτει καὶ ἡμέραις ρλζ καὶ ὥραις ἰσημεριναῖς U+2220΄ ἀνωμαλίας μὲν μοίρας πα λς, μήκους δὲ μοίρας ρλζ λδ ἔγγιστα. δῆλον οὖν, ὅτι καὶ αἱ μὲν τῆς πρώτης διαστάσεως τοῦ ἐπικύκλου μοῖραι ρι κα ἀφῃρήκασιν τῆς κατὰ μῆκος μέσης παρόδου μοίρας ζ μβ, αἱ δὲ τῆς δευτέρας διαστάσεως μοῖραι πα λς προστεθείκασιν τῇ κατὰ μῆκος μέσῃ παρόδῳ μοίρας α κα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-H1-MAG",
+ "event": "H1",
+ "kind": "eclipse-lunar",
+ "feature": "magnitude",
+ "statement": "H1 total: umbral magnitude >= 1.0.",
+ "licence_words": [
+  "καὶ ἐξέλειπεν ὅλη"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [],
+ "narrative_level": "narrator (Ptolemy's own observation)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | καὶ ἐξέλειπεν ὅλη | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13 :: πάλιν, ὧν εἰλήφαμεν τριῶν ἐκλείψεων ἐκ τῶν ἐπιμελέστατα ἡμῖν ἐν Ἀλεξανδρείᾳ τετηρημένων, ἡ μὲν πρώτη γέγονε τῷ ιζʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Παϋνὶ κʹ εἰς τὴν καʹ, τὸν δὲ μέσον χρόνον ἀκριβῶς ἐπελογισάμεθα γεγονέναι πρὸ ἡμίσους καὶ τετάρτου μιᾶς ὥρας ἰσημερινῆς τοῦ μεσονυκτίου· καὶ ἐξέλειπεν ὅλη, καθʼ ἣν ὥραν ἀκριβῶς ἐπεῖχεν ὁ ἥλιος τοῦ Ταύρου μοίρας ιγ δʹ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-H1-TIME",
+ "event": "H1",
+ "kind": "time-of-day",
+ "feature": "eclipse-timing",
+ "statement": "Ptolemy computed mid-eclipse 3/4 equinoctial hour before midnight (Alexandria).",
+ "licence_words": [
+  "πρὸ ἡμίσους καὶ τετάρτου μιᾶς ὥρας ἰσημερινῆς τοῦ μεσονυκτίου",
+  "ἐπελογισάμεθα"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm0.5",
+   "reading": "mid-eclipse at -0.75 h from local apparent midnight (LAT) at Alexandria, +/- 0.5 h",
+   "justification": "stated to a quarter hour",
+   "operational": {
+    "mid_minus_midnight_LAT_h": -0.75,
+    "tol_h": 0.5,
+    "site": "Alexandria"
+   },
+   "primary": true
+  },
+  {
+   "option": "pm1",
+   "reading": "same, +/- 1 h",
+   "justification": "looser",
+   "operational": {
+    "mid_minus_midnight_LAT_h": -0.75,
+    "tol_h": 1.0,
+    "site": "Alexandria"
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "visibility from Alexandria only",
+   "justification": "sensitivity",
+   "operational": {
+    "timing": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy: 'we computed', a reduction of his own observation)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | πρὸ ἡμίσους καὶ τετάρτου μιᾶς ὥρας ἰσημερινῆς τοῦ μεσονυκτίου | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13
+   CHECK exact | ἐπελογισάμεθα | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13 :: πάλιν, ὧν εἰλήφαμεν τριῶν ἐκλείψεων ἐκ τῶν ἐπιμελέστατα ἡμῖν ἐν Ἀλεξανδρείᾳ τετηρημένων, ἡ μὲν πρώτη γέγονε τῷ ιζʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Παϋνὶ κʹ εἰς τὴν καʹ, τὸν δὲ μέσον χρόνον ἀκριβῶς ἐπελογισάμεθα γεγονέναι πρὸ ἡμίσους καὶ τετάρτου μιᾶς ὥρας ἰσημερινῆς τοῦ μεσονυκτίου· καὶ ἐξέλειπεν ὅλη, καθʼ ἣν ὥραν ἀκριβῶς ἐπεῖχεν ὁ ἥλιος τοῦ Ταύρου μοίρας ιγ δʹ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-H1-SUN",
+ "event": "H1",
+ "kind": "season",
+ "feature": "solar-longitude",
+ "statement": "Ptolemy computes the Sun at Taurus 13 1/4 deg: tropical longitude 43.25 deg.",
+ "licence_words": [
+  "τοῦ Ταύρου μοίρας ιγ δʹ ἔγγιστα"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm3",
+   "reading": "43.25 +/- 3 deg",
+   "justification": "computed from tables in Ptolemy's own era; 3 deg allows a tables error of a few days",
+   "operational": {
+    "sun_lon_deg": 43.25,
+    "tol_deg": 3.0
+   },
+   "primary": true
+  },
+  {
+   "option": "pm15",
+   "reading": "43.25 +/- 15 deg",
+   "justification": "season only",
+   "operational": {
+    "sun_lon_deg": 43.25,
+    "tol_deg": 15.0
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "derived quantity",
+   "operational": {
+    "sun_lon_deg": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy's computation)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | τοῦ Ταύρου μοίρας ιγ δʹ ἔγγιστα | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.13 :: πάλιν, ὧν εἰλήφαμεν τριῶν ἐκλείψεων ἐκ τῶν ἐπιμελέστατα ἡμῖν ἐν Ἀλεξανδρείᾳ τετηρημένων, ἡ μὲν πρώτη γέγονε τῷ ιζʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Παϋνὶ κʹ εἰς τὴν καʹ, τὸν δὲ μέσον χρόνον ἀκριβῶς ἐπελογισάμεθα γεγονέναι πρὸ ἡμίσους καὶ τετάρτου μιᾶς ὥρας ἰσημερινῆς τοῦ μεσονυκτίου· καὶ ἐξέλειπεν ὅλη, καθʼ ἣν ὥραν ἀκριβῶς ἐπεῖχεν ὁ ἥλιος τοῦ Ταύρου μοίρας ιγ δʹ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-H2-MAG",
+ "event": "H2",
+ "kind": "eclipse-lunar",
+ "feature": "magnitude",
+ "statement": "H2 partial, 1/2 + 1/3 = 5/6 of the diameter (10 digits) from the north: umag about 0.83.",
+ "licence_words": [
+  "ἐξέλειπεν ἀπʼ ἄρκτων τὸ U+2220ʹ καὶ γʹ τῆς διαμέτρου"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm0.10",
+   "reading": "umbral magnitude 0.83 +/- 0.10",
+   "justification": "as stated, about one digit of slack",
+   "operational": {
+    "umag": [
+     0.73,
+     0.93
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "pm0.20",
+   "reading": "0.83 +/- 0.20",
+   "justification": "looser",
+   "operational": {
+    "umag": [
+     0.63,
+     1.0
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "partial",
+   "reading": "any partial umbral eclipse",
+   "justification": "partial only",
+   "operational": {
+    "umag": [
+     0.0,
+     1.0
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy's own observation)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ἐξέλειπεν ἀπʼ ἄρκτων τὸ U+2220ʹ καὶ γʹ τῆς διαμέτρου | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14 :: ἡ δὲ δευτέρα γέγονε τῷ ιθʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Χοϊὰκ βʹ εἰς τὴν γʹ, τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι πρὸ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου· καὶ ἐξέλειπεν ἀπʼ ἄρκτων τὸ U+2220ʹ καὶ γʹ τῆς διαμέτρου, καθʼ ἣν ὥραν ἐπεῖχεν ὁ ἥλιος ἀκριβῶς τῶν Χηλῶν μοίρας κε ςʹ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-H2-DIR",
+ "event": "H2",
+ "kind": "eclipse-lunar",
+ "feature": "direction",
+ "statement": "H2 eclipsed from the north: Moon south of the shadow axis (latitude < 0).",
+ "licence_words": [
+  "ἀπʼ ἄρκτων"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "south-of-axis",
+   "reading": "Moon's ecliptic latitude < 0 at mid-eclipse",
+   "justification": "as PB-E2-DIR",
+   "operational": {
+    "moon_lat_sign": -1
+   },
+   "primary": true
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "as PB-E2-DIR",
+   "operational": {
+    "moon_lat_sign": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ἀπʼ ἄρκτων | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14 :: ἡ δὲ δευτέρα γέγονε τῷ ιθʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Χοϊὰκ βʹ εἰς τὴν γʹ, τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι πρὸ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου· καὶ ἐξέλειπεν ἀπʼ ἄρκτων τὸ U+2220ʹ καὶ γʹ τῆς διαμέτρου, καθʼ ἣν ὥραν ἐπεῖχεν ὁ ἥλιος ἀκριβῶς τῶν Χηλῶν μοίρας κε ςʹ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-H2-TIME",
+ "event": "H2",
+ "kind": "time-of-day",
+ "feature": "eclipse-timing",
+ "statement": "Ptolemy computed mid-eclipse 1 equinoctial hour before midnight (Alexandria).",
+ "licence_words": [
+  "πρὸ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου",
+  "ἐπελογισάμεθα"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm0.5",
+   "reading": "mid-eclipse at -1.00 h from local apparent midnight (LAT) at Alexandria, +/- 0.5 h",
+   "justification": "stated to a quarter hour",
+   "operational": {
+    "mid_minus_midnight_LAT_h": -1.0,
+    "tol_h": 0.5,
+    "site": "Alexandria"
+   },
+   "primary": true
+  },
+  {
+   "option": "pm1",
+   "reading": "same, +/- 1 h",
+   "justification": "looser",
+   "operational": {
+    "mid_minus_midnight_LAT_h": -1.0,
+    "tol_h": 1.0,
+    "site": "Alexandria"
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "visibility from Alexandria only",
+   "justification": "sensitivity",
+   "operational": {
+    "timing": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy: 'we computed', a reduction of his own observation)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | πρὸ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14
+   CHECK exact | ἐπελογισάμεθα | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14 :: ἡ δὲ δευτέρα γέγονε τῷ ιθʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Χοϊὰκ βʹ εἰς τὴν γʹ, τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι πρὸ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου· καὶ ἐξέλειπεν ἀπʼ ἄρκτων τὸ U+2220ʹ καὶ γʹ τῆς διαμέτρου, καθʼ ἣν ὥραν ἐπεῖχεν ὁ ἥλιος ἀκριβῶς τῶν Χηλῶν μοίρας κε ςʹ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-H2-SUN",
+ "event": "H2",
+ "kind": "season",
+ "feature": "solar-longitude",
+ "statement": "Ptolemy computes the Sun at Chelae (Libra) 25 1/6 deg: tropical longitude 205.17 deg.",
+ "licence_words": [
+  "τῶν Χηλῶν μοίρας κε ςʹ ἔγγιστα"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm3",
+   "reading": "205.17 +/- 3 deg",
+   "justification": "computed from tables in Ptolemy's own era; 3 deg allows a tables error of a few days",
+   "operational": {
+    "sun_lon_deg": 205.17,
+    "tol_deg": 3.0
+   },
+   "primary": true
+  },
+  {
+   "option": "pm15",
+   "reading": "205.17 +/- 15 deg",
+   "justification": "season only",
+   "operational": {
+    "sun_lon_deg": 205.17,
+    "tol_deg": 15.0
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "derived quantity",
+   "operational": {
+    "sun_lon_deg": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy's computation)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | τῶν Χηλῶν μοίρας κε ςʹ ἔγγιστα | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.14 :: ἡ δὲ δευτέρα γέγονε τῷ ιθʹ ἔτει Ἀδριανοῦ κατʼ Αἰγυπτίους Χοϊὰκ βʹ εἰς τὴν γʹ, τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι πρὸ α ὥρας ἰσημερινῆς τοῦ μεσονυκτίου· καὶ ἐξέλειπεν ἀπʼ ἄρκτων τὸ U+2220ʹ καὶ γʹ τῆς διαμέτρου, καθʼ ἣν ὥραν ἐπεῖχεν ὁ ἥλιος ἀκριβῶς τῶν Χηλῶν μοίρας κε ςʹ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-H3-MAG",
+ "event": "H3",
+ "kind": "eclipse-lunar",
+ "feature": "magnitude",
+ "statement": "H3 partial, half the diameter from the north: umag about 0.5.",
+ "licence_words": [
+  "ἐξέλειπε τὸ ἥμισυ τῆς διαμέτρου ἀπʼ ἄρκτων"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm0.10",
+   "reading": "umbral magnitude 0.50 +/- 0.10",
+   "justification": "as stated",
+   "operational": {
+    "umag": [
+     0.4,
+     0.6
+    ]
+   },
+   "primary": true
+  },
+  {
+   "option": "pm0.20",
+   "reading": "0.50 +/- 0.20",
+   "justification": "looser",
+   "operational": {
+    "umag": [
+     0.3,
+     0.7
+    ]
+   },
+   "primary": false
+  },
+  {
+   "option": "partial",
+   "reading": "any partial umbral eclipse",
+   "justification": "partial only",
+   "operational": {
+    "umag": [
+     0.0,
+     1.0
+    ]
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy's own observation)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ἐξέλειπε τὸ ἥμισυ τῆς διαμέτρου ἀπʼ ἄρκτων | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15 :: ἡ δὲ τρίτη τῶν ἐκλείψεων γέγονεν τῷ κʹ ἔτει Αδριανοῦ κατʼ Αἰγυπτίους Φαρμουθὶ ιθʹ εἰς τὴν κʹ, τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι μετὰ δ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου· καὶ ἐξέλειπε τὸ ἥμισυ τῆς διαμέτρου ἀπʼ ἄρκτων, ἐπεῖχε δὲ καὶ κατὰ ταύτην τὴν ὥραν ὁ ἥλιος τῶν Ἰχθύων μοίρας ιδ ιβ΄ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-H3-DIR",
+ "event": "H3",
+ "kind": "eclipse-lunar",
+ "feature": "direction",
+ "statement": "H3 eclipsed from the north: Moon south of the shadow axis (latitude < 0).",
+ "licence_words": [
+  "ἀπʼ ἄρκτων"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "south-of-axis",
+   "reading": "Moon's ecliptic latitude < 0 at mid-eclipse",
+   "justification": "as PB-E2-DIR",
+   "operational": {
+    "moon_lat_sign": -1
+   },
+   "primary": true
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "as PB-E2-DIR",
+   "operational": {
+    "moon_lat_sign": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | ἀπʼ ἄρκτων | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15 :: ἡ δὲ τρίτη τῶν ἐκλείψεων γέγονεν τῷ κʹ ἔτει Αδριανοῦ κατʼ Αἰγυπτίους Φαρμουθὶ ιθʹ εἰς τὴν κʹ, τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι μετὰ δ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου· καὶ ἐξέλειπε τὸ ἥμισυ τῆς διαμέτρου ἀπʼ ἄρκτων, ἐπεῖχε δὲ καὶ κατὰ ταύτην τὴν ὥραν ὁ ἥλιος τῶν Ἰχθύων μοίρας ιδ ιβ΄ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-H3-TIME",
+ "event": "H3",
+ "kind": "time-of-day",
+ "feature": "eclipse-timing",
+ "statement": "Ptolemy computed mid-eclipse 4 equinoctial hours after midnight (Alexandria).",
+ "licence_words": [
+  "μετὰ δ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου",
+  "ἐπελογισάμεθα"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15",
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv",
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm0.5",
+   "reading": "mid-eclipse at +4.00 h from local apparent midnight (LAT) at Alexandria, +/- 0.5 h",
+   "justification": "stated to a quarter hour",
+   "operational": {
+    "mid_minus_midnight_LAT_h": 4.0,
+    "tol_h": 0.5,
+    "site": "Alexandria"
+   },
+   "primary": true
+  },
+  {
+   "option": "pm1",
+   "reading": "same, +/- 1 h",
+   "justification": "looser",
+   "operational": {
+    "mid_minus_midnight_LAT_h": 4.0,
+    "tol_h": 1.0,
+    "site": "Alexandria"
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "visibility from Alexandria only",
+   "justification": "sensitivity",
+   "operational": {
+    "timing": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy: 'we computed', a reduction of his own observation)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | μετὰ δ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15
+   CHECK exact | ἐπελογισάμεθα | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15 :: ἡ δὲ τρίτη τῶν ἐκλείψεων γέγονεν τῷ κʹ ἔτει Αδριανοῦ κατʼ Αἰγυπτίους Φαρμουθὶ ιθʹ εἰς τὴν κʹ, τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι μετὰ δ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου· καὶ ἐξέλειπε τὸ ἥμισυ τῆς διαμέτρου ἀπʼ ἄρκτων, ἐπεῖχε δὲ καὶ κατὰ ταύτην τὴν ὥραν ὁ ἥλιος τῶν Ἰχθύων μοίρας ιδ ιβ΄ ἔγγιστα.
+
+====================================================================================================
+{
+ "set": "R-PTOL-ALEX",
+ "clue_id": "PA-H3-SUN",
+ "event": "H3",
+ "kind": "season",
+ "feature": "solar-longitude",
+ "statement": "Ptolemy computes the Sun at Pisces 14 1/12 deg: tropical longitude 344.08 deg.",
+ "licence_words": [
+  "τῶν Ἰχθύων μοίρας ιδ ιβ΄ ἔγγιστα"
+ ],
+ "ref": [
+  "urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15"
+ ],
+ "text_file": [
+  "data/text/ptolemy-syntaxis-grc.tsv"
+ ],
+ "fork_options": [
+  {
+   "option": "pm3",
+   "reading": "344.08 +/- 3 deg",
+   "justification": "computed from tables in Ptolemy's own era; 3 deg allows a tables error of a few days",
+   "operational": {
+    "sun_lon_deg": 344.08,
+    "tol_deg": 3.0
+   },
+   "primary": true
+  },
+  {
+   "option": "pm15",
+   "reading": "344.08 +/- 15 deg",
+   "justification": "season only",
+   "operational": {
+    "sun_lon_deg": 344.08,
+    "tol_deg": 15.0
+   },
+   "primary": false
+  },
+  {
+   "option": "none",
+   "reading": "not used",
+   "justification": "derived quantity",
+   "operational": {
+    "sun_lon_deg": null
+   },
+   "primary": false
+  }
+ ],
+ "narrative_level": "narrator (Ptolemy's computation)",
+ "notes": "",
+ "license_check": "ok"
+}
+   CHECK exact | τῶν Ἰχθύων μοίρας ιδ ιβ΄ ἔγγιστα | urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15
+   ROW [data/text/ptolemy-syntaxis-grc.tsv] urn:cts:greekLit:tlg0363.tlg001.1st1K-grc1.4.6.15 :: ἡ δὲ τρίτη τῶν ἐκλείψεων γέγονεν τῷ κʹ ἔτει Αδριανοῦ κατʼ Αἰγυπτίους Φαρμουθὶ ιθʹ εἰς τὴν κʹ, τὸν δὲ μέσον χρόνον ἐπελογισάμεθα γεγονέναι μετὰ δ ὥρας ἰσημερινὰς τοῦ μεσονυκτίου· καὶ ἐξέλειπε τὸ ἥμισυ τῆς διαμέτρου ἀπʼ ἄρκτων, ἐπεῖχε δὲ καὶ κατὰ ταύτην τὴν ὥραν ὁ ἥλιος τῶν Ἰχθύων μοίρας ιδ ιβ΄ ἔγγιστα.

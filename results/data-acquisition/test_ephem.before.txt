@@ -1,0 +1,11 @@
+PASS test_calendar (0.0 s)
+PASS test_delta_t_models (0.0 s)
+PASS test_vondrak_test_case (0.0 s)
+PASS test_precession_models_agree_at_1177 (0.0 s)
+PASS test_canon_eclipse_1177 (0.1 s)
+PASS test_dt_is_longitude_shift (0.2 s)
+PASS test_babylon_135_window_with_de431 (1.8 s)
+PASS test_new_moon_1177 (0.0 s)
+PASS test_venus_vs_horizons_cache (0.0 s)
+PASS test_star_proper_motion (0.0 s)
+all passed

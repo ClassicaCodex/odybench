@@ -1,0 +1,395 @@
+====================================================================================================
+SET ARG-RETURN
+{
+ "set": "ARG-RETURN",
+ "role": "negative",
+ "searchable": true,
+ "text": "Apollonius, Argonautica 4.1620-4.1718 (from Triton's harbour by Carpathos and Crete to Anaphe)",
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "edition_id": 1,
+ "day0": "Day 0 is the day the Argo leaves Crete at dawn; the 'pall' darkness, with neither stars nor moon, falls 'at once' (Αὐτίκα, 4.1694) as they run over the Cretan sea, in the daylight of Day 0 or at its nightfall (the text does not say which; ARG-RETURN-04), and lasts through Night 0; Dawn +1 shows Anaphe. The evening star is on Day E = Day -(3 + x).",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "observer_places": [
+  {
+   "place": "the Cretan sea beyond Cape Salmonis (Day 0 after the embarkation, and Night 0)",
+   "words": "ὑπὲρ Σαλμωνίδος ἄκρης … Κρηταῖον ὑπὲρ μέγα λαῖτμα",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1693",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1694"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "lat": 35.3128,
+   "lon": 26.3076,
+   "coord_source": "Cape Sideros (Wikipedia, fetched 2026-10-04); identifying Salmonis with Sideros is modern, not the text's"
+  },
+  {
+   "place": "Anaphe (Dawn +1)",
+   "words": "Ἀνάφην δέ τε λισσάδα νῆσον",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1717"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "lat": 36.3719,
+   "lon": 25.7953,
+   "coord_source": "coordinates are the drafter's identification of the named place (Wikipedia coordinates fetched 2026-10-04, results/negatives/coords*.out.json), not text"
+  },
+  {
+   "place": "at sea off the Libyan desert coast, east of Triton's harbour (Day E); no place named",
+   "words": "αὐτὴν ἐπὶ δεξίʼ ἔχοντες γαῖαν ἐρημαίην",
+   "ref": [
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1623",
+    "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1624"
+   ],
+   "text_file": "apollonius-argonautica-grc.tsv",
+   "lat": 32.8225,
+   "lon": 21.8625,
+   "coord_source": "Cyrene (Wikipedia) chosen by the drafter as a representative point; the text names no place"
+  }
+ ],
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "ARG-RETURN-01": "vis7",
+   "ARG-RETURN-03": "x0",
+   "ARG-RETURN-04": "a"
+  },
+  "BM-analogue": {
+   "ARG-RETURN-01": "lag90",
+   "ARG-RETURN-03": "x0",
+   "ARG-RETURN-04": "b"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "text",
+   "clue_ids": [
+    "ARG-RETURN-04"
+   ],
+   "note": "a moonless night on Night 0, the analogue of the Odyssey's σκοτομήνιος (14.457) rather than of its Day-0 conjunction; option b turns it into a conjunction anchor; option d (a solar eclipse on Day 0) does too"
+  },
+  "season_stars": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "morning_star": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": "an evening star instead, on Day E"
+  },
+  "mercury_turning_point": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "darkness_eclipse": {
+   "status": "fork",
+   "clue_ids": [
+    "ARG-RETURN-04"
+   ],
+   "note": "a darkness the text calls night, whose onset may fall in the daylight of Day 0; eclipse-compatible as the dark of the Moon (option b, a conjunction anchor) or as a solar eclipse in the daylight of Day 0 (option d); option c is a lunar eclipse, not solar"
+  }
+ },
+ "notes": "",
+ "eclipse_compatible_options": [
+  "ARG-RETURN-04:b",
+  "ARG-RETURN-04:c",
+  "ARG-RETURN-04:d"
+ ],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness",
+ "license_check": "edited: day0, the first place label and the two slot notes now allow the darkness of ARG-RETURN-04 to begin in the daylight of Day 0, which the text does not exclude; 'ARG-RETURN-04:d' (new) is listed in eclipse_compatible_options; the darkness note no longer says the darkness is eclipse-compatible only as a lunar eclipse (option b, a conjunction, was already listed)"
+}
+ PLACE the Cretan sea beyond Cape Salmonis (Day 0 after the embarkation, and Night 0): missing refs []
+   frag exact=True nfc=True where=['4.1693']: ὑπὲρ Σαλμωνίδος ἄκρης
+   frag exact=True nfc=True where=['4.1694']: Κρηταῖον ὑπὲρ μέγα λαῖτμα
+      4.1691	ἱρὸν Ἀθηναίης Μινωίδος ἱδρύσαντο,
+      4.1692	ὕδωρ τʼ εἰσαφύσαντο καὶ εἰσέβαν, ὥς κεν ἐρετμοῖς
+   >> 4.1693	παμπρώτιστα βάλοιεν ὑπὲρ Σαλμωνίδος ἄκρης.
+   >> 4.1694	Αὐτίκα δὲ Κρηταῖον ὑπὲρ μέγα λαῖτμα θέοντας
+      4.1695	νὺξ ἐφόβει, τήνπερ τε κατουλάδα κικλήσκουσιν·
+      4.1696	νύκτʼ ὀλοὴν οὐκ ἄστρα διίσχανεν, οὐκ ἀμαρυγαὶ
+ PLACE Anaphe (Dawn +1): missing refs []
+   frag exact=True nfc=True where=['4.1717']: Ἀνάφην δέ τε λισσάδα νῆσον
+      4.1715	ἄλσει ἐνὶ σκιερῷ τέμενος σκιόεντά τε βωμὸν
+      4.1716	ποίεον, Αἰγλήτην μὲν ἐυσκόπου εἵνεκεν αἴγλης
+   >> 4.1717	Φοῖβον κεκλόμενοι· Ἀνάφην δέ τε λισσάδα νῆσον
+      4.1718	ἴσκον, ὃ δὴ Φοῖβός μιν ἀτυζομένοις ἀνέφηνεν.
+      4.1719	ῥέζον δʼ ὅσσα περ ἄνδρες ἐρημαίῃ ἐνὶ ῥέζειν
+ PLACE at sea off the Libyan desert coast, east of Triton's harbour (Day E); no place named: missing refs []
+   frag exact=True nfc=True where=['(spans rows)']: αὐτὴν ἐπὶ δεξίʼ ἔχοντες γαῖαν ἐρημαίην
+      4.1621	ἠδὲ Ποσειδάωνος ἰδὲ Τρίτωνος ἔασιν
+      4.1622	βωμοί· ἐπεὶ κεῖνʼ ἦμαρ ἐπέσχεθον. αὐτὰρ ἐς ἠῶ
+   >> 4.1623	λαίφεσι πεπταμένοις αὐτὴν ἐπὶ δεξίʼ ἔχοντες
+   >> 4.1624	γαῖαν ἐρημαίην, πνοιῇ ζεφύροιο θέεσκον.
+      4.1625	ἦρι δʼ ἔπειτʼ ἀγκῶνά θʼ ὁμοῦ μυχάτην τε θάλασσαν
+      4.1626	κεκλιμένην ἀγκῶνος ὕπερ προύχοντος ἴδοντο.
+----------------------------------------------------------------------------------------------------
+CLUE ARG-RETURN-01  kind=planet  level=narrator
+{
+ "set": "ARG-RETURN",
+ "clue_id": "ARG-RETURN-01",
+ "kind": "planet",
+ "statement": "On Day E, when the Sun set, the 'star of the fold' that brings rest to weary ploughmen came up; the wind then dropped in the black night.",
+ "licence_words": "ἦμος δʼ ἠέλιος μὲν ἔδυ, ἀνὰ δʼ ἤλυθεν ἀστὴρ αὔλιος, ὅς τʼ ἀνέπαυσεν ὀιζυροὺς ἀροτῆρας … κελαινῇ νυκτὶ",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1629",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1630",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1631"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "lag60",
+   "operational": "Venus sets at least 60 min after the Sun on Day E",
+   "justification": "the evening star taken as Venus; mirror of the F4 lead thresholds"
+  },
+  {
+   "option": "lag90",
+   "operational": "Venus sets at least 90 min after the Sun on Day E",
+   "justification": "mirror of B&M's 90-min threshold"
+  },
+  {
+   "option": "lag120",
+   "operational": "Venus sets at least 120 min after the Sun on Day E",
+   "justification": "strict end of the mirrored menu"
+  },
+  {
+   "option": "vis7",
+   "operational": "Venus visible as an evening object on Day E (arcus visionis 7 deg)",
+   "justification": "the words name an evening star; visibility is the least-inference reading"
+  },
+  {
+   "option": "herald",
+   "operational": "some bright evening object visible in the evening twilight of Day E: Venus, Jupiter, Sirius, or Mars at magnitude -1 or brighter",
+   "justification": "the text does not say which star"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "the evening star is a stock marker of nightfall (the star of the fold / of evening)"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "A literal 'rising at sunset' of an unnamed bright star constrains nothing (some bright star always rises near sunset) and is folded into 'none'.",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: ἦμος δʼ ἠέλιος μὲν ἔδυ, ἀνὰ δʼ ἤλυθεν ἀστὴρ αὔλιος, ὅς τʼ ἀνέπαυσεν ὀιζυροὺς ἀροτῆρας
+   frag exact=True nfc=True where=['4.1631']: κελαινῇ νυκτὶ
+ TEXT:
+      4.1625	ἦρι δʼ ἔπειτʼ ἀγκῶνά θʼ ὁμοῦ μυχάτην τε θάλασσαν
+      4.1626	κεκλιμένην ἀγκῶνος ὕπερ προύχοντος ἴδοντο.
+      4.1627	αὐτίκα δὲ ζέφυρος μὲν ἐλώφεεν, ἤλυθε δʼ αὔρη
+      4.1628	ἀργέσταο νότου· κεχάροντο δὲ θυμὸν ἰωῇ.
+   >> 4.1629	ἦμος δʼ ἠέλιος μὲν ἔδυ, ἀνὰ δʼ ἤλυθεν ἀστὴρ
+   >> 4.1630	αὔλιος, ὅς τʼ ἀνέπαυσεν ὀιζυροὺς ἀροτῆρας,
+   >> 4.1631	δὴ τότʼ ἔπειτʼ ἀνέμοιο κελαινῇ νυκτὶ λιπόντος
+      4.1632	ἱστία λυσάμενοι περιμήκεά τε κλίναντες
+      4.1633	ἱστόν, ἐυξέστῃσιν ἐπερρώοντʼ ἐλάτῃσιν
+      4.1634	παννύχιοι καὶ ἐπʼ ἦμαρ, ἐπʼ ἤματι δʼ αὖτις ἰοῦσαν
+----------------------------------------------------------------------------------------------------
+CLUE ARG-RETURN-02  kind=interval  level=narrator
+{
+ "set": "ARG-RETURN",
+ "clue_id": "ARG-RETURN-02",
+ "kind": "interval",
+ "statement": "From the evening of Day E they row all night, the next day and the following night; Carpathos receives them on Day E+2.",
+ "licence_words": "παννύχιοι καὶ ἐπʼ ἦμαρ, ἐπʼ ἤματι δʼ αὖτις ἰοῦσαν νύχθʼ ἑτέρην … ὑπέδεκτο δʼ ἀπόπροθι παιπαλόεσσα Κάρπαθος",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1633",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1634",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1635",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1636"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: παννύχιοι καὶ ἐπʼ ἦμαρ, ἐπʼ ἤματι δʼ αὖτις ἰοῦσαν νύχθʼ ἑτέρην
+   frag exact=True nfc=True where=['(spans rows)']: ὑπέδεκτο δʼ ἀπόπροθι παιπαλόεσσα Κάρπαθος
+ TEXT:
+      4.1629	ἦμος δʼ ἠέλιος μὲν ἔδυ, ἀνὰ δʼ ἤλυθεν ἀστὴρ
+      4.1630	αὔλιος, ὅς τʼ ἀνέπαυσεν ὀιζυροὺς ἀροτῆρας,
+      4.1631	δὴ τότʼ ἔπειτʼ ἀνέμοιο κελαινῇ νυκτὶ λιπόντος
+      4.1632	ἱστία λυσάμενοι περιμήκεά τε κλίναντες
+   >> 4.1633	ἱστόν, ἐυξέστῃσιν ἐπερρώοντʼ ἐλάτῃσιν
+   >> 4.1634	παννύχιοι καὶ ἐπʼ ἦμαρ, ἐπʼ ἤματι δʼ αὖτις ἰοῦσαν
+   >> 4.1635	νύχθʼ ἑτέρην. ὑπέδεκτο δʼ ἀπόπροθι παιπαλόεσσα
+   >> 4.1636	Κάρπαθος· ἔνθεν δʼ οἵγε περαιώσεσθαι ἔμελλον
+      4.1637	Κρήτην, ἥ τʼ ἄλλων ὑπερέπλετο εἰν ἁλὶ νήσων.
+      4.1638	τοὺς δὲ Τάλως χάλκειος, ἀπὸ στιβαροῦ σκοπέλοιο
+      4.1639	ῥηγνύμενος πέτρας, εἶργε χθονὶ πείσματʼ ἀνάψαι,
+----------------------------------------------------------------------------------------------------
+CLUE ARG-RETURN-03  kind=interval  level=narrator
+{
+ "set": "ARG-RETURN",
+ "clue_id": "ARG-RETURN-03",
+ "kind": "interval",
+ "statement": "From Carpathos they cross to Crete (no day count), where Talos bars them; they spend Night -1 on Crete and at the new dawn of Day 0 found a shrine, take water and embark.",
+ "licence_words": "ἔνθεν δʼ οἵγε περαιώσεσθαι ἔμελλον Κρήτην … κεῖνο μὲν οὖν Κρήτῃ ἐνὶ δὴ κνέφας ηὐλίζοντο ἥρωες … νέον φαέθουσαν ἐς ἠῶ",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1636",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1637",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1689",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1690",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1691",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1692"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "x0",
+   "operational": "the crossing to Crete is on Day E+2, so Day E = Day -3",
+   "justification": "the shortest reading: the text names no stay at Carpathos and no day for the crossing, so x = 0 assumes none (an inference)"
+  },
+  {
+   "option": "xfree",
+   "operational": "the crossing takes x = 0 to 10 further days, so Day E is between Day -13 and Day -3 (the upper bound is the drafter's)",
+   "justification": "no count is given for Carpathos and the crossing"
+  },
+  {
+   "option": "none",
+   "operational": "no link: Day E is not placed relative to Day 0 (row 01 then fixes no searchable date)",
+   "justification": "the text gives no count for the stay at Carpathos or the crossing to Crete"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "edited: x0 assumes no stay at Carpathos, which the text does not state, and the fork had no 'none'; x0's justification now says so and a 'none' option (Day E unlinked) is added"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: ἔνθεν δʼ οἵγε περαιώσεσθαι ἔμελλον Κρήτην
+   frag exact=True nfc=True where=['(spans rows)']: κεῖνο μὲν οὖν Κρήτῃ ἐνὶ δὴ κνέφας ηὐλίζοντο ἥρωες
+   frag exact=True nfc=True where=['4.1690']: νέον φαέθουσαν ἐς ἠῶ
+ TEXT:
+      4.1632	ἱστία λυσάμενοι περιμήκεά τε κλίναντες
+      4.1633	ἱστόν, ἐυξέστῃσιν ἐπερρώοντʼ ἐλάτῃσιν
+      4.1634	παννύχιοι καὶ ἐπʼ ἦμαρ, ἐπʼ ἤματι δʼ αὖτις ἰοῦσαν
+      4.1635	νύχθʼ ἑτέρην. ὑπέδεκτο δʼ ἀπόπροθι παιπαλόεσσα
+   >> 4.1636	Κάρπαθος· ἔνθεν δʼ οἵγε περαιώσεσθαι ἔμελλον
+   >> 4.1637	Κρήτην, ἥ τʼ ἄλλων ὑπερέπλετο εἰν ἁλὶ νήσων.
+      4.1638	τοὺς δὲ Τάλως χάλκειος, ἀπὸ στιβαροῦ σκοπέλοιο
+      4.1639	ῥηγνύμενος πέτρας, εἶργε χθονὶ πείσματʼ ἀνάψαι,
+      4.1640	Δικταίην ὅρμοιο κατερχομένους ἐπιωγήν·
+      ...
+      4.1685	ῥιπῇσιν μὲν πρῶτα τινάσσεται, ὕστερον αὖτε
+      4.1686	πρυμνόθεν ἐξαγεῖσα κατήριπεν· ὧς ὅγε ποσσὶν
+      4.1687	ἀκαμάτοις τείως μὲν ἐπισταδὸν ᾐωρεῖτο,
+      4.1688	ὕστερον αὖτʼ ἀμενηνὸς ἀπείρονι κάππεσε δούπῳ.
+   >> 4.1689	κεῖνο μὲν οὖν Κρήτῃ ἐνὶ δὴ κνέφας ηὐλίζοντο
+   >> 4.1690	ἥρωες· μετὰ δʼ οἵγε νέον φαέθουσαν ἐς ἠῶ
+   >> 4.1691	ἱρὸν Ἀθηναίης Μινωίδος ἱδρύσαντο,
+   >> 4.1692	ὕδωρ τʼ εἰσαφύσαντο καὶ εἰσέβαν, ὥς κεν ἐρετμοῖς
+      4.1693	παμπρώτιστα βάλοιεν ὑπὲρ Σαλμωνίδος ἄκρης.
+      4.1694	Αὐτίκα δὲ Κρηταῖον ὑπὲρ μέγα λαῖτμα θέοντας
+      4.1695	νὺξ ἐφόβει, τήνπερ τε κατουλάδα κικλήσκουσιν·
+----------------------------------------------------------------------------------------------------
+CLUE ARG-RETURN-04  kind=darkness  level=narrator
+{
+ "set": "ARG-RETURN",
+ "clue_id": "ARG-RETURN-04",
+ "kind": "darkness",
+ "statement": "After they embark at the new dawn of Day 0 (row 03), 'at once' (Αὐτίκα), as they run over the Cretan sea, the night they call 'the pall' terrifies them: neither stars nor moonbeams pierce it; black chaos from heaven, or darkness risen from the depths. No sunset is narrated between the embarkation and this darkness, so its onset is not stated: in the daylight of Day 0 or at its nightfall. It ends at Dawn +1 (row 05).",
+ "licence_words": "Αὐτίκα δὲ Κρηταῖον ὑπὲρ μέγα λαῖτμα θέοντας νὺξ ἐφόβει, τήνπερ τε κατουλάδα κικλήσκουσιν … νύκτʼ ὀλοὴν οὐκ ἄστρα διίσχανεν, οὐκ ἀμαρυγαὶ μήνης … οὐρανόθεν δὲ μέλαν χάος",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1694",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1695",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1696",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1697",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1698"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [
+  {
+   "option": "a",
+   "operational": "the Moon is below the horizon for at least 75% of the dark hours of Night 0",
+   "justification": "'no moonbeams'; the predicate is DESIGN H2's for the Odyssey's σκοτομήνιος"
+  },
+  {
+   "option": "b",
+   "operational": "conjunction falls within +-2 days of local midnight of Night 0",
+   "justification": "the moonless night read as the dark of the moon"
+  },
+  {
+   "option": "c",
+   "operational": "an umbral lunar eclipse is in progress while the Moon is above the horizon during Night 0",
+   "justification": "the darkness slot read as an eclipse; the drafter's inference, not the text"
+  },
+  {
+   "option": "d",
+   "operational": "a solar eclipse of class X1-X4 (DESIGN 3.1) visible at the set's first site (the Cretan sea beyond Cape Salmonis) on Day 0, maximum at any time the Sun is above the horizon",
+   "justification": "the darkness read as falling in daylight and as an eclipse: 'Αὐτίκα' follows the dawn embarkation (4.1690-1694) with no sunset between, and 'νύκτʼ ὀλοὴν' is the phrase of the Iliad's daytime darkness (Il. 16.567, IL-PATROCLUS-02); against it, the text calls the darkness night, names stars and Moon as unseen, and makes it last until dawn (4.1713-1714); the eclipse is the checker's inference, as in IL-PATROCLUS-02:solar_any; added by the round-2 licence check"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "a supernatural darkness: the stars are hidden too, so the Moon's absence is not the cause the text gives"
+  }
+ ],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "edited: the statement put the darkness on Night 0, but the text gives no onset: it falls 'at once' (Αὐτίκα, 4.1694, now quoted) after the dawn embarkation, with no sunset narrated, so it may begin in daylight. The statement now says so, and option d (a solar eclipse in the daylight of Day 0; eclipse-compatible; the checker's inference, with the case against it stated) is added beside the night readings a-c and 'none'",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: Αὐτίκα δὲ Κρηταῖον ὑπὲρ μέγα λαῖτμα θέοντας νὺξ ἐφόβει, τήνπερ τε κατουλάδα κικλήσκουσιν
+   frag exact=True nfc=True where=['(spans rows)']: νύκτʼ ὀλοὴν οὐκ ἄστρα διίσχανεν, οὐκ ἀμαρυγαὶ μήνης
+   frag exact=True nfc=True where=['4.1697']: οὐρανόθεν δὲ μέλαν χάος
+ TEXT:
+      4.1690	ἥρωες· μετὰ δʼ οἵγε νέον φαέθουσαν ἐς ἠῶ
+      4.1691	ἱρὸν Ἀθηναίης Μινωίδος ἱδρύσαντο,
+      4.1692	ὕδωρ τʼ εἰσαφύσαντο καὶ εἰσέβαν, ὥς κεν ἐρετμοῖς
+      4.1693	παμπρώτιστα βάλοιεν ὑπὲρ Σαλμωνίδος ἄκρης.
+   >> 4.1694	Αὐτίκα δὲ Κρηταῖον ὑπὲρ μέγα λαῖτμα θέοντας
+   >> 4.1695	νὺξ ἐφόβει, τήνπερ τε κατουλάδα κικλήσκουσιν·
+   >> 4.1696	νύκτʼ ὀλοὴν οὐκ ἄστρα διίσχανεν, οὐκ ἀμαρυγαὶ
+   >> 4.1697	μήνης· οὐρανόθεν δὲ μέλαν χάος, ἠέ τις ἄλλη
+   >> 4.1698	ὠρώρει σκοτίη μυχάτων ἀνιοῦσα βερέθρων.
+      4.1699	αὐτοὶ δʼ, εἴτʼ Ἀίδῃ, εἴθʼ ὕδασιν ἐμφορέοντο,
+      4.1700	ἠείδειν οὐδʼ ὅσσον· ἐπέτρεψαν δὲ θαλάσσῃ
+      4.1701	νόστον, ἀμηχανέοντες, ὅπῃ φέροι. αὐτὰρ Ἰήσων
+----------------------------------------------------------------------------------------------------
+CLUE ARG-RETURN-05  kind=time-of-day  level=narrator
+{
+ "set": "ARG-RETURN",
+ "clue_id": "ARG-RETURN-05",
+ "kind": "time-of-day",
+ "statement": "After Apollo's bow flashes, an islet appears; they anchor, and Dawn +1 rises at once: they name the island Anaphe.",
+ "licence_words": "αὐτίκα δʼ Ἠὼς φέγγεν ἀνερχομένη … Ἀνάφην",
+ "ref": [
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1713",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1714",
+  "urn:cts:greekLit:tlg0001.tlg001.perseus-grc2.4.1717"
+ ],
+ "text_file": "apollonius-argonautica-grc.tsv",
+ "fork_options": [],
+ "narrative_level": "narrator",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['(spans rows)']: αὐτίκα δʼ Ἠὼς φέγγεν ἀνερχομένη
+   frag exact=True nfc=True where=['4.1717']: Ἀνάφην
+ TEXT:
+      4.1709	δεξιτερῇ χρύσειον ἀνέσχεθες ὑψόθι τόξον·
+      4.1710	μαρμαρέην δʼ ἀπέλαμψε βιὸς περὶ πάντοθεν αἴγλην.
+      4.1711	τοῖσι δέ τις Σποράδων βαιὴ ἀπὸ τόφρʼ ἐφαάνθη
+      4.1712	νῆσος ἰδεῖν, ὀλίγης Ἱππουρίδος ἀντία νήσου,
+   >> 4.1713	ἔνθʼ εὐνὰς ἐβάλοντο καὶ ἔσχεθον· αὐτίκα δʼ Ἠὼς
+   >> 4.1714	φέγγεν ἀνερχομένη· τοὶ δʼ ἀγλαὸν Ἀπόλλωνι
+      4.1715	ἄλσει ἐνὶ σκιερῷ τέμενος σκιόεντά τε βωμὸν
+      4.1716	ποίεον, Αἰγλήτην μὲν ἐυσκόπου εἵνεκεν αἴγλης
+   >> 4.1717	Φοῖβον κεκλόμενοι· Ἀνάφην δέ τε λισσάδα νῆσον
+      4.1718	ἴσκον, ὃ δὴ Φοῖβός μιν ἀτυζομένοις ἀνέφηνεν.
+      4.1719	ῥέζον δʼ ὅσσα περ ἄνδρες ἐρημαίῃ ἐνὶ ῥέζειν
+      4.1720	ἀκτῇ ἐφοπλίσσειαν· ὃ δή σφεας ὁππότε δαλοῖς

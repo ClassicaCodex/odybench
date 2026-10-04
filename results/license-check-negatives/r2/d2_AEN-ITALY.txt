@@ -1,0 +1,218 @@
+====================================================================================================
+SET AEN-ITALY
+{
+ "set": "AEN-ITALY",
+ "role": "negative",
+ "searchable": true,
+ "text": "Virgil, Aeneid 3.506-3.524 (Palinurus reads the stars before the crossing to Italy)",
+ "text_file": "virgil-aeneid-lat.tsv",
+ "edition_id": 1827,
+ "day0": "Day 0 is the day the fleet beaches near the Ceraunian mountains; Night 0 is Palinurus' night; Dawn +1 shows Italy.",
+ "day_convention": "Day n is the local civil date (LMT at the set's site) of the daylight of that day; Night n runs from sunset of Day n to sunrise of Day n+1; Dawn n+1 is the morning twilight that ends Night n. Offsets count days, not 24-hour periods.",
+ "observer_places": [
+  {
+   "place": "the shore by the Ceraunian mountains (Epirus)",
+   "words": "vicina Ceraunia iuxta … sternimur optatae gremio telluris ad undam",
+   "ref": [
+    "3.506",
+    "3.507",
+    "3.508",
+    "3.509"
+   ],
+   "text_file": "virgil-aeneid-lat.tsv",
+   "lat": 40.1986,
+   "lon": 19.5917,
+   "coord_source": "Llogara Pass (Wikipedia, fetched 2026-10-04) taken by the drafter as a point on the Ceraunian range"
+  }
+ ],
+ "window_width_years": [
+  136,
+  251
+ ],
+ "pinned_readings": {
+  "literal": {
+   "AEN-ITALY-02": "a5"
+  },
+  "BM-analogue": {
+   "AEN-ITALY-02": "a2"
+  }
+ },
+ "odyssey_slots": {
+  "day0_phase": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "season_stars": {
+   "status": "text",
+   "clue_ids": [
+    "AEN-ITALY-02"
+   ],
+   "note": "the closest analogue of Od. 5.270-275: a steersman's star list, itself a repeated formula (3.516 = 1.744, as Od. 5.273-275 = Il. 18.487-489)"
+  },
+  "morning_star": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": "3.521 is dawn with the stars put to flight; no morning star"
+  },
+  "mercury_turning_point": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  },
+  "darkness_eclipse": {
+   "status": "empty",
+   "clue_ids": [],
+   "note": ""
+  }
+ },
+ "notes": "A season-only set: it can date a season, not a year.",
+ "eclipse_compatible_options": [],
+ "eclipse_compatible_note": "clue:option pairs that put a conjunction or an eclipse in the reading (DESIGN's 'eclipse-compatible'); lunar-eclipse options (ARG-RETURN-04:c, QS-SACK-02:a) are not solar class X and are listed for completeness",
+ "license_check": "ok"
+}
+ PLACE the shore by the Ceraunian mountains (Epirus): missing refs []
+   frag exact=True nfc=True where=['3.506']: vicina Ceraunia iuxta
+   frag exact=True nfc=True where=['3.509']: sternimur optatae gremio telluris ad undam
+      3.504	atque idem casus, unam faciemus utramque
+      3.505	Troiam animis; maneat nostros ea cura nepotes.
+   >> 3.506	Provehimur pelago vicina Ceraunia iuxta,
+   >> 3.507	unde iter Italiam cursusque brevissimus undis.
+   >> 3.508	Sol ruit interea et montes umbrantur opaci;
+   >> 3.509	sternimur optatae gremio telluris ad undam,
+      3.510	sortiti remos, passimque in litore sicco
+      3.511	corpora curamus; fessos sopor inrigat artus.
+----------------------------------------------------------------------------------------------------
+CLUE AEN-ITALY-01  kind=time-of-day  level=character speech
+{
+ "set": "AEN-ITALY",
+ "clue_id": "AEN-ITALY-01",
+ "kind": "time-of-day",
+ "statement": "The Sun sets at the end of Day 0 as the fleet beaches; the crews sleep.",
+ "licence_words": "Sol ruit interea et montes umbrantur opaci … fessos sopor inrigat artus",
+ "ref": [
+  "3.508",
+  "3.509",
+  "3.510",
+  "3.511"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [],
+ "narrative_level": "character speech",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['3.508']: Sol ruit interea et montes umbrantur opaci
+   frag exact=True nfc=True where=['3.511']: fessos sopor inrigat artus
+ TEXT:
+      3.504	atque idem casus, unam faciemus utramque
+      3.505	Troiam animis; maneat nostros ea cura nepotes.
+      3.506	Provehimur pelago vicina Ceraunia iuxta,
+      3.507	unde iter Italiam cursusque brevissimus undis.
+   >> 3.508	Sol ruit interea et montes umbrantur opaci;
+   >> 3.509	sternimur optatae gremio telluris ad undam,
+   >> 3.510	sortiti remos, passimque in litore sicco
+   >> 3.511	corpora curamus; fessos sopor inrigat artus.
+      3.512	Necdum orbem medium Nox horis acta subibat:
+      3.513	haud segnis strato surgit Palinurus et omnis
+      3.514	explorat ventos, atque auribus aera captat;
+----------------------------------------------------------------------------------------------------
+CLUE AEN-ITALY-02  kind=star  level=character speech
+{
+ "set": "AEN-ITALY",
+ "clue_id": "AEN-ITALY-02",
+ "kind": "star",
+ "statement": "Before local midnight of Night 0 Palinurus rises and notes all the gliding stars: Arcturus, the rainy Hyades, the twin Triones and Orion armed with gold; the sky is clear.",
+ "licence_words": "Necdum orbem medium Nox horis acta subibat … sidera cuncta notat tacito labentia caelo, Arcturum pluviasque Hyadas geminosque Triones, armatumque auro circumspicit Oriona … caelo constare sereno",
+ "ref": [
+  "3.512",
+  "3.513",
+  "3.514",
+  "3.515",
+  "3.516",
+  "3.517",
+  "3.518"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [
+  {
+   "option": "a5",
+   "operational": "each of Arcturus, Aldebaran (Hyades), Betelgeuse and Rigel (Orion) is >= 5 deg above the horizon at some instant between the end of evening nautical twilight and local midnight of Night 0 (the Triones, the Bears, are circumpolar)",
+   "justification": "'necdum orbem medium' sets the before-midnight window; 'notat ... circumspicit' means he sees each star"
+  },
+  {
+   "option": "a2",
+   "operational": "as a5 with >= 2 deg",
+   "justification": "the Odyssey's F3 altitude [DESIGN 3.4 F3]"
+  },
+  {
+   "option": "b5",
+   "operational": "all four >= 5 deg at one and the same instant in that window",
+   "justification": "one survey of the sky"
+  },
+  {
+   "option": "none",
+   "operational": "clue dropped",
+   "justification": "3.516 repeats 1.744 word for word (Iopas' song of the sky at Carthage): a formula, not a night's observation"
+  }
+ ],
+ "narrative_level": "character speech",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['3.512']: Necdum orbem medium Nox horis acta subibat
+   frag exact=True nfc=True where=['(spans rows)']: sidera cuncta notat tacito labentia caelo, Arcturum pluviasque Hyadas geminosque Triones, armatumque auro circumspicit Oriona
+   frag exact=True nfc=True where=['3.518']: caelo constare sereno
+ TEXT:
+      3.508	Sol ruit interea et montes umbrantur opaci;
+      3.509	sternimur optatae gremio telluris ad undam,
+      3.510	sortiti remos, passimque in litore sicco
+      3.511	corpora curamus; fessos sopor inrigat artus.
+   >> 3.512	Necdum orbem medium Nox horis acta subibat:
+   >> 3.513	haud segnis strato surgit Palinurus et omnis
+   >> 3.514	explorat ventos, atque auribus aera captat;
+   >> 3.515	sidera cuncta notat tacito labentia caelo,
+   >> 3.516	Arcturum pluviasque Hyadas geminosque Triones,
+   >> 3.517	armatumque auro circumspicit Oriona.
+   >> 3.518	Postquam cuncta videt caelo constare sereno,
+      3.519	dat clarum e puppi signum; nos castra movemus,
+      3.520	temptamusque viam et velorum pandimus alas.
+      3.521	Iamque rubescebat stellis Aurora fugatis,
+----------------------------------------------------------------------------------------------------
+CLUE AEN-ITALY-03  kind=time-of-day  level=character speech
+{
+ "set": "AEN-ITALY",
+ "clue_id": "AEN-ITALY-03",
+ "kind": "time-of-day",
+ "statement": "At Dawn +1, as the stars flee, they sight the low hills of Italy.",
+ "licence_words": "Iamque rubescebat stellis Aurora fugatis … humilemque videmus Italiam",
+ "ref": [
+  "3.521",
+  "3.522",
+  "3.523"
+ ],
+ "text_file": "virgil-aeneid-lat.tsv",
+ "fork_options": [],
+ "narrative_level": "character speech",
+ "notes": "",
+ "license_check": "ok",
+ "license_check_r1": "ok"
+}
+ missing refs: []
+   frag exact=True nfc=True where=['3.521']: Iamque rubescebat stellis Aurora fugatis
+   frag exact=True nfc=True where=['(spans rows)']: humilemque videmus Italiam
+ TEXT:
+      3.517	armatumque auro circumspicit Oriona.
+      3.518	Postquam cuncta videt caelo constare sereno,
+      3.519	dat clarum e puppi signum; nos castra movemus,
+      3.520	temptamusque viam et velorum pandimus alas.
+   >> 3.521	Iamque rubescebat stellis Aurora fugatis,
+   >> 3.522	cum procul obscuros collis humilemque videmus
+   >> 3.523	Italiam. Italiam primus conclamat Achates,
+      3.524	Italiam laeto socii clamore salutant.
+      3.525	Tum pater Anchises magnum cratera corona
+      3.526	induit, implevitque mero, divosque vocavit
