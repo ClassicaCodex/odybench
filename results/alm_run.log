@@ -1,0 +1,175 @@
+almagest: sky table over JDN 1355798..1830883 (483 windows)
+almagest: ALM-A done (18 s)
+almagest: ALM-B done (38 s)
+almagest: ALM-D done (46 s)
+almagest: ALM-E done (53 s)
+almagest: ALM-F done (61 s)
+almagest: ALM-G done (70 s)
+almagest: ALM-H done (87 s)
+almagest: ALM-I done (93 s)
+almagest: ALM-J done (103 s)
+almagest: ALM-K done (122 s)
+almagest: ALM-L done (135 s)
+almagest: ALM-C done (139 s)
+odybench lean run: the Almagest control of B&M's clue types (gate 3b, Q_BM; DESIGN 6.4)
+stage: after Freeze 1 (tag prereg-1 exists)
+
+== Gate 3b (regime SL, leave-one-set-out ceilings; frozen meaning of same_apparition) ==
+leg        seen_ALM_SL  seen_ALM_SL_side  N_narrow_3b  seen among narrowable
+bf:fine              6                 5            8                      6
+bf:mid               6                 5            8                      6
+bf:coarse            6                 5            8                      6
+st:fine              6                 5            8                      6
+st:mid               6                 5            8                      6
+st:coarse            6                 5            8                      6
+gate 3b fires (some leg < 6): no; under the side-only meaning: yes; Q_score3b: yes; Q_attain3b: no
+  with the line at 4%: bf:fine 4, bf:mid 4, bf:coarse 4, st:fine 4, st:mid 4, st:coarse 4; fires: yes
+  with the line at 6%: bf:fine 6, bf:mid 6, bf:coarse 6, st:fine 6, st:mid 6, st:coarse 6; fires: no
+strict recall in regime SL (no narrowing): {'fine': 9, 'mid': 9, 'coarse': 9}
+
+== Regime BM (B&M's tolerances) ==
+rec_ALM_BM = 3 of 11 (strict recall and |S0| <= 5%); Q_BM: yes; strict recall without narrowing: 5
+
+== Per set, gate window (S0 / B / N_cand; f(truth); seen st, bf; uncovered days) ==
+ALM-A (counted)
+  SL:fine         S0   2030 B   2030 N  49674 (4.09%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 0
+  SL:mid          S0   2030 B   2030 N  49674 (4.09%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 0
+  SL:coarse       S0   2201 B   2201 N  49674 (4.43%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 0
+  SL_side:fine    S0   2030 B   2030 N  49674 (4.09%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 0
+  SL_side:mid     S0   2030 B   2030 N  49674 (4.09%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 0
+  SL_side:coarse  S0   2201 B   2201 N  49674 (4.43%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 0
+  BM              S0    368 B    368 N  49674 (0.74%) f(truth)    1 rank   369 seen st no bf no; uncovered 0; truth fails ALM-A.7
+  20 further windows, fraction seen (st/bf): SL:fine 1.00/1.00; SL_side:fine 1.00/1.00; SL:mid 1.00/1.00; SL_side:mid 1.00/1.00; SL:coarse 1.00/1.00; SL_side:coarse 1.00/1.00; BM 0.00/0.00
+  reported sensitivities (gate window): projection_rev7:SL:fine S0 227 seen st yes; projection_rev7:SL:mid S0 227 seen st yes; projection_rev7:SL:coarse S0 247 seen st yes; projection_rev7:BM S0 27 seen st no; all_phase_rows:SL:fine S0 227 seen st yes; all_phase_rows:SL:mid S0 227 seen st yes; all_phase_rows:SL:coarse S0 247 seen st yes; all_phase_rows:BM S0 27 seen st no; bounded_primary:SL:fine S0 2030 seen st yes; bounded_primary:SL:mid S0 2030 seen st yes; bounded_primary:SL:coarse S0 2201 seen st yes; bounded_primary:BM S0 182 seen st no; cruxes_emended:SL:fine S0 1806 seen st yes; cruxes_emended:SL:mid S0 1806 seen st yes; cruxes_emended:SL:coarse S0 1954 seen st yes; cruxes_emended:BM S0 420 seen st no
+ALM-B (counted)
+  SL:fine         S0   2210 B   2210 N  49674 (4.45%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 0
+  SL:mid          S0   2210 B   2210 N  49674 (4.45%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 0
+  SL:coarse       S0   2210 B   2210 N  49674 (4.45%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 0
+  SL_side:fine    S0   2600 B   2600 N  49674 (5.23%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL_side:mid     S0   2600 B   2600 N  49674 (5.23%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL_side:coarse  S0   2600 B   2600 N  49674 (5.23%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  BM              S0   1060 B   1060 N  49674 (2.13%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 0
+  20 further windows, fraction seen (st/bf): SL:fine 1.00/1.00; SL_side:fine 0.00/0.00; SL:mid 1.00/1.00; SL_side:mid 0.00/0.00; SL:coarse 1.00/1.00; SL_side:coarse 0.00/0.00; BM 1.00/1.00
+  reported sensitivities (gate window): projection_rev7:SL:fine S0 2210 seen st yes; projection_rev7:SL:mid S0 2210 seen st yes; projection_rev7:SL:coarse S0 2210 seen st yes; projection_rev7:BM S0 1060 seen st yes; all_phase_rows:SL:fine S0 1789 seen st yes; all_phase_rows:SL:mid S0 1789 seen st yes; all_phase_rows:SL:coarse S0 1789 seen st yes; all_phase_rows:BM S0 647 seen st yes; bounded_primary:SL:fine S0 710 seen st yes; bounded_primary:SL:mid S0 710 seen st yes; bounded_primary:SL:coarse S0 710 seen st yes; bounded_primary:BM S0 88 seen st yes
+ALM-D (counted)
+  SL:fine         S0    299 B    299 N  49092 (0.61%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 582
+  SL:mid          S0    304 B    304 N  49092 (0.62%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 582
+  SL:coarse       S0    329 B    329 N  49092 (0.67%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 582
+  SL_side:fine    S0    299 B    299 N  49092 (0.61%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 582
+  SL_side:mid     S0    304 B    304 N  49092 (0.62%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 582
+  SL_side:coarse  S0    329 B    329 N  49092 (0.67%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 582
+  BM              S0      6 B      6 N  49111 (0.01%) f(truth)    1 rank     7 seen st no bf no; uncovered 563; truth fails ALM-D.3
+  20 further windows, fraction seen (st/bf): SL:fine 1.00/1.00; SL_side:fine 1.00/1.00; SL:mid 1.00/1.00; SL_side:mid 1.00/1.00; SL:coarse 1.00/1.00; SL_side:coarse 1.00/1.00; BM 0.00/0.00
+  reported sensitivities (gate window): bm_k_1d:BM S0 4 seen st no
+ALM-E (counted)
+  SL:fine         S0     44 B     44 N  41535 (0.11%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 8139 (seen flag NOT robust to them)
+  SL:mid          S0     45 B     45 N  41535 (0.11%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 8139 (seen flag NOT robust to them)
+  SL:coarse       S0     45 B     45 N  41535 (0.11%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 8139 (seen flag NOT robust to them)
+  SL_side:fine    S0     44 B     44 N  41535 (0.11%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 8139 (seen flag NOT robust to them)
+  SL_side:mid     S0     45 B     45 N  41535 (0.11%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 8139 (seen flag NOT robust to them)
+  SL_side:coarse  S0     45 B     45 N  41535 (0.11%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 8139 (seen flag NOT robust to them)
+  BM              S0      2 B      2 N  41536 (0.00%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 8138 (seen flag NOT robust to them)
+  20 further windows, fraction seen (st/bf): SL:fine 1.00/1.00; SL_side:fine 1.00/1.00; SL:mid 1.00/1.00; SL_side:mid 1.00/1.00; SL:coarse 1.00/1.00; SL_side:coarse 1.00/1.00; BM 1.00/1.00
+  reported sensitivities (gate window): bm_k_1d:BM S0 2 seen st yes
+ALM-F (counted)
+  SL:fine         S0    360 B    360 N  49674 (0.72%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 0
+  SL:mid          S0    426 B    426 N  49674 (0.86%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 0
+  SL:coarse       S0    426 B    426 N  49674 (0.86%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 0
+  SL_side:fine    S0    360 B    360 N  49674 (0.72%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 0
+  SL_side:mid     S0    426 B    426 N  49674 (0.86%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 0
+  SL_side:coarse  S0    426 B    426 N  49674 (0.86%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 0
+  BM              S0      0 B    510 N  49674 (0.00%) f(truth)    2 rank   511 seen st no bf no; uncovered 0; truth fails ALM-F.1, ALM-F.3
+  20 further windows, fraction seen (st/bf): SL:fine 1.00/1.00; SL_side:fine 1.00/1.00; SL:mid 1.00/1.00; SL_side:mid 1.00/1.00; SL:coarse 1.00/1.00; SL_side:coarse 1.00/1.00; BM 0.00/0.00
+  reported sensitivities (gate window): bm_k_1d:BM S0 0 seen st no
+ALM-G (counted)
+  SL:fine         S0    226 B    226 N  41339 (0.55%) f(truth)    1 rank   227 seen st no bf no; narrowable st/bf yes/yes; uncovered 8335; truth fails ALM-G.3
+  SL:mid          S0    251 B    251 N  41339 (0.61%) f(truth)    1 rank   252 seen st no bf no; narrowable st/bf yes/yes; uncovered 8335; truth fails ALM-G.3
+  SL:coarse       S0    280 B    280 N  41338 (0.68%) f(truth)    1 rank   281 seen st no bf no; narrowable st/bf yes/yes; uncovered 8336; truth fails ALM-G.3
+  SL_side:fine    S0    226 B    226 N  41339 (0.55%) f(truth)    1 rank   227 seen st no bf no; uncovered 8335; truth fails ALM-G.3
+  SL_side:mid     S0    251 B    251 N  41339 (0.61%) f(truth)    1 rank   252 seen st no bf no; uncovered 8335; truth fails ALM-G.3
+  SL_side:coarse  S0    280 B    280 N  41338 (0.68%) f(truth)    1 rank   281 seen st no bf no; uncovered 8336; truth fails ALM-G.3
+  BM              S0    439 B    439 N  41343 (1.06%) f(truth)    1 rank   440 seen st no bf no; uncovered 8331; truth fails ALM-G.3
+  20 further windows, fraction seen (st/bf): SL:fine 0.00/0.00; SL_side:fine 0.00/0.00; SL:mid 0.00/0.00; SL_side:mid 0.00/0.00; SL:coarse 0.00/0.00; SL_side:coarse 0.00/0.00; BM 0.00/0.00
+ALM-H (counted)
+  SL:fine         S0   2030 B   2030 N  49674 (4.09%) f(truth)    1 rank  2031 seen st no bf no; narrowable st/bf yes/yes; uncovered 0; truth fails ALM-H.4
+  SL:mid          S0   2030 B   2030 N  49674 (4.09%) f(truth)    1 rank  2031 seen st no bf no; narrowable st/bf yes/yes; uncovered 0; truth fails ALM-H.4
+  SL:coarse       S0   2030 B   2030 N  49674 (4.09%) f(truth)    1 rank  2031 seen st no bf no; narrowable st/bf yes/yes; uncovered 0; truth fails ALM-H.4
+  SL_side:fine    S0   2030 B   2030 N  49674 (4.09%) f(truth)    1 rank  2031 seen st no bf no; uncovered 0; truth fails ALM-H.4
+  SL_side:mid     S0   2030 B   2030 N  49674 (4.09%) f(truth)    1 rank  2031 seen st no bf no; uncovered 0; truth fails ALM-H.4
+  SL_side:coarse  S0   2030 B   2030 N  49674 (4.09%) f(truth)    1 rank  2031 seen st no bf no; uncovered 0; truth fails ALM-H.4
+  BM              S0      0 B    251 N  49674 (0.00%) f(truth)    3 rank  4012 seen st no bf no; uncovered 0; truth fails ALM-H.1, ALM-H.4, ALM-H.8
+  20 further windows, fraction seen (st/bf): SL:fine 0.00/0.00; SL_side:fine 0.00/0.00; SL:mid 0.00/0.00; SL_side:mid 0.00/0.00; SL:coarse 0.00/0.00; SL_side:coarse 0.00/0.00; BM 0.00/0.00
+  reported sensitivities (gate window): bm_k_1d:BM S0 0 seen st no; cruxes_emended:SL:fine S0 12048 seen st no; cruxes_emended:SL:mid S0 12048 seen st no; cruxes_emended:SL:coarse S0 12048 seen st no; cruxes_emended:BM S0 27 seen st no
+ALM-I (counted)
+  SL:fine         S0   7230 B   7230 N  49674 (14.55%) f(truth)    0 rank     1 seen st no bf no; narrowable st/bf no/no; uncovered 0
+  SL:mid          S0   7230 B   7230 N  49674 (14.55%) f(truth)    0 rank     1 seen st no bf no; narrowable st/bf no/no; uncovered 0
+  SL:coarse       S0   7230 B   7230 N  49674 (14.55%) f(truth)    0 rank     1 seen st no bf no; narrowable st/bf no/no; uncovered 0
+  SL_side:fine    S0   9258 B   9258 N  49674 (18.64%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL_side:mid     S0   9258 B   9258 N  49674 (18.64%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL_side:coarse  S0   9258 B   9258 N  49674 (18.64%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  BM              S0   7230 B   7230 N  49674 (14.55%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  20 further windows, fraction seen (st/bf): SL:fine 0.00/0.00; SL_side:fine 0.00/0.00; SL:mid 0.00/0.00; SL_side:mid 0.00/0.00; SL:coarse 0.00/0.00; SL_side:coarse 0.00/0.00; BM 0.00/0.00
+  reported sensitivities (gate window): bounded_primary:SL:fine S0 12869 seen st no; bounded_primary:SL:mid S0 12869 seen st no; bounded_primary:SL:coarse S0 12869 seen st no; bounded_primary:BM S0 6432 seen st no
+ALM-J (counted)
+  SL:fine         S0   6716 B   6716 N  49674 (13.52%) f(truth)    0 rank     1 seen st no bf no; narrowable st/bf no/no; uncovered 0
+  SL:mid          S0   6716 B   6716 N  49674 (13.52%) f(truth)    0 rank     1 seen st no bf no; narrowable st/bf no/no; uncovered 0
+  SL:coarse       S0   6716 B   6716 N  49674 (13.52%) f(truth)    0 rank     1 seen st no bf no; narrowable st/bf no/no; uncovered 0
+  SL_side:fine    S0   7693 B   7693 N  49674 (15.49%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL_side:mid     S0   7693 B   7693 N  49674 (15.49%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL_side:coarse  S0   7693 B   7693 N  49674 (15.49%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  BM              S0   6185 B   6185 N  49674 (12.45%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  20 further windows, fraction seen (st/bf): SL:fine 0.00/0.00; SL_side:fine 0.00/0.00; SL:mid 0.00/0.00; SL_side:mid 0.00/0.00; SL:coarse 0.00/0.00; SL_side:coarse 0.00/0.00; BM 0.00/0.00
+  reported sensitivities (gate window): bounded_primary:SL:fine S0 1896 seen st yes; bounded_primary:SL:mid S0 1896 seen st yes; bounded_primary:SL:coarse S0 1896 seen st yes; bounded_primary:BM S0 907 seen st no
+ALM-K (counted)
+  SL:fine         S0   7354 B   7354 N  49674 (14.80%) f(truth)    0 rank     1 seen st no bf no; narrowable st/bf no/no; uncovered 0
+  SL:mid          S0   7354 B   7354 N  49674 (14.80%) f(truth)    0 rank     1 seen st no bf no; narrowable st/bf no/no; uncovered 0
+  SL:coarse       S0   7354 B   7354 N  49674 (14.80%) f(truth)    0 rank     1 seen st no bf no; narrowable st/bf no/no; uncovered 0
+  SL_side:fine    S0   7354 B   7354 N  49674 (14.80%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL_side:mid     S0   7354 B   7354 N  49674 (14.80%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL_side:coarse  S0   7354 B   7354 N  49674 (14.80%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  BM              S0    123 B    123 N  49674 (0.25%) f(truth)    2 rank  1560 seen st no bf no; uncovered 0; truth fails ALM-K.1, ALM-K.7
+  20 further windows, fraction seen (st/bf): SL:fine 0.00/0.00; SL_side:fine 0.00/0.00; SL:mid 0.00/0.00; SL_side:mid 0.00/0.00; SL:coarse 0.00/0.00; SL_side:coarse 0.00/0.00; BM 0.00/0.00
+  reported sensitivities (gate window): site_babylon:SL:fine S0 7310 seen st no; site_babylon:SL_side:fine S0 7310 seen st no; site_babylon:SL:mid S0 7310 seen st no; site_babylon:SL_side:mid S0 7310 seen st no; site_babylon:SL:coarse S0 7310 seen st no; site_babylon:SL_side:coarse S0 7310 seen st no; site_babylon:BM S0 122 seen st no
+ALM-L (counted)
+  SL:fine         S0    302 B    302 N  49674 (0.61%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 0
+  SL:mid          S0    307 B    307 N  49674 (0.62%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 0
+  SL:coarse       S0    332 B    332 N  49674 (0.67%) f(truth)    0 rank     1 seen st yes bf yes; narrowable st/bf yes/yes; uncovered 0
+  SL_side:fine    S0    302 B    302 N  49674 (0.61%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 0
+  SL_side:mid     S0    307 B    307 N  49674 (0.62%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 0
+  SL_side:coarse  S0    332 B    332 N  49674 (0.67%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 0
+  BM              S0    354 B    354 N  49674 (0.71%) f(truth)    0 rank     1 seen st yes bf yes; uncovered 0
+  20 further windows, fraction seen (st/bf): SL:fine 1.00/1.00; SL_side:fine 1.00/1.00; SL:mid 1.00/1.00; SL_side:mid 1.00/1.00; SL:coarse 1.00/1.00; SL_side:coarse 1.00/1.00; BM 1.00/1.00
+  reported sensitivities (gate window): bm_k_1d:BM S0 236 seen st yes
+ALM-C (reported only)
+  SL:fine         S0   4720 B   4720 N  49674 (9.50%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL:mid          S0   4720 B   4720 N  49674 (9.50%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL:coarse       S0   5146 B   5146 N  49674 (10.36%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL_side:fine    S0   4720 B   4720 N  49674 (9.50%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL_side:mid     S0   4720 B   4720 N  49674 (9.50%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  SL_side:coarse  S0   5146 B   5146 N  49674 (10.36%) f(truth)    0 rank     1 seen st no bf no; uncovered 0
+  BM              S0   1695 B   1695 N  49674 (3.41%) f(truth)    1 rank  1696 seen st no bf no; uncovered 0; truth fails ALM-C.1
+  20 further windows, fraction seen (st/bf): SL:fine 0.00/0.00; SL_side:fine 0.00/0.00; SL:mid 0.00/0.00; SL_side:mid 0.00/0.00; SL:coarse 0.00/0.00; SL_side:coarse 0.00/0.00; BM 0.00/0.00
+
+== Observer-slack table recomputed with bench code (truth-side) ==
+ceilings agree with almagest_regimes.json: yes
+bench minus drafter, max |difference|: off_ge_true_d 0.001 (n 30); off_ge_mean_d 0.001 (n 30); rs_min 0.006 (n 30); az_max_off_d 0.001 (n 19); az_min_off_d 0.001 (n 19); off_opp_mean_d 0.000 (n 9)
+|record - true GE|, mercury: IX.9.3 0.1, IX.9.4 0.2, IX.7.7 0.8, IX.7.4 1.1, IX.7.12 1.1, IX.8.4 1.6, IX.7.16 1.8, IX.7.14 2.7, IX.7.15 2.9, IX.7.11 3.3, IX.8.3 3.4, IX.7.9 3.6, IX.7.6 4.2, IX.7.5 5.5
+|record - true GE|, venus: X.3.2b 0.6, X.3.2a 1.9, X.1.3 16.1, X.1.6 16.7, X.2.3 17.8, X.1.5 18.3, X.2.4 20.3, X.1.4 20.6
+
+== Coverage ==
+{"ephemeris_days": [968645, 1809081], "table": {"alexandria": [1355798, 1809081], "babylon": [1621165, 1673761]}, "events_tt": {"alexandria": [1355377.5, 1809074.5], "babylon": [1620744.5, 1674180.5]}}
+
+== Deviations from DESIGN 6.4, and why ==
+- Ephemeris coverage: the DE441 excerpt ends at +241 Jan 1 and DESIGN 11.1's +241..+300 extension has not been fetched. Candidates whose rows need sky past the data are left out of N_cand, S0 and B (neither passed nor failed); each window reports n_uncovered, and the strict seen flag with those days counted as all failing and as all passing ('robust_st'). The truths themselves lie inside the data (checked at scoring: truth_covered).
+- truth_index.json and tools/build_truth_index.py do not exist yet (A6, deferred); the harness reads controls_almagest_truth.json directly, inside _Harness only, and only day0_civil_jd_noon.
+- Body, side and instant of each row are read off the statements by tools/build_regimes.py (fixed rules, recorded in almagest_regimes.json 'row_predicates'), because operational_map.json (10.3) does not exist; the search reads operational fields and the regime file only.
+- J.4's 'twelfth hour of the night' is evaluated at the middle of that seasonal hour; its projected options (same_apparition, bm_venus_lead) depend on the instant only through the bracketing conjunctions and the order of the greatest elongation, at day scale.
+- Delta-T: the sky is computed once at the mixture mean; each row's P_mix is exact for its linear dependence on Delta-T (time offsets exactly; rise leads, altitudes and the Moon's elongation by finite-difference slopes, measured for every in-band day; the MWRA offset by the linearisation d(Delta)/d(Delta-T) = 1). All four models are put in the n-dot -25.82 frame for every row.
+- The phase class of B.7 reads the geocentric apparent elongation (lambda_moon - lambda_sun) at the stated hour; the drafter's Table 5 is topocentric.
+== Not built ==
+- held_ALM and Q_H (the held-out rows: star positions, planet-Moon and Sun-Moon relations, the opposition): deferred with Q_H, which LEAN.md does not list among the lean run's qualifiers.
+- The full primary run and the held-out list-value sensitivity (both need the star rows).
+- 6.3.2's 'each row moved to each alternative' and the fraction of fork readings making the truth unique.
+- I16 (the independent second implementation of the control search) is A7's and not part of the lean run.
+elapsed 145.8 s
+

@@ -1,0 +1,38 @@
+[candidates] 27211 conjunctions with Day 0 in -1999..200 (target removed); 15 s
+[candidates] C_rel: h_A 2.04, h_P 0.92; P_spring 2285; 105 s
+[candidates] sky for 2659 candidates; total 195 s
+almagest: sky table over JDN 1355798..1830883 (483 windows)
+sky table babylon 1621165..1673761 (52597 days) built in 44 s
+almagest: ALM-A done (61 s)
+almagest: ALM-B done (81 s)
+almagest: ALM-D done (90 s)
+almagest: ALM-E done (96 s)
+almagest: ALM-F done (105 s)
+almagest: ALM-G done (114 s)
+almagest: ALM-H done (130 s)
+almagest: ALM-I done (136 s)
+almagest: ALM-J done (147 s)
+almagest: ALM-K done (165 s)
+almagest: ALM-L done (179 s)
+almagest: ALM-C done (182 s)
+attain.py -- the null side (16 Apr -1177 masked)
+
+P_all 27210, P_day 13806, P_spring 2285; n_T 10699, n_TC 894
+N1: lambda(NCVM) 0.500/cy [0.250, 0.895] (k 11); NCVME n=4 0.045/cy (k 1)
+    p_fix|C 0.0050; p_fix 0.00040; V-M ratio 0.84 (p_upper 0.813)
+G_BM(v0) 0.2327 [0.1456, 0.3549]  n_A 83, k_A 26  (gamma [0.1456, 0.3549], block136 [0.1760, 0.2922])
+G_BM(v1) 0.1463 [0.0915, 0.2232]  n_A 132, k_A 26  (gamma [0.0915, 0.2232], block136 [0.1058, 0.1831])
+G_BM(v2) 0.2195 [0.1373, 0.3348]  n_A 88, k_A 26  (gamma [0.1373, 0.3348], block136 [0.1637, 0.2748])
+G_BM(v3) 0.2927 [0.1831, 0.4464]  n_A 66, k_A 26  (gamma [0.1831, 0.4464], block136 [0.2196, 0.3647])
+G_BM(v4) 0.1894 [0.1184, 0.2888]  n_A 102, k_A 26  (gamma [0.1184, 0.2888], block136 [0.1394, 0.2379])
+G_BM(v5) 0.3449 [0.2157, 0.5261]  n_A 56, k_A 26  (gamma [0.2157, 0.5261], block136 [0.2655, 0.4422])
+G_BM_u 0.00181 [0.00113, 0.00275]  n_T 10699, k 26
+identity (I9(c)): v0: outside 0, v1: outside 0, v2: outside 0, v3: outside 0, v4: outside 0, v5: outside 0
+held-out pools: P_BM 76, P_MWRA 43, P_BM_E 49, P_MWRA_E 28, P_spring 2285
+p_H_min: 0.04
+Q_attain: False
+Q_record: True
+Q_exch: False
+second implementation: {"T0b_survivor_sets_equal": false, "only_ours": ["-1623-03-27"], "only_theirs": ["-584-03-31"], "G_diff": 0.0012978426964646017, "needs_explanation": false}
+runtime 235.0 s
+
