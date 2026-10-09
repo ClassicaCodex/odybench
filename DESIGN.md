@@ -5834,7 +5834,15 @@ lines.
 
 ### 12.6 Amendments made after the freeze
 
-None yet.
+None yet after a freeze. One amendment made before the first freeze:
+
+- **Amendment 1, 2026-10-09: the lean run** (`LEAN.md`). It runs T0, N1,
+  G_BM over 𝒢_BM* with r_Ody, N5's rate curves, N6, the held-out test and,
+  if it can be built, gate 3b. It defers N4, PC-S, PC-R and gate 3a, the
+  negatives and label 4, the larger gardens, R_anc, 5.7, and the access
+  tiers. The reason is budget, and the record: Q_record already rules out
+  outcome 1 for this target (7.1–7.2). No null-side or target-side quantity
+  had been computed by bench code when it was written.
 
 ---
 
