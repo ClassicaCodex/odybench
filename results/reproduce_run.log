@@ -1,0 +1,29 @@
+[candidates] 27211 conjunctions with Day 0 in -1999..200; 16 s
+[candidates] C_rel: h_A 2.04, h_P 0.92; P_spring 2286; 103 s
+[candidates] sky for 2660 candidates; total 198 s
+T0 (DESIGN 3.2-3.5), DE441, clock Delta-T 27602.7 s, site bm
+candidates 1683 (expected 1,683)
+T0_pass = True; T0 (primary cell E<=5 Apr, vis off, MWRA_vtx +-1.5 d) = RE
+  E<=4Apr/vis=off/MWRA_vtx         NR   NCVM ['18 Mar 1189 BC', '16 Apr 1178 BC']  NCVME []  failing {'E': 'Ti-11 = 5-Apr (needs 1 Apr..4 Apr)', 'not_unique': ['18 Mar 1189 BC']}
+  E<=4Apr/vis=off/MWRA_int         NR   NCVM ['18 Mar 1189 BC', '16 Apr 1178 BC']  NCVME []  failing {'E': 'Ti-11 = 5-Apr (needs 1 Apr..4 Apr)', 'not_unique': ['18 Mar 1189 BC']}
+  E<=4Apr/vis=av10/MWRA_vtx        NR   NCVM ['18 Mar 1189 BC', '16 Apr 1178 BC']  NCVME []  failing {'E': 'Ti-11 = 5-Apr (needs 1 Apr..4 Apr)', 'not_unique': ['18 Mar 1189 BC']}
+  E<=4Apr/vis=av10/MWRA_int        NR   NCVM ['18 Mar 1189 BC', '16 Apr 1178 BC']  NCVME []  failing {'E': 'Ti-11 = 5-Apr (needs 1 Apr..4 Apr)', 'not_unique': ['18 Mar 1189 BC']}
+  E<=4Apr/vis=plsv/MWRA_vtx        NR   NCVM ['18 Mar 1189 BC']  NCVME []  failing {'vis': 'PLSV margin -0.11 deg', 'E': 'Ti-11 = 5-Apr (needs 1 Apr..4 Apr)', 'not_unique': ['18 Mar 1189 BC']}
+  E<=4Apr/vis=plsv/MWRA_int        NR   NCVM ['18 Mar 1189 BC']  NCVME []  failing {'vis': 'PLSV margin -0.11 deg', 'E': 'Ti-11 = 5-Apr (needs 1 Apr..4 Apr)', 'not_unique': ['18 Mar 1189 BC']}
+  E<=5Apr/vis=off/MWRA_vtx         RE   NCVM ['18 Mar 1189 BC', '16 Apr 1178 BC']  NCVME ['16 Apr 1178 BC']
+  E<=5Apr/vis=off/MWRA_int         RE   NCVM ['18 Mar 1189 BC', '16 Apr 1178 BC']  NCVME ['16 Apr 1178 BC']
+  E<=5Apr/vis=av10/MWRA_vtx        RE   NCVM ['18 Mar 1189 BC', '16 Apr 1178 BC']  NCVME ['16 Apr 1178 BC']
+  E<=5Apr/vis=av10/MWRA_int        RE   NCVM ['18 Mar 1189 BC', '16 Apr 1178 BC']  NCVME ['16 Apr 1178 BC']
+  E<=5Apr/vis=plsv/MWRA_vtx        NR   NCVM ['18 Mar 1189 BC']  NCVME []  failing {'vis': 'PLSV margin -0.11 deg', 'not_unique': ['18 Mar 1189 BC']}
+  E<=5Apr/vis=plsv/MWRA_int        NR   NCVM ['18 Mar 1189 BC']  NCVME []  failing {'vis': 'PLSV margin -0.11 deg', 'not_unique': ['18 Mar 1189 BC']}
+  E<=6Apr/vis=off/MWRA_vtx         RE   NCVM ['18 Mar 1189 BC', '16 Apr 1178 BC']  NCVME ['16 Apr 1178 BC']
+  E<=6Apr/vis=off/MWRA_int         RE   NCVM ['18 Mar 1189 BC', '16 Apr 1178 BC']  NCVME ['16 Apr 1178 BC']
+  E<=6Apr/vis=av10/MWRA_vtx        RE   NCVM ['18 Mar 1189 BC', '16 Apr 1178 BC']  NCVME ['16 Apr 1178 BC']
+  E<=6Apr/vis=av10/MWRA_int        RE   NCVM ['18 Mar 1189 BC', '16 Apr 1178 BC']  NCVME ['16 Apr 1178 BC']
+  E<=6Apr/vis=plsv/MWRA_vtx        NR   NCVM ['18 Mar 1189 BC']  NCVME []  failing {'vis': 'PLSV margin -0.11 deg', 'not_unique': ['18 Mar 1189 BC']}
+  E<=6Apr/vis=plsv/MWRA_int        NR   NCVM ['18 Mar 1189 BC']  NCVME []  failing {'vis': 'PLSV margin -0.11 deg', 'not_unique': ['18 Mar 1189 BC']}
+A1-A3: {"rows": 152, "excluded_target_row": false, "A1": {"ti_match_ut2": 136, "ti_match_ut": 134, "ti_match_lmt": 138, "need": ">= 134 of 152", "passes": true}, "A2": {"venus_pass_set_equal": true, "sym_diff": [], "lead_diff_sd_min": 0.5370615281018416, "lead_diff_mean_min": 0.09716688780652158, "clock_offset_mean_min": 0.01070777777777721, "clock_offset_sd_min": 1.5818446576757426, "n_timed": 75, "passes": true}, "A3": {"exact": 129, "within_1d": 138, "need": ">= 124 exact and >= 138 within 1 d of 152", "definition": "the DE441 rise-azimuth maximum nearest S2's printed MWRA date (as check_mwra.py measured it)", "passes": true, "nearest_to_Ti_minus_34": {"exact": 117, "within_1d": 125, "note": "B&M's own rule; reported beside"}}, "delta_agreement": {"s2_delta_vs_true_julian_on_s2_mwra_differ": 21, "note": "S2 prints 365-day arithmetic; rows where true Julian arithmetic differs"}, "M_pass_on_s2_ti_de441_int": [1236, 1224, 1190, 1189, 1178, 1144]}
+A4: {"venus_lead_min": {"value": 103.65, "want": "103.6 +- 1", "passes": true}, "conj_16Apr_UT2": {"value": "12:25:07", "want": "12:25", "passes": true}, "conj_18Mar_UT2": {"value": "3:31:01", "want": "03:31", "passes": true}, "equinox_UT2": {"value": "1 Apr 15:31:28", "want": "within 10 min of 15:24 (1 Apr)", "passes": true}, "sun_minus12_18Mar_UT2": {"value": "19:34:08", "want": "within 5 min of 19:38", "passes": true}, "passes": true}
+A5: {"file": "SEm1199.js", "gamma": 0.5187, "td": "17:57:28", "ge_lat": 32.72, "ge_lon_e": 12.74, "delta_t": 28590.0, "passes": true, "note": "catalogue 01966 / Saros 39 member 31 not checkable offline (no secat5 page for -1199..-1100)"}
+r_Ody = 0.0815 (T0b reading alone 0.0815)
+reproduce exit 0

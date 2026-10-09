@@ -1,0 +1,753 @@
+{
+ "stage": "target",
+ "T0_pass": true,
+ "T0": "RE",
+ "primary_cell": {
+  "result": "RE",
+  "target_passes_NCVM": true,
+  "survivors_NCVM": [
+   "18 Mar 1189 BC",
+   "16 Apr 1178 BC"
+  ],
+  "survivors_NCVME": [
+   "16 Apr 1178 BC"
+  ]
+ },
+ "n_candidates": 1683,
+ "n_candidates_expected": 1683,
+ "grid": {
+  "E<=4Apr/vis=off/MWRA_vtx": {
+   "result": "NR",
+   "target_passes_NCVM": true,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "survivors_NCVME": [],
+   "failing": {
+    "E": "Ti-11 = 5-Apr (needs 1 Apr..4 Apr)",
+    "not_unique": [
+     "18 Mar 1189 BC"
+    ]
+   }
+  },
+  "E<=4Apr/vis=off/MWRA_int": {
+   "result": "NR",
+   "target_passes_NCVM": true,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "survivors_NCVME": [],
+   "failing": {
+    "E": "Ti-11 = 5-Apr (needs 1 Apr..4 Apr)",
+    "not_unique": [
+     "18 Mar 1189 BC"
+    ]
+   }
+  },
+  "E<=4Apr/vis=av10/MWRA_vtx": {
+   "result": "NR",
+   "target_passes_NCVM": true,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "survivors_NCVME": [],
+   "failing": {
+    "E": "Ti-11 = 5-Apr (needs 1 Apr..4 Apr)",
+    "not_unique": [
+     "18 Mar 1189 BC"
+    ]
+   }
+  },
+  "E<=4Apr/vis=av10/MWRA_int": {
+   "result": "NR",
+   "target_passes_NCVM": true,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "survivors_NCVME": [],
+   "failing": {
+    "E": "Ti-11 = 5-Apr (needs 1 Apr..4 Apr)",
+    "not_unique": [
+     "18 Mar 1189 BC"
+    ]
+   }
+  },
+  "E<=4Apr/vis=plsv/MWRA_vtx": {
+   "result": "NR",
+   "target_passes_NCVM": false,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC"
+   ],
+   "survivors_NCVME": [],
+   "failing": {
+    "vis": "PLSV margin -0.11 deg",
+    "E": "Ti-11 = 5-Apr (needs 1 Apr..4 Apr)",
+    "not_unique": [
+     "18 Mar 1189 BC"
+    ]
+   }
+  },
+  "E<=4Apr/vis=plsv/MWRA_int": {
+   "result": "NR",
+   "target_passes_NCVM": false,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC"
+   ],
+   "survivors_NCVME": [],
+   "failing": {
+    "vis": "PLSV margin -0.11 deg",
+    "E": "Ti-11 = 5-Apr (needs 1 Apr..4 Apr)",
+    "not_unique": [
+     "18 Mar 1189 BC"
+    ]
+   }
+  },
+  "E<=5Apr/vis=off/MWRA_vtx": {
+   "result": "RE",
+   "target_passes_NCVM": true,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "survivors_NCVME": [
+    "16 Apr 1178 BC"
+   ]
+  },
+  "E<=5Apr/vis=off/MWRA_int": {
+   "result": "RE",
+   "target_passes_NCVM": true,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "survivors_NCVME": [
+    "16 Apr 1178 BC"
+   ]
+  },
+  "E<=5Apr/vis=av10/MWRA_vtx": {
+   "result": "RE",
+   "target_passes_NCVM": true,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "survivors_NCVME": [
+    "16 Apr 1178 BC"
+   ]
+  },
+  "E<=5Apr/vis=av10/MWRA_int": {
+   "result": "RE",
+   "target_passes_NCVM": true,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "survivors_NCVME": [
+    "16 Apr 1178 BC"
+   ]
+  },
+  "E<=5Apr/vis=plsv/MWRA_vtx": {
+   "result": "NR",
+   "target_passes_NCVM": false,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC"
+   ],
+   "survivors_NCVME": [],
+   "failing": {
+    "vis": "PLSV margin -0.11 deg",
+    "not_unique": [
+     "18 Mar 1189 BC"
+    ]
+   }
+  },
+  "E<=5Apr/vis=plsv/MWRA_int": {
+   "result": "NR",
+   "target_passes_NCVM": false,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC"
+   ],
+   "survivors_NCVME": [],
+   "failing": {
+    "vis": "PLSV margin -0.11 deg",
+    "not_unique": [
+     "18 Mar 1189 BC"
+    ]
+   }
+  },
+  "E<=6Apr/vis=off/MWRA_vtx": {
+   "result": "RE",
+   "target_passes_NCVM": true,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "survivors_NCVME": [
+    "16 Apr 1178 BC"
+   ]
+  },
+  "E<=6Apr/vis=off/MWRA_int": {
+   "result": "RE",
+   "target_passes_NCVM": true,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "survivors_NCVME": [
+    "16 Apr 1178 BC"
+   ]
+  },
+  "E<=6Apr/vis=av10/MWRA_vtx": {
+   "result": "RE",
+   "target_passes_NCVM": true,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "survivors_NCVME": [
+    "16 Apr 1178 BC"
+   ]
+  },
+  "E<=6Apr/vis=av10/MWRA_int": {
+   "result": "RE",
+   "target_passes_NCVM": true,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "survivors_NCVME": [
+    "16 Apr 1178 BC"
+   ]
+  },
+  "E<=6Apr/vis=plsv/MWRA_vtx": {
+   "result": "NR",
+   "target_passes_NCVM": false,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC"
+   ],
+   "survivors_NCVME": [],
+   "failing": {
+    "vis": "PLSV margin -0.11 deg",
+    "not_unique": [
+     "18 Mar 1189 BC"
+    ]
+   }
+  },
+  "E<=6Apr/vis=plsv/MWRA_int": {
+   "result": "NR",
+   "target_passes_NCVM": false,
+   "survivors_NCVM": [
+    "18 Mar 1189 BC"
+   ],
+   "survivors_NCVME": [],
+   "failing": {
+    "vis": "PLSV margin -0.11 deg",
+    "not_unique": [
+     "18 Mar 1189 BC"
+    ]
+   }
+  }
+ },
+ "parallel_reckoning": {
+  "E<=4Apr/MWRA_vtx": {
+   "result": "NR",
+   "target_passes_NCVM": false,
+   "survivors_NCVM": [],
+   "survivors_NCVME": [],
+   "failing": {
+    "C": "margin -1 d",
+    "M": "|Delta_vtx| 1.68 d (needs <= 1.5)",
+    "E": "Ti-10 = 6-Apr (needs 1 Apr..4 Apr)"
+   }
+  },
+  "E<=5Apr/MWRA_vtx": {
+   "result": "NR",
+   "target_passes_NCVM": false,
+   "survivors_NCVM": [],
+   "survivors_NCVME": [],
+   "failing": {
+    "C": "margin -1 d",
+    "M": "|Delta_vtx| 1.68 d (needs <= 1.5)",
+    "E": "Ti-10 = 6-Apr (needs 1 Apr..5 Apr)"
+   }
+  },
+  "E<=6Apr/MWRA_vtx": {
+   "result": "NR",
+   "target_passes_NCVM": false,
+   "survivors_NCVM": [],
+   "survivors_NCVME": [],
+   "failing": {
+    "C": "margin -1 d",
+    "M": "|Delta_vtx| 1.68 d (needs <= 1.5)"
+   }
+  }
+ },
+ "MWRA_morning_only_beside": {
+  "NCVM": [
+   "18 Mar 1189 BC",
+   "16 Apr 1178 BC"
+  ]
+ },
+ "equinox_UT2": {
+  "-1249": "-1249-04-02 05:15:57 UT+2 (2 Apr 1250 BC, proleptic Julian)",
+  "-1248": "-1248-04-01 11:00:10 UT+2 (1 Apr 1249 BC, proleptic Julian)",
+  "-1247": "-1247-04-01 16:44:19 UT+2 (1 Apr 1248 BC, proleptic Julian)",
+  "-1246": "-1246-04-01 22:32:43 UT+2 (1 Apr 1247 BC, proleptic Julian)",
+  "-1245": "-1245-04-02 04:25:17 UT+2 (2 Apr 1246 BC, proleptic Julian)",
+  "-1244": "-1244-04-01 10:10:15 UT+2 (1 Apr 1245 BC, proleptic Julian)",
+  "-1243": "-1243-04-01 15:56:04 UT+2 (1 Apr 1244 BC, proleptic Julian)",
+  "-1242": "-1242-04-01 21:51:35 UT+2 (1 Apr 1243 BC, proleptic Julian)",
+  "-1241": "-1241-04-02 03:43:53 UT+2 (2 Apr 1242 BC, proleptic Julian)",
+  "-1240": "-1240-04-01 09:31:42 UT+2 (1 Apr 1241 BC, proleptic Julian)",
+  "-1239": "-1239-04-01 15:23:37 UT+2 (1 Apr 1240 BC, proleptic Julian)",
+  "-1238": "-1238-04-01 21:17:34 UT+2 (1 Apr 1239 BC, proleptic Julian)",
+  "-1237": "-1237-04-02 03:10:26 UT+2 (2 Apr 1238 BC, proleptic Julian)",
+  "-1236": "-1236-04-01 08:54:52 UT+2 (1 Apr 1237 BC, proleptic Julian)",
+  "-1235": "-1235-04-01 14:37:09 UT+2 (1 Apr 1236 BC, proleptic Julian)",
+  "-1234": "-1234-04-01 20:27:15 UT+2 (1 Apr 1235 BC, proleptic Julian)",
+  "-1233": "-1233-04-02 02:15:14 UT+2 (2 Apr 1234 BC, proleptic Julian)",
+  "-1232": "-1232-04-01 07:54:45 UT+2 (1 Apr 1233 BC, proleptic Julian)",
+  "-1231": "-1231-04-01 13:39:08 UT+2 (1 Apr 1232 BC, proleptic Julian)",
+  "-1230": "-1230-04-01 19:26:43 UT+2 (1 Apr 1231 BC, proleptic Julian)",
+  "-1229": "-1229-04-02 01:14:50 UT+2 (2 Apr 1230 BC, proleptic Julian)",
+  "-1228": "-1228-04-01 07:01:07 UT+2 (1 Apr 1229 BC, proleptic Julian)",
+  "-1227": "-1227-04-01 12:50:17 UT+2 (1 Apr 1228 BC, proleptic Julian)",
+  "-1226": "-1226-04-01 18:46:08 UT+2 (1 Apr 1227 BC, proleptic Julian)",
+  "-1225": "-1225-04-02 00:42:08 UT+2 (2 Apr 1226 BC, proleptic Julian)",
+  "-1224": "-1224-04-01 06:27:25 UT+2 (1 Apr 1225 BC, proleptic Julian)",
+  "-1223": "-1223-04-01 12:15:08 UT+2 (1 Apr 1224 BC, proleptic Julian)",
+  "-1222": "-1222-04-01 18:09:23 UT+2 (1 Apr 1223 BC, proleptic Julian)",
+  "-1221": "-1221-04-01 23:58:45 UT+2 (1 Apr 1222 BC, proleptic Julian)",
+  "-1220": "-1220-04-01 05:44:17 UT+2 (1 Apr 1221 BC, proleptic Julian)",
+  "-1219": "-1219-04-01 11:30:19 UT+2 (1 Apr 1220 BC, proleptic Julian)",
+  "-1218": "-1218-04-01 17:18:08 UT+2 (1 Apr 1219 BC, proleptic Julian)",
+  "-1217": "-1217-04-01 23:09:56 UT+2 (1 Apr 1218 BC, proleptic Julian)",
+  "-1216": "-1216-04-01 04:53:38 UT+2 (1 Apr 1217 BC, proleptic Julian)",
+  "-1215": "-1215-04-01 10:39:23 UT+2 (1 Apr 1216 BC, proleptic Julian)",
+  "-1214": "-1214-04-01 16:35:32 UT+2 (1 Apr 1215 BC, proleptic Julian)",
+  "-1213": "-1213-04-01 22:21:50 UT+2 (1 Apr 1214 BC, proleptic Julian)",
+  "-1212": "-1212-04-01 04:05:00 UT+2 (1 Apr 1213 BC, proleptic Julian)",
+  "-1211": "-1211-04-01 09:51:10 UT+2 (1 Apr 1212 BC, proleptic Julian)",
+  "-1210": "-1210-04-01 15:38:24 UT+2 (1 Apr 1211 BC, proleptic Julian)",
+  "-1209": "-1209-04-01 21:31:50 UT+2 (1 Apr 1210 BC, proleptic Julian)",
+  "-1208": "-1208-04-01 03:15:18 UT+2 (1 Apr 1209 BC, proleptic Julian)",
+  "-1207": "-1207-04-01 08:58:53 UT+2 (1 Apr 1208 BC, proleptic Julian)",
+  "-1206": "-1206-04-01 14:55:21 UT+2 (1 Apr 1207 BC, proleptic Julian)",
+  "-1205": "-1205-04-01 20:43:47 UT+2 (1 Apr 1206 BC, proleptic Julian)",
+  "-1204": "-1204-04-01 02:31:50 UT+2 (1 Apr 1205 BC, proleptic Julian)",
+  "-1203": "-1203-04-01 08:26:44 UT+2 (1 Apr 1204 BC, proleptic Julian)",
+  "-1202": "-1202-04-01 14:18:46 UT+2 (1 Apr 1203 BC, proleptic Julian)",
+  "-1201": "-1201-04-01 20:14:26 UT+2 (1 Apr 1202 BC, proleptic Julian)",
+  "-1200": "-1200-04-01 01:58:20 UT+2 (1 Apr 1201 BC, proleptic Julian)",
+  "-1199": "-1199-04-01 07:40:14 UT+2 (1 Apr 1200 BC, proleptic Julian)",
+  "-1198": "-1198-04-01 13:35:20 UT+2 (1 Apr 1199 BC, proleptic Julian)",
+  "-1197": "-1197-04-01 19:20:17 UT+2 (1 Apr 1198 BC, proleptic Julian)",
+  "-1196": "-1196-04-01 00:59:46 UT+2 (1 Apr 1197 BC, proleptic Julian)",
+  "-1195": "-1195-04-01 06:48:15 UT+2 (1 Apr 1196 BC, proleptic Julian)",
+  "-1194": "-1194-04-01 12:32:27 UT+2 (1 Apr 1195 BC, proleptic Julian)",
+  "-1193": "-1193-04-01 18:23:55 UT+2 (1 Apr 1194 BC, proleptic Julian)",
+  "-1192": "-1192-04-01 00:10:58 UT+2 (1 Apr 1193 BC, proleptic Julian)",
+  "-1191": "-1191-04-01 05:54:27 UT+2 (1 Apr 1192 BC, proleptic Julian)",
+  "-1190": "-1190-04-01 11:54:22 UT+2 (1 Apr 1191 BC, proleptic Julian)",
+  "-1189": "-1189-04-01 17:42:54 UT+2 (1 Apr 1190 BC, proleptic Julian)",
+  "-1188": "-1188-03-31 23:23:43 UT+2 (31 Mar 1189 BC, proleptic Julian)",
+  "-1187": "-1187-04-01 05:18:01 UT+2 (1 Apr 1188 BC, proleptic Julian)",
+  "-1186": "-1186-04-01 11:05:57 UT+2 (1 Apr 1187 BC, proleptic Julian)",
+  "-1185": "-1185-04-01 16:58:49 UT+2 (1 Apr 1186 BC, proleptic Julian)",
+  "-1184": "-1184-03-31 22:48:28 UT+2 (31 Mar 1185 BC, proleptic Julian)",
+  "-1183": "-1183-04-01 04:28:34 UT+2 (1 Apr 1184 BC, proleptic Julian)",
+  "-1182": "-1182-04-01 10:27:02 UT+2 (1 Apr 1183 BC, proleptic Julian)",
+  "-1181": "-1181-04-01 16:15:52 UT+2 (1 Apr 1182 BC, proleptic Julian)",
+  "-1180": "-1180-03-31 21:56:58 UT+2 (31 Mar 1181 BC, proleptic Julian)",
+  "-1179": "-1179-04-01 03:54:07 UT+2 (1 Apr 1180 BC, proleptic Julian)",
+  "-1178": "-1178-04-01 09:42:24 UT+2 (1 Apr 1179 BC, proleptic Julian)",
+  "-1177": "-1177-04-01 15:31:28 UT+2 (1 Apr 1178 BC, proleptic Julian)",
+  "-1176": "-1176-03-31 21:18:13 UT+2 (31 Mar 1177 BC, proleptic Julian)",
+  "-1175": "-1175-04-01 02:55:03 UT+2 (1 Apr 1176 BC, proleptic Julian)",
+  "-1174": "-1174-04-01 08:49:44 UT+2 (1 Apr 1175 BC, proleptic Julian)",
+  "-1173": "-1173-04-01 14:36:35 UT+2 (1 Apr 1174 BC, proleptic Julian)",
+  "-1172": "-1172-03-31 20:11:54 UT+2 (31 Mar 1173 BC, proleptic Julian)",
+  "-1171": "-1171-04-01 02:05:06 UT+2 (1 Apr 1172 BC, proleptic Julian)",
+  "-1170": "-1170-04-01 07:52:54 UT+2 (1 Apr 1171 BC, proleptic Julian)",
+  "-1169": "-1169-04-01 13:43:37 UT+2 (1 Apr 1170 BC, proleptic Julian)",
+  "-1168": "-1168-03-31 19:38:46 UT+2 (31 Mar 1169 BC, proleptic Julian)",
+  "-1167": "-1167-04-01 01:25:14 UT+2 (1 Apr 1168 BC, proleptic Julian)",
+  "-1166": "-1166-04-01 07:25:41 UT+2 (1 Apr 1167 BC, proleptic Julian)",
+  "-1165": "-1165-04-01 13:19:08 UT+2 (1 Apr 1166 BC, proleptic Julian)",
+  "-1164": "-1164-03-31 18:55:59 UT+2 (31 Mar 1165 BC, proleptic Julian)",
+  "-1163": "-1163-04-01 00:51:15 UT+2 (1 Apr 1164 BC, proleptic Julian)",
+  "-1162": "-1162-04-01 06:40:17 UT+2 (1 Apr 1163 BC, proleptic Julian)",
+  "-1161": "-1161-04-01 12:25:13 UT+2 (1 Apr 1162 BC, proleptic Julian)",
+  "-1160": "-1160-03-31 18:14:54 UT+2 (31 Mar 1161 BC, proleptic Julian)",
+  "-1159": "-1159-03-31 23:51:58 UT+2 (31 Mar 1160 BC, proleptic Julian)",
+  "-1158": "-1158-04-01 05:43:28 UT+2 (1 Apr 1159 BC, proleptic Julian)",
+  "-1157": "-1157-04-01 11:34:22 UT+2 (1 Apr 1158 BC, proleptic Julian)",
+  "-1156": "-1156-03-31 17:09:52 UT+2 (31 Mar 1157 BC, proleptic Julian)",
+  "-1155": "-1155-03-31 23:05:56 UT+2 (31 Mar 1156 BC, proleptic Julian)",
+  "-1154": "-1154-04-01 04:57:06 UT+2 (1 Apr 1155 BC, proleptic Julian)",
+  "-1153": "-1153-04-01 10:40:43 UT+2 (1 Apr 1154 BC, proleptic Julian)",
+  "-1152": "-1152-03-31 16:34:13 UT+2 (31 Mar 1153 BC, proleptic Julian)",
+  "-1151": "-1151-03-31 22:15:58 UT+2 (31 Mar 1152 BC, proleptic Julian)",
+  "-1150": "-1150-04-01 04:11:16 UT+2 (1 Apr 1151 BC, proleptic Julian)",
+  "-1149": "-1149-04-01 10:06:38 UT+2 (1 Apr 1150 BC, proleptic Julian)",
+  "-1148": "-1148-03-31 15:43:07 UT+2 (31 Mar 1149 BC, proleptic Julian)",
+  "-1147": "-1147-03-31 21:38:00 UT+2 (31 Mar 1148 BC, proleptic Julian)",
+  "-1146": "-1146-04-01 03:32:02 UT+2 (1 Apr 1147 BC, proleptic Julian)",
+  "-1145": "-1145-04-01 09:17:57 UT+2 (1 Apr 1146 BC, proleptic Julian)",
+  "-1144": "-1144-03-31 15:14:18 UT+2 (31 Mar 1145 BC, proleptic Julian)",
+  "-1143": "-1143-03-31 20:59:50 UT+2 (31 Mar 1144 BC, proleptic Julian)",
+  "-1142": "-1142-04-01 02:51:51 UT+2 (1 Apr 1143 BC, proleptic Julian)",
+  "-1141": "-1141-04-01 08:44:09 UT+2 (1 Apr 1142 BC, proleptic Julian)",
+  "-1140": "-1140-03-31 14:16:13 UT+2 (31 Mar 1141 BC, proleptic Julian)",
+  "-1139": "-1139-03-31 20:04:30 UT+2 (31 Mar 1140 BC, proleptic Julian)",
+  "-1138": "-1138-04-01 01:55:14 UT+2 (1 Apr 1139 BC, proleptic Julian)",
+  "-1137": "-1137-04-01 07:35:00 UT+2 (1 Apr 1138 BC, proleptic Julian)",
+  "-1136": "-1136-03-31 13:23:47 UT+2 (31 Mar 1137 BC, proleptic Julian)",
+  "-1135": "-1135-03-31 19:07:13 UT+2 (31 Mar 1136 BC, proleptic Julian)",
+  "-1134": "-1134-04-01 00:57:05 UT+2 (1 Apr 1135 BC, proleptic Julian)",
+  "-1133": "-1133-04-01 06:55:04 UT+2 (1 Apr 1134 BC, proleptic Julian)",
+  "-1132": "-1132-03-31 12:36:10 UT+2 (31 Mar 1133 BC, proleptic Julian)",
+  "-1131": "-1131-03-31 18:32:13 UT+2 (31 Mar 1132 BC, proleptic Julian)",
+  "-1130": "-1130-04-01 00:32:04 UT+2 (1 Apr 1131 BC, proleptic Julian)",
+  "-1129": "-1129-04-01 06:15:52 UT+2 (1 Apr 1130 BC, proleptic Julian)",
+  "-1128": "-1128-03-31 12:08:02 UT+2 (31 Mar 1129 BC, proleptic Julian)",
+  "-1127": "-1127-03-31 17:55:21 UT+2 (31 Mar 1128 BC, proleptic Julian)",
+  "-1126": "-1126-03-31 23:44:17 UT+2 (31 Mar 1127 BC, proleptic Julian)",
+  "-1125": "-1125-04-01 05:38:20 UT+2 (1 Apr 1126 BC, proleptic Julian)",
+  "-1124": "-1124-03-31 11:12:45 UT+2 (31 Mar 1125 BC, proleptic Julian)",
+  "-1123": "-1123-03-31 16:59:06 UT+2 (31 Mar 1124 BC, proleptic Julian)",
+  "-1122": "-1122-03-31 22:53:52 UT+2 (31 Mar 1123 BC, proleptic Julian)",
+  "-1121": "-1121-04-01 04:34:23 UT+2 (1 Apr 1122 BC, proleptic Julian)",
+  "-1120": "-1120-03-31 10:25:51 UT+2 (31 Mar 1121 BC, proleptic Julian)",
+  "-1119": "-1119-03-31 16:14:47 UT+2 (31 Mar 1120 BC, proleptic Julian)",
+  "-1118": "-1118-03-31 22:03:01 UT+2 (31 Mar 1119 BC, proleptic Julian)",
+  "-1117": "-1117-04-01 03:55:55 UT+2 (1 Apr 1118 BC, proleptic Julian)",
+  "-1116": "-1116-03-31 09:33:40 UT+2 (31 Mar 1117 BC, proleptic Julian)",
+  "-1115": "-1115-03-31 15:21:46 UT+2 (31 Mar 1116 BC, proleptic Julian)",
+  "-1114": "-1114-03-31 21:20:09 UT+2 (31 Mar 1115 BC, proleptic Julian)"
+ },
+ "regression": {
+  "S2": {
+   "rows": 152,
+   "excluded_target_row": false,
+   "A1": {
+    "ti_match_ut2": 136,
+    "ti_match_ut": 134,
+    "ti_match_lmt": 138,
+    "need": ">= 134 of 152",
+    "passes": true
+   },
+   "A2": {
+    "venus_pass_set_equal": true,
+    "sym_diff": [],
+    "lead_diff_sd_min": 0.5370615281018416,
+    "lead_diff_mean_min": 0.09716688780652158,
+    "clock_offset_mean_min": 0.01070777777777721,
+    "clock_offset_sd_min": 1.5818446576757426,
+    "n_timed": 75,
+    "passes": true
+   },
+   "A3": {
+    "exact": 129,
+    "within_1d": 138,
+    "need": ">= 124 exact and >= 138 within 1 d of 152",
+    "definition": "the DE441 rise-azimuth maximum nearest S2's printed MWRA date (as check_mwra.py measured it)",
+    "passes": true,
+    "nearest_to_Ti_minus_34": {
+     "exact": 117,
+     "within_1d": 125,
+     "note": "B&M's own rule; reported beside"
+    }
+   },
+   "delta_agreement": {
+    "s2_delta_vs_true_julian_on_s2_mwra_differ": 21,
+    "note": "S2 prints 365-day arithmetic; rows where true Julian arithmetic differs"
+   },
+   "M_pass_on_s2_ti_de441_int": [
+    1236,
+    1224,
+    1190,
+    1189,
+    1178,
+    1144
+   ]
+  },
+  "A4": {
+   "venus_lead_min": {
+    "value": 103.65,
+    "want": "103.6 +- 1",
+    "passes": true
+   },
+   "conj_16Apr_UT2": {
+    "value": "12:25:07",
+    "want": "12:25",
+    "passes": true
+   },
+   "conj_18Mar_UT2": {
+    "value": "3:31:01",
+    "want": "03:31",
+    "passes": true
+   },
+   "equinox_UT2": {
+    "value": "1 Apr 15:31:28",
+    "want": "within 10 min of 15:24 (1 Apr)",
+    "passes": true
+   },
+   "sun_minus12_18Mar_UT2": {
+    "value": "19:34:08",
+    "want": "within 5 min of 19:38",
+    "passes": true
+   },
+   "passes": true
+  },
+  "A5": {
+   "file": "SEm1199.js",
+   "gamma": 0.5187,
+   "td": "17:57:28",
+   "ge_lat": 32.72,
+   "ge_lon_e": 12.74,
+   "delta_t": 28590.0,
+   "passes": true,
+   "note": "catalogue 01966 / Saros 39 member 31 not checkable offline (no secat5 page for -1199..-1100)"
+  }
+ },
+ "M_sensitivity": {
+  "base": {
+   "M": [
+    "28 Mar 1236 BC",
+    "14 Apr 1224 BC",
+    "29 Mar 1190 BC",
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC",
+    "31 Mar 1144 BC"
+   ],
+   "NCVM_with_base_V": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "target_M": true
+  },
+  "h0-0.1": {
+   "M": [
+    "28 Mar 1236 BC",
+    "14 Apr 1224 BC",
+    "29 Mar 1190 BC",
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC",
+    "31 Mar 1144 BC"
+   ],
+   "NCVM_with_base_V": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "target_M": true
+  },
+  "h0+0.1": {
+   "M": [
+    "28 Mar 1236 BC",
+    "14 Apr 1224 BC",
+    "29 Mar 1190 BC",
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC",
+    "31 Mar 1144 BC"
+   ],
+   "NCVM_with_base_V": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "target_M": true
+  },
+  "lat38.2": {
+   "M": [
+    "28 Mar 1236 BC",
+    "14 Apr 1224 BC",
+    "29 Mar 1190 BC",
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC",
+    "31 Mar 1144 BC"
+   ],
+   "NCVM_with_base_V": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "target_M": true
+  },
+  "lat38.3": {
+   "M": [
+    "28 Mar 1236 BC",
+    "14 Apr 1224 BC",
+    "29 Mar 1190 BC",
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC",
+    "31 Mar 1144 BC"
+   ],
+   "NCVM_with_base_V": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "target_M": true
+  },
+  "lat38.5": {
+   "M": [
+    "28 Mar 1236 BC",
+    "14 Apr 1224 BC",
+    "29 Mar 1190 BC",
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC",
+    "31 Mar 1144 BC"
+   ],
+   "NCVM_with_base_V": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "target_M": true
+  },
+  "lat38.6": {
+   "M": [
+    "28 Mar 1236 BC",
+    "14 Apr 1224 BC",
+    "29 Mar 1190 BC",
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC",
+    "31 Mar 1144 BC"
+   ],
+   "NCVM_with_base_V": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "target_M": true
+  },
+  "refraction_on": {
+   "M": [
+    "28 Mar 1236 BC",
+    "14 Apr 1224 BC",
+    "29 Mar 1190 BC",
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC",
+    "31 Mar 1144 BC"
+   ],
+   "NCVM_with_base_V": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "target_M": true
+  },
+  "dT-720": {
+   "M": [
+    "28 Mar 1236 BC",
+    "14 Apr 1224 BC",
+    "29 Mar 1190 BC",
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC",
+    "31 Mar 1144 BC"
+   ],
+   "NCVM_with_base_V": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "target_M": true
+  },
+  "dT+720": {
+   "M": [
+    "28 Mar 1236 BC",
+    "14 Apr 1224 BC",
+    "29 Mar 1190 BC",
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC",
+    "31 Mar 1144 BC"
+   ],
+   "NCVM_with_base_V": [
+    "18 Mar 1189 BC",
+    "16 Apr 1178 BC"
+   ],
+   "target_M": true
+  }
+ },
+ "r_Ody": 0.08145198795363937,
+ "reach_T0b_reading": 0.08145198795363937,
+ "readings_passed_by_target": [
+  "seq/mwra/1.5/novis",
+  "seq/mwra/1.5/vis",
+  "seq/mwra/2.5/novis",
+  "seq/mwra/2.5/vis",
+  "seq/mwra/3.5/novis",
+  "seq/mwra/3.5/vis"
+ ],
+ "heldout_target": {
+  "P_BM": {
+   "member": true,
+   "count": "seq"
+  },
+  "P_MWRA": {
+   "member": true,
+   "count": "seq"
+  },
+  "P_BM_E": {
+   "member": true,
+   "count": "seq"
+  },
+  "P_MWRA_E": {
+   "member": true,
+   "count": "seq"
+  }
+ },
+ "G_BM_unmasked": {
+  "v0": {
+   "value": 0.22475042757365718,
+   "lo": 0.1397224756789734,
+   "hi": 0.34466954260685967,
+   "n_A": 83,
+   "k_A": 26,
+   "target_in_T_A": true
+  },
+  "v1": {
+   "value": 0.1413203446107087,
+   "lo": 0.0878557991011727,
+   "hi": 0.21672403057855572,
+   "n_A": 132,
+   "k_A": 26,
+   "target_in_T_A": true
+  },
+  "v2": {
+   "value": 0.21198051691606298,
+   "lo": 0.13178369865175898,
+   "hi": 0.32508604586783346,
+   "n_A": 88,
+   "k_A": 26,
+   "target_in_T_A": true
+  },
+  "v3": {
+   "value": 0.2826406892214174,
+   "lo": 0.17571159820234536,
+   "hi": 0.43344806115711143,
+   "n_A": 66,
+   "k_A": 26,
+   "target_in_T_A": true
+  },
+  "v4": {
+   "value": 0.1828851518491524,
+   "lo": 0.11369574001328227,
+   "hi": 0.2804663925134251,
+   "n_A": 102,
+   "k_A": 26,
+   "target_in_T_A": true
+  },
+  "v5": {
+   "value": 0.33311224086809904,
+   "lo": 0.20708866930990702,
+   "hi": 0.5108495006494528,
+   "n_A": 56,
+   "k_A": 26,
+   "target_in_T_A": true
+  }
+ },
+ "target_daylight": true,
+ "target_C_rel": {
+  "seq": true,
+  "par": false
+ },
+ "runtime_s": 403.8
+}

@@ -1,0 +1,46 @@
+Held-out test at the target, 16 Apr -1177 (DESIGN 7.1-7.3; LEAN.md)
+site Ithaki 38.37 N 20.72 E; target info from C:\Projects\odybench\results\t0\t0.json
+
+Predicates at the target (H3, H4 counted; H1, H2, H5 reported only):
+  count seq:
+    H3 False: Mercury visibility margin -5.271 deg (>= 0 visible); conjunction nan d from noon UT+2 of Day 0, window margin -inf d
+    H4 False: least Venus-Mars separation 21.714 deg on Day -4 (threshold 5)
+    H1 False: nights 11.51 h and 11.35 h (>= 12.0)
+    H2 True: Moon up 0.097 of the dark hours (< 0.25)
+    H5 True: Mars visibility margin -0.987 deg (H5 needs < 0)
+    I15 tie bands the target lies in: none
+
+Pools (n; H3 only, H4 only, both; floor) and the target's p:
+  P_BM      n   76;  14   1   1; floor 0.0260; member True, count seq, pattern none, x 76, p 1.0000
+  P_MWRA    n   43;   8   1   0; floor 0.0227; member True, count seq, pattern none, x 43, p 1.0000
+  P_BM_E    n   49;   9   1   1; floor 0.0400; member True, count seq, pattern none, x 49, p 1.0000
+  P_MWRA_E  n   28;   6   1   0; floor 0.0345; member True, count seq, pattern none, x 28, p 1.0000
+p_H = 1.0000 (label 1 needs <= 0.05); p_H,min = 0.0400 (Q_attain if > 0.05)
+lattice (p_BM / p_MWRA / p_BM,E / p_MWRA,E -> p_H), from the null side:
+  both  0.0260 / 0.0227 / 0.0400 / 0.0345 -> 0.0400
+  h4    0.0390 / 0.0455 / 0.0600 / 0.0690 -> 0.0690
+  h3    0.2208 / 0.2273 / 0.2400 / 0.2759 -> 0.2759
+  none  1.0000 / 1.0000 / 1.0000 / 1.0000 -> 1.0000
+
+disclosure table, determined: {'H3': None, 'H4': 'fail'}
+Q_record True   Q_contra False []   Q_attain False   Q_exch False
+null side recomputed against attain.json: p_H_min agrees; Q_record agrees; Q_exch agrees; Q_attain agrees
+
+H3 given D4 (7.3): not computed: P_MWRA has no field 'gwe_lead_d'
+  R20 H3 in P_BM: MWRA class vs GWE-or-station class: 8/43 vs 7/33, Fisher p 0.780
+  R20 H4 in P_BM: MWRA class vs GWE-or-station class: 1/43 vs 1/33, Fisher p 1.000
+  R21 H3 in P_BM: -1999..-900 vs -899..+200: 12/41 vs 3/35, Fisher p 0.041
+  R21 H3 in P_BM: within +-700 y of -1177 vs the rest: 10/49 vs 5/27, Fisher p 1.000
+  R21 H4 in P_BM: -1999..-900 vs -899..+200: 2/41 vs 0/35, Fisher p 0.496
+  R21 H4 in P_BM: within +-700 y of -1177 vs the rest: 2/49 vs 0/27, Fisher p 0.536
+  R21 H3 in P_MWRA: -1999..-900 vs -899..+200: 8/25 vs 0/18, Fisher p 0.013
+  R21 H3 in P_MWRA: within +-700 y of -1177 vs the rest: 6/28 vs 2/15, Fisher p 0.692
+  R21 H4 in P_MWRA: -1999..-900 vs -899..+200: 1/25 vs 0/18, Fisher p 1.000
+  R21 H4 in P_MWRA: within +-700 y of -1177 vs the rest: 1/28 vs 0/15, Fisher p 1.000
+
+Base rates of the uncounted predicates over the pools (7.3):
+  P_BM      H1 29/76  H2 76/76  H5 9/76  (attain.json)
+  P_MWRA    H1 20/43  H2 43/43  H5 6/43  (attain.json)
+  P_BM_E    H1 23/49  H2 49/49  H5 5/49  (attain.json)
+  P_MWRA_E  H1 16/28  H2 28/28  H5 3/28  (attain.json)
+

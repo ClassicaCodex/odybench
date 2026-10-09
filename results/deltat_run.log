@@ -1,0 +1,230 @@
+  1178BC ithaki: 76.3 s
+  1178BC kefalonia: 37.7 s
+  1178BC lefkada: 39.1 s
+  1178BC corfu: 39.0 s
+  1178BC zakynthos: 117.4 s
+  1178BC vathy: 142.0 s
+  1131BC ithaki: 65.3 s
+  1131BC kefalonia: 32.3 s
+  1131BC lefkada: 32.4 s
+  1131BC corfu: 32.1 s
+  1131BC zakynthos: 32.5 s
+  1131BC vathy: 65.0 s
+N6 (DESIGN 5.6, LEAN.md): Delta-T and the eclipse at Ithaca
+Assumption: each Delta-T model a Gaussian with its stated sigma (DESIGN 0).
+smag: NASA's magnitude as program.js prints it (port of getall()); total = type 3, Sun up at maximum.
+
+== 1178BC (-1177-04-16), greatest eclipse JD(TT) 1291264.248240, epoch -1176.676, canon Delta-T 28590.0 s
+   models (canon frame | own frame), mu +- sigma:
+     SMH2020                        28576.9 +-  720.0 |   28543.0 +-  720.0
+     Addendum 2020 parabola         28315.5 +-  540.6 |   28281.6 +-  540.6
+     SMH2016 parabola               28996.6 +-  540.6 |   28962.7 +-  540.6
+     Espenak-Meeus, canon form      28589.4 +- 1007.7 |   28589.4 +- 1007.7
+   -- ithaki (38.37, 20.72)
+      NASA elements at canon Delta-T: smag 0.9840 (partial formula 0.9840), type 1, max 10.373 h UT, LAT 11.739 h, Sun 57.2 deg
+      canon frame, NASA elements: total for 28,800.93-29,584.86 s; smag >= 0.9 for 27,480.55-30,910.28 s
+      P(total)        canon: smh2020 0.2971  smh2020_parabola 0.1752  smh2016_parabola 0.5030  em_canon 0.2553  mixture 0.3076
+      P(smag >= 0.9)  canon: smh2020 0.9355  smh2020_parabola 0.9388  smh2016_parabola 0.9973  em_canon 0.8538  mixture 0.9313
+      DE431 (SMH frame): total for 28,761.15-29,544.95 s; smag >= 0.9 for 27,435.98-30,875.43 s
+        at SMH2020 (28543 s): smag 0.9838, LAT 11.739 h, Sun 57.2 deg, total False
+        at Addendum 2020 parabola (28282 s): smag 0.9639, LAT 11.839 h, Sun 57.3 deg, total False
+        at SMH2016 parabola (28963 s): smag 1.0598, LAT 11.580 h, Sun 56.9 deg, total True
+      P(total)        own:   smh2020 0.2989  smh2020_parabola 0.1778  smh2016_parabola 0.5046  em_canon 0.2553  mixture 0.3091
+      P(smag >= 0.9)  own:   smh2020 0.9373  smh2020_parabola 0.9411  smh2016_parabola 0.9974  em_canon 0.8538  mixture 0.9324
+      DE441 + SMH2020 (beside): total for 28,922.12-29,706.10 s; P(total) 0.2461; smag at the SMH2020 value 0.9716, LAT 11.811 h
+   -- kefalonia (38.18, 20.49)
+      NASA elements at canon Delta-T: smag 0.9844 (partial formula 0.9844), type 1, max 10.363 h UT, LAT 11.713 h, Sun 57.3 deg
+      canon frame, NASA elements: total for 28,794.27-29,575.80 s; smag >= 0.9 for 27,479.50-30,897.82 s
+      P(total)        canon: smh2020 0.2987  smh2020_parabola 0.1780  smh2016_parabola 0.5039  em_canon 0.2556  mixture 0.3091
+      P(smag >= 0.9)  canon: smh2020 0.9356  smh2020_parabola 0.9390  smh2016_parabola 0.9973  em_canon 0.8537  mixture 0.9314
+      DE431 (SMH frame): total for 28,754.46-29,535.86 s; smag >= 0.9 for 27,434.92-30,862.95 s
+        at SMH2020 (28543 s): smag 0.9842, LAT 11.713 h, Sun 57.3 deg, total False
+        at Addendum 2020 parabola (28282 s): smag 0.9643, LAT 11.813 h, Sun 57.4 deg, total False
+        at SMH2016 parabola (28963 s): smag 1.0598, LAT 11.554 h, Sun 57.0 deg, total True
+      P(total)        own:   smh2020 0.3005  smh2020_parabola 0.1807  smh2016_parabola 0.5054  em_canon 0.2556  mixture 0.3106
+      P(smag >= 0.9)  own:   smh2020 0.9375  smh2020_parabola 0.9413  smh2016_parabola 0.9974  em_canon 0.8537  mixture 0.9325
+   -- lefkada (38.83, 20.7)
+      NASA elements at canon Delta-T: smag 0.9934 (partial formula 0.9934), type 1, max 10.385 h UT, LAT 11.749 h, Sun 56.7 deg
+      canon frame, NASA elements: total for 28,677.65-29,467.60 s; smag >= 0.9 for 27,343.13-30,801.69 s
+      P(total)        canon: smh2020 0.3363  smh2020_parabola 0.2349  smh2016_parabola 0.5306  em_canon 0.2734  mixture 0.3438
+      P(smag >= 0.9)  canon: smh2020 0.9557  smh2020_parabola 0.9640  smh2016_parabola 0.9985  em_canon 0.8778  mixture 0.9490
+      DE431 (SMH frame): total for 28,637.92-29,427.74 s; smag >= 0.9 for 27,298.57-30,766.90 s
+        at SMH2020 (28543 s): smag 0.9932, LAT 11.749 h, Sun 56.7 deg, total False
+        at Addendum 2020 parabola (28282 s): smag 0.9735, LAT 11.849 h, Sun 56.8 deg, total False
+        at SMH2016 parabola (28963 s): smag 1.0597, LAT 11.590 h, Sun 56.4 deg, total True
+      P(total)        own:   smh2020 0.3380  smh2020_parabola 0.2379  smh2016_parabola 0.5312  em_canon 0.2734  mixture 0.3451
+      P(smag >= 0.9)  own:   smh2020 0.9570  smh2020_parabola 0.9655  smh2016_parabola 0.9985  em_canon 0.8778  mixture 0.9497
+   -- corfu (39.62, 19.92)
+      NASA elements at canon Delta-T: smag 1.0596 (partial formula 1.0228), type 3, max 10.386 h UT, LAT 11.699 h, Sun 55.9 deg
+      canon frame, NASA elements: total for 28,282.72-29,083.84 s; smag >= 0.9 for 26,921.93-30,434.24 s
+      P(total)        canon: smh2020 0.4179  smh2020_parabola 0.4466  smh2016_parabola 0.4708  em_canon 0.3077  mixture 0.4107
+      P(smag >= 0.9)  canon: smh2020 0.9843  smh2020_parabola 0.9950  smh2016_parabola 0.9960  em_canon 0.9174  mixture 0.9732
+      DE431 (SMH frame): total for 28,243.09-29,044.06 s; smag >= 0.9 for 26,877.41-30,399.56 s
+        at SMH2020 (28543 s): smag 1.0596, LAT 11.699 h, Sun 55.9 deg, total True
+        at Addendum 2020 parabola (28282 s): smag 1.0596, LAT 11.798 h, Sun 56.0 deg, total True
+        at SMH2016 parabola (28963 s): smag 1.0595, LAT 11.540 h, Sun 55.5 deg, total True
+      P(total)        own:   smh2020 0.4182  smh2020_parabola 0.4492  smh2016_parabola 0.4682  em_canon 0.3077  mixture 0.4108
+      P(smag >= 0.9)  own:   smh2020 0.9847  smh2020_parabola 0.9953  smh2016_parabola 0.9960  em_canon 0.9174  mixture 0.9733
+   -- zakynthos (37.78, 20.9)
+      NASA elements at canon Delta-T: smag 0.9690 (partial formula 0.9690), type 1, max 10.362 h UT, LAT 11.740 h, Sun 57.7 deg
+      canon frame, NASA elements: total for 28,993.25-29,769.92 s; smag >= 0.9 for 27,689.84-31,085.08 s
+      P(total)        canon: smh2020 0.2328  smh2020_parabola 0.1014  smh2016_parabola 0.4262  em_canon 0.2236  mixture 0.2460
+      P(smag >= 0.9)  canon: smh2020 0.8908  smh2020_parabola 0.8764  smh2016_parabola 0.9921  em_canon 0.8074  mixture 0.8917
+      DE431 (SMH frame): total for 28,953.39-29,729.95 s; smag >= 0.9 for 27,645.25-31,050.18 s
+        at SMH2020 (28543 s): smag 0.9688, LAT 11.740 h, Sun 57.7 deg, total False
+        at Addendum 2020 parabola (28282 s): smag 0.9487, LAT 11.840 h, Sun 57.9 deg, total False
+        at SMH2016 parabola (28963 s): smag 1.0599, LAT 11.580 h, Sun 57.4 deg, total True
+      P(total)        own:   smh2020 0.2347  smh2020_parabola 0.1033  smh2016_parabola 0.4289  em_canon 0.2236  mixture 0.2476
+      P(smag >= 0.9)  own:   smh2020 0.8935  smh2020_parabola 0.8804  smh2016_parabola 0.9925  em_canon 0.8074  mixture 0.8935
+   -- vathy (38.367, 20.717)
+      NASA elements at canon Delta-T: smag 0.9839 (partial formula 0.9839), type 1, max 10.373 h UT, LAT 11.739 h, Sun 57.2 deg
+      canon frame, NASA elements: total for 28,800.98-29,584.87 s; smag >= 0.9 for 27,480.69-30,910.24 s
+      P(total)        canon: smh2020 0.2971  smh2020_parabola 0.1752  smh2016_parabola 0.5030  em_canon 0.2552  mixture 0.3076
+      P(smag >= 0.9)  canon: smh2020 0.9355  smh2020_parabola 0.9387  smh2016_parabola 0.9973  em_canon 0.8537  mixture 0.9313
+      DE431 (SMH frame): total for 28,761.20-29,544.96 s; smag >= 0.9 for 27,436.12-30,875.39 s
+        at SMH2020 (28543 s): smag 0.9838, LAT 11.739 h, Sun 57.2 deg, total False
+        at Addendum 2020 parabola (28282 s): smag 0.9639, LAT 11.838 h, Sun 57.3 deg, total False
+        at SMH2016 parabola (28963 s): smag 1.0598, LAT 11.579 h, Sun 56.9 deg, total True
+      P(total)        own:   smh2020 0.2989  smh2020_parabola 0.1778  smh2016_parabola 0.5046  em_canon 0.2552  mixture 0.3091
+      P(smag >= 0.9)  own:   smh2020 0.9373  smh2020_parabola 0.9411  smh2016_parabola 0.9974  em_canon 0.8537  mixture 0.9324
+      DE441 + SMH2020 (beside): total for 28,922.17-29,706.11 s; P(total) 0.2461; smag at the SMH2020 value 0.9716, LAT 11.811 h
+
+== 1131BC (-1130-09-30), greatest eclipse JD(TT) 1308598.252843, epoch -1129.218, canon Delta-T 27690.9 s
+   models (canon frame | own frame), mu +- sigma:
+     SMH2020                        27715.0 +-  720.0 |   27682.1 +-  720.0
+     Addendum 2020 parabola         27427.0 +-  523.6 |   27394.0 +-  523.6
+     SMH2016 parabola               28077.0 +-  523.6 |   28044.1 +-  523.6
+     Espenak-Meeus, canon form      27690.2 +-  896.8 |   27690.2 +-  896.8
+   -- ithaki (38.37, 20.72)
+      NASA elements at canon Delta-T: smag 1.0486 (partial formula 1.0170), type 3, max 9.814 h UT, LAT 11.269 h, Sun 51.6 deg
+      canon frame, NASA elements: total for 27,051.25-28,040.78 s; smag >= 0.9 for 25,076.91-30,235.69 s
+      P(total)        canon: smh2020 0.4962  smh2020_parabola 0.6429  smh2016_parabola 0.4474  em_canon 0.4140  mixture 0.5001
+      P(smag >= 0.9)  canon: smh2020 0.9996  smh2020_parabola 1.0000  smh2016_parabola 1.0000  em_canon 0.9959  mixture 0.9989
+      DE431 (SMH frame): total for 27,003.94-27,993.32 s; smag >= 0.9 for 25,022.60-30,195.70 s
+        at SMH2020 (27682 s): smag 1.0486, LAT 11.256 h, Sun 51.6 deg, total True
+        at Addendum 2020 parabola (27394 s): smag 1.0487, LAT 11.373 h, Sun 52.0 deg, total True
+        at SMH2016 parabola (28044 s): smag 0.9979, LAT 11.110 h, Sun 51.0 deg, total False
+      P(total)        own:   smh2020 0.4941  smh2020_parabola 0.6456  smh2016_parabola 0.4379  em_canon 0.4140  mixture 0.4979
+      P(smag >= 0.9)  own:   smh2020 0.9996  smh2020_parabola 1.0000  smh2016_parabola 1.0000  em_canon 0.9959  mixture 0.9989
+      DE441 + SMH2020 (beside): total for 27,219.78-28,210.35 s; P(total) 0.5080; smag at the SMH2020 value 1.0486, LAT 11.328 h
+   -- kefalonia (38.18, 20.49)
+      NASA elements at canon Delta-T: smag 1.0486 (partial formula 1.0095), type 3, max 9.809 h UT, LAT 11.248 h, Sun 51.7 deg
+      canon frame, NASA elements: total for 26,901.38-27,884.93 s; smag >= 0.9 for 24,936.69-30,056.42 s
+      P(total)        canon: smh2020 0.4640  smh2020_parabola 0.6513  smh2016_parabola 0.3445  em_canon 0.3964  mixture 0.4641
+      P(smag >= 0.9)  canon: smh2020 0.9994  smh2020_parabola 1.0000  smh2016_parabola 0.9999  em_canon 0.9948  mixture 0.9985
+      DE431 (SMH frame): total for 26,854.12-27,837.53 s; smag >= 0.9 for 24,882.43-30,016.44 s
+        at SMH2020 (27682 s): smag 1.0486, LAT 11.236 h, Sun 51.7 deg, total True
+        at Addendum 2020 parabola (27394 s): smag 1.0487, LAT 11.353 h, Sun 52.1 deg, total True
+        at SMH2016 parabola (28044 s): smag 0.9904, LAT 11.090 h, Sun 51.1 deg, total False
+      P(total)        own:   smh2020 0.4604  smh2020_parabola 0.6502  smh2016_parabola 0.3351  em_canon 0.3964  mixture 0.4605
+      P(smag >= 0.9)  own:   smh2020 0.9994  smh2020_parabola 1.0000  smh2016_parabola 0.9999  em_canon 0.9948  mixture 0.9985
+   -- lefkada (38.83, 20.7)
+      NASA elements at canon Delta-T: smag 1.0485 (partial formula 1.0200), type 3, max 9.808 h UT, LAT 11.261 h, Sun 51.2 deg
+      canon frame, NASA elements: total for 27,279.66-28,284.57 s; smag >= 0.9 for 25,280.20-30,540.18 s
+      P(total)        canon: smh2020 0.5128  smh2020_parabola 0.5600  smh2016_parabola 0.5902  em_canon 0.4227  mixture 0.5214
+      P(smag >= 0.9)  canon: smh2020 0.9996  smh2020_parabola 1.0000  smh2016_parabola 1.0000  em_canon 0.9957  mixture 0.9988
+      DE431 (SMH frame): total for 27,232.23-28,236.96 s; smag >= 0.9 for 25,225.79-30,500.20 s
+        at SMH2020 (27682 s): smag 1.0485, LAT 11.249 h, Sun 51.1 deg, total True
+        at Addendum 2020 parabola (27394 s): smag 1.0486, LAT 11.366 h, Sun 51.5 deg, total True
+        at SMH2016 parabola (28044 s): smag 1.0484, LAT 11.103 h, Sun 50.5 deg, total True
+      P(total)        own:   smh2020 0.5135  smh2020_parabola 0.5676  smh2016_parabola 0.5832  em_canon 0.4227  mixture 0.5217
+      P(smag >= 0.9)  own:   smh2020 0.9996  smh2020_parabola 1.0000  smh2016_parabola 1.0000  em_canon 0.9957  mixture 0.9988
+   -- corfu (39.62, 19.92)
+      NASA elements at canon Delta-T: smag 1.0482 (partial formula 1.0087), type 3, max 9.776 h UT, LAT 11.178 h, Sun 50.1 deg
+      canon frame, NASA elements: total for 27,506.54-28,541.17 s; smag >= 0.9 for 25,457.74-30,916.18 s
+      P(total)        canon: smh2020 0.4883  smh2020_parabola 0.4229  smh2016_parabola 0.6743  em_canon 0.4098  mixture 0.4988
+      P(smag >= 0.9)  canon: smh2020 0.9991  smh2020_parabola 0.9999  smh2016_parabola 1.0000  em_canon 0.9934  mixture 0.9981
+      DE431 (SMH frame): total for 27,458.89-28,493.27 s; smag >= 0.9 for 25,403.10-30,876.20 s
+        at SMH2020 (27682 s): smag 1.0483, LAT 11.166 h, Sun 50.1 deg, total True
+        at Addendum 2020 parabola (27394 s): smag 0.9973, LAT 11.281 h, Sun 50.5 deg, total False
+        at SMH2016 parabola (28044 s): smag 1.0481, LAT 11.021 h, Sun 49.5 deg, total True
+      P(total)        own:   smh2020 0.4918  smh2020_parabola 0.4328  smh2016_parabola 0.6726  em_canon 0.4098  mixture 0.5018
+      P(smag >= 0.9)  own:   smh2020 0.9992  smh2020_parabola 0.9999  smh2016_parabola 1.0000  em_canon 0.9934  mixture 0.9981
+   -- zakynthos (37.78, 20.9)
+      NASA elements at canon Delta-T: smag 1.0487 (partial formula 1.0041), type 3, max 9.826 h UT, LAT 11.293 h, Sun 52.3 deg
+      canon frame, NASA elements: total for 26,802.58-27,774.23 s; smag >= 0.9 for 24,856.87-29,899.33 s
+      P(total)        canon: smh2020 0.4302  smh2020_parabola 0.6298  smh2016_parabola 0.2741  em_canon 0.3762  mixture 0.4276
+      P(smag >= 0.9)  canon: smh2020 0.9988  smh2020_parabola 1.0000  smh2016_parabola 0.9997  em_canon 0.9923  mixture 0.9977
+      DE431 (SMH frame): total for 26,755.40-27,726.95 s; smag >= 0.9 for 24,802.67-29,859.34 s
+        at SMH2020 (27682 s): smag 1.0487, LAT 11.281 h, Sun 52.2 deg, total True
+        at Addendum 2020 parabola (27394 s): smag 1.0488, LAT 11.398 h, Sun 52.6 deg, total True
+        at SMH2016 parabola (28044 s): smag 0.9848, LAT 11.134 h, Sun 51.7 deg, total False
+      P(total)        own:   smh2020 0.4258  smh2020_parabola 0.6262  smh2016_parabola 0.2655  em_canon 0.3762  mixture 0.4234
+      P(smag >= 0.9)  own:   smh2020 0.9987  smh2020_parabola 1.0000  smh2016_parabola 0.9997  em_canon 0.9923  mixture 0.9977
+   -- vathy (38.367, 20.717)
+      NASA elements at canon Delta-T: smag 1.0486 (partial formula 1.0169), type 3, max 9.813 h UT, LAT 11.268 h, Sun 51.6 deg
+      canon frame, NASA elements: total for 27,049.03-28,038.45 s; smag >= 0.9 for 25,074.85-30,232.99 s
+      P(total)        canon: smh2020 0.4959  smh2020_parabola 0.6433  smh2016_parabola 0.4459  em_canon 0.4138  mixture 0.4997
+      P(smag >= 0.9)  canon: smh2020 0.9996  smh2020_parabola 1.0000  smh2016_parabola 1.0000  em_canon 0.9959  mixture 0.9989
+      DE431 (SMH frame): total for 27,001.72-27,991.00 s; smag >= 0.9 for 25,020.54-30,193.00 s
+        at SMH2020 (27682 s): smag 1.0486, LAT 11.256 h, Sun 51.6 deg, total True
+        at Addendum 2020 parabola (27394 s): smag 1.0487, LAT 11.373 h, Sun 52.0 deg, total True
+        at SMH2016 parabola (28044 s): smag 0.9978, LAT 11.110 h, Sun 51.0 deg, total False
+      P(total)        own:   smh2020 0.4937  smh2020_parabola 0.6460  smh2016_parabola 0.4364  em_canon 0.4138  mixture 0.4975
+      P(smag >= 0.9)  own:   smh2020 0.9996  smh2020_parabola 1.0000  smh2016_parabola 1.0000  em_canon 0.9959  mixture 0.9989
+      DE441 + SMH2020 (beside): total for 27,217.55-28,208.03 s; P(total) 0.5080; smag at the SMH2020 value 1.0486, LAT 11.328 h
+
+== joint P(both total), common offset d ~ N(0, sigma_1178) from each model's value
+   ithaki     canon: smh2020 0.0524  smh2020_parabola 0.0565  smh2016_parabola 0.1146  em_canon 0.0529  mixture 0.0691
+   ithaki     own  : smh2020 0.0482  smh2020_parabola 0.0537  smh2016_parabola 0.1080  em_canon 0.0529  mixture 0.0657
+   kefalonia  canon: smh2020 0.0000  smh2020_parabola 0.0000  smh2016_parabola 0.0071  em_canon 0.0000  mixture 0.0018
+   kefalonia  own  : smh2020 0.0000  smh2020_parabola 0.0000  smh2016_parabola 0.0012  em_canon 0.0000  mixture 0.0003
+   lefkada    canon: smh2020 0.2299  smh2020_parabola 0.1951  smh2016_parabola 0.3719  em_canon 0.1874  mixture 0.2461
+   lefkada    own  : smh2020 0.2271  smh2020_parabola 0.1954  smh2016_parabola 0.3654  em_canon 0.1874  mixture 0.2438
+   corfu      canon: smh2020 0.3732  smh2020_parabola 0.3639  smh2016_parabola 0.4184  em_canon 0.2605  mixture 0.3540
+   corfu      own  : smh2020 0.3785  smh2020_parabola 0.3731  smh2016_parabola 0.4203  em_canon 0.2605  mixture 0.3581
+   zakynthos  canon: smh2020 0.0000  smh2020_parabola 0.0000  smh2016_parabola 0.0000  em_canon 0.0000  mixture 0.0000
+   zakynthos  own  : smh2020 0.0000  smh2020_parabola 0.0000  smh2016_parabola 0.0000  em_canon 0.0000  mixture 0.0000
+   vathy      canon: smh2020 0.0512  smh2020_parabola 0.0556  smh2016_parabola 0.1129  em_canon 0.0520  mixture 0.0679
+   vathy      own  : smh2020 0.0470  smh2020_parabola 0.0527  smh2016_parabola 0.1062  em_canon 0.0520  mixture 0.0645
+
+== smag and LAT of maximum against constant Delta-T, 1178 BC, Ithaki (sites.json)
+      26000 s  NASA smag 0.7911 type 1 LAT 12.732 h | DE431 smag 0.7943 total False LAT 12.714 h
+      26250 s  NASA smag 0.8091 type 1 LAT 12.636 h | DE431 smag 0.8123 total False LAT 12.618 h
+      26500 s  NASA smag 0.8273 type 1 LAT 12.539 h | DE431 smag 0.8305 total False LAT 12.521 h
+      26750 s  NASA smag 0.8456 type 1 LAT 12.443 h | DE431 smag 0.8489 total False LAT 12.425 h
+      27000 s  NASA smag 0.8641 type 1 LAT 12.347 h | DE431 smag 0.8674 total False LAT 12.329 h
+      27250 s  NASA smag 0.8827 type 1 LAT 12.251 h | DE431 smag 0.8861 total False LAT 12.233 h
+      27500 s  NASA smag 0.9015 type 1 LAT 12.155 h | DE431 smag 0.9048 total False LAT 12.137 h
+      27750 s  NASA smag 0.9203 type 1 LAT 12.059 h | DE431 smag 0.9236 total False LAT 12.042 h
+      28000 s  NASA smag 0.9392 type 1 LAT 11.964 h | DE431 smag 0.9426 total False LAT 11.946 h
+      28250 s  NASA smag 0.9581 type 1 LAT 11.868 h | DE431 smag 0.9615 total False LAT 11.851 h
+      28500 s  NASA smag 0.9771 type 1 LAT 11.773 h | DE431 smag 0.9805 total False LAT 11.755 h
+      28750 s  NASA smag 0.9961 type 1 LAT 11.678 h | DE431 smag 0.9996 total False LAT 11.660 h
+      29000 s  NASA smag 1.0597 type 3 LAT 11.583 h | DE431 smag 1.0597 total True LAT 11.566 h
+      29250 s  NASA smag 1.0597 type 3 LAT 11.489 h | DE431 smag 1.0597 total True LAT 11.471 h
+      29500 s  NASA smag 1.0596 type 3 LAT 11.394 h | DE431 smag 1.0596 total True LAT 11.376 h
+      29750 s  NASA smag 0.9874 type 1 LAT 11.300 h | DE431 smag 0.9848 total False LAT 11.282 h
+      30000 s  NASA smag 0.9685 type 1 LAT 11.206 h | DE431 smag 0.9658 total False LAT 11.188 h
+      30250 s  NASA smag 0.9495 type 1 LAT 11.112 h | DE431 smag 0.9469 total False LAT 11.094 h
+      30500 s  NASA smag 0.9307 type 1 LAT 11.018 h | DE431 smag 0.9281 total False LAT 11.000 h
+      30750 s  NASA smag 0.9120 type 1 LAT 10.924 h | DE431 smag 0.9094 total False LAT 10.907 h
+      31000 s  NASA smag 0.8933 type 1 LAT 10.831 h | DE431 smag 0.8907 total False LAT 10.813 h
+      31250 s  NASA smag 0.8748 type 1 LAT 10.738 h | DE431 smag 0.8722 total False LAT 10.720 h
+      31500 s  NASA smag 0.8564 type 1 LAT 10.645 h | DE431 smag 0.8539 total False LAT 10.628 h
+      31750 s  NASA smag 0.8382 type 1 LAT 10.552 h | DE431 smag 0.8357 total False LAT 10.535 h
+      32000 s  NASA smag 0.8201 type 1 LAT 10.460 h | DE431 smag 0.8176 total False LAT 10.442 h
+
+== against DESIGN 2.3 (revision 8; continuous windows; the I2(c) tolerance is 0.005 on P(total))
+   vathy: 1178 BC canon window 28,800.98-29,584.87 (2.3: 28,801.02-29,584.91); 1131 BC 27,049.03-28,038.45 (2.3: 27,049.07-28,038.49)
+   vathy P78: smh2020 0.2971 (2.3 0.297, +0.0001)  smh2020_parabola 0.1752 (2.3 0.175, +0.0002)  smh2016_parabola 0.5030 (2.3 0.503, +0.0000)  em_canon 0.2552 (2.3 0.255, +0.0002)  mixture 0.3076 (2.3 0.308, -0.0004)
+   vathy P31: smh2020 0.4959 (2.3 0.496, -0.0001)  smh2020_parabola 0.6433 (2.3 0.643, +0.0003)  smh2016_parabola 0.4459 (2.3 0.446, -0.0001)  em_canon 0.4138 (2.3 0.414, -0.0002)  mixture 0.4997 (2.3 0.500, -0.0003)
+   vathy joint: smh2020 0.0512 (2.3 0.051)  smh2020_parabola 0.0556 (2.3 0.056)  smh2016_parabola 0.1129 (2.3 0.113)  em_canon 0.0520 (2.3 0.052)  mixture 0.0679 (2.3 0.068)
+   vathy P(smag>=0.9) 1178: smh2020 0.9355 (2.3 0.932, a 20-s grid value)  smh2020_parabola 0.9387 (2.3 0.934, a 20-s grid value)  smh2016_parabola 0.9973 (2.3 0.997, a 20-s grid value)  em_canon 0.8537 (2.3 0.849, a 20-s grid value)  mixture 0.9313 (2.3 0.928, a 20-s grid value)
+   vathy P78 own frame (DE431 SMH + E-M on NASA): smh2020 0.2989 (2.3 0.299)  smh2020_parabola 0.1778 (2.3 0.178)  smh2016_parabola 0.5046 (2.3 0.505)  mixture 0.3091 (2.3 0.309)
+   vathy DE431 window: 28,761.20-29,544.96 (2.3, ithaki: 28,761-29,545)
+   vathy DE441 window: 28,922.17-29,706.11 (2.3: 28,922-29,706)
+   vathy smag 1178 at canon Delta-T 0.9839 (2.3 0.984); 1131 1.0486 (2.3 1.0486, total)
+   ithaki: 1178 BC canon window 28,800.93-29,584.86 (2.3: 28,801.02-29,584.91); 1131 BC 27,051.25-28,040.78 (2.3: 27,049.07-28,038.49)
+   ithaki P78: smh2020 0.2971 (2.3 0.297, +0.0001)  smh2020_parabola 0.1752 (2.3 0.175, +0.0002)  smh2016_parabola 0.5030 (2.3 0.503, +0.0000)  em_canon 0.2553 (2.3 0.255, +0.0003)  mixture 0.3076 (2.3 0.308, -0.0004)
+   ithaki P31: smh2020 0.4962 (2.3 0.496, +0.0002)  smh2020_parabola 0.6429 (2.3 0.643, -0.0001)  smh2016_parabola 0.4474 (2.3 0.446, +0.0014)  em_canon 0.4140 (2.3 0.414, -0.0000)  mixture 0.5001 (2.3 0.500, +0.0001)
+   ithaki joint: smh2020 0.0524 (2.3 0.051)  smh2020_parabola 0.0565 (2.3 0.056)  smh2016_parabola 0.1146 (2.3 0.113)  em_canon 0.0529 (2.3 0.052)  mixture 0.0691 (2.3 0.068)
+   ithaki P(smag>=0.9) 1178: smh2020 0.9355 (2.3 0.932, a 20-s grid value)  smh2020_parabola 0.9388 (2.3 0.934, a 20-s grid value)  smh2016_parabola 0.9973 (2.3 0.997, a 20-s grid value)  em_canon 0.8538 (2.3 0.849, a 20-s grid value)  mixture 0.9313 (2.3 0.928, a 20-s grid value)
+   ithaki P78 own frame (DE431 SMH + E-M on NASA): smh2020 0.2989 (2.3 0.299)  smh2020_parabola 0.1778 (2.3 0.178)  smh2016_parabola 0.5046 (2.3 0.505)  mixture 0.3091 (2.3 0.309)
+   ithaki DE431 window: 28,761.15-29,544.95 (2.3, ithaki: 28,761-29,545)
+   ithaki DE441 window: 28,922.12-29,706.10 (2.3: 28,922-29,706)
+   ithaki smag 1178 at canon Delta-T 0.9840 (2.3 0.984); 1131 1.0486 (2.3 1.0486, total)
+   largest |difference| in P(total), canon frame: 0.0004 (within 0.005)
+
+wrote C:\Projects\odybench\results\n6\n6.json and n6.out.txt in 713.0 s
+deltat exit 0

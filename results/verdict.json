@@ -1,0 +1,119 @@
+{
+ "labels": [
+  "inconclusive"
+ ],
+ "qualifiers": [
+  "Q_BM",
+  "Q_tol",
+  "Q_slot",
+  "Q_record"
+ ],
+ "notes": [
+  "3a: not tested (PC-R and gate 3a deferred, LEAN.md)",
+  "4: not tested (the negatives deferred, LEAN.md)",
+  "label 2's pct_N4 leg: not tested (N4 deferred, LEAN.md)",
+  "not evaluated in the lean rule: Q_score3a, Q_score3b, Q_attain3a, Q_attain3b, Q_H, Q_exposure, Q_dT, Q_attain4"
+ ],
+ "headline": [
+  "Inconclusive: no label of the lean rule holds",
+  "Q_record: the held-out test could not have said yes for this target, given the facts on record (H4 settled to fail)",
+  "Q_BM: at B&M's own tolerances, fewer than 6 of 11 Almagest record sets are recovered",
+  "Q_tol: under every slot variant G_BM,lo > 0.05, so B&M's tolerances cannot make the match notable",
+  "Q_slot: the verdict on G depends on the slot variant"
+ ],
+ "inputs": {
+  "INSTR": true,
+  "T0_pass": true,
+  "T0": "RE",
+  "r_Ody": 0.08145198795363937,
+  "G_BM": {
+   "v0": [
+    null,
+    0.1455589650327983,
+    0.35493089429716856
+   ],
+   "v1": [
+    null,
+    0.09152571286153229,
+    0.2231762441414012
+   ],
+   "v2": [
+    null,
+    0.1372885692922984,
+    0.3347643662121019
+   ],
+   "v3": [
+    null,
+    0.18305142572306463,
+    0.446352488282803
+   ],
+   "v4": [
+    null,
+    0.11844504017374766,
+    0.28881631594769575
+   ],
+   "v5": [
+    null,
+    0.2157391803164689,
+    0.5260582897618744
+   ]
+  },
+  "p_H_min": 0.04,
+  "Q_record": true,
+  "Q_exch": false,
+  "p_H": 1.0,
+  "Q_contra": false,
+  "gate3b_run": true,
+  "seen_ALM_SL": {
+   "bf:fine": 6,
+   "bf:mid": 6,
+   "bf:coarse": 6,
+   "st:fine": 6,
+   "st:mid": 6,
+   "st:coarse": 6
+  },
+  "rec_ALM_BM": 3
+ },
+ "sources": {
+  "INSTR": "instrument/summary.json:INSTR",
+  "T0_pass": "t0/t0.json:T0_pass",
+  "T0": "t0/t0.json:T0",
+  "r_Ody": "t0/t0.json:r_Ody",
+  "G_BM": "attain/attain.json:G_BM",
+  "p_H_min": "attain/attain.json:p_H_min",
+  "Q_record": "attain/attain.json:Q_record",
+  "Q_exch": "attain/attain.json:Q_exch",
+  "p_H": "heldout/heldout.json:p_H",
+  "Q_contra": "heldout/heldout.json:Q_contra",
+  "gate3b_run": "alm/alm.json:gate3b_run",
+  "seen_ALM_SL": "alm/alm.json:seen_ALM_SL",
+  "rec_ALM_BM": "alm/alm.json:rec_ALM_BM"
+ },
+ "provenance": {
+  "attain": {
+   "path": "C:\\Projects\\odybench\\results\\attain\\attain.json",
+   "sha256": "e955c9dcf16ddcaa41e9e517bba4c92ae89bc12733c55488d54b08ba2d579e06"
+  },
+  "t0": {
+   "path": "C:\\Projects\\odybench\\results\\t0\\t0.json",
+   "sha256": "deba80d8cf6747b2bec8f3d2332da07cef23f19ee558e1eea0dd34246d6f8d14"
+  },
+  "heldout": {
+   "path": "C:\\Projects\\odybench\\results\\heldout\\heldout.json",
+   "sha256": "55d2d9432cd6764b3d216c2b0373862eff726ec992c4577f18903d5c6aa61383"
+  },
+  "n6": {
+   "path": "C:\\Projects\\odybench\\results\\n6\\n6.json",
+   "sha256": "c52eb56646ce8eca495a66075cd53474342839fe4a65128a8a259cb7168007fd"
+  },
+  "alm": {
+   "path": "C:\\Projects\\odybench\\results\\alm\\alm.json",
+   "sha256": "b2ec7ccd5044ded117516ce42e5f40ad47733544b88b3b3325566b7b2ceabc66"
+  },
+  "instrument": {
+   "path": "C:\\Projects\\odybench\\results\\instrument\\summary.json",
+   "sha256": "b538aa6b15a86d3852fd94dbf1a186fe6ed2df41e2080c4adfe6fa39d9d9264b"
+  }
+ },
+ "thresholds_file": "C:\\Projects\\odybench\\data\\prereg\\verdict_rule.json"
+}
