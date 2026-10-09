@@ -1,0 +1,14 @@
+    1102 program.js evaluations; (type, vis) seen [(0, 0), (0, 1), (1, 0), (1, 2), (1, 3), (2, 0), (3, 0)]; worst |diff|: smag 1.3e-15, alt 7.8e-14 deg, LAT 7.1e-15 h, t 3.6e-15 h
+PASS test_port_against_program_js (0.2 s)
+selftest: 3710 catalogue rows; type mismatches 0; max |smag diff| 0.00000; max |alt diff| 0.000 deg; max |LAT diff| 0.030 min
+selftest PASS
+PASS test_port_against_site_catalogues (0.3 s)
+    Vathy windows 28800.98-29584.87 and 27049.03-28038.45 s; P(total) mixture 0.3076 / 0.4997
+PASS test_windows_and_p_against_design_23 (0.0 s)
+    DE431 + SMH frame window at Ithaki 28761.15-29544.95 s (2.3: 28,761-29,545)
+PASS test_de431_window_against_design_23 (2.5 s)
+PASS test_frames_and_sigmas (0.0 s)
+PASS test_helpers (0.0 s)
+refusing to write C:\Projects\odybench\results\n6: the second freeze has not happened (C:\Projects\odybench\results\attain\FROZEN is absent); use --out results/build-<agent>/... for a scratch run
+PASS test_refuses_results_n6_before_freeze (0.0 s)
+all passed

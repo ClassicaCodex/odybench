@@ -1,0 +1,33 @@
+  ok: strict survivors, seen, recall
+  ok: clusters and rank
+  ok: truth outside B
+  ok: best fit = everything when S0 is empty
+  ok: uncovered days left out; robustness flag
+  ok: 136 x 365.25 days per window
+  ok: mixture integrates to 1
+  ok: half the mass below the mean (roughly)
+  ok: band rows integrated exactly
+  ok: P_mix of a time-offset row equals the mixture mass
+  ok: ge_true_k: |instant - GE| <= k
+  ok: visible_only reads the set lag
+  ok: same_apparition: west GE already past inside the bracketing conjunctions, visible
+  ok: the side-only meaning is never stricter
+  ok: phase class last quarter, 12.2 deg per day
+  ok: equinox_tol passes about two days a year
+  ok: MWRA proxy passes near the azimuth maxima
+  ok: null windows inside the ranges
+  ok: null windows reproducible from the seed
+  ok: operational view: no statement, licence or ref
+  ok: Venus rise lead day 100: 13.449 min (brute force)
+  ok: LAT 19:30 instant
+  ok: dawn: the Sun at -8 deg
+  ok: Venus rise lead day 500: 119.194 min (brute force)
+  ok: LAT 19:30 instant
+  ok: dawn: the Sun at -8 deg
+  ok: Venus rise lead day 900: -196.964 min (brute force)
+  ok: LAT 19:30 instant
+  ok: dawn: the Sun at -8 deg
+  ok: Mercury greatest elongation 1410085.1889 vs scan 1410085.1889 TT
+  ok: the synthetic truth passes every row (strict recall)
+  ok: the synthetic set narrows its span (9 of 894 days)
+almagest selftest: PASS

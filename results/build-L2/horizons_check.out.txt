@@ -1,0 +1,8 @@
+Day0 (-684, 4, 24) Day -10: Venus-Mars separation Horizons 2.275200 deg, heldout 2.275200 deg, diff 0.000 arcsec
+Day0 (-682, 3, 5) Day -6: Venus-Mars separation Horizons 0.016041 deg, heldout 0.016041 deg, diff 0.000 arcsec
+Day0 (-675, 4, 15) Day -9: Venus-Mars separation Horizons 0.664063 deg, heldout 0.664063 deg, diff 0.000 arcsec
+Day0 (-695, 3, 27): Mercury-Sun conjunction Horizons JD(TT) 1467295.312274, heldout 1467295.312274, diff 0.0 s
+Day0 (-692, 5, 22): Mercury-Sun conjunction Horizons JD(TT) 1468447.657021, heldout 1468447.657022, diff 0.0 s
+Day0 (-683, 4, 14): Mercury-Sun conjunction Horizons JD(TT) 1471696.694837, heldout 1471696.694837, diff 0.0 s
+worst: separation 0.000 arcsec (I15(b) 0.001 deg = 3.6 arcsec); conjunction 0.0 s (I15(b) 0.01 d = 864 s)
+PASS

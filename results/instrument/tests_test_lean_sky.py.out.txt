@@ -1,0 +1,17 @@
+PASS test_sites_and_constants (0.0 s)
+PASS test_rise_precision_and_day (3.2 s)
+    S2 lead - DE441 lead: sd 0.53 min; S2 sunrise - DE441 (UT+2): +0.03 sd 1.58 min, n 74
+PASS test_A2_venus_on_s2_without_1178 (0.4 s)
+    I6(a): 144/151 maxima on check_mwra's date; the others: [('1244', ('15-Mar', 0), ('16-Mar', 1), 0.0005037008476165283), ('1238', ('26-Mar', 1), ('25-Mar', 0), 0.0013393403023513883), ('1214', ('31-Jan', 0), ('1-Feb', 1), 0.0036682874951168287), ('1207', ('27-Jan', 0), ('28-Jan', 1), 0.002782624712082793), ('1200', ('23-Jan', 0), ('24-Jan', 1), 0.0017004633804589275), ('1195', ('7-Feb', 0), ('6-Feb', -1), 0.0022153511323637076), ('1188', ('3-Feb', 0), ('2-Feb', -1), 0.0005242890107552967)]
+PASS test_I6a_mwra_against_check_mwra (33.8 s)
+PASS test_published_1189_azimuths (0.0 s)
+PASS test_azimuth_maxima_synthetic (0.0 s)
+PASS test_conjunctions_vs_ephem_new_moons (1.2 s)
+PASS test_de431_guard (0.0 s)
+PASS test_crel_calibration_and_published_bounds (0.4 s)
+PASS test_evening_twilight_bruteforce (0.0 s)
+PASS test_march_equinox (0.0 s)
+PASS test_geo_events_fine_grid (0.3 s)
+PASS test_mercury_magnitude_vs_skyfield (0.0 s)
+PASS test_plsv_and_av10_consistent (0.5 s)
+all passed

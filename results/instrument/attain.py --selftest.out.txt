@@ -1,0 +1,21 @@
+attain.py -- the null side (16 Apr -1177 masked)
+
+P_all 27210, P_day 13866, P_spring 2336; n_T 10686, n_TC 932
+N1: lambda(NCVM) 9.500/cy [8.256, 10.879] (k 209); NCVME n=4 1.455/cy (k 32)
+    p_fix|C 0.0921; p_fix 0.00768; V-M ratio 1.04 (p_upper 0.199)
+G_BM(v0) 0.0209 [0.0079, 0.0449]  n_A 200, k_A 10  (gamma [0.0097, 0.0449], block136 [0.0079, 0.0333])
+G_BM(v1) 0.0062 [0.0023, 0.0134]  n_A 670, k_A 10  (gamma [0.0029, 0.0134], block136 [0.0023, 0.0096])
+G_BM(v2) 0.0062 [0.0023, 0.0134]  n_A 670, k_A 10  (gamma [0.0029, 0.0134], block136 [0.0023, 0.0096])
+G_BM(v3) 0.0063 [0.0023, 0.0136]  n_A 659, k_A 10  (gamma [0.0029, 0.0136], block136 [0.0023, 0.0098])
+G_BM(v4) 0.0075 [0.0028, 0.0161]  n_A 559, k_A 10  (gamma [0.0035, 0.0161], block136 [0.0028, 0.0115])
+G_BM(v5) 0.0076 [0.0028, 0.0163]  n_A 551, k_A 10  (gamma [0.0035, 0.0163], block136 [0.0028, 0.0117])
+G_BM_u 0.00039 [0.00014, 0.00084]  n_T 10686, k 10
+identity (I9(c)): v0: outside 0, v1: outside 0, v2: outside 0, v3: outside 0, v4: outside 0, v5: outside 0
+held-out pools: P_BM 880, P_MWRA 645, P_BM_E 543, P_MWRA_E 401, P_spring 2336
+p_H_min: 0.012437810945273632
+Q_attain: False
+Q_record: True
+Q_exch: False
+runtime 0.2 s
+
+[attain selftest] null_side from L2 heldout; PASS

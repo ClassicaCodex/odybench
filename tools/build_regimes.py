@@ -98,6 +98,7 @@ BM_PLANET = ("ge_", "visible_only", "visible_before_sunrise", "bm_")
 # (X.4.3's 1/4 deg, which came from Ptolemy's computed lunar longitude)"
 INSECURE_STAR_RECORDS = ("X.1.6",)
 MOON_VALUE_NOT_IN_WORDS = ("X.4.3",)
+PREDICATE_SENSITIVITIES = ("projection_rev7", "all_phase_rows", "bounded_primary", "bm_k_1d")
 BM_GE_K = 1.5                                    # B&M's +/-1 integer day as a continuous tolerance [r1 N13]
 BM_GE_K_REPORTED = 1.0
 BM_MWRA_K = 1.5
@@ -172,6 +173,102 @@ def body_of(row: dict) -> str | None:
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+# ------------------------------------------- row predicates: body, side, instant
+#
+# The clue file's operational dicts carry the option and its numbers, but not
+# the body a planet row speaks of, the side of the Sun it is seen on, or the
+# instant 6.4 evaluates it at.  Those are in the row's statement.  This tool
+# reads them off the statement by the fixed rules below and writes them into
+# the regime file, so that the search reads operational fields and this file
+# only (10.3: an unknown value is an error, never a default).
+#   body     the first planet named in the statement; moon-phase rows: moon;
+#            the season row: sun
+#   side     morning: 'morning star', 'morning object', 'before dawn',
+#            'before sunrise'; evening: 'evening star', '(evening)'
+#   instant  (6.4) a stated equinoctial hour before or after midnight or noon:
+#            local apparent time; a stated seasonal hour of the night: the
+#            middle of that hour; otherwise the side's twilight instant, the
+#            Sun 8 deg below the horizon ('dawn' or 'evening'), which is also
+#            6.4's rule for the hourless records.
+
+_PLANET_WORD = re.compile(r"\b(Mercury|Venus|Mars|Jupiter|Saturn)\b")
+_NUMWORD = {"one": 1.0, "two": 2.0, "three": 3.0, "four": 4.0, "five": 5.0, "six": 6.0}
+_HOUR = re.compile(r"(\d+(?:\.\d+)?(?: \d+/\d+)?|one|two|three|four|five|six) (?:equinoctial )?hours? "
+                   r"(before|after) (midnight|noon)", re.I)
+_ORDINAL = {w: i + 1 for i, w in enumerate("first second third fourth fifth sixth seventh eighth ninth tenth "
+                                           "eleventh twelfth".split())}
+_NIGHT_HOUR = re.compile(r"\b(" + "|".join(_ORDINAL) + r")\b(?: \([^)]*\))? hour of the night", re.I)
+_MORNING = re.compile(r"morning (?:star|object)|before (?:dawn|sunrise)", re.I)
+_EVENING = re.compile(r"evening star|\(evening\)", re.I)
+
+
+def _number(s: str) -> float:
+    s = s.strip().lower()
+    if s in _NUMWORD:
+        return _NUMWORD[s]
+    parts = s.split()
+    x = float(parts[0])
+    if len(parts) == 2:
+        a, b = parts[1].split("/")
+        x += float(a) / float(b)
+    return x
+
+
+def row_predicate(row: dict) -> dict:
+    """{'body', 'side', 'instant', 'words'} of a planet, moon-phase or season row,
+    read off its statement by the rules above.  Raises on a row they do not cover."""
+    s = row.get("statement") or ""
+    cid, kind = row["clue_id"], row["kind"]
+    words = []
+    if kind == "planet":
+        m = _PLANET_WORD.search(s)
+        if not m:
+            raise ValueError(f"{cid}: no planet named in the statement")
+        body = m.group(1).lower()
+        words.append(m.group(0))
+    elif kind == "moon-phase":
+        body = "moon"
+    elif kind == "season":
+        body = "sun"
+    else:
+        raise ValueError(f"{cid}: no predicate rule for row kind {kind!r}")
+    mm, me = _MORNING.search(s), _EVENING.search(s)
+    side = None
+    if mm and not me:
+        side, w = "morning", mm.group(0)
+    elif me and not mm:
+        side, w = "evening", me.group(0)
+    elif mm and me:
+        # both words occur (a moon row beside an evening star seen before sunrise): the planet's own side
+        # decides only planet rows, and there the first-named side is the record's
+        if kind == "planet":
+            raise ValueError(f"{cid}: both morning and evening words in a planet row")
+        side, w = None, None
+    else:
+        w = None
+    if w:
+        words.append(w)
+    hm, nm = _HOUR.search(s), _NIGHT_HOUR.search(s)
+    if hm:
+        n, rel, ref = _number(hm.group(1)), hm.group(2).lower(), hm.group(3).lower()
+        base = 24.0 if ref == "midnight" else 12.0
+        lat = (base - n if rel == "before" else base + n) % 24.0
+        instant = {"kind": "lat", "hours": round(lat, 6)}
+        words.append(hm.group(0))
+    elif nm:
+        instant = {"kind": "night_hour", "hour": _ORDINAL[nm.group(1).lower()], "point": "middle"}
+        words.append(nm.group(0))
+    elif side == "morning":
+        instant = {"kind": "sun_alt", "deg": -8.0, "part": "morning"}
+    elif side == "evening":
+        instant = {"kind": "sun_alt", "deg": -8.0, "part": "evening"}
+    else:
+        raise ValueError(f"{cid}: no hour and no side in the statement, so no instant (6.4)")
+    if kind == "planet" and side is None:
+        raise ValueError(f"{cid}: a planet row with no morning or evening word")
+    return {"body": body, "side": side, "instant": instant, "words": words}
 
 
 # ------------------------------------------------------- projection (6.4)
@@ -517,14 +614,21 @@ def build(clues_doc: dict, slack: list[dict], summary: dict) -> tuple[dict, dict
                       "opposition_full_run_days": opp_tol,
                       "held_out": {cls: {**v, "pooled_lunar_fallback": ar[cls]["pooled_lunar_fallback"]}
                                    for cls, v in held_tol.items()}}
+        sens = sensitivities(sid, set_rows, projected, dict(p["held_out"]), ge_tol, opp_tol, held_tol)
+        # the rows the gate's runs and its no-star sensitivities evaluate get a predicate (body, side, instant)
+        pred_ids = {cid for cid, opt in p["projection"]
+                    if opt not in ("structural", "none") and rows_by_id[cid]["kind"] != "interval"}
+        for key in PREDICATE_SENSITIVITIES:
+            pred_ids |= set(sens.get(key, {}).get("rows", {}))
+        row_preds = {c["clue_id"]: row_predicate(c) for c in set_rows if c["clue_id"] in pred_ids}
         out_sets[sid] = {"counted": sid not in REPORTED_SETS,
                          "projection": dict(p["projection"]),
                          "held_out": dict(p["held_out"]),
                          "outside": p["outside"],
                          "tolerances": tolerances,
                          "regimes": {"SL": sl, "BM": bm, "held_out": ho},
-                         "sensitivities": sensitivities(sid, set_rows, projected, dict(p["held_out"]), ge_tol,
-                                                        opp_tol, held_tol)}
+                         "row_predicates": row_preds,
+                         "sensitivities": sens}
         arith["sets"][sid] = ar
     doc = {
         "schema": "odybench almagest_regimes v1 (DESIGN 6.4, 10.2, 12.1 item 7)",
@@ -554,6 +658,15 @@ def build(clues_doc: dict, slack: list[dict], summary: dict) -> tuple[dict, dict
                     "8 deg below the horizon, stated hours are local apparent time; visible_before_sunrise at the "
                     "hour the row states, else at dawn (Sun at -8 deg); hourless records at the dawn or evening "
                     "instant of their civil day (6.4) [r3v7 R3-5; lca2 item 5]",
+        "row_predicate_rules": "per set, 'row_predicates' gives the body, side and instant of every row the gate's "
+                               "runs evaluate (and of the rows of the reported runs that need no star), read off the "
+                               "row's statement by fixed rules: body = the first planet named (moon-phase rows: moon; "
+                               "the season row: sun); side = morning for 'morning star', 'morning object', 'before "
+                               "dawn', 'before sunrise', evening for 'evening star', '(evening)'; instant = a stated "
+                               "equinoctial hour before or after midnight or noon, as local apparent time; a stated "
+                               "seasonal hour of the night, at the middle of that hour; else the side's twilight "
+                               "instant, the Sun at -8 deg (6.4). 'words' lists the matched fragments. Added by L3 "
+                               "(lean run, 2026-10-09) so that the search reads operational fields and this file only",
         "regime_rules": {
             "SL": "the row's projection option; greatest-elongation k = the leave-one-set-out ceiling of the "
                   "row's body; every other list at its most lenient value (6.4)",
@@ -859,7 +972,7 @@ def _synthetic():
                                        {"name": "visible_only", "primary": False,
                                         "operational": {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}}]},
                      {"set": "ALM-X", "clue_id": "ALM-X.2", "kind": "moon-phase", "record": "R.1", "day_offset": 0,
-                      "statement": "The Moon near Mercury.",
+                      "statement": "The Moon near Mercury at 4 1/2 equinoctial hours before midnight.",
                       "fork_options": [{"name": "phase_class", "primary": True, "operational": {"class": "young_crescent"}},
                                        {"name": "positional", "primary": False, "operational": {"tolerance_deg": [0.5, 1.0]}},
                                        {"name": "none", "primary": False, "operational": None,
@@ -878,6 +991,7 @@ def _synthetic():
                                         "operational": {"min_minutes_between_body_and_sun_horizon_crossings": [30, 60]}},
                                        {"name": "bm_venus_lead", "primary": False, "operational": {"lead_min": [60, 90, 120]}}]},
                      {"set": "ALM-Y", "clue_id": "ALM-Y.2", "kind": "season", "record": "R.3", "day_offset": 0,
+                      "statement": "The spring equinox occurred on this day, about one hour after noon.",
                       "fork_options": [{"name": "equinox_tol", "primary": True,
                                         "operational": {"tolerance_days": [0.5, 1, 2]}}]},
                  ]}
@@ -950,12 +1064,42 @@ def selftest(verbose=True) -> bool:
     # planet-Moon outside X: R.6 (0.667) -> 0.67, 0.7, 0.7
     chk(x["tolerances"]["held_out"]["planet-Moon"] == {"fine": 0.67, "mid": 0.7, "coarse": 0.7,
                                                        "pooled_lunar_fallback": False}, "planet-Moon ceiling")
-    chk(x["sensitivities"]["bm_k_1d"] == {"rows": {"ALM-X.1": {"option": "ge_true_k", "params": {"k_days": 1.0}}},
-                                          "source": x["sensitivities"]["bm_k_1d"]["source"]}, "BM 1 d sensitivity")
+    # B&M's 1 d is reported beside 1.5 d for the greatest-elongation k (6.4's table); X.1 offers the MWRA
+    # proxy, so regime BM runs it as bm_mwra_k and it has no 1 d run.  Without the proxy it has one.
+    chk("bm_k_1d" not in x["sensitivities"], "no 1 d run for a row whose BM option is the MWRA proxy")
+    cd2 = copy.deepcopy(clues_doc)
+    cd2["clues"][0]["fork_options"] = [o for o in cd2["clues"][0]["fork_options"] if opt_name(o) != "bm_mwra_k"]
+    doc2, _ = build(cd2, slack, summary)
+    x2 = doc2["sets"]["ALM-X"]
+    chk(x2["regimes"]["BM"]["ALM-X.1"] == {"option": "ge_true_k", "params": {"k_days": 1.5}}, "BM ge_true_k 1.5 d")
+    chk(x2["sensitivities"].get("bm_k_1d", {}).get("rows") == {"ALM-X.1": {"option": "ge_true_k",
+                                                                            "params": {"k_days": 1.0}}},
+        "BM 1 d sensitivity")
     chk("bounded_primary" in y["sensitivities"]
         and y["sensitivities"]["bounded_primary"]["rows"]["ALM-Y.1"]["SL"]["fine"]["params"]["j_days"] == 30,
         "bounded primary sensitivity")
     chk(not check_named_options(doc, clues_doc), "named options")
+    # row predicates: body, side and instant by the fixed rules
+    rp = x["row_predicates"]
+    chk(rp["ALM-X.1"]["body"] == "mercury" and rp["ALM-X.1"]["side"] == "morning"
+        and rp["ALM-X.1"]["instant"] == {"kind": "sun_alt", "deg": -8.0, "part": "morning"}, "predicate X.1")
+    chk(rp["ALM-X.2"]["instant"] == {"kind": "lat", "hours": 19.5}, "predicate X.2 (4 1/2 h before midnight)")
+    chk(y["row_predicates"]["ALM-Y.2"] == {"body": "sun", "side": None, "instant": {"kind": "lat", "hours": 13.0},
+                                           "words": ["one hour after noon"]}, "predicate Y.2 (one hour after noon)")
+    probe = lambda s, k="planet": row_predicate({"clue_id": "P", "kind": k, "statement": s})
+    chk(probe("Venus is seen as a morning star at the twelfth (last) hour of the night.")["instant"]
+        == {"kind": "night_hour", "hour": 12, "point": "middle"}, "night hour")
+    chk(probe("Venus is a morning star on this day (4.75 equinoctial hours after midnight).")["instant"]["hours"]
+        == 4.75, "4.75 h after midnight")
+    chk(probe("The apparent Moon is west of the Sun (5.25 equinoctial hours before noon (after sunrise)).",
+              "moon-phase")["instant"]["hours"] == 6.75, "5.25 h before noon")
+    chk(probe("Mercury is an evening star on this day (evening).")["instant"]["part"] == "evening", "evening")
+    for bad in ("Mars was at opposition about three days before this day.", "The Moon stands close to Saturn."):
+        try:
+            probe(bad, "planet" if bad.startswith("Mars") else "moon-phase")
+            chk(False, f"no error for {bad!r}")
+        except ValueError:
+            pass
     if verbose:
         print("build_regimes selftest:", "PASS" if ok else "FAIL")
     return ok
@@ -980,7 +1124,9 @@ def main(argv=None) -> int:
     arith["note"] = ("TRUTH-SIDE (AppT 2, 2b): measured at the true dates; never give this file to a public-tier "
                      "agent. Written by tools/build_regimes.py.")
     Path(a.arith_out).write_text(json.dumps(arith, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"wrote {Path(a.out).relative_to(ROOT)} ({len(doc['sets'])} sets) and the truth-side arithmetic")
+    out_p = Path(a.out).resolve()
+    shown = out_p.relative_to(ROOT) if out_p.is_relative_to(ROOT) else out_p
+    print(f"wrote {shown} ({len(doc['sets'])} sets) and the truth-side arithmetic")
     if a.check:
         fails = check(doc, arith, clues_doc, slack)
         cq = consequences(doc, clues_doc, slack)

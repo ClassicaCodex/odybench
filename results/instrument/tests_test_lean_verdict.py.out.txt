@@ -1,0 +1,7 @@
+PASS test_sets (0.0 s)
+PASS test_every_lean_outcome_reached (0.0 s)
+PASS test_design_stage_numbers (0.0 s)
+PASS test_headline_and_numbers (0.0 s)
+PASS test_against_design_9_2_restricted (0.3 s)
+PASS test_script_on_synthetic_trees (0.1 s)
+all passed

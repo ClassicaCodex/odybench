@@ -1,0 +1,10 @@
+PASS test_constants (0.00 s)
+PASS test_constants_match_design_text (0.00 s)
+PASS test_dataclass_fields_match_contract (0.00 s)
+PASS test_defaults (0.00 s)
+PASS test_pool_dtype_builds_and_round_trips (0.00 s)
+PASS test_normalisations (0.00 s)
+PASS test_grammar_stars_exist_in_star_file (0.00 s)
+PASS test_dt_models_named_in_deltat_models_json (0.00 s)
+PASS test_sites_json_rows_build_sites (0.00 s)
+all passed

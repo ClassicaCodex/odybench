@@ -1,0 +1,11 @@
+PASS test_target_jdn (0.0 s)
+PASS test_36_readings (0.0 s)
+PASS test_pass_arrays_by_hand (0.0 s)
+PASS test_nesting_and_identity_on_synthetic (0.0 s)
+PASS test_slot_family_by_hand (0.0 s)
+PASS test_e_flags (0.0 s)
+PASS test_masked_target_raises_everywhere (0.0 s)
+PASS test_synthetic_mask_removes_target_before_predicates (0.0 s)
+PASS test_build_masks_before_predicates_source (0.0 s)
+PASS test_no_gregorian_datetime_in_lean_sources (0.0 s)
+all passed

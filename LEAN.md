@@ -57,8 +57,11 @@ The rule of DESIGN 9.2 with the deferred inputs marked **not tested**:
 - **3b** fires if seen_ALM_SL < 6 (when gate 3b runs).
 - **Label 2** holds as "no match" if r_Ody = 0. It holds as "ordinary" if
   G_BM,lo(v) ≥ 0.20 for every slot variant v. The pct_N4 leg is not tested.
-- **Label 1** holds if T0_pass and p_H ≤ 0.05 and not 3b. It is printed
-  "provisional: 3a and 4 not tested".
+- **Label 1** holds if T0_pass and p_H ≤ 0.05. As in 9.2, no gate vetoes
+  it. It is printed "provisional: 3a and 4 not tested". (The first pushed
+  text of this amendment added "and not 3b" here, which contradicted 9.2.
+  It was corrected on 2026-10-09, before the first freeze and before any
+  quantity was computed.)
 - **Qualifiers:** Q_attain, Q_record, Q_contra, Q_exch, Q_tol, Q_slot and Q_BM,
   as defined in 7.2, 9.2 and 6.4.
 - **Otherwise** the verdict is inconclusive, with every number beside its

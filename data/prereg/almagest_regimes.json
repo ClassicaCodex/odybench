@@ -1,0 +1,4905 @@
+{
+ "schema": "odybench almagest_regimes v1 (DESIGN 6.4, 10.2, 12.1 item 7)",
+ "written_by": "tools/build_regimes.py (A0), by rule; nothing in it is chosen by hand",
+ "clue_file": "data/prereg/controls_almagest.json",
+ "clue_file_sha256": "18b3ff01915c91d7f424bb514e3cc3ec70e3b311dd257936df64b91faa39b458",
+ "inputs": {
+  "slack_table": "results/controls-almagest/slack.json (truth-side; read only by this tool)",
+  "summary": "docs/controls-almagest.md, its Summary of alm Table 2 (the records at or about greatest elongation, records in no set included, and the crux readings)"
+ },
+ "counted_sets": [
+  "ALM-A",
+  "ALM-B",
+  "ALM-D",
+  "ALM-E",
+  "ALM-F",
+  "ALM-G",
+  "ALM-H",
+  "ALM-I",
+  "ALM-J",
+  "ALM-K",
+  "ALM-L"
+ ],
+ "reported_sets": [
+  "ALM-C"
+ ],
+ "steps": {
+  "fine": {
+   "deg": 0.01,
+   "days": 0.1
+  },
+  "mid": {
+   "deg": 0.05,
+   "days": 0.5
+  },
+  "coarse": {
+   "deg": 0.1,
+   "days": 1.0
+  }
+ },
+ "step_order": [
+  "fine",
+  "mid",
+  "coarse"
+ ],
+ "kept_phase_rows": [
+  "ALM-B.7"
+ ],
+ "same_apparition": {
+  "options": [
+   "ge_after_same_apparition",
+   "ge_before_same_apparition"
+  ],
+  "frozen": "visible on the row's own day (the day its offset gives): the body on the row's side of the Sun, and its rise lead (morning) or set lag (evening) at least the row's visible_only minimum at the regime's value, 30 min in both regimes; the apparition is the interval between the two geocentric conjunctions of the body with the Sun, in apparent ecliptic longitude, that bracket the record's instant; the greatest elongation on the row's side, from the true Sun (the event of ge_true_k), lies in it, after the record's instant (ge_after) or before it (ge_before) (6.4, 10.3)",
+  "side": "the same without the visibility clause (same_apparition_side); scored on every leg of gate 3b and reported, read only by Q_score3b (6.4)"
+ },
+ "instants": "each row at the drafter's instant convention: 'evening' and 'dawn' are the moments the Sun is 8 deg below the horizon, stated hours are local apparent time; visible_before_sunrise at the hour the row states, else at dawn (Sun at -8 deg); hourless records at the dawn or evening instant of their civil day (6.4) [r3v7 R3-5; lca2 item 5]",
+ "row_predicate_rules": "per set, 'row_predicates' gives the body, side and instant of every row the gate's runs evaluate (and of the rows of the reported runs that need no star), read off the row's statement by fixed rules: body = the first planet named (moon-phase rows: moon; the season row: sun); side = morning for 'morning star', 'morning object', 'before dawn', 'before sunrise', evening for 'evening star', '(evening)'; instant = a stated equinoctial hour before or after midnight or noon, as local apparent time; a stated seasonal hour of the night, at the middle of that hour; else the side's twilight instant, the Sun at -8 deg (6.4). 'words' lists the matched fragments. Added by L3 (lean run, 2026-10-09) so that the search reads operational fields and this file only",
+ "regime_rules": {
+  "SL": "the row's projection option; greatest-elongation k = the leave-one-set-out ceiling of the row's body; every other list at its most lenient value (6.4)",
+  "BM": "B&M's proxy where the row offers it (bm_mwra_k 1.5 d, bm_venus_lead 90 min); else ge_true_k at 1.5 d where offered (a greatest-elongation row); else the projection's option; every other list at its middle value, lower middle for an even count; no rounding step (6.4) [r1 N3 fix]",
+  "held_out": "each held-out row at its relation class's leave-one-set-out ceiling at the step (6.4)",
+  "most_lenient": "the largest value of a bound or tolerance list (j_days, k_days, tolerance_days, tolerance_deg, time_tol_h), the smallest of a minimum (minutes, altitude, lead), the widest range",
+  "ceiling_steps": "fine, mid, coarse = up to the next 0.01, 0.05, 0.1 deg or 0.1, 0.5, 1 d (6.4)"
+ },
+ "ceiling_arithmetic": "truth-side [AppT 2, 2b]: each maximum and the record it comes from are written only to results/build-A0/regimes_arithmetic_truth.json, off the public whitelist; their meaning per set is truth-side (13 row 60)",
+ "sets": {
+  "ALM-A": {
+   "counted": true,
+   "projection": {
+    "ALM-A.1": "ge_after_same_apparition",
+    "ALM-A.2": "none",
+    "ALM-A.3": "structural",
+    "ALM-A.5": "none",
+    "ALM-A.6": "as_printed",
+    "ALM-A.7": "ge_true_k",
+    "ALM-A.8": "structural",
+    "ALM-A.9": "visible_before_sunrise",
+    "ALM-A.10": "none"
+   },
+   "held_out": {
+    "ALM-A.2": "positional",
+    "ALM-A.4": "opp_mean_k",
+    "ALM-A.5": "positional",
+    "ALM-A.10": "positional"
+   },
+   "outside": [],
+   "tolerances": {
+    "greatest_elongation_days": {
+     "mercury": {
+      "fine": 5.5,
+      "mid": 5.5,
+      "coarse": 6.0
+     }
+    },
+    "opposition_full_run_days": {
+     "fine": 0.5,
+     "mid": 0.5,
+     "coarse": 1.0
+    },
+    "held_out": {
+     "planet-Moon": {
+      "fine": 0.7,
+      "mid": 0.7,
+      "coarse": 0.7,
+      "pooled_lunar_fallback": false
+     },
+     "opposition": {
+      "fine": 0.5,
+      "mid": 0.5,
+      "coarse": 1.0,
+      "pooled_lunar_fallback": false
+     }
+    }
+   },
+   "regimes": {
+    "SL": {
+     "fine": {
+      "ALM-A.1": {
+       "option": "ge_after_same_apparition",
+       "params": {
+        "bound": "same_apparition",
+        "visible_min_minutes": 30.0,
+        "visible_option": "visible_only"
+       }
+      },
+      "ALM-A.2": {
+       "option": "none",
+       "params": {}
+      },
+      "ALM-A.3": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-A.4": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-A.5": {
+       "option": "none",
+       "params": {}
+      },
+      "ALM-A.6": {
+       "option": "as_printed",
+       "params": {
+        "day_offset": 52
+       }
+      },
+      "ALM-A.7": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 5.5
+       }
+      },
+      "ALM-A.8": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-A.9": {
+       "option": "visible_before_sunrise",
+       "params": {
+        "min_altitude_deg": 5
+       }
+      },
+      "ALM-A.10": {
+       "option": "none",
+       "params": {}
+      }
+     },
+     "mid": {
+      "ALM-A.1": {
+       "option": "ge_after_same_apparition",
+       "params": {
+        "bound": "same_apparition",
+        "visible_min_minutes": 30.0,
+        "visible_option": "visible_only"
+       }
+      },
+      "ALM-A.2": {
+       "option": "none",
+       "params": {}
+      },
+      "ALM-A.3": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-A.4": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-A.5": {
+       "option": "none",
+       "params": {}
+      },
+      "ALM-A.6": {
+       "option": "as_printed",
+       "params": {
+        "day_offset": 52
+       }
+      },
+      "ALM-A.7": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 5.5
+       }
+      },
+      "ALM-A.8": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-A.9": {
+       "option": "visible_before_sunrise",
+       "params": {
+        "min_altitude_deg": 5
+       }
+      },
+      "ALM-A.10": {
+       "option": "none",
+       "params": {}
+      }
+     },
+     "coarse": {
+      "ALM-A.1": {
+       "option": "ge_after_same_apparition",
+       "params": {
+        "bound": "same_apparition",
+        "visible_min_minutes": 30.0,
+        "visible_option": "visible_only"
+       }
+      },
+      "ALM-A.2": {
+       "option": "none",
+       "params": {}
+      },
+      "ALM-A.3": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-A.4": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-A.5": {
+       "option": "none",
+       "params": {}
+      },
+      "ALM-A.6": {
+       "option": "as_printed",
+       "params": {
+        "day_offset": 52
+       }
+      },
+      "ALM-A.7": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 6.0
+       }
+      },
+      "ALM-A.8": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-A.9": {
+       "option": "visible_before_sunrise",
+       "params": {
+        "min_altitude_deg": 5
+       }
+      },
+      "ALM-A.10": {
+       "option": "none",
+       "params": {}
+      }
+     }
+    },
+    "BM": {
+     "ALM-A.1": {
+      "option": "ge_after_same_apparition",
+      "params": {
+       "bound": "same_apparition",
+       "visible_min_minutes": 30.0,
+       "visible_option": "visible_only"
+      }
+     },
+     "ALM-A.2": {
+      "option": "none",
+      "params": {}
+     },
+     "ALM-A.3": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-A.4": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     },
+     "ALM-A.5": {
+      "option": "none",
+      "params": {}
+     },
+     "ALM-A.6": {
+      "option": "as_printed",
+      "params": {
+       "day_offset": 52
+      }
+     },
+     "ALM-A.7": {
+      "option": "bm_mwra_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-A.8": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-A.9": {
+      "option": "visible_before_sunrise",
+      "params": {
+       "min_altitude_deg": 5
+      }
+     },
+     "ALM-A.10": {
+      "option": "none",
+      "params": {}
+     }
+    },
+    "held_out": {
+     "fine": {
+      "ALM-A.2": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      },
+      "ALM-A.4": {
+       "option": "opp_mean_k",
+       "class": "opposition",
+       "params": {
+        "k_days": 0.5
+       }
+      },
+      "ALM-A.5": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      },
+      "ALM-A.10": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      }
+     },
+     "mid": {
+      "ALM-A.2": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      },
+      "ALM-A.4": {
+       "option": "opp_mean_k",
+       "class": "opposition",
+       "params": {
+        "k_days": 0.5
+       }
+      },
+      "ALM-A.5": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      },
+      "ALM-A.10": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      }
+     },
+     "coarse": {
+      "ALM-A.2": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      },
+      "ALM-A.4": {
+       "option": "opp_mean_k",
+       "class": "opposition",
+       "params": {
+        "k_days": 1.0
+       }
+      },
+      "ALM-A.5": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      },
+      "ALM-A.10": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      }
+     }
+    }
+   },
+   "row_predicates": {
+    "ALM-A.1": {
+     "body": "mercury",
+     "side": "evening",
+     "instant": {
+      "kind": "lat",
+      "hours": 19.5
+     },
+     "words": [
+      "Mercury",
+      "evening star",
+      "4.5 equinoctial hours before midnight"
+     ]
+    },
+    "ALM-A.2": {
+     "body": "moon",
+     "side": "evening",
+     "instant": {
+      "kind": "lat",
+      "hours": 19.5
+     },
+     "words": [
+      "evening star",
+      "4 1/2 equinoctial hours before midnight"
+     ]
+    },
+    "ALM-A.5": {
+     "body": "moon",
+     "side": null,
+     "instant": {
+      "kind": "lat",
+      "hours": 21.0
+     },
+     "words": [
+      "3 equinoctial hours before midnight"
+     ]
+    },
+    "ALM-A.7": {
+     "body": "mercury",
+     "side": "morning",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "morning"
+     },
+     "words": [
+      "Mercury",
+      "morning star"
+     ]
+    },
+    "ALM-A.9": {
+     "body": "jupiter",
+     "side": "morning",
+     "instant": {
+      "kind": "lat",
+      "hours": 5.0
+     },
+     "words": [
+      "Jupiter",
+      "before sunrise",
+      "5 equinoctial hours after midnight"
+     ]
+    },
+    "ALM-A.10": {
+     "body": "moon",
+     "side": "morning",
+     "instant": {
+      "kind": "lat",
+      "hours": 5.0
+     },
+     "words": [
+      "Before sunrise",
+      "5 equinoctial hours after midnight"
+     ]
+    }
+   },
+   "sensitivities": {
+    "projection_rev7": {
+     "rows": {
+      "ALM-A.2": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "young_crescent"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "young_crescent"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "young_crescent"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "young_crescent"
+        }
+       }
+      },
+      "ALM-A.5": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "near_full"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "near_full"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "near_full"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "near_full"
+        }
+       }
+      }
+     },
+     "source": "6.4: revision 7's projection, with A.2, A.5 and B.2 at their inferred classes"
+    },
+    "all_phase_rows": {
+     "rows": {
+      "ALM-A.2": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "young_crescent"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "young_crescent"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "young_crescent"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "young_crescent"
+        }
+       }
+      },
+      "ALM-A.5": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "near_full"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "near_full"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "near_full"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "near_full"
+        }
+       }
+      },
+      "ALM-A.10": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "waning_crescent"
+        }
+       }
+      }
+     },
+     "source": "6.4: all six phase rows at their classes"
+    },
+    "bounded_primary": {
+     "rows": {
+      "ALM-A.1": {
+       "SL": {
+        "fine": {
+         "option": "ge_after_within_j",
+         "params": {
+          "j_days": 30
+         }
+        },
+        "mid": {
+         "option": "ge_after_within_j",
+         "params": {
+          "j_days": 30
+         }
+        },
+        "coarse": {
+         "option": "ge_after_within_j",
+         "params": {
+          "j_days": 30
+         }
+        }
+       },
+       "BM": {
+        "option": "ge_after_within_j",
+        "params": {
+         "j_days": 15
+        }
+       }
+      }
+     },
+     "source": "6.4: the bounded primary (j = 7-60 d, the drafter's inference) is reported as a sensitivity"
+    },
+    "full_primary": {
+     "rows": {
+      "ALM-A.1": {
+       "SL": {
+        "fine": {
+         "option": "ge_after_within_j",
+         "params": {
+          "j_days": 30
+         }
+        },
+        "mid": {
+         "option": "ge_after_within_j",
+         "params": {
+          "j_days": 30
+         }
+        },
+        "coarse": {
+         "option": "ge_after_within_j",
+         "params": {
+          "j_days": 30
+         }
+        }
+       },
+       "BM": {
+        "option": "ge_after_within_j",
+        "params": {
+         "j_days": 15
+        }
+       }
+      },
+      "ALM-A.2": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "young_crescent"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "young_crescent"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "young_crescent"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "young_crescent"
+        }
+       }
+      },
+      "ALM-A.4": {
+       "SL": {
+        "fine": {
+         "option": "opp_mean_k",
+         "class": "opposition",
+         "params": {
+          "k_days": 0.5
+         }
+        },
+        "mid": {
+         "option": "opp_mean_k",
+         "class": "opposition",
+         "params": {
+          "k_days": 0.5
+         }
+        },
+        "coarse": {
+         "option": "opp_mean_k",
+         "class": "opposition",
+         "params": {
+          "k_days": 1.0
+         }
+        }
+       },
+       "BM": {
+        "option": "opp_mean_k",
+        "params": {
+         "k_days": 2
+        }
+       }
+      },
+      "ALM-A.5": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "near_full"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "near_full"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "near_full"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "near_full"
+        }
+       }
+      },
+      "ALM-A.10": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "waning_crescent"
+        }
+       }
+      }
+     },
+     "source": "6.4: the full primary run (every row at its primary; the opposition k at the full-run ceiling in SL and the middle value in BM)"
+    },
+    "held_out_list_values": {
+     "rows": {
+      "ALM-A.2": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-A.4": {
+       "option": "opp_mean_k",
+       "params": {
+        "k_days": 3
+       }
+      },
+      "ALM-A.5": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-A.10": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      }
+     },
+     "source": "6.4: the drafter's list values, most lenient, reported as a sensitivity of Q_H"
+    },
+    "cruxes_emended": {
+     "rows": {
+      "ALM-A.6": {
+       "option": "mean_sun_emended",
+       "params": {
+        "day_offset": 49
+       }
+      }
+     },
+     "source": "6.4: the two cruxes run at their primary, as printed; the emended intervals are reported"
+    }
+   }
+  },
+  "ALM-B": {
+   "counted": true,
+   "projection": {
+    "ALM-B.1": "ge_before_same_apparition",
+    "ALM-B.2": "none",
+    "ALM-B.4": "structural",
+    "ALM-B.5": "none",
+    "ALM-B.6": "structural",
+    "ALM-B.7": "phase_class",
+    "ALM-B.8": "structural",
+    "ALM-B.9": "none"
+   },
+   "held_out": {
+    "ALM-B.2": "positional",
+    "ALM-B.3": "positional",
+    "ALM-B.5": "positional",
+    "ALM-B.7": "elongation_tol",
+    "ALM-B.9": "elongation_tol"
+   },
+   "outside": [],
+   "tolerances": {
+    "greatest_elongation_days": {
+     "venus": {
+      "fine": 20.6,
+      "mid": 21.0,
+      "coarse": 21.0
+     }
+    },
+    "opposition_full_run_days": {
+     "fine": 0.5,
+     "mid": 0.5,
+     "coarse": 1.0
+    },
+    "held_out": {
+     "planet-Moon": {
+      "fine": 0.67,
+      "mid": 0.7,
+      "coarse": 0.7,
+      "pooled_lunar_fallback": false
+     },
+     "planet-star": {
+      "fine": 1.8,
+      "mid": 1.8,
+      "coarse": 1.8,
+      "pooled_lunar_fallback": false
+     },
+     "Sun-Moon": {
+      "fine": 0.67,
+      "mid": 0.7,
+      "coarse": 0.7,
+      "pooled_lunar_fallback": true
+     }
+    }
+   },
+   "regimes": {
+    "SL": {
+     "fine": {
+      "ALM-B.1": {
+       "option": "ge_before_same_apparition",
+       "params": {
+        "bound": "same_apparition",
+        "visible_min_minutes": 30.0,
+        "visible_option": "visible_only"
+       }
+      },
+      "ALM-B.2": {
+       "option": "none",
+       "params": {}
+      },
+      "ALM-B.3": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-B.4": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-B.5": {
+       "option": "none",
+       "params": {}
+      },
+      "ALM-B.6": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-B.7": {
+       "option": "phase_class",
+       "params": {
+        "class": "last_quarter",
+        "tolerance_days": 2
+       }
+      },
+      "ALM-B.8": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-B.9": {
+       "option": "none",
+       "params": {}
+      }
+     },
+     "mid": {
+      "ALM-B.1": {
+       "option": "ge_before_same_apparition",
+       "params": {
+        "bound": "same_apparition",
+        "visible_min_minutes": 30.0,
+        "visible_option": "visible_only"
+       }
+      },
+      "ALM-B.2": {
+       "option": "none",
+       "params": {}
+      },
+      "ALM-B.3": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-B.4": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-B.5": {
+       "option": "none",
+       "params": {}
+      },
+      "ALM-B.6": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-B.7": {
+       "option": "phase_class",
+       "params": {
+        "class": "last_quarter",
+        "tolerance_days": 2
+       }
+      },
+      "ALM-B.8": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-B.9": {
+       "option": "none",
+       "params": {}
+      }
+     },
+     "coarse": {
+      "ALM-B.1": {
+       "option": "ge_before_same_apparition",
+       "params": {
+        "bound": "same_apparition",
+        "visible_min_minutes": 30.0,
+        "visible_option": "visible_only"
+       }
+      },
+      "ALM-B.2": {
+       "option": "none",
+       "params": {}
+      },
+      "ALM-B.3": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-B.4": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-B.5": {
+       "option": "none",
+       "params": {}
+      },
+      "ALM-B.6": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-B.7": {
+       "option": "phase_class",
+       "params": {
+        "class": "last_quarter",
+        "tolerance_days": 2
+       }
+      },
+      "ALM-B.8": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-B.9": {
+       "option": "none",
+       "params": {}
+      }
+     }
+    },
+    "BM": {
+     "ALM-B.1": {
+      "option": "bm_venus_lead",
+      "params": {
+       "lead_min": 90.0
+      }
+     },
+     "ALM-B.2": {
+      "option": "none",
+      "params": {}
+     },
+     "ALM-B.3": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     },
+     "ALM-B.4": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-B.5": {
+      "option": "none",
+      "params": {}
+     },
+     "ALM-B.6": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-B.7": {
+      "option": "phase_class",
+      "params": {
+       "class": "last_quarter",
+       "tolerance_days": 1
+      }
+     },
+     "ALM-B.8": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-B.9": {
+      "option": "none",
+      "params": {}
+     }
+    },
+    "held_out": {
+     "fine": {
+      "ALM-B.2": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "relation": "moon_app_lon - venus_lon = 1.5 * (venus_lon - star_lon), with venus_lon between star_lon and moon_app_lon",
+        "star": "beta Sco",
+        "tolerance_deg": 0.67
+       }
+      },
+      "ALM-B.3": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-B.5": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "tolerance_deg": 0.67
+       }
+      },
+      "ALM-B.7": {
+       "option": "elongation_tol",
+       "class": "Sun-Moon",
+       "params": {
+        "tolerance_deg": 0.67
+       }
+      },
+      "ALM-B.9": {
+       "option": "elongation_tol",
+       "class": "Sun-Moon",
+       "params": {
+        "tolerance_deg": 0.67
+       }
+      }
+     },
+     "mid": {
+      "ALM-B.2": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "relation": "moon_app_lon - venus_lon = 1.5 * (venus_lon - star_lon), with venus_lon between star_lon and moon_app_lon",
+        "star": "beta Sco",
+        "tolerance_deg": 0.7
+       }
+      },
+      "ALM-B.3": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-B.5": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      },
+      "ALM-B.7": {
+       "option": "elongation_tol",
+       "class": "Sun-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      },
+      "ALM-B.9": {
+       "option": "elongation_tol",
+       "class": "Sun-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      }
+     },
+     "coarse": {
+      "ALM-B.2": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "relation": "moon_app_lon - venus_lon = 1.5 * (venus_lon - star_lon), with venus_lon between star_lon and moon_app_lon",
+        "star": "beta Sco",
+        "tolerance_deg": 0.7
+       }
+      },
+      "ALM-B.3": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-B.5": {
+       "option": "positional",
+       "class": "planet-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      },
+      "ALM-B.7": {
+       "option": "elongation_tol",
+       "class": "Sun-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      },
+      "ALM-B.9": {
+       "option": "elongation_tol",
+       "class": "Sun-Moon",
+       "params": {
+        "tolerance_deg": 0.7
+       }
+      }
+     }
+    }
+   },
+   "row_predicates": {
+    "ALM-B.1": {
+     "body": "venus",
+     "side": "morning",
+     "instant": {
+      "kind": "lat",
+      "hours": 4.75
+     },
+     "words": [
+      "Venus",
+      "morning star",
+      "4.75 equinoctial hours after midnight"
+     ]
+    },
+    "ALM-B.2": {
+     "body": "moon",
+     "side": null,
+     "instant": {
+      "kind": "lat",
+      "hours": 4.75
+     },
+     "words": [
+      "4 3/4 equinoctial hours after midnight"
+     ]
+    },
+    "ALM-B.5": {
+     "body": "moon",
+     "side": null,
+     "instant": {
+      "kind": "lat",
+      "hours": 20.0
+     },
+     "words": [
+      "4 equinoctial hours before midnight"
+     ]
+    },
+    "ALM-B.7": {
+     "body": "moon",
+     "side": null,
+     "instant": {
+      "kind": "lat",
+      "hours": 6.75
+     },
+     "words": [
+      "5.25 equinoctial hours before noon"
+     ]
+    },
+    "ALM-B.9": {
+     "body": "moon",
+     "side": null,
+     "instant": {
+      "kind": "lat",
+      "hours": 17.5
+     },
+     "words": [
+      "5.5 equinoctial hours after noon"
+     ]
+    }
+   },
+   "sensitivities": {
+    "projection_rev7": {
+     "rows": {
+      "ALM-B.2": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "waning_crescent"
+        }
+       }
+      }
+     },
+     "source": "6.4: revision 7's projection, with A.2, A.5 and B.2 at their inferred classes"
+    },
+    "all_phase_rows": {
+     "rows": {
+      "ALM-B.2": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "waning_crescent"
+        }
+       }
+      },
+      "ALM-B.5": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "waxing_crescent"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "waxing_crescent"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "waxing_crescent"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "waxing_crescent"
+        }
+       }
+      },
+      "ALM-B.9": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "first_quarter",
+          "tolerance_days": 2
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "first_quarter",
+          "tolerance_days": 2
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "first_quarter",
+          "tolerance_days": 2
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "first_quarter",
+         "tolerance_days": 1
+        }
+       }
+      }
+     },
+     "source": "6.4: all six phase rows at their classes"
+    },
+    "bounded_primary": {
+     "rows": {
+      "ALM-B.1": {
+       "SL": {
+        "fine": {
+         "option": "ge_before_within_j",
+         "params": {
+          "j_days": 60
+         }
+        },
+        "mid": {
+         "option": "ge_before_within_j",
+         "params": {
+          "j_days": 60
+         }
+        },
+        "coarse": {
+         "option": "ge_before_within_j",
+         "params": {
+          "j_days": 60
+         }
+        }
+       },
+       "BM": {
+        "option": "ge_before_within_j",
+        "params": {
+         "j_days": 15
+        }
+       }
+      }
+     },
+     "source": "6.4: the bounded primary (j = 7-60 d, the drafter's inference) is reported as a sensitivity"
+    },
+    "full_primary": {
+     "rows": {
+      "ALM-B.1": {
+       "SL": {
+        "fine": {
+         "option": "ge_before_within_j",
+         "params": {
+          "j_days": 60
+         }
+        },
+        "mid": {
+         "option": "ge_before_within_j",
+         "params": {
+          "j_days": 60
+         }
+        },
+        "coarse": {
+         "option": "ge_before_within_j",
+         "params": {
+          "j_days": 60
+         }
+        }
+       },
+       "BM": {
+        "option": "ge_before_within_j",
+        "params": {
+         "j_days": 15
+        }
+       }
+      },
+      "ALM-B.2": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "waning_crescent"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "waning_crescent"
+        }
+       }
+      },
+      "ALM-B.3": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      },
+      "ALM-B.5": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "waxing_crescent"
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "waxing_crescent"
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "waxing_crescent"
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "waxing_crescent"
+        }
+       }
+      },
+      "ALM-B.9": {
+       "SL": {
+        "fine": {
+         "option": "phase_class",
+         "params": {
+          "class": "first_quarter",
+          "tolerance_days": 2
+         }
+        },
+        "mid": {
+         "option": "phase_class",
+         "params": {
+          "class": "first_quarter",
+          "tolerance_days": 2
+         }
+        },
+        "coarse": {
+         "option": "phase_class",
+         "params": {
+          "class": "first_quarter",
+          "tolerance_days": 2
+         }
+        }
+       },
+       "BM": {
+        "option": "phase_class",
+        "params": {
+         "class": "first_quarter",
+         "tolerance_days": 1
+        }
+       }
+      }
+     },
+     "source": "6.4: the full primary run (every row at its primary; the opposition k at the full-run ceiling in SL and the middle value in BM)"
+    },
+    "held_out_list_values": {
+     "rows": {
+      "ALM-B.2": {
+       "option": "positional",
+       "params": {
+        "relation": "moon_app_lon - venus_lon = 1.5 * (venus_lon - star_lon), with venus_lon between star_lon and moon_app_lon",
+        "star": "beta Sco",
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-B.3": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-B.5": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-B.7": {
+       "option": "elongation_tol",
+       "params": {
+        "tolerance_deg": 12
+       }
+      },
+      "ALM-B.9": {
+       "option": "elongation_tol",
+       "params": {
+        "tolerance_deg": 12
+       }
+      }
+     },
+     "source": "6.4: the drafter's list values, most lenient, reported as a sensitivity of Q_H"
+    }
+   }
+  },
+  "ALM-C": {
+   "counted": false,
+   "projection": {
+    "ALM-C.1": "ge_true_k",
+    "ALM-C.2": "structural"
+   },
+   "held_out": {
+    "ALM-C.3": "magnitude"
+   },
+   "outside": [],
+   "tolerances": {
+    "greatest_elongation_days": {
+     "mercury": {
+      "fine": 5.5,
+      "mid": 5.5,
+      "coarse": 6.0
+     }
+    },
+    "opposition_full_run_days": {
+     "fine": 0.5,
+     "mid": 0.5,
+     "coarse": 1.0
+    },
+    "held_out": {}
+   },
+   "regimes": {
+    "SL": {
+     "fine": {
+      "ALM-C.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 5.5
+       }
+      },
+      "ALM-C.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-C.3": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "mid": {
+      "ALM-C.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 5.5
+       }
+      },
+      "ALM-C.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-C.3": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "coarse": {
+      "ALM-C.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 6.0
+       }
+      },
+      "ALM-C.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-C.3": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     }
+    },
+    "BM": {
+     "ALM-C.1": {
+      "option": "bm_mwra_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-C.2": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-C.3": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     }
+    },
+    "held_out": {
+     "fine": {
+      "ALM-C.3": {
+       "option": "magnitude",
+       "class": null,
+       "params": {
+        "umbral_mag_range": [
+         0.6,
+         1.0
+        ]
+       }
+      }
+     },
+     "mid": {
+      "ALM-C.3": {
+       "option": "magnitude",
+       "class": null,
+       "params": {
+        "umbral_mag_range": [
+         0.6,
+         1.0
+        ]
+       }
+      }
+     },
+     "coarse": {
+      "ALM-C.3": {
+       "option": "magnitude",
+       "class": null,
+       "params": {
+        "umbral_mag_range": [
+         0.6,
+         1.0
+        ]
+       }
+      }
+     }
+    }
+   },
+   "row_predicates": {
+    "ALM-C.1": {
+     "body": "mercury",
+     "side": "morning",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "morning"
+     },
+     "words": [
+      "Mercury",
+      "morning star"
+     ]
+    }
+   },
+   "sensitivities": {
+    "full_primary": {
+     "rows": {
+      "ALM-C.3": {
+       "SL": {
+        "fine": {
+         "option": "magnitude",
+         "params": {
+          "umbral_mag_range": [
+           0.6,
+           1.0
+          ]
+         }
+        },
+        "mid": {
+         "option": "magnitude",
+         "params": {
+          "umbral_mag_range": [
+           0.6,
+           1.0
+          ]
+         }
+        },
+        "coarse": {
+         "option": "magnitude",
+         "params": {
+          "umbral_mag_range": [
+           0.6,
+           1.0
+          ]
+         }
+        }
+       },
+       "BM": {
+        "option": "magnitude",
+        "params": {
+         "umbral_mag_range": [
+          0.6,
+          1.0
+         ]
+        }
+       }
+      }
+     },
+     "source": "6.4: the full primary run (every row at its primary; the opposition k at the full-run ceiling in SL and the middle value in BM)"
+    },
+    "held_out_list_values": {
+     "rows": {
+      "ALM-C.3": {
+       "option": "magnitude",
+       "params": {
+        "umbral_mag_range": [
+         0.6,
+         1.0
+        ]
+       }
+      }
+     },
+     "source": "6.4: the drafter's list values, most lenient, reported as a sensitivity of Q_H"
+    }
+   }
+  },
+  "ALM-D": {
+   "counted": true,
+   "projection": {
+    "ALM-D.1": "ge_true_k",
+    "ALM-D.2": "structural",
+    "ALM-D.3": "ge_true_k"
+   },
+   "held_out": {
+    "ALM-D.4": "positional"
+   },
+   "outside": [],
+   "tolerances": {
+    "greatest_elongation_days": {
+     "mercury": {
+      "fine": 5.5,
+      "mid": 5.5,
+      "coarse": 6.0
+     },
+     "venus": {
+      "fine": 20.6,
+      "mid": 21.0,
+      "coarse": 21.0
+     }
+    },
+    "opposition_full_run_days": {
+     "fine": 0.5,
+     "mid": 0.5,
+     "coarse": 1.0
+    },
+    "held_out": {
+     "planet-star": {
+      "fine": 1.8,
+      "mid": 1.8,
+      "coarse": 1.8,
+      "pooled_lunar_fallback": false
+     }
+    }
+   },
+   "regimes": {
+    "SL": {
+     "fine": {
+      "ALM-D.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 5.5
+       }
+      },
+      "ALM-D.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-D.3": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 20.6
+       }
+      },
+      "ALM-D.4": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "mid": {
+      "ALM-D.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 5.5
+       }
+      },
+      "ALM-D.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-D.3": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-D.4": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "coarse": {
+      "ALM-D.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 6.0
+       }
+      },
+      "ALM-D.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-D.3": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-D.4": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     }
+    },
+    "BM": {
+     "ALM-D.1": {
+      "option": "ge_true_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-D.2": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-D.3": {
+      "option": "ge_true_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-D.4": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     }
+    },
+    "held_out": {
+     "fine": {
+      "ALM-D.4": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     },
+     "mid": {
+      "ALM-D.4": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     },
+     "coarse": {
+      "ALM-D.4": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     }
+    }
+   },
+   "row_predicates": {
+    "ALM-D.1": {
+     "body": "mercury",
+     "side": "evening",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "evening"
+     },
+     "words": [
+      "Mercury",
+      "evening star"
+     ]
+    },
+    "ALM-D.3": {
+     "body": "venus",
+     "side": "evening",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "evening"
+     },
+     "words": [
+      "Venus",
+      "evening star"
+     ]
+    }
+   },
+   "sensitivities": {
+    "full_primary": {
+     "rows": {
+      "ALM-D.4": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      }
+     },
+     "source": "6.4: the full primary run (every row at its primary; the opposition k at the full-run ceiling in SL and the middle value in BM)"
+    },
+    "held_out_list_values": {
+     "rows": {
+      "ALM-D.4": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      }
+     },
+     "source": "6.4: the drafter's list values, most lenient, reported as a sensitivity of Q_H"
+    },
+    "bm_k_1d": {
+     "rows": {
+      "ALM-D.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 1.0
+       }
+      },
+      "ALM-D.3": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 1.0
+       }
+      }
+     },
+     "source": "6.4: B&M's +/-1 d reported beside 1.5 d"
+    }
+   }
+  },
+  "ALM-E": {
+   "counted": true,
+   "projection": {
+    "ALM-E.1": "ge_true_k",
+    "ALM-E.2": "structural",
+    "ALM-E.3": "equinox_tol"
+   },
+   "held_out": {},
+   "outside": [],
+   "tolerances": {
+    "greatest_elongation_days": {
+     "venus": {
+      "fine": 20.6,
+      "mid": 21.0,
+      "coarse": 21.0
+     }
+    },
+    "opposition_full_run_days": {
+     "fine": 0.5,
+     "mid": 0.5,
+     "coarse": 1.0
+    },
+    "held_out": {}
+   },
+   "regimes": {
+    "SL": {
+     "fine": {
+      "ALM-E.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 20.6
+       }
+      },
+      "ALM-E.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-E.3": {
+       "option": "equinox_tol",
+       "params": {
+        "tolerance_days": 2
+       }
+      }
+     },
+     "mid": {
+      "ALM-E.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-E.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-E.3": {
+       "option": "equinox_tol",
+       "params": {
+        "tolerance_days": 2
+       }
+      }
+     },
+     "coarse": {
+      "ALM-E.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-E.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-E.3": {
+       "option": "equinox_tol",
+       "params": {
+        "tolerance_days": 2
+       }
+      }
+     }
+    },
+    "BM": {
+     "ALM-E.1": {
+      "option": "ge_true_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-E.2": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-E.3": {
+      "option": "equinox_tol",
+      "params": {
+       "tolerance_days": 1
+      }
+     }
+    },
+    "held_out": {
+     "fine": {},
+     "mid": {},
+     "coarse": {}
+    }
+   },
+   "row_predicates": {
+    "ALM-E.1": {
+     "body": "venus",
+     "side": "evening",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "evening"
+     },
+     "words": [
+      "Venus",
+      "evening star"
+     ]
+    },
+    "ALM-E.3": {
+     "body": "sun",
+     "side": null,
+     "instant": {
+      "kind": "lat",
+      "hours": 13.0
+     },
+     "words": [
+      "one hour after noon"
+     ]
+    }
+   },
+   "sensitivities": {
+    "bm_k_1d": {
+     "rows": {
+      "ALM-E.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 1.0
+       }
+      }
+     },
+     "source": "6.4: B&M's +/-1 d reported beside 1.5 d"
+    }
+   }
+  },
+  "ALM-F": {
+   "counted": true,
+   "projection": {
+    "ALM-F.1": "ge_true_k",
+    "ALM-F.2": "structural",
+    "ALM-F.3": "ge_true_k"
+   },
+   "held_out": {},
+   "outside": [
+    "ALM-F.4"
+   ],
+   "tolerances": {
+    "greatest_elongation_days": {
+     "venus": {
+      "fine": 20.6,
+      "mid": 21.0,
+      "coarse": 21.0
+     }
+    },
+    "opposition_full_run_days": {
+     "fine": 0.5,
+     "mid": 0.5,
+     "coarse": 1.0
+    },
+    "held_out": {}
+   },
+   "regimes": {
+    "SL": {
+     "fine": {
+      "ALM-F.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 20.6
+       }
+      },
+      "ALM-F.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-F.3": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 20.6
+       }
+      },
+      "ALM-F.4": {
+       "option": "none",
+       "params": {},
+       "why": "not in B&M's grammar; primary none (6.4)"
+      }
+     },
+     "mid": {
+      "ALM-F.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-F.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-F.3": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-F.4": {
+       "option": "none",
+       "params": {},
+       "why": "not in B&M's grammar; primary none (6.4)"
+      }
+     },
+     "coarse": {
+      "ALM-F.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-F.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-F.3": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-F.4": {
+       "option": "none",
+       "params": {},
+       "why": "not in B&M's grammar; primary none (6.4)"
+      }
+     }
+    },
+    "BM": {
+     "ALM-F.1": {
+      "option": "ge_true_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-F.2": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-F.3": {
+      "option": "ge_true_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-F.4": {
+      "option": "none",
+      "params": {},
+      "why": "not in B&M's grammar; primary none (6.4)"
+     }
+    },
+    "held_out": {
+     "fine": {},
+     "mid": {},
+     "coarse": {}
+    }
+   },
+   "row_predicates": {
+    "ALM-F.1": {
+     "body": "venus",
+     "side": "evening",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "evening"
+     },
+     "words": [
+      "Venus",
+      "evening star"
+     ]
+    },
+    "ALM-F.3": {
+     "body": "venus",
+     "side": "evening",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "evening"
+     },
+     "words": [
+      "Venus",
+      "evening star"
+     ]
+    }
+   },
+   "sensitivities": {
+    "full_primary": {
+     "rows": {
+      "ALM-F.4": {
+       "SL": {
+        "fine": {
+         "option": "none",
+         "params": {}
+        },
+        "mid": {
+         "option": "none",
+         "params": {}
+        },
+        "coarse": {
+         "option": "none",
+         "params": {}
+        }
+       },
+       "BM": {
+        "option": "none",
+        "params": {}
+       }
+      }
+     },
+     "source": "6.4: the full primary run (every row at its primary; the opposition k at the full-run ceiling in SL and the middle value in BM)"
+    },
+    "bm_k_1d": {
+     "rows": {
+      "ALM-F.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 1.0
+       }
+      },
+      "ALM-F.3": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 1.0
+       }
+      }
+     },
+     "source": "6.4: B&M's +/-1 d reported beside 1.5 d"
+    }
+   }
+  },
+  "ALM-G": {
+   "counted": true,
+   "projection": {
+    "ALM-G.1": "ge_true_k",
+    "ALM-G.2": "structural",
+    "ALM-G.3": "ge_true_k"
+   },
+   "held_out": {},
+   "outside": [],
+   "tolerances": {
+    "greatest_elongation_days": {
+     "mercury": {
+      "fine": 4.2,
+      "mid": 4.5,
+      "coarse": 5.0
+     },
+     "venus": {
+      "fine": 20.6,
+      "mid": 21.0,
+      "coarse": 21.0
+     }
+    },
+    "opposition_full_run_days": {
+     "fine": 0.5,
+     "mid": 0.5,
+     "coarse": 1.0
+    },
+    "held_out": {}
+   },
+   "regimes": {
+    "SL": {
+     "fine": {
+      "ALM-G.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 20.6
+       }
+      },
+      "ALM-G.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-G.3": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 4.2
+       }
+      }
+     },
+     "mid": {
+      "ALM-G.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-G.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-G.3": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 4.5
+       }
+      }
+     },
+     "coarse": {
+      "ALM-G.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-G.2": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-G.3": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 5.0
+       }
+      }
+     }
+    },
+    "BM": {
+     "ALM-G.1": {
+      "option": "bm_venus_lead",
+      "params": {
+       "lead_min": 90.0
+      }
+     },
+     "ALM-G.2": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-G.3": {
+      "option": "bm_mwra_k",
+      "params": {
+       "k_days": 1.5
+      }
+     }
+    },
+    "held_out": {
+     "fine": {},
+     "mid": {},
+     "coarse": {}
+    }
+   },
+   "row_predicates": {
+    "ALM-G.1": {
+     "body": "venus",
+     "side": "morning",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "morning"
+     },
+     "words": [
+      "Venus",
+      "morning star"
+     ]
+    },
+    "ALM-G.3": {
+     "body": "mercury",
+     "side": "morning",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "morning"
+     },
+     "words": [
+      "Mercury",
+      "morning star"
+     ]
+    }
+   },
+   "sensitivities": {}
+  },
+  "ALM-H": {
+   "counted": true,
+   "projection": {
+    "ALM-H.1": "visible_only",
+    "ALM-H.3": "as_printed",
+    "ALM-H.4": "visible_only",
+    "ALM-H.7": "structural",
+    "ALM-H.8": "visible_only"
+   },
+   "held_out": {
+    "ALM-H.2": "positional",
+    "ALM-H.5": "positional",
+    "ALM-H.6": "positional",
+    "ALM-H.9": "positional"
+   },
+   "outside": [],
+   "tolerances": {
+    "greatest_elongation_days": {
+     "mercury": {
+      "fine": 5.5,
+      "mid": 5.5,
+      "coarse": 6.0
+     }
+    },
+    "opposition_full_run_days": {
+     "fine": 0.5,
+     "mid": 0.5,
+     "coarse": 1.0
+    },
+    "held_out": {
+     "planet-star": {
+      "fine": 1.33,
+      "mid": 1.35,
+      "coarse": 1.4,
+      "pooled_lunar_fallback": false
+     }
+    }
+   },
+   "regimes": {
+    "SL": {
+     "fine": {
+      "ALM-H.1": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-H.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-H.3": {
+       "option": "as_printed",
+       "params": {
+        "day_offset": 102
+       }
+      },
+      "ALM-H.4": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-H.5": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-H.6": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-H.7": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-H.8": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-H.9": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "mid": {
+      "ALM-H.1": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-H.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-H.3": {
+       "option": "as_printed",
+       "params": {
+        "day_offset": 102
+       }
+      },
+      "ALM-H.4": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-H.5": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-H.6": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-H.7": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-H.8": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-H.9": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "coarse": {
+      "ALM-H.1": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-H.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-H.3": {
+       "option": "as_printed",
+       "params": {
+        "day_offset": 102
+       }
+      },
+      "ALM-H.4": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-H.5": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-H.6": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-H.7": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-H.8": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-H.9": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     }
+    },
+    "BM": {
+     "ALM-H.1": {
+      "option": "bm_mwra_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-H.2": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     },
+     "ALM-H.3": {
+      "option": "as_printed",
+      "params": {
+       "day_offset": 102
+      }
+     },
+     "ALM-H.4": {
+      "option": "ge_true_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-H.5": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     },
+     "ALM-H.6": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     },
+     "ALM-H.7": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-H.8": {
+      "option": "ge_true_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-H.9": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     }
+    },
+    "held_out": {
+     "fine": {
+      "ALM-H.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.33
+       }
+      },
+      "ALM-H.5": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.33
+       }
+      },
+      "ALM-H.6": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.33
+       }
+      },
+      "ALM-H.9": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.33
+       }
+      }
+     },
+     "mid": {
+      "ALM-H.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.35
+       }
+      },
+      "ALM-H.5": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.35
+       }
+      },
+      "ALM-H.6": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.35
+       }
+      },
+      "ALM-H.9": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.35
+       }
+      }
+     },
+     "coarse": {
+      "ALM-H.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.4
+       }
+      },
+      "ALM-H.5": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.4
+       }
+      },
+      "ALM-H.6": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.4
+       }
+      },
+      "ALM-H.9": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.4
+       }
+      }
+     }
+    }
+   },
+   "row_predicates": {
+    "ALM-H.1": {
+     "body": "mercury",
+     "side": "morning",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "morning"
+     },
+     "words": [
+      "Mercury",
+      "morning star"
+     ]
+    },
+    "ALM-H.4": {
+     "body": "mercury",
+     "side": "evening",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "evening"
+     },
+     "words": [
+      "Mercury",
+      "evening star"
+     ]
+    },
+    "ALM-H.8": {
+     "body": "mercury",
+     "side": "evening",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "evening"
+     },
+     "words": [
+      "Mercury",
+      "evening star"
+     ]
+    }
+   },
+   "sensitivities": {
+    "full_primary": {
+     "rows": {
+      "ALM-H.2": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.33
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.35
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.4
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      },
+      "ALM-H.5": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.33
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.35
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.4
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      },
+      "ALM-H.6": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.33
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.35
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.4
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      },
+      "ALM-H.9": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.33
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.35
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.4
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      }
+     },
+     "source": "6.4: the full primary run (every row at its primary; the opposition k at the full-run ceiling in SL and the middle value in BM)"
+    },
+    "held_out_list_values": {
+     "rows": {
+      "ALM-H.2": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-H.5": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-H.6": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-H.9": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      }
+     },
+     "source": "6.4: the drafter's list values, most lenient, reported as a sensitivity of Q_H"
+    },
+    "bm_k_1d": {
+     "rows": {
+      "ALM-H.4": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 1.0
+       }
+      },
+      "ALM-H.8": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 1.0
+       }
+      }
+     },
+     "source": "6.4: B&M's +/-1 d reported beside 1.5 d"
+    },
+    "cruxes_emended": {
+     "rows": {
+      "ALM-H.3": {
+       "option": "mean_sun_emended",
+       "params": {
+        "day_offset": 72
+       }
+      }
+     },
+     "source": "6.4: the two cruxes run at their primary, as printed; the emended intervals are reported"
+    }
+   }
+  },
+  "ALM-I": {
+   "counted": true,
+   "projection": {
+    "ALM-I.1": "ge_after_same_apparition",
+    "ALM-I.4": "structural"
+   },
+   "held_out": {
+    "ALM-I.2": "positional",
+    "ALM-I.3": "positional",
+    "ALM-I.5": "positional"
+   },
+   "outside": [],
+   "tolerances": {
+    "greatest_elongation_days": {
+     "mercury": {
+      "fine": 5.5,
+      "mid": 5.5,
+      "coarse": 6.0
+     }
+    },
+    "opposition_full_run_days": {
+     "fine": 0.5,
+     "mid": 0.5,
+     "coarse": 1.0
+    },
+    "held_out": {
+     "planet-star": {
+      "fine": 1.8,
+      "mid": 1.8,
+      "coarse": 1.8,
+      "pooled_lunar_fallback": false
+     }
+    }
+   },
+   "regimes": {
+    "SL": {
+     "fine": {
+      "ALM-I.1": {
+       "option": "ge_after_same_apparition",
+       "params": {
+        "bound": "same_apparition",
+        "visible_min_minutes": 30.0,
+        "visible_option": "visible_only"
+       }
+      },
+      "ALM-I.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-I.3": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-I.4": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-I.5": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "mid": {
+      "ALM-I.1": {
+       "option": "ge_after_same_apparition",
+       "params": {
+        "bound": "same_apparition",
+        "visible_min_minutes": 30.0,
+        "visible_option": "visible_only"
+       }
+      },
+      "ALM-I.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-I.3": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-I.4": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-I.5": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "coarse": {
+      "ALM-I.1": {
+       "option": "ge_after_same_apparition",
+       "params": {
+        "bound": "same_apparition",
+        "visible_min_minutes": 30.0,
+        "visible_option": "visible_only"
+       }
+      },
+      "ALM-I.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-I.3": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-I.4": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-I.5": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     }
+    },
+    "BM": {
+     "ALM-I.1": {
+      "option": "ge_after_same_apparition",
+      "params": {
+       "bound": "same_apparition",
+       "visible_min_minutes": 30.0,
+       "visible_option": "visible_only"
+      }
+     },
+     "ALM-I.2": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     },
+     "ALM-I.3": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     },
+     "ALM-I.4": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-I.5": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     }
+    },
+    "held_out": {
+     "fine": {
+      "ALM-I.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-I.3": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-I.5": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     },
+     "mid": {
+      "ALM-I.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-I.3": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-I.5": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     },
+     "coarse": {
+      "ALM-I.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-I.3": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-I.5": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     }
+    }
+   },
+   "row_predicates": {
+    "ALM-I.1": {
+     "body": "mercury",
+     "side": "morning",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "morning"
+     },
+     "words": [
+      "Mercury",
+      "morning star"
+     ]
+    }
+   },
+   "sensitivities": {
+    "bounded_primary": {
+     "rows": {
+      "ALM-I.1": {
+       "SL": {
+        "fine": {
+         "option": "ge_after_within_j",
+         "params": {
+          "j_days": 30
+         }
+        },
+        "mid": {
+         "option": "ge_after_within_j",
+         "params": {
+          "j_days": 30
+         }
+        },
+        "coarse": {
+         "option": "ge_after_within_j",
+         "params": {
+          "j_days": 30
+         }
+        }
+       },
+       "BM": {
+        "option": "ge_after_within_j",
+        "params": {
+         "j_days": 15
+        }
+       }
+      }
+     },
+     "source": "6.4: the bounded primary (j = 7-60 d, the drafter's inference) is reported as a sensitivity"
+    },
+    "full_primary": {
+     "rows": {
+      "ALM-I.1": {
+       "SL": {
+        "fine": {
+         "option": "ge_after_within_j",
+         "params": {
+          "j_days": 30
+         }
+        },
+        "mid": {
+         "option": "ge_after_within_j",
+         "params": {
+          "j_days": 30
+         }
+        },
+        "coarse": {
+         "option": "ge_after_within_j",
+         "params": {
+          "j_days": 30
+         }
+        }
+       },
+       "BM": {
+        "option": "ge_after_within_j",
+        "params": {
+         "j_days": 15
+        }
+       }
+      },
+      "ALM-I.2": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      },
+      "ALM-I.3": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      },
+      "ALM-I.5": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      }
+     },
+     "source": "6.4: the full primary run (every row at its primary; the opposition k at the full-run ceiling in SL and the middle value in BM)"
+    },
+    "held_out_list_values": {
+     "rows": {
+      "ALM-I.2": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-I.3": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-I.5": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      }
+     },
+     "source": "6.4: the drafter's list values, most lenient, reported as a sensitivity of Q_H"
+    }
+   }
+  },
+  "ALM-J": {
+   "counted": true,
+   "projection": {
+    "ALM-J.1": "visible_before_sunrise",
+    "ALM-J.3": "structural",
+    "ALM-J.4": "ge_before_same_apparition",
+    "ALM-J.6": "structural"
+   },
+   "held_out": {
+    "ALM-J.2": "positional",
+    "ALM-J.5": "positional",
+    "ALM-J.7": "positional"
+   },
+   "outside": [],
+   "tolerances": {
+    "greatest_elongation_days": {
+     "venus": {
+      "fine": 20.6,
+      "mid": 21.0,
+      "coarse": 21.0
+     }
+    },
+    "opposition_full_run_days": {
+     "fine": 0.5,
+     "mid": 0.5,
+     "coarse": 1.0
+    },
+    "held_out": {
+     "planet-star": {
+      "fine": 1.8,
+      "mid": 1.8,
+      "coarse": 1.8,
+      "pooled_lunar_fallback": false
+     }
+    }
+   },
+   "regimes": {
+    "SL": {
+     "fine": {
+      "ALM-J.1": {
+       "option": "visible_before_sunrise",
+       "params": {
+        "min_altitude_deg": 5
+       }
+      },
+      "ALM-J.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-J.3": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-J.4": {
+       "option": "ge_before_same_apparition",
+       "params": {
+        "bound": "same_apparition",
+        "visible_min_minutes": 30.0,
+        "visible_option": "visible_only"
+       }
+      },
+      "ALM-J.5": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-J.6": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-J.7": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "mid": {
+      "ALM-J.1": {
+       "option": "visible_before_sunrise",
+       "params": {
+        "min_altitude_deg": 5
+       }
+      },
+      "ALM-J.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-J.3": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-J.4": {
+       "option": "ge_before_same_apparition",
+       "params": {
+        "bound": "same_apparition",
+        "visible_min_minutes": 30.0,
+        "visible_option": "visible_only"
+       }
+      },
+      "ALM-J.5": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-J.6": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-J.7": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "coarse": {
+      "ALM-J.1": {
+       "option": "visible_before_sunrise",
+       "params": {
+        "min_altitude_deg": 5
+       }
+      },
+      "ALM-J.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-J.3": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-J.4": {
+       "option": "ge_before_same_apparition",
+       "params": {
+        "bound": "same_apparition",
+        "visible_min_minutes": 30.0,
+        "visible_option": "visible_only"
+       }
+      },
+      "ALM-J.5": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-J.6": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-J.7": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     }
+    },
+    "BM": {
+     "ALM-J.1": {
+      "option": "visible_before_sunrise",
+      "params": {
+       "min_altitude_deg": 5
+      }
+     },
+     "ALM-J.2": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     },
+     "ALM-J.3": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-J.4": {
+      "option": "bm_venus_lead",
+      "params": {
+       "lead_min": 90.0
+      }
+     },
+     "ALM-J.5": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     },
+     "ALM-J.6": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-J.7": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     }
+    },
+    "held_out": {
+     "fine": {
+      "ALM-J.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-J.5": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-J.7": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     },
+     "mid": {
+      "ALM-J.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-J.5": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-J.7": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     },
+     "coarse": {
+      "ALM-J.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-J.5": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-J.7": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     }
+    }
+   },
+   "row_predicates": {
+    "ALM-J.1": {
+     "body": "mars",
+     "side": "morning",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "morning"
+     },
+     "words": [
+      "Mars",
+      "morning object"
+     ]
+    },
+    "ALM-J.4": {
+     "body": "venus",
+     "side": "morning",
+     "instant": {
+      "kind": "night_hour",
+      "hour": 12,
+      "point": "middle"
+     },
+     "words": [
+      "Venus",
+      "morning star",
+      "twelfth (last) hour of the night"
+     ]
+    }
+   },
+   "sensitivities": {
+    "bounded_primary": {
+     "rows": {
+      "ALM-J.4": {
+       "SL": {
+        "fine": {
+         "option": "ge_before_within_j",
+         "params": {
+          "j_days": 60
+         }
+        },
+        "mid": {
+         "option": "ge_before_within_j",
+         "params": {
+          "j_days": 60
+         }
+        },
+        "coarse": {
+         "option": "ge_before_within_j",
+         "params": {
+          "j_days": 60
+         }
+        }
+       },
+       "BM": {
+        "option": "ge_before_within_j",
+        "params": {
+         "j_days": 30
+        }
+       }
+      }
+     },
+     "source": "6.4: the bounded primary (j = 7-60 d, the drafter's inference) is reported as a sensitivity"
+    },
+    "full_primary": {
+     "rows": {
+      "ALM-J.2": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      },
+      "ALM-J.4": {
+       "SL": {
+        "fine": {
+         "option": "ge_before_within_j",
+         "params": {
+          "j_days": 60
+         }
+        },
+        "mid": {
+         "option": "ge_before_within_j",
+         "params": {
+          "j_days": 60
+         }
+        },
+        "coarse": {
+         "option": "ge_before_within_j",
+         "params": {
+          "j_days": 60
+         }
+        }
+       },
+       "BM": {
+        "option": "ge_before_within_j",
+        "params": {
+         "j_days": 30
+        }
+       }
+      },
+      "ALM-J.5": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      },
+      "ALM-J.7": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 1.0
+        }
+       }
+      }
+     },
+     "source": "6.4: the full primary run (every row at its primary; the opposition k at the full-run ceiling in SL and the middle value in BM)"
+    },
+    "held_out_list_values": {
+     "rows": {
+      "ALM-J.2": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-J.5": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-J.7": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      }
+     },
+     "source": "6.4: the drafter's list values, most lenient, reported as a sensitivity of Q_H"
+    }
+   }
+  },
+  "ALM-K": {
+   "counted": true,
+   "projection": {
+    "ALM-K.1": "visible_only",
+    "ALM-K.3": "structural",
+    "ALM-K.4": "visible_before_sunrise",
+    "ALM-K.6": "structural",
+    "ALM-K.7": "visible_only"
+   },
+   "held_out": {
+    "ALM-K.2": "positional",
+    "ALM-K.5": "positional",
+    "ALM-K.8": "positional"
+   },
+   "outside": [],
+   "tolerances": {
+    "greatest_elongation_days": {
+     "mercury": {
+      "fine": 5.5,
+      "mid": 5.5,
+      "coarse": 6.0
+     }
+    },
+    "opposition_full_run_days": {
+     "fine": 0.5,
+     "mid": 0.5,
+     "coarse": 1.0
+    },
+    "held_out": {
+     "planet-star": {
+      "fine": 1.8,
+      "mid": 1.8,
+      "coarse": 1.8,
+      "pooled_lunar_fallback": false
+     }
+    }
+   },
+   "regimes": {
+    "SL": {
+     "fine": {
+      "ALM-K.1": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-K.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-K.3": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-K.4": {
+       "option": "visible_before_sunrise",
+       "params": {
+        "min_altitude_deg": 5
+       }
+      },
+      "ALM-K.5": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-K.6": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-K.7": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-K.8": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "mid": {
+      "ALM-K.1": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-K.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-K.3": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-K.4": {
+       "option": "visible_before_sunrise",
+       "params": {
+        "min_altitude_deg": 5
+       }
+      },
+      "ALM-K.5": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-K.6": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-K.7": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-K.8": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "coarse": {
+      "ALM-K.1": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-K.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-K.3": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-K.4": {
+       "option": "visible_before_sunrise",
+       "params": {
+        "min_altitude_deg": 5
+       }
+      },
+      "ALM-K.5": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-K.6": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-K.7": {
+       "option": "visible_only",
+       "params": {
+        "min_minutes_between_body_and_sun_horizon_crossings": 30
+       }
+      },
+      "ALM-K.8": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     }
+    },
+    "BM": {
+     "ALM-K.1": {
+      "option": "bm_mwra_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-K.2": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     },
+     "ALM-K.3": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-K.4": {
+      "option": "visible_before_sunrise",
+      "params": {
+       "min_altitude_deg": 5
+      }
+     },
+     "ALM-K.5": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     },
+     "ALM-K.6": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-K.7": {
+      "option": "bm_mwra_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-K.8": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     }
+    },
+    "held_out": {
+     "fine": {
+      "ALM-K.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-K.5": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-K.8": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     },
+     "mid": {
+      "ALM-K.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-K.5": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-K.8": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     },
+     "coarse": {
+      "ALM-K.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-K.5": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-K.8": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     }
+    }
+   },
+   "row_predicates": {
+    "ALM-K.1": {
+     "body": "mercury",
+     "side": "morning",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "morning"
+     },
+     "words": [
+      "Mercury",
+      "morning star"
+     ]
+    },
+    "ALM-K.4": {
+     "body": "jupiter",
+     "side": "morning",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "morning"
+     },
+     "words": [
+      "Jupiter",
+      "morning object"
+     ]
+    },
+    "ALM-K.7": {
+     "body": "mercury",
+     "side": "morning",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "morning"
+     },
+     "words": [
+      "Mercury",
+      "morning star"
+     ]
+    }
+   },
+   "sensitivities": {
+    "full_primary": {
+     "rows": {
+      "ALM-K.2": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      },
+      "ALM-K.5": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      },
+      "ALM-K.8": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      }
+     },
+     "source": "6.4: the full primary run (every row at its primary; the opposition k at the full-run ceiling in SL and the middle value in BM)"
+    },
+    "held_out_list_values": {
+     "rows": {
+      "ALM-K.2": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-K.5": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-K.8": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      }
+     },
+     "source": "6.4: the drafter's list values, most lenient, reported as a sensitivity of Q_H"
+    },
+    "site_babylon": {
+     "site": "babylon",
+     "source": "6.4: Babylon is a sensitivity for ALM-K"
+    }
+   }
+  },
+  "ALM-L": {
+   "counted": true,
+   "projection": {
+    "ALM-L.1": "ge_true_k",
+    "ALM-L.3": "structural",
+    "ALM-L.4": "ge_true_k",
+    "ALM-L.5": "structural",
+    "ALM-L.6": "ge_true_k"
+   },
+   "held_out": {
+    "ALM-L.2": "positional",
+    "ALM-L.7": "positional"
+   },
+   "outside": [],
+   "tolerances": {
+    "greatest_elongation_days": {
+     "mercury": {
+      "fine": 5.5,
+      "mid": 5.5,
+      "coarse": 6.0
+     },
+     "venus": {
+      "fine": 20.6,
+      "mid": 21.0,
+      "coarse": 21.0
+     }
+    },
+    "opposition_full_run_days": {
+     "fine": 0.5,
+     "mid": 0.5,
+     "coarse": 1.0
+    },
+    "held_out": {
+     "planet-star": {
+      "fine": 1.8,
+      "mid": 1.8,
+      "coarse": 1.8,
+      "pooled_lunar_fallback": false
+     }
+    }
+   },
+   "regimes": {
+    "SL": {
+     "fine": {
+      "ALM-L.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 20.6
+       }
+      },
+      "ALM-L.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-L.3": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-L.4": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 20.6
+       }
+      },
+      "ALM-L.5": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-L.6": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 5.5
+       }
+      },
+      "ALM-L.7": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "mid": {
+      "ALM-L.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-L.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-L.3": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-L.4": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-L.5": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-L.6": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 5.5
+       }
+      },
+      "ALM-L.7": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     },
+     "coarse": {
+      "ALM-L.1": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-L.2": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      },
+      "ALM-L.3": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-L.4": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 21.0
+       }
+      },
+      "ALM-L.5": {
+       "option": "structural",
+       "params": {}
+      },
+      "ALM-L.6": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 6.0
+       }
+      },
+      "ALM-L.7": {
+       "option": "none",
+       "params": {},
+       "why": "held out (6.4)"
+      }
+     }
+    },
+    "BM": {
+     "ALM-L.1": {
+      "option": "bm_venus_lead",
+      "params": {
+       "lead_min": 90.0
+      }
+     },
+     "ALM-L.2": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     },
+     "ALM-L.3": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-L.4": {
+      "option": "bm_venus_lead",
+      "params": {
+       "lead_min": 90.0
+      }
+     },
+     "ALM-L.5": {
+      "option": "structural",
+      "params": {}
+     },
+     "ALM-L.6": {
+      "option": "ge_true_k",
+      "params": {
+       "k_days": 1.5
+      }
+     },
+     "ALM-L.7": {
+      "option": "none",
+      "params": {},
+      "why": "held out (6.4)"
+     }
+    },
+    "held_out": {
+     "fine": {
+      "ALM-L.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-L.7": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     },
+     "mid": {
+      "ALM-L.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-L.7": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     },
+     "coarse": {
+      "ALM-L.2": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      },
+      "ALM-L.7": {
+       "option": "positional",
+       "class": "planet-star",
+       "params": {
+        "tolerance_deg": 1.8
+       }
+      }
+     }
+    }
+   },
+   "row_predicates": {
+    "ALM-L.1": {
+     "body": "venus",
+     "side": "morning",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "morning"
+     },
+     "words": [
+      "Venus",
+      "morning star"
+     ]
+    },
+    "ALM-L.4": {
+     "body": "venus",
+     "side": "morning",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "morning"
+     },
+     "words": [
+      "Venus",
+      "morning star"
+     ]
+    },
+    "ALM-L.6": {
+     "body": "mercury",
+     "side": "evening",
+     "instant": {
+      "kind": "sun_alt",
+      "deg": -8.0,
+      "part": "evening"
+     },
+     "words": [
+      "Mercury",
+      "evening star"
+     ]
+    }
+   },
+   "sensitivities": {
+    "full_primary": {
+     "rows": {
+      "ALM-L.2": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      },
+      "ALM-L.7": {
+       "SL": {
+        "fine": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "mid": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        },
+        "coarse": {
+         "option": "positional",
+         "class": "planet-star",
+         "params": {
+          "tolerance_deg": 1.8
+         }
+        }
+       },
+       "BM": {
+        "option": "positional",
+        "params": {
+         "tolerance_deg": 0.5
+        }
+       }
+      }
+     },
+     "source": "6.4: the full primary run (every row at its primary; the opposition k at the full-run ceiling in SL and the middle value in BM)"
+    },
+    "held_out_list_values": {
+     "rows": {
+      "ALM-L.2": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      },
+      "ALM-L.7": {
+       "option": "positional",
+       "params": {
+        "tolerance_deg": 2.0
+       }
+      }
+     },
+     "source": "6.4: the drafter's list values, most lenient, reported as a sensitivity of Q_H"
+    },
+    "bm_k_1d": {
+     "rows": {
+      "ALM-L.6": {
+       "option": "ge_true_k",
+       "params": {
+        "k_days": 1.0
+       }
+      }
+     },
+     "source": "6.4: B&M's +/-1 d reported beside 1.5 d"
+    }
+   }
+  }
+ }
+}

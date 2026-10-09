@@ -1,0 +1,161 @@
+{
+ "INSTR": true,
+ "n_checks": 17,
+ "n_failed": 0,
+ "git_head": "c14182556eb38d9db7039fda852b72533999a756",
+ "checks": [
+  {
+   "name": "I1 validate_ephem",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe tools/validate_ephem.py",
+   "exit": 0,
+   "seconds": 112.6,
+   "output": "results\\instrument\\I1 validate_ephem.sealed.txt",
+   "summary": "55/55 passed",
+   "ok": true
+  },
+  {
+   "name": "tests/test_calendar.py",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe tests/test_calendar.py",
+   "exit": 0,
+   "seconds": 2.9,
+   "output": "results\\instrument\\tests_test_calendar.py.out.txt",
+   "ok": true,
+   "summary": "all passed"
+  },
+  {
+   "name": "tests/test_ephem.py",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe tests/test_ephem.py",
+   "exit": 0,
+   "seconds": 2.8,
+   "output": "results\\instrument\\tests_test_ephem.py.out.txt",
+   "ok": true,
+   "summary": "all passed"
+  },
+  {
+   "name": "tests/test_lean_almagest.py",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe tests/test_lean_almagest.py",
+   "exit": 0,
+   "seconds": 14.1,
+   "output": "results\\instrument\\tests_test_lean_almagest.py.out.txt",
+   "ok": true,
+   "summary": "all passed"
+  },
+  {
+   "name": "tests/test_lean_deltat.py",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe tests/test_lean_deltat.py",
+   "exit": 0,
+   "seconds": 3.9,
+   "output": "results\\instrument\\tests_test_lean_deltat.py.out.txt",
+   "ok": true,
+   "summary": "all passed"
+  },
+  {
+   "name": "tests/test_lean_heldout.py",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe tests/test_lean_heldout.py",
+   "exit": 0,
+   "seconds": 22.7,
+   "output": "results\\instrument\\tests_test_lean_heldout.py.out.txt",
+   "ok": true,
+   "summary": "all passed"
+  },
+  {
+   "name": "tests/test_lean_reach.py",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe tests/test_lean_reach.py",
+   "exit": 0,
+   "seconds": 7.1,
+   "output": "results\\instrument\\tests_test_lean_reach.py.out.txt",
+   "ok": true,
+   "summary": "all passed"
+  },
+  {
+   "name": "tests/test_lean_readings.py",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe tests/test_lean_readings.py",
+   "exit": 0,
+   "seconds": 0.9,
+   "output": "results\\instrument\\tests_test_lean_readings.py.out.txt",
+   "ok": true,
+   "summary": "all passed"
+  },
+  {
+   "name": "tests/test_lean_sky.py",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe tests/test_lean_sky.py",
+   "exit": 0,
+   "seconds": 41.0,
+   "output": "results\\instrument\\tests_test_lean_sky.py.out.txt",
+   "ok": true,
+   "summary": "all passed"
+  },
+  {
+   "name": "tests/test_lean_verdict.py",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe tests/test_lean_verdict.py",
+   "exit": 0,
+   "seconds": 1.2,
+   "output": "results\\instrument\\tests_test_lean_verdict.py.out.txt",
+   "ok": true,
+   "summary": "all passed"
+  },
+  {
+   "name": "tests/test_model.py",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe tests/test_model.py",
+   "exit": 0,
+   "seconds": 0.2,
+   "output": "results\\instrument\\tests_test_model.py.out.txt",
+   "ok": true,
+   "summary": "all passed"
+  },
+  {
+   "name": "attain.py --selftest",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe attain.py --selftest",
+   "exit": 0,
+   "seconds": 1.5,
+   "output": "results\\instrument\\attain.py --selftest.out.txt",
+   "ok": true,
+   "summary": "[attain selftest] null_side from L2 heldout; PASS"
+  },
+  {
+   "name": "rates.py --selftest",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe rates.py --selftest",
+   "exit": 0,
+   "seconds": 1.2,
+   "output": "results\\instrument\\rates.py --selftest.out.txt",
+   "ok": true,
+   "summary": "[rates selftest] PASS"
+  },
+  {
+   "name": "reproduce.py --selftest",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe reproduce.py --selftest",
+   "exit": 0,
+   "seconds": 0.8,
+   "output": "results\\instrument\\reproduce.py --selftest.out.txt",
+   "ok": true,
+   "summary": "[reproduce selftest] PASS"
+  },
+  {
+   "name": "heldout.py --selftest",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe heldout.py --selftest",
+   "exit": 0,
+   "seconds": 1.1,
+   "output": "results\\instrument\\heldout.py --selftest.out.txt",
+   "ok": true,
+   "summary": "selftest PASS"
+  },
+  {
+   "name": "deltat.py --selftest",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe deltat.py --selftest",
+   "exit": 0,
+   "seconds": 1.2,
+   "output": "results\\instrument\\deltat.py --selftest.out.txt",
+   "ok": true,
+   "summary": "selftest PASS"
+  },
+  {
+   "name": "almagest.py --selftest",
+   "cmd": "C:\\Users\\Jon\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe almagest.py --selftest",
+   "exit": 0,
+   "seconds": 4.2,
+   "output": "results\\instrument\\almagest.py --selftest.out.txt",
+   "ok": true,
+   "summary": "almagest selftest: PASS"
+  }
+ ]
+}

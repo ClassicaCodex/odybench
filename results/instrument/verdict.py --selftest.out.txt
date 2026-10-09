@@ -1,0 +1,2 @@
+usage: verdict.py [-h] [--results RESULTS] [--out OUT]
+verdict.py: error: unrecognized arguments: --selftest

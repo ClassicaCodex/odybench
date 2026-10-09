@@ -1,0 +1,11 @@
+selftest: design-stage counts (7.2)
+  p_H,min 0.0400 (7.2: 0.040); Q_attain False; Q_record True (determined {'H3': None, 'H4': 'fail'}); Q_exch False (P10 part not computed)
+  both  0.0260 / 0.0227 / 0.0400 / 0.0345 -> 0.0400 (7.2: 0.040) ok
+  h4    0.0390 / 0.0455 / 0.0600 / 0.0690 -> 0.0690 (7.2: 0.069) ok
+  h3    0.2208 / 0.2273 / 0.2400 / 0.2759 -> 0.2759 (7.2: 0.276) ok
+  none  1.0000 / 1.0000 / 1.0000 / 1.0000 -> 1.0000 (7.2: 1.000) ok
+  target H3 True  H4 True : p_H 0.0400  Q_contra True
+  target H3 False H4 True : p_H 0.0690  Q_contra True
+  target H3 True  H4 False: p_H 0.2759  Q_contra False
+  target H3 False H4 False: p_H 1.0000  Q_contra False
+selftest PASS

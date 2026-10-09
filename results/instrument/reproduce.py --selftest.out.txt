@@ -1,0 +1,2 @@
+[reproduce selftest] grid logic ok; S2 rows 152; A5 from SEm1199.js: gamma 0.5187, GE 32.72 N 12.74 E at 17:57:28 TD -> pass
+[reproduce selftest] PASS

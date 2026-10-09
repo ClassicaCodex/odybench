@@ -1,0 +1,62 @@
+PASS test_target_jdn (0.0 s)
+PASS test_guard_raises_without_evaluating (0.0 s)
+PASS test_count_validation (0.0 s)
+PASS test_design_lattice_and_floor (0.3 s)
+PASS test_against_verdict_trace (0.0 s)
+PASS test_ties_count_against_target (0.0 s)
+PASS test_p_value_membership_and_contra (0.0 s)
+PASS test_exact_under_exchangeability (0.3 s)
+PASS test_q_exch_and_mask (0.0 s)
+Held-out test at the target, 16 Apr -1177 (DESIGN 7.1-7.3; LEAN.md)
+site Ithaki 38.37 N 20.72 E; target info from C:\Users\Jon\AppData\Local\Temp\tmp34ozx7_n\t0.json
+
+Predicates at the target (H3, H4 counted; H1, H2, H5 reported only):
+  count seq:
+    H3 True: Mercury visibility margin -1.000 deg (>= 0 visible); conjunction 0.500 d from noon UT+2 of Day 0, window margin 2.500 d
+    H4 False: least Venus-Mars separation 30.000 deg on Day -6 (threshold 5)
+    H1 False: nights 11.50 h and 11.30 h (>= 12.0)
+    H2 True: Moon up 0.100 of the dark hours (< 0.25)
+    H5 True: Mars visibility margin -2.000 deg (H5 needs < 0)
+    I15 tie bands the target lies in: none
+
+Pools (n; H3 only, H4 only, both; floor) and the target's p:
+  P_BM      n   76;  14   1   1; floor 0.0260; member True, count seq, pattern h3, x 16, p 0.2208
+  P_MWRA    n   43;   8   1   0; floor 0.0227; member True, count seq, pattern h3, x 9, p 0.2273
+  P_BM_E    n   49;   9   1   1; floor 0.0400; member True, count seq, pattern h3, x 11, p 0.2400
+  P_MWRA_E  n   28;   6   1   0; floor 0.0345; member False, count None, pattern h3, x 7, p 1.0000
+p_H = 1.0000 (label 1 needs <= 0.05); p_H,min = 0.0400 (Q_attain if > 0.05)
+lattice (p_BM / p_MWRA / p_BM,E / p_MWRA,E -> p_H), from the null side:
+  both  0.0260 / 0.0227 / 0.0400 / 0.0345 -> 0.0400
+  h4    0.0390 / 0.0455 / 0.0600 / 0.0690 -> 0.0690
+  h3    0.2208 / 0.2273 / 0.2400 / 0.2759 -> 0.2759
+  none  1.0000 / 1.0000 / 1.0000 / 1.0000 -> 1.0000
+
+disclosure table, determined: {'H3': None, 'H4': 'fail'}
+Q_record True   Q_contra False []   Q_attain False   Q_exch False (P10's held-out part not computed)
+null side recomputed against attain.json: p_H_min agrees; Q_record agrees; Q_exch agrees; Q_attain agrees
+
+H3 given D4 (7.3): not computed: P_MWRA has no field 'gwe_lead_d'
+  R20 H3 in P_BM: MWRA class vs GWE-or-station class: 1/4 vs 14/72, Fisher p 1.000
+  R20 H4 in P_BM: MWRA class vs GWE-or-station class: 0/4 vs 2/72, Fisher p 1.000
+  R21 H3 in P_BM: -1999..-900 vs -899..+200: 7/38 vs 8/38, Fisher p 1.000
+  R21 H3 in P_BM: within +-700 y of -1177 vs the rest: 11/49 vs 4/27, Fisher p 0.552
+  R21 H4 in P_BM: -1999..-900 vs -899..+200: 0/38 vs 2/38, Fisher p 0.493
+  R21 H4 in P_BM: within +-700 y of -1177 vs the rest: 1/49 vs 1/27, Fisher p 1.000
+  R21 H3 in P_MWRA: -1999..-900 vs -899..+200: 4/22 vs 4/21, Fisher p 1.000
+  R21 H3 in P_MWRA: within +-700 y of -1177 vs the rest: 6/27 vs 2/16, Fisher p 0.688
+  R21 H4 in P_MWRA: -1999..-900 vs -899..+200: 0/22 vs 1/21, Fisher p 0.488
+  R21 H4 in P_MWRA: within +-700 y of -1177 vs the rest: 0/27 vs 1/16, Fisher p 0.372
+
+Base rates of the uncounted predicates over the pools (7.3):
+  P_BM      H1 0/76  H2 76/76  H5 14/76  (attain.json)
+  P_MWRA    H1 0/43  H2 43/43  H5 8/43  (attain.json)
+  P_BM_E    H1 0/49  H2 49/49  H5 9/49  (attain.json)
+  P_MWRA_E  H1 0/28  H2 28/28  H5 6/28  (attain.json)
+
+PASS test_script_plumbing_without_sky (0.1 s)
+    reference on 82 of 311 spring new moons of -700..-600: H3 passes 37, H4 passes 15; worst |diff|: Sun altitude 0.0001 deg, conjunction 0.45 s, separation 0.000 arcsec; tie-band members [1470957, 1473497, 1476421, 1483744, 1487760, 1488824, 1490300, 1493223, 1496501, 1499809, 1501994]
+PASS test_h3_h4_against_reference (12.0 s)
+PASS test_h4_counts (0.0 s)
+    H1, H2, H5 on [1465820, 1465878, 1469835]: H5 [False, False, True], H2 shares [0.124, 0.141, 0.154]
+PASS test_h1_h2_h5_against_reference (9.1 s)
+all passed

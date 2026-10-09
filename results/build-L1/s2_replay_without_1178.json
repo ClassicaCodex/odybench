@@ -1,0 +1,44 @@
+{
+ "rows": 151,
+ "excluded_target_row": true,
+ "A1": {
+  "ti_match_ut2": 135,
+  "ti_match_ut": 133,
+  "ti_match_lmt": 137,
+  "need": ">= 134 of 152",
+  "passes": true
+ },
+ "A2": {
+  "venus_pass_set_equal": true,
+  "sym_diff": [],
+  "lead_diff_sd_min": 0.5322720492090616,
+  "lead_diff_mean_min": 0.10813309165674288,
+  "clock_offset_mean_min": 0.031624774774774156,
+  "clock_offset_sd_min": 1.5821606798144991,
+  "n_timed": 74,
+  "passes": true
+ },
+ "A3": {
+  "exact": 129,
+  "within_1d": 137,
+  "need": ">= 124 exact and >= 138 within 1 d of 152",
+  "definition": "the DE441 rise-azimuth maximum nearest S2's printed MWRA date (as check_mwra.py measured it)",
+  "passes": true,
+  "nearest_to_Ti_minus_34": {
+   "exact": 117,
+   "within_1d": 124,
+   "note": "B&M's own rule; reported beside"
+  }
+ },
+ "delta_agreement": {
+  "s2_delta_vs_true_julian_on_s2_mwra_differ": 21,
+  "note": "S2 prints 365-day arithmetic; rows where true Julian arithmetic differs"
+ },
+ "M_pass_on_s2_ti_de441_int": [
+  1236,
+  1224,
+  1190,
+  1189,
+  1144
+ ]
+}

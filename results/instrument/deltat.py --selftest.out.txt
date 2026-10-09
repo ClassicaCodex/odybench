@@ -1,0 +1,2 @@
+selftest: 3710 catalogue rows; type mismatches 0; max |smag diff| 0.00000; max |alt diff| 0.000 deg; max |LAT diff| 0.030 min
+selftest PASS
